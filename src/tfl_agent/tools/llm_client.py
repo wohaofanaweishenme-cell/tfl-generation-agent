@@ -31,7 +31,7 @@ class DeepSeekJSONClient:
     Never print or persist the key. The notebook reads DEEPSEEK_API_KEY from
     Colab Secrets. The two Step-2 prompts are billed API requests.
     """
-    def __init__(self, model='deepseek-flash', api_key=None, max_tokens=4096):
+    def __init__(self, model='deepseek-flash', api_key=None, max_tokens=8192, thinking=False):
         from openai import OpenAI
         key = api_key or os.environ.get('DEEPSEEK_API_KEY')
         if not key:
@@ -44,12 +44,14 @@ class DeepSeekJSONClient:
         )
         self.model = model
         self.max_tokens = max_tokens
+        self.thinking = thinking
 
     def json(self, system, user):
         response = self.client.chat.completions.create(
             model=self.model,
             response_format={'type': 'json_object'},
             max_tokens=self.max_tokens,
+            extra_body={'thinking': {'type': 'enabled' if self.thinking else 'disabled'}},
             messages=[
                 {'role': 'system', 'content': system + '\nReturn a valid JSON object only.'},
                 {'role': 'user', 'content': user},

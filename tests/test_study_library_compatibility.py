@@ -100,6 +100,7 @@ def test_deepseek_json_client_uses_secret_and_rejects_blank(monkeypatch):
     assert client.json('QUERY_PLANNER', 'survival')['queries'] == ['survival']
     assert m.kwargs['model'] == 'deepseek-flash'
     assert m.kwargs['response_format']['type'] == 'json_object'
+    assert m.kwargs['extra_body'] == {'thinking': {'type': 'disabled'}}
     m.content = '  '
     import pytest
     with pytest.raises(RuntimeError, match='empty JSON'):

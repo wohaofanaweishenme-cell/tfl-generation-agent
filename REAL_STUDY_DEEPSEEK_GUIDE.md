@@ -15,7 +15,7 @@ Open `notebooks/03_Real_Study_DeepSeek_Colab.ipynb` on Google Colab. It uses a l
 ## What this version actually supports
 
 - Reads all P-VCNA-003 study-scoped v2.4 metadata and 64 source DOCX template paths, using the keywords and aliases *inside* each template's Metadata. There is no global Keyword Index in that study folder.
-- Does live DeepSeek JSON extraction; verifies text quotations and schema, and **drops unsupported inferred values** rather than silently accepting them.
+- Does live DeepSeek JSON extraction (non-thinking JSON mode by default to limit truncation); verifies text quotations and schema, and **drops unsupported inferred values** rather than silently accepting them.
 - Ranks Table templates and shows endpoint, methods, overlapping tokens, score, and a deterministic explanation. A high score is a retrieval heuristic, **not** calibrated model confidence.
 - Detects when a real source DOCX uses bookmarks, not MVP `{{PLACEHOLDER}}` tokens. **The current safe generator blocks these unverified adaptations** rather than misrepresenting the result as a generated shell. `source_bookmarks_requires_adaptation` is an expected Stage-A compatibility outcome. The source library remains unchanged.
 - If no relevant source template is retrieved, Step 3 shows candidates/no selection. If missing evidence blocks the specification, Step 4 does not produce a DOCX.
