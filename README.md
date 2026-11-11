@@ -25,6 +25,18 @@ The package (`src/tfl_agent/`) contains the implementation; notebooks only confi
 
 For the optional **real LLM call**, change the notebook to `MODE = "api"` and provide an `OPENAI_API_KEY` through Colab Secrets. This does not automatically turn the included **synthetic SAP and Library** into clinical validation data; you must configure actual SAPs and an independently reviewed library and inspect the resulting evidence.
 
+## Real-study + DeepSeek compatibility demo (new)
+
+[Open Real-Study / DeepSeek Colab notebook](https://colab.research.google.com/github/wohaofanaweishenme-cell/tfl-generation-agent/blob/main/notebooks/03_Real_Study_DeepSeek_Colab.ipynb) · [Detailed steps](REAL_STUDY_DEEPSEEK_GUIDE.md)
+
+The source-only study library at `library/studies/P-VCNA-003/` is read-only.
+The loader supports its `Study_Metadata.json` + `TFL_Template_Library/` layout.
+This first **Stage-A** run makes real DeepSeek calls to extract target SAP requirements,
+then shows evidence, ranked templates, and adaptation feasibility.
+**Authentic bookmarked source DOCX files cannot yet be safely adapted by the old placeholder editor;
+these are flagged `needs_review`, not claimed as generated documents.**
+Revoke exposed API keys; store a new key only in Colab Secrets as `DEEPSEEK_API_KEY`.
+
 ## Local development
 
 Requires **Python 3.11+** and Git. From the **repository root**:

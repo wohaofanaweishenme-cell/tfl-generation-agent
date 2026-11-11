@@ -43,11 +43,28 @@ def make_replacements(spec):
     for i,v in enumerate(requirements['footnote_requirements'],start=1):replacements[f'{{{{FOOTNOTE_{i}}}}}']=v
     return replacements
 
-def plan_modifications(template_path,spec):
+def plan_modifications(template_path,spec,locator_map_path=None):
     doc=Document(template_path)
     source_text='\n'.join(p.text for p in iter_paragraphs(doc))
     placeholders=set(TOKEN_RE.findall(source_text))
     replacements=make_replacements(spec)
+    # Authentic extracted shells have source bookmarks instead of MVP {{TOKENS}}.
+    # Their locators are evidence of source location, NOT a verified adaptation plan.
+    # Never silently alter the original study's statistical content or footnotes.
+    if not placeholders and locator_map_path:
+        return {
+            'template_path': str(template_path),
+            'locator_map_path': str(locator_map_path),
+            'editing_mode': 'source_bookmarks_requires_adaptation',
+            'bookmark_count': len(doc.part.element.xpath('.//w:bookmarkStart')),
+            'replacements': {},
+            'missing_placeholders': [],
+            'unexpected_placeholders': [],
+            'safe_to_generate': False,
+            'reason': 'The authentic source DOCX has bookmarks, not MVP token placeholders. '
+                      'Source-to-target element mappings and footnote edits have not '
+                      'yet been validated; the generator will not fabricate a shell.',
+        }
     required=set(replacements)
     missing=sorted(required-placeholders)
     unexpected=sorted(placeholders-required)
@@ -56,8 +73,8 @@ def plan_modifications(template_path,spec):
             'safe_to_generate':not missing and not unexpected and bool(placeholders),
             'warning':'A split-run placeholder can consolidate runs in its paragraph; review DOCX formatting.'}
 
-def generate_shell(template_path,spec,out_path):
-    plan=plan_modifications(template_path,spec)
+def generate_shell(template_path,spec,out_path,locator_map_path=None):
+    plan=plan_modifications(template_path,spec,locator_map_path=locator_map_path)
     if not plan['safe_to_generate']:
         return None,plan
     doc=Document(template_path)

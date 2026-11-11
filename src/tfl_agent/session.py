@@ -27,7 +27,7 @@ class TFLSession:
 
     def __init__(self, *, sap_path, library_path, schema_path, prompts_dir,
                  output_dir, llm, content_list_path=None, tfl_id=None,
-                 title=None, tfl_index=0, allow_review=False):
+                 title=None, tfl_index=0, allow_review=False, sap_body_page_range=None):
         self.sap_path=Path(sap_path).resolve()
         self.library_path=Path(library_path).resolve()
         self.schema_path=Path(schema_path).resolve()
@@ -39,6 +39,7 @@ class TFLSession:
         self.title=title
         self.tfl_index=tfl_index
         self.allow_review=allow_review
+        self.sap_body_page_range=sap_body_page_range
         self.sap: dict[str,Any]|None=None
         self.inventory: list[dict]|None=None
         self.identification_mode: str|None=None
@@ -78,6 +79,13 @@ class TFLSession:
     def step1_parse(self):
         self.sap,self.inventory,self.identification_mode=parse_inputs(
             self.sap_path,self.content_list_path,self.tfl_id,self.title)
+        if self.sap_body_page_range is not None:
+            a,b=self.sap_body_page_range
+            if not (isinstance(a,int) and isinstance(b,int) and 1<=a<=b<=self.sap['pages']):
+                raise ValueError('sap_body_page_range must be physical PDF pages (start,end) within this PDF')
+            self.sap['blocks']=[x for x in self.sap['blocks'] if a<=x['page']<=b]
+            if not self.sap['blocks']:
+                raise ValueError('No selectable SAP body text in the requested PDF page range')
         self.library=load_library(self.library_path)
         if not 0<=self.tfl_index<len(self.inventory):
             raise IndexError('tfl_index is out of range for the identified target inventory')
@@ -98,6 +106,9 @@ class TFLSession:
             'target_count':len(self.inventory),
             'selected_target':self.tfl,
             'loaded_templates':len(self.library['templates']),
+            'library_format':self.library['format'],
+            'library_index_mode':self.library['index_mode'],
+            'sap_body_page_range':self.sap_body_page_range,
         }
 
     def step2_build_specification(self):
@@ -128,7 +139,8 @@ class TFLSession:
         self._require('matches','Step 3')
         if self.selection is None:
             return {'safe_to_generate':False,'reason':'No unique template above threshold'}
-        return plan_modifications(self.selection['source_path'],self.spec)
+        return plan_modifications(self.selection['source_path'],self.spec,
+                                  locator_map_path=self.selection['template'].get('locator_map_path'))
 
     def step4_generate_shell(self):
         self._require('matches','Step 3')
@@ -150,7 +162,7 @@ class TFLSession:
         if self.shell_path is None:
             self.shell_status='needs_review'
             return {'status':self.shell_status,'shell_path':None,
-                    'issues':['Unverified DOCX template placeholders']+
+                    'issues':[self.plan.get('reason','Unverified DOCX template placeholders')]+
                     [f'Missing: {x}' for x in self.plan['missing_placeholders']]+
                     [f'Unexpected: {x}' for x in self.plan['unexpected_placeholders']]}
         self.shell_status='generated' if self.spec['readiness']=='ready' else 'draft_needs_review'
@@ -195,6 +207,8 @@ class TFLSession:
         })
         write_json(self.output_dir/'Generation_Rationale.json',{
             'tfl_id':self.tfl['tfl_id'],'selected_template_id':record['template_id'],
+            'selected_template_explanation':self.selection.get('explanation') if self.selection else None,
+            'modification_plan':self.plan,
             'retrieval_candidates':[
                 {k:v for k,v in m.items() if k not in ('source_path','template')}
                 for m in (self.matches or [])
