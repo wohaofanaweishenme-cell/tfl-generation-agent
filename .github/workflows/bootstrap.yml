@@ -43,7 +43,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git rm -f _bootstrap/project_payload.b64
-          git rm -f .github/workflows/bootstrap.yml
+          rm -f .github/workflows/tests.yml
           git add -A
           git commit -m "Import complete TFL Agent MVP, notebooks and demo fixtures"
           git push origin HEAD:main
