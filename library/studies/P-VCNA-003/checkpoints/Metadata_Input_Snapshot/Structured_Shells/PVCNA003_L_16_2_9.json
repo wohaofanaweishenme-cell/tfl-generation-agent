@@ -1,0 +1,4937 @@
+{
+  "schema_version": "2.4",
+  "template_id": "PVCNA003_L_16_2_9",
+  "output_type": "listing",
+  "structural_family": "listing",
+  "extraction_status": "complete",
+  "source_regions": [
+    {
+      "document_id": "SAP_001_11",
+      "pdf_page": 74,
+      "bbox": [
+        0,
+        0,
+        841.9200000000001,
+        595.32
+      ],
+      "coordinate_system": "pdf_points_top_left"
+    }
+  ],
+  "source_docx_locations": [],
+  "physical_blocks": [
+    {
+      "block_id": "B00057",
+      "kind": "other",
+      "display_order": 0,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            624.19,
+            35.50716,
+            770.9195200000001,
+            47.05079999999998
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "VCN Biosciences S.L. P-VCNA-003",
+      "source_element_ids": [
+        "E00082"
+      ],
+      "notes": "Corporate source header wrapper; retained for traceability, separate from shell title/header."
+    },
+    {
+      "block_id": "B00058",
+      "kind": "other",
+      "display_order": 1,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            678.58,
+            47.1471600000001,
+            770.8494400000001,
+            58.69080000000008
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Statistical Analysis Plan",
+      "source_element_ids": [
+        "E00083"
+      ],
+      "notes": "Corporate source header wrapper; retained for traceability, separate from shell title/header."
+    },
+    {
+      "block_id": "B00059",
+      "kind": "placeholder",
+      "display_order": 2,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            90.504,
+            65.50999999999999,
+            735.433,
+            74.50999999999999
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "P-VCNA-003 ddMMMyyyy HH:MM",
+      "source_element_ids": [
+        "E00084",
+        "E00085",
+        "E00086"
+      ],
+      "notes": null
+    },
+    {
+      "block_id": "B00060",
+      "kind": "title",
+      "display_order": 3,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            386.93,
+            76.55000000000007,
+            474.422,
+            85.55000000000007
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Listing 16.2.9 Vital Signs",
+      "source_element_ids": [
+        "E00087"
+      ],
+      "notes": null
+    },
+    {
+      "block_id": "B00061",
+      "kind": "placeholder",
+      "display_order": 4,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            90.504,
+            98.51000000000005,
+            114.78200000000001,
+            107.51000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "<Arm>",
+      "source_element_ids": [
+        "E00088",
+        "E00089"
+      ],
+      "notes": null
+    },
+    {
+      "block_id": "B00001",
+      "kind": "body",
+      "display_order": 5,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            91,
+            109,
+            134,
+            150
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Patient\nnumber",
+      "source_element_ids": [
+        "E00001"
+      ],
+      "notes": "cell_id=CELL00001; row=P01_H001; column=P01_C01; spans=1x1; header"
+    },
+    {
+      "block_id": "B00002",
+      "kind": "body",
+      "display_order": 6,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            134,
+            109,
+            173,
+            150
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Visit",
+      "source_element_ids": [
+        "E00002"
+      ],
+      "notes": "cell_id=CELL00002; row=P01_H001; column=P01_C02; spans=1x1; header"
+    },
+    {
+      "block_id": "B00003",
+      "kind": "body",
+      "display_order": 7,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            173,
+            109,
+            237,
+            150
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Date/ Time",
+      "source_element_ids": [
+        "E00003"
+      ],
+      "notes": "cell_id=CELL00003; row=P01_H001; column=P01_C03; spans=1x1; header"
+    },
+    {
+      "block_id": "B00004",
+      "kind": "body",
+      "display_order": 8,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            237,
+            109,
+            301,
+            150
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Body\nTemperature\n(°C)",
+      "source_element_ids": [
+        "E00004"
+      ],
+      "notes": "cell_id=CELL00004; row=P01_H001; column=P01_C04; spans=1x1; header"
+    },
+    {
+      "block_id": "B00005",
+      "kind": "body",
+      "display_order": 9,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            301,
+            109,
+            352,
+            150
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Weight\n(kg)",
+      "source_element_ids": [
+        "E00005"
+      ],
+      "notes": "cell_id=CELL00005; row=P01_H001; column=P01_C05; spans=1x1; header"
+    },
+    {
+      "block_id": "B00006",
+      "kind": "body",
+      "display_order": 10,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            352,
+            109,
+            417,
+            150
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Systolic BP\n(mmHg)",
+      "source_element_ids": [
+        "E00006"
+      ],
+      "notes": "cell_id=CELL00006; row=P01_H001; column=P01_C06; spans=1x1; header"
+    },
+    {
+      "block_id": "B00007",
+      "kind": "body",
+      "display_order": 11,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            417,
+            109,
+            478,
+            150
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Diastolic BP\n(mmHg)",
+      "source_element_ids": [
+        "E00007"
+      ],
+      "notes": "cell_id=CELL00007; row=P01_H001; column=P01_C07; spans=1x1; header"
+    },
+    {
+      "block_id": "B00008",
+      "kind": "body",
+      "display_order": 12,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            478,
+            109,
+            543,
+            150
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Pulse rate\n(bpm)",
+      "source_element_ids": [
+        "E00008"
+      ],
+      "notes": "cell_id=CELL00008; row=P01_H001; column=P01_C08; spans=1x1; header"
+    },
+    {
+      "block_id": "B00009",
+      "kind": "body",
+      "display_order": 13,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            543,
+            109,
+            619,
+            150
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Respirations\n(breaths/min)",
+      "source_element_ids": [
+        "E00009"
+      ],
+      "notes": "cell_id=CELL00009; row=P01_H001; column=P01_C09; spans=1x1; header"
+    },
+    {
+      "block_id": "B00010",
+      "kind": "body",
+      "display_order": 14,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            619,
+            109,
+            696,
+            150
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Review",
+      "source_element_ids": [
+        "E00010"
+      ],
+      "notes": "cell_id=CELL00010; row=P01_H001; column=P01_C10; spans=1x1; header"
+    },
+    {
+      "block_id": "B00011",
+      "kind": "body",
+      "display_order": 15,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            696,
+            109,
+            780,
+            150
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Comments",
+      "source_element_ids": [
+        "E00011"
+      ],
+      "notes": "cell_id=CELL00011; row=P01_H001; column=P01_C11; spans=1x1; header"
+    },
+    {
+      "block_id": "B00012",
+      "kind": "placeholder",
+      "display_order": 16,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            91,
+            153.43000000000006,
+            134,
+            197.38000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xxxxxxx",
+      "source_element_ids": [
+        "E00012",
+        "E00013"
+      ],
+      "notes": "cell_id=CELL00012; row=P01_R001; column=P01_C01; spans=1x1; body"
+    },
+    {
+      "block_id": "B00013",
+      "kind": "placeholder",
+      "display_order": 17,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            134,
+            153.43000000000006,
+            173,
+            197.38000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xxxxx",
+      "source_element_ids": [
+        "E00014",
+        "E00015"
+      ],
+      "notes": "cell_id=CELL00013; row=P01_R001; column=P01_C02; spans=1x1; body"
+    },
+    {
+      "block_id": "B00014",
+      "kind": "placeholder",
+      "display_order": 18,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            173,
+            153.43000000000006,
+            237,
+            197.38000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xxxxxxxxTxx:xx",
+      "source_element_ids": [
+        "E00016",
+        "E00017"
+      ],
+      "notes": "cell_id=CELL00014; row=P01_R001; column=P01_C03; spans=1x1; body"
+    },
+    {
+      "block_id": "B00015",
+      "kind": "placeholder",
+      "display_order": 19,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            237,
+            153.43000000000006,
+            301,
+            197.38000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xx",
+      "source_element_ids": [
+        "E00018",
+        "E00019"
+      ],
+      "notes": "cell_id=CELL00015; row=P01_R001; column=P01_C04; spans=1x1; body"
+    },
+    {
+      "block_id": "B00016",
+      "kind": "placeholder",
+      "display_order": 20,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            301,
+            153.43000000000006,
+            352,
+            197.38000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xx",
+      "source_element_ids": [
+        "E00020",
+        "E00021"
+      ],
+      "notes": "cell_id=CELL00016; row=P01_R001; column=P01_C05; spans=1x1; body"
+    },
+    {
+      "block_id": "B00017",
+      "kind": "placeholder",
+      "display_order": 21,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            352,
+            153.43000000000006,
+            417,
+            197.38000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xx",
+      "source_element_ids": [
+        "E00022",
+        "E00023"
+      ],
+      "notes": "cell_id=CELL00017; row=P01_R001; column=P01_C06; spans=1x1; body"
+    },
+    {
+      "block_id": "B00018",
+      "kind": "placeholder",
+      "display_order": 22,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            417,
+            153.43000000000006,
+            478,
+            197.38000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xx",
+      "source_element_ids": [
+        "E00024",
+        "E00025"
+      ],
+      "notes": "cell_id=CELL00018; row=P01_R001; column=P01_C07; spans=1x1; body"
+    },
+    {
+      "block_id": "B00019",
+      "kind": "placeholder",
+      "display_order": 23,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            478,
+            153.43000000000006,
+            543,
+            197.38000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xx",
+      "source_element_ids": [
+        "E00026",
+        "E00027"
+      ],
+      "notes": "cell_id=CELL00019; row=P01_R001; column=P01_C08; spans=1x1; body"
+    },
+    {
+      "block_id": "B00020",
+      "kind": "body",
+      "display_order": 24,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            543,
+            153.43000000000006,
+            619,
+            197.38000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "",
+      "source_element_ids": [
+        "E00028"
+      ],
+      "notes": "cell_id=CELL00020; row=P01_R001; column=P01_C09; spans=1x1; body"
+    },
+    {
+      "block_id": "B00021",
+      "kind": "body",
+      "display_order": 25,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            619,
+            153.43000000000006,
+            696,
+            197.38000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Normal/\nAbnormal NCS/\nAbnormal CS",
+      "source_element_ids": [
+        "E00029"
+      ],
+      "notes": "cell_id=CELL00021; row=P01_R001; column=P01_C10; spans=1x1; body"
+    },
+    {
+      "block_id": "B00022",
+      "kind": "placeholder",
+      "display_order": 26,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            696,
+            153.43000000000006,
+            780,
+            197.38000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xxxxxxxxx",
+      "source_element_ids": [
+        "E00030",
+        "E00031"
+      ],
+      "notes": "cell_id=CELL00022; row=P01_R001; column=P01_C11; spans=1x1; body"
+    },
+    {
+      "block_id": "B00023",
+      "kind": "body",
+      "display_order": 27,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            91,
+            197.38000000000005,
+            134,
+            241.42000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "",
+      "source_element_ids": [
+        "E00032"
+      ],
+      "notes": "cell_id=CELL00023; row=P01_R002; column=P01_C01; spans=1x1; body"
+    },
+    {
+      "block_id": "B00024",
+      "kind": "placeholder",
+      "display_order": 28,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            134,
+            197.38000000000005,
+            173,
+            241.42000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xxxxx",
+      "source_element_ids": [
+        "E00033",
+        "E00034"
+      ],
+      "notes": "cell_id=CELL00024; row=P01_R002; column=P01_C02; spans=1x1; body"
+    },
+    {
+      "block_id": "B00025",
+      "kind": "placeholder",
+      "display_order": 29,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            173,
+            197.38000000000005,
+            237,
+            241.42000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xxxxxxxxTxx:xx",
+      "source_element_ids": [
+        "E00035",
+        "E00036"
+      ],
+      "notes": "cell_id=CELL00025; row=P01_R002; column=P01_C03; spans=1x1; body"
+    },
+    {
+      "block_id": "B00026",
+      "kind": "placeholder",
+      "display_order": 30,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            237,
+            197.38000000000005,
+            301,
+            241.42000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xx",
+      "source_element_ids": [
+        "E00037",
+        "E00038"
+      ],
+      "notes": "cell_id=CELL00026; row=P01_R002; column=P01_C04; spans=1x1; body"
+    },
+    {
+      "block_id": "B00027",
+      "kind": "placeholder",
+      "display_order": 31,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            301,
+            197.38000000000005,
+            352,
+            241.42000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xx",
+      "source_element_ids": [
+        "E00039",
+        "E00040"
+      ],
+      "notes": "cell_id=CELL00027; row=P01_R002; column=P01_C05; spans=1x1; body"
+    },
+    {
+      "block_id": "B00028",
+      "kind": "placeholder",
+      "display_order": 32,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            352,
+            197.38000000000005,
+            417,
+            241.42000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xx",
+      "source_element_ids": [
+        "E00041",
+        "E00042"
+      ],
+      "notes": "cell_id=CELL00028; row=P01_R002; column=P01_C06; spans=1x1; body"
+    },
+    {
+      "block_id": "B00029",
+      "kind": "placeholder",
+      "display_order": 33,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            417,
+            197.38000000000005,
+            478,
+            241.42000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xx",
+      "source_element_ids": [
+        "E00043",
+        "E00044"
+      ],
+      "notes": "cell_id=CELL00029; row=P01_R002; column=P01_C07; spans=1x1; body"
+    },
+    {
+      "block_id": "B00030",
+      "kind": "placeholder",
+      "display_order": 34,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            478,
+            197.38000000000005,
+            543,
+            241.42000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xx",
+      "source_element_ids": [
+        "E00045",
+        "E00046"
+      ],
+      "notes": "cell_id=CELL00030; row=P01_R002; column=P01_C08; spans=1x1; body"
+    },
+    {
+      "block_id": "B00031",
+      "kind": "body",
+      "display_order": 35,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            543,
+            197.38000000000005,
+            619,
+            241.42000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "",
+      "source_element_ids": [
+        "E00047"
+      ],
+      "notes": "cell_id=CELL00031; row=P01_R002; column=P01_C09; spans=1x1; body"
+    },
+    {
+      "block_id": "B00032",
+      "kind": "body",
+      "display_order": 36,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            619,
+            197.38000000000005,
+            696,
+            241.42000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Normal/\nAbnormal NCS/\nAbnormal CS",
+      "source_element_ids": [
+        "E00048"
+      ],
+      "notes": "cell_id=CELL00032; row=P01_R002; column=P01_C10; spans=1x1; body"
+    },
+    {
+      "block_id": "B00033",
+      "kind": "placeholder",
+      "display_order": 37,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            696,
+            197.38000000000005,
+            780,
+            241.42000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xxxxxxxxx",
+      "source_element_ids": [
+        "E00049",
+        "E00050"
+      ],
+      "notes": "cell_id=CELL00033; row=P01_R002; column=P01_C11; spans=1x1; body"
+    },
+    {
+      "block_id": "B00034",
+      "kind": "body",
+      "display_order": 38,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            91,
+            241.42000000000002,
+            134,
+            274.42
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "",
+      "source_element_ids": [
+        "E00051"
+      ],
+      "notes": "cell_id=CELL00034; row=P01_R003; column=P01_C01; spans=1x1; body"
+    },
+    {
+      "block_id": "B00035",
+      "kind": "placeholder",
+      "display_order": 39,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            134,
+            241.42000000000002,
+            173,
+            274.42
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xxxxx",
+      "source_element_ids": [
+        "E00052",
+        "E00053"
+      ],
+      "notes": "cell_id=CELL00035; row=P01_R003; column=P01_C02; spans=1x1; body"
+    },
+    {
+      "block_id": "B00036",
+      "kind": "placeholder",
+      "display_order": 40,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            173,
+            241.42000000000002,
+            237,
+            274.42
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xxxxxxxxTxx:xx",
+      "source_element_ids": [
+        "E00054",
+        "E00055"
+      ],
+      "notes": "cell_id=CELL00036; row=P01_R003; column=P01_C03; spans=1x1; body"
+    },
+    {
+      "block_id": "B00037",
+      "kind": "placeholder",
+      "display_order": 41,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            237,
+            241.42000000000002,
+            301,
+            274.42
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xx",
+      "source_element_ids": [
+        "E00056",
+        "E00057"
+      ],
+      "notes": "cell_id=CELL00037; row=P01_R003; column=P01_C04; spans=1x1; body"
+    },
+    {
+      "block_id": "B00038",
+      "kind": "placeholder",
+      "display_order": 42,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            301,
+            241.42000000000002,
+            352,
+            274.42
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xx",
+      "source_element_ids": [
+        "E00058",
+        "E00059"
+      ],
+      "notes": "cell_id=CELL00038; row=P01_R003; column=P01_C05; spans=1x1; body"
+    },
+    {
+      "block_id": "B00039",
+      "kind": "placeholder",
+      "display_order": 43,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            352,
+            241.42000000000002,
+            417,
+            274.42
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xx",
+      "source_element_ids": [
+        "E00060",
+        "E00061"
+      ],
+      "notes": "cell_id=CELL00039; row=P01_R003; column=P01_C06; spans=1x1; body"
+    },
+    {
+      "block_id": "B00040",
+      "kind": "placeholder",
+      "display_order": 44,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            417,
+            241.42000000000002,
+            478,
+            274.42
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xx",
+      "source_element_ids": [
+        "E00062",
+        "E00063"
+      ],
+      "notes": "cell_id=CELL00040; row=P01_R003; column=P01_C07; spans=1x1; body"
+    },
+    {
+      "block_id": "B00041",
+      "kind": "placeholder",
+      "display_order": 45,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            478,
+            241.42000000000002,
+            543,
+            274.42
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xx",
+      "source_element_ids": [
+        "E00064",
+        "E00065"
+      ],
+      "notes": "cell_id=CELL00041; row=P01_R003; column=P01_C08; spans=1x1; body"
+    },
+    {
+      "block_id": "B00042",
+      "kind": "body",
+      "display_order": 46,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            543,
+            241.42000000000002,
+            619,
+            274.42
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "",
+      "source_element_ids": [
+        "E00066"
+      ],
+      "notes": "cell_id=CELL00042; row=P01_R003; column=P01_C09; spans=1x1; body"
+    },
+    {
+      "block_id": "B00043",
+      "kind": "body",
+      "display_order": 47,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            619,
+            241.42000000000002,
+            696,
+            274.42
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Normal/\nAbnormal NCS/\nAbnormal CS",
+      "source_element_ids": [
+        "E00067"
+      ],
+      "notes": "cell_id=CELL00043; row=P01_R003; column=P01_C10; spans=1x1; body"
+    },
+    {
+      "block_id": "B00044",
+      "kind": "placeholder",
+      "display_order": 48,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            696,
+            241.42000000000002,
+            780,
+            274.42
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xxxxxxxxx",
+      "source_element_ids": [
+        "E00068",
+        "E00069"
+      ],
+      "notes": "cell_id=CELL00044; row=P01_R003; column=P01_C11; spans=1x1; body"
+    },
+    {
+      "block_id": "B00045",
+      "kind": "body",
+      "display_order": 49,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            91,
+            274.42,
+            134,
+            288
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "…",
+      "source_element_ids": [
+        "E00070"
+      ],
+      "notes": "cell_id=CELL00045; row=P01_R004; column=P01_C01; spans=1x1; body"
+    },
+    {
+      "block_id": "B00046",
+      "kind": "body",
+      "display_order": 50,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            134,
+            274.42,
+            173,
+            288
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "",
+      "source_element_ids": [
+        "E00071"
+      ],
+      "notes": "cell_id=CELL00046; row=P01_R004; column=P01_C02; spans=1x1; body"
+    },
+    {
+      "block_id": "B00047",
+      "kind": "body",
+      "display_order": 51,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            173,
+            274.42,
+            237,
+            288
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "",
+      "source_element_ids": [
+        "E00072"
+      ],
+      "notes": "cell_id=CELL00047; row=P01_R004; column=P01_C03; spans=1x1; body"
+    },
+    {
+      "block_id": "B00048",
+      "kind": "body",
+      "display_order": 52,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            237,
+            274.42,
+            301,
+            288
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "",
+      "source_element_ids": [
+        "E00073"
+      ],
+      "notes": "cell_id=CELL00048; row=P01_R004; column=P01_C04; spans=1x1; body"
+    },
+    {
+      "block_id": "B00049",
+      "kind": "body",
+      "display_order": 53,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            301,
+            274.42,
+            352,
+            288
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "",
+      "source_element_ids": [
+        "E00074"
+      ],
+      "notes": "cell_id=CELL00049; row=P01_R004; column=P01_C05; spans=1x1; body"
+    },
+    {
+      "block_id": "B00050",
+      "kind": "body",
+      "display_order": 54,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            352,
+            274.42,
+            417,
+            288
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "",
+      "source_element_ids": [
+        "E00075"
+      ],
+      "notes": "cell_id=CELL00050; row=P01_R004; column=P01_C06; spans=1x1; body"
+    },
+    {
+      "block_id": "B00051",
+      "kind": "body",
+      "display_order": 55,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            417,
+            274.42,
+            478,
+            288
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "",
+      "source_element_ids": [
+        "E00076"
+      ],
+      "notes": "cell_id=CELL00051; row=P01_R004; column=P01_C07; spans=1x1; body"
+    },
+    {
+      "block_id": "B00052",
+      "kind": "body",
+      "display_order": 56,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            478,
+            274.42,
+            543,
+            288
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "",
+      "source_element_ids": [
+        "E00077"
+      ],
+      "notes": "cell_id=CELL00052; row=P01_R004; column=P01_C08; spans=1x1; body"
+    },
+    {
+      "block_id": "B00053",
+      "kind": "body",
+      "display_order": 57,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            543,
+            274.42,
+            619,
+            288
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "",
+      "source_element_ids": [
+        "E00078"
+      ],
+      "notes": "cell_id=CELL00053; row=P01_R004; column=P01_C09; spans=1x1; body"
+    },
+    {
+      "block_id": "B00054",
+      "kind": "body",
+      "display_order": 58,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            619,
+            274.42,
+            696,
+            288
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "",
+      "source_element_ids": [
+        "E00079"
+      ],
+      "notes": "cell_id=CELL00054; row=P01_R004; column=P01_C10; spans=1x1; body"
+    },
+    {
+      "block_id": "B00055",
+      "kind": "body",
+      "display_order": 59,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            696,
+            274.42,
+            780,
+            288
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "",
+      "source_element_ids": [
+        "E00080"
+      ],
+      "notes": "cell_id=CELL00055; row=P01_R004; column=P01_C11; spans=1x1; body"
+    },
+    {
+      "block_id": "B00056",
+      "kind": "footnote",
+      "display_order": 60,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            95.904,
+            309.76000000000005,
+            292.481,
+            318.76000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "CS=Clinically Significant; NCS=Not Clinically Significant",
+      "source_element_ids": [
+        "E00081"
+      ],
+      "notes": "footnote_id=FN001"
+    },
+    {
+      "block_id": "B00062",
+      "kind": "placeholder",
+      "display_order": 61,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            90.504,
+            338.32000000000005,
+            144.041,
+            347.32000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Path\\Filename",
+      "source_element_ids": [
+        "E00090"
+      ],
+      "notes": null
+    },
+    {
+      "block_id": "B00063",
+      "kind": "other",
+      "display_order": 62,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            95.904,
+            519.975,
+            765.751,
+            530.4060000000001
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Form STATt004 Page 100 of 112",
+      "source_element_ids": [
+        "E00091"
+      ],
+      "notes": "Corporate form footer retained separately; not a clinical footnote."
+    },
+    {
+      "block_id": "B00064",
+      "kind": "other",
+      "display_order": 63,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            95.904,
+            530.4150000000001,
+            195.88400000000001,
+            540.846
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Version Date: 20 May 2021",
+      "source_element_ids": [
+        "E00092"
+      ],
+      "notes": "Corporate form footer retained separately; not a clinical footnote."
+    }
+  ],
+  "source_elements": [
+    {
+      "element_id": "E00001",
+      "element_type": "header_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00001",
+          "docx_locator": "bookmark:O_O00001",
+          "source_text": "Patient\nnumber",
+          "role": "header_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_47550d6a2dc4a3ce"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00002",
+      "element_type": "header_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00002",
+          "docx_locator": "bookmark:O_O00002",
+          "source_text": "Visit",
+          "role": "header_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_bf54fcf6eaa40dda"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00003",
+      "element_type": "header_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00003",
+          "docx_locator": "bookmark:O_O00003",
+          "source_text": "Date/ Time",
+          "role": "header_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_f81f7b004a8bded9"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00004",
+      "element_type": "header_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00004",
+          "docx_locator": "bookmark:O_O00004",
+          "source_text": "Body\nTemperature\n(°C)",
+          "role": "header_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_690b5358e4422f69"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00005",
+      "element_type": "header_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00005",
+          "docx_locator": "bookmark:O_O00005",
+          "source_text": "Weight\n(kg)",
+          "role": "header_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_83df85cea44de5a3"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00006",
+      "element_type": "header_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00006",
+          "docx_locator": "bookmark:O_O00006",
+          "source_text": "Systolic BP\n(mmHg)",
+          "role": "header_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_05443f4e9089927c"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00007",
+      "element_type": "header_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00007",
+          "docx_locator": "bookmark:O_O00007",
+          "source_text": "Diastolic BP\n(mmHg)",
+          "role": "header_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_b37481470ee0048f"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00008",
+      "element_type": "header_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00008",
+          "docx_locator": "bookmark:O_O00008",
+          "source_text": "Pulse rate\n(bpm)",
+          "role": "header_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_22d7cb34d79333a7"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00009",
+      "element_type": "header_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00009",
+          "docx_locator": "bookmark:O_O00009",
+          "source_text": "Respirations\n(breaths/min)",
+          "role": "header_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_cd4b0598f971a035"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00010",
+      "element_type": "header_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00010",
+          "docx_locator": "bookmark:O_O00010",
+          "source_text": "Review",
+          "role": "header_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_995b288fff18e379"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00011",
+      "element_type": "header_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00011",
+          "docx_locator": "bookmark:O_O00011",
+          "source_text": "Comments",
+          "role": "header_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_cb06a502bd1e1dfd"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00012",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00012",
+          "docx_locator": "bookmark:O_O00012",
+          "source_text": "xxxxxxx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_e7e13510af9fe2ed"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00013",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00013",
+          "docx_locator": "bookmark:O_O00013",
+          "source_text": "xxxxxxx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_2f56e09ce9002ed2"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00012; no target substitution requested."
+    },
+    {
+      "element_id": "E00014",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00014",
+          "docx_locator": "bookmark:O_O00014",
+          "source_text": "xxxxx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_e7048f2d80ff05a7"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00015",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00015",
+          "docx_locator": "bookmark:O_O00015",
+          "source_text": "xxxxx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_8432ab3752213d4f"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00013; no target substitution requested."
+    },
+    {
+      "element_id": "E00016",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00016",
+          "docx_locator": "bookmark:O_O00016",
+          "source_text": "xxxxxxxxTxx:xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_bb7b2e7de49fc500"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00017",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00017",
+          "docx_locator": "bookmark:O_O00017",
+          "source_text": "xxxxxxxxTxx:xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_2e0cdbf099849e4b"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00014; no target substitution requested."
+    },
+    {
+      "element_id": "E00018",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00018",
+          "docx_locator": "bookmark:O_O00018",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_0f733e0394935983"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00019",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00019",
+          "docx_locator": "bookmark:O_O00019",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_32f28e7ff27c356b"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00015; no target substitution requested."
+    },
+    {
+      "element_id": "E00020",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00020",
+          "docx_locator": "bookmark:O_O00020",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_57b92f5e90e98616"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00021",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00021",
+          "docx_locator": "bookmark:O_O00021",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_0c5f2d77c0ee317b"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00016; no target substitution requested."
+    },
+    {
+      "element_id": "E00022",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00022",
+          "docx_locator": "bookmark:O_O00022",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_70088ae3270b6dde"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00023",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00023",
+          "docx_locator": "bookmark:O_O00023",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_f860ee08bd71ff52"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00017; no target substitution requested."
+    },
+    {
+      "element_id": "E00024",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00024",
+          "docx_locator": "bookmark:O_O00024",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_9df010b641fd3763"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00025",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00025",
+          "docx_locator": "bookmark:O_O00025",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_13a42be1a5e61a71"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00018; no target substitution requested."
+    },
+    {
+      "element_id": "E00026",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00026",
+          "docx_locator": "bookmark:O_O00026",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_95874dd7fe542054"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00027",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00027",
+          "docx_locator": "bookmark:O_O00027",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_dd01a7d9332a7dcd"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00019; no target substitution requested."
+    },
+    {
+      "element_id": "E00028",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00028",
+          "docx_locator": "bookmark:O_O00028",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_7082fbe407ff5549"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00029",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00029",
+          "docx_locator": "bookmark:O_O00029",
+          "source_text": "Normal/\nAbnormal NCS/\nAbnormal CS",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_c8cac24916b2d62a"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00030",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00030",
+          "docx_locator": "bookmark:O_O00030",
+          "source_text": "xxxxxxxxx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_4f8755797d3ec397"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00031",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00031",
+          "docx_locator": "bookmark:O_O00031",
+          "source_text": "xxxxxxxxx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_bcf047c0299261a3"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00022; no target substitution requested."
+    },
+    {
+      "element_id": "E00032",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00032",
+          "docx_locator": "bookmark:O_O00032",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_e3a6856d5cb4029b"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00033",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00033",
+          "docx_locator": "bookmark:O_O00033",
+          "source_text": "xxxxx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_17dddeb5f48164bb"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00034",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00034",
+          "docx_locator": "bookmark:O_O00034",
+          "source_text": "xxxxx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_483d0a7c0e68bb53"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00024; no target substitution requested."
+    },
+    {
+      "element_id": "E00035",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00035",
+          "docx_locator": "bookmark:O_O00035",
+          "source_text": "xxxxxxxxTxx:xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_74aa42114026cec8"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00036",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00036",
+          "docx_locator": "bookmark:O_O00036",
+          "source_text": "xxxxxxxxTxx:xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_33a4e0ba5cb27d4d"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00025; no target substitution requested."
+    },
+    {
+      "element_id": "E00037",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00037",
+          "docx_locator": "bookmark:O_O00037",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_e67744e97faec489"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00038",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00038",
+          "docx_locator": "bookmark:O_O00038",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_a86118cc1116546d"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00026; no target substitution requested."
+    },
+    {
+      "element_id": "E00039",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00039",
+          "docx_locator": "bookmark:O_O00039",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_9f0aae8dd3293795"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00040",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00040",
+          "docx_locator": "bookmark:O_O00040",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_7b8d5253ba055d35"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00027; no target substitution requested."
+    },
+    {
+      "element_id": "E00041",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00041",
+          "docx_locator": "bookmark:O_O00041",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_9cd8d957b5719d5c"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00042",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00042",
+          "docx_locator": "bookmark:O_O00042",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_799fb1c61d681166"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00028; no target substitution requested."
+    },
+    {
+      "element_id": "E00043",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00043",
+          "docx_locator": "bookmark:O_O00043",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_959fcef917904b34"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00044",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00044",
+          "docx_locator": "bookmark:O_O00044",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_a41d15815bad3570"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00029; no target substitution requested."
+    },
+    {
+      "element_id": "E00045",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00045",
+          "docx_locator": "bookmark:O_O00045",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_4152846e79a5e12e"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00046",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00046",
+          "docx_locator": "bookmark:O_O00046",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_a15bb763364b441a"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00030; no target substitution requested."
+    },
+    {
+      "element_id": "E00047",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00047",
+          "docx_locator": "bookmark:O_O00047",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_c79893518a9b0329"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00048",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00048",
+          "docx_locator": "bookmark:O_O00048",
+          "source_text": "Normal/\nAbnormal NCS/\nAbnormal CS",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_f8509320198e8be8"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00049",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00049",
+          "docx_locator": "bookmark:O_O00049",
+          "source_text": "xxxxxxxxx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_2bfbe85e8392ad15"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00050",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00050",
+          "docx_locator": "bookmark:O_O00050",
+          "source_text": "xxxxxxxxx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_d01a4e2da85b9609"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00033; no target substitution requested."
+    },
+    {
+      "element_id": "E00051",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00051",
+          "docx_locator": "bookmark:O_O00051",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_5603dc6e9f0f674a"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00052",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00052",
+          "docx_locator": "bookmark:O_O00052",
+          "source_text": "xxxxx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_61e289dea299e725"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00053",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00053",
+          "docx_locator": "bookmark:O_O00053",
+          "source_text": "xxxxx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_a16477a1ab590f39"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00035; no target substitution requested."
+    },
+    {
+      "element_id": "E00054",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00054",
+          "docx_locator": "bookmark:O_O00054",
+          "source_text": "xxxxxxxxTxx:xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_6c8d82209ec785a1"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00055",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00055",
+          "docx_locator": "bookmark:O_O00055",
+          "source_text": "xxxxxxxxTxx:xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_bbeb4bd0d2ad8753"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00036; no target substitution requested."
+    },
+    {
+      "element_id": "E00056",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00056",
+          "docx_locator": "bookmark:O_O00056",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_33ab87f8c1a60b8d"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00057",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00057",
+          "docx_locator": "bookmark:O_O00057",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_f896933f80f06a9e"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00037; no target substitution requested."
+    },
+    {
+      "element_id": "E00058",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00058",
+          "docx_locator": "bookmark:O_O00058",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_a23fb0f753e034d5"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00059",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00059",
+          "docx_locator": "bookmark:O_O00059",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_c91dbd4e44333e38"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00038; no target substitution requested."
+    },
+    {
+      "element_id": "E00060",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00060",
+          "docx_locator": "bookmark:O_O00060",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_3c6c41f4164635ff"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00061",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00061",
+          "docx_locator": "bookmark:O_O00061",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_e1ab57d56935a2e6"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00039; no target substitution requested."
+    },
+    {
+      "element_id": "E00062",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00062",
+          "docx_locator": "bookmark:O_O00062",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_dff9373787af4862"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00063",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00063",
+          "docx_locator": "bookmark:O_O00063",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_ff7bcad9a952269d"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00040; no target substitution requested."
+    },
+    {
+      "element_id": "E00064",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00064",
+          "docx_locator": "bookmark:O_O00064",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_17b7253eaee6278b"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00065",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00065",
+          "docx_locator": "bookmark:O_O00065",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_39e81d2ae301843f"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00041; no target substitution requested."
+    },
+    {
+      "element_id": "E00066",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00066",
+          "docx_locator": "bookmark:O_O00066",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_092069c26b9431c2"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00067",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00067",
+          "docx_locator": "bookmark:O_O00067",
+          "source_text": "Normal/\nAbnormal NCS/\nAbnormal CS",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_d202a262b307e619"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00068",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00068",
+          "docx_locator": "bookmark:O_O00068",
+          "source_text": "xxxxxxxxx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_6e15a8b2f833737a"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00069",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00069",
+          "docx_locator": "bookmark:O_O00069",
+          "source_text": "xxxxxxxxx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_e991637f863f9c87"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00044; no target substitution requested."
+    },
+    {
+      "element_id": "E00070",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00070",
+          "docx_locator": "bookmark:O_O00070",
+          "source_text": "…",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_2a638b55723ad720"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00071",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00071",
+          "docx_locator": "bookmark:O_O00071",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_68c2ab196963d469"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00072",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00072",
+          "docx_locator": "bookmark:O_O00072",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_ce0c44d7fc1712d9"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00073",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00073",
+          "docx_locator": "bookmark:O_O00073",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_f41fce447c7468bb"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00074",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00074",
+          "docx_locator": "bookmark:O_O00074",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_b48264b692b88231"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00075",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00075",
+          "docx_locator": "bookmark:O_O00075",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_40ef5d39c12d0dab"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00076",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00076",
+          "docx_locator": "bookmark:O_O00076",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_cc6f981238b09b7a"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00077",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00077",
+          "docx_locator": "bookmark:O_O00077",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_2c404c36a7e08d22"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00078",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00078",
+          "docx_locator": "bookmark:O_O00078",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_aeaf69e29fdfba06"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00079",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00079",
+          "docx_locator": "bookmark:O_O00079",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_ecc7aa3747cc8316"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00080",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00080",
+          "docx_locator": "bookmark:O_O00080",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_13076ae3fec60875"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00081",
+      "element_type": "footnote",
+      "metadata_pointer": "/footnotes/0/exact_text",
+      "occurrences": [
+        {
+          "occurrence_id": "O00081",
+          "docx_locator": "bookmark:O_O00081",
+          "source_text": "CS=Clinically Significant; NCS=Not Clinically Significant",
+          "role": "footnote",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_8c6d44a5dd7cc10c"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Physical note retained; semantic rules deferred. Region recorded by evidence_ref_ids and physical block."
+    },
+    {
+      "element_id": "E00082",
+      "element_type": "other",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00082",
+          "docx_locator": null,
+          "source_text": "VCN Biosciences S.L. P-VCNA-003",
+          "role": "other",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_739537ab7bc4097d"
+          ],
+          "verification_status": "unverified"
+        }
+      ],
+      "notes": "Corporate source header wrapper; retained for traceability, separate from shell title/header. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed."
+    },
+    {
+      "element_id": "E00083",
+      "element_type": "other",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00083",
+          "docx_locator": null,
+          "source_text": "Statistical Analysis Plan",
+          "role": "other",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_f7f31a12762e8ca9"
+          ],
+          "verification_status": "unverified"
+        }
+      ],
+      "notes": "Corporate source header wrapper; retained for traceability, separate from shell title/header. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed."
+    },
+    {
+      "element_id": "E00084",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00084",
+          "docx_locator": "bookmark:O_O00084",
+          "source_text": "P-VCNA-003 ddMMMyyyy HH:MM",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_00b58758a3dbe209"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00085",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00085",
+          "docx_locator": "bookmark:O_O00085",
+          "source_text": "ddMMMyyyy",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_5c712ec479d0a7dd"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Actual source placeholder; no replacement operation."
+    },
+    {
+      "element_id": "E00086",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00086",
+          "docx_locator": "bookmark:O_O00086",
+          "source_text": "HH:MM",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_ed132e78fef31a5c"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Actual source placeholder; no replacement operation."
+    },
+    {
+      "element_id": "E00087",
+      "element_type": "title",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00087",
+          "docx_locator": "bookmark:O_O00087",
+          "source_text": "Listing 16.2.9 Vital Signs",
+          "role": "title",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_b2b8a0fd1172e21a"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00088",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00088",
+          "docx_locator": "bookmark:O_O00088",
+          "source_text": "<Arm>",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_2dac2aaf346644ed"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00089",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00089",
+          "docx_locator": "bookmark:O_O00089",
+          "source_text": "<Arm>",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_2dac2aaf346644ed"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Actual source placeholder; no replacement operation."
+    },
+    {
+      "element_id": "E00090",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00090",
+          "docx_locator": "bookmark:O_O00090",
+          "source_text": "Path\\Filename",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_31dae034299654c0"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00091",
+      "element_type": "other",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00091",
+          "docx_locator": null,
+          "source_text": "Form STATt004 Page 100 of 112",
+          "role": "other",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_d5268ba75545fa56"
+          ],
+          "verification_status": "unverified"
+        }
+      ],
+      "notes": "Corporate form footer retained separately; not a clinical footnote. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed."
+    },
+    {
+      "element_id": "E00092",
+      "element_type": "other",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00092",
+          "docx_locator": null,
+          "source_text": "Version Date: 20 May 2021",
+          "role": "other",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_14bee8aa45b112c0"
+          ],
+          "verification_status": "unverified"
+        }
+      ],
+      "notes": "Corporate form footer retained separately; not a clinical footnote. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed."
+    }
+  ],
+  "occurrence_relations": [],
+  "footnotes": [
+    {
+      "footnote_id": "FN001",
+      "marker": null,
+      "exact_text": "CS=Clinically Significant; NCS=Not Clinically Significant",
+      "applies_to": [],
+      "category": "study_specific",
+      "display_order": 0,
+      "applies_to_refs": [
+        {
+          "target_type": "unknown",
+          "target_id": null,
+          "panel_id": "P01",
+          "mapping_status": "unresolved"
+        }
+      ],
+      "semantic_extraction_status": "needs_review",
+      "semantic_rules": [],
+      "evidence_ref_ids": [
+        "SRC_8c6d44a5dd7cc10c"
+      ]
+    }
+  ],
+  "programming_notes": [],
+  "listing_rows": [
+    {
+      "id": "P01_H001",
+      "order": 0,
+      "panel_id": "P01",
+      "notes": "Header row"
+    },
+    {
+      "id": "P01_R001",
+      "order": 1,
+      "panel_id": "P01",
+      "notes": "Physical source example row or ellipsis row; original blank continuation cells preserved. No patient/record values filled down."
+    },
+    {
+      "id": "P01_R002",
+      "order": 2,
+      "panel_id": "P01",
+      "notes": "Physical source example row or ellipsis row; original blank continuation cells preserved. No patient/record values filled down."
+    },
+    {
+      "id": "P01_R003",
+      "order": 3,
+      "panel_id": "P01",
+      "notes": "Physical source example row or ellipsis row; original blank continuation cells preserved. No patient/record values filled down."
+    },
+    {
+      "id": "P01_R004",
+      "order": 4,
+      "panel_id": "P01",
+      "notes": "Physical source example row or ellipsis row; original blank continuation cells preserved. No patient/record values filled down."
+    }
+  ],
+  "physical_cells": [
+    {
+      "cell_id": "CELL00001",
+      "panel_id": "P01",
+      "row_id": "P01_H001",
+      "column_id": "P01_C01",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "Patient\nnumber",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            91,
+            109,
+            134,
+            150
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00002",
+      "panel_id": "P01",
+      "row_id": "P01_H001",
+      "column_id": "P01_C02",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "Visit",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            134,
+            109,
+            173,
+            150
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00003",
+      "panel_id": "P01",
+      "row_id": "P01_H001",
+      "column_id": "P01_C03",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "Date/ Time",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            173,
+            109,
+            237,
+            150
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00004",
+      "panel_id": "P01",
+      "row_id": "P01_H001",
+      "column_id": "P01_C04",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "Body\nTemperature\n(°C)",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            237,
+            109,
+            301,
+            150
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00005",
+      "panel_id": "P01",
+      "row_id": "P01_H001",
+      "column_id": "P01_C05",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "Weight\n(kg)",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            301,
+            109,
+            352,
+            150
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00006",
+      "panel_id": "P01",
+      "row_id": "P01_H001",
+      "column_id": "P01_C06",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "Systolic BP\n(mmHg)",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            352,
+            109,
+            417,
+            150
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00007",
+      "panel_id": "P01",
+      "row_id": "P01_H001",
+      "column_id": "P01_C07",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "Diastolic BP\n(mmHg)",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            417,
+            109,
+            478,
+            150
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00008",
+      "panel_id": "P01",
+      "row_id": "P01_H001",
+      "column_id": "P01_C08",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "Pulse rate\n(bpm)",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            478,
+            109,
+            543,
+            150
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00009",
+      "panel_id": "P01",
+      "row_id": "P01_H001",
+      "column_id": "P01_C09",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "Respirations\n(breaths/min)",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            543,
+            109,
+            619,
+            150
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00010",
+      "panel_id": "P01",
+      "row_id": "P01_H001",
+      "column_id": "P01_C10",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "Review",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            619,
+            109,
+            696,
+            150
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00011",
+      "panel_id": "P01",
+      "row_id": "P01_H001",
+      "column_id": "P01_C11",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "Comments",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            696,
+            109,
+            780,
+            150
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00012",
+      "panel_id": "P01",
+      "row_id": "P01_R001",
+      "column_id": "P01_C01",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xxxxxxx",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            91,
+            153.43000000000006,
+            134,
+            197.38000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00013",
+      "panel_id": "P01",
+      "row_id": "P01_R001",
+      "column_id": "P01_C02",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xxxxx",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            134,
+            153.43000000000006,
+            173,
+            197.38000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00014",
+      "panel_id": "P01",
+      "row_id": "P01_R001",
+      "column_id": "P01_C03",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xxxxxxxxTxx:xx",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            173,
+            153.43000000000006,
+            237,
+            197.38000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00015",
+      "panel_id": "P01",
+      "row_id": "P01_R001",
+      "column_id": "P01_C04",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xx",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            237,
+            153.43000000000006,
+            301,
+            197.38000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00016",
+      "panel_id": "P01",
+      "row_id": "P01_R001",
+      "column_id": "P01_C05",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xx",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            301,
+            153.43000000000006,
+            352,
+            197.38000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00017",
+      "panel_id": "P01",
+      "row_id": "P01_R001",
+      "column_id": "P01_C06",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xx",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            352,
+            153.43000000000006,
+            417,
+            197.38000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00018",
+      "panel_id": "P01",
+      "row_id": "P01_R001",
+      "column_id": "P01_C07",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xx",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            417,
+            153.43000000000006,
+            478,
+            197.38000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00019",
+      "panel_id": "P01",
+      "row_id": "P01_R001",
+      "column_id": "P01_C08",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xx",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            478,
+            153.43000000000006,
+            543,
+            197.38000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00020",
+      "panel_id": "P01",
+      "row_id": "P01_R001",
+      "column_id": "P01_C09",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "",
+      "is_blank": true,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            543,
+            153.43000000000006,
+            619,
+            197.38000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00021",
+      "panel_id": "P01",
+      "row_id": "P01_R001",
+      "column_id": "P01_C10",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "Normal/\nAbnormal NCS/\nAbnormal CS",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            619,
+            153.43000000000006,
+            696,
+            197.38000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00022",
+      "panel_id": "P01",
+      "row_id": "P01_R001",
+      "column_id": "P01_C11",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xxxxxxxxx",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            696,
+            153.43000000000006,
+            780,
+            197.38000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00023",
+      "panel_id": "P01",
+      "row_id": "P01_R002",
+      "column_id": "P01_C01",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "",
+      "is_blank": true,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            91,
+            197.38000000000005,
+            134,
+            241.42000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00024",
+      "panel_id": "P01",
+      "row_id": "P01_R002",
+      "column_id": "P01_C02",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xxxxx",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            134,
+            197.38000000000005,
+            173,
+            241.42000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00025",
+      "panel_id": "P01",
+      "row_id": "P01_R002",
+      "column_id": "P01_C03",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xxxxxxxxTxx:xx",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            173,
+            197.38000000000005,
+            237,
+            241.42000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00026",
+      "panel_id": "P01",
+      "row_id": "P01_R002",
+      "column_id": "P01_C04",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xx",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            237,
+            197.38000000000005,
+            301,
+            241.42000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00027",
+      "panel_id": "P01",
+      "row_id": "P01_R002",
+      "column_id": "P01_C05",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xx",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            301,
+            197.38000000000005,
+            352,
+            241.42000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00028",
+      "panel_id": "P01",
+      "row_id": "P01_R002",
+      "column_id": "P01_C06",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xx",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            352,
+            197.38000000000005,
+            417,
+            241.42000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00029",
+      "panel_id": "P01",
+      "row_id": "P01_R002",
+      "column_id": "P01_C07",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xx",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            417,
+            197.38000000000005,
+            478,
+            241.42000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00030",
+      "panel_id": "P01",
+      "row_id": "P01_R002",
+      "column_id": "P01_C08",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xx",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            478,
+            197.38000000000005,
+            543,
+            241.42000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00031",
+      "panel_id": "P01",
+      "row_id": "P01_R002",
+      "column_id": "P01_C09",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "",
+      "is_blank": true,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            543,
+            197.38000000000005,
+            619,
+            241.42000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00032",
+      "panel_id": "P01",
+      "row_id": "P01_R002",
+      "column_id": "P01_C10",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "Normal/\nAbnormal NCS/\nAbnormal CS",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            619,
+            197.38000000000005,
+            696,
+            241.42000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00033",
+      "panel_id": "P01",
+      "row_id": "P01_R002",
+      "column_id": "P01_C11",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xxxxxxxxx",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            696,
+            197.38000000000005,
+            780,
+            241.42000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00034",
+      "panel_id": "P01",
+      "row_id": "P01_R003",
+      "column_id": "P01_C01",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "",
+      "is_blank": true,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            91,
+            241.42000000000002,
+            134,
+            274.42
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00035",
+      "panel_id": "P01",
+      "row_id": "P01_R003",
+      "column_id": "P01_C02",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xxxxx",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            134,
+            241.42000000000002,
+            173,
+            274.42
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00036",
+      "panel_id": "P01",
+      "row_id": "P01_R003",
+      "column_id": "P01_C03",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xxxxxxxxTxx:xx",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            173,
+            241.42000000000002,
+            237,
+            274.42
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00037",
+      "panel_id": "P01",
+      "row_id": "P01_R003",
+      "column_id": "P01_C04",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xx",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            237,
+            241.42000000000002,
+            301,
+            274.42
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00038",
+      "panel_id": "P01",
+      "row_id": "P01_R003",
+      "column_id": "P01_C05",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xx",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            301,
+            241.42000000000002,
+            352,
+            274.42
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00039",
+      "panel_id": "P01",
+      "row_id": "P01_R003",
+      "column_id": "P01_C06",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xx",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            352,
+            241.42000000000002,
+            417,
+            274.42
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00040",
+      "panel_id": "P01",
+      "row_id": "P01_R003",
+      "column_id": "P01_C07",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xx",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            417,
+            241.42000000000002,
+            478,
+            274.42
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00041",
+      "panel_id": "P01",
+      "row_id": "P01_R003",
+      "column_id": "P01_C08",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xx",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            478,
+            241.42000000000002,
+            543,
+            274.42
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00042",
+      "panel_id": "P01",
+      "row_id": "P01_R003",
+      "column_id": "P01_C09",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "",
+      "is_blank": true,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            543,
+            241.42000000000002,
+            619,
+            274.42
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00043",
+      "panel_id": "P01",
+      "row_id": "P01_R003",
+      "column_id": "P01_C10",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "Normal/\nAbnormal NCS/\nAbnormal CS",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            619,
+            241.42000000000002,
+            696,
+            274.42
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00044",
+      "panel_id": "P01",
+      "row_id": "P01_R003",
+      "column_id": "P01_C11",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xxxxxxxxx",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            696,
+            241.42000000000002,
+            780,
+            274.42
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00045",
+      "panel_id": "P01",
+      "row_id": "P01_R004",
+      "column_id": "P01_C01",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "…",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            91,
+            274.42,
+            134,
+            288
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00046",
+      "panel_id": "P01",
+      "row_id": "P01_R004",
+      "column_id": "P01_C02",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "",
+      "is_blank": true,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            134,
+            274.42,
+            173,
+            288
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00047",
+      "panel_id": "P01",
+      "row_id": "P01_R004",
+      "column_id": "P01_C03",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "",
+      "is_blank": true,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            173,
+            274.42,
+            237,
+            288
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00048",
+      "panel_id": "P01",
+      "row_id": "P01_R004",
+      "column_id": "P01_C04",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "",
+      "is_blank": true,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            237,
+            274.42,
+            301,
+            288
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00049",
+      "panel_id": "P01",
+      "row_id": "P01_R004",
+      "column_id": "P01_C05",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "",
+      "is_blank": true,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            301,
+            274.42,
+            352,
+            288
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00050",
+      "panel_id": "P01",
+      "row_id": "P01_R004",
+      "column_id": "P01_C06",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "",
+      "is_blank": true,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            352,
+            274.42,
+            417,
+            288
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00051",
+      "panel_id": "P01",
+      "row_id": "P01_R004",
+      "column_id": "P01_C07",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "",
+      "is_blank": true,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            417,
+            274.42,
+            478,
+            288
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00052",
+      "panel_id": "P01",
+      "row_id": "P01_R004",
+      "column_id": "P01_C08",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "",
+      "is_blank": true,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            478,
+            274.42,
+            543,
+            288
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00053",
+      "panel_id": "P01",
+      "row_id": "P01_R004",
+      "column_id": "P01_C09",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "",
+      "is_blank": true,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            543,
+            274.42,
+            619,
+            288
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00054",
+      "panel_id": "P01",
+      "row_id": "P01_R004",
+      "column_id": "P01_C10",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "",
+      "is_blank": true,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            619,
+            274.42,
+            696,
+            288
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00055",
+      "panel_id": "P01",
+      "row_id": "P01_R004",
+      "column_id": "P01_C11",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "",
+      "is_blank": true,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            696,
+            274.42,
+            780,
+            288
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "issue_id": "PVCNA003_L_16_2_9_I001",
+      "template_id": "PVCNA003_L_16_2_9",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Each physical note has its own ID, text, display order, evidence region and source occurrence. Unmarked or unconfirmed scopes remain unknown/unresolved; semantic_rules=[] and needs_review. Marker-supported [a]/[b]/[c] associations are captured where visible.",
+      "status": "open",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_9_I002",
+      "template_id": "PVCNA003_L_16_2_9",
+      "severity": "warning",
+      "category": "true_blank_column",
+      "description": "Respirations (breaths/min) column is physically blank in all displayed example rows. Do not insert xx placeholders or drop the column.",
+      "status": "open",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_9_I003",
+      "template_id": "PVCNA003_L_16_2_9",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.",
+      "status": "open",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    }
+  ],
+  "listing_spec": {
+    "record_unit": null,
+    "columns": [
+      {
+        "id": "P01_C01",
+        "order": 0,
+        "label": "Patient\nnumber",
+        "source_variable": null,
+        "format": null,
+        "placeholder": null,
+        "editable": true
+      },
+      {
+        "id": "P01_C02",
+        "order": 1,
+        "label": "Visit",
+        "source_variable": null,
+        "format": null,
+        "placeholder": null,
+        "editable": true
+      },
+      {
+        "id": "P01_C03",
+        "order": 2,
+        "label": "Date/ Time",
+        "source_variable": null,
+        "format": null,
+        "placeholder": null,
+        "editable": true
+      },
+      {
+        "id": "P01_C04",
+        "order": 3,
+        "label": "Body\nTemperature\n(°C)",
+        "source_variable": null,
+        "format": null,
+        "placeholder": null,
+        "editable": true
+      },
+      {
+        "id": "P01_C05",
+        "order": 4,
+        "label": "Weight\n(kg)",
+        "source_variable": null,
+        "format": null,
+        "placeholder": null,
+        "editable": true
+      },
+      {
+        "id": "P01_C06",
+        "order": 5,
+        "label": "Systolic BP\n(mmHg)",
+        "source_variable": null,
+        "format": null,
+        "placeholder": null,
+        "editable": true
+      },
+      {
+        "id": "P01_C07",
+        "order": 6,
+        "label": "Diastolic BP\n(mmHg)",
+        "source_variable": null,
+        "format": null,
+        "placeholder": null,
+        "editable": true
+      },
+      {
+        "id": "P01_C08",
+        "order": 7,
+        "label": "Pulse rate\n(bpm)",
+        "source_variable": null,
+        "format": null,
+        "placeholder": null,
+        "editable": true
+      },
+      {
+        "id": "P01_C09",
+        "order": 8,
+        "label": "Respirations\n(breaths/min)",
+        "source_variable": null,
+        "format": null,
+        "placeholder": null,
+        "editable": true
+      },
+      {
+        "id": "P01_C10",
+        "order": 9,
+        "label": "Review",
+        "source_variable": null,
+        "format": null,
+        "placeholder": null,
+        "editable": true
+      },
+      {
+        "id": "P01_C11",
+        "order": 10,
+        "label": "Comments",
+        "source_variable": null,
+        "format": null,
+        "placeholder": null,
+        "editable": true
+      }
+    ],
+    "filters_or_inclusion_rules": [],
+    "group_by": [
+      "<Arm>"
+    ],
+    "sort_by": [],
+    "identifiers_displayed": [
+      "Patient\nnumber"
+    ],
+    "pagination_notes": [],
+    "layout_notes": [
+      "Native source columns and example rows retained, including literal option text and blank continuation cells.",
+      "No SDTM/ADaM variables, sorting direction, or record unit inferred."
+    ],
+    "panels": [
+      {
+        "panel_id": "P01",
+        "title": "Listing 16.2.9 Vital Signs",
+        "page_numbers": [
+          74
+        ],
+        "column_ids": [
+          "P01_C01",
+          "P01_C02",
+          "P01_C03",
+          "P01_C04",
+          "P01_C05",
+          "P01_C06",
+          "P01_C07",
+          "P01_C08",
+          "P01_C09",
+          "P01_C10",
+          "P01_C11"
+        ],
+        "row_ids": [
+          "P01_H001",
+          "P01_R001",
+          "P01_R002",
+          "P01_R003",
+          "P01_R004"
+        ],
+        "notes": "Source physical page/panel; continuation pages retain separate geometry within the same shell. Blank cells are visually empty within these row bands; no fill-down or invented rowspan."
+      }
+    ]
+  }
+}

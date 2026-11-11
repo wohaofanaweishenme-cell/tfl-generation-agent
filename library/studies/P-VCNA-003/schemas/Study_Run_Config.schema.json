@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Study_Run_Config v2.4",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "2.4"
+    },
+    "study_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "library_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "document_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "file_path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "kind": {
+            "enum": [
+              "sap",
+              "shells",
+              "content_list"
+            ]
+          }
+        },
+        "required": [
+          "document_id",
+          "file_path",
+          "kind"
+        ]
+      },
+      "minItems": 1
+    },
+    "shells_inside_sap": {
+      "type": "boolean"
+    },
+    "approved_style_guide_path": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "source_unit_policy": {
+      "const": "physical_shells_only"
+    },
+    "expand_content_list_entries": {
+      "const": false
+    },
+    "notes": {
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "study_id",
+    "library_id",
+    "sources",
+    "shells_inside_sap",
+    "approved_style_guide_path",
+    "source_unit_policy",
+    "expand_content_list_entries",
+    "notes"
+  ]
+}

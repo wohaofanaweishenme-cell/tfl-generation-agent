@@ -1,0 +1,29 @@
+{
+  "study_id": "P-VCNA-003",
+  "physical_pdf_pages": 86,
+  "examined_pages": 86,
+  "physical_shell_counts": {
+    "table": 25,
+    "figure": 2,
+    "listing": 37
+  },
+  "physical_shell_total": 64,
+  "content_list_counts": {
+    "table": 77,
+    "figure": 11,
+    "listing": 44
+  },
+  "content_list_total": 132,
+  "mapping_counts": {
+    "direct_shell": 64,
+    "no_source_shell_found": 68
+  },
+  "docx_created": 0,
+  "approved": false,
+  "permitted_defaults": [],
+  "scan_gaps": [
+    "Printed pages 4-29 absent in input",
+    "Appendix diagram image text not transcribed",
+    "Fine-grained full-resolution visual/semantic verification not_run"
+  ]
+}

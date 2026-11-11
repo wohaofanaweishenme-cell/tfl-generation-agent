@@ -1,0 +1,39 @@
+VCN Biosciences S.L. P-VCNA-003
+Statistical Analysis Plan
+P-VCNA-003 ddMMMyyyy HH:MM
+Table 14.2.2.25 Tumor Marker Ca 19.9 (Intent-to-Treat Set)
+Ca 19.9 (<unit>)
+Visit
+Arm I
+(N=xx)
+(Nab-paclitaxel and gemcitabine)
+Arm II
+(N=xx)
+(VCN-01 with Nab-paclitaxel and gemcitabine)
+Screening n xx xx
+Mean xx xx
+STD xx xx
+Median xx xx
+Minimum xx xx
+Maximum xx xx
+Baseline n xx xx
+Mean xx xx
+STD xx xx
+Median xx xx
+Minimum xx xx
+Maximum xx xx
+<Visit> n xx xx
+Mean xx xx
+…
+Change from Baseline to <Visit> n xx xx
+Mean xx xx
+…
+…
+Source: Listing 16.2.6.5
+Path\Filename
+Page x/y
+Programming Note: This layout also applies to Table 14.2.2.26 Tumor Marker Ca 19.9 (Full Analysis Set)
+Please start a new page when unit of Ca 19.9 is different (U/mL or KU/L).
+Form STATt004
+Version Date: 20 May 2021
+Page 46 of 112

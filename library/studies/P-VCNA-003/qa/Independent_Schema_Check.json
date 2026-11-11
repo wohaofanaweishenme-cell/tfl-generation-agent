@@ -1,0 +1,11 @@
+{
+  "check": "Independent JSON Schema and basic inventory/region consistency check; not substitute for required package validator",
+  "files_checked": 71,
+  "errors": [],
+  "source_hash_check": "passed",
+  "page_coverage_check": "86/86",
+  "region_bounds_check": "passed",
+  "package_validator_status": "not_run_dependency_missing_python_docx_and_pypdf",
+  "visual_semantic_qa": "not_run",
+  "approval": "pending"
+}

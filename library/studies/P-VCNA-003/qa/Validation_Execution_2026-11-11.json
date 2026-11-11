@@ -1,0 +1,23 @@
+{
+  "command": [
+    "S:\\Xin\\_approval_runtime\\venv\\Scripts\\python.exe",
+    "S:/Xin/TFL_Extraction_Full_Package_v2_4/tools/validate_study.py",
+    "--study-root",
+    "S:\\Xin\\approval_work_2026-11-11\\Study_P-VCNA-003",
+    "--stage",
+    "qa",
+    "--report",
+    "S:\\Xin\\approval_work_2026-11-11\\Study_P-VCNA-003\\qa\\Static_Validation.json"
+  ],
+  "environment": {
+    "PYTHONUTF8": "1"
+  },
+  "exit_code": 0,
+  "executed_at_utc": "2026-11-11T18:14:16.984727+00:00",
+  "packages": {
+    "jsonschema": "4.26.0",
+    "python-docx": "1.2.0",
+    "pypdf": "6.21.4"
+  },
+  "scope": "Current full --stage qa execution, not a historical result."
+}

@@ -1,0 +1,27 @@
+VCN Biosciences S.L. P-VCNA-003
+Statistical Analysis Plan
+P-VCNA-003 ddMMMyyyy HH:MM
+Figure 14.2.1 Kaplan-Meier Plot of Overall Survival (Intent-to-Treat Set)
+Figure Specifications
+Procedure: PROC LIFETEST – survival plot
+By: Arm
+x axis: Time
+x axis: Label: Time Post-Dose (months)
+x axis: values: As appropriate
+Y axis: Survival proportion
+Y axis Label: Proportion
+Y axis values: As appropriate
+Legend:
+Arm I (Nab-paclitaxel and gemcitabine) (N=xx) – linestyle = solid, colour = blue
+Arm II (VCN-01 with Nab-paclitaxel and gemcitabine) (N=xx) – linestyle = solid, colour = green
+Number of patients at risk over time to be presented below the x axis.
+Footnote:
+Patients who are lost to follow-up are censored at the time of their last visit or contact.
+Programming Note: This layout also applies to Figure 14.2.2 Kaplan-Meier Plot of Overall Survival (Full Analysis Set) and Figure 14.2.3 Kaplan-Meier Plot of Overall Survival (Per Protocol
+Set), Figure 14.2.4 Subgroup Analysis: Kaplan-Meier Plot of Overall Survival (ITT), Figure 14.2.5 Kaplan-Meier Plot of Progression Free Survival (ITT), Figure 14.2.6 Kaplan-Meier Plot of
+Progression Free Survival (Full Analysis Set), Figure 14.2.7 Subgroup Analysis: Kaplan-Meier Plot of Progression Free Survival (ITT), Figure 14.2.8 Kaplan-Meier Plot of Time to Progression,
+Figure 14.2.9 Kaplan-Meier Plot of Duration of Response
+Programming note for Figure 14.2.6 Kaplan-Meier Plot for Duration of Response: The starting point for both arms is not 100%, but the response rate per arm.
+Form STATt004
+Version Date: 20 May 2021
+Page 67 of 112

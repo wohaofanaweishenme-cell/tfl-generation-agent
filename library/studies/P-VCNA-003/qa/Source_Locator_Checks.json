@@ -1,0 +1,773 @@
+{
+  "schema_version": "2.4",
+  "checks": [
+    {
+      "check_id": "PVCNA003_T_14_1_1_DOCX_LOCATORS",
+      "template_id": "PVCNA003_T_14_1_1",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/table/PVCNA003_T_14_1_1.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_T_14_1_1.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_T_14_1_2_1_DOCX_LOCATORS",
+      "template_id": "PVCNA003_T_14_1_2_1",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/table/PVCNA003_T_14_1_2_1.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_T_14_1_2_1.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_T_14_1_3_DOCX_LOCATORS",
+      "template_id": "PVCNA003_T_14_1_3",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/table/PVCNA003_T_14_1_3.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_T_14_1_3.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_T_14_2_1_1_DOCX_LOCATORS",
+      "template_id": "PVCNA003_T_14_2_1_1",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/table/PVCNA003_T_14_2_1_1.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_T_14_2_1_1.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_T_14_2_2_7_DOCX_LOCATORS",
+      "template_id": "PVCNA003_T_14_2_2_7",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/table/PVCNA003_T_14_2_2_7.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_T_14_2_2_7.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_T_14_2_2_13_DOCX_LOCATORS",
+      "template_id": "PVCNA003_T_14_2_2_13",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/table/PVCNA003_T_14_2_2_13.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_T_14_2_2_13.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_T_14_2_2_17_DOCX_LOCATORS",
+      "template_id": "PVCNA003_T_14_2_2_17",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/table/PVCNA003_T_14_2_2_17.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_T_14_2_2_17.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_T_14_2_2_21_DOCX_LOCATORS",
+      "template_id": "PVCNA003_T_14_2_2_21",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/table/PVCNA003_T_14_2_2_21.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_T_14_2_2_21.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_T_14_2_2_25_DOCX_LOCATORS",
+      "template_id": "PVCNA003_T_14_2_2_25",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/table/PVCNA003_T_14_2_2_25.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_T_14_2_2_25.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_T_14_2_3_1_DOCX_LOCATORS",
+      "template_id": "PVCNA003_T_14_2_3_1",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/table/PVCNA003_T_14_2_3_1.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_T_14_2_3_1.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_T_14_3_1_1_DOCX_LOCATORS",
+      "template_id": "PVCNA003_T_14_3_1_1",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/table/PVCNA003_T_14_3_1_1.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_T_14_3_1_1.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_T_14_3_1_2_DOCX_LOCATORS",
+      "template_id": "PVCNA003_T_14_3_1_2",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/table/PVCNA003_T_14_3_1_2.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_T_14_3_1_2.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_T_14_3_1_3_DOCX_LOCATORS",
+      "template_id": "PVCNA003_T_14_3_1_3",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/table/PVCNA003_T_14_3_1_3.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_T_14_3_1_3.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_T_14_3_1_4_DOCX_LOCATORS",
+      "template_id": "PVCNA003_T_14_3_1_4",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/table/PVCNA003_T_14_3_1_4.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_T_14_3_1_4.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_T_14_3_2_1_DOCX_LOCATORS",
+      "template_id": "PVCNA003_T_14_3_2_1",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/table/PVCNA003_T_14_3_2_1.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_T_14_3_2_1.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_T_14_3_3_DOCX_LOCATORS",
+      "template_id": "PVCNA003_T_14_3_3",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/table/PVCNA003_T_14_3_3.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_T_14_3_3.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_T_14_3_4_1_DOCX_LOCATORS",
+      "template_id": "PVCNA003_T_14_3_4_1",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/table/PVCNA003_T_14_3_4_1.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_T_14_3_4_1.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_T_14_3_4_6_DOCX_LOCATORS",
+      "template_id": "PVCNA003_T_14_3_4_6",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/table/PVCNA003_T_14_3_4_6.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_T_14_3_4_6.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_T_14_3_5_2_DOCX_LOCATORS",
+      "template_id": "PVCNA003_T_14_3_5_2",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/table/PVCNA003_T_14_3_5_2.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_T_14_3_5_2.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_T_14_3_6_DOCX_LOCATORS",
+      "template_id": "PVCNA003_T_14_3_6",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/table/PVCNA003_T_14_3_6.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_T_14_3_6.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_T_14_3_8_DOCX_LOCATORS",
+      "template_id": "PVCNA003_T_14_3_8",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/table/PVCNA003_T_14_3_8.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_T_14_3_8.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_T_14_3_9_DOCX_LOCATORS",
+      "template_id": "PVCNA003_T_14_3_9",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/table/PVCNA003_T_14_3_9.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_T_14_3_9.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_T_14_3_10_DOCX_LOCATORS",
+      "template_id": "PVCNA003_T_14_3_10",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/table/PVCNA003_T_14_3_10.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_T_14_3_10.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_T_14_3_11_1_DOCX_LOCATORS",
+      "template_id": "PVCNA003_T_14_3_11_1",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/table/PVCNA003_T_14_3_11_1.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_T_14_3_11_1.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_T_14_5_1_DOCX_LOCATORS",
+      "template_id": "PVCNA003_T_14_5_1",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/table/PVCNA003_T_14_5_1.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_T_14_5_1.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_F_14_2_1_DOCX_LOCATORS",
+      "template_id": "PVCNA003_F_14_2_1",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/figure/PVCNA003_F_14_2_1.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_F_14_2_1.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_F_14_3_1_DOCX_LOCATORS",
+      "template_id": "PVCNA003_F_14_3_1",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/figure/PVCNA003_F_14_3_1.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_F_14_3_1.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_1_1_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_1_1",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_1_1.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_1_1.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_1_2_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_1_2",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_1_2.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_1_2.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_1_3_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_1_3",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_1_3.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_1_3.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_1_4_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_1_4",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_1_4.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_1_4.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_1_5_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_1_5",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_1_5.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_1_5.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_1_6_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_1_6",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_1_6.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_1_6.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_1_7_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_1_7",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_1_7.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_1_7.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_2_1_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_2_1",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_2_1.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_2_1.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_4_1_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_4_1",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_4_1.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_4_1.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_4_2_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_4_2",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_4_2.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_4_2.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_4_3_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_4_3",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_4_3.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_4_3.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_4_4_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_4_4",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_4_4.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_4_4.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_4_5_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_4_5",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_4_5.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_4_5.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_4_6_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_4_6",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_4_6.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_4_6.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_6_1_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_6_1",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_6_1.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_6_1.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_6_3_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_6_3",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_6_3.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_6_3.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_6_5_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_6_5",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_6_5.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_6_5.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_6_6_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_6_6",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_6_6.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_6_6.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_6_7_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_6_7",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_6_7.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_6_7.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_6_8_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_6_8",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_6_8.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_6_8.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_6_9_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_6_9",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_6_9.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_6_9.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_7_1_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_7_1",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_7_1.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_7_1.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_8_1_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_8_1",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_8_1.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_8_1.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_8_5_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_8_5",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_8_5.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_8_5.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_8_6_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_8_6",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_8_6.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_8_6.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_8_7_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_8_7",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_8_7.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_8_7.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_9_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_9",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_9.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_9.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_10_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_10",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_10.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_10.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_11_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_11",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_11.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_11.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_12_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_12",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_12.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_12.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_13_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_13",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_13.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_13.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_14_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_14",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_14.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_14.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_15_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_15",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_15.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_15.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_16_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_16",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_16.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_16.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_17_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_17",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_17.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_17.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_18_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_18",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_18.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_18.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    },
+    {
+      "check_id": "PVCNA003_L_16_2_19_DOCX_LOCATORS",
+      "template_id": "PVCNA003_L_16_2_19",
+      "layer": "docx",
+      "status": "pass",
+      "details": "Fresh actual DOCX XML: file hash, unique bookmark names/IDs, START/END order, containment, every located occurrence exact normalized text; persisted row/column/panel references resolve. Original source panel ownership still needs independent visual confirmation. 300 library-wide wrapper exclusions are explicitly unlocated.",
+      "evidence_paths": [
+        "TFL_Template_Library/listing/PVCNA003_L_16_2_19.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_L_16_2_19.json",
+        "qa/Actual_DOCX_Occurrence_Checks.json"
+      ]
+    }
+  ]
+}

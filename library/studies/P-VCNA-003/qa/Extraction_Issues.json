@@ -1,0 +1,2551 @@
+{
+  "schema_version": "2.4",
+  "stage": "structure",
+  "issues": [
+    {
+      "issue_id": "PVCNA003_T_14_1_1_I001",
+      "template_id": "PVCNA003_T_14_1_1",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Each physical note has its own ID, text, display order, evidence region and source occurrence. Unmarked or unconfirmed scopes remain unknown/unresolved; semantic_rules=[] and needs_review. Marker-supported [a]/[b]/[c] associations are captured where visible.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_1_1_I002",
+      "template_id": "PVCNA003_T_14_1_1",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_1_2_1_I001",
+      "template_id": "PVCNA003_T_14_1_2_1",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Each physical note has its own ID, text, display order, evidence region and source occurrence. Unmarked or unconfirmed scopes remain unknown/unresolved; semantic_rules=[] and needs_review. Marker-supported [a]/[b]/[c] associations are captured where visible.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 12,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        },
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 13,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_1_2_1_I002",
+      "template_id": "PVCNA003_T_14_1_2_1",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 12,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        },
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 13,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_1_3_I001",
+      "template_id": "PVCNA003_T_14_1_3",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Each physical note has its own ID, text, display order, evidence region and source occurrence. Unmarked or unconfirmed scopes remain unknown/unresolved; semantic_rules=[] and needs_review. Marker-supported [a]/[b]/[c] associations are captured where visible.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 14,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_1_3_I002",
+      "template_id": "PVCNA003_T_14_1_3",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 14,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_2_1_1_I001",
+      "template_id": "PVCNA003_T_14_2_1_1",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Each physical note has its own ID, text, display order, evidence region and source occurrence. Unmarked or unconfirmed scopes remain unknown/unresolved; semantic_rules=[] and needs_review. Marker-supported [a]/[b]/[c] associations are captured where visible.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 15,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_2_1_1_I002",
+      "template_id": "PVCNA003_T_14_2_1_1",
+      "severity": "warning",
+      "category": "p_value_row_ownership",
+      "description": "p-value placeholder between the Cox model and Log-rank label retained at its physical y-band with a blank label. Its statistical row ownership is unresolved; no association inferred from PDF text order.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 15,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_2_1_1_I003",
+      "template_id": "PVCNA003_T_14_2_1_1",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 15,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_2_2_7_I001",
+      "template_id": "PVCNA003_T_14_2_2_7",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Each physical note has its own ID, text, display order, evidence region and source occurrence. Unmarked or unconfirmed scopes remain unknown/unresolved; semantic_rules=[] and needs_review. Marker-supported [a]/[b]/[c] associations are captured where visible.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 16,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_2_2_7_I002",
+      "template_id": "PVCNA003_T_14_2_2_7",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 16,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_2_2_13_I001",
+      "template_id": "PVCNA003_T_14_2_2_13",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Each physical note has its own ID, text, display order, evidence region and source occurrence. Unmarked or unconfirmed scopes remain unknown/unresolved; semantic_rules=[] and needs_review. Marker-supported [a]/[b]/[c] associations are captured where visible.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 17,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_2_2_13_I002",
+      "template_id": "PVCNA003_T_14_2_2_13",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 17,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_2_2_17_I001",
+      "template_id": "PVCNA003_T_14_2_2_17",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Each physical note has its own ID, text, display order, evidence region and source occurrence. Unmarked or unconfirmed scopes remain unknown/unresolved; semantic_rules=[] and needs_review. Marker-supported [a]/[b]/[c] associations are captured where visible.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 18,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_2_2_17_I002",
+      "template_id": "PVCNA003_T_14_2_2_17",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 18,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_2_2_21_I001",
+      "template_id": "PVCNA003_T_14_2_2_21",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 19,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_2_2_25_I001",
+      "template_id": "PVCNA003_T_14_2_2_25",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 20,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_2_3_1_I001",
+      "template_id": "PVCNA003_T_14_2_3_1",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 21,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_1_1_I001",
+      "template_id": "PVCNA003_T_14_3_1_1",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Each physical note has its own ID, text, display order, evidence region and source occurrence. Unmarked or unconfirmed scopes remain unknown/unresolved; semantic_rules=[] and needs_review. Marker-supported [a]/[b]/[c] associations are captured where visible.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 22,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        },
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 23,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            108.55000000000007
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_1_1_I002",
+      "template_id": "PVCNA003_T_14_3_1_1",
+      "severity": "warning",
+      "category": "unlabelled_source_rows",
+      "description": "Three source placeholder rows have no visible row labels (between AE categories/sections). Preserve literal placeholder positions and blank labels; do not invent AE categories.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户已接受当前提取/排版及披露限制，本项作为来源库验收要求已处置；不代表Agent本次执行了独立视觉/临床核查，原始内容及不确定语义保持。",
+      "status": "resolved",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 22,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        },
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 23,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            108.55000000000007
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_1_1_I003",
+      "template_id": "PVCNA003_T_14_3_1_1",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 22,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        },
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 23,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            108.55000000000007
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_1_2_I001",
+      "template_id": "PVCNA003_T_14_3_1_2",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Each physical note has its own ID, text, display order, evidence region and source occurrence. Unmarked or unconfirmed scopes remain unknown/unresolved; semantic_rules=[] and needs_review. Marker-supported [a]/[b]/[c] associations are captured where visible.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 23,
+          "bbox": [
+            0,
+            108.55000000000007,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_1_2_I002",
+      "template_id": "PVCNA003_T_14_3_1_2",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 23,
+          "bbox": [
+            0,
+            108.55000000000007,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_1_3_I001",
+      "template_id": "PVCNA003_T_14_3_1_3",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Each physical note has its own ID, text, display order, evidence region and source occurrence. Unmarked or unconfirmed scopes remain unknown/unresolved; semantic_rules=[] and needs_review. Marker-supported [a]/[b]/[c] associations are captured where visible.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 24,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_1_3_I002",
+      "template_id": "PVCNA003_T_14_3_1_3",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 24,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_1_4_I001",
+      "template_id": "PVCNA003_T_14_3_1_4",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Each physical note has its own ID, text, display order, evidence region and source occurrence. Unmarked or unconfirmed scopes remain unknown/unresolved; semantic_rules=[] and needs_review. Marker-supported [a]/[b]/[c] associations are captured where visible.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 25,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_1_4_I002",
+      "template_id": "PVCNA003_T_14_3_1_4",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 25,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_2_1_I001",
+      "template_id": "PVCNA003_T_14_3_2_1",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Each physical note has its own ID, text, display order, evidence region and source occurrence. Unmarked or unconfirmed scopes remain unknown/unresolved; semantic_rules=[] and needs_review. Marker-supported [a]/[b]/[c] associations are captured where visible.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 26,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        },
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 27,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        },
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 28,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_2_1_I002",
+      "template_id": "PVCNA003_T_14_3_2_1",
+      "severity": "warning",
+      "category": "superscript_fidelity",
+      "description": "Source renders Yes1 with superscript 1 and hierarchical adverse-event/SOC/PT text within a single physical column. Text and precise font/character bounds are retained; superscript styling must be preserved at DOCX build, not normalized away.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户已接受当前提取/排版及披露限制，本项作为来源库验收要求已处置；不代表Agent本次执行了独立视觉/临床核查，原始内容及不确定语义保持。",
+      "status": "resolved",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 26,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        },
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 27,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        },
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 28,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_2_1_I003",
+      "template_id": "PVCNA003_T_14_3_2_1",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 26,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        },
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 27,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        },
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 28,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_3_I001",
+      "template_id": "PVCNA003_T_14_3_3",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Each physical note has its own ID, text, display order, evidence region and source occurrence. Unmarked or unconfirmed scopes remain unknown/unresolved; semantic_rules=[] and needs_review. Marker-supported [a]/[b]/[c] associations are captured where visible.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 29,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_3_I002",
+      "template_id": "PVCNA003_T_14_3_3",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 29,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_4_1_I001",
+      "template_id": "PVCNA003_T_14_3_4_1",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 30,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_4_6_I001",
+      "template_id": "PVCNA003_T_14_3_4_6",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Each physical note has its own ID, text, display order, evidence region and source occurrence. Unmarked or unconfirmed scopes remain unknown/unresolved; semantic_rules=[] and needs_review. Marker-supported [a]/[b]/[c] associations are captured where visible.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 31,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        },
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 32,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            86.47000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_4_6_I002",
+      "template_id": "PVCNA003_T_14_3_4_6",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 31,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        },
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 32,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            86.47000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_5_2_I001",
+      "template_id": "PVCNA003_T_14_3_5_2",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Each physical note has its own ID, text, display order, evidence region and source occurrence. Unmarked or unconfirmed scopes remain unknown/unresolved; semantic_rules=[] and needs_review. Marker-supported [a]/[b]/[c] associations are captured where visible.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 32,
+          "bbox": [
+            0,
+            86.47000000000003,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_5_2_I002",
+      "template_id": "PVCNA003_T_14_3_5_2",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 32,
+          "bbox": [
+            0,
+            86.47000000000003,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_6_I001",
+      "template_id": "PVCNA003_T_14_3_6",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Each physical note has its own ID, text, display order, evidence region and source occurrence. Unmarked or unconfirmed scopes remain unknown/unresolved; semantic_rules=[] and needs_review. Marker-supported [a]/[b]/[c] associations are captured where visible.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 33,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_6_I002",
+      "template_id": "PVCNA003_T_14_3_6",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 33,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_8_I001",
+      "template_id": "PVCNA003_T_14_3_8",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Each physical note has its own ID, text, display order, evidence region and source occurrence. Unmarked or unconfirmed scopes remain unknown/unresolved; semantic_rules=[] and needs_review. Marker-supported [a]/[b]/[c] associations are captured where visible.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 34,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_8_I002",
+      "template_id": "PVCNA003_T_14_3_8",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 34,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_9_I001",
+      "template_id": "PVCNA003_T_14_3_9",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Each physical note has its own ID, text, display order, evidence region and source occurrence. Unmarked or unconfirmed scopes remain unknown/unresolved; semantic_rules=[] and needs_review. Marker-supported [a]/[b]/[c] associations are captured where visible.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 35,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_9_I002",
+      "template_id": "PVCNA003_T_14_3_9",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 35,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_10_I001",
+      "template_id": "PVCNA003_T_14_3_10",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Each physical note has its own ID, text, display order, evidence region and source occurrence. Unmarked or unconfirmed scopes remain unknown/unresolved; semantic_rules=[] and needs_review. Marker-supported [a]/[b]/[c] associations are captured where visible.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 36,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        },
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 37,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_10_I002",
+      "template_id": "PVCNA003_T_14_3_10",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 36,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        },
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 37,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_11_1_I001",
+      "template_id": "PVCNA003_T_14_3_11_1",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Each physical note has its own ID, text, display order, evidence region and source occurrence. Unmarked or unconfirmed scopes remain unknown/unresolved; semantic_rules=[] and needs_review. Marker-supported [a]/[b]/[c] associations are captured where visible.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 38,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_11_1_I002",
+      "template_id": "PVCNA003_T_14_3_11_1",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 38,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_5_1_I001",
+      "template_id": "PVCNA003_T_14_5_1",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Each physical note has its own ID, text, display order, evidence region and source occurrence. Unmarked or unconfirmed scopes remain unknown/unresolved; semantic_rules=[] and needs_review. Marker-supported [a]/[b]/[c] associations are captured where visible.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 39,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        },
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 40,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_5_1_I002",
+      "template_id": "PVCNA003_T_14_5_1",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 39,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        },
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 40,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_F_14_2_1_I001",
+      "template_id": "PVCNA003_F_14_2_1",
+      "severity": "warning",
+      "category": "source_reference_conflict",
+      "description": "The programming note calls Figure 14.2.6 Duration of Response; Content List calls it Progression Free Survival. Preserve original inconsistent note; do not resolve clinically.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 41,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_F_14_2_1_I002",
+      "template_id": "PVCNA003_F_14_2_1",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Physical footnote is captured verbatim with source bounds; typed applicability and semantic rules remain needs_review until supported interpretation. No global scope assumed.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 41,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_F_14_3_1_I001",
+      "template_id": "PVCNA003_F_14_3_1",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Physical footnote is captured verbatim with source bounds; typed applicability and semantic rules remain needs_review until supported interpretation. No global scope assumed.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 42,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_1_1_I001",
+      "template_id": "PVCNA003_L_16_2_1_1",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 43,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_1_2_I001",
+      "template_id": "PVCNA003_L_16_2_1_2",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Each physical note has its own ID, text, display order, evidence region and source occurrence. Unmarked or unconfirmed scopes remain unknown/unresolved; semantic_rules=[] and needs_review. Marker-supported [a]/[b]/[c] associations are captured where visible.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 44,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        },
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 45,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_1_2_I002",
+      "template_id": "PVCNA003_L_16_2_1_2",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 44,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        },
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 45,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_1_3_I001",
+      "template_id": "PVCNA003_L_16_2_1_3",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Each physical note has its own ID, text, display order, evidence region and source occurrence. Unmarked or unconfirmed scopes remain unknown/unresolved; semantic_rules=[] and needs_review. Marker-supported [a]/[b]/[c] associations are captured where visible.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 46,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        },
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 47,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_1_3_I002",
+      "template_id": "PVCNA003_L_16_2_1_3",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 46,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        },
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 47,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_1_4_I001",
+      "template_id": "PVCNA003_L_16_2_1_4",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Each physical note has its own ID, text, display order, evidence region and source occurrence. Unmarked or unconfirmed scopes remain unknown/unresolved; semantic_rules=[] and needs_review. Marker-supported [a]/[b]/[c] associations are captured where visible.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 48,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        },
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 49,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_1_4_I002",
+      "template_id": "PVCNA003_L_16_2_1_4",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 48,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        },
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 49,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_1_5_I001",
+      "template_id": "PVCNA003_L_16_2_1_5",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 50,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_1_6_I001",
+      "template_id": "PVCNA003_L_16_2_1_6",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 51,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        },
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 52,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_1_7_I001",
+      "template_id": "PVCNA003_L_16_2_1_7",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_2_1_I001",
+      "template_id": "PVCNA003_L_16_2_2_1",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 54,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_4_1_I001",
+      "template_id": "PVCNA003_L_16_2_4_1",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 55,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_4_2_I001",
+      "template_id": "PVCNA003_L_16_2_4_2",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Each physical note has its own ID, text, display order, evidence region and source occurrence. Unmarked or unconfirmed scopes remain unknown/unresolved; semantic_rules=[] and needs_review. Marker-supported [a]/[b]/[c] associations are captured where visible.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 56,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_4_2_I002",
+      "template_id": "PVCNA003_L_16_2_4_2",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 56,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_4_3_I001",
+      "template_id": "PVCNA003_L_16_2_4_3",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 57,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_4_4_I001",
+      "template_id": "PVCNA003_L_16_2_4_4",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 58,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_4_5_I001",
+      "template_id": "PVCNA003_L_16_2_4_5",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 59,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_4_6_I001",
+      "template_id": "PVCNA003_L_16_2_4_6",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 60,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_6_1_I001",
+      "template_id": "PVCNA003_L_16_2_6_1",
+      "severity": "warning",
+      "category": "source_row_header_mismatch",
+      "description": "The second source example row visibly contains Yes/No and date/time placeholders inconsistent with some displayed column headings. Preserve original content in its coordinate-supported columns; do not repair source.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 61,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_6_1_I002",
+      "template_id": "PVCNA003_L_16_2_6_1",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 61,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_6_3_I001",
+      "template_id": "PVCNA003_L_16_2_6_3",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 62,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_6_5_I001",
+      "template_id": "PVCNA003_L_16_2_6_5",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Each physical note has its own ID, text, display order, evidence region and source occurrence. Unmarked or unconfirmed scopes remain unknown/unresolved; semantic_rules=[] and needs_review. Marker-supported [a]/[b]/[c] associations are captured where visible.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 63,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_6_5_I002",
+      "template_id": "PVCNA003_L_16_2_6_5",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 63,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_6_6_I001",
+      "template_id": "PVCNA003_L_16_2_6_6",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 64,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_6_7_I001",
+      "template_id": "PVCNA003_L_16_2_6_7",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 65,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_6_8_I001",
+      "template_id": "PVCNA003_L_16_2_6_8",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 66,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_6_9_I001",
+      "template_id": "PVCNA003_L_16_2_6_9",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 67,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_7_1_I001",
+      "template_id": "PVCNA003_L_16_2_7_1",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Each physical note has its own ID, text, display order, evidence region and source occurrence. Unmarked or unconfirmed scopes remain unknown/unresolved; semantic_rules=[] and needs_review. Marker-supported [a]/[b]/[c] associations are captured where visible.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 68,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        },
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 69,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_7_1_I002",
+      "template_id": "PVCNA003_L_16_2_7_1",
+      "severity": "warning",
+      "category": "superscript_fidelity",
+      "description": "Source renders Yes1 with superscript 1 and hierarchical adverse-event/SOC/PT text within a single physical column. Text and precise font/character bounds are retained; superscript styling must be preserved at DOCX build, not normalized away.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户已接受当前提取/排版及披露限制，本项作为来源库验收要求已处置；不代表Agent本次执行了独立视觉/临床核查，原始内容及不确定语义保持。",
+      "status": "resolved",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 68,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        },
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 69,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_7_1_I003",
+      "template_id": "PVCNA003_L_16_2_7_1",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 68,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        },
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 69,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_8_1_I001",
+      "template_id": "PVCNA003_L_16_2_8_1",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Each physical note has its own ID, text, display order, evidence region and source occurrence. Unmarked or unconfirmed scopes remain unknown/unresolved; semantic_rules=[] and needs_review. Marker-supported [a]/[b]/[c] associations are captured where visible.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 70,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_8_1_I002",
+      "template_id": "PVCNA003_L_16_2_8_1",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 70,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_8_5_I001",
+      "template_id": "PVCNA003_L_16_2_8_5",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Each physical note has its own ID, text, display order, evidence region and source occurrence. Unmarked or unconfirmed scopes remain unknown/unresolved; semantic_rules=[] and needs_review. Marker-supported [a]/[b]/[c] associations are captured where visible.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 71,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_8_5_I002",
+      "template_id": "PVCNA003_L_16_2_8_5",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 71,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_8_6_I001",
+      "template_id": "PVCNA003_L_16_2_8_6",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 72,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_8_7_I001",
+      "template_id": "PVCNA003_L_16_2_8_7",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 73,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_9_I001",
+      "template_id": "PVCNA003_L_16_2_9",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Each physical note has its own ID, text, display order, evidence region and source occurrence. Unmarked or unconfirmed scopes remain unknown/unresolved; semantic_rules=[] and needs_review. Marker-supported [a]/[b]/[c] associations are captured where visible.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_9_I002",
+      "template_id": "PVCNA003_L_16_2_9",
+      "severity": "warning",
+      "category": "true_blank_column",
+      "description": "Respirations (breaths/min) column is physically blank in all displayed example rows. Do not insert xx placeholders or drop the column.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户已接受当前提取/排版及披露限制，本项作为来源库验收要求已处置；不代表Agent本次执行了独立视觉/临床核查，原始内容及不确定语义保持。",
+      "status": "resolved",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_9_I003",
+      "template_id": "PVCNA003_L_16_2_9",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_10_I001",
+      "template_id": "PVCNA003_L_16_2_10",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Each physical note has its own ID, text, display order, evidence region and source occurrence. Unmarked or unconfirmed scopes remain unknown/unresolved; semantic_rules=[] and needs_review. Marker-supported [a]/[b]/[c] associations are captured where visible.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 75,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_10_I002",
+      "template_id": "PVCNA003_L_16_2_10",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 75,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_11_I001",
+      "template_id": "PVCNA003_L_16_2_11",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Each physical note has its own ID, text, display order, evidence region and source occurrence. Unmarked or unconfirmed scopes remain unknown/unresolved; semantic_rules=[] and needs_review. Marker-supported [a]/[b]/[c] associations are captured where visible.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 76,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_11_I002",
+      "template_id": "PVCNA003_L_16_2_11",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 76,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_12_I001",
+      "template_id": "PVCNA003_L_16_2_12",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Each physical note has its own ID, text, display order, evidence region and source occurrence. Unmarked or unconfirmed scopes remain unknown/unresolved; semantic_rules=[] and needs_review. Marker-supported [a]/[b]/[c] associations are captured where visible.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 77,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        },
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 78,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_12_I002",
+      "template_id": "PVCNA003_L_16_2_12",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 77,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        },
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 78,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_13_I001",
+      "template_id": "PVCNA003_L_16_2_13",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 79,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_14_I001",
+      "template_id": "PVCNA003_L_16_2_14",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 80,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_15_I001",
+      "template_id": "PVCNA003_L_16_2_15",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 81,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_16_I001",
+      "template_id": "PVCNA003_L_16_2_16",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 82,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_17_I001",
+      "template_id": "PVCNA003_L_16_2_17",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 83,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_18_I001",
+      "template_id": "PVCNA003_L_16_2_18",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Each physical note has its own ID, text, display order, evidence region and source occurrence. Unmarked or unconfirmed scopes remain unknown/unresolved; semantic_rules=[] and needs_review. Marker-supported [a]/[b]/[c] associations are captured where visible.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 84,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_18_I002",
+      "template_id": "PVCNA003_L_16_2_18",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 84,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_19_I001",
+      "template_id": "PVCNA003_L_16_2_19",
+      "severity": "warning",
+      "category": "sparse_source_rows",
+      "description": "Alternating physical example lines leave some diagnostic columns blank while others repeat. Rows preserved by actual baseline without filling down or asserting unseen rowspans.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户已接受当前提取/排版及披露限制，本项作为来源库验收要求已处置；不代表Agent本次执行了独立视觉/临床核查，原始内容及不确定语义保持。",
+      "status": "resolved",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 85,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_19_I002",
+      "template_id": "PVCNA003_L_16_2_19",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 85,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    }
+  ]
+}

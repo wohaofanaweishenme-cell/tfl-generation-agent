@@ -1,0 +1,4617 @@
+{
+  "schema_version": "2.4",
+  "stage": "metadata",
+  "issues": [
+    {
+      "issue_id": "PVCNA003_T_14_1_1_MD001",
+      "template_id": "PVCNA003_T_14_1_1",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 11,
+          "bbox": [
+            165.62,
+            349.48,
+            581.098,
+            358.48
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_1_1_MD002",
+      "template_id": "PVCNA003_T_14_1_1",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 11,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_1_2_1_MD001",
+      "template_id": "PVCNA003_T_14_1_2_1",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 13,
+          "bbox": [
+            95.904,
+            296.78000000000003,
+            511.37800000000004,
+            305.78000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_1_2_1_MD002",
+      "template_id": "PVCNA003_T_14_1_2_1",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 13,
+          "bbox": [
+            95.904,
+            307.84000000000003,
+            473.87,
+            316.84000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_1_2_1_MD003",
+      "template_id": "PVCNA003_T_14_1_2_1",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 13,
+          "bbox": [
+            95.904,
+            318.76000000000005,
+            463.1759999999995,
+            327.76000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_1_2_1_MD004",
+      "template_id": "PVCNA003_T_14_1_2_1",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 12,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 13,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_1_2_1_MD005",
+      "template_id": "PVCNA003_T_14_1_2_1",
+      "severity": "info",
+      "category": "conflict",
+      "description": "Content List and physical shell differ in Demographic/Demographics wording. Both preserved; original_title remains the actual physical shell title.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 4,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 12,
+          "bbox": [
+            304.73,
+            76.55000000000007,
+            587.4369999999999,
+            85.55000000000007
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_1_3_MD001",
+      "template_id": "PVCNA003_T_14_1_3",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 14,
+          "bbox": [
+            95.784,
+            280.22,
+            511.258,
+            289.22
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_1_3_MD002",
+      "template_id": "PVCNA003_T_14_1_3",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 14,
+          "bbox": [
+            95.784,
+            291.14000000000004,
+            186.488,
+            300.14000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_1_3_MD003",
+      "template_id": "PVCNA003_T_14_1_3",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 14,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_2_1_1_MD001",
+      "template_id": "PVCNA003_T_14_2_1_1",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 15,
+          "bbox": [
+            95.904,
+            288.98,
+            649.271,
+            297.98
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_2_1_1_MD002",
+      "template_id": "PVCNA003_T_14_2_1_1",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 15,
+          "bbox": [
+            95.904,
+            300.02000000000004,
+            417.83399999999983,
+            309.02000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_2_1_1_MD003",
+      "template_id": "PVCNA003_T_14_2_1_1",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 15,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_2_1_1_MD004",
+      "template_id": "PVCNA003_T_14_2_1_1",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "p_value_row_ownership: p-value placeholder between the Cox model and Log-rank label retained at its physical y-band with a blank label. Its statistical row ownership is unresolved; no association inferred from PDF text order.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 15,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_2_1_1_MD005",
+      "template_id": "PVCNA003_T_14_2_1_1",
+      "severity": "warning",
+      "category": "conflict",
+      "description": "Potential source time-origin inconsistency: the OS figure labels its x axis Time Post-Dose (months), while the OS table defines survival from randomization until death. Both source statements retained; no preferred definition inferred.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 15,
+          "bbox": [
+            95.904,
+            288.98,
+            649.271,
+            297.98
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 41,
+          "bbox": [
+            96.144,
+            175.91000000000003,
+            236.507,
+            184.91000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_2_2_7_MD001",
+      "template_id": "PVCNA003_T_14_2_2_7",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 16,
+          "bbox": [
+            95.904,
+            245.78000000000003,
+            511.37800000000004,
+            254.78000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_2_2_7_MD002",
+      "template_id": "PVCNA003_T_14_2_2_7",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 16,
+          "bbox": [
+            95.904,
+            278.78000000000003,
+            271.827,
+            287.78000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_2_2_7_MD003",
+      "template_id": "PVCNA003_T_14_2_2_7",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 16,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_2_2_13_MD001",
+      "template_id": "PVCNA003_T_14_2_2_13",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 17,
+          "bbox": [
+            95.904,
+            257.18000000000006,
+            511.37800000000004,
+            266.18000000000006
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_2_2_13_MD002",
+      "template_id": "PVCNA003_T_14_2_2_13",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 17,
+          "bbox": [
+            95.904,
+            290.06000000000006,
+            347.01300000000003,
+            299.06000000000006
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_2_2_13_MD003",
+      "template_id": "PVCNA003_T_14_2_2_13",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 17,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_2_2_17_MD001",
+      "template_id": "PVCNA003_T_14_2_2_17",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 18,
+          "bbox": [
+            95.904,
+            291.14000000000004,
+            511.37800000000004,
+            300.14000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_2_2_17_MD002",
+      "template_id": "PVCNA003_T_14_2_2_17",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 18,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_2_2_21_MD001",
+      "template_id": "PVCNA003_T_14_2_2_21",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 19,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_2_2_25_MD001",
+      "template_id": "PVCNA003_T_14_2_2_25",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 20,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_2_3_1_MD001",
+      "template_id": "PVCNA003_T_14_2_3_1",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 21,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_1_1_MD001",
+      "template_id": "PVCNA003_T_14_3_1_1",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 22,
+          "bbox": [
+            59.64,
+            469.15000000000003,
+            605.4580000000001,
+            478.15000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_1_1_MD002",
+      "template_id": "PVCNA003_T_14_3_1_1",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 22,
+          "bbox": [
+            59.64,
+            480.19000000000005,
+            475.106,
+            489.19000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_1_1_MD003",
+      "template_id": "PVCNA003_T_14_3_1_1",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 22,
+          "bbox": [
+            59.64,
+            491.10600000000005,
+            150.368,
+            500.10600000000005
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_1_1_MD004",
+      "template_id": "PVCNA003_T_14_3_1_1",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 22,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 23,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            108.55000000000007
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_1_1_MD005",
+      "template_id": "PVCNA003_T_14_3_1_1",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "unlabelled_source_rows: Three source placeholder rows have no visible row labels (between AE categories/sections). Preserve literal placeholder positions and blank labels; do not invent AE categories.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户已接受当前提取/排版及披露限制，本项作为来源库验收要求已处置；不代表Agent本次执行了独立视觉/临床核查，原始内容及不确定语义保持。",
+      "status": "resolved",
+      "source_regions": [
+        {
+          "pdf_page": 22,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 23,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            108.55000000000007
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_1_2_MD001",
+      "template_id": "PVCNA003_T_14_3_1_2",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 23,
+          "bbox": [
+            114.86,
+            320.32000000000005,
+            565.123,
+            329.32000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_1_2_MD002",
+      "template_id": "PVCNA003_T_14_3_1_2",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 23,
+          "bbox": [
+            114.86,
+            331.24000000000007,
+            530.3380000000002,
+            340.24000000000007
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_1_2_MD003",
+      "template_id": "PVCNA003_T_14_3_1_2",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 23,
+          "bbox": [
+            114.86,
+            342.2800000000001,
+            205.568,
+            351.2800000000001
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_1_2_MD004",
+      "template_id": "PVCNA003_T_14_3_1_2",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 23,
+          "bbox": [
+            0,
+            108.55000000000007,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_1_3_MD001",
+      "template_id": "PVCNA003_T_14_3_1_3",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 24,
+          "bbox": [
+            126.98,
+            353.20000000000005,
+            580.634,
+            362.20000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_1_3_MD002",
+      "template_id": "PVCNA003_T_14_3_1_3",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 24,
+          "bbox": [
+            126.98,
+            364.24,
+            542.4580000000001,
+            373.24
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_1_3_MD003",
+      "template_id": "PVCNA003_T_14_3_1_3",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 24,
+          "bbox": [
+            126.98,
+            375.2800000000001,
+            217.68800000000002,
+            384.2800000000001
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_1_3_MD004",
+      "template_id": "PVCNA003_T_14_3_1_3",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 24,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_1_4_MD001",
+      "template_id": "PVCNA003_T_14_3_1_4",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 25,
+          "bbox": [
+            126.98,
+            353.20000000000005,
+            578.6000000000001,
+            362.20000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_1_4_MD002",
+      "template_id": "PVCNA003_T_14_3_1_4",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 25,
+          "bbox": [
+            126.98,
+            364.24,
+            542.4580000000001,
+            373.24
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_1_4_MD003",
+      "template_id": "PVCNA003_T_14_3_1_4",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 25,
+          "bbox": [
+            126.98,
+            375.2800000000001,
+            217.68800000000002,
+            384.2800000000001
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_1_4_MD004",
+      "template_id": "PVCNA003_T_14_3_1_4",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 25,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_2_1_MD001",
+      "template_id": "PVCNA003_T_14_3_2_1",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 26,
+          "bbox": [
+            95.904,
+            375.76000000000005,
+            188.757,
+            384.76000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_2_1_MD002",
+      "template_id": "PVCNA003_T_14_3_2_1",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 26,
+          "bbox": [
+            95.904,
+            386.68000000000006,
+            186.57900000000004,
+            395.68000000000006
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_2_1_MD003",
+      "template_id": "PVCNA003_T_14_3_2_1",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 26,
+          "bbox": [
+            95.904,
+            397.72,
+            255.64499999999998,
+            406.72
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_2_1_MD004",
+      "template_id": "PVCNA003_T_14_3_2_1",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 26,
+          "bbox": [
+            95.904,
+            408.37,
+            410.198,
+            417.64000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_2_1_MD005",
+      "template_id": "PVCNA003_T_14_3_2_1",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 28,
+          "bbox": [
+            95.904,
+            331.84000000000003,
+            186.57900000000004,
+            340.84000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_2_1_MD006",
+      "template_id": "PVCNA003_T_14_3_2_1",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 26,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 27,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 28,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_2_1_MD007",
+      "template_id": "PVCNA003_T_14_3_2_1",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "superscript_fidelity: Source renders Yes1 with superscript 1 and hierarchical adverse-event/SOC/PT text within a single physical column. Text and precise font/character bounds are retained; superscript styling must be preserved at DOCX build, not normalized away.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户已接受当前提取/排版及披露限制，本项作为来源库验收要求已处置；不代表Agent本次执行了独立视觉/临床核查，原始内容及不确定语义保持。",
+      "status": "resolved",
+      "source_regions": [
+        {
+          "pdf_page": 26,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 27,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 28,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_3_MD001",
+      "template_id": "PVCNA003_T_14_3_3",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 29,
+          "bbox": [
+            95.904,
+            242.90000000000003,
+            302.918,
+            251.90000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_3_MD002",
+      "template_id": "PVCNA003_T_14_3_3",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 29,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_4_1_MD001",
+      "template_id": "PVCNA003_T_14_3_4_1",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 30,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_4_6_MD001",
+      "template_id": "PVCNA003_T_14_3_4_6",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 31,
+          "bbox": [
+            95.904,
+            438.43000000000006,
+            511.37800000000004,
+            447.43000000000006
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_4_6_MD002",
+      "template_id": "PVCNA003_T_14_3_4_6",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 31,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 32,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            86.47000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_5_2_MD001",
+      "template_id": "PVCNA003_T_14_3_5_2",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 32,
+          "bbox": [
+            95.904,
+            438.43000000000006,
+            511.37800000000004,
+            447.43000000000006
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_5_2_MD002",
+      "template_id": "PVCNA003_T_14_3_5_2",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 32,
+          "bbox": [
+            0,
+            86.47000000000003,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_6_MD001",
+      "template_id": "PVCNA003_T_14_3_6",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 33,
+          "bbox": [
+            95.904,
+            427.36,
+            511.37800000000004,
+            436.36
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_6_MD002",
+      "template_id": "PVCNA003_T_14_3_6",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 33,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_8_MD001",
+      "template_id": "PVCNA003_T_14_3_8",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 34,
+          "bbox": [
+            95.904,
+            302.90000000000003,
+            511.37800000000004,
+            311.90000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_8_MD002",
+      "template_id": "PVCNA003_T_14_3_8",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 34,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_9_MD001",
+      "template_id": "PVCNA003_T_14_3_9",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 35,
+          "bbox": [
+            95.784,
+            280.22,
+            511.258,
+            289.22
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_9_MD002",
+      "template_id": "PVCNA003_T_14_3_9",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 35,
+          "bbox": [
+            95.784,
+            291.14000000000004,
+            194.26100000000002,
+            300.14000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_9_MD003",
+      "template_id": "PVCNA003_T_14_3_9",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 35,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_10_MD001",
+      "template_id": "PVCNA003_T_14_3_10",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 37,
+          "bbox": [
+            95.904,
+            262.1,
+            634.171,
+            271.1
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_10_MD002",
+      "template_id": "PVCNA003_T_14_3_10",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 36,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 37,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_11_1_MD001",
+      "template_id": "PVCNA003_T_14_3_11_1",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 38,
+          "bbox": [
+            95.904,
+            309.76000000000005,
+            638.44,
+            318.76000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_11_1_MD002",
+      "template_id": "PVCNA003_T_14_3_11_1",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 38,
+          "bbox": [
+            95.904,
+            320.80000000000007,
+            653.4250000000001,
+            340.84000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_11_1_MD003",
+      "template_id": "PVCNA003_T_14_3_11_1",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 38,
+          "bbox": [
+            95.904,
+            342.76000000000005,
+            511.37800000000004,
+            351.76000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_11_1_MD004",
+      "template_id": "PVCNA003_T_14_3_11_1",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 38,
+          "bbox": [
+            95.904,
+            353.80000000000007,
+            194.40800000000002,
+            362.80000000000007
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_11_1_MD005",
+      "template_id": "PVCNA003_T_14_3_11_1",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 38,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_5_1_MD001",
+      "template_id": "PVCNA003_T_14_5_1",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 40,
+          "bbox": [
+            95.904,
+            427.72,
+            170.496,
+            436.72
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_5_1_MD002",
+      "template_id": "PVCNA003_T_14_5_1",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 39,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 40,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_F_14_2_1_MD001",
+      "template_id": "PVCNA003_F_14_2_1",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 41,
+          "bbox": [
+            96.144,
+            351.76000000000005,
+            414.29,
+            360.76000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_F_14_2_1_MD002",
+      "template_id": "PVCNA003_F_14_2_1",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 41,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_F_14_2_1_MD003",
+      "template_id": "PVCNA003_F_14_2_1",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "source_reference_conflict: The programming note calls Figure 14.2.6 Duration of Response; Content List calls it Progression Free Survival. Preserve original inconsistent note; do not resolve clinically.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 41,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_F_14_2_1_MD004",
+      "template_id": "PVCNA003_F_14_2_1",
+      "severity": "warning",
+      "category": "conflict",
+      "description": "Potential source time-origin inconsistency: the OS figure labels its x axis Time Post-Dose (months), while the OS table defines survival from randomization until death. Both source statements retained; no preferred definition inferred.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 15,
+          "bbox": [
+            95.904,
+            288.98,
+            649.271,
+            297.98
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 41,
+          "bbox": [
+            96.144,
+            175.91000000000003,
+            236.507,
+            184.91000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_F_14_2_1_MD005",
+      "template_id": "PVCNA003_F_14_2_1",
+      "severity": "warning",
+      "category": "conflict",
+      "description": "Source directory calls Figure 14.2.6 Progression Free Survival; source programming note calls Figure 14.2.6 Duration of Response. This remains a source note only, not an expanded/new shell.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 8,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 41,
+          "bbox": [
+            90.504,
+            426.0400000000001,
+            662.2670000000005,
+            435.0400000000001
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_F_14_3_1_MD001",
+      "template_id": "PVCNA003_F_14_3_1",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 42,
+          "bbox": [
+            96.144,
+            263.90000000000003,
+            760.681,
+            283.82000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_F_14_3_1_MD002",
+      "template_id": "PVCNA003_F_14_3_1",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 42,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_1_1_MD001",
+      "template_id": "PVCNA003_L_16_2_1_1",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 43,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_1_2_MD001",
+      "template_id": "PVCNA003_L_16_2_1_2",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 44,
+          "bbox": [
+            95.904,
+            264.86000000000007,
+            495.66499999999996,
+            273.86000000000007
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_1_2_MD002",
+      "template_id": "PVCNA003_L_16_2_1_2",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 45,
+          "bbox": [
+            95.904,
+            253.82000000000005,
+            758.872,
+            273.86000000000007
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_1_2_MD003",
+      "template_id": "PVCNA003_L_16_2_1_2",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 44,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 45,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_1_3_MD001",
+      "template_id": "PVCNA003_L_16_2_1_3",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 46,
+          "bbox": [
+            95.904,
+            253.82000000000005,
+            187.808,
+            262.82000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_1_3_MD002",
+      "template_id": "PVCNA003_L_16_2_1_3",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 46,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 47,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_1_4_MD001",
+      "template_id": "PVCNA003_L_16_2_1_4",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 48,
+          "bbox": [
+            95.904,
+            253.82000000000005,
+            187.808,
+            262.82000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_1_4_MD002",
+      "template_id": "PVCNA003_L_16_2_1_4",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 48,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 49,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_1_5_MD001",
+      "template_id": "PVCNA003_L_16_2_1_5",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 50,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_1_6_MD001",
+      "template_id": "PVCNA003_L_16_2_1_6",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 51,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 52,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_1_7_MD001",
+      "template_id": "PVCNA003_L_16_2_1_7",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 53,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_2_1_MD001",
+      "template_id": "PVCNA003_L_16_2_2_1",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 54,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_4_1_MD001",
+      "template_id": "PVCNA003_L_16_2_4_1",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 55,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_4_1_MD002",
+      "template_id": "PVCNA003_L_16_2_4_1",
+      "severity": "info",
+      "category": "conflict",
+      "description": "Content List and physical shell differ in Demographic/Demographics wording. Both preserved; original_title remains the actual physical shell title.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 8,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 55,
+          "bbox": [
+            323.81,
+            96.35000000000002,
+            537.5,
+            105.35000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_4_2_MD001",
+      "template_id": "PVCNA003_L_16_2_4_2",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 56,
+          "bbox": [
+            95.904,
+            264.86000000000007,
+            186.608,
+            273.86000000000007
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_4_2_MD002",
+      "template_id": "PVCNA003_L_16_2_4_2",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 56,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_4_3_MD001",
+      "template_id": "PVCNA003_L_16_2_4_3",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 57,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_4_4_MD001",
+      "template_id": "PVCNA003_L_16_2_4_4",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 58,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_4_5_MD001",
+      "template_id": "PVCNA003_L_16_2_4_5",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 59,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_4_6_MD001",
+      "template_id": "PVCNA003_L_16_2_4_6",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 60,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_6_1_MD001",
+      "template_id": "PVCNA003_L_16_2_6_1",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 61,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_6_1_MD002",
+      "template_id": "PVCNA003_L_16_2_6_1",
+      "severity": "warning",
+      "category": "conflict",
+      "description": "source_row_header_mismatch: The second source example row visibly contains Yes/No and date/time placeholders inconsistent with some displayed column headings. Preserve original content in its coordinate-supported columns; do not repair source.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 61,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_6_3_MD001",
+      "template_id": "PVCNA003_L_16_2_6_3",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 62,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_6_5_MD001",
+      "template_id": "PVCNA003_L_16_2_6_5",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 63,
+          "bbox": [
+            95.904,
+            254.30000000000007,
+            302.8229999999999,
+            263.30000000000007
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_6_5_MD002",
+      "template_id": "PVCNA003_L_16_2_6_5",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 63,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_6_6_MD001",
+      "template_id": "PVCNA003_L_16_2_6_6",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 64,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_6_7_MD001",
+      "template_id": "PVCNA003_L_16_2_6_7",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 65,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_6_8_MD001",
+      "template_id": "PVCNA003_L_16_2_6_8",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 66,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_6_9_MD001",
+      "template_id": "PVCNA003_L_16_2_6_9",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 67,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_7_1_MD001",
+      "template_id": "PVCNA003_L_16_2_7_1",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 68,
+          "bbox": [
+            95.904,
+            406.6,
+            188.757,
+            415.6
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_7_1_MD002",
+      "template_id": "PVCNA003_L_16_2_7_1",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 68,
+          "bbox": [
+            95.904,
+            417.52000000000004,
+            186.57900000000004,
+            426.52000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_7_1_MD003",
+      "template_id": "PVCNA003_L_16_2_7_1",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 68,
+          "bbox": [
+            95.904,
+            428.56000000000006,
+            255.64499999999998,
+            437.56000000000006
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_7_1_MD004",
+      "template_id": "PVCNA003_L_16_2_7_1",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 68,
+          "bbox": [
+            95.904,
+            439.24,
+            410.198,
+            448.51000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_7_1_MD005",
+      "template_id": "PVCNA003_L_16_2_7_1",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 69,
+          "bbox": [
+            95.904,
+            397.48,
+            186.57900000000004,
+            406.48
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_7_1_MD006",
+      "template_id": "PVCNA003_L_16_2_7_1",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 68,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 69,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_7_1_MD007",
+      "template_id": "PVCNA003_L_16_2_7_1",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "superscript_fidelity: Source renders Yes1 with superscript 1 and hierarchical adverse-event/SOC/PT text within a single physical column. Text and precise font/character bounds are retained; superscript styling must be preserved at DOCX build, not normalized away.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户已接受当前提取/排版及披露限制，本项作为来源库验收要求已处置；不代表Agent本次执行了独立视觉/临床核查，原始内容及不确定语义保持。",
+      "status": "resolved",
+      "source_regions": [
+        {
+          "pdf_page": 68,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 69,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_8_1_MD001",
+      "template_id": "PVCNA003_L_16_2_8_1",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 70,
+          "bbox": [
+            95.904,
+            338.32000000000005,
+            292.481,
+            347.32000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_8_1_MD002",
+      "template_id": "PVCNA003_L_16_2_8_1",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 70,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_8_5_MD001",
+      "template_id": "PVCNA003_L_16_2_8_5",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 71,
+          "bbox": [
+            168.14000000000001,
+            333.2800000000001,
+            364.75100000000003,
+            342.2800000000001
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_8_5_MD002",
+      "template_id": "PVCNA003_L_16_2_8_5",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 71,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_8_6_MD001",
+      "template_id": "PVCNA003_L_16_2_8_6",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 72,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_8_7_MD001",
+      "template_id": "PVCNA003_L_16_2_8_7",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 73,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_9_MD001",
+      "template_id": "PVCNA003_L_16_2_9",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 74,
+          "bbox": [
+            95.904,
+            309.76000000000005,
+            292.481,
+            318.76000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_9_MD002",
+      "template_id": "PVCNA003_L_16_2_9",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 74,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_9_MD003",
+      "template_id": "PVCNA003_L_16_2_9",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "true_blank_column: Respirations (breaths/min) column is physically blank in all displayed example rows. Do not insert xx placeholders or drop the column.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户已接受当前提取/排版及披露限制，本项作为来源库验收要求已处置；不代表Agent本次执行了独立视觉/临床核查，原始内容及不确定语义保持。",
+      "status": "resolved",
+      "source_regions": [
+        {
+          "pdf_page": 74,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_10_MD001",
+      "template_id": "PVCNA003_L_16_2_10",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 75,
+          "bbox": [
+            95.904,
+            330.76000000000005,
+            292.481,
+            339.76000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_10_MD002",
+      "template_id": "PVCNA003_L_16_2_10",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 75,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_11_MD001",
+      "template_id": "PVCNA003_L_16_2_11",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 76,
+          "bbox": [
+            95.904,
+            297.74000000000007,
+            292.481,
+            306.74000000000007
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_11_MD002",
+      "template_id": "PVCNA003_L_16_2_11",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 76,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_12_MD001",
+      "template_id": "PVCNA003_L_16_2_12",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 77,
+          "bbox": [
+            95.904,
+            308.80000000000007,
+            194.40800000000002,
+            317.80000000000007
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_12_MD002",
+      "template_id": "PVCNA003_L_16_2_12",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 78,
+          "bbox": [
+            95.904,
+            308.80000000000007,
+            194.40800000000002,
+            317.80000000000007
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_12_MD003",
+      "template_id": "PVCNA003_L_16_2_12",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 77,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 78,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_13_MD001",
+      "template_id": "PVCNA003_L_16_2_13",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 79,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_14_MD001",
+      "template_id": "PVCNA003_L_16_2_14",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 80,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_15_MD001",
+      "template_id": "PVCNA003_L_16_2_15",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 81,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_16_MD001",
+      "template_id": "PVCNA003_L_16_2_16",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 82,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_17_MD001",
+      "template_id": "PVCNA003_L_16_2_17",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 83,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_18_MD001",
+      "template_id": "PVCNA003_L_16_2_18",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "Physical footnote applicability remains unresolved. Rule text is extracted; any rule-specific inferred scope is separately marked.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 84,
+          "bbox": [
+            95.904,
+            308.80000000000007,
+            194.40800000000002,
+            317.80000000000007
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_18_MD002",
+      "template_id": "PVCNA003_L_16_2_18",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 84,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_19_MD001",
+      "template_id": "PVCNA003_L_16_2_19",
+      "severity": "info",
+      "category": "missing",
+      "description": "Original printed SAP pages 4–29 are absent from the supplied PDF. Retained source body provides no corresponding full statistical analysis definitions; this metadata records shell display statements only.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "pdf_page": 1,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        },
+        {
+          "pdf_page": 85,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_L_16_2_19_MD002",
+      "template_id": "PVCNA003_L_16_2_19",
+      "severity": "warning",
+      "category": "ambiguous",
+      "description": "sparse_source_rows: Alternating physical example lines leave some diagnostic columns blank while others repeat. Rows preserved by actual baseline without filling down or asserting unseen rowspans.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户已接受当前提取/排版及披露限制，本项作为来源库验收要求已处置；不代表Agent本次执行了独立视觉/临床核查，原始内容及不确定语义保持。",
+      "status": "resolved",
+      "source_regions": [
+        {
+          "pdf_page": 85,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left",
+          "document_id": "SAP_001_11"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Study_QA_Report v2.4",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "2.4"
+    },
+    "study_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "scope": {
+      "type": "string"
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "physical_shells": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "structured_records": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "docx_files": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "metadata_records": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "approved_records": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "remaining_shells": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "physical_shells",
+        "structured_records",
+        "docx_files",
+        "metadata_records",
+        "approved_records",
+        "remaining_shells"
+      ]
+    },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "check_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "template_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "layer": {
+            "enum": [
+              "contract",
+              "docx",
+              "visual",
+              "semantic",
+              "approval"
+            ]
+          },
+          "status": {
+            "enum": [
+              "pass",
+              "fail",
+              "needs_review",
+              "not_run"
+            ]
+          },
+          "details": {
+            "type": "string"
+          },
+          "evidence_paths": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 0
+          }
+        },
+        "required": [
+          "check_id",
+          "template_id",
+          "layer",
+          "status",
+          "details",
+          "evidence_paths"
+        ]
+      },
+      "minItems": 0
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "issue_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "template_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "severity": {
+            "enum": [
+              "info",
+              "warning",
+              "critical"
+            ]
+          },
+          "category": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "enum": [
+              "open",
+              "resolved",
+              "deferred"
+            ]
+          },
+          "source_regions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "document_id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "pdf_page": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "bbox": {
+                  "type": "array",
+                  "items": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "minItems": 4,
+                  "maxItems": 4
+                },
+                "coordinate_system": {
+                  "const": "pdf_points_top_left"
+                }
+              },
+              "required": [
+                "document_id",
+                "pdf_page",
+                "bbox",
+                "coordinate_system"
+              ]
+            },
+            "minItems": 0
+          }
+        },
+        "required": [
+          "issue_id",
+          "template_id",
+          "severity",
+          "category",
+          "description",
+          "status",
+          "source_regions"
+        ]
+      },
+      "minItems": 0
+    },
+    "human_approvals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "template_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "reviewer": {
+            "type": "string",
+            "minLength": 1
+          },
+          "date": {
+            "type": "string",
+            "minLength": 1
+          },
+          "record_path": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "template_id",
+          "reviewer",
+          "date",
+          "record_path"
+        ]
+      },
+      "minItems": 0
+    },
+    "full_study_complete": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "schema_version",
+    "study_id",
+    "scope",
+    "counts",
+    "checks",
+    "issues",
+    "human_approvals",
+    "full_study_complete"
+  ]
+}

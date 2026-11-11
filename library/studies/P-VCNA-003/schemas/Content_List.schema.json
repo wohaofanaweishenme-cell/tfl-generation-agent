@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Content_List v2.4",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "2.4"
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "entry_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "document_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "original_tfl_number": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "output_type": {
+            "enum": [
+              "table",
+              "figure",
+              "listing",
+              null
+            ]
+          },
+          "original_title": {
+            "type": "string"
+          },
+          "population": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "source_regions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "document_id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "pdf_page": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "bbox": {
+                  "type": "array",
+                  "items": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "minItems": 4,
+                  "maxItems": 4
+                },
+                "coordinate_system": {
+                  "const": "pdf_points_top_left"
+                }
+              },
+              "required": [
+                "document_id",
+                "pdf_page",
+                "bbox",
+                "coordinate_system"
+              ]
+            },
+            "minItems": 0
+          }
+        },
+        "required": [
+          "entry_id",
+          "document_id",
+          "original_tfl_number",
+          "output_type",
+          "original_title",
+          "population",
+          "source_regions"
+        ]
+      },
+      "minItems": 0
+    }
+  },
+  "required": [
+    "schema_version",
+    "entries"
+  ]
+}

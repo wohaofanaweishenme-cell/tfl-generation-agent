@@ -1,0 +1,30 @@
+{
+  "schema_version": "2.4",
+  "template_id": "PVCNA003_L_16_2_15",
+  "source_regions": [
+    {
+      "document_id": "SAP_001_11",
+      "pdf_page": 81,
+      "bbox": [
+        0,
+        0,
+        841.9200000000001,
+        595.32
+      ],
+      "coordinate_system": "pdf_points_top_left"
+    }
+  ],
+  "source_docx_locations": [],
+  "text_checkpoints": [
+    {
+      "document_id": "SAP_001_11",
+      "location": "PDF physical page 81; owned region in source_regions; printed page 107",
+      "text": "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.15 Left Ventricular Ejection Fraction Results\n<Arm>\nPatient Number Visit LVEF Performed Date of Scan Method Result (%)\nxxxxxxx xxxxxxxx Yes/\nxxxxxxxx Yes/\nxxxxxxxx Yes/\nNot applicable (no clinical indication)\nNot applicable (no clinical indication)\nNot applicable (no clinical indication)\nxxxxxxxx Multigated Acquisition Scan/\nECHO\nxxxxxxxx Multigated Acquisition Scan/\nECHO\nxxxxxxxx Multigated Acquisition Scan/\nECHO\nxx\nxx\nxx\n…\nPath\\Filename\nPage x/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 107 of 112",
+      "readable": true
+    }
+  ],
+  "notes": [
+    "Original title retained from first panel; all panel titles are retained in text checkpoints.",
+    "Regions conservatively retain page wrappers; fine-grained exclusion and structural transcription deferred to stage 2."
+  ]
+}

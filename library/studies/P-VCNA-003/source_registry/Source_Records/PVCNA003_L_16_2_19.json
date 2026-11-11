@@ -1,0 +1,30 @@
+{
+  "schema_version": "2.4",
+  "template_id": "PVCNA003_L_16_2_19",
+  "source_regions": [
+    {
+      "document_id": "SAP_001_11",
+      "pdf_page": 85,
+      "bbox": [
+        0,
+        0,
+        841.9200000000001,
+        595.32
+      ],
+      "coordinate_system": "pdf_points_top_left"
+    }
+  ],
+  "source_docx_locations": [],
+  "text_checkpoints": [
+    {
+      "document_id": "SAP_001_11",
+      "location": "PDF physical page 85; owned region in source_regions; printed page 111",
+      "text": "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.19 Study Disease Diagnosis\n<Arm>\nPatient\nNumber\nDate of\nDiagnosis\nCancer\nStage at\nDiagnosis\nSource of\nDiagnosis\nIf Other,\nspecify\nLocation of\nPrimary\nPancreatic\nTumour\nTNM\nCriteria (T)\nTNM\nCriteria (N)\nTNM\nCriteria (M)\nDate of\nMetastatic\nDisease\nDiagnosis\nTumour\nGrade\nMetastasis\nLocation\nxxxxxxx xxxxxxx xxxxxxx xx xxx xxx xxx xxx xxx xxxxxxx xxx xxxxxxx\nxxxxxxx xxx xxx xxxxxxx xxx xxxxxxx\nxxxxxxx xxxxxxx xx xxx xxx xxx xxx xxx xxxxxxx xxx xxxxxxx\nxxxxxxx xxx xxx xxxxxxx xxx xxxxxxx\nxxxxxxx xxxxxxx xx xxx xxx xxx xxx xxx xxxxxxx xxx xxxxxxx\n…\nPath\\Filename\nPage x/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 111 of 112",
+      "readable": true
+    }
+  ],
+  "notes": [
+    "Original title retained from first panel; all panel titles are retained in text checkpoints.",
+    "Regions conservatively retain page wrappers; fine-grained exclusion and structural transcription deferred to stage 2."
+  ]
+}

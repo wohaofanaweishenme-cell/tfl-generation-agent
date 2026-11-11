@@ -1,0 +1,18 @@
+VCN Biosciences S.L. P-VCNA-003
+Statistical Analysis Plan
+P-VCNA-003 ddMMMyyyy HH:MM
+Figure 14.3.1 ECOG Score (Safety Analysis Set)
+Figure Specifications
+Plot: Kaplan-Meier time to event plot
+x axis: Visit
+x axis: Label: Visit
+x axis: values: As appropriate
+Y axis: Percentage
+Y axis Label: Percentage of patients
+Y axis values: 0 - 100
+Footnote:
+For each level of the ECOG score, the proportion of patients continuing on that or a better score were estimated for each visit using Kaplan-Meier estimates. At death the patient was
+assumed to have risen to the highest ECOG score.
+Form STATt004
+Version Date: 20 May 2021
+Page 68 of 112

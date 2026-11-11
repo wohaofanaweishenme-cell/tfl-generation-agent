@@ -1,0 +1,30 @@
+{
+  "schema_version": "2.4",
+  "template_id": "PVCNA003_T_14_3_5_2",
+  "source_regions": [
+    {
+      "document_id": "SAP_001_11",
+      "pdf_page": 32,
+      "bbox": [
+        0,
+        86.47000000000003,
+        841.9200000000001,
+        595.32
+      ],
+      "coordinate_system": "pdf_points_top_left"
+    }
+  ],
+  "source_docx_locations": [],
+  "text_checkpoints": [
+    {
+      "document_id": "SAP_001_11",
+      "location": "PDF physical page 32; owned region in source_regions; printed page 58",
+      "text": "P-VCNA-003 ddMMMyyyy HH:MM\nTable 14.3.5.2 Shift Table of Vital Signs (Safety Analysis Set)\nVisit\nArm I\n(N=xx)\n(Nab-paclitaxel and gemcitabine)\nArm II\n(N=xx)\n(VCN-01 with Nab-paclitaxel and gemcitabine)\nScreening n xx xx\nNormal xx (xx.x%) xx (xx.x%)\nAbnormal NCS xx (xx.x%) xx (xx.x%)\nAbnormal CS xx (xx.x%) xx (xx.x%)\nBaseline n xx xx\nNormal xx (xx.x%) xx (xx.x%)\n…\n<Visit> n xx xx\n…\nChange from Baseline to <Visit> n xx xx\nNormal -> Normal xx (xx.x%) xx (xx.x%)\nNormal -> Abnormal NCS xx (xx.x%) xx (xx.x%)\nNormal -> Abnormal CS xx (xx.x%) xx (xx.x%)\nAbnormal NCS -> Normal xx (xx.x%) xx (xx.x%)\nAbnormal NCS -> Abnormal NCS xx (xx.x%) xx (xx.x%)\nAbnormal NCS -> Abnormal CS xx (xx.x%) xx (xx.x%)\nAbnormal CS -> Normal xx (xx.x%) xx (xx.x%)\nAbnormal CS -> Abnormal NCS xx (xx.x%) xx (xx.x%)\nAbnormal CS -> Abnormal CS xx (xx.x%) xx (xx.x%)\n…\nPercentage is the number of patients in the category (n) divided by the number of patients within the column (N).\nSource: Listing 16.2.9\nPath\\Filename\nPage x/y\nProgramming Note: This layout also applies to Table 14.3.7.2 Shift Table of 12-lead Electrocardiogram (Safety Analysis Set). Please update source listing.\nForm STATt004\nVersion Date: 20 May 2021\nPage 58 of 112",
+      "readable": true
+    }
+  ],
+  "notes": [
+    "Original title retained from first panel; all panel titles are retained in text checkpoints.",
+    "Regions conservatively retain page wrappers; fine-grained exclusion and structural transcription deferred to stage 2."
+  ]
+}

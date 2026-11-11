@@ -1,0 +1,2201 @@
+{
+  "schema_version": "2.4",
+  "template_id": "PVCNA003_L_16_2_1_7",
+  "output_type": "listing",
+  "structural_family": "listing",
+  "extraction_status": "complete",
+  "source_regions": [
+    {
+      "document_id": "SAP_001_11",
+      "pdf_page": 53,
+      "bbox": [
+        0,
+        0,
+        841.9200000000001,
+        595.32
+      ],
+      "coordinate_system": "pdf_points_top_left"
+    }
+  ],
+  "source_docx_locations": [],
+  "physical_blocks": [
+    {
+      "block_id": "B00021",
+      "kind": "other",
+      "display_order": 0,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            624.19,
+            35.50716,
+            770.9195200000001,
+            47.05079999999998
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "VCN Biosciences S.L. P-VCNA-003",
+      "source_element_ids": [
+        "E00032"
+      ],
+      "notes": "Corporate source header wrapper; retained for traceability, separate from shell title/header."
+    },
+    {
+      "block_id": "B00022",
+      "kind": "other",
+      "display_order": 1,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            678.58,
+            47.1471600000001,
+            770.8494400000001,
+            58.69080000000008
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Statistical Analysis Plan",
+      "source_element_ids": [
+        "E00033"
+      ],
+      "notes": "Corporate source header wrapper; retained for traceability, separate from shell title/header."
+    },
+    {
+      "block_id": "B00023",
+      "kind": "placeholder",
+      "display_order": 2,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            90.504,
+            65.50999999999999,
+            735.433,
+            74.50999999999999
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "P-VCNA-003 ddMMMyyyy HH:MM",
+      "source_element_ids": [
+        "E00034",
+        "E00035",
+        "E00036"
+      ],
+      "notes": null
+    },
+    {
+      "block_id": "B00024",
+      "kind": "title",
+      "display_order": 3,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            353.09000000000003,
+            76.55000000000007,
+            508.355,
+            85.55000000000007
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Listing 16.2.1.7 VCN-01 Dose Interruptions",
+      "source_element_ids": [
+        "E00037"
+      ],
+      "notes": null
+    },
+    {
+      "block_id": "B00025",
+      "kind": "placeholder",
+      "display_order": 4,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            156.38,
+            98.51000000000005,
+            180.662,
+            107.51000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "<Arm>",
+      "source_element_ids": [
+        "E00038",
+        "E00039"
+      ],
+      "notes": null
+    },
+    {
+      "block_id": "B00001",
+      "kind": "body",
+      "display_order": 5,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            159,
+            109,
+            252,
+            139
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Patient Number",
+      "source_element_ids": [
+        "E00001"
+      ],
+      "notes": "cell_id=CELL00001; row=P01_H001; column=P01_C01; spans=1x1; header"
+    },
+    {
+      "block_id": "B00002",
+      "kind": "body",
+      "display_order": 6,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            252,
+            109,
+            325,
+            139
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Visit",
+      "source_element_ids": [
+        "E00002"
+      ],
+      "notes": "cell_id=CELL00002; row=P01_H001; column=P01_C02; spans=1x1; header"
+    },
+    {
+      "block_id": "B00003",
+      "kind": "body",
+      "display_order": 7,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            325,
+            109,
+            430,
+            139
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Reason for Interruption",
+      "source_element_ids": [
+        "E00003"
+      ],
+      "notes": "cell_id=CELL00003; row=P01_H001; column=P01_C03; spans=1x1; header"
+    },
+    {
+      "block_id": "B00004",
+      "kind": "body",
+      "display_order": 8,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            430,
+            109,
+            551,
+            139
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Start Date/time\n(Stop Date/Time)",
+      "source_element_ids": [
+        "E00004"
+      ],
+      "notes": "cell_id=CELL00004; row=P01_H001; column=P01_C04; spans=1x1; header"
+    },
+    {
+      "block_id": "B00005",
+      "kind": "body",
+      "display_order": 9,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            551,
+            109,
+            780,
+            139
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Administered Volume after\nContinuation (mL)",
+      "source_element_ids": [
+        "E00005"
+      ],
+      "notes": "cell_id=CELL00005; row=P01_H001; column=P01_C05; spans=1x1; header"
+    },
+    {
+      "block_id": "B00006",
+      "kind": "placeholder",
+      "display_order": 10,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            159,
+            142.51000000000005,
+            252,
+            175.39000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xxxxxxx",
+      "source_element_ids": [
+        "E00006",
+        "E00007"
+      ],
+      "notes": "cell_id=CELL00006; row=P01_R001; column=P01_C01; spans=1x1; body"
+    },
+    {
+      "block_id": "B00007",
+      "kind": "placeholder",
+      "display_order": 11,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            252,
+            142.51000000000005,
+            325,
+            175.39000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xxxxxxxxx",
+      "source_element_ids": [
+        "E00008",
+        "E00009"
+      ],
+      "notes": "cell_id=CELL00007; row=P01_R001; column=P01_C02; spans=1x1; body"
+    },
+    {
+      "block_id": "B00008",
+      "kind": "placeholder",
+      "display_order": 12,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            325,
+            142.51000000000005,
+            430,
+            175.39000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xxxxxxxxxxx",
+      "source_element_ids": [
+        "E00010",
+        "E00011"
+      ],
+      "notes": "cell_id=CELL00008; row=P01_R001; column=P01_C03; spans=1x1; body"
+    },
+    {
+      "block_id": "B00009",
+      "kind": "placeholder",
+      "display_order": 13,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            430,
+            142.51000000000005,
+            551,
+            175.39000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xxxxxxxxTxx:xx\n(xxxxxxxxTxx:xx)",
+      "source_element_ids": [
+        "E00012",
+        "E00013",
+        "E00014"
+      ],
+      "notes": "cell_id=CELL00009; row=P01_R001; column=P01_C04; spans=1x1; body"
+    },
+    {
+      "block_id": "B00010",
+      "kind": "placeholder",
+      "display_order": 14,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            551,
+            142.51000000000005,
+            780,
+            175.39000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xx",
+      "source_element_ids": [
+        "E00015",
+        "E00016"
+      ],
+      "notes": "cell_id=CELL00010; row=P01_R001; column=P01_C05; spans=1x1; body"
+    },
+    {
+      "block_id": "B00011",
+      "kind": "body",
+      "display_order": 15,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            159,
+            175.39000000000004,
+            252,
+            208.42000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "",
+      "source_element_ids": [
+        "E00017"
+      ],
+      "notes": "cell_id=CELL00011; row=P01_R002; column=P01_C01; spans=1x1; body"
+    },
+    {
+      "block_id": "B00012",
+      "kind": "placeholder",
+      "display_order": 16,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            252,
+            175.39000000000004,
+            325,
+            208.42000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xxxxxxxxx",
+      "source_element_ids": [
+        "E00018",
+        "E00019"
+      ],
+      "notes": "cell_id=CELL00012; row=P01_R002; column=P01_C02; spans=1x1; body"
+    },
+    {
+      "block_id": "B00013",
+      "kind": "placeholder",
+      "display_order": 17,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            325,
+            175.39000000000004,
+            430,
+            208.42000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xxxxxxxxxxx",
+      "source_element_ids": [
+        "E00020",
+        "E00021"
+      ],
+      "notes": "cell_id=CELL00013; row=P01_R002; column=P01_C03; spans=1x1; body"
+    },
+    {
+      "block_id": "B00014",
+      "kind": "placeholder",
+      "display_order": 18,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            430,
+            175.39000000000004,
+            551,
+            208.42000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xxxxxxxxTxx:xx\n(xxxxxxxxTxx:xx)",
+      "source_element_ids": [
+        "E00022",
+        "E00023",
+        "E00024"
+      ],
+      "notes": "cell_id=CELL00014; row=P01_R002; column=P01_C04; spans=1x1; body"
+    },
+    {
+      "block_id": "B00015",
+      "kind": "placeholder",
+      "display_order": 19,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            551,
+            175.39000000000004,
+            780,
+            208.42000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xx",
+      "source_element_ids": [
+        "E00025",
+        "E00026"
+      ],
+      "notes": "cell_id=CELL00015; row=P01_R002; column=P01_C05; spans=1x1; body"
+    },
+    {
+      "block_id": "B00016",
+      "kind": "body",
+      "display_order": 20,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            159,
+            208.42000000000002,
+            252,
+            222
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "…",
+      "source_element_ids": [
+        "E00027"
+      ],
+      "notes": "cell_id=CELL00016; row=P01_R003; column=P01_C01; spans=1x1; body"
+    },
+    {
+      "block_id": "B00017",
+      "kind": "body",
+      "display_order": 21,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            252,
+            208.42000000000002,
+            325,
+            222
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "",
+      "source_element_ids": [
+        "E00028"
+      ],
+      "notes": "cell_id=CELL00017; row=P01_R003; column=P01_C02; spans=1x1; body"
+    },
+    {
+      "block_id": "B00018",
+      "kind": "body",
+      "display_order": 22,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            325,
+            208.42000000000002,
+            430,
+            222
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "",
+      "source_element_ids": [
+        "E00029"
+      ],
+      "notes": "cell_id=CELL00018; row=P01_R003; column=P01_C03; spans=1x1; body"
+    },
+    {
+      "block_id": "B00019",
+      "kind": "body",
+      "display_order": 23,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            430,
+            208.42000000000002,
+            551,
+            222
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "",
+      "source_element_ids": [
+        "E00030"
+      ],
+      "notes": "cell_id=CELL00019; row=P01_R003; column=P01_C04; spans=1x1; body"
+    },
+    {
+      "block_id": "B00020",
+      "kind": "body",
+      "display_order": 24,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            551,
+            208.42000000000002,
+            780,
+            222
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "",
+      "source_element_ids": [
+        "E00031"
+      ],
+      "notes": "cell_id=CELL00020; row=P01_R003; column=P01_C05; spans=1x1; body"
+    },
+    {
+      "block_id": "B00026",
+      "kind": "placeholder",
+      "display_order": 25,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            90.504,
+            242.90000000000003,
+            144.041,
+            251.90000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Path\\Filename",
+      "source_element_ids": [
+        "E00040"
+      ],
+      "notes": null
+    },
+    {
+      "block_id": "B00027",
+      "kind": "placeholder",
+      "display_order": 26,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            739.9000000000001,
+            253.82000000000005,
+            771.076,
+            262.82000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Page x/y",
+      "source_element_ids": [
+        "E00041",
+        "E00042"
+      ],
+      "notes": null
+    },
+    {
+      "block_id": "B00028",
+      "kind": "other",
+      "display_order": 27,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            95.904,
+            519.975,
+            765.751,
+            530.4060000000001
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Form STATt004 Page 79 of 112",
+      "source_element_ids": [
+        "E00043"
+      ],
+      "notes": "Corporate form footer retained separately; not a clinical footnote."
+    },
+    {
+      "block_id": "B00029",
+      "kind": "other",
+      "display_order": 28,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            95.904,
+            530.4150000000001,
+            195.88400000000001,
+            540.846
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Version Date: 20 May 2021",
+      "source_element_ids": [
+        "E00044"
+      ],
+      "notes": "Corporate form footer retained separately; not a clinical footnote."
+    }
+  ],
+  "source_elements": [
+    {
+      "element_id": "E00001",
+      "element_type": "header_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00001",
+          "docx_locator": "bookmark:O_O00001",
+          "source_text": "Patient Number",
+          "role": "header_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_898339630c69e31e"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00002",
+      "element_type": "header_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00002",
+          "docx_locator": "bookmark:O_O00002",
+          "source_text": "Visit",
+          "role": "header_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_b0763568f42e6869"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00003",
+      "element_type": "header_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00003",
+          "docx_locator": "bookmark:O_O00003",
+          "source_text": "Reason for Interruption",
+          "role": "header_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_213fce490925254f"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00004",
+      "element_type": "header_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00004",
+          "docx_locator": "bookmark:O_O00004",
+          "source_text": "Start Date/time\n(Stop Date/Time)",
+          "role": "header_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_37ce36eeb1da1d4a"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00005",
+      "element_type": "header_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00005",
+          "docx_locator": "bookmark:O_O00005",
+          "source_text": "Administered Volume after\nContinuation (mL)",
+          "role": "header_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_fdc1536c2ba63224"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00006",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00006",
+          "docx_locator": "bookmark:O_O00006",
+          "source_text": "xxxxxxx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_b57d18d079e8c6ab"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00007",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00007",
+          "docx_locator": "bookmark:O_O00007",
+          "source_text": "xxxxxxx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_6792e44f5afc6706"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00006; no target substitution requested."
+    },
+    {
+      "element_id": "E00008",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00008",
+          "docx_locator": "bookmark:O_O00008",
+          "source_text": "xxxxxxxxx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_2f1bb6c0d1f9fac5"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00009",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00009",
+          "docx_locator": "bookmark:O_O00009",
+          "source_text": "xxxxxxxxx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_92167c6c458c4e81"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00007; no target substitution requested."
+    },
+    {
+      "element_id": "E00010",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00010",
+          "docx_locator": "bookmark:O_O00010",
+          "source_text": "xxxxxxxxxxx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_f44bd8caf7b962da"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00011",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00011",
+          "docx_locator": "bookmark:O_O00011",
+          "source_text": "xxxxxxxxxxx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_8110cad1180abbd9"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00008; no target substitution requested."
+    },
+    {
+      "element_id": "E00012",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00012",
+          "docx_locator": "bookmark:O_O00012",
+          "source_text": "xxxxxxxxTxx:xx\n(xxxxxxxxTxx:xx)",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_d8744e86db02b2a0"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00013",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00013",
+          "docx_locator": "bookmark:O_O00013",
+          "source_text": "xxxxxxxxTxx:xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_7065f3264d320692"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00009; no target substitution requested."
+    },
+    {
+      "element_id": "E00014",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00014",
+          "docx_locator": "bookmark:O_O00014",
+          "source_text": "(xxxxxxxxTxx:xx)",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_c9c2a2c57a960617"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00009; no target substitution requested."
+    },
+    {
+      "element_id": "E00015",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00015",
+          "docx_locator": "bookmark:O_O00015",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_89693795e488eedf"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00016",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00016",
+          "docx_locator": "bookmark:O_O00016",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_d1ea2ea682f8a561"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00010; no target substitution requested."
+    },
+    {
+      "element_id": "E00017",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00017",
+          "docx_locator": "bookmark:O_O00017",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_de96ad64be8f9780"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00018",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00018",
+          "docx_locator": "bookmark:O_O00018",
+          "source_text": "xxxxxxxxx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_1b200ed8469fead6"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00019",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00019",
+          "docx_locator": "bookmark:O_O00019",
+          "source_text": "xxxxxxxxx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_63f979401f336d70"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00012; no target substitution requested."
+    },
+    {
+      "element_id": "E00020",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00020",
+          "docx_locator": "bookmark:O_O00020",
+          "source_text": "xxxxxxxxxxx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_a7d166990f1ca547"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00021",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00021",
+          "docx_locator": "bookmark:O_O00021",
+          "source_text": "xxxxxxxxxxx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_7aa574dc40171e6e"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00013; no target substitution requested."
+    },
+    {
+      "element_id": "E00022",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00022",
+          "docx_locator": "bookmark:O_O00022",
+          "source_text": "xxxxxxxxTxx:xx\n(xxxxxxxxTxx:xx)",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_f564391dafb1ca72"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00023",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00023",
+          "docx_locator": "bookmark:O_O00023",
+          "source_text": "xxxxxxxxTxx:xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_9e33daef33de4771"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00014; no target substitution requested."
+    },
+    {
+      "element_id": "E00024",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00024",
+          "docx_locator": "bookmark:O_O00024",
+          "source_text": "(xxxxxxxxTxx:xx)",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_19c4060011515bd5"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00014; no target substitution requested."
+    },
+    {
+      "element_id": "E00025",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00025",
+          "docx_locator": "bookmark:O_O00025",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_7205d6c5966a5a60"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00026",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00026",
+          "docx_locator": "bookmark:O_O00026",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_5bd88fb4007c603c"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00015; no target substitution requested."
+    },
+    {
+      "element_id": "E00027",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00027",
+          "docx_locator": "bookmark:O_O00027",
+          "source_text": "…",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_c6064a8e249f5b26"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00028",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00028",
+          "docx_locator": "bookmark:O_O00028",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_7dbbfed84cdc8217"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00029",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00029",
+          "docx_locator": "bookmark:O_O00029",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_13ac410f9fcce27b"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00030",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00030",
+          "docx_locator": "bookmark:O_O00030",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_fa23a763f0a95344"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00031",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00031",
+          "docx_locator": "bookmark:O_O00031",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_f4c01081607f148d"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00032",
+      "element_type": "other",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00032",
+          "docx_locator": null,
+          "source_text": "VCN Biosciences S.L. P-VCNA-003",
+          "role": "other",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_287a7f27752a93ca"
+          ],
+          "verification_status": "unverified"
+        }
+      ],
+      "notes": "Corporate source header wrapper; retained for traceability, separate from shell title/header. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed."
+    },
+    {
+      "element_id": "E00033",
+      "element_type": "other",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00033",
+          "docx_locator": null,
+          "source_text": "Statistical Analysis Plan",
+          "role": "other",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_547869a94603dff2"
+          ],
+          "verification_status": "unverified"
+        }
+      ],
+      "notes": "Corporate source header wrapper; retained for traceability, separate from shell title/header. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed."
+    },
+    {
+      "element_id": "E00034",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00034",
+          "docx_locator": "bookmark:O_O00034",
+          "source_text": "P-VCNA-003 ddMMMyyyy HH:MM",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_83233dedfe2df3a1"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00035",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00035",
+          "docx_locator": "bookmark:O_O00035",
+          "source_text": "ddMMMyyyy",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_f6b0e407c508de97"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Actual source placeholder; no replacement operation."
+    },
+    {
+      "element_id": "E00036",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00036",
+          "docx_locator": "bookmark:O_O00036",
+          "source_text": "HH:MM",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_4fe5ee952a7f8c2c"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Actual source placeholder; no replacement operation."
+    },
+    {
+      "element_id": "E00037",
+      "element_type": "title",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00037",
+          "docx_locator": "bookmark:O_O00037",
+          "source_text": "Listing 16.2.1.7 VCN-01 Dose Interruptions",
+          "role": "title",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_d3f6ef5ed2bf83ca"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00038",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00038",
+          "docx_locator": "bookmark:O_O00038",
+          "source_text": "<Arm>",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_5bb687251797abf0"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00039",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00039",
+          "docx_locator": "bookmark:O_O00039",
+          "source_text": "<Arm>",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_5bb687251797abf0"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Actual source placeholder; no replacement operation."
+    },
+    {
+      "element_id": "E00040",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00040",
+          "docx_locator": "bookmark:O_O00040",
+          "source_text": "Path\\Filename",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_a0c100299fcf470e"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00041",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00041",
+          "docx_locator": "bookmark:O_O00041",
+          "source_text": "Page x/y",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_83c29a6311690a3b"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00042",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00042",
+          "docx_locator": "bookmark:O_O00042",
+          "source_text": "x/y",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_fbe8bab6119400a6"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Actual source placeholder; no replacement operation."
+    },
+    {
+      "element_id": "E00043",
+      "element_type": "other",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00043",
+          "docx_locator": null,
+          "source_text": "Form STATt004 Page 79 of 112",
+          "role": "other",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_78492b22b19c3dd8"
+          ],
+          "verification_status": "unverified"
+        }
+      ],
+      "notes": "Corporate form footer retained separately; not a clinical footnote. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed."
+    },
+    {
+      "element_id": "E00044",
+      "element_type": "other",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00044",
+          "docx_locator": null,
+          "source_text": "Version Date: 20 May 2021",
+          "role": "other",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_f8edcb568fb55edd"
+          ],
+          "verification_status": "unverified"
+        }
+      ],
+      "notes": "Corporate form footer retained separately; not a clinical footnote. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed."
+    }
+  ],
+  "occurrence_relations": [],
+  "footnotes": [],
+  "programming_notes": [],
+  "listing_rows": [
+    {
+      "id": "P01_H001",
+      "order": 0,
+      "panel_id": "P01",
+      "notes": "Header row"
+    },
+    {
+      "id": "P01_R001",
+      "order": 1,
+      "panel_id": "P01",
+      "notes": "Physical source example row or ellipsis row; original blank continuation cells preserved. No patient/record values filled down."
+    },
+    {
+      "id": "P01_R002",
+      "order": 2,
+      "panel_id": "P01",
+      "notes": "Physical source example row or ellipsis row; original blank continuation cells preserved. No patient/record values filled down."
+    },
+    {
+      "id": "P01_R003",
+      "order": 3,
+      "panel_id": "P01",
+      "notes": "Physical source example row or ellipsis row; original blank continuation cells preserved. No patient/record values filled down."
+    }
+  ],
+  "physical_cells": [
+    {
+      "cell_id": "CELL00001",
+      "panel_id": "P01",
+      "row_id": "P01_H001",
+      "column_id": "P01_C01",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "Patient Number",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            159,
+            109,
+            252,
+            139
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00002",
+      "panel_id": "P01",
+      "row_id": "P01_H001",
+      "column_id": "P01_C02",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "Visit",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            252,
+            109,
+            325,
+            139
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00003",
+      "panel_id": "P01",
+      "row_id": "P01_H001",
+      "column_id": "P01_C03",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "Reason for Interruption",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            325,
+            109,
+            430,
+            139
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00004",
+      "panel_id": "P01",
+      "row_id": "P01_H001",
+      "column_id": "P01_C04",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "Start Date/time\n(Stop Date/Time)",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            430,
+            109,
+            551,
+            139
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00005",
+      "panel_id": "P01",
+      "row_id": "P01_H001",
+      "column_id": "P01_C05",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "Administered Volume after\nContinuation (mL)",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            551,
+            109,
+            780,
+            139
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00006",
+      "panel_id": "P01",
+      "row_id": "P01_R001",
+      "column_id": "P01_C01",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xxxxxxx",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            159,
+            142.51000000000005,
+            252,
+            175.39000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00007",
+      "panel_id": "P01",
+      "row_id": "P01_R001",
+      "column_id": "P01_C02",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xxxxxxxxx",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            252,
+            142.51000000000005,
+            325,
+            175.39000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00008",
+      "panel_id": "P01",
+      "row_id": "P01_R001",
+      "column_id": "P01_C03",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xxxxxxxxxxx",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            325,
+            142.51000000000005,
+            430,
+            175.39000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00009",
+      "panel_id": "P01",
+      "row_id": "P01_R001",
+      "column_id": "P01_C04",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xxxxxxxxTxx:xx\n(xxxxxxxxTxx:xx)",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            430,
+            142.51000000000005,
+            551,
+            175.39000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00010",
+      "panel_id": "P01",
+      "row_id": "P01_R001",
+      "column_id": "P01_C05",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xx",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            551,
+            142.51000000000005,
+            780,
+            175.39000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00011",
+      "panel_id": "P01",
+      "row_id": "P01_R002",
+      "column_id": "P01_C01",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "",
+      "is_blank": true,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            159,
+            175.39000000000004,
+            252,
+            208.42000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00012",
+      "panel_id": "P01",
+      "row_id": "P01_R002",
+      "column_id": "P01_C02",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xxxxxxxxx",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            252,
+            175.39000000000004,
+            325,
+            208.42000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00013",
+      "panel_id": "P01",
+      "row_id": "P01_R002",
+      "column_id": "P01_C03",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xxxxxxxxxxx",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            325,
+            175.39000000000004,
+            430,
+            208.42000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00014",
+      "panel_id": "P01",
+      "row_id": "P01_R002",
+      "column_id": "P01_C04",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xxxxxxxxTxx:xx\n(xxxxxxxxTxx:xx)",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            430,
+            175.39000000000004,
+            551,
+            208.42000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00015",
+      "panel_id": "P01",
+      "row_id": "P01_R002",
+      "column_id": "P01_C05",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xx",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            551,
+            175.39000000000004,
+            780,
+            208.42000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00016",
+      "panel_id": "P01",
+      "row_id": "P01_R003",
+      "column_id": "P01_C01",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "…",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            159,
+            208.42000000000002,
+            252,
+            222
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00017",
+      "panel_id": "P01",
+      "row_id": "P01_R003",
+      "column_id": "P01_C02",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "",
+      "is_blank": true,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            252,
+            208.42000000000002,
+            325,
+            222
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00018",
+      "panel_id": "P01",
+      "row_id": "P01_R003",
+      "column_id": "P01_C03",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "",
+      "is_blank": true,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            325,
+            208.42000000000002,
+            430,
+            222
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00019",
+      "panel_id": "P01",
+      "row_id": "P01_R003",
+      "column_id": "P01_C04",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "",
+      "is_blank": true,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            430,
+            208.42000000000002,
+            551,
+            222
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00020",
+      "panel_id": "P01",
+      "row_id": "P01_R003",
+      "column_id": "P01_C05",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "",
+      "is_blank": true,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            551,
+            208.42000000000002,
+            780,
+            222
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "issue_id": "PVCNA003_L_16_2_1_7_I001",
+      "template_id": "PVCNA003_L_16_2_1_7",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 53,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    }
+  ],
+  "listing_spec": {
+    "record_unit": null,
+    "columns": [
+      {
+        "id": "P01_C01",
+        "order": 0,
+        "label": "Patient Number",
+        "source_variable": null,
+        "format": null,
+        "placeholder": null,
+        "editable": true
+      },
+      {
+        "id": "P01_C02",
+        "order": 1,
+        "label": "Visit",
+        "source_variable": null,
+        "format": null,
+        "placeholder": null,
+        "editable": true
+      },
+      {
+        "id": "P01_C03",
+        "order": 2,
+        "label": "Reason for Interruption",
+        "source_variable": null,
+        "format": null,
+        "placeholder": null,
+        "editable": true
+      },
+      {
+        "id": "P01_C04",
+        "order": 3,
+        "label": "Start Date/time\n(Stop Date/Time)",
+        "source_variable": null,
+        "format": null,
+        "placeholder": null,
+        "editable": true
+      },
+      {
+        "id": "P01_C05",
+        "order": 4,
+        "label": "Administered Volume after\nContinuation (mL)",
+        "source_variable": null,
+        "format": null,
+        "placeholder": null,
+        "editable": true
+      }
+    ],
+    "filters_or_inclusion_rules": [],
+    "group_by": [
+      "<Arm>"
+    ],
+    "sort_by": [],
+    "identifiers_displayed": [
+      "Patient Number"
+    ],
+    "pagination_notes": [],
+    "layout_notes": [
+      "Native source columns and example rows retained, including literal option text and blank continuation cells.",
+      "No SDTM/ADaM variables, sorting direction, or record unit inferred."
+    ],
+    "panels": [
+      {
+        "panel_id": "P01",
+        "title": "Listing 16.2.1.7 VCN-01 Dose Interruptions",
+        "page_numbers": [
+          53
+        ],
+        "column_ids": [
+          "P01_C01",
+          "P01_C02",
+          "P01_C03",
+          "P01_C04",
+          "P01_C05"
+        ],
+        "row_ids": [
+          "P01_H001",
+          "P01_R001",
+          "P01_R002",
+          "P01_R003"
+        ],
+        "notes": "Source physical page/panel; continuation pages retain separate geometry within the same shell. Blank cells are visually empty within these row bands; no fill-down or invented rowspan."
+      }
+    ]
+  }
+}

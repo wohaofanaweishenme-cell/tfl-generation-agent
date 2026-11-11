@@ -1,0 +1,39 @@
+VCN Biosciences S.L. P-VCNA-003
+Statistical Analysis Plan
+P-VCNA-003 ddMMMyyyy HH:MM
+Table 14.3.6 Physical Examination (Safety Analysis Set)
+<Body system>
+Visit
+Arm I
+(N=xx)
+(Nab-paclitaxel and gemcitabine)
+Arm II
+(N=xx)
+(VCN-01 with Nab-paclitaxel and gemcitabine)
+Screening n xx xx
+Normal xx (xx.x%) xx (xx.x%)
+Abnormal NCS xx (xx.x%) xx (xx.x%)
+Abnormal CS xx (xx.x%) xx (xx.x%)
+Baseline n xx xx
+Normal xx (xx.x%) xx (xx.x%)
+…
+<Visit> n xx xx
+…
+Change from Baseline to <Visit> n xx xx
+Normal -> Normal xx (xx.x%) xx (xx.x%)
+Normal -> Abnormal NCS xx (xx.x%) xx (xx.x%)
+Normal -> Abnormal CS xx (xx.x%) xx (xx.x%)
+Abnormal NCS -> Normal xx (xx.x%) xx (xx.x%)
+Abnormal NCS -> Abnormal NCS xx (xx.x%) xx (xx.x%)
+Abnormal NCS -> Abnormal CS xx (xx.x%) xx (xx.x%)
+Abnormal CS -> Normal xx (xx.x%) xx (xx.x%)
+Abnormal CS -> Abnormal NCS xx (xx.x%) xx (xx.x%)
+Abnormal CS -> Abnormal CS xx (xx.x%) xx (xx.x%)
+…
+Percentage is the number of patients in the category (n) divided by the number of patients within the column (N).
+Source: Listing 16.2.10
+Path\Filename
+Page x/y
+Form STATt004
+Version Date: 20 May 2021
+Page 59 of 112

@@ -1,0 +1,590 @@
+{
+  "metadata_json_schema": "pass",
+  "metadata_records_checked": 64,
+  "physical_footnotes": 73,
+  "semantic_rules": 112,
+  "zero_default_templates": 64,
+  "all_prior_physical_source_fields": "unchanged",
+  "all_actual_docx_sha256": "unchanged",
+  "metadata_map_structure_parity": "pass",
+  "metadata_scope": "source only",
+  "approval_granted": false,
+  "records": [
+    {
+      "template_id": "PVCNA003_T_14_1_1",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 1,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_T_14_1_2_1",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 4,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_T_14_1_3",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 3,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_T_14_2_1_1",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 3,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_T_14_2_2_7",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 5,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_T_14_2_2_13",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 6,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_T_14_2_2_17",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 3,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_T_14_2_2_21",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 0,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_T_14_2_2_25",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 0,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_T_14_2_3_1",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 0,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_1_1",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 5,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_1_2",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 5,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_1_3",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 5,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_1_4",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 5,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_2_1",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 8,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_3",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 2,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_4_1",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 0,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_4_6",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 1,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_5_2",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 1,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_6",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 1,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_8",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 1,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_9",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 3,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_10",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 6,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_11_1",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 6,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_T_14_5_1",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 1,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_F_14_2_1",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 1,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_F_14_3_1",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 2,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_1_1",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 0,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_1_2",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 4,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_1_3",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 1,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_1_4",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 1,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_1_5",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 0,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_1_6",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 0,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_1_7",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 0,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_2_1",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 0,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_4_1",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 0,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_4_2",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 2,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_4_3",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 0,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_4_4",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 0,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_4_5",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 0,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_4_6",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 0,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_6_1",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 0,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_6_3",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 0,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_6_5",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 2,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_6_6",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 0,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_6_7",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 0,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_6_8",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 0,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_6_9",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 0,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_7_1",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 8,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_8_1",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 2,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_8_5",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 2,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_8_6",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 0,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_8_7",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 0,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_9",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 2,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_10",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 2,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_11",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 2,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_12",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 4,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_13",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 0,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_14",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 0,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_15",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 0,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_16",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 0,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_17",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 0,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_18",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 2,
+      "quality": "pending"
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_19",
+      "physical_notes_and_scopes": "unchanged",
+      "native_structures": "unchanged",
+      "locator_map": "identical",
+      "actual_docx_sha256": "unchanged",
+      "footnote_rules": 0,
+      "quality": "pending"
+    }
+  ]
+}

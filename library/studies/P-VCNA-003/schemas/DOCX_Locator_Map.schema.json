@@ -1,0 +1,339 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DOCX_Locator_Map v2.4",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "2.4"
+    },
+    "template_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "file_path": {
+      "type": "string",
+      "minLength": 1
+    },
+    "docx_boundary": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "start_marker": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9_]{0,39}$"
+        },
+        "end_marker": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9_]{0,39}$"
+        },
+        "document_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "verification_status": {
+          "enum": [
+            "verified",
+            "unverified"
+          ]
+        },
+        "includes_footnotes": {
+          "const": true
+        },
+        "scope_policy": {
+          "const": "complete_source_shell_including_owned_notes"
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "required": [
+        "start_marker",
+        "end_marker",
+        "document_sha256",
+        "verification_status",
+        "includes_footnotes",
+        "scope_policy",
+        "notes"
+      ],
+      "description": "Names identify two real, collapsed Word bookmarks. Range begins before the first owned source content (study/date heading or title) and ends after all owned panels, footnotes, source lines, placeholders and programming notes. Exclude QA commentary. Actual order, containment and hash require DOCX validation; schema validity alone does not verify them."
+    },
+    "source_elements": {
+      "type": "array",
+      "description": "Logical source elements, including observations not yet designated editable. Membership in one element must be justified semantically, never by equal strings alone. IDs are unique within template. Actual visible content must be covered; empty arrays require explicit pending/coverage issue.",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "element_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "element_type": {
+            "type": "string",
+            "minLength": 1
+          },
+          "metadata_pointer": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "Pointer within this template to the corresponding source fact."
+          },
+          "occurrences": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "occurrence_id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "docx_locator": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "Real bookmark/content-control locator; null for an unlocated/noneditable occurrence."
+                },
+                "source_text": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "Verbatim text of this occurrence. Null only when unreadable/nontextual, with an issue."
+                },
+                "role": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "panel_id": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "source_ref_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "uniqueItems": true
+                },
+                "verification_status": {
+                  "enum": [
+                    "verified",
+                    "unverified",
+                    "noneditable"
+                  ]
+                }
+              },
+              "required": [
+                "occurrence_id",
+                "docx_locator",
+                "source_text",
+                "role",
+                "panel_id",
+                "source_ref_ids",
+                "verification_status"
+              ],
+              "allOf": [
+                {
+                  "if": {
+                    "properties": {
+                      "verification_status": {
+                        "const": "verified"
+                      }
+                    }
+                  },
+                  "then": {
+                    "properties": {
+                      "docx_locator": {
+                        "type": "string",
+                        "minLength": 1
+                      }
+                    },
+                    "required": [
+                      "docx_locator"
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          "notes": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "element_id",
+          "element_type",
+          "metadata_pointer",
+          "occurrences",
+          "notes"
+        ]
+      }
+    },
+    "occurrence_relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "relation_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "from_occurrence_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "to_occurrence_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "relation_type": {
+            "enum": [
+              "exact_repeat",
+              "related_distinct",
+              "uncertain"
+            ]
+          },
+          "review_status": {
+            "enum": [
+              "pending",
+              "verified",
+              "conflicting"
+            ]
+          },
+          "source_ref_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "uniqueItems": true
+          },
+          "note": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "relation_id",
+          "from_occurrence_id",
+          "to_occurrence_id",
+          "relation_type",
+          "review_status",
+          "source_ref_ids",
+          "note"
+        ]
+      },
+      "description": "Within-template observations only. No replacement or synchronization is triggered. exact_repeat requires identical source text; text variants affecting meaning remain distinct elements."
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "issue_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "template_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "severity": {
+            "enum": [
+              "info",
+              "warning",
+              "critical"
+            ]
+          },
+          "category": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "enum": [
+              "open",
+              "resolved",
+              "deferred"
+            ]
+          },
+          "source_regions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "document_id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "pdf_page": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "bbox": {
+                  "type": "array",
+                  "items": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "minItems": 4,
+                  "maxItems": 4
+                },
+                "coordinate_system": {
+                  "const": "pdf_points_top_left"
+                }
+              },
+              "required": [
+                "document_id",
+                "pdf_page",
+                "bbox",
+                "coordinate_system"
+              ]
+            },
+            "minItems": 0
+          }
+        },
+        "required": [
+          "issue_id",
+          "template_id",
+          "severity",
+          "category",
+          "description",
+          "status",
+          "source_regions"
+        ]
+      },
+      "minItems": 0
+    }
+  },
+  "required": [
+    "schema_version",
+    "template_id",
+    "file_path",
+    "docx_boundary",
+    "source_elements",
+    "occurrence_relations",
+    "issues"
+  ]
+}

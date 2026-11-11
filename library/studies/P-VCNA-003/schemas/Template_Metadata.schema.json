@@ -1,0 +1,1932 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TFL Template Metadata v2.4 — Complete Source Extraction Pack",
+  "description": "Source-template extraction contract v2.4. One physical source shell per DOCX. Source occurrences and their relations are independent of optional future adaptation rules. No automatic layout expansion, merge, target generation or mandatory replacement test.",
+  "type": "object",
+  "properties": {
+    "library_id": {
+      "type": "string"
+    },
+    "templates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "identity": {
+            "type": "object",
+            "properties": {
+              "template_id": {
+                "type": "string",
+                "description": "Stable key; does not change if document is renamed"
+              },
+              "output_type": {
+                "type": "string",
+                "enum": [
+                  "table",
+                  "figure",
+                  "listing"
+                ],
+                "description": "Source-declared TFL output type; determines archival folder and historical number. May differ from structural_family."
+              },
+              "file_path": {
+                "type": "string",
+                "description": "Path relative to TFL_Template_Library directory, e.g. table/TBL_S01_001.docx"
+              },
+              "original_tfl_number": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "original_title": {
+                "type": "string"
+              },
+              "normalized_title": {
+                "type": "string"
+              },
+              "structural_family": {
+                "type": "string",
+                "enum": [
+                  "table",
+                  "figure",
+                  "listing"
+                ],
+                "description": "Actual structural layout used for parsing and metadata specification; does not change source TFL type."
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "template_id",
+              "output_type",
+              "structural_family",
+              "file_path",
+              "original_tfl_number",
+              "original_title",
+              "normalized_title"
+            ]
+          },
+          "source": {
+            "type": "object",
+            "properties": {
+              "study_id": {
+                "type": "string"
+              },
+              "clinicaltrials_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "sap_document_id": {
+                "type": "string"
+              },
+              "sap_filename": {
+                "type": "string"
+              },
+              "sap_version": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "shell_source_kind": {
+                "type": "string",
+                "enum": [
+                  "sap_appendix",
+                  "separate_shell_document",
+                  "other"
+                ]
+              },
+              "shell_source_filename": {
+                "type": "string"
+              },
+              "shell_page_numbers": {
+                "type": "array",
+                "items": {
+                  "type": "integer",
+                  "minimum": 1
+                }
+              },
+              "shell_section": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "source_asset_path": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "study_id",
+              "clinicaltrials_id",
+              "sap_document_id",
+              "sap_filename",
+              "sap_version",
+              "shell_source_kind",
+              "shell_source_filename",
+              "shell_page_numbers",
+              "shell_section"
+            ]
+          },
+          "statistical_context": {
+            "type": "object",
+            "properties": {
+              "analysis_topic": {
+                "type": "string"
+              },
+              "endpoint_name": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "endpoint_type": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "analysis_population": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "analysis_methods": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "treatment_comparisons": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "visits_or_timepoints": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "applicable_context": {
+                "type": "string"
+              },
+              "not_applicable_context": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "analysis_topic",
+              "endpoint_name",
+              "endpoint_type",
+              "analysis_population",
+              "analysis_methods",
+              "treatment_comparisons",
+              "visits_or_timepoints",
+              "applicable_context",
+              "not_applicable_context"
+            ]
+          },
+          "retrieval": {
+            "type": "object",
+            "properties": {
+              "keywords": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "aliases": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "retrieval_text": {
+                "type": "string",
+                "description": "Short validated description for keyword/BM25 ranking and human or LLM candidate review; not an embedding requirement."
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "keywords",
+              "aliases",
+              "retrieval_text"
+            ]
+          },
+          "adaptation": {
+            "type": "object",
+            "properties": {
+              "required_sap_fields": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "field_name": {
+                      "type": "string"
+                    },
+                    "purpose": {
+                      "type": "string"
+                    },
+                    "when_missing": {
+                      "type": "string",
+                      "enum": [
+                        "flag_unresolved",
+                        "omit_optional",
+                        "use_approved_default"
+                      ]
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "field_name",
+                    "purpose",
+                    "when_missing"
+                  ]
+                }
+              },
+              "editable_elements": {
+                "type": "array",
+                "description": "Optional future rules. Source locators and occurrences live only in source_elements; do not duplicate them here. Leave [] during extraction.",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "source_element_id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "operation": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "enum": [
+                        "replace_text",
+                        "add_row",
+                        "remove_row",
+                        "add_column",
+                        "remove_column",
+                        "edit_footnote",
+                        "edit_axis",
+                        "edit_legend",
+                        "other",
+                        null
+                      ]
+                    },
+                    "target_field": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "notes": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "source_element_id"
+                  ]
+                }
+              },
+              "permitted_defaults": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "field_name": {
+                      "type": "string"
+                    },
+                    "value": {
+                      "type": "string"
+                    },
+                    "basis_ref_id": {
+                      "type": "string",
+                      "description": "Must cite style guide or approved convention"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "field_name",
+                    "value",
+                    "basis_ref_id"
+                  ]
+                }
+              },
+              "adaptation_notes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "required_sap_fields",
+              "editable_elements",
+              "permitted_defaults",
+              "adaptation_notes"
+            ],
+            "description": "Reserved future-stage information. All arrays may remain empty for extraction; no target adaptation or target-field validation is required now."
+          },
+          "footnotes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "footnote_id": {
+                  "type": "string"
+                },
+                "marker": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "exact_text": {
+                  "type": "string"
+                },
+                "applies_to": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "category": {
+                  "type": "string",
+                  "enum": [
+                    "study_specific",
+                    "template_convention",
+                    "placeholder"
+                  ]
+                },
+                "display_order": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "description": "0-based physical order of distinct footnotes within this source shell"
+                },
+                "applies_to_refs": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "description": "Typed link from source footnote marker to visible shell element; a missing association is unresolved, never guessed.",
+                    "required": [
+                      "target_type",
+                      "target_id",
+                      "panel_id",
+                      "mapping_status"
+                    ],
+                    "properties": {
+                      "target_type": {
+                        "enum": [
+                          "shell",
+                          "row",
+                          "column",
+                          "cell",
+                          "panel",
+                          "figure_axis",
+                          "figure_legend",
+                          "unknown"
+                        ]
+                      },
+                      "target_id": {
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "description": "row/column/panel ID; cell uses row_id:column_id; axis uses panel_id:x or panel_id:y; null for shell/unknown."
+                      },
+                      "panel_id": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "mapping_status": {
+                        "enum": [
+                          "explicit",
+                          "inferred",
+                          "unresolved"
+                        ]
+                      }
+                    }
+                  },
+                  "description": "Typed footnote marker-to-row/column/cell/panel associations; [] requires a review issue unless truly global."
+                },
+                "semantic_extraction_status": {
+                  "enum": [
+                    "extracted",
+                    "no_rule_identified",
+                    "needs_review",
+                    "unreadable"
+                  ],
+                  "description": "extracted includes abbreviation and display conventions as well as statistical rules; no_rule_identified requires explicit inspection, not merely an empty array."
+                },
+                "semantic_rules": {
+                  "type": "array",
+                  "description": "One note may express multiple independent semantic rules; rule scopes inherit footnote applies_to_refs unless overridden.",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "rule_id",
+                      "rule_type",
+                      "normalized_rule",
+                      "rule_status",
+                      "evidence_ref_ids"
+                    ],
+                    "properties": {
+                      "rule_id": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "rule_type": {
+                        "enum": [
+                          "denominator",
+                          "population_definition",
+                          "statistical_method",
+                          "counting_rule",
+                          "missing_data",
+                          "coding_definition",
+                          "abbreviation",
+                          "display_convention",
+                          "inclusion_exclusion",
+                          "other"
+                        ]
+                      },
+                      "normalized_rule": {
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "description": "Faithful paraphrase of source rule, not a default for target studies; null if unresolved."
+                      },
+                      "rule_status": {
+                        "enum": [
+                          "explicit",
+                          "inferred",
+                          "conflicting",
+                          "unresolved"
+                        ]
+                      },
+                      "adaptation_field": {
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "description": "The target-SAP requirement to check before adapting; not an unverified target Specification JSON Pointer."
+                      },
+                      "evidence_ref_ids": {
+                        "type": "array",
+                        "uniqueItems": true,
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "applies_to_refs": {
+                        "type": "array",
+                        "items": {
+                          "type": "object",
+                          "additionalProperties": false,
+                          "description": "Typed link from source footnote marker to visible shell element; a missing association is unresolved, never guessed.",
+                          "required": [
+                            "target_type",
+                            "target_id",
+                            "panel_id",
+                            "mapping_status"
+                          ],
+                          "properties": {
+                            "target_type": {
+                              "enum": [
+                                "shell",
+                                "row",
+                                "column",
+                                "cell",
+                                "panel",
+                                "figure_axis",
+                                "figure_legend",
+                                "unknown"
+                              ]
+                            },
+                            "target_id": {
+                              "type": [
+                                "string",
+                                "null"
+                              ],
+                              "description": "row/column/panel ID; cell uses row_id:column_id; axis uses panel_id:x or panel_id:y; null for shell/unknown."
+                            },
+                            "panel_id": {
+                              "type": [
+                                "string",
+                                "null"
+                              ]
+                            },
+                            "mapping_status": {
+                              "enum": [
+                                "explicit",
+                                "inferred",
+                                "unresolved"
+                              ]
+                            }
+                          }
+                        },
+                        "description": "Optional narrower rule scope; if omitted, inherit the footnote scope."
+                      }
+                    }
+                  }
+                },
+                "evidence_ref_ids": {
+                  "type": "array",
+                  "uniqueItems": true,
+                  "items": {
+                    "type": "string"
+                  },
+                  "description": "Links to source_shell evidence; cross-validated against provenance.evidence."
+                }
+              },
+              "additionalProperties": false,
+              "required": [
+                "footnote_id",
+                "marker",
+                "exact_text",
+                "applies_to",
+                "category",
+                "display_order",
+                "applies_to_refs",
+                "semantic_extraction_status",
+                "semantic_rules",
+                "evidence_ref_ids"
+              ],
+              "allOf": [
+                {
+                  "if": {
+                    "properties": {
+                      "semantic_extraction_status": {
+                        "const": "extracted"
+                      }
+                    }
+                  },
+                  "then": {
+                    "properties": {
+                      "semantic_rules": {
+                        "minItems": 1
+                      }
+                    }
+                  }
+                },
+                {
+                  "if": {
+                    "properties": {
+                      "semantic_extraction_status": {
+                        "const": "no_rule_identified"
+                      }
+                    }
+                  },
+                  "then": {
+                    "properties": {
+                      "semantic_rules": {
+                        "maxItems": 0
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "provenance": {
+            "type": "object",
+            "properties": {
+              "evidence": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "ref_id": {
+                      "type": "string",
+                      "description": "Unique evidence identifier"
+                    },
+                    "document_kind": {
+                      "type": "string",
+                      "enum": [
+                        "sap_body",
+                        "source_shell",
+                        "style_guide",
+                        "curator_note"
+                      ]
+                    },
+                    "document_id": {
+                      "type": "string"
+                    },
+                    "page_numbers": {
+                      "type": "array",
+                      "items": {
+                        "type": "integer",
+                        "minimum": 1
+                      }
+                    },
+                    "location": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "exact_text": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "notes": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "source_record_id": {
+                      "type": [
+                        "string",
+                        "null"
+                      ],
+                      "description": "Stem of Source_Records/<template_id>.json, if available. Does not imply that the record was semantically reviewed."
+                    },
+                    "source_regions": {
+                      "type": "array",
+                      "description": "Optional PDF-area coordinates linked to this evidence. PDF page numbers start at 1.",
+                      "items": {
+                        "type": "object",
+                        "additionalProperties": false,
+                        "properties": {
+                          "pdf_page": {
+                            "type": "integer",
+                            "minimum": 1
+                          },
+                          "bbox": {
+                            "type": "array",
+                            "items": {
+                              "type": "number",
+                              "minimum": 0
+                            },
+                            "minItems": 4,
+                            "maxItems": 4
+                          },
+                          "coordinate_system": {
+                            "const": "pdf_points_top_left"
+                          }
+                        },
+                        "required": [
+                          "pdf_page",
+                          "bbox",
+                          "coordinate_system"
+                        ]
+                      }
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "ref_id",
+                    "document_kind",
+                    "document_id",
+                    "page_numbers",
+                    "location",
+                    "exact_text"
+                  ]
+                }
+              },
+              "field_links": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "json_pointer": {
+                      "type": "string",
+                      "description": "JSON Pointer into the template object; may reference a whole array"
+                    },
+                    "ref_ids": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      }
+                    },
+                    "derivation": {
+                      "type": "string",
+                      "enum": [
+                        "explicit",
+                        "normalized",
+                        "inferred",
+                        "unresolved"
+                      ]
+                    },
+                    "review_status": {
+                      "type": "string",
+                      "enum": [
+                        "pending",
+                        "verified",
+                        "rejected"
+                      ]
+                    },
+                    "note": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "json_pointer",
+                    "ref_ids",
+                    "derivation",
+                    "review_status"
+                  ]
+                }
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "evidence",
+              "field_links"
+            ]
+          },
+          "issues": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "json_pointer": {
+                  "type": "string"
+                },
+                "issue_type": {
+                  "type": "string",
+                  "enum": [
+                    "missing",
+                    "ambiguous",
+                    "conflict",
+                    "unsupported",
+                    "extraction_error"
+                  ]
+                },
+                "description": {
+                  "type": "string"
+                },
+                "source_ref_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "open",
+                    "resolved",
+                    "deferred"
+                  ]
+                }
+              },
+              "additionalProperties": false,
+              "required": [
+                "json_pointer",
+                "issue_type",
+                "description",
+                "source_ref_ids",
+                "status"
+              ]
+            }
+          },
+          "quality": {
+            "type": "object",
+            "properties": {
+              "review_status": {
+                "type": "string",
+                "enum": [
+                  "pending",
+                  "reviewed",
+                  "approved"
+                ]
+              },
+              "review_flags": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "review_notes": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "review_status",
+              "review_flags",
+              "review_notes"
+            ]
+          },
+          "table_spec": {
+            "type": "object",
+            "properties": {
+              "rows": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "order": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "parent_id": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "label": {
+                      "type": "string"
+                    },
+                    "role": {
+                      "type": "string",
+                      "enum": [
+                        "section",
+                        "subsection",
+                        "variable",
+                        "category",
+                        "statistic",
+                        "spacer",
+                        "other"
+                      ]
+                    },
+                    "statistic": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "placeholder": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "editable": {
+                      "type": "boolean"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "id",
+                    "order",
+                    "parent_id",
+                    "label",
+                    "role",
+                    "statistic",
+                    "placeholder",
+                    "editable"
+                  ]
+                }
+              },
+              "columns": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "order": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "parent_id": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "label": {
+                      "type": "string"
+                    },
+                    "role": {
+                      "type": "string",
+                      "enum": [
+                        "stub",
+                        "arm",
+                        "timepoint",
+                        "statistic",
+                        "group_header",
+                        "identifier",
+                        "other"
+                      ]
+                    },
+                    "placeholder": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "editable": {
+                      "type": "boolean"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "id",
+                    "order",
+                    "parent_id",
+                    "label",
+                    "role",
+                    "placeholder",
+                    "editable"
+                  ]
+                }
+              },
+              "statistics": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "description": "Preserve source spellings; e.g. n (%), mean (SD)"
+                }
+              },
+              "denominator_rule": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "description": "Optional general source-summary only. Multiple row/cell-specific denominators MUST be captured in footnotes[].semantic_rules and applies_to_refs; do not overwrite with one global string."
+              },
+              "cell_rules": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "row_id": {
+                      "type": "string"
+                    },
+                    "column_id": {
+                      "type": "string"
+                    },
+                    "display_format": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "placeholder": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "rule_description": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "row_id",
+                    "column_id",
+                    "display_format",
+                    "placeholder",
+                    "rule_description"
+                  ]
+                }
+              },
+              "header_row_count": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0
+              },
+              "merged_cell_notes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "orientation": {
+                "type": "string",
+                "enum": [
+                  "portrait",
+                  "landscape",
+                  "unspecified"
+                ]
+              },
+              "layout_notes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "panels": {
+                "type": "array",
+                "description": "Physical panels of one source output; may repeat logical column IDs. Not a template-family reuse link.",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "panel_id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "title": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "page_numbers": {
+                      "type": "array",
+                      "items": {
+                        "type": "integer",
+                        "minimum": 1
+                      },
+                      "minItems": 1,
+                      "uniqueItems": true
+                    },
+                    "column_ids": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      },
+                      "minItems": 1,
+                      "uniqueItems": true
+                    },
+                    "row_ids": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      },
+                      "uniqueItems": true,
+                      "description": "IDs from intermediate/Structured_Shells/<template_id>.json, not assumed to exist in listing_spec. Resolve in that persisted record; missing record or target is a QA issue."
+                    },
+                    "notes": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "panel_id",
+                    "title",
+                    "page_numbers",
+                    "column_ids",
+                    "row_ids",
+                    "notes"
+                  ]
+                }
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "rows",
+              "columns",
+              "statistics",
+              "denominator_rule",
+              "cell_rules",
+              "header_row_count",
+              "merged_cell_notes",
+              "orientation",
+              "layout_notes"
+            ]
+          },
+          "figure_spec": {
+            "type": "object",
+            "properties": {
+              "figure_type": {
+                "type": "string"
+              },
+              "panels": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "panel_id": {
+                      "type": "string"
+                    },
+                    "title": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "panel_description": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "x_axis": {
+                      "type": "object",
+                      "properties": {
+                        "variable": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "label": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "unit": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "scale": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "range": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        }
+                      },
+                      "additionalProperties": false,
+                      "required": [
+                        "variable",
+                        "label",
+                        "unit",
+                        "scale",
+                        "range"
+                      ]
+                    },
+                    "y_axis": {
+                      "type": "object",
+                      "properties": {
+                        "variable": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "label": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "unit": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "scale": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        },
+                        "range": {
+                          "type": [
+                            "string",
+                            "null"
+                          ]
+                        }
+                      },
+                      "additionalProperties": false,
+                      "required": [
+                        "variable",
+                        "label",
+                        "unit",
+                        "scale",
+                        "range"
+                      ]
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "panel_id",
+                    "title",
+                    "panel_description",
+                    "x_axis",
+                    "y_axis"
+                  ]
+                }
+              },
+              "groupings": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "legend_items": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "annotations": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "displayed_statistics": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "source_representation": {
+                "type": "object",
+                "properties": {
+                  "mode": {
+                    "type": "string",
+                    "enum": [
+                      "description",
+                      "code",
+                      "image",
+                      "mixed"
+                    ]
+                  },
+                  "description": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "code_language": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "code_in_docx": {
+                    "type": "boolean"
+                  },
+                  "image_in_docx": {
+                    "type": "boolean"
+                  },
+                  "empty_plot_frame": {
+                    "type": "boolean"
+                  },
+                  "notes": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "additionalProperties": false,
+                "required": [
+                  "mode",
+                  "description",
+                  "code_language",
+                  "code_in_docx",
+                  "image_in_docx",
+                  "empty_plot_frame",
+                  "notes"
+                ]
+              },
+              "layout_notes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "figure_type",
+              "panels",
+              "groupings",
+              "legend_items",
+              "annotations",
+              "displayed_statistics",
+              "source_representation",
+              "layout_notes"
+            ]
+          },
+          "listing_spec": {
+            "type": "object",
+            "properties": {
+              "record_unit": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "columns": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "string"
+                    },
+                    "order": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "label": {
+                      "type": "string"
+                    },
+                    "source_variable": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "format": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "placeholder": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "editable": {
+                      "type": "boolean"
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "id",
+                    "order",
+                    "label",
+                    "source_variable",
+                    "format",
+                    "placeholder",
+                    "editable"
+                  ]
+                }
+              },
+              "filters_or_inclusion_rules": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "group_by": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "sort_by": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "field": {
+                      "type": "string"
+                    },
+                    "direction": {
+                      "type": "string",
+                      "enum": [
+                        "asc",
+                        "desc",
+                        "unspecified"
+                      ]
+                    }
+                  },
+                  "additionalProperties": false,
+                  "required": [
+                    "field",
+                    "direction"
+                  ]
+                }
+              },
+              "identifiers_displayed": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "pagination_notes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "layout_notes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "panels": {
+                "type": "array",
+                "description": "Physical panels of one source output; may repeat logical column IDs. Not a template-family reuse link.",
+                "items": {
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "panel_id": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "title": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "page_numbers": {
+                      "type": "array",
+                      "items": {
+                        "type": "integer",
+                        "minimum": 1
+                      },
+                      "minItems": 1,
+                      "uniqueItems": true
+                    },
+                    "column_ids": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      },
+                      "minItems": 1,
+                      "uniqueItems": true
+                    },
+                    "row_ids": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      },
+                      "uniqueItems": true,
+                      "description": "IDs from intermediate/Structured_Shells/<template_id>.json, not assumed to exist in listing_spec. Resolve in that persisted record; missing record or target is a QA issue."
+                    },
+                    "notes": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    }
+                  },
+                  "required": [
+                    "panel_id",
+                    "title",
+                    "page_numbers",
+                    "column_ids",
+                    "row_ids",
+                    "notes"
+                  ]
+                }
+              }
+            },
+            "additionalProperties": false,
+            "required": [
+              "record_unit",
+              "columns",
+              "filters_or_inclusion_rules",
+              "group_by",
+              "sort_by",
+              "identifiers_displayed",
+              "pagination_notes",
+              "layout_notes"
+            ]
+          },
+          "field_statuses": {
+            "type": "array",
+            "description": "Field-level assertion states. An empty array means no assertions were added yet, not that every field was reviewed.",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "json_pointer": {
+                  "type": "string",
+                  "pattern": "^/",
+                  "description": "JSON Pointer to an existing field in this template."
+                },
+                "status": {
+                  "type": "string",
+                  "enum": [
+                    "unreviewed",
+                    "explicit",
+                    "inferred",
+                    "not_found",
+                    "not_applicable",
+                    "conflicting"
+                  ]
+                },
+                "evidence_ref_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "uniqueItems": true
+                },
+                "note": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "json_pointer",
+                "status",
+                "evidence_ref_ids",
+                "note"
+              ]
+            }
+          },
+          "docx_boundary": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "start_marker": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_]{0,39}$"
+              },
+              "end_marker": {
+                "type": "string",
+                "pattern": "^[A-Za-z][A-Za-z0-9_]{0,39}$"
+              },
+              "document_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "verification_status": {
+                "enum": [
+                  "verified",
+                  "unverified"
+                ]
+              },
+              "includes_footnotes": {
+                "const": true
+              },
+              "scope_policy": {
+                "const": "complete_source_shell_including_owned_notes"
+              },
+              "notes": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "required": [
+              "start_marker",
+              "end_marker",
+              "document_sha256",
+              "verification_status",
+              "includes_footnotes",
+              "scope_policy",
+              "notes"
+            ],
+            "description": "Names identify two real, collapsed Word bookmarks. Range begins before the first owned source content (study/date heading or title) and ends after all owned panels, footnotes, source lines, placeholders and programming notes. Exclude QA commentary. Actual order, containment and hash require DOCX validation; schema validity alone does not verify them."
+          },
+          "source_elements": {
+            "type": "array",
+            "description": "Logical source elements, including observations not yet designated editable. Membership in one element must be justified semantically, never by equal strings alone. IDs are unique within template. Actual visible content must be covered; empty arrays require explicit pending/coverage issue.",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "element_id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "element_type": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "metadata_pointer": {
+                  "type": [
+                    "string",
+                    "null"
+                  ],
+                  "description": "Pointer within this template to the corresponding source fact."
+                },
+                "occurrences": {
+                  "type": "array",
+                  "minItems": 1,
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "occurrence_id": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "docx_locator": {
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "description": "Real bookmark/content-control locator; null for an unlocated/noneditable occurrence."
+                      },
+                      "source_text": {
+                        "type": [
+                          "string",
+                          "null"
+                        ],
+                        "description": "Verbatim text of this occurrence. Null only when unreadable/nontextual, with an issue."
+                      },
+                      "role": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "panel_id": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "source_ref_ids": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        },
+                        "uniqueItems": true
+                      },
+                      "verification_status": {
+                        "enum": [
+                          "verified",
+                          "unverified",
+                          "noneditable"
+                        ]
+                      }
+                    },
+                    "required": [
+                      "occurrence_id",
+                      "docx_locator",
+                      "source_text",
+                      "role",
+                      "panel_id",
+                      "source_ref_ids",
+                      "verification_status"
+                    ],
+                    "allOf": [
+                      {
+                        "if": {
+                          "properties": {
+                            "verification_status": {
+                              "const": "verified"
+                            }
+                          }
+                        },
+                        "then": {
+                          "properties": {
+                            "docx_locator": {
+                              "type": "string",
+                              "minLength": 1
+                            }
+                          },
+                          "required": [
+                            "docx_locator"
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                },
+                "notes": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "element_id",
+                "element_type",
+                "metadata_pointer",
+                "occurrences",
+                "notes"
+              ]
+            }
+          },
+          "occurrence_relations": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "relation_id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "from_occurrence_id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "to_occurrence_id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "relation_type": {
+                  "enum": [
+                    "exact_repeat",
+                    "related_distinct",
+                    "uncertain"
+                  ]
+                },
+                "review_status": {
+                  "enum": [
+                    "pending",
+                    "verified",
+                    "conflicting"
+                  ]
+                },
+                "source_ref_ids": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  },
+                  "uniqueItems": true
+                },
+                "note": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "relation_id",
+                "from_occurrence_id",
+                "to_occurrence_id",
+                "relation_type",
+                "review_status",
+                "source_ref_ids",
+                "note"
+              ]
+            },
+            "description": "Within-template observations only. No replacement or synchronization is triggered. exact_repeat requires identical source text; text variants affecting meaning remain distinct elements."
+          }
+        },
+        "additionalProperties": false,
+        "required": [
+          "identity",
+          "source",
+          "statistical_context",
+          "retrieval",
+          "adaptation",
+          "footnotes",
+          "provenance",
+          "issues",
+          "quality",
+          "field_statuses",
+          "docx_boundary",
+          "source_elements",
+          "occurrence_relations"
+        ],
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "identity": {
+                  "properties": {
+                    "structural_family": {
+                      "const": "table"
+                    }
+                  },
+                  "required": [
+                    "structural_family"
+                  ]
+                }
+              },
+              "required": [
+                "identity"
+              ]
+            },
+            "then": {
+              "required": [
+                "table_spec"
+              ],
+              "not": {
+                "anyOf": [
+                  {
+                    "required": [
+                      "figure_spec"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "listing_spec"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "identity": {
+                  "properties": {
+                    "structural_family": {
+                      "const": "figure"
+                    }
+                  },
+                  "required": [
+                    "structural_family"
+                  ]
+                }
+              },
+              "required": [
+                "identity"
+              ]
+            },
+            "then": {
+              "required": [
+                "figure_spec"
+              ],
+              "not": {
+                "anyOf": [
+                  {
+                    "required": [
+                      "table_spec"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "listing_spec"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "identity": {
+                  "properties": {
+                    "structural_family": {
+                      "const": "listing"
+                    }
+                  },
+                  "required": [
+                    "structural_family"
+                  ]
+                }
+              },
+              "required": [
+                "identity"
+              ]
+            },
+            "then": {
+              "required": [
+                "listing_spec"
+              ],
+              "not": {
+                "anyOf": [
+                  {
+                    "required": [
+                      "table_spec"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "figure_spec"
+                    ]
+                  }
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "schema_version": {
+      "const": "2.4"
+    }
+  },
+  "required": [
+    "library_id",
+    "templates",
+    "schema_version"
+  ],
+  "additionalProperties": false
+}

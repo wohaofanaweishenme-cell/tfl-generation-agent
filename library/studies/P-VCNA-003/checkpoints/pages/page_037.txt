@@ -1,0 +1,28 @@
+VCN Biosciences S.L. P-VCNA-003
+Statistical Analysis Plan
+Dose Interruption[a] Yes xx xx (%) xx xx (%)
+No xx xx (%) xx xx (%)
+Dose Reduction[a] Yes xx xx (%) xx xx (%)
+No xx xx (%) xx xx (%)
+Reason for dose
+reduction[a] [b]
+xxxxxx xx xx (%) xx xx (%)
+xxxxxx xx xx (%) xx xx (%)
+xxxxxx xx xx (%) xx xx (%)
+Treatment compliance[c] Mean xx xx
+STD xx xx
+Median xx xx
+Minimum xx xx
+Maximum xx xx
+Percentage is the number of patients in the category (n) divided by the number of patients within the column (N) unless otherwise specified below.
+[a]: Represents number of events, number of patients with at least one event and percentage of patients with at least one event.
+[b]: The denominator for each percentage is the number of patients with dose reduction.
+[c]: Treatment compliance = percentage of injection administered (actual/planned).
+Source: Listing 16.2.1.3, 16.2.1.4, 16.2.1.5, 16.2.1.6, 16.2.1.7
+Path\Filename
+Programming Note: Please present summaries by the following treatments: VCN-01, Nab-paclitaxel, Gemcitabine.
+Please note that dose reduction is not applicable for VCN-01 administration, this category should be excluded for the treatment.
+Page x/y
+Form STATt004
+Version Date: 20 May 2021
+Page 63 of 112

@@ -1,0 +1,5513 @@
+{
+  "schema_version": "2.4",
+  "template_id": "PVCNA003_T_14_3_10",
+  "file_path": "table/PVCNA003_T_14_3_10.docx",
+  "docx_boundary": {
+    "start_marker": "PVCNA003_T_14_3_10_START",
+    "end_marker": "PVCNA003_T_14_3_10_END",
+    "document_sha256": "956d1d6fcb2aaa0012feadf6a7e8df4e2f7d6189f0204bcbc301888199f5a795",
+    "verification_status": "verified",
+    "includes_footnotes": true,
+    "scope_policy": "complete_source_shell_including_owned_notes",
+    "notes": "Actual collapsed boundary order/containment and source occurrence text inspected in word/document.xml. All physical footnotes materialized as visible editable body paragraphs. Corporate header/logo/form footer excluded consistently; source study/date/path/Page x/y placeholders retained. Render fidelity is recorded separately, not inferred here."
+  },
+  "source_elements": [
+    {
+      "element_id": "E00001",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00001",
+          "docx_locator": "bookmark:O_O00001",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_9f6ae794e0c4b2e0"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00002",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00002",
+          "docx_locator": "bookmark:O_O00002",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_bc1ac9a8bb960bc0"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00003",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00003",
+          "docx_locator": "bookmark:O_O00003",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_03bec4eb114c41c2"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00004",
+      "element_type": "header_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00004",
+          "docx_locator": "bookmark:O_O00004",
+          "source_text": "Arm I\n(Nab-paclitaxel and gemcitabine)\n(N=xx)",
+          "role": "header_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_4927f8b244bbf6de"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00005",
+      "element_type": "header_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00005",
+          "docx_locator": "bookmark:O_O00005",
+          "source_text": "Arm II\n(VCN-01 with Nab-paclitaxel and\ngemcitabine)\n(N=xx)",
+          "role": "header_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_000398d93d938b44"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00006",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00006",
+          "docx_locator": "bookmark:O_O00006",
+          "source_text": "Treatment duration (days)",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_8fda83edc8a23d4a"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00007",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00007",
+          "docx_locator": "bookmark:O_O00007",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_0cd044267fa0e12b"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00008",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00008",
+          "docx_locator": "bookmark:O_O00008",
+          "source_text": "n",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_0befea73e2684dab"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00009",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00009",
+          "docx_locator": "bookmark:O_O00009",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_20b4019ecfc579b1"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00010",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00010",
+          "docx_locator": "bookmark:O_O00010",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_237634a75857763b"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00009; no target substitution requested."
+    },
+    {
+      "element_id": "E00011",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00011",
+          "docx_locator": "bookmark:O_O00011",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_edc612d361be9b11"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00012",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00012",
+          "docx_locator": "bookmark:O_O00012",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_5b8bc08d6c7cb9c2"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00010; no target substitution requested."
+    },
+    {
+      "element_id": "E00013",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00013",
+          "docx_locator": "bookmark:O_O00013",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_2de7aca770babda5"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00014",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00014",
+          "docx_locator": "bookmark:O_O00014",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_45c31bd7e8a5c02f"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00015",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00015",
+          "docx_locator": "bookmark:O_O00015",
+          "source_text": "Mean",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_602aaf84c52002e4"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00016",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00016",
+          "docx_locator": "bookmark:O_O00016",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_e939a5cabf21ae2e"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00017",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00017",
+          "docx_locator": "bookmark:O_O00017",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_06aa09471b09c5a4"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00014; no target substitution requested."
+    },
+    {
+      "element_id": "E00018",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00018",
+          "docx_locator": "bookmark:O_O00018",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_eaf8f15b707707f3"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00019",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00019",
+          "docx_locator": "bookmark:O_O00019",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_af97ad385d08c5ed"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00015; no target substitution requested."
+    },
+    {
+      "element_id": "E00020",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00020",
+          "docx_locator": "bookmark:O_O00020",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_e07a5a13588ca858"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00021",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00021",
+          "docx_locator": "bookmark:O_O00021",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_8603f63b0ed99e34"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00022",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00022",
+          "docx_locator": "bookmark:O_O00022",
+          "source_text": "STD",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_660064c4e54f82b4"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00023",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00023",
+          "docx_locator": "bookmark:O_O00023",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_7b5d9238cd30210f"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00024",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00024",
+          "docx_locator": "bookmark:O_O00024",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_9a84a05890586c29"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00019; no target substitution requested."
+    },
+    {
+      "element_id": "E00025",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00025",
+          "docx_locator": "bookmark:O_O00025",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_1b1a67f9e875321d"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00026",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00026",
+          "docx_locator": "bookmark:O_O00026",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_f9cf5cac22162737"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00020; no target substitution requested."
+    },
+    {
+      "element_id": "E00027",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00027",
+          "docx_locator": "bookmark:O_O00027",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_5ed85c62d64dfc4a"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00028",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00028",
+          "docx_locator": "bookmark:O_O00028",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_7e75736e3be0b564"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00029",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00029",
+          "docx_locator": "bookmark:O_O00029",
+          "source_text": "Median",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_685d62238ffea9cb"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00030",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00030",
+          "docx_locator": "bookmark:O_O00030",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_addd2545e1f61cad"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00031",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00031",
+          "docx_locator": "bookmark:O_O00031",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_be07113bcf25b1ca"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00024; no target substitution requested."
+    },
+    {
+      "element_id": "E00032",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00032",
+          "docx_locator": "bookmark:O_O00032",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_2bb7ff5bd1e643b5"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00033",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00033",
+          "docx_locator": "bookmark:O_O00033",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_f4566bbe97ad5367"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00025; no target substitution requested."
+    },
+    {
+      "element_id": "E00034",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00034",
+          "docx_locator": "bookmark:O_O00034",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_9aa683e0766d13ca"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00035",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00035",
+          "docx_locator": "bookmark:O_O00035",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_3d66f517ce0bd82d"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00036",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00036",
+          "docx_locator": "bookmark:O_O00036",
+          "source_text": "Minimum",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_ceae850c7ea05929"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00037",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00037",
+          "docx_locator": "bookmark:O_O00037",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_386e3563a2fa2c5a"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00038",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00038",
+          "docx_locator": "bookmark:O_O00038",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_fe9d3910c3b67aa1"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00029; no target substitution requested."
+    },
+    {
+      "element_id": "E00039",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00039",
+          "docx_locator": "bookmark:O_O00039",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_244ddf60e6d0cc3f"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00040",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00040",
+          "docx_locator": "bookmark:O_O00040",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_764db2f9aa2bc6bf"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00030; no target substitution requested."
+    },
+    {
+      "element_id": "E00041",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00041",
+          "docx_locator": "bookmark:O_O00041",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_20723301d53f2b39"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00042",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00042",
+          "docx_locator": "bookmark:O_O00042",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_1b4fbdef7736c645"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00043",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00043",
+          "docx_locator": "bookmark:O_O00043",
+          "source_text": "Maximum",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_6e048ae8ec94dacb"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00044",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00044",
+          "docx_locator": "bookmark:O_O00044",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_ce923ae268865465"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00045",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00045",
+          "docx_locator": "bookmark:O_O00045",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_d44c276a99cf2fec"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00034; no target substitution requested."
+    },
+    {
+      "element_id": "E00046",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00046",
+          "docx_locator": "bookmark:O_O00046",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_628508f44b7bd369"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00047",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00047",
+          "docx_locator": "bookmark:O_O00047",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_485aaebd8cffb26f"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00035; no target substitution requested."
+    },
+    {
+      "element_id": "E00048",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00048",
+          "docx_locator": "bookmark:O_O00048",
+          "source_text": "<Treatment> administration",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_6a25e27b1f962fc3"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00049",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00049",
+          "docx_locator": "bookmark:O_O00049",
+          "source_text": "<Treatment>",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_8ebec92680b1cbc4"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00036; no target substitution requested."
+    },
+    {
+      "element_id": "E00050",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00050",
+          "docx_locator": "bookmark:O_O00050",
+          "source_text": "Number of doses",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_f26397265fc34fd1"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00051",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00051",
+          "docx_locator": "bookmark:O_O00051",
+          "source_text": "n",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_021bfcd2b16d3f89"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00052",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00052",
+          "docx_locator": "bookmark:O_O00052",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_4b4c8bbdcdc01bbb"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00053",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00053",
+          "docx_locator": "bookmark:O_O00053",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_70bddbefbfcfbd11"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00039; no target substitution requested."
+    },
+    {
+      "element_id": "E00054",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00054",
+          "docx_locator": "bookmark:O_O00054",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_90916db53099e7ab"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00055",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00055",
+          "docx_locator": "bookmark:O_O00055",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_40736877fab90ce0"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00040; no target substitution requested."
+    },
+    {
+      "element_id": "E00056",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00056",
+          "docx_locator": "bookmark:O_O00056",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_d67eccbf8bb963f3"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00057",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00057",
+          "docx_locator": "bookmark:O_O00057",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_aae0750ef3d51b3d"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00058",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00058",
+          "docx_locator": "bookmark:O_O00058",
+          "source_text": "Mean",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_ccd7d5583eb25a73"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00059",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00059",
+          "docx_locator": "bookmark:O_O00059",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_e3c7a573c1fdccde"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00060",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00060",
+          "docx_locator": "bookmark:O_O00060",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_75a47e42106e9d1c"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00044; no target substitution requested."
+    },
+    {
+      "element_id": "E00061",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00061",
+          "docx_locator": "bookmark:O_O00061",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_8997f016b3d88f2c"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00062",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00062",
+          "docx_locator": "bookmark:O_O00062",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_fb33c840a69ea82c"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00045; no target substitution requested."
+    },
+    {
+      "element_id": "E00063",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00063",
+          "docx_locator": "bookmark:O_O00063",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_c763670c1d17656f"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00064",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00064",
+          "docx_locator": "bookmark:O_O00064",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_2acc87a6530cce03"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00065",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00065",
+          "docx_locator": "bookmark:O_O00065",
+          "source_text": "STD",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_caee31bf9d1121fd"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00066",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00066",
+          "docx_locator": "bookmark:O_O00066",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_be8390eb43cc4fa2"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00067",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00067",
+          "docx_locator": "bookmark:O_O00067",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_f91bab1d7276d7e4"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00049; no target substitution requested."
+    },
+    {
+      "element_id": "E00068",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00068",
+          "docx_locator": "bookmark:O_O00068",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_9c36c9735b38266c"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00069",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00069",
+          "docx_locator": "bookmark:O_O00069",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_294fc09bbcf08fa3"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00050; no target substitution requested."
+    },
+    {
+      "element_id": "E00070",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00070",
+          "docx_locator": "bookmark:O_O00070",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_7382952cee613182"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00071",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00071",
+          "docx_locator": "bookmark:O_O00071",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_960986f96e30c96c"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00072",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00072",
+          "docx_locator": "bookmark:O_O00072",
+          "source_text": "Median",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_41a3550558159569"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00073",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00073",
+          "docx_locator": "bookmark:O_O00073",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_02a9c079bb3e7cbd"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00074",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00074",
+          "docx_locator": "bookmark:O_O00074",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_6ce9657a583c187f"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00054; no target substitution requested."
+    },
+    {
+      "element_id": "E00075",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00075",
+          "docx_locator": "bookmark:O_O00075",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_0fdd0caeea4dab17"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00076",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00076",
+          "docx_locator": "bookmark:O_O00076",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_fad33b97aaada570"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00055; no target substitution requested."
+    },
+    {
+      "element_id": "E00077",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00077",
+          "docx_locator": "bookmark:O_O00077",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_80426b7692dc9c7a"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00078",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00078",
+          "docx_locator": "bookmark:O_O00078",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_03eb3423556c8b55"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00079",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00079",
+          "docx_locator": "bookmark:O_O00079",
+          "source_text": "Minimum",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_f65a8d5389e4d56d"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00080",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00080",
+          "docx_locator": "bookmark:O_O00080",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_4df6d2893bd5c20b"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00081",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00081",
+          "docx_locator": "bookmark:O_O00081",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_8dc9700c55458fb5"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00059; no target substitution requested."
+    },
+    {
+      "element_id": "E00082",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00082",
+          "docx_locator": "bookmark:O_O00082",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_e1050e4b0ba5deb3"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00083",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00083",
+          "docx_locator": "bookmark:O_O00083",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_45fbe1b06ea130e9"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00060; no target substitution requested."
+    },
+    {
+      "element_id": "E00084",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00084",
+          "docx_locator": "bookmark:O_O00084",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_92f955d0fd14923f"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00085",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00085",
+          "docx_locator": "bookmark:O_O00085",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_fdc6db915394572f"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00086",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00086",
+          "docx_locator": "bookmark:O_O00086",
+          "source_text": "Maximum",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_64193e4d26300780"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00087",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00087",
+          "docx_locator": "bookmark:O_O00087",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_302d4d0744b30e9d"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00088",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00088",
+          "docx_locator": "bookmark:O_O00088",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_55e34e488962e978"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00064; no target substitution requested."
+    },
+    {
+      "element_id": "E00089",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00089",
+          "docx_locator": "bookmark:O_O00089",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_638b5d81edcd87cf"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00090",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00090",
+          "docx_locator": "bookmark:O_O00090",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_1782408f407e00ee"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00065; no target substitution requested."
+    },
+    {
+      "element_id": "E00091",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00091",
+          "docx_locator": "bookmark:O_O00091",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_a1efcf8a31245144"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00092",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00092",
+          "docx_locator": "bookmark:O_O00092",
+          "source_text": "Total dose administered\n(unit)",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_3940181cc239cc5f"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00093",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00093",
+          "docx_locator": "bookmark:O_O00093",
+          "source_text": "n",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_d46c2b4c7e1a5919"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00094",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00094",
+          "docx_locator": "bookmark:O_O00094",
+          "source_text": "Xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_27c58d1280648bfc"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00095",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00095",
+          "docx_locator": "bookmark:O_O00095",
+          "source_text": "Xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_c6d5646e749b795e"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00069; no target substitution requested."
+    },
+    {
+      "element_id": "E00096",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00096",
+          "docx_locator": "bookmark:O_O00096",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_9de7a624bd1c0665"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00097",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00097",
+          "docx_locator": "bookmark:O_O00097",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_ffe3cc6492996d67"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00070; no target substitution requested."
+    },
+    {
+      "element_id": "E00098",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00098",
+          "docx_locator": "bookmark:O_O00098",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_a30110ccdc5c13bc"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00099",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00099",
+          "docx_locator": "bookmark:O_O00099",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_718e68ae248541ac"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00100",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00100",
+          "docx_locator": "bookmark:O_O00100",
+          "source_text": "Mean",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_c8f2f9c722560f36"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00101",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00101",
+          "docx_locator": "bookmark:O_O00101",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_f9fecc8143676495"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00102",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00102",
+          "docx_locator": "bookmark:O_O00102",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_aeee6b1e5e8e8903"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00074; no target substitution requested."
+    },
+    {
+      "element_id": "E00103",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00103",
+          "docx_locator": "bookmark:O_O00103",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_46214597863112e3"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00104",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00104",
+          "docx_locator": "bookmark:O_O00104",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_de7cdaf960e4415c"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00075; no target substitution requested."
+    },
+    {
+      "element_id": "E00105",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00105",
+          "docx_locator": "bookmark:O_O00105",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_30947b2f8b42bb44"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00106",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00106",
+          "docx_locator": "bookmark:O_O00106",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_201dbc65cf03174d"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00107",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00107",
+          "docx_locator": "bookmark:O_O00107",
+          "source_text": "…",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_d6ef906b30e84773"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00108",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00108",
+          "docx_locator": "bookmark:O_O00108",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_78849e0acc004ced"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00109",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00109",
+          "docx_locator": "bookmark:O_O00109",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_159900f318308ada"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00110",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00110",
+          "docx_locator": "bookmark:O_O00110",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_17c1b4ab1e606746"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00111",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00111",
+          "docx_locator": "bookmark:O_O00111",
+          "source_text": "Dose intensity (unit)",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_b38b3afe63f06019"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00112",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00112",
+          "docx_locator": "bookmark:O_O00112",
+          "source_text": "n",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_499aca88f7795751"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00113",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00113",
+          "docx_locator": "bookmark:O_O00113",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_34eb809cacaeb005"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00114",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00114",
+          "docx_locator": "bookmark:O_O00114",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_8a3835f07dd2c2d6"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00084; no target substitution requested."
+    },
+    {
+      "element_id": "E00115",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00115",
+          "docx_locator": "bookmark:O_O00115",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_d3972318c2398f21"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00116",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00116",
+          "docx_locator": "bookmark:O_O00116",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_eec405345c4b8e2c"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00085; no target substitution requested."
+    },
+    {
+      "element_id": "E00117",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00117",
+          "docx_locator": "bookmark:O_O00117",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_e40bfcf4cc86fa89"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00118",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00118",
+          "docx_locator": "bookmark:O_O00118",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_9f80fd8f01bfcb11"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00119",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00119",
+          "docx_locator": "bookmark:O_O00119",
+          "source_text": "Mean",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_23cbd5b954dda510"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00120",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00120",
+          "docx_locator": "bookmark:O_O00120",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_9712d9e3a83eb677"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00121",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00121",
+          "docx_locator": "bookmark:O_O00121",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_8de8c86e5bde4603"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00089; no target substitution requested."
+    },
+    {
+      "element_id": "E00122",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00122",
+          "docx_locator": "bookmark:O_O00122",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_772a3ac5b6b0435c"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00123",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00123",
+          "docx_locator": "bookmark:O_O00123",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_abdb4edbbd8ed050"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00090; no target substitution requested."
+    },
+    {
+      "element_id": "E00124",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00124",
+          "docx_locator": "bookmark:O_O00124",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_30fefed0181724ee"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00125",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00125",
+          "docx_locator": "bookmark:O_O00125",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_d7c0c2d0db83f527"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00126",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00126",
+          "docx_locator": "bookmark:O_O00126",
+          "source_text": "…",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_6df825e8fc6983e0"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00127",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00127",
+          "docx_locator": "bookmark:O_O00127",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_72edc3ec7ae48704"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00128",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00128",
+          "docx_locator": "bookmark:O_O00128",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_9e1f0fa76df10b7e"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00129",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00129",
+          "docx_locator": "bookmark:O_O00129",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_9872fcf71f17889b"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00130",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00130",
+          "docx_locator": "bookmark:O_O00130",
+          "source_text": "Relative dose intensity (%)",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_6829fbd2230c0c4f"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00131",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00131",
+          "docx_locator": "bookmark:O_O00131",
+          "source_text": "n",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_6610edc401a04061"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00132",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00132",
+          "docx_locator": "bookmark:O_O00132",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_ef2e650e5288c6bc"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00133",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00133",
+          "docx_locator": "bookmark:O_O00133",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_918dc6b34e21fc37"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00099; no target substitution requested."
+    },
+    {
+      "element_id": "E00134",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00134",
+          "docx_locator": "bookmark:O_O00134",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_b4ea6ccb27736b12"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00135",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00135",
+          "docx_locator": "bookmark:O_O00135",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_81e36b9bb1537b9b"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00100; no target substitution requested."
+    },
+    {
+      "element_id": "E00136",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00136",
+          "docx_locator": "bookmark:O_O00136",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_d0959a260a244a94"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00137",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00137",
+          "docx_locator": "bookmark:O_O00137",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_f24b76f850926546"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00138",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00138",
+          "docx_locator": "bookmark:O_O00138",
+          "source_text": "Mean",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_d30b1a4b72f82348"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00139",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00139",
+          "docx_locator": "bookmark:O_O00139",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_fc5074ea136475e6"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00140",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00140",
+          "docx_locator": "bookmark:O_O00140",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_0e18f89427738976"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00104; no target substitution requested."
+    },
+    {
+      "element_id": "E00141",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00141",
+          "docx_locator": "bookmark:O_O00141",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_1075eb4f78d217e2"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00142",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00142",
+          "docx_locator": "bookmark:O_O00142",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_dd7a48ef154250ae"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00105; no target substitution requested."
+    },
+    {
+      "element_id": "E00143",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00143",
+          "docx_locator": "bookmark:O_O00143",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_42a699a4aea8c4fa"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00144",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00144",
+          "docx_locator": "bookmark:O_O00144",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_ac9954a9d618e780"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00145",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00145",
+          "docx_locator": "bookmark:O_O00145",
+          "source_text": "…",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_5a14e6d3ce35d21d"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00146",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00146",
+          "docx_locator": "bookmark:O_O00146",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_9c4bfb05c8fd086d"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00147",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00147",
+          "docx_locator": "bookmark:O_O00147",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_16571dc1e186f0ae"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00148",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00148",
+          "docx_locator": "bookmark:O_O00148",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_7573376df42bd48b"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00149",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00149",
+          "docx_locator": "bookmark:O_O00149",
+          "source_text": "Dose prolongation[a]",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_a507dd59e6aae997"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00150",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00150",
+          "docx_locator": "bookmark:O_O00150",
+          "source_text": "Yes",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_f4116523fb743423"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00151",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00151",
+          "docx_locator": "bookmark:O_O00151",
+          "source_text": "xx xx (%)",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_a9647109b0bb2871"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00152",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00152",
+          "docx_locator": "bookmark:O_O00152",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_fe77744a9bb470f3"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00114; no target substitution requested."
+    },
+    {
+      "element_id": "E00153",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00153",
+          "docx_locator": "bookmark:O_O00153",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_8406679b0a27b050"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00114; no target substitution requested."
+    },
+    {
+      "element_id": "E00154",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00154",
+          "docx_locator": "bookmark:O_O00154",
+          "source_text": "xx xx (%)",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_8fabf4ca4c90209a"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00155",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00155",
+          "docx_locator": "bookmark:O_O00155",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_e1602f0667366f4a"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00115; no target substitution requested."
+    },
+    {
+      "element_id": "E00156",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00156",
+          "docx_locator": "bookmark:O_O00156",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_c60cec9bb5b4db87"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00115; no target substitution requested."
+    },
+    {
+      "element_id": "E00157",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00157",
+          "docx_locator": "bookmark:O_O00157",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_a70c53a17eaef297"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00158",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00158",
+          "docx_locator": "bookmark:O_O00158",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_96e6f48436ddd9de"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00159",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00159",
+          "docx_locator": "bookmark:O_O00159",
+          "source_text": "No",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_bad738f6241c2751"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00160",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00160",
+          "docx_locator": "bookmark:O_O00160",
+          "source_text": "xx xx (%)",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_a5840f368d3a5393"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00161",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00161",
+          "docx_locator": "bookmark:O_O00161",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_0c5dbcaf0d8e70ef"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00119; no target substitution requested."
+    },
+    {
+      "element_id": "E00162",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00162",
+          "docx_locator": "bookmark:O_O00162",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_79dbbaa025dfa87f"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00119; no target substitution requested."
+    },
+    {
+      "element_id": "E00163",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00163",
+          "docx_locator": "bookmark:O_O00163",
+          "source_text": "xx xx (%)",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_394d8f39c4b83b18"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00164",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00164",
+          "docx_locator": "bookmark:O_O00164",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_c47157348f95919c"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00120; no target substitution requested."
+    },
+    {
+      "element_id": "E00165",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00165",
+          "docx_locator": "bookmark:O_O00165",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_8d75a0da9e36d88d"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00120; no target substitution requested."
+    },
+    {
+      "element_id": "E00166",
+      "element_type": "other",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00166",
+          "docx_locator": null,
+          "source_text": "VCN Biosciences S.L. P-VCNA-003",
+          "role": "other",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_256cd57d4e6a1285"
+          ],
+          "verification_status": "unverified"
+        }
+      ],
+      "notes": "Corporate source header wrapper; retained for traceability, separate from shell title/header. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed."
+    },
+    {
+      "element_id": "E00167",
+      "element_type": "other",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00167",
+          "docx_locator": null,
+          "source_text": "Statistical Analysis Plan",
+          "role": "other",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_3900230117b95a8f"
+          ],
+          "verification_status": "unverified"
+        }
+      ],
+      "notes": "Corporate source header wrapper; retained for traceability, separate from shell title/header. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed."
+    },
+    {
+      "element_id": "E00168",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00168",
+          "docx_locator": "bookmark:O_O00168",
+          "source_text": "P-VCNA-003 ddMMMyyyy HH:MM",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_ec0df360138d7a8d"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00169",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00169",
+          "docx_locator": "bookmark:O_O00169",
+          "source_text": "ddMMMyyyy",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_325e44d6b303d66e"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Actual source placeholder; no replacement operation."
+    },
+    {
+      "element_id": "E00170",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00170",
+          "docx_locator": "bookmark:O_O00170",
+          "source_text": "HH:MM",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_047b24784082530d"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Actual source placeholder; no replacement operation."
+    },
+    {
+      "element_id": "E00171",
+      "element_type": "title",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00171",
+          "docx_locator": "bookmark:O_O00171",
+          "source_text": "Table 14.3.10 Study Drug Exposure and Compliance (Safety Analysis Set)",
+          "role": "title",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_42875163966446a5"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00172",
+      "element_type": "other",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00172",
+          "docx_locator": null,
+          "source_text": "Form STATt004 Page 62 of 112",
+          "role": "other",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_e33b29f1fd2956a2"
+          ],
+          "verification_status": "unverified"
+        }
+      ],
+      "notes": "Corporate form footer retained separately; not a clinical footnote. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed."
+    },
+    {
+      "element_id": "E00173",
+      "element_type": "other",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00173",
+          "docx_locator": null,
+          "source_text": "Version Date: 20 May 2021",
+          "role": "other",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_716cf46a14db617b"
+          ],
+          "verification_status": "unverified"
+        }
+      ],
+      "notes": "Corporate form footer retained separately; not a clinical footnote. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed."
+    },
+    {
+      "element_id": "E00174",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00174",
+          "docx_locator": "bookmark:O_O00174",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_205537dd69d34ea2"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00175",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00175",
+          "docx_locator": "bookmark:O_O00175",
+          "source_text": "Dose Interruption[a]",
+          "role": "body_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_90d071edad0c9616"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00176",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00176",
+          "docx_locator": "bookmark:O_O00176",
+          "source_text": "Yes",
+          "role": "body_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_d94320861cb15874"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00177",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00177",
+          "docx_locator": "bookmark:O_O00177",
+          "source_text": "xx xx (%)",
+          "role": "body_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_79df275e95a611b2"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00178",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00178",
+          "docx_locator": "bookmark:O_O00178",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_52aaad6d121c04b5"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00124; no target substitution requested."
+    },
+    {
+      "element_id": "E00179",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00179",
+          "docx_locator": "bookmark:O_O00179",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_f296514647fb6d09"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00124; no target substitution requested."
+    },
+    {
+      "element_id": "E00180",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00180",
+          "docx_locator": "bookmark:O_O00180",
+          "source_text": "xx xx (%)",
+          "role": "body_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_7e338b88b29e0505"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00181",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00181",
+          "docx_locator": "bookmark:O_O00181",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_22094f7eaad0ac6e"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00125; no target substitution requested."
+    },
+    {
+      "element_id": "E00182",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00182",
+          "docx_locator": "bookmark:O_O00182",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_8d79889b7b262428"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00125; no target substitution requested."
+    },
+    {
+      "element_id": "E00183",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00183",
+          "docx_locator": "bookmark:O_O00183",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_104a4be9650dd986"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00184",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00184",
+          "docx_locator": "bookmark:O_O00184",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_6e6474ea2e1f383f"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00185",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00185",
+          "docx_locator": "bookmark:O_O00185",
+          "source_text": "No",
+          "role": "body_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_394add6c81503239"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00186",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00186",
+          "docx_locator": "bookmark:O_O00186",
+          "source_text": "xx xx (%)",
+          "role": "body_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_189ae6e35ee07315"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00187",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00187",
+          "docx_locator": "bookmark:O_O00187",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_36b2d124e750c829"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00129; no target substitution requested."
+    },
+    {
+      "element_id": "E00188",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00188",
+          "docx_locator": "bookmark:O_O00188",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_aa059991f63b3573"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00129; no target substitution requested."
+    },
+    {
+      "element_id": "E00189",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00189",
+          "docx_locator": "bookmark:O_O00189",
+          "source_text": "xx xx (%)",
+          "role": "body_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_238da98728282631"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00190",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00190",
+          "docx_locator": "bookmark:O_O00190",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_3d104cf1406f49bf"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00130; no target substitution requested."
+    },
+    {
+      "element_id": "E00191",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00191",
+          "docx_locator": "bookmark:O_O00191",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_1a95ea7795779bfb"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00130; no target substitution requested."
+    },
+    {
+      "element_id": "E00192",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00192",
+          "docx_locator": "bookmark:O_O00192",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_7244013b6ff43db6"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00193",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00193",
+          "docx_locator": "bookmark:O_O00193",
+          "source_text": "Dose Reduction[a]",
+          "role": "body_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_e9bd34d0f697c94c"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00194",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00194",
+          "docx_locator": "bookmark:O_O00194",
+          "source_text": "Yes",
+          "role": "body_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_5817e441bf87500b"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00195",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00195",
+          "docx_locator": "bookmark:O_O00195",
+          "source_text": "xx xx (%)",
+          "role": "body_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_aecf43aceef8bafe"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00196",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00196",
+          "docx_locator": "bookmark:O_O00196",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_b0a36a97a9e48d0d"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00134; no target substitution requested."
+    },
+    {
+      "element_id": "E00197",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00197",
+          "docx_locator": "bookmark:O_O00197",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_d8ab2bdccf645af7"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00134; no target substitution requested."
+    },
+    {
+      "element_id": "E00198",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00198",
+          "docx_locator": "bookmark:O_O00198",
+          "source_text": "xx xx (%)",
+          "role": "body_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_9429070e91bfc1e6"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00199",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00199",
+          "docx_locator": "bookmark:O_O00199",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_b5d893c6212330c5"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00135; no target substitution requested."
+    },
+    {
+      "element_id": "E00200",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00200",
+          "docx_locator": "bookmark:O_O00200",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_978f8165570c42cd"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00135; no target substitution requested."
+    },
+    {
+      "element_id": "E00201",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00201",
+          "docx_locator": "bookmark:O_O00201",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_5cdb11e490d87924"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00202",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00202",
+          "docx_locator": "bookmark:O_O00202",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_c324d67d400d2ee9"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00203",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00203",
+          "docx_locator": "bookmark:O_O00203",
+          "source_text": "No",
+          "role": "body_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_de20d5c19e8661af"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00204",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00204",
+          "docx_locator": "bookmark:O_O00204",
+          "source_text": "xx xx (%)",
+          "role": "body_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_912e81c72c58a98b"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00205",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00205",
+          "docx_locator": "bookmark:O_O00205",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_f632ca9960a6c865"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00139; no target substitution requested."
+    },
+    {
+      "element_id": "E00206",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00206",
+          "docx_locator": "bookmark:O_O00206",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_279fde49840eb149"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00139; no target substitution requested."
+    },
+    {
+      "element_id": "E00207",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00207",
+          "docx_locator": "bookmark:O_O00207",
+          "source_text": "xx xx (%)",
+          "role": "body_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_fcda90e4888e10d1"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00208",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00208",
+          "docx_locator": "bookmark:O_O00208",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_4382acf1f30c7aab"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00140; no target substitution requested."
+    },
+    {
+      "element_id": "E00209",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00209",
+          "docx_locator": "bookmark:O_O00209",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_9516023230ef9c81"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00140; no target substitution requested."
+    },
+    {
+      "element_id": "E00210",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00210",
+          "docx_locator": "bookmark:O_O00210",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_d859d985912a19de"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00211",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00211",
+          "docx_locator": "bookmark:O_O00211",
+          "source_text": "Reason for dose\nreduction[a] [b]",
+          "role": "body_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_f84a348e564a454a"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00212",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00212",
+          "docx_locator": "bookmark:O_O00212",
+          "source_text": "xxxxxx",
+          "role": "placeholder_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_8e3a93b4cfc898db"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00213",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00213",
+          "docx_locator": "bookmark:O_O00213",
+          "source_text": "xxxxxx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_d96eea8d4878e3f1"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00143; no target substitution requested."
+    },
+    {
+      "element_id": "E00214",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00214",
+          "docx_locator": "bookmark:O_O00214",
+          "source_text": "xx xx (%)",
+          "role": "body_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_53e2b7b26ec8d405"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00215",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00215",
+          "docx_locator": "bookmark:O_O00215",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_ab7ee11a06af890f"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00144; no target substitution requested."
+    },
+    {
+      "element_id": "E00216",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00216",
+          "docx_locator": "bookmark:O_O00216",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_5a4d129dd6abcf2f"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00144; no target substitution requested."
+    },
+    {
+      "element_id": "E00217",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00217",
+          "docx_locator": "bookmark:O_O00217",
+          "source_text": "xx xx (%)",
+          "role": "body_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_d55c054929ddbf82"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00218",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00218",
+          "docx_locator": "bookmark:O_O00218",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_4e1ced4676e1a907"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00145; no target substitution requested."
+    },
+    {
+      "element_id": "E00219",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00219",
+          "docx_locator": "bookmark:O_O00219",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_60bc31282e673ff3"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00145; no target substitution requested."
+    },
+    {
+      "element_id": "E00220",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00220",
+          "docx_locator": "bookmark:O_O00220",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_5d99a02afece7df0"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00221",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00221",
+          "docx_locator": "bookmark:O_O00221",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_21ce94270097645b"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00222",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00222",
+          "docx_locator": "bookmark:O_O00222",
+          "source_text": "xxxxxx",
+          "role": "placeholder_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_00f977d254a1fee7"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00223",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00223",
+          "docx_locator": "bookmark:O_O00223",
+          "source_text": "xxxxxx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_00ab9de098f5ae9d"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00148; no target substitution requested."
+    },
+    {
+      "element_id": "E00224",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00224",
+          "docx_locator": "bookmark:O_O00224",
+          "source_text": "xx xx (%)",
+          "role": "body_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_dcca1f18f5cb4abb"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00225",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00225",
+          "docx_locator": "bookmark:O_O00225",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_c7419db18d8c2b54"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00149; no target substitution requested."
+    },
+    {
+      "element_id": "E00226",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00226",
+          "docx_locator": "bookmark:O_O00226",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_ba004e6f751b769b"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00149; no target substitution requested."
+    },
+    {
+      "element_id": "E00227",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00227",
+          "docx_locator": "bookmark:O_O00227",
+          "source_text": "xx xx (%)",
+          "role": "body_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_19449373161bc0c1"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00228",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00228",
+          "docx_locator": "bookmark:O_O00228",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_525e98ff12e8bf52"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00150; no target substitution requested."
+    },
+    {
+      "element_id": "E00229",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00229",
+          "docx_locator": "bookmark:O_O00229",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_b9f334f6b5842e61"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00150; no target substitution requested."
+    },
+    {
+      "element_id": "E00230",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00230",
+          "docx_locator": "bookmark:O_O00230",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_8352dd3d67baaf35"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00231",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00231",
+          "docx_locator": "bookmark:O_O00231",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_c100f892e58d9c35"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00232",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00232",
+          "docx_locator": "bookmark:O_O00232",
+          "source_text": "xxxxxx",
+          "role": "placeholder_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_0427cf25c91c6340"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00233",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00233",
+          "docx_locator": "bookmark:O_O00233",
+          "source_text": "xxxxxx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_9e7e8ee48c69d600"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00153; no target substitution requested."
+    },
+    {
+      "element_id": "E00234",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00234",
+          "docx_locator": "bookmark:O_O00234",
+          "source_text": "xx xx (%)",
+          "role": "body_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_5e7b698018d2c339"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00235",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00235",
+          "docx_locator": "bookmark:O_O00235",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_373d13d149d7c140"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00154; no target substitution requested."
+    },
+    {
+      "element_id": "E00236",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00236",
+          "docx_locator": "bookmark:O_O00236",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_0db5b046698551fa"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00154; no target substitution requested."
+    },
+    {
+      "element_id": "E00237",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00237",
+          "docx_locator": "bookmark:O_O00237",
+          "source_text": "xx xx (%)",
+          "role": "body_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_c8828715d444529c"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00238",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00238",
+          "docx_locator": "bookmark:O_O00238",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_15ebc3c6e8d6a59b"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00155; no target substitution requested."
+    },
+    {
+      "element_id": "E00239",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00239",
+          "docx_locator": "bookmark:O_O00239",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_05dbcb3568724290"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00155; no target substitution requested."
+    },
+    {
+      "element_id": "E00240",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00240",
+          "docx_locator": "bookmark:O_O00240",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_222d2b26456cec3d"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00241",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00241",
+          "docx_locator": "bookmark:O_O00241",
+          "source_text": "Treatment compliance[c]",
+          "role": "body_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_534f01e5f1b237da"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00242",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00242",
+          "docx_locator": "bookmark:O_O00242",
+          "source_text": "Mean",
+          "role": "body_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_e0047c12ae0302f2"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00243",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00243",
+          "docx_locator": "bookmark:O_O00243",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_6c495075f7a15219"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00244",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00244",
+          "docx_locator": "bookmark:O_O00244",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_b53af7bea0ab8cd8"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00159; no target substitution requested."
+    },
+    {
+      "element_id": "E00245",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00245",
+          "docx_locator": "bookmark:O_O00245",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_68e371fd37931a8c"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00246",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00246",
+          "docx_locator": "bookmark:O_O00246",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_26f3aee89bf3884b"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00160; no target substitution requested."
+    },
+    {
+      "element_id": "E00247",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00247",
+          "docx_locator": "bookmark:O_O00247",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_a5bf3c31fea0aa32"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00248",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00248",
+          "docx_locator": "bookmark:O_O00248",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_f9e642ef599483cf"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00249",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00249",
+          "docx_locator": "bookmark:O_O00249",
+          "source_text": "STD",
+          "role": "body_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_12428337ed7d3731"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00250",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00250",
+          "docx_locator": "bookmark:O_O00250",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_896fb2570a646d59"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00251",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00251",
+          "docx_locator": "bookmark:O_O00251",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_8d97cc63d11a4d9b"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00164; no target substitution requested."
+    },
+    {
+      "element_id": "E00252",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00252",
+          "docx_locator": "bookmark:O_O00252",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_6b65fff599ac758e"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00253",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00253",
+          "docx_locator": "bookmark:O_O00253",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_9f626d21e360530d"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00165; no target substitution requested."
+    },
+    {
+      "element_id": "E00254",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00254",
+          "docx_locator": "bookmark:O_O00254",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_62d2123b7cc6f3af"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00255",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00255",
+          "docx_locator": "bookmark:O_O00255",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_06e17cf3819e850b"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00256",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00256",
+          "docx_locator": "bookmark:O_O00256",
+          "source_text": "Median",
+          "role": "body_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_0b44fb2f147d066a"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00257",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00257",
+          "docx_locator": "bookmark:O_O00257",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_7bc8a6e6f92ead58"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00258",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00258",
+          "docx_locator": "bookmark:O_O00258",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_e26e72c4fa615c32"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00169; no target substitution requested."
+    },
+    {
+      "element_id": "E00259",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00259",
+          "docx_locator": "bookmark:O_O00259",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_9029fc6996695078"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00260",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00260",
+          "docx_locator": "bookmark:O_O00260",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_4556bf4a0e82b713"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00170; no target substitution requested."
+    },
+    {
+      "element_id": "E00261",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00261",
+          "docx_locator": "bookmark:O_O00261",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_e10b1e10254795f5"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00262",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00262",
+          "docx_locator": "bookmark:O_O00262",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_d73f0a3fa97a5f87"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00263",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00263",
+          "docx_locator": "bookmark:O_O00263",
+          "source_text": "Minimum",
+          "role": "body_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_8fe96292a52ff751"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00264",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00264",
+          "docx_locator": "bookmark:O_O00264",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_1000dc118f16e3bc"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00265",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00265",
+          "docx_locator": "bookmark:O_O00265",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_802f3e78b73b1156"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00174; no target substitution requested."
+    },
+    {
+      "element_id": "E00266",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00266",
+          "docx_locator": "bookmark:O_O00266",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_2f23defc7db1aa35"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00267",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00267",
+          "docx_locator": "bookmark:O_O00267",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_5e4a8b7b42e913a7"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00175; no target substitution requested."
+    },
+    {
+      "element_id": "E00268",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00268",
+          "docx_locator": "bookmark:O_O00268",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_60da62f299ecb4eb"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00269",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00269",
+          "docx_locator": "bookmark:O_O00269",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_e5be400938d9d1d5"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00270",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00270",
+          "docx_locator": "bookmark:O_O00270",
+          "source_text": "Maximum",
+          "role": "body_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_454bd0bec0541437"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00271",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00271",
+          "docx_locator": "bookmark:O_O00271",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_f18378761c662ce3"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00272",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00272",
+          "docx_locator": "bookmark:O_O00272",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_dbd3a76b2cfa663a"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00179; no target substitution requested."
+    },
+    {
+      "element_id": "E00273",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00273",
+          "docx_locator": "bookmark:O_O00273",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_2c9d4fce772980a5"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00274",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00274",
+          "docx_locator": "bookmark:O_O00274",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_0a8301ee7ed90f5c"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00180; no target substitution requested."
+    },
+    {
+      "element_id": "E00275",
+      "element_type": "footnote",
+      "metadata_pointer": "/footnotes/0/exact_text",
+      "occurrences": [
+        {
+          "occurrence_id": "O00275",
+          "docx_locator": "bookmark:O_O00275",
+          "source_text": "Percentage is the number of patients in the category (n) divided by the number of patients within the column (N) unless otherwise specified below.",
+          "role": "footnote",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_5a58c67207747993"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Physical note retained; semantic rules deferred. Region recorded by evidence_ref_ids and physical block."
+    },
+    {
+      "element_id": "E00276",
+      "element_type": "footnote",
+      "metadata_pointer": "/footnotes/1/exact_text",
+      "occurrences": [
+        {
+          "occurrence_id": "O00276",
+          "docx_locator": "bookmark:O_O00276",
+          "source_text": "[a]: Represents number of events, number of patients with at least one event and percentage of patients with at least one event.",
+          "role": "footnote",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_7a7f89ad31448c36"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Physical note retained; semantic rules deferred. Region recorded by evidence_ref_ids and physical block."
+    },
+    {
+      "element_id": "E00277",
+      "element_type": "footnote",
+      "metadata_pointer": "/footnotes/2/exact_text",
+      "occurrences": [
+        {
+          "occurrence_id": "O00277",
+          "docx_locator": "bookmark:O_O00277",
+          "source_text": "[b]: The denominator for each percentage is the number of patients with dose reduction.",
+          "role": "footnote",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_1c5163f8a11cfb9c"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Physical note retained; semantic rules deferred. Region recorded by evidence_ref_ids and physical block."
+    },
+    {
+      "element_id": "E00278",
+      "element_type": "footnote",
+      "metadata_pointer": "/footnotes/3/exact_text",
+      "occurrences": [
+        {
+          "occurrence_id": "O00278",
+          "docx_locator": "bookmark:O_O00278",
+          "source_text": "[c]: Treatment compliance = percentage of injection administered (actual/planned).",
+          "role": "footnote",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_6ef5c6bd59a16ba3"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Physical note retained; semantic rules deferred. Region recorded by evidence_ref_ids and physical block."
+    },
+    {
+      "element_id": "E00279",
+      "element_type": "other",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00279",
+          "docx_locator": null,
+          "source_text": "VCN Biosciences S.L. P-VCNA-003",
+          "role": "other",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_8fb799e987abf9cf"
+          ],
+          "verification_status": "unverified"
+        }
+      ],
+      "notes": "Corporate source header wrapper; retained for traceability, separate from shell title/header. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed."
+    },
+    {
+      "element_id": "E00280",
+      "element_type": "other",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00280",
+          "docx_locator": null,
+          "source_text": "Statistical Analysis Plan",
+          "role": "other",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_3809b1be9adf08ad"
+          ],
+          "verification_status": "unverified"
+        }
+      ],
+      "notes": "Corporate source header wrapper; retained for traceability, separate from shell title/header. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed."
+    },
+    {
+      "element_id": "E00281",
+      "element_type": "source_line",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00281",
+          "docx_locator": "bookmark:O_O00281",
+          "source_text": "Source: Listing 16.2.1.3, 16.2.1.4, 16.2.1.5, 16.2.1.6, 16.2.1.7",
+          "role": "source_line",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_f283a8f783d0861d"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00282",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00282",
+          "docx_locator": "bookmark:O_O00282",
+          "source_text": "Path\\Filename",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_e57ec43aeebeed3a"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00283",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00283",
+          "docx_locator": "bookmark:O_O00283",
+          "source_text": "Page x/y",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_3ffa25f91740538e"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00284",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00284",
+          "docx_locator": "bookmark:O_O00284",
+          "source_text": "x/y",
+          "role": "placeholder",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_b85b21f7fcdf9210"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Actual source placeholder; no replacement operation."
+    },
+    {
+      "element_id": "E00285",
+      "element_type": "programming_note",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00285",
+          "docx_locator": "bookmark:O_O00285",
+          "source_text": "Programming Note: Please present summaries by the following treatments: VCN-01, Nab-paclitaxel, Gemcitabine.\nPlease note that dose reduction is not applicable for VCN-01 administration, this category should be excluded for the treatment.",
+          "role": "programming_note",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_c6fbcc1e10cf8dbd"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00286",
+      "element_type": "other",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00286",
+          "docx_locator": null,
+          "source_text": "Form STATt004 Page 63 of 112",
+          "role": "other",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_5094637b3582a7e4"
+          ],
+          "verification_status": "unverified"
+        }
+      ],
+      "notes": "Corporate form footer retained separately; not a clinical footnote. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed."
+    },
+    {
+      "element_id": "E00287",
+      "element_type": "other",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00287",
+          "docx_locator": null,
+          "source_text": "Version Date: 20 May 2021",
+          "role": "other",
+          "panel_id": "P02",
+          "source_ref_ids": [
+            "SRC_6fdec964f08e757c"
+          ],
+          "verification_status": "unverified"
+        }
+      ],
+      "notes": "Corporate form footer retained separately; not a clinical footnote. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed."
+    }
+  ],
+  "occurrence_relations": [],
+  "issues": [
+    {
+      "issue_id": "PVCNA003_T_14_3_10_DX001",
+      "template_id": "PVCNA003_T_14_3_10",
+      "severity": "info",
+      "category": "documented_wrapper_exclusion",
+      "description": "8 corporate header/form-footer occurrences excluded by consistent policy; source records retained with null locator and unverified state. Substantive source study/date/path/page placeholders and notes remain inside the boundary.",
+      "status": "deferred",
+      "source_regions": []
+    },
+    {
+      "issue_id": "PVCNA003_T_14_3_10_DX002",
+      "template_id": "PVCNA003_T_14_3_10",
+      "severity": "warning",
+      "category": "source_structure_pending",
+      "description": "Source structure remains needs_review. Physical source content has been rendered without repairing source ambiguities; consult structure issues. DOCX construction does not grant clinical/source approval.",
+      "status": "open",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 36,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        },
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 37,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    }
+  ]
+}

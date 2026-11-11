@@ -1,0 +1,30 @@
+{
+  "schema_version": "2.4",
+  "template_id": "PVCNA003_T_14_3_3",
+  "source_regions": [
+    {
+      "document_id": "SAP_001_11",
+      "pdf_page": 29,
+      "bbox": [
+        0,
+        0,
+        841.9200000000001,
+        595.32
+      ],
+      "coordinate_system": "pdf_points_top_left"
+    }
+  ],
+  "source_docx_locations": [],
+  "text_checkpoints": [
+    {
+      "document_id": "SAP_001_11",
+      "location": "PDF physical page 29; owned region in source_regions; printed page 55",
+      "text": "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.3.3 Listing of Abnormal Laboratory Values\nPatient Number Visit Parameter Result Unit\nReference range\nLower\nxxxxxxx <Visit> xxxxxxxxxxxxxxxxxxx xx xxxx xx xx Abnormal CS/\nReference range\nUpper Interpretation\nAbnormal NCS\nxxxxxxxxxxxxxxxxxxx xx xxxx xx xx Abnormal CS/\nAbnormal NCS\n…\n…\n…\nNCS = Not Clinically Significant; CS = Clinically Significant.\nPath\\Filename\nPage x/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 55 of 112",
+      "readable": true
+    }
+  ],
+  "notes": [
+    "Original title retained from first panel; all panel titles are retained in text checkpoints.",
+    "Regions conservatively retain page wrappers; fine-grained exclusion and structural transcription deferred to stage 2."
+  ]
+}

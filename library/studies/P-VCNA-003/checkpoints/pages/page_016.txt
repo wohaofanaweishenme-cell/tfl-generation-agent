@@ -1,0 +1,35 @@
+VCN Biosciences S.L. P-VCNA-003
+Statistical Analysis Plan
+P-VCNA-003 ddMMMyyyy HH:MM
+Table 14.2.2.7 Objective Response Rate – EDC Data (Intent-to-Treat Set)
+Parameter/ Test Component
+Arm I
+(Nab-paclitaxel and
+gemcitabine)
+(N=xx)
+Arm II
+(VCN-01 with Nab-
+paclitaxel and gemcitabine)
+(N=xx) Odds Ratio (95% CI) p-value
+Objective Response Rate (ORR) n (%) xx (xx.x %) xx (xx.x %)
+CR n xx xx
+PR n xx xx
+Cochran-Mantel-Haenszel (CMH) test* Sensitivity analysis** x.x (x.x , x.x) xxxxxx
+x.x (x.x , x.x) xxxxxx
+Percentage is the number of patients in the category (n) divided by the number of patients within the column (N).
+* CMH test was stratified by region and ECOG performance status at randomization.
+** CMH test was stratified by age group (<65 years and >=65 years), region and ECOG performance status at randomization.
+CR = Complete Response, PR = Partial Response.
+Source: Listing 16.2.6.3
+Path\Filename
+Page x/y
+Programming Note: This layout also applies to Table 14.2.2.8 Objective Response Rate - EDC Data (Full Analysis Set), Table 14.2.2.9 Subgroup Analysis: Objective Response Rate - EDC Data
+(Intent-to-Treat Set), Table 14.2.2.10 Objective Response Rate - CIV Data (Intent-to-Treat Set), Table 14.2.2.11 Objective Response Rate - CIV Data (Full Analysis Set) and Table 14.2.2.12
+Subgroup Analysis: Objective Response Rate - CIV Data (Intent-to-Treat Set)
+Footnotes to be included:
+- EDC data: ORR (Objective Response Rate) was assessed based on EDC (Electronic Data Capture) data.
+- CIV data: ORR (Objective Response Rate) was assessed based on CIV (Central Imaging Vendor) data.
+Source listing for CIV data: Listing 16.2.6.4
+Form STATt004
+Version Date: 20 May 2021
+Page 42 of 112

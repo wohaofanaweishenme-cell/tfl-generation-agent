@@ -1,0 +1,49 @@
+VCN Biosciences S.L. P-VCNA-003
+Statistical Analysis Plan
+P-VCNA-003 ddMMMyyyy HH:MM
+Listing 16.2.6.1 Tumor Response Evaluation - EDC Data
+<Arm>
+Patient Number Visit
+Date of
+Tumor
+Assessment Target Lesion Assessment
+xxxxxxx xxxxxxxxx xxxxxxxx Complete Response (CR)/
+Partial Response (PR)/
+Stable Disease (SD)/
+Not All Evaluated/
+Progressive Disease (PD)
+Target Lesions:
+Sum of Diameters
+(mm)
+Non-Target Lesion
+Assessment New Lesions Overall Response
+xx Absent (No Non-Target
+Lesion at Baseline)/
+Complete Response (CR)/
+Non-CR/Non-PD/
+Not Evaluated/
+Progressive Disease (PD)
+Yes/
+No
+Complete Response (CR)/
+Partial Response (PR)/
+Stable Disease (SD)/
+Inevaluable (NE)/
+Progressive Disease (PD)
+xxxxxxxxx Yes/
+No (reason)
+Yes/
+No
+xxxxxxxxTxx:xx
+(xxxxxxxxTxx:xx)
+xx xx xx
+…
+Path\Filename
+Programming Note: This layout also applies to Listing 16.2.6.2 Tumor Response Evaluation - CIV Data.
+Footnotes to be included:
+- EDC = Electronic Data Capture.
+- CIV = Central Imaging Vendor.
+Page x/y
+Form STATt004
+Version Date: 20 May 2021
+Page 87 of 112

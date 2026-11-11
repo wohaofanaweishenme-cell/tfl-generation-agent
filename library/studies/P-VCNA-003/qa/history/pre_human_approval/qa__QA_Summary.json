@@ -1,0 +1,33 @@
+{
+  "stage": "qa",
+  "static_result": "pass_with_review_warnings",
+  "errors": 0,
+  "warnings_by_type": {
+    "occurrence_review": 900,
+    "review_not_passed": 128
+  },
+  "physical_shells": 64,
+  "content_list_entries": 132,
+  "directory_only_not_generated": 68,
+  "structured_records": 64,
+  "docx_files": 64,
+  "metadata_records": 64,
+  "physical_footnotes": 73,
+  "semantic_rules": 112,
+  "rendered_pages": 77,
+  "qa_check_records": 487,
+  "specific_remaining_ids": [
+    "PVCNA003_T_14_2_1_1",
+    "PVCNA003_T_14_3_1_1",
+    "PVCNA003_T_14_3_2_1",
+    "PVCNA003_T_14_3_10",
+    "PVCNA003_F_14_2_1",
+    "PVCNA003_L_16_2_6_1",
+    "PVCNA003_L_16_2_7_1",
+    "PVCNA003_L_16_2_19"
+  ],
+  "independent_visual_review": "not_run",
+  "independent_semantic_review": "not_run",
+  "approved_records": 0,
+  "full_study_complete": false
+}

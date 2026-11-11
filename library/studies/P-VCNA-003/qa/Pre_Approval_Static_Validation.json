@@ -1,0 +1,18 @@
+{
+  "schema_version": "2.4",
+  "validator_scope": "Static contracts, references, actual file/hash/bookmark checks only; no visual/clinical approval or generic PDF extraction.",
+  "stage": "qa",
+  "static_result": "fail",
+  "errors": [
+    {
+      "code": "read_or_schema",
+      "detail": "source_registry/Shell_Manifest.json: 'charmap' codec can't decode byte 0x9d in position 22991: character maps to <undefined>"
+    }
+  ],
+  "warnings": [],
+  "counts": {
+    "structured_records_checked": 0,
+    "docx_files_checked": 0
+  },
+  "approval_granted": false
+}

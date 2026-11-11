@@ -1,0 +1,344 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Shell_Manifest v2.4",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "2.4"
+    },
+    "study_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "shells": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "template_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "output_type": {
+            "enum": [
+              "table",
+              "figure",
+              "listing"
+            ]
+          },
+          "structural_family_candidate": {
+            "enum": [
+              "table",
+              "figure",
+              "listing",
+              null
+            ]
+          },
+          "original_tfl_number": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "original_title": {
+            "type": "string"
+          },
+          "source_regions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "document_id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "pdf_page": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "bbox": {
+                  "type": "array",
+                  "items": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "minItems": 4,
+                  "maxItems": 4
+                },
+                "coordinate_system": {
+                  "const": "pdf_points_top_left"
+                }
+              },
+              "required": [
+                "document_id",
+                "pdf_page",
+                "bbox",
+                "coordinate_system"
+              ]
+            },
+            "minItems": 0
+          },
+          "source_docx_locations": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "document_id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "location": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "required": [
+                "document_id",
+                "location"
+              ]
+            },
+            "minItems": 0
+          },
+          "planned_file_path": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "enum": [
+              "confirmed",
+              "needs_review"
+            ]
+          },
+          "source_reference_notes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "exact_text": {
+                  "type": "string"
+                },
+                "source_regions": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "document_id": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "pdf_page": {
+                        "type": "integer",
+                        "minimum": 1
+                      },
+                      "bbox": {
+                        "type": "array",
+                        "items": {
+                          "type": "number",
+                          "minimum": 0
+                        },
+                        "minItems": 4,
+                        "maxItems": 4
+                      },
+                      "coordinate_system": {
+                        "const": "pdf_points_top_left"
+                      }
+                    },
+                    "required": [
+                      "document_id",
+                      "pdf_page",
+                      "bbox",
+                      "coordinate_system"
+                    ]
+                  },
+                  "minItems": 0
+                },
+                "notes": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "exact_text",
+                "source_regions",
+                "notes"
+              ]
+            },
+            "minItems": 0
+          }
+        },
+        "required": [
+          "template_id",
+          "output_type",
+          "structural_family_candidate",
+          "original_tfl_number",
+          "original_title",
+          "source_regions",
+          "source_docx_locations",
+          "planned_file_path",
+          "status",
+          "source_reference_notes"
+        ]
+      },
+      "minItems": 0
+    },
+    "content_list_present": {
+      "type": "boolean"
+    },
+    "content_list_mappings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "entry_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_document_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "original_tfl_number": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "original_title": {
+            "type": "string"
+          },
+          "relation": {
+            "enum": [
+              "direct_shell",
+              "ambiguous",
+              "no_source_shell_found",
+              "unable_to_determine"
+            ]
+          },
+          "review_status": {
+            "enum": [
+              "pending",
+              "verified",
+              "conflicting"
+            ]
+          },
+          "template_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 0
+          },
+          "checked_document_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 0
+          },
+          "reason": {
+            "type": "string"
+          },
+          "source_reference_notes": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "exact_text": {
+                  "type": "string"
+                },
+                "source_regions": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "document_id": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "pdf_page": {
+                        "type": "integer",
+                        "minimum": 1
+                      },
+                      "bbox": {
+                        "type": "array",
+                        "items": {
+                          "type": "number",
+                          "minimum": 0
+                        },
+                        "minItems": 4,
+                        "maxItems": 4
+                      },
+                      "coordinate_system": {
+                        "const": "pdf_points_top_left"
+                      }
+                    },
+                    "required": [
+                      "document_id",
+                      "pdf_page",
+                      "bbox",
+                      "coordinate_system"
+                    ]
+                  },
+                  "minItems": 0
+                },
+                "notes": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "exact_text",
+                "source_regions",
+                "notes"
+              ]
+            },
+            "minItems": 0
+          }
+        },
+        "required": [
+          "entry_id",
+          "source_document_id",
+          "original_tfl_number",
+          "original_title",
+          "relation",
+          "review_status",
+          "template_ids",
+          "checked_document_ids",
+          "reason",
+          "source_reference_notes"
+        ]
+      },
+      "minItems": 0
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 0
+    }
+  },
+  "required": [
+    "schema_version",
+    "study_id",
+    "shells",
+    "content_list_present",
+    "content_list_mappings",
+    "notes"
+  ]
+}

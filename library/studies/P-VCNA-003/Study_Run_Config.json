@@ -1,0 +1,17 @@
+{
+  "schema_version": "2.4",
+  "study_id": "P-VCNA-003",
+  "library_id": "SOURCE_P_VCNA_003_v24",
+  "sources": [
+    {
+      "document_id": "SAP_001_11",
+      "file_path": "original/SAP_001_11 copy 2.pdf",
+      "kind": "sap"
+    }
+  ],
+  "shells_inside_sap": true,
+  "approved_style_guide_path": null,
+  "source_unit_policy": "physical_shells_only",
+  "expand_content_list_entries": false,
+  "notes": "Source-only identification. No_style_guide; permitted_defaults=[] for all later metadata. Project brief is supporting project documentation, not clinical evidence. Cover date reads 16ARR2025; no date normalization or correction."
+}

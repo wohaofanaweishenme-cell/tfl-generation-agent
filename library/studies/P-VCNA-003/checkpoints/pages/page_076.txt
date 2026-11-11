@@ -1,0 +1,35 @@
+VCN Biosciences S.L. P-VCNA-003
+Statistical Analysis Plan
+P-VCNA-003 ddMMMyyyy HH:MM
+Listing 16.2.11 12-Lead ECG
+<Arm>
+Patient
+Number Visit Date/Time
+Heart rate
+(bpm)
+PR Interval
+(msec)
+RR Interval
+(msec)
+QRS width
+(msec)
+QT Interval
+(msec)
+QTcF Interval
+(msec) Investigator’s Interpretation
+xxxxxxx xxxx xxxxxxTxx:xx xx xx xx xx xx xx Normal/
+xxxx xxxxxxTxx:xx xx xx xx xx xx xx Normal/
+xxxx xxxxxxTxx:xx xx xx xx xx xx xx Normal/
+Abnormal NCS/
+Abnormal CS
+Abnormal NCS/
+Abnormal CS
+Abnormal NCS/
+Abnormal CS
+…
+CS=Clinically Significant; NCS=Not Clinically Significant
+Path\Filename
+Page x/y
+Form STATt004
+Version Date: 20 May 2021
+Page 102 of 112

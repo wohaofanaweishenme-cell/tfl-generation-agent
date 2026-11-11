@@ -1,0 +1,39 @@
+VCN Biosciences S.L. P-VCNA-003
+Statistical Analysis Plan
+P-VCNA-003 ddMMMyyyy HH:MM
+Table 14.5.1 Pharmacodynamic Parameters (Pharmacodynamic Set)
+<Parameter>
+Visit
+Arm I
+(N=xx)
+(Nab-paclitaxel and gemcitabine)
+Arm II
+(VCN-01 with Nab-paclitaxel and gemcitabine)
+(N=xx) p-value
+Screening n xx xx
+Mean xx xx
+STD xx xx
+Median xx xx
+Minimum xx xx
+Maximum xx xx
+Baseline n xx xx
+Mean xx xx
+STD xx xx
+Median xx xx
+Minimum xx xx
+Maximum xx xx
+<Visit> n xx xx
+Mean xx xx
+…
+Change from Baseline to <Visit> n xx xx
+Mean xx xx
+…
+<Test> x.xxxx
+…
+Source: Listing 16.2.6
+Path\Filename
+Page x/y
+Programming Note: Above layout should be used for parameters where both arms as assessed. Please indicate test used in the first column as appropriate.
+Form STATt004
+Version Date: 20 May 2021
+Page 65 of 112

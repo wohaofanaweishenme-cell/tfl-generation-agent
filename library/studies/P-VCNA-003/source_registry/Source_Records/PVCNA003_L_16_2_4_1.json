@@ -1,0 +1,30 @@
+{
+  "schema_version": "2.4",
+  "template_id": "PVCNA003_L_16_2_4_1",
+  "source_regions": [
+    {
+      "document_id": "SAP_001_11",
+      "pdf_page": 55,
+      "bbox": [
+        0,
+        0,
+        841.9200000000001,
+        595.32
+      ],
+      "coordinate_system": "pdf_points_top_left"
+    }
+  ],
+  "source_docx_locations": [],
+  "text_checkpoints": [
+    {
+      "document_id": "SAP_001_11",
+      "location": "PDF physical page 55; owned region in source_regions; printed page 81",
+      "text": "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.4.1 Demographics and Baseline Characteristics\n<Arm>\nPatient\nNumber\nYear of\nbirth\nAge\n(years) Gender Ethnicity Race\nWeight\n(kg)\nHeight\n(cm)\nBMI\n(kg/m2)\nRegion of Study\nSite\nECOG status\nat\nrandomization\nxxxxxxx xxxx xx xxxx Not Hispanic or Latino/\nHispanic or Latino/\nNot Reported/\nUnknown\nxxxxxxx xxxx xx xxxx Not Hispanic or Latino/\nHispanic or Latino/\nNot Reported/\nUnknown\nBlack or African American/\nAmerican Indian or Alaska Native/\nAsian/\nNative Hawaiian or Other Pacific\nIslander/\nWhite/\nOther (specify)\nBlack or African American/\nAmerican Indian or Alaska Native/\nAsian/\nNative Hawaiian or Other Pacific\nIslander/\nWhite/\nOther (specify)\nxx xx xx European Union/\nNorth American\n0/\n1\nxx xx xx European Union/\nNorth American\n0/\n1\n…\nPath\\Filename\nPage x/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 81 of 112",
+      "readable": true
+    }
+  ],
+  "notes": [
+    "Original title retained from first panel; all panel titles are retained in text checkpoints.",
+    "Regions conservatively retain page wrappers; fine-grained exclusion and structural transcription deferred to stage 2."
+  ]
+}

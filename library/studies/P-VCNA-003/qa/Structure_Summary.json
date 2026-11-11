@@ -1,0 +1,40 @@
+{
+  "schema_version": "2.4",
+  "stage": "structure",
+  "physical_manifest_shells": 64,
+  "structured_records": 64,
+  "extraction_status_counts": {
+    "complete": 57,
+    "needs_review": 7
+  },
+  "source_output_type_counts": {
+    "figure": 2,
+    "listing": 37,
+    "table": 25
+  },
+  "structural_family_counts": {
+    "figure": 2,
+    "listing": 39,
+    "table": 23
+  },
+  "physical_cells": 3327,
+  "blank_physical_cells": 985,
+  "physical_footnotes": 73,
+  "physical_blocks": 4124,
+  "source_elements": 5982,
+  "all_physical_shell_pages_image_inspected": true,
+  "text_token_coverage_mismatches": 0,
+  "docx_created": 0,
+  "figures_simulated": 0,
+  "independent_visual_semantic_qa": "not_run",
+  "approval": "pending",
+  "remaining_ids": [
+    "PVCNA003_L_16_2_19",
+    "PVCNA003_L_16_2_6_1",
+    "PVCNA003_L_16_2_7_1",
+    "PVCNA003_T_14_2_1_1",
+    "PVCNA003_T_14_3_10",
+    "PVCNA003_T_14_3_1_1",
+    "PVCNA003_T_14_3_2_1"
+  ]
+}

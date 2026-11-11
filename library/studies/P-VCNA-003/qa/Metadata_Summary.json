@@ -1,0 +1,52 @@
+{
+  "schema_version": "2.4",
+  "stage": "metadata",
+  "library_id": "SOURCE_P_VCNA_003_v24",
+  "metadata_records": 64,
+  "physical_footnotes": 73,
+  "semantic_rules": 112,
+  "semantic_rule_types": {
+    "denominator": 18,
+    "other": 4,
+    "display_convention": 24,
+    "coding_definition": 19,
+    "missing_data": 3,
+    "statistical_method": 8,
+    "abbreviation": 26,
+    "counting_rule": 6,
+    "inclusion_exclusion": 4
+  },
+  "quality_statuses": {
+    "pending": 64
+  },
+  "source_output_types": {
+    "table": 25,
+    "figure": 2,
+    "listing": 37
+  },
+  "structural_families": {
+    "table": 23,
+    "listing": 39,
+    "figure": 2
+  },
+  "extraction_complete_records": 56,
+  "remaining_ids": [
+    "PVCNA003_T_14_2_1_1",
+    "PVCNA003_T_14_3_1_1",
+    "PVCNA003_T_14_3_2_1",
+    "PVCNA003_T_14_3_10",
+    "PVCNA003_F_14_2_1",
+    "PVCNA003_L_16_2_6_1",
+    "PVCNA003_L_16_2_7_1",
+    "PVCNA003_L_16_2_19"
+  ],
+  "static_result": "pass_with_review_warnings",
+  "static_errors": 0,
+  "static_warnings": 900,
+  "warning_explanation": "300 explicitly excluded corporate wrapper occurrences are represented in Structure, Locator Map and Metadata, producing 900 review warnings; their null/unverified locators are retained honestly.",
+  "metadata_sha256": "9d1c1b14984cc23559bd753f475a31de7beb11ff667ece3e46286c252d7ec53f",
+  "docx_bytes_changed": false,
+  "physical_note_text_or_scope_changed": false,
+  "independent_semantic_review": "not_run",
+  "approved_records": 0
+}

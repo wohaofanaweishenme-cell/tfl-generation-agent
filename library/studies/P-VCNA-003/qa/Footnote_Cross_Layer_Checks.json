@@ -1,0 +1,1612 @@
+{
+  "scope": "Fresh original PDF character check plus persisted physical note records. Typography and semantic scope need independent review; no approval.",
+  "physical_footnotes": 73,
+  "records": [
+    {
+      "template_id": "PVCNA003_T_14_1_1",
+      "footnote_id": "FN001",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            165.62,
+            349.48,
+            581.098,
+            358.48
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 0,
+      "semantic_scope": "needs_review",
+      "rule_count": 1
+    },
+    {
+      "template_id": "PVCNA003_T_14_1_2_1",
+      "footnote_id": "FN001",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 13,
+          "bbox": [
+            95.904,
+            296.78000000000003,
+            511.37800000000004,
+            305.78000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 0,
+      "semantic_scope": "needs_review",
+      "rule_count": 1
+    },
+    {
+      "template_id": "PVCNA003_T_14_1_2_1",
+      "footnote_id": "FN002",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 13,
+          "bbox": [
+            95.904,
+            307.84000000000003,
+            473.87,
+            316.84000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 1,
+      "semantic_scope": "needs_review",
+      "rule_count": 2
+    },
+    {
+      "template_id": "PVCNA003_T_14_1_2_1",
+      "footnote_id": "FN003",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 13,
+          "bbox": [
+            95.904,
+            318.76000000000005,
+            463.1759999999995,
+            327.76000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 2,
+      "semantic_scope": "needs_review",
+      "rule_count": 1
+    },
+    {
+      "template_id": "PVCNA003_T_14_1_3",
+      "footnote_id": "FN001",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 14,
+          "bbox": [
+            95.784,
+            280.22,
+            511.258,
+            289.22
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 0,
+      "semantic_scope": "needs_review",
+      "rule_count": 1
+    },
+    {
+      "template_id": "PVCNA003_T_14_1_3",
+      "footnote_id": "FN002",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 14,
+          "bbox": [
+            95.784,
+            291.14000000000004,
+            186.488,
+            300.14000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 1,
+      "semantic_scope": "needs_review",
+      "rule_count": 2
+    },
+    {
+      "template_id": "PVCNA003_T_14_2_1_1",
+      "footnote_id": "FN001",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 15,
+          "bbox": [
+            95.904,
+            288.98,
+            649.271,
+            297.98
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 0,
+      "semantic_scope": "needs_review",
+      "rule_count": 2
+    },
+    {
+      "template_id": "PVCNA003_T_14_2_1_1",
+      "footnote_id": "FN002",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 15,
+          "bbox": [
+            95.904,
+            300.02000000000004,
+            417.83399999999983,
+            309.02000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 1,
+      "semantic_scope": "needs_review",
+      "rule_count": 1
+    },
+    {
+      "template_id": "PVCNA003_T_14_2_2_7",
+      "footnote_id": "FN001",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 16,
+          "bbox": [
+            95.904,
+            245.78000000000003,
+            511.37800000000004,
+            254.78000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 0,
+      "semantic_scope": "needs_review",
+      "rule_count": 1
+    },
+    {
+      "template_id": "PVCNA003_T_14_2_2_7",
+      "footnote_id": "FN002",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 16,
+          "bbox": [
+            95.904,
+            256.82000000000005,
+            403.59799999999996,
+            265.82000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": "*",
+      "display_order": 1,
+      "semantic_scope": "explicit",
+      "rule_count": 1
+    },
+    {
+      "template_id": "PVCNA003_T_14_2_2_7",
+      "footnote_id": "FN003",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 16,
+          "bbox": [
+            95.904,
+            267.74000000000007,
+            549.1780000000001,
+            276.74000000000007
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": "**",
+      "display_order": 2,
+      "semantic_scope": "explicit",
+      "rule_count": 1
+    },
+    {
+      "template_id": "PVCNA003_T_14_2_2_7",
+      "footnote_id": "FN004",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 16,
+          "bbox": [
+            95.904,
+            278.78000000000003,
+            271.827,
+            287.78000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 3,
+      "semantic_scope": "needs_review",
+      "rule_count": 2
+    },
+    {
+      "template_id": "PVCNA003_T_14_2_2_13",
+      "footnote_id": "FN001",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 17,
+          "bbox": [
+            95.904,
+            257.18000000000006,
+            511.37800000000004,
+            266.18000000000006
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 0,
+      "semantic_scope": "needs_review",
+      "rule_count": 1
+    },
+    {
+      "template_id": "PVCNA003_T_14_2_2_13",
+      "footnote_id": "FN002",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 17,
+          "bbox": [
+            95.904,
+            268.1,
+            403.59799999999996,
+            277.1
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": "*",
+      "display_order": 1,
+      "semantic_scope": "explicit",
+      "rule_count": 1
+    },
+    {
+      "template_id": "PVCNA003_T_14_2_2_13",
+      "footnote_id": "FN003",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 17,
+          "bbox": [
+            95.904,
+            279.14000000000004,
+            549.1780000000001,
+            288.14000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": "**",
+      "display_order": 2,
+      "semantic_scope": "explicit",
+      "rule_count": 1
+    },
+    {
+      "template_id": "PVCNA003_T_14_2_2_13",
+      "footnote_id": "FN004",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 17,
+          "bbox": [
+            95.904,
+            290.06000000000006,
+            347.01300000000003,
+            299.06000000000006
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 3,
+      "semantic_scope": "needs_review",
+      "rule_count": 3
+    },
+    {
+      "template_id": "PVCNA003_T_14_2_2_17",
+      "footnote_id": "FN001",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 18,
+          "bbox": [
+            95.904,
+            291.14000000000004,
+            511.37800000000004,
+            300.14000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 0,
+      "semantic_scope": "needs_review",
+      "rule_count": 1
+    },
+    {
+      "template_id": "PVCNA003_T_14_2_2_17",
+      "footnote_id": "FN002",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 18,
+          "bbox": [
+            95.904,
+            302.18000000000006,
+            403.59799999999996,
+            311.18000000000006
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": "*",
+      "display_order": 1,
+      "semantic_scope": "explicit",
+      "rule_count": 1
+    },
+    {
+      "template_id": "PVCNA003_T_14_2_2_17",
+      "footnote_id": "FN003",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 18,
+          "bbox": [
+            95.904,
+            313.12000000000006,
+            549.1780000000001,
+            322.12000000000006
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": "**",
+      "display_order": 2,
+      "semantic_scope": "explicit",
+      "rule_count": 1
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_1_1",
+      "footnote_id": "FN001",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 22,
+          "bbox": [
+            59.64,
+            469.15000000000003,
+            605.4580000000001,
+            478.15000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 0,
+      "semantic_scope": "needs_review",
+      "rule_count": 2
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_1_1",
+      "footnote_id": "FN002",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 22,
+          "bbox": [
+            59.64,
+            480.19000000000005,
+            475.106,
+            489.19000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 1,
+      "semantic_scope": "needs_review",
+      "rule_count": 1
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_1_1",
+      "footnote_id": "FN003",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 22,
+          "bbox": [
+            59.64,
+            491.10600000000005,
+            150.368,
+            500.10600000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 2,
+      "semantic_scope": "needs_review",
+      "rule_count": 2
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_1_2",
+      "footnote_id": "FN001",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 23,
+          "bbox": [
+            114.86,
+            320.32000000000005,
+            565.123,
+            329.32000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 0,
+      "semantic_scope": "needs_review",
+      "rule_count": 2
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_1_2",
+      "footnote_id": "FN002",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 23,
+          "bbox": [
+            114.86,
+            331.24000000000007,
+            530.3380000000002,
+            340.24000000000007
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 1,
+      "semantic_scope": "needs_review",
+      "rule_count": 1
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_1_2",
+      "footnote_id": "FN003",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 23,
+          "bbox": [
+            114.86,
+            342.2800000000001,
+            205.568,
+            351.2800000000001
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 2,
+      "semantic_scope": "needs_review",
+      "rule_count": 2
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_1_3",
+      "footnote_id": "FN001",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 24,
+          "bbox": [
+            126.98,
+            353.20000000000005,
+            580.634,
+            362.20000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 0,
+      "semantic_scope": "needs_review",
+      "rule_count": 2
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_1_3",
+      "footnote_id": "FN002",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 24,
+          "bbox": [
+            126.98,
+            364.24,
+            542.4580000000001,
+            373.24
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 1,
+      "semantic_scope": "needs_review",
+      "rule_count": 1
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_1_3",
+      "footnote_id": "FN003",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 24,
+          "bbox": [
+            126.98,
+            375.2800000000001,
+            217.68800000000002,
+            384.2800000000001
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 2,
+      "semantic_scope": "needs_review",
+      "rule_count": 2
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_1_4",
+      "footnote_id": "FN001",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 25,
+          "bbox": [
+            126.98,
+            353.20000000000005,
+            578.6000000000001,
+            362.20000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 0,
+      "semantic_scope": "needs_review",
+      "rule_count": 2
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_1_4",
+      "footnote_id": "FN002",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 25,
+          "bbox": [
+            126.98,
+            364.24,
+            542.4580000000001,
+            373.24
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 1,
+      "semantic_scope": "needs_review",
+      "rule_count": 1
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_1_4",
+      "footnote_id": "FN003",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 25,
+          "bbox": [
+            126.98,
+            375.2800000000001,
+            217.68800000000002,
+            384.2800000000001
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 2,
+      "semantic_scope": "needs_review",
+      "rule_count": 2
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_2_1",
+      "footnote_id": "FN001",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 26,
+          "bbox": [
+            95.904,
+            375.76000000000005,
+            188.757,
+            384.76000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 0,
+      "semantic_scope": "needs_review",
+      "rule_count": 1
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_2_1",
+      "footnote_id": "FN002",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 26,
+          "bbox": [
+            95.904,
+            386.68000000000006,
+            186.57900000000004,
+            395.68000000000006
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 1,
+      "semantic_scope": "needs_review",
+      "rule_count": 2
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_2_1",
+      "footnote_id": "FN003",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 26,
+          "bbox": [
+            95.904,
+            397.72,
+            255.64499999999998,
+            406.72
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 2,
+      "semantic_scope": "needs_review",
+      "rule_count": 1
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_2_1",
+      "footnote_id": "FN004",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 26,
+          "bbox": [
+            95.904,
+            408.37,
+            410.198,
+            417.64000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 3,
+      "semantic_scope": "needs_review",
+      "rule_count": 2
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_2_1",
+      "footnote_id": "FN005",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 28,
+          "bbox": [
+            95.904,
+            331.84000000000003,
+            186.57900000000004,
+            340.84000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 4,
+      "semantic_scope": "needs_review",
+      "rule_count": 2
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_3",
+      "footnote_id": "FN001",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 29,
+          "bbox": [
+            95.904,
+            242.90000000000003,
+            302.918,
+            251.90000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 0,
+      "semantic_scope": "needs_review",
+      "rule_count": 2
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_4_6",
+      "footnote_id": "FN001",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 31,
+          "bbox": [
+            95.904,
+            438.43000000000006,
+            511.37800000000004,
+            447.43000000000006
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 0,
+      "semantic_scope": "needs_review",
+      "rule_count": 1
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_5_2",
+      "footnote_id": "FN001",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 32,
+          "bbox": [
+            95.904,
+            438.43000000000006,
+            511.37800000000004,
+            447.43000000000006
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 0,
+      "semantic_scope": "needs_review",
+      "rule_count": 1
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_6",
+      "footnote_id": "FN001",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 33,
+          "bbox": [
+            95.904,
+            427.36,
+            511.37800000000004,
+            436.36
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 0,
+      "semantic_scope": "needs_review",
+      "rule_count": 1
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_8",
+      "footnote_id": "FN001",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 34,
+          "bbox": [
+            95.904,
+            302.90000000000003,
+            511.37800000000004,
+            311.90000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 0,
+      "semantic_scope": "needs_review",
+      "rule_count": 1
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_9",
+      "footnote_id": "FN001",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 35,
+          "bbox": [
+            95.784,
+            280.22,
+            511.258,
+            289.22
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 0,
+      "semantic_scope": "needs_review",
+      "rule_count": 1
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_9",
+      "footnote_id": "FN002",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 35,
+          "bbox": [
+            95.784,
+            291.14000000000004,
+            194.26100000000002,
+            300.14000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 1,
+      "semantic_scope": "needs_review",
+      "rule_count": 2
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_10",
+      "footnote_id": "FN001",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 37,
+          "bbox": [
+            95.904,
+            262.1,
+            634.171,
+            271.1
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 0,
+      "semantic_scope": "needs_review",
+      "rule_count": 1
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_10",
+      "footnote_id": "FN002",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 37,
+          "bbox": [
+            95.904,
+            273.14000000000004,
+            567.4180000000001,
+            282.14000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": "[a]",
+      "display_order": 1,
+      "semantic_scope": "explicit",
+      "rule_count": 3
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_10",
+      "footnote_id": "FN003",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 37,
+          "bbox": [
+            95.904,
+            284.06000000000006,
+            421.1819999999999,
+            293.06000000000006
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": "[b]",
+      "display_order": 2,
+      "semantic_scope": "explicit",
+      "rule_count": 1
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_10",
+      "footnote_id": "FN004",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 37,
+          "bbox": [
+            95.904,
+            295.1,
+            401.1389999999998,
+            304.1
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": "[c]",
+      "display_order": 3,
+      "semantic_scope": "explicit",
+      "rule_count": 1
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_11_1",
+      "footnote_id": "FN001",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 38,
+          "bbox": [
+            95.904,
+            309.76000000000005,
+            638.44,
+            318.76000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 0,
+      "semantic_scope": "needs_review",
+      "rule_count": 2
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_11_1",
+      "footnote_id": "FN002",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 38,
+          "bbox": [
+            95.904,
+            320.80000000000007,
+            653.4250000000001,
+            340.84000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 1,
+      "semantic_scope": "needs_review",
+      "rule_count": 1
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_11_1",
+      "footnote_id": "FN003",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 38,
+          "bbox": [
+            95.904,
+            342.76000000000005,
+            511.37800000000004,
+            351.76000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 2,
+      "semantic_scope": "needs_review",
+      "rule_count": 1
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_11_1",
+      "footnote_id": "FN004",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 38,
+          "bbox": [
+            95.904,
+            353.80000000000007,
+            194.40800000000002,
+            362.80000000000007
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 3,
+      "semantic_scope": "needs_review",
+      "rule_count": 2
+    },
+    {
+      "template_id": "PVCNA003_T_14_5_1",
+      "footnote_id": "FN001",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 40,
+          "bbox": [
+            95.904,
+            427.72,
+            170.496,
+            436.72
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 0,
+      "semantic_scope": "needs_review",
+      "rule_count": 1
+    },
+    {
+      "template_id": "PVCNA003_F_14_2_1",
+      "footnote_id": "FN001",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 41,
+          "bbox": [
+            96.144,
+            351.76000000000005,
+            414.29,
+            360.76000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 0,
+      "semantic_scope": "needs_review",
+      "rule_count": 1
+    },
+    {
+      "template_id": "PVCNA003_F_14_3_1",
+      "footnote_id": "FN001",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 42,
+          "bbox": [
+            96.144,
+            263.90000000000003,
+            760.681,
+            283.82000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 0,
+      "semantic_scope": "needs_review",
+      "rule_count": 2
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_1_2",
+      "footnote_id": "FN001",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 44,
+          "bbox": [
+            95.904,
+            264.86000000000007,
+            495.66499999999996,
+            273.86000000000007
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 0,
+      "semantic_scope": "needs_review",
+      "rule_count": 2
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_1_2",
+      "footnote_id": "FN002",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 45,
+          "bbox": [
+            95.904,
+            253.82000000000005,
+            758.872,
+            273.86000000000007
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 1,
+      "semantic_scope": "needs_review",
+      "rule_count": 2
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_1_3",
+      "footnote_id": "FN001",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 46,
+          "bbox": [
+            95.904,
+            253.82000000000005,
+            187.808,
+            262.82000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 0,
+      "semantic_scope": "needs_review",
+      "rule_count": 1
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_1_4",
+      "footnote_id": "FN001",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 48,
+          "bbox": [
+            95.904,
+            253.82000000000005,
+            187.808,
+            262.82000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 0,
+      "semantic_scope": "needs_review",
+      "rule_count": 1
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_4_2",
+      "footnote_id": "FN001",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 56,
+          "bbox": [
+            95.904,
+            264.86000000000007,
+            186.608,
+            273.86000000000007
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 0,
+      "semantic_scope": "needs_review",
+      "rule_count": 2
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_6_5",
+      "footnote_id": "FN001",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 63,
+          "bbox": [
+            95.904,
+            254.30000000000007,
+            302.8229999999999,
+            263.30000000000007
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 0,
+      "semantic_scope": "needs_review",
+      "rule_count": 2
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_7_1",
+      "footnote_id": "FN001",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 68,
+          "bbox": [
+            95.904,
+            406.6,
+            188.757,
+            415.6
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 0,
+      "semantic_scope": "needs_review",
+      "rule_count": 1
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_7_1",
+      "footnote_id": "FN002",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 68,
+          "bbox": [
+            95.904,
+            417.52000000000004,
+            186.57900000000004,
+            426.52000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 1,
+      "semantic_scope": "needs_review",
+      "rule_count": 2
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_7_1",
+      "footnote_id": "FN003",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 68,
+          "bbox": [
+            95.904,
+            428.56000000000006,
+            255.64499999999998,
+            437.56000000000006
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 2,
+      "semantic_scope": "needs_review",
+      "rule_count": 1
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_7_1",
+      "footnote_id": "FN004",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 68,
+          "bbox": [
+            95.904,
+            439.24,
+            410.198,
+            448.51000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 3,
+      "semantic_scope": "needs_review",
+      "rule_count": 2
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_7_1",
+      "footnote_id": "FN005",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 69,
+          "bbox": [
+            95.904,
+            397.48,
+            186.57900000000004,
+            406.48
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 4,
+      "semantic_scope": "needs_review",
+      "rule_count": 2
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_8_1",
+      "footnote_id": "FN001",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 70,
+          "bbox": [
+            95.904,
+            338.32000000000005,
+            292.481,
+            347.32000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 0,
+      "semantic_scope": "needs_review",
+      "rule_count": 2
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_8_5",
+      "footnote_id": "FN001",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 71,
+          "bbox": [
+            168.14000000000001,
+            333.2800000000001,
+            364.75100000000003,
+            342.2800000000001
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 0,
+      "semantic_scope": "needs_review",
+      "rule_count": 2
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_9",
+      "footnote_id": "FN001",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 74,
+          "bbox": [
+            95.904,
+            309.76000000000005,
+            292.481,
+            318.76000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 0,
+      "semantic_scope": "needs_review",
+      "rule_count": 2
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_10",
+      "footnote_id": "FN001",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 75,
+          "bbox": [
+            95.904,
+            330.76000000000005,
+            292.481,
+            339.76000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 0,
+      "semantic_scope": "needs_review",
+      "rule_count": 2
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_11",
+      "footnote_id": "FN001",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 76,
+          "bbox": [
+            95.904,
+            297.74000000000007,
+            292.481,
+            306.74000000000007
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 0,
+      "semantic_scope": "needs_review",
+      "rule_count": 2
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_12",
+      "footnote_id": "FN001",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 77,
+          "bbox": [
+            95.904,
+            308.80000000000007,
+            194.40800000000002,
+            317.80000000000007
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 0,
+      "semantic_scope": "needs_review",
+      "rule_count": 2
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_12",
+      "footnote_id": "FN002",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 78,
+          "bbox": [
+            95.904,
+            308.80000000000007,
+            194.40800000000002,
+            317.80000000000007
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 1,
+      "semantic_scope": "needs_review",
+      "rule_count": 2
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_18",
+      "footnote_id": "FN001",
+      "source_character_multiset": "pass",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 84,
+          "bbox": [
+            95.904,
+            308.80000000000007,
+            194.40800000000002,
+            317.80000000000007
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "marker": null,
+      "display_order": 0,
+      "semantic_scope": "needs_review",
+      "rule_count": 2
+    }
+  ]
+}

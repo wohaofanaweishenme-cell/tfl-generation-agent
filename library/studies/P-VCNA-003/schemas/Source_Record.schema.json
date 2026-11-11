@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Source_Record v2.4",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "2.4"
+    },
+    "template_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_regions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "document_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "pdf_page": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "bbox": {
+            "type": "array",
+            "items": {
+              "type": "number",
+              "minimum": 0
+            },
+            "minItems": 4,
+            "maxItems": 4
+          },
+          "coordinate_system": {
+            "const": "pdf_points_top_left"
+          }
+        },
+        "required": [
+          "document_id",
+          "pdf_page",
+          "bbox",
+          "coordinate_system"
+        ]
+      },
+      "minItems": 0
+    },
+    "source_docx_locations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "document_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "location": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "document_id",
+          "location"
+        ]
+      },
+      "minItems": 0
+    },
+    "text_checkpoints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "document_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "location": {
+            "type": "string"
+          },
+          "text": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "readable": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "document_id",
+          "location",
+          "text",
+          "readable"
+        ]
+      },
+      "minItems": 0
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 0
+    }
+  },
+  "required": [
+    "schema_version",
+    "template_id",
+    "source_regions",
+    "source_docx_locations",
+    "text_checkpoints",
+    "notes"
+  ]
+}

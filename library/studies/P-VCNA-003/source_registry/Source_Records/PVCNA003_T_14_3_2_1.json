@@ -1,0 +1,64 @@
+{
+  "schema_version": "2.4",
+  "template_id": "PVCNA003_T_14_3_2_1",
+  "source_regions": [
+    {
+      "document_id": "SAP_001_11",
+      "pdf_page": 26,
+      "bbox": [
+        0,
+        0,
+        841.9200000000001,
+        595.32
+      ],
+      "coordinate_system": "pdf_points_top_left"
+    },
+    {
+      "document_id": "SAP_001_11",
+      "pdf_page": 27,
+      "bbox": [
+        0,
+        0,
+        841.9200000000001,
+        595.32
+      ],
+      "coordinate_system": "pdf_points_top_left"
+    },
+    {
+      "document_id": "SAP_001_11",
+      "pdf_page": 28,
+      "bbox": [
+        0,
+        0,
+        841.9200000000001,
+        595.32
+      ],
+      "coordinate_system": "pdf_points_top_left"
+    }
+  ],
+  "source_docx_locations": [],
+  "text_checkpoints": [
+    {
+      "document_id": "SAP_001_11",
+      "location": "PDF physical page 26; owned region in source_regions; printed page 52",
+      "text": "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.3.2.1 Listing of Deaths due to Adverse Events – (1)\nPatient\nNumber\nAdverse Event\nSOC\nPT Due to PD\nOnset\ndate/time/TEAE\nResolution\ndate/time\n/ Ongoing Serious Severity\nRelationship to\nVCN-01 Gemcitabine Nab-paclitaxel\nxxxxxxx xxxxxxxxx\nxxxxxxxxx\nxxxxxxxxx\nDue to PD/\nNot Due to\nPD\nxxxxxxxx\nTxx:xx /Yes or\nYes1\nxxxxxxxxT\nxx:xx/\nOngoing\nYes\n(criteria)/\nNo\nGrade 1/\nGrade 2/\nGrade 3/\nGrade 4/\nGrade 5\nxxxxxxxxx\nxxxxxxxxx\nxxxxxxxxx\nDue to PD/\nNot Due to\nPD\nxxxxxxxx\nTxx:xx /Yes or\nYes1\nxxxxxxxxT\nxx:xx/\nOngoing\nYes\n(criteria)/\nNo\nGrade 1/\nGrade 2/\nGrade 3/\nGrade 4/\nGrade 5\nDefinitely Related\n(specify)/\nProbably Related\n(specify)/\nPossibly Related\n(specify)/\nUnlikely Related/\nNot Related\nDefinitely Related\n(specify)/\nProbably Related\n(specify)/\nPossibly Related\n(specify)/\nUnlikely Related/\nNot Related\nDefinitely Related\n(specify)/\nProbably Related\n(specify)/\nPossibly Related\n(specify)/\nUnlikely Related/\nNot Related\nDefinitely Related\n(specify)/\nProbably Related\n(specify)/\nPossibly Related\n(specify)/\nUnlikely Related/\nNot Related\nDefinitely Related\n(specify)/\nProbably Related\n(specify)/\nPossibly Related\n(specify)/\nUnlikely Related/\nNot Related\nDefinitely Related\n(specify)/\nProbably Related\n(specify)/\nPossibly Related\n(specify)/\nUnlikely Related/\nNot Related\n…\n…\nPD = Progressive Disease.\nMedDRA version <XX.X>.\nTEAE = Treatment Emergent Adverse Event.\nYes = Treatment Emergent for all study drugs. Yes1 = Treatment Emergent for VCN-01.\nPath\\Filename\nPage x/y\nProgramming Note: This layout also applies to Table 14.3.2.2 Listing of Serious Adverse Events (please include “Occurred after 1st VCN-01 Dose” and “Occurred after 2nd VCN-01 dose”\ncolumns after Due to PD column), Table 14.3.2.3 Listing of Withdrawals Due to Adverse Events and Table 14.3.2.4 Listing of Serious Adverse Reactions (please include “Occurred after 1st\nVCN-01 Dose” and “Occurred after 2nd VCN-01 dose” columns after Due to PD column).\nPlease include (1) and (2) pages in one output, for every (1) page there will be a consecutive (2) page.\nForm STATt004\nVersion Date: 20 May 2021\nPage 52 of 112",
+      "readable": true
+    },
+    {
+      "document_id": "SAP_001_11",
+      "location": "PDF physical page 27; owned region in source_regions; printed page 53",
+      "text": "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nIf the relationship to study treatment is marked as “Definitely Related, Probably Related or Possibly Related” please present the reason for decision in brackets.\nForm STATt004\nVersion Date: 20 May 2021\nPage 53 of 112",
+      "readable": true
+    },
+    {
+      "document_id": "SAP_001_11",
+      "location": "PDF physical page 28; owned region in source_regions; printed page 54",
+      "text": "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.3.2.1 Listing of Deaths due to Adverse Events – (2)\nPatient\nNumber\nAdverse Event\nSOC\nPT Outcome\nAction taken with\nVCN-01 Gemcitabine Nab-paclitaxel\nOther action taken\nxxxxxxx xxxxxxxxx\nxxxxxxxxx\nxxxxxxxxx\nxxxxxxxxx\nxxxxxxxxx\nxxxxxxxxx\n…\nFatal/\nNot Recovered/Not Resolved /\nRecovered/Resolved /\nRecovered/Resolved with Sequelae /\nRecovering/\nUnknown\nFatal/\nNot Recovered/Not Resolved /\nRecovered/Resolved /\nRecovered/Resolved with Sequelae /\nRecovering/\nUnknown\nDose Not Changed/\nDose Reduced/\nDrug Interrupted/\nDrug Withdrawn/\nNot Applicable/\nUnknown\nDose Not Changed/\nDose Reduced/\nDrug Interrupted/\nDrug Withdrawn/\nNot Applicable/\nUnknown\nDose Not Changed/\nDose Reduced/\nDrug Interrupted/\nDrug Withdrawn/\nNot Applicable/\nUnknown\nDose Not Changed/\nDose Reduced/\nDrug Interrupted/\nDrug Withdrawn/\nNot Applicable/\nUnknown\nxxxxxx\nDose Not Changed/\nDose Reduced/\nDrug Interrupted/\nDrug Withdrawn/\nNot Applicable/\nUnknown\nDose Not Changed/\nDose Reduced/\nDrug Interrupted/\nDrug Withdrawn/\nNot Applicable/\nUnknown\nxxxxxx\n…\nMedDRA version <XX.X>.\nPath\\Filename\nPage x/y\nProgramming Note:\nThis layout also applies to Table 14.3.2.2 Listing of Serious Adverse Events (please include “Occurred after 1st VCN-01 Dose” and “Occurred after 2nd VCN-01 dose” columns after Due to PD\ncolumn), Table 14.3.2.3 Listing of Withdrawals Due to Adverse Events and Table 14.3.2.4 Listing of Serious Adverse Reactions (please include “Occurred after 1st VCN-01 Dose” and “Occurred\nafter 2nd VCN-01 dose” columns after Due to PD column).\nPlease include (1) and (2) pages in one output, for every (1) page there will be a consecutive (2) page.\nIf the relationship to study treatment is marked as “Definitely Related, Probably Related or Possibly Related” please present the reason for decision in brackets.\nForm STATt004\nVersion Date: 20 May 2021\nPage 54 of 112",
+      "readable": true
+    }
+  ],
+  "notes": [
+    "Original title retained from first panel; all panel titles are retained in text checkpoints.",
+    "Regions conservatively retain page wrappers; fine-grained exclusion and structural transcription deferred to stage 2."
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "stage": "qa",
+  "static_result": "pass_with_review_warnings",
+  "errors": 0,
+  "warnings_by_type": {
+    "occurrence_review": 900,
+    "review_not_passed": 128
+  },
+  "physical_shells": 64,
+  "content_list_entries": 132,
+  "directory_only_not_generated": 68,
+  "structured_records": 64,
+  "docx_files": 64,
+  "metadata_records": 64,
+  "physical_footnotes": 73,
+  "semantic_rules": 112,
+  "rendered_pages": 77,
+  "qa_check_records": 487,
+  "specific_remaining_ids": [],
+  "independent_visual_review": "not_run",
+  "independent_semantic_review": "not_run",
+  "approved_records": 64,
+  "full_study_complete": true,
+  "previous_specific_review_ids": [
+    "PVCNA003_T_14_2_1_1",
+    "PVCNA003_T_14_3_1_1",
+    "PVCNA003_T_14_3_2_1",
+    "PVCNA003_T_14_3_10",
+    "PVCNA003_F_14_2_1",
+    "PVCNA003_L_16_2_6_1",
+    "PVCNA003_L_16_2_7_1",
+    "PVCNA003_L_16_2_19"
+  ],
+  "human_approval_record_path": "qa/Human_Approval_2026-11-11.json",
+  "approval_date": "2026-11-11",
+  "reviewer": "用户（本会话人工审核者）",
+  "completion_scope": "All 64 physical source templates in the supplied source scope accepted; no completeness claim for absent source pages or source clinical definitions.",
+  "issue_dispositions": "qa/Issue_Dispositions_2026-11-11.json",
+  "validation_execution": "qa/Validation_Execution_2026-11-11.json",
+  "validation_stderr_note": "pypdf reported original PDF object-offset warnings; retained verbatim in qa/Static_Validation_current.stderr.log. No hash mismatch or static error; source PDF not repaired."
+}

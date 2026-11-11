@@ -1,0 +1,141 @@
+{
+  "file_path": "original/04_TFL_Content_List_to_Shell_Generation_Agent copy 2.docx",
+  "role": "project_requirements_not_clinical_source",
+  "sha256": "6aa2f410fbe6cc2e33fb56c7b410d31e395ecc8a8e8ff92c934d1ec0cbf5aaf4",
+  "paragraphs": [
+    {
+      "location": "word/document.xml/body/p[1]",
+      "text": "TFL Content List to Shell Generation Agent"
+    },
+    {
+      "location": "word/document.xml/body/p[2]",
+      "text": "Final project proposal 04"
+    },
+    {
+      "location": "word/document.xml/body/p[3]",
+      "text": "AI agents for clinical trial design and biopharmaceutical statistical methods"
+    },
+    {
+      "location": "word/document.xml/body/p[4]",
+      "text": "Designed for 2 to 3 graduate students with R or Python experience over 8 to 10 weeks. Dataset sizes are suggested starting points; agree final scope with the instructor."
+    },
+    {
+      "location": "word/document.xml/body/p[5]",
+      "text": "Project question"
+    },
+    {
+      "location": "word/document.xml/body/p[6]",
+      "text": "Can an agent convert a table, figure, and listing (TFL) content list into consistent, editable shell templates by selecting and adapting approved templates while identifying missing specifications?"
+    },
+    {
+      "location": "word/document.xml/body/p[7]",
+      "text": "Recommended scope"
+    },
+    {
+      "location": "word/document.xml/body/p[8]",
+      "text": "Generate draft shells from a TFL content list, confirmed study settings, and approved templates. Students need basic statistical terminology; analysis programming and patient data are outside the core scope."
+    },
+    {
+      "location": "word/document.xml/body/p[9]",
+      "text": "Data to collect and construct"
+    },
+    {
+      "location": "word/document.xml/body/p[10]",
+      "text": "Collect or construct 6 to 8 study-specific TFL content lists with corresponding TFL template shells. Include output identifier, type, title, population, endpoint or topic, and any specified visits, groups, statistics, and notes."
+    },
+    {
+      "location": "word/document.xml/body/p[11]",
+      "text": "Provide a small library of approved table, figure, and listing templates and a style guide. Define each template's intended use, required fields, permitted defaults, and editable elements. Record numbering, placeholder, decimal, abbreviation, and footnote conventions."
+    },
+    {
+      "location": "word/document.xml/body/p[12]",
+      "text": "Annotate each required shell element and its source: content-list entry, confirmed study setting, approved template convention, or unresolved question. For figures, specify axes, units, groupings, and legend requirements where supplied. Reference specifications may allow more than one valid layout."
+    },
+    {
+      "location": "word/document.xml/body/p[13]",
+      "text": "Data partitioning and provenance"
+    },
+    {
+      "location": "word/document.xml/body/p[14]",
+      "text": "The approved template library may be shared across partitions; final study-specific shells, annotations, and answers must remain hidden. Record input and template versions so generated drafts can be reproduced."
+    },
+    {
+      "location": "word/document.xml/body/p[15]",
+      "text": "Agent workflow"
+    },
+    {
+      "location": "word/document.xml/body/p[16]",
+      "text": "Use one agent with tools for list parsing, template retrieval, validation, and rendering. Interpret titles and notes, adapt compatible templates, and render Word shells from structured specifications so content and layout can be checked separately."
+    },
+    {
+      "location": "word/document.xml/body/p[17]",
+      "text": "Parse the content list and validate identifiers, requested output types, and required inputs. Preserve the requested numbering and order. Identify duplicate, contradictory, or unsupported entries."
+    },
+    {
+      "location": "word/document.xml/body/p[18]",
+      "text": "Match each entry to an approved template using its title, topic, population, and notes. Explain the match and flag entries with no compatible template or several materially different interpretations."
+    },
+    {
+      "location": "word/document.xml/body/p[19]",
+      "text": "Build a shell specification containing titles, populations, rows, columns, statistics, footnotes, and figure or listing details as applicable. Track the source of each element and distinguish explicit requirements from approved display conventions."
+    },
+    {
+      "location": "word/document.xml/body/p[20]",
+      "text": "Resolve missing fields from confirmed settings or applicable approved defaults. Record unanswered questions and conflicts for human review. Do not invent analysis methods, populations, uncertainty measures, or missing-data rules; incomplete drafts should visibly mark unresolved elements."
+    },
+    {
+      "location": "word/document.xml/body/p[21]",
+      "text": "Render editable Word shells and an output inventory. Use explicit placeholders for results; figure shells contain a labeled empty plotting frame, not simulated result curves. Let a reviewer inspect, revise, and regenerate drafts while preserving identifiers and decisions."
+    },
+    {
+      "location": "word/document.xml/body/p[22]",
+      "text": "Evaluation plan"
+    },
+    {
+      "location": "word/document.xml/body/p[23]",
+      "text": "Evaluate template selection, specification accuracy, and completeness against instructor references. Score tables, figures, and listings separately, including recognition of unsupported entries."
+    },
+    {
+      "location": "word/document.xml/body/p[24]",
+      "text": "Check identifiers, titles, populations, treatment labels, visit order, row and column content, statistics, axes, and footnotes. Measure omitted requirements and unsupported additions. Score appropriate clarification when the supplied information is insufficient."
+    },
+    {
+      "location": "word/document.xml/body/p[25]",
+      "text": "Compare the content-list inventory with generated outputs to detect missing, duplicate, or extra shells. Check that old template labels and irrelevant footnotes were removed and unresolved items remain visible."
+    },
+    {
+      "location": "word/document.xml/body/p[26]",
+      "text": "Inspect rendered pages for clipping, readable labels, page breaks, and consistent formatting. Accept layouts satisfying approved conventions, and score visual quality separately from content accuracy."
+    },
+    {
+      "location": "word/document.xml/body/p[27]",
+      "text": "Compare with manual adaptation, rule-based template filling, and a general-purpose LLM using the same materials. Measure preparation time, reviewer corrections, and defects remaining after review."
+    },
+    {
+      "location": "word/document.xml/body/p[28]",
+      "text": "Required deliverables"
+    },
+    {
+      "location": "word/document.xml/body/p[29]",
+      "text": "A prototype that imports a TFL content list, accepts study settings, previews draft shells, and exports an editable Word shell package."
+    },
+    {
+      "location": "word/document.xml/body/p[30]",
+      "text": "A reusable template library, structured shell schema, output inventory, and source record for generated elements."
+    },
+    {
+      "location": "word/document.xml/body/p[31]",
+      "text": "A clarification log and reviewer workflow for correcting uncertain or incomplete specifications before regeneration."
+    },
+    {
+      "location": "word/document.xml/body/p[32]",
+      "text": "An annotated benchmark and evaluation report covering specification accuracy, unsupported additions, layout quality, reviewer effort, and failure cases."
+    },
+    {
+      "location": "word/document.xml/body/p[33]",
+      "text": "Package permitted inputs and templates, dependency versions, example runs, and limitations. Keep benchmark answers separate. Additional output families and SAP lookup are extensions; the core uses content lists and approved conventions without executing analyses."
+    }
+  ],
+  "table_count": 0,
+  "notes": "Native paragraph text read; not a source shell document. No fabricated PDF page locations."
+}

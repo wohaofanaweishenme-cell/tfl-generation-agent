@@ -1,0 +1,30 @@
+{
+  "schema_version": "2.4",
+  "template_id": "PVCNA003_F_14_3_1",
+  "source_regions": [
+    {
+      "document_id": "SAP_001_11",
+      "pdf_page": 42,
+      "bbox": [
+        0,
+        0,
+        841.9200000000001,
+        595.32
+      ],
+      "coordinate_system": "pdf_points_top_left"
+    }
+  ],
+  "source_docx_locations": [],
+  "text_checkpoints": [
+    {
+      "document_id": "SAP_001_11",
+      "location": "PDF physical page 42; owned region in source_regions; printed page 68",
+      "text": "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nFigure 14.3.1 ECOG Score (Safety Analysis Set)\nFigure Specifications\nPlot: Kaplan-Meier time to event plot\nx axis: Visit\nx axis: Label: Visit\nx axis: values: As appropriate\nY axis: Percentage\nY axis Label: Percentage of patients\nY axis values: 0 - 100\nFootnote:\nFor each level of the ECOG score, the proportion of patients continuing on that or a better score were estimated for each visit using Kaplan-Meier estimates. At death the patient was\nassumed to have risen to the highest ECOG score.\nForm STATt004\nVersion Date: 20 May 2021\nPage 68 of 112",
+      "readable": true
+    }
+  ],
+  "notes": [
+    "Original title retained from first panel; all panel titles are retained in text checkpoints.",
+    "Regions conservatively retain page wrappers; fine-grained exclusion and structural transcription deferred to stage 2."
+  ]
+}

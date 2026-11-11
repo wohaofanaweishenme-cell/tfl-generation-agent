@@ -1,0 +1,55 @@
+VCN Biosciences S.L. P-VCNA-003
+Statistical Analysis Plan
+P-VCNA-003 ddMMMyyyy HH:MM
+Listing 16.2.6.3 Derived Efficacy Variables - EDC Data
+<Arm>
+Patient
+Number
+Overall
+Survival (OS)
+(months)
+Progression – Free Survival
+(PFS) (months)
+Time to
+Progression (TTP)
+(months)
+Objective
+Response
+Disease
+Control
+Landmark 1-year
+Survival
+New PFS at
+the 1-year
+Landmark
+Duration of
+Response (DoR)
+(months)
+xxxxxxx xx xx xx Yes/
+xx xx xx Yes/
+No
+No
+Yes/
+No
+Yes/
+No
+Yes/
+No
+Yes/
+No
+Yes/
+No
+Yes/
+No
+xx
+xx
+…
+Path\Filename
+Programming Note: This layout also applies to Listing 16.2.6.4 Derived Efficacy Variables - CIV Data.
+Footnotes to be included:
+- EDC = Electronic Data Capture.
+- CIV = Central Imaging Vendor.
+Page x/y
+Form STATt004
+Version Date: 20 May 2021
+Page 88 of 112

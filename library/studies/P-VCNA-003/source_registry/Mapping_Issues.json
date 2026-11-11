@@ -1,0 +1,150 @@
+{
+  "schema_version": "2.4",
+  "stage": "identification",
+  "issues": [
+    {
+      "issue_id": "ID_001",
+      "template_id": null,
+      "severity": "warning",
+      "category": "supplied_file_gap",
+      "description": "Printed pages 4-29 absent from supplied 86-page PDF. Identification conclusions are restricted to actual supplied file; missing SAP body cannot support later semantic interpretation.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": []
+    },
+    {
+      "issue_id": "ID_002",
+      "template_id": null,
+      "severity": "warning",
+      "category": "non_text_region",
+      "description": "Physical page 86 contains an image-based study-design diagram not transcribed by PDFKit. Visually seen in overview; detailed image content remains unverified. Not a TFL shell.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 86,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "ID_003",
+      "template_id": null,
+      "severity": "warning",
+      "category": "visual_verification_scope",
+      "description": "All 86 pages examined via extracted text and rendered overviews; full-resolution verification of every text region, footnote and table cell is not_run and belongs to subsequent extraction/QA. Source text checkpoints are parser output, not certified verbatim transcription.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": []
+    },
+    {
+      "issue_id": "ID_004",
+      "template_id": null,
+      "severity": "warning",
+      "category": "source_inconsistency",
+      "description": "Figure 14.2.1 programming note refers to Figure 14.2.6 as Duration of Response, while directory calls 14.2.6 Progression Free Survival. Preserve both; do not correct.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 41,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "ID_005",
+      "template_id": null,
+      "severity": "warning",
+      "category": "source_title_variation",
+      "description": "Directory uses Demographic for Listing 16.2.4.1, physical shell uses Demographics; table directory uses Demographics whereas Table 14.1.2.1 shell uses Demographic. Same type/number presence mapping retained; no wording normalization.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 8,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        },
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 55,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        },
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 4,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        },
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 12,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "ID_006",
+      "template_id": null,
+      "severity": "info",
+      "category": "unapproved_style_guide",
+      "description": "No approved style guide supplied. Source p10 formatting instructions remain source evidence only. Future permitted_defaults=[].\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 10,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "ID_007",
+      "template_id": null,
+      "severity": "warning",
+      "category": "validation_environment",
+      "description": "Historical dependency failure resolved by combining the local compatible Python 3.12 environment with bundled document/PDF packages. Required validator rerun: identification pass, structure pass_with_review_warnings, zero errors. Historical failed log retained; see qa/Static_Validation_identification_rerun.json and qa/Static_Validation_structure.json.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "resolved",
+      "source_regions": []
+    }
+  ]
+}

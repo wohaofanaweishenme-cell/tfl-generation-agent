@@ -1,0 +1,30 @@
+{
+  "schema_version": "2.4",
+  "template_id": "PVCNA003_T_14_2_2_7",
+  "source_regions": [
+    {
+      "document_id": "SAP_001_11",
+      "pdf_page": 16,
+      "bbox": [
+        0,
+        0,
+        841.9200000000001,
+        595.32
+      ],
+      "coordinate_system": "pdf_points_top_left"
+    }
+  ],
+  "source_docx_locations": [],
+  "text_checkpoints": [
+    {
+      "document_id": "SAP_001_11",
+      "location": "PDF physical page 16; owned region in source_regions; printed page 42",
+      "text": "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.2.2.7 Objective Response Rate – EDC Data (Intent-to-Treat Set)\nParameter/ Test Component\nArm I\n(Nab-paclitaxel and\ngemcitabine)\n(N=xx)\nArm II\n(VCN-01 with Nab-\npaclitaxel and gemcitabine)\n(N=xx) Odds Ratio (95% CI) p-value\nObjective Response Rate (ORR) n (%) xx (xx.x %) xx (xx.x %)\nCR n xx xx\nPR n xx xx\nCochran-Mantel-Haenszel (CMH) test* Sensitivity analysis** x.x (x.x , x.x) xxxxxx\nx.x (x.x , x.x) xxxxxx\nPercentage is the number of patients in the category (n) divided by the number of patients within the column (N).\n* CMH test was stratified by region and ECOG performance status at randomization.\n** CMH test was stratified by age group (<65 years and >=65 years), region and ECOG performance status at randomization.\nCR = Complete Response, PR = Partial Response.\nSource: Listing 16.2.6.3\nPath\\Filename\nPage x/y\nProgramming Note: This layout also applies to Table 14.2.2.8 Objective Response Rate - EDC Data (Full Analysis Set), Table 14.2.2.9 Subgroup Analysis: Objective Response Rate - EDC Data\n(Intent-to-Treat Set), Table 14.2.2.10 Objective Response Rate - CIV Data (Intent-to-Treat Set), Table 14.2.2.11 Objective Response Rate - CIV Data (Full Analysis Set) and Table 14.2.2.12\nSubgroup Analysis: Objective Response Rate - CIV Data (Intent-to-Treat Set)\nFootnotes to be included:\n- EDC data: ORR (Objective Response Rate) was assessed based on EDC (Electronic Data Capture) data.\n- CIV data: ORR (Objective Response Rate) was assessed based on CIV (Central Imaging Vendor) data.\nSource listing for CIV data: Listing 16.2.6.4\nForm STATt004\nVersion Date: 20 May 2021\nPage 42 of 112",
+      "readable": true
+    }
+  ],
+  "notes": [
+    "Original title retained from first panel; all panel titles are retained in text checkpoints.",
+    "Regions conservatively retain page wrappers; fine-grained exclusion and structural transcription deferred to stage 2."
+  ]
+}

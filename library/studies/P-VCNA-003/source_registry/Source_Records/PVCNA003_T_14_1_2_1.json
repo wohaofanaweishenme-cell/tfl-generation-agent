@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.4",
+  "template_id": "PVCNA003_T_14_1_2_1",
+  "source_regions": [
+    {
+      "document_id": "SAP_001_11",
+      "pdf_page": 12,
+      "bbox": [
+        0,
+        0,
+        841.9200000000001,
+        595.32
+      ],
+      "coordinate_system": "pdf_points_top_left"
+    },
+    {
+      "document_id": "SAP_001_11",
+      "pdf_page": 13,
+      "bbox": [
+        0,
+        0,
+        841.9200000000001,
+        595.32
+      ],
+      "coordinate_system": "pdf_points_top_left"
+    }
+  ],
+  "source_docx_locations": [],
+  "text_checkpoints": [
+    {
+      "document_id": "SAP_001_11",
+      "location": "PDF physical page 12; owned region in source_regions; printed page 38",
+      "text": "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.1.2.1 Demographic and Baseline Characteristics (Intent-to-Treat Set)\nArm I\n(N=xx)\n(Nab-paclitaxel and gemcitabine)\nArm II\n(VCN-01 with Nab-paclitaxel and\ngemcitabine)\n(N=xx)\nAge (years) n xx xx\nMean xx xx\nSTD xx xx\nMedian xx xx\nMinimum xx xx\nMaximum xx xx\nGender Male n (%) xx (xx.x%) xx (xx.x%)\nFemale n (%) xx (xx.x%) xx (xx.x%)\nRace Black or African American n (%) xx (xx.x%) xx (xx.x%)\nAmerican Indian or Alaska Native n (%) xx (xx.x%) xx (xx.x%)\nAsian n (%) xx (xx.x%) xx (xx.x%)\nNative Hawaiian or Other Pacific Islander n (%) xx (xx.x%) xx (xx.x%)\nWhite n (%) xx (xx.x%) xx (xx.x%)\nOther n (%) xx (xx.x%) xx (xx.x%)\nEthnicity Not Hispanic or Latino n (%) xx (xx.x%) xx (xx.x%)\nHispanic or Latino n (%) xx (xx.x%) xx (xx.x%)\nNot Reported n (%) xx (xx.x%) xx (xx.x%)\nUnknown n (%) xx (xx.x%) xx (xx.x%)\nRegion of study site North America n (%) xx (xx.x%) xx (xx.x%)\nEuropean Union n (%) xx (xx.x%) xx (xx.x%)\nECOG status at\nrandomization\n0 n (%) xx (xx.x%) xx (xx.x%)\n1 n (%) xx (xx.x%) xx (xx.x%)\n[Continued overleaf…]\nForm STATt004\nVersion Date: 20 May 2021\nPage 38 of 112",
+      "readable": true
+    },
+    {
+      "document_id": "SAP_001_11",
+      "location": "PDF physical page 13; owned region in source_regions; printed page 39",
+      "text": "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nHeight (cm) n xx xx\nMean xx xx\nSTD xx xx\nMedian xx xx\nMinimum xx xx\nMaximum xx xx\nWeight (kg) n xx xx\nMean xx xx\nSTD xx xx\nMedian xx xx\nMinimum xx xx\nMaximum xx xx\nBMI (kg/m2) n xx xx\nMean xx xx\nSTD xx xx\nMedian xx xx\nMinimum xx xx\nMaximum xx xx\nPercentage is the number of patients in the category (n) divided by the number of patients within the column (N).\nAge was calculated using Year of Birth and date of first treatment and presented as age at last birthday.\nBMI is the patient’s body weight in kilograms divided by the square of the patient’s height in meters.\nSource: Listing 16.2.4.1\nPath\\Filename\nPage x/y\nProgramming Note: This layout also applies to Table 14.1.2.2. (Full Analysis Set) and Table 14.1.2.3 (Safety Analysis Set)\nForm STATt004\nVersion Date: 20 May 2021\nPage 39 of 112",
+      "readable": true
+    }
+  ],
+  "notes": [
+    "Original title retained from first panel; all panel titles are retained in text checkpoints.",
+    "Regions conservatively retain page wrappers; fine-grained exclusion and structural transcription deferred to stage 2."
+  ]
+}

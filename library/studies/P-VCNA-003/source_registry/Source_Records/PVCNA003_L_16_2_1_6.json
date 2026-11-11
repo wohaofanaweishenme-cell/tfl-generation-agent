@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.4",
+  "template_id": "PVCNA003_L_16_2_1_6",
+  "source_regions": [
+    {
+      "document_id": "SAP_001_11",
+      "pdf_page": 51,
+      "bbox": [
+        0,
+        0,
+        841.9200000000001,
+        595.32
+      ],
+      "coordinate_system": "pdf_points_top_left"
+    },
+    {
+      "document_id": "SAP_001_11",
+      "pdf_page": 52,
+      "bbox": [
+        0,
+        0,
+        841.9200000000001,
+        595.32
+      ],
+      "coordinate_system": "pdf_points_top_left"
+    }
+  ],
+  "source_docx_locations": [],
+  "text_checkpoints": [
+    {
+      "document_id": "SAP_001_11",
+      "location": "PDF physical page 51; owned region in source_regions; printed page 77",
+      "text": "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.1.6 VCN-01 Administration – (1)\n<Arm>\nPatient Number Visit Administered\nAntipyretic\nTreatment p.o. Given\nPrior to\nAdministration\nStart Date/time\n(Stop Date/Time)\nProtocol\nAssigned\nVolume Infused\n(mL)\nConcentration of\nInfusion Solution\n(vp/mL)\nActual Volume\nInfused (mL)\nAdministered\nDose\n(x10^13 vp)\nxxxxxxx xxxxxxxxx Yes/\nxxxxxxxxx Yes/\nNo (reason)\nNo (reason)\nYes/\nNo\nYes/\nNo\nxxxxxxxxTxx:xx\n(xxxxxxxxTxx:xx)\nxxxxxxxxTxx:xx\n(xxxxxxxxTxx:xx)\nxx xx xx xx\nxx xx xx xx\n…\nPath\\Filename\nPage x/y\nProgramming Note: Please include (1) and (2) pages in one output, for every (1) page there will be a consecutive (2) page.\nForm STATt004\nVersion Date: 20 May 2021\nPage 77 of 112",
+      "readable": true
+    },
+    {
+      "document_id": "SAP_001_11",
+      "location": "PDF physical page 52; owned region in source_regions; printed page 78",
+      "text": "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.1.6 VCN-01 Administration - (2)\n<Arm>\nPatient Number Visit Required Dose (vp)\nFraction of Required Dose\nAdministered (%) Prolongation of Infusion Dose Interruption\nxxxxxxx xxxxxxxxx xx xx Yes (reason)/\nNo\nxxxxxxxxx xx xx Yes (reason)/\nNo\nYes/\nNo\nYes/\nNo\n…\nPath\\Filename\nPage x/y\nProgramming Note: Please include (1) and (2) pages in one output, for every (1) page there will be a consecutive (2) page.\nForm STATt004\nVersion Date: 20 May 2021\nPage 78 of 112",
+      "readable": true
+    }
+  ],
+  "notes": [
+    "Original title retained from first panel; all panel titles are retained in text checkpoints.",
+    "Regions conservatively retain page wrappers; fine-grained exclusion and structural transcription deferred to stage 2."
+  ]
+}

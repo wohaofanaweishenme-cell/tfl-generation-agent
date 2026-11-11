@@ -1,0 +1,30 @@
+{
+  "schema_version": "2.4",
+  "template_id": "PVCNA003_T_14_3_1_4",
+  "source_regions": [
+    {
+      "document_id": "SAP_001_11",
+      "pdf_page": 25,
+      "bbox": [
+        0,
+        0,
+        841.9200000000001,
+        595.32
+      ],
+      "coordinate_system": "pdf_points_top_left"
+    }
+  ],
+  "source_docx_locations": [],
+  "text_checkpoints": [
+    {
+      "document_id": "SAP_001_11",
+      "location": "PDF physical page 25; owned region in source_regions; printed page 51",
+      "text": "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.3.1.4 Treatment-Emergent Adverse Events, by System Organ Class, Preferred Term and Relationship to VCN-01 (Safety Analysis Set)\nArm I\n(N=xx)\n(Nab-paclitaxel and gemcitabine)\nArm II\n(VCN-01 with Nab-paclitaxel and\ngemcitabine)\n(N=xx)\nRelationship to VCN-01 n (%) n (%)\nAny Treatment-Emergent Adverse Event <Relationship> xx (xx.x%) xx (xx.x%)\n<Relationship> xx (xx.x%) xx (xx.x%)\n<Relationship> xx (xx.x%) xx (xx.x%)\n<Relationship> xx (xx.x%) xx (xx.x%)\n<Relationship> xx (xx.x%) xx (xx.x%)\nSOC <Relationship> xx (xx.x%) xx (xx.x%)\n<Relationship> xx (xx.x%) xx (xx.x%)\n<Relationship> xx (xx.x%) xx (xx.x%)\nPT <Relationship> xx (xx.x%) xx (xx.x%)\nPT <Relationship> xx (xx.x%) xx (xx.x%)\n<Relationship> xx (xx.x%) xx (xx.x%)\n<Relationship> xx (xx.x%) xx (xx.x%)\nSOC\n…\n…\nThe table presents number of patients (n) who have at least one occurrence of the event, and percentage of patients(n(%)).\nPercentage is the number of patients in the category (n) divided by the number of patients within the column (N).\nMedDRA version <XX.X>.\nSource: Listing 16.2.7.1\nPath\\Filename\nPage x/y\nProgramming Note: This layout also applies to Table 14.3.1.5 Treatment-Emergent Adverse Events, by System Organ Class, Preferred Term and Relationship to Gemcitabine (Safety\nAnalysis Set), Table 14.3.1.6 Treatment-Emergent Adverse Events, by System Organ Class, Preferred Term and Relationship to Nab-paclitaxel (Safety Analysis Set), Table 14.3.1.10 Serious\nTreatment-Emergent Adverse Events, by System Organ Class, Preferred Term and Relationship to VCN-01 (Safety Analysis Set), ), Table 14.3.1.11 Serious Treatment-Emergent Adverse\nEvents, by System Organ Class, Preferred Term and Relationship to Gemcitabine (Safety Analysis Set) and Table 14.3.1.12 Serious Treatment-Emergent Adverse Events, by System Organ\nClass, Preferred Term and Relationship to Nab-paclitaxel (Safety Analysis Set). Please update second column header according to the table title.\nForm STATt004\nVersion Date: 20 May 2021\nPage 51 of 112",
+      "readable": true
+    }
+  ],
+  "notes": [
+    "Original title retained from first panel; all panel titles are retained in text checkpoints.",
+    "Regions conservatively retain page wrappers; fine-grained exclusion and structural transcription deferred to stage 2."
+  ]
+}

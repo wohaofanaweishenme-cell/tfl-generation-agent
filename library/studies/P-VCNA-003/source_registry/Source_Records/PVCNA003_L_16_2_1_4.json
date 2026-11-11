@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.4",
+  "template_id": "PVCNA003_L_16_2_1_4",
+  "source_regions": [
+    {
+      "document_id": "SAP_001_11",
+      "pdf_page": 48,
+      "bbox": [
+        0,
+        0,
+        841.9200000000001,
+        595.32
+      ],
+      "coordinate_system": "pdf_points_top_left"
+    },
+    {
+      "document_id": "SAP_001_11",
+      "pdf_page": 49,
+      "bbox": [
+        0,
+        0,
+        841.9200000000001,
+        595.32
+      ],
+      "coordinate_system": "pdf_points_top_left"
+    }
+  ],
+  "source_docx_locations": [],
+  "text_checkpoints": [
+    {
+      "document_id": "SAP_001_11",
+      "location": "PDF physical page 48; owned region in source_regions; printed page 74",
+      "text": "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.1.4 SoC Administration – Gemcitabine – (1)\n<Arm>\nPatient Number Visit\nNeutrophils and\nPlatelets\nReviewed prior\nto Dosing\nPremedication\nAdministered\nGemcitabine\nAdministered\nStart Date/time\n(Stop Date/Time)\nProtocol\nAssigned Dose\n(mg/m2)\nPatient BSA (m2)\n(Calculation\nMethod)\nConcentration\nof Infusion\nSolution\n(mg/ml)\nxxxxxxx xxxxxxxxx Yes/\nNo\nxxxxxxxxx Yes/\nNo\nYes/\nNo\nYes/\nNo\nYes/\nNo (reason)\nYes/\nNo (reason)\nxxxxxxxxTxx:xx\n(xxxxxxxxTxx:xx)\nxxxxxxxxTxx:xx\n(xxxxxxxxTxx:xx)\nxx xx (method) xx\nxx xx (method) xx\n…\nBSA = Body Surface Area.\nPath\\Filename\nPage x/y\nProgramming Note: Please include (1) and (2) pages in one output, for every (1) page there will be a consecutive (2) page.\nForm STATt004\nVersion Date: 20 May 2021\nPage 74 of 112",
+      "readable": true
+    },
+    {
+      "document_id": "SAP_001_11",
+      "location": "PDF physical page 49; owned region in source_regions; printed page 75",
+      "text": "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.1.4 SoC Administration – Gemcitabine – (2)\n<Arm>\nPatient\nNumber Visit\nVolume to be Infused\n(ml)\nActual Volume\nInfused (ml) Actual Assigned Dose\nAdministered\nDose (mg)\nComplete\nProtocol\nAssigned Dose\nAdministered\nProlongation of\nInfusion\nDose Reduction/\nInterruption\nxxxxxxx xxxxxxxxx xx xx xxxxxxxxx xx Yes/\nxxxxxxxxx xx xx xxxxxxxxx xx Yes/\nNo (reason)\nNo (reason)\nYes (reason)/\nNo\nYes (reason)/\nNo\nYes/\nNo\nYes/\nNo\n…\nPath\\Filename\nPage x/y\nProgramming Note: Please include (1) and (2) pages in one output, for every (1) page there will be a consecutive (2) page.\nForm STATt004\nVersion Date: 20 May 2021\nPage 75 of 112",
+      "readable": true
+    }
+  ],
+  "notes": [
+    "Original title retained from first panel; all panel titles are retained in text checkpoints.",
+    "Regions conservatively retain page wrappers; fine-grained exclusion and structural transcription deferred to stage 2."
+  ]
+}

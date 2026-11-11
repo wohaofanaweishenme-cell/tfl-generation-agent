@@ -1,0 +1,30 @@
+{
+  "schema_version": "2.4",
+  "template_id": "PVCNA003_L_16_2_16",
+  "source_regions": [
+    {
+      "document_id": "SAP_001_11",
+      "pdf_page": 82,
+      "bbox": [
+        0,
+        0,
+        841.9200000000001,
+        595.32
+      ],
+      "coordinate_system": "pdf_points_top_left"
+    }
+  ],
+  "source_docx_locations": [],
+  "text_checkpoints": [
+    {
+      "document_id": "SAP_001_11",
+      "location": "PDF physical page 82; owned region in source_regions; printed page 108",
+      "text": "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.16 ECOG Score\n<Arm>\nPatient Number Visit Date Grade\nxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx 0 (Fully active, able to carry on all pre-disease performance without restriction)/\n1 (Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature, e.g.,\nlight housework or office work)/\n2 (Ambulatory and capable of all self-care but unable to carry out any work activities. Up and about > 50% of waking hours)/\n3 (Capable of only limited self-care, confined to a bed or chair > 50% of waking hours)/\n4 (Completely disabled. Cannot carry on any self-care. Totally confined to bed or chair)/\n5 (Dead)\n0 (Fully active, able to carry on all pre-disease performance without restriction)/\n1 (Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature, e.g.,\nlight housework or office work)/\n2 (Ambulatory and capable of all self-care but unable to carry out any work activities. Up and about > 50% of waking hours)/\n3 (Capable of only limited self-care, confined to a bed or chair > 50% of waking hours)/\n4 (Completely disabled. Cannot carry on any self-care. Totally confined to bed or chair)/\n5 (Dead)\n0 (Fully active, able to carry on all pre-disease performance without restriction)/\n1 (Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature, e.g.,\nlight housework or office work)/\n2 (Ambulatory and capable of all self-care but unable to carry out any work activities. Up and about > 50% of waking hours)/\n3 (Capable of only limited self-care, confined to a bed or chair > 50% of waking hours)/\n4 (Completely disabled. Cannot carry on any self-care. Totally confined to bed or chair)/\n5 (Dead)\n…\nPath\\Filename\nPage x/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 108 of 112",
+      "readable": true
+    }
+  ],
+  "notes": [
+    "Original title retained from first panel; all panel titles are retained in text checkpoints.",
+    "Regions conservatively retain page wrappers; fine-grained exclusion and structural transcription deferred to stage 2."
+  ]
+}

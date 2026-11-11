@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.4",
+  "template_id": "PVCNA003_L_16_2_1_2",
+  "source_regions": [
+    {
+      "document_id": "SAP_001_11",
+      "pdf_page": 44,
+      "bbox": [
+        0,
+        0,
+        841.9200000000001,
+        595.32
+      ],
+      "coordinate_system": "pdf_points_top_left"
+    },
+    {
+      "document_id": "SAP_001_11",
+      "pdf_page": 45,
+      "bbox": [
+        0,
+        0,
+        841.9200000000001,
+        595.32
+      ],
+      "coordinate_system": "pdf_points_top_left"
+    }
+  ],
+  "source_docx_locations": [],
+  "text_checkpoints": [
+    {
+      "document_id": "SAP_001_11",
+      "location": "PDF physical page 44; owned region in source_regions; printed page 70",
+      "text": "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.1.2 Patient Disposition – (1)\n<Arm>\nPatient\nNumber\nDate/Time of\nInformed\nConsent\nInformed\nConsent\nVersion\nCompleted\nstudy If no, specify\nProtocol\nVersion Completed Treatment If no, specify\nxxxxxxx xxxxxxxTxx:xx x.x xxxxxxxxxx Yes/No xxxxxxxxxxxxxxx Yes/No xxxxxxx\nxxxxxxx xxxxxxxTxx:xx x.x xxxxxxxxxx Yes/No Yes/No xxxxxxx\nxxxxxxx xxxxxxxTxx:xx x.x xxxxxxxxxx Yes/No Yes/No xxxxxxxxxxxxxxxxxxxxx xxxxxxx\nxxxxxxx xxxxxxxTxx:xx x.x xxxxxxxxxx Yes/No Yes/No xxxxxxx\nDate of\ncompletion/\nwithdrawal\n…\nCompleted treatment refers to completed treatment period, completed study refers to completed FU period.\nPath\\Filename\nPage x/y\nProgramming Note: Please include (1) and (2) pages in one output, for every (1) page there will be a consecutive (2) page.\nForm STATt004\nVersion Date: 20 May 2021\nPage 70 of 112",
+      "readable": true
+    },
+    {
+      "document_id": "SAP_001_11",
+      "location": "PDF physical page 45; owned region in source_regions; printed page 71",
+      "text": "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.1.2 Patient Disposition – (2)\n<Arm>\nPatient Number Safety Analysis Set (SAF) Intent-to-Treat Set (ITT) Full Analysis Set (FAS) Per-Protocol Set (PPS) Pharmacodynamic Set\n(PDS)\nSubgroup Analysis\nInclusion\nxxxxxxx Yes/No Yes/No Yes/No Yes/No Yes/No Yes/No\nxxxxxxx Yes/No Yes/No Yes/No Yes/No Yes/No Yes/No\nxxxxxxx Yes/No Yes/No Yes/No Yes/No Yes/No Yes/No\nxxxxxxx Yes/No Yes/No Yes/No Yes/No Yes/No Yes/No\n…\nInclusion for subgroup analysis is defined as patients who had the first 3 cycles of SoC chemotherapy and started the 4th SoC chemotherapy in Arm I, and patients who had the first 3\ncycles of SoC chemotherapy, started the 4th cycle of SoC chemotherapy and received 2 doses of VCN-01.\nPath\\Filename\nPage x/y\nProgramming Note: Please include (1) and (2) pages in one output, for every (1) page there will be a consecutive (2) page.\nForm STATt004\nVersion Date: 20 May 2021\nPage 71 of 112",
+      "readable": true
+    }
+  ],
+  "notes": [
+    "Original title retained from first panel; all panel titles are retained in text checkpoints.",
+    "Regions conservatively retain page wrappers; fine-grained exclusion and structural transcription deferred to stage 2."
+  ]
+}

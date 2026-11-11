@@ -1,0 +1,77 @@
+{
+  "schema_version": "2.4",
+  "corrections": [
+    {
+      "correction_id": "CORR_001",
+      "template_id": "PVCNA003_T_14_2_2_13",
+      "reason": "Rendered-source comparison identified a source programming-note continuation misclassified as a title. Corrected block/element role only; original text and reference retained, no source shell created.",
+      "changed_paths": [
+        "intermediate/Structured_Shells/PVCNA003_T_14_2_2_13.json",
+        "TFL_Template_Library/table/PVCNA003_T_14_2_2_13.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_T_14_2_2_13.json",
+        "checkpoints/Source_Region_Evidence.json"
+      ],
+      "source_basis": [
+        {
+          "exact_text": "Table 14.2.2.16 Disease Control Rate - CIV Data (Full Analysis Set), Table 14.2.3.2 Disease Control Rate for Patients with Subsequent Anti-Cancer Therapies - EDC Data (Full Analysis Set)",
+          "source_regions": [
+            {
+              "document_id": "SAP_001_11",
+              "pdf_page": 17,
+              "bbox": [
+                90.504,
+                367.48,
+                757.9869999999999,
+                376.48
+              ],
+              "coordinate_system": "pdf_points_top_left"
+            }
+          ],
+          "notes": "Visually within source Programming Note on the supplied SAP page."
+        }
+      ],
+      "checks_to_rerun": [
+        "DOCX rebuild and hash update",
+        "actual bookmark scopes/source text",
+        "render and visual comparison",
+        "static validator --stage docx"
+      ]
+    },
+    {
+      "correction_id": "CORR_002",
+      "template_id": "PVCNA003_F_14_2_1",
+      "reason": "Rendered-source comparison identified a source programming-note continuation misclassified as a title. Corrected block/element role only; original text and reference retained, no source shell created.",
+      "changed_paths": [
+        "intermediate/Structured_Shells/PVCNA003_F_14_2_1.json",
+        "TFL_Template_Library/figure/PVCNA003_F_14_2_1.docx",
+        "intermediate/DOCX_Locator_Map/PVCNA003_F_14_2_1.json",
+        "checkpoints/Source_Region_Evidence.json"
+      ],
+      "source_basis": [
+        {
+          "exact_text": "Figure 14.2.9 Kaplan-Meier Plot of Duration of Response",
+          "source_regions": [
+            {
+              "document_id": "SAP_001_11",
+              "pdf_page": 41,
+              "bbox": [
+                90.504,
+                415.12,
+                295.514,
+                424.12
+              ],
+              "coordinate_system": "pdf_points_top_left"
+            }
+          ],
+          "notes": "Visually within source Programming Note on the supplied SAP page."
+        }
+      ],
+      "checks_to_rerun": [
+        "DOCX rebuild and hash update",
+        "actual bookmark scopes/source text",
+        "render and visual comparison",
+        "static validator --stage docx"
+      ]
+    }
+  ]
+}

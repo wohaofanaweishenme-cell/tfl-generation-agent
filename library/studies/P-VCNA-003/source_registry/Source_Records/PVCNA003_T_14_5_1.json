@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.4",
+  "template_id": "PVCNA003_T_14_5_1",
+  "source_regions": [
+    {
+      "document_id": "SAP_001_11",
+      "pdf_page": 39,
+      "bbox": [
+        0,
+        0,
+        841.9200000000001,
+        595.32
+      ],
+      "coordinate_system": "pdf_points_top_left"
+    },
+    {
+      "document_id": "SAP_001_11",
+      "pdf_page": 40,
+      "bbox": [
+        0,
+        0,
+        841.9200000000001,
+        595.32
+      ],
+      "coordinate_system": "pdf_points_top_left"
+    }
+  ],
+  "source_docx_locations": [],
+  "text_checkpoints": [
+    {
+      "document_id": "SAP_001_11",
+      "location": "PDF physical page 39; owned region in source_regions; printed page 65",
+      "text": "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.5.1 Pharmacodynamic Parameters (Pharmacodynamic Set)\n<Parameter>\nVisit\nArm I\n(N=xx)\n(Nab-paclitaxel and gemcitabine)\nArm II\n(VCN-01 with Nab-paclitaxel and gemcitabine)\n(N=xx) p-value\nScreening n xx xx\nMean xx xx\nSTD xx xx\nMedian xx xx\nMinimum xx xx\nMaximum xx xx\nBaseline n xx xx\nMean xx xx\nSTD xx xx\nMedian xx xx\nMinimum xx xx\nMaximum xx xx\n<Visit> n xx xx\nMean xx xx\n…\nChange from Baseline to <Visit> n xx xx\nMean xx xx\n…\n<Test> x.xxxx\n…\nSource: Listing 16.2.6\nPath\\Filename\nPage x/y\nProgramming Note: Above layout should be used for parameters where both arms as assessed. Please indicate test used in the first column as appropriate.\nForm STATt004\nVersion Date: 20 May 2021\nPage 65 of 112",
+      "readable": true
+    },
+    {
+      "document_id": "SAP_001_11",
+      "location": "PDF physical page 40; owned region in source_regions; printed page 66",
+      "text": "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\n<Parameter>\nVisit\nArm I\n(N=xx)\n(Nab-paclitaxel and gemcitabine)\nArm II\n(VCN-01 with Nab-paclitaxel and\ngemcitabine)\n(N=xx) p-value\nScreening n NA xx\nMean xx\nSTD xx\nMedian xx\nMinimum xx\nMaximum xx\nBaseline n NA xx\nMean xx\nSTD xx\nMedian xx\nMinimum xx\nMaximum xx\n<Visit> n NA xx\nMean xx\n…\n<Test> x.xxxx\nChange from Baseline to <Visit> n NA xx\nMean xx\n…\n…\nNA = Not applicable.\nSource: Listing 16.2.13\nPath\\Filename\nPage x/y\nProgramming Note: Above layout should be used for parameters only applicable for Arm II. Please indicate test used in the first column as appropriate.\nThese two layouts should be combined in one output, starting each parameter on a new page.\nForm STATt004\nVersion Date: 20 May 2021\nPage 66 of 112",
+      "readable": true
+    }
+  ],
+  "notes": [
+    "Original title retained from first panel; all panel titles are retained in text checkpoints.",
+    "Regions conservatively retain page wrappers; fine-grained exclusion and structural transcription deferred to stage 2."
+  ]
+}

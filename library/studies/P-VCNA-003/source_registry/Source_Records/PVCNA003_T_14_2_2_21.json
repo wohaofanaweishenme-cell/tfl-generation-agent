@@ -1,0 +1,30 @@
+{
+  "schema_version": "2.4",
+  "template_id": "PVCNA003_T_14_2_2_21",
+  "source_regions": [
+    {
+      "document_id": "SAP_001_11",
+      "pdf_page": 19,
+      "bbox": [
+        0,
+        0,
+        841.9200000000001,
+        595.32
+      ],
+      "coordinate_system": "pdf_points_top_left"
+    }
+  ],
+  "source_docx_locations": [],
+  "text_checkpoints": [
+    {
+      "document_id": "SAP_001_11",
+      "location": "PDF physical page 19; owned region in source_regions; printed page 45",
+      "text": "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.2.2.21 Duration of Response - EDC Data (Intent-to-Treat Set)\nParameter\nArm I\n(N=xx)\n(Nab-paclitaxel and gemcitabine)\nArm II\n(N=xx)\n(VCN-01 with Nab-paclitaxel and gemcitabine)\nKaplan-Meier estimate of\nDuration of Response (months)\nMedian xx xx\nLower 95% Confidence Interval xx xx\nUpper 95% Confidence Interval xx xx\nSource: Listing 16.2.6.3\nPath\\Filename\nPage x/y\nProgramming Note: This layout also applies to Table 14.2.2.22 Duration of Response - EDC Data (Full Analysis Set), Table 14.2.2.23 Duration of Response - CIV Data (Intent-to-Treat Set)\nand Table 14.2.2.24 Duration of Response - CIV Data (Full Analysis Set)\nFootnotes to be included:\n- EDC data: Duration of Response was assessed based on EDC (Electronic Data Capture) data.\n- CIV data: Duration of Response was assessed based on CIV (Central Imaging Vendor) data.\nSource listing for CIV data: Listing 16.2.6.4\nForm STATt004\nVersion Date: 20 May 2021\nPage 45 of 112",
+      "readable": true
+    }
+  ],
+  "notes": [
+    "Original title retained from first panel; all panel titles are retained in text checkpoints.",
+    "Regions conservatively retain page wrappers; fine-grained exclusion and structural transcription deferred to stage 2."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "schema_version": "2.4",
+  "template_id": "PVCNA003_L_16_2_9",
+  "source_regions": [
+    {
+      "document_id": "SAP_001_11",
+      "pdf_page": 74,
+      "bbox": [
+        0,
+        0,
+        841.9200000000001,
+        595.32
+      ],
+      "coordinate_system": "pdf_points_top_left"
+    }
+  ],
+  "source_docx_locations": [],
+  "text_checkpoints": [
+    {
+      "document_id": "SAP_001_11",
+      "location": "PDF physical page 74; owned region in source_regions; printed page 100",
+      "text": "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.9 Vital Signs\n<Arm>\nPatient\nnumber\nVisit Date/ Time Body\nTemperature\n(°C)\nWeight\n(kg)\nSystolic BP\n(mmHg)\nDiastolic BP\n(mmHg)\nPulse rate\n(bpm)\nRespirations\n(breaths/min)\nReview Comments\nxxxxxxx xxxxx xxxxxxxxTxx:xx xx xx xx xx xx Normal/\nxxxxxxxxx\nxxxxx xxxxxxxxTxx:xx xx xx xx xx xx Normal/\nxxxxx xxxxxxxxTxx:xx xx xx xx xx xx Normal/\nAbnormal NCS/\nAbnormal CS\nAbnormal NCS/\nAbnormal CS\nAbnormal NCS/\nAbnormal CS\nxxxxxxxxx\nxxxxxxxxx\n…\nCS=Clinically Significant; NCS=Not Clinically Significant\nPath\\Filename\nForm STATt004\nVersion Date: 20 May 2021\nPage 100 of 112",
+      "readable": true
+    }
+  ],
+  "notes": [
+    "Original title retained from first panel; all panel titles are retained in text checkpoints.",
+    "Regions conservatively retain page wrappers; fine-grained exclusion and structural transcription deferred to stage 2."
+  ]
+}

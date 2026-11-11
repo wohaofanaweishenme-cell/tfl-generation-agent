@@ -1,0 +1,30 @@
+{
+  "schema_version": "2.4",
+  "template_id": "PVCNA003_T_14_2_1_1",
+  "source_regions": [
+    {
+      "document_id": "SAP_001_11",
+      "pdf_page": 15,
+      "bbox": [
+        0,
+        0,
+        841.9200000000001,
+        595.32
+      ],
+      "coordinate_system": "pdf_points_top_left"
+    }
+  ],
+  "source_docx_locations": [],
+  "text_checkpoints": [
+    {
+      "document_id": "SAP_001_11",
+      "location": "PDF physical page 15; owned region in source_regions; printed page 41",
+      "text": "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.2.1.1 Overall Survival (Intent-to-Treat Set)\nParameter/ Test\nArm I\n(N=xx)\n(Nab-paclitaxel and gemcitabine)\nArm II\n(VCN-01 with Nab-paclitaxel and\ngemcitabine)\n(N=xx) Hazard Ratio (95% CI) p-value\nKaplan-Meier\nestimate of\nSurvival Time\n(months)\nMedian xx xx\nLower 95% Confidence Interval xx Upper 95% Confidence Interval xx xx\nxx\nCox Proportional-\nHazards Model\nx.x (x.x , x.x) xxxxxx\nxxxxxx\nLog-rank test\nSurvival time is defined as time from randomization until death. Patients who are lost to follow-up are censored at the time of their last visit or contact.\nModel terms include region, ECOG performance status at randomization and treatment.\nSource: Listing 16.2.6.3\nPath\\Filename\nPage x/y\nProgramming Note: This layout also applies to Table 14.2.1.2. Overall Survival (Full Analysis Set), Table 14.2.1.3. Overall Survival (Per-Protocol Set), Table 14.2.1.4 Subgroup Analysis:\nOverall Survival (Intent-to-Treat Set), Table 14.2.1.5 Subgroup Analysis: Overall Survival (Per Protocol Set), Table 14.2.2.1 Progression-free Survival and Time to Progression – EDC Data\n(Intent-to-Treat Set), Table 14.2.2.2 Progression-free Survival and Time to Progression – EDC Data (Full Analysis Set), Table 14.2.2.3 Subgroup Analysis: Progression-free Survival and Time\nto Progression – EDC Data (Intent-to-Treat Set), Table 14.2.2.4 Progression-free Survival and Time to Progression – CIV Data (Intent-to-Treat Set), Table 14.2.2.5 Progression-free Survival\nand Time to Progression – CIV Data (Full Analysis Set) and Table 14.2.2.6 Subgroup Analysis: Progression-free Survival and Time to Progression – CIV Data (Intent-to-Treat\nSet),Table14.2.2.21-24 All Duration of Response tables.\nFootnotes to be included for Table 14.2.2.1 – 14.2.2.24:\n- EDC data: PFS (Progression-free Survival) and TTP (Time to Progression) were assessed based on EDC (Electronic Data Capture) data.\n- CIV data: PFS (Progression-free Survival) and TTP (Time to Progression) were assessed based on CIV (Central Imaging Vendor) data.\nSource listing for CIV data: Listing 16.2.6.4\nForm STATt004\nVersion Date: 20 May 2021\nPage 41 of 112",
+      "readable": true
+    }
+  ],
+  "notes": [
+    "Original title retained from first panel; all panel titles are retained in text checkpoints.",
+    "Regions conservatively retain page wrappers; fine-grained exclusion and structural transcription deferred to stage 2."
+  ]
+}

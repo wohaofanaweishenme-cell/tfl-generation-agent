@@ -1,0 +1,518 @@
+[
+  {
+    "height" : 841.91999999999996,
+    "page" : 1,
+    "text" : "Theriva Biologics, S.L. P-VCNA-003\nStatistical Analysis Plan\nStatistical Analysis Plan\nP-VCNA-003\nA Phase IIb, Open-label, Randomized Study of Nab-Paclitaxel and\nGemcitabine plus\/minus VCN-01 in Patients with Metastatic\nPancreatic Cancer (VIRAGE)\nSimbec-Orion Study ID: 35667\nPrepared for:\nTheriva Biologics, S.L.\nPrepared by:\nSimbec-Orion Group Ltd\nMerthyr Tydfil Industrial Park\nCardiff Road\nMerthyr Tydfil\nCF48 4DR\nUnited Kingdom\nCONFIDENTIAL\nVersion Author\nFinal 3.0 16ARR2025 Wouter Wijker\nForm STATt004\nVersion Date: 20 May 2021\nPage 1 of 112",
+    "width" : 595.32000000000005
+  },
+  {
+    "height" : 841.91999999999996,
+    "page" : 2,
+    "text" : "Theriva Biologics, S.L. P-VCNA-003\nStatistical Analysis Plan\nStatistical Analysis Plan\nP-VCNA-003\nA Phase IIb, Open-label, Randomized Study of Nab-Paclitaxel and\nGemcitabine plus\/minus VCN-01 in Patients with Metastatic\nPancreatic Cancer (VIRAGE)\nSimbec-Orion Study ID: 35667\nAuthor: Wouter Wijker\nVersion: Final 3.0\nThe undersigned have reviewed and revised this SAP and find it to be consistent with the study\nrequirements:\nWouter Wijker, Head of Statistics, Simbec-Orion Group Ltd. Date\nJody Whitehead, Project Director, Simbec-Orion Group Ltd. Date\nMariette Hodgson, Director of Technical Writing, Simbec-Orion\nGroup Ltd.\nDate\nForm STATt004\nVersion Date: 20 May 2021\nPage 2 of 112",
+    "width" : 595.32000000000005
+  },
+  {
+    "height" : 841.91999999999996,
+    "page" : 3,
+    "text" : "Theriva Biologics, S.L. P-VCNA-003\nStatistical Analysis Plan\nCarmen Blasco, Vice President, Clinical Research, Theriva Biologics,\nDate\nS.L.\nCharles Le, Vice President, Statistics and Analytics, Theriva Biologics,\nDate\nS.L.\nForm STATt004\nVersion Date: 20 May 2021\nPage 3 of 112",
+    "width" : 595.32000000000005
+  },
+  {
+    "height" : 841.91999999999996,
+    "page" : 4,
+    "text" : "Theriva Biologics, S.L. P-VCNA-003\nStatistical Analysis Plan\n13 LITERATURE CITATIONS\/REFERENCES\nNot applicable.\n14 LIST OF TABLES, FIGURES AND LISTINGS\n14.1 LIST OF TABLES\n* Top Line TFLs\nDemographic Data\n*Table 14.1.1 Patient Disposition All Randomized Set\n*Table 14.1.2.1 Demographics and Baseline Characteristics Intent-to-Treat Set\n*Table 14.1.2.2 Demographics and Baseline Characteristics Full Analysis Set\n*Table 14.1.2.3 Demographics and Baseline Characteristics Safety Analysis Set\nTable 14.1.3 Medical History Full Analysis Set\nEfficacy Data\n*Table 14.2.1.1 Overall Survival Intent-to-Treat Set\n*Table 14.2.1.2 Overall Survival Full Analysis Set\nTable 14.2.1.3 Overall Survival Per Protocol Set\n*Table 14.2.1.4 Subgroup Analysis: Overall Survival Intent-to-Treat Set\nTable 14.2.1.5 Subgroup Analysis: Overall Survival Per Protocol Set\n*Table 14.2.2.1 Progression-free Survival and Time to Progression - EDC\nData\nIntent-to-Treat Set\n*Table 14.2.2.2 Progression-free Survival and Time to Progression - EDC\nFull Analysis Set\nData\n*Table 14.2.2.3 Subgroup Analysis: Progression-free Survival and Time to\nProgression - EDC Data\nIntent-to-Treat Set\nTable 14.2.2.4 Progression-free Survival and Time to Progression - CIV\nIntent-to-Treat Set\nData\nTable 14.2.2.5 Progression-free Survival and Time to Progression - CIV\nFull Analysis Set\nData\nTable 14.2.2.6 Subgroup Analysis: Progression-free Survival and Time to\nProgression - CIV Data\nIntent-to-Treat Set\n*Table 14.2.2.7 Objective Response Rate - EDC Data Intent-to-Treat Set\n*Table 14.2.2.8 Objective Response Rate - EDC Data Full Analysis Set\nForm STATt004\nVersion Date: 20 May 2021\nPage 30 of 112",
+    "width" : 595.32000000000005
+  },
+  {
+    "height" : 841.91999999999996,
+    "page" : 5,
+    "text" : "Theriva Biologics, S.L. P-VCNA-003\nStatistical Analysis Plan\nTable 14.2.2.9 Subgroup Analysis: Objective Response Rate - EDC Data Intent-to-Treat Set\nTable 14.2.2.10 Objective Response Rate - CIV Data Intent-to-Treat Set\nTable 14.2.2.11 Objective Response Rate - CIV Data Full Analysis Set\nTable 14.2.2.12 Subgroup Analysis: Objective Response Rate - CIV Data Intent-to-Treat Set\nTable 14.2.2.13 Disease Control Rate - EDC Data Intent-to-Treat Set\nTable 14.2.2.14 Disease Control Rate - EDC Data Full Analysis Set\nTable 14.2.2.15 Disease Control Rate - CIV Data Intent-to-Treat Set\nTable 14.2.2.16 Disease Control Rate - CIV Data Full Analysis Set\nTable 14.2.2.17 Landmark 1-year Survival and PFS at the 1-year Landmark\n- EDC Data\nIntent-to-Treat Set\nTable 14.2.2.18 Landmark 1-year Survival and PFS at the 1-year Landmark\n- EDC Data\nFull Analysis Set\nTable 14.2.2.19 Landmark 1-year Survival and PFS at the 1-year Landmark\n- CIV Data\nIntent-to-Treat Set\nTable 14.2.2.20 Landmark 1-year Survival and PFS at the 1-year Landmark\nFull Analysis Set\n- CIV Data\n*Table 14.2.2.21 Duration of Response - EDC Data Intent-to-Treat Set\n*Table 14.2.2.22 Duration of Response - EDC Data Full Analysis Set\nTable 14.2.2.23 Duration of Response - CIV Data Intent-to-Treat Set\nTable 14.2.2.24 Duration of Response - CIV Data Full Analysis Set\nTable 14.2.2.25 Tumor Marker Ca 19.9 Intent-to-Treat Set\nTable 14.2.2.26 Tumor Marker Ca 19.9 Full Analysis Set\n*Table 14.2.3.1 QLQ-C30 Questionnaire Full Analysis Set\nTable 14.2.3.2 Disease Control Rate for Patients with Subsequent Anti-\nCancer Therapies - EDC Data\nFull Analysis Set\nTable 14.2.3.3 Disease Control Rate for Patients with Subsequent Anti-\nCancer Therapies - CIV Data\nFull Analysis Set\nSafety Data\n*Table 14.3.1.1 Summary of Adverse Events Safety Analysis Set\n*Table 14.3.1.2 Treatment-Emergent Adverse Events, by System Organ\nClass and Preferred Term\nSafety Analysis Set\nTable 14.3.1.3 Treatment-Emergent Adverse Events, by System Organ\nClass, Preferred Term and Severity\nSafety Analysis Set\nTable 14.3.1.4 Treatment-Emergent Adverse Events, by System Organ\nClass, Preferred Term and Relationship to VCN-01\nSafety Analysis Set\nTable 14.3.1.5 Treatment-Emergent Adverse Events, by System Organ\nClass, Preferred Term and Relationship to Gemcitabine\nSafety Analysis Set\nForm STATt004\nVersion Date: 20 May 2021\nPage 31 of 112",
+    "width" : 595.32000000000005
+  },
+  {
+    "height" : 841.91999999999996,
+    "page" : 6,
+    "text" : "Theriva Biologics, S.L. P-VCNA-003\nStatistical Analysis Plan\nTable 14.3.1.6 Treatment-Emergent Adverse Events, by System Organ\nClass, Preferred Term and Relationship to Nab-paclitaxel\nSafety Analysis Set\n*Table 14.3.1.7 Serious Treatment-Emergent Adverse Events, by System\nOrgan Class and Preferred Term\nSafety Analysis Set\n*Table 14.3.1.8 Drug-related Treatment-Emergent Adverse Events, by\nSystem Organ Class and Preferred Term\nSafety Analysis Set\nTable 14.3.1.9 Treatment-Emergent Adverse Events Leading to\nPermanent Discontinuation of Study Drug, by System\nSafety Analysis Set\nOrgan Class and Preferred Term\n*Table 14.3.1.10 Serious Treatment-Emergent Adverse Events, by System\nOrgan Class, Preferred Term and Relationship to VCN-\n01\nSafety Analysis Set\n*Table 14.3.1.11 Serious Treatment-Emergent Adverse Events, by System\nOrgan Class, Preferred Term and Relationship to\nGemcitabine\nSafety Analysis Set\n*Table 14.3.1.12 Serious Treatment-Emergent Adverse Events, by System\nOrgan Class, Preferred Term and Relationship to Nab-\npaclitaxel\nSafety Analysis Set\nTable 14.3.2.1 Listing of Deaths due to Adverse Events\nTable 14.3.2.2 Listing of Serious Adverse Events\nTable 14.3.2.3 Listing of Withdrawals Due to Adverse Events\nTable 14.3.2.4 Listing of Serious Adverse Reactions\nTable 14.3.3 Listing of Abnormal Laboratory Values\nTable 14.3.4.1 Summary of Biochemistry Parameters Safety Analysis Set\nTable 14.3.4.2 Summary of Hematology Parameters Safety Analysis Set\nTable 14.3.4.3 Summary of Coagulation Parameters Safety Analysis Set\nTable 14.3.4.4 Summary of TSH Safety Analysis Set\nTable 14.3.4.5 Summary of Urinalysis Parameters Safety Analysis Set\nTable 14.3.4.6 Shift Table of Biochemistry Parameters Safety Analysis Set\nTable 14.3.4.7 Shift Table of Hematology Parameters Safety Analysis Set\nTable 14.3.4.8 Shift Table of Coagulation Parameters Safety Analysis Set\nTable 14.3.4.9 Shift Table of TSH Safety Analysis Set\nTable 14.3.4.10 Shift Table of Urinalysis Parameters Safety Analysis Set\nTable 14.3.5.1 Summary of Vital Signs Safety Analysis Set\nTable 14.3.5.2 Shift Table of Vital Signs Safety Analysis Set\nTable 14.3.6 Physical Examination Safety Analysis Set\nTable 14.3.7.1 Summary of 12-lead Electrocardiogram Safety Analysis Set\nTable 14.3.7.2 Shift Table of 12-lead Electrocardiogram Safety Analysis Set\nTable 14.3.8 ECOG Score Safety Analysis Set\nForm STATt004\nVersion Date: 20 May 2021\nPage 32 of 112",
+    "width" : 595.32000000000005
+  },
+  {
+    "height" : 841.91999999999996,
+    "page" : 7,
+    "text" : "Theriva Biologics, S.L. P-VCNA-003\nStatistical Analysis Plan\nTable 14.3.9 Subsequent Anticancer Treatment Safety Analysis Set\nTable 14.3.10 Study Drug Exposure and Compliance Safety Analysis Set\nTable 14.3.11.1 Prior Medications Safety Analysis Set\nTable 14.3.11.2 Concomitant Medications Safety Analysis Set\nPK\/PD Data\nTable 14.5.1 Pharmacodynamic Parameters Pharmacodynamic\nSet\nForm STATt004\nVersion Date: 20 May 2021\nPage 33 of 112",
+    "width" : 595.32000000000005
+  },
+  {
+    "height" : 841.91999999999996,
+    "page" : 8,
+    "text" : "Theriva Biologics, S.L. P-VCNA-003\nStatistical Analysis Plan\n14.2 LIST OF FIGURES\n*Figure 14.2.1 Kaplan-Meier Plot of Overall Survival Intent-to-Treat Set\n*Figure 14.2.2 Kaplan-Meier Plot of Overall Survival Full Analysis Set\nFigure 14.2.3 Kaplan-Meier Plot of Overall Survival Per Protocol Set\n*Figure 14.2.4 Subgroup Analysis: Kaplan-Meier Plot of Overall Survival Intent-to-Treat Set\n*Figure 14.2.5 Kaplan-Meier Plot of Progression Free Survival Intent-to-Treat Set\n*Figure 14.2.6 Kaplan-Meier Plot of Progression Free Survival Full Analysis Set\n*Figure 14.2.7 Subgroup Analysis: Kaplan-Meier Plot of Progression Free\nSurvival Intent-to-Treat Set\nFigure 14.2.8 Kaplan-Meier Plot of Time to Progression Intent-to-Treat Set\n*Figure 14.2.9 Kaplan-Meier Plot of Duration of Response Intent-to-Treat Set\n*Figure 14.2.10 Kaplan-Meier Plot of Duration of Response Full Analysis Set\nFigure 14.3.1 ECOG Score Safety Analysis Set\n14.3 LIST OF LISTINGS\nListing 16.2.1.1 Visit Dates\nListing 16.2.1.2 Patient Disposition\nListing 16.2.1.3 SoC Administration - Nab-Paclitaxel\nListing 16.2.1.4 SoC Administration - Gemcitabine\nListing 16.2.1.5 SoC Dose Adjustments\nListing 16.2.1.6 VCN-01 Administration\nListing 16.2.1.7 VCN-01 Dose Interruptions\nListing 16.2.2.1 Protocol Deviations\nListing 16.2.4.1 Demographic and Baseline Characteristics\nListing 16.2.4.2 Medical History\nListing 16.2.4.3 Substance Use History\nListing 16.2.4.4 Obstetric History\nListing 16.2.4.5 Menopausal Status\nListing 16.2.4.6 Inclusion\/ Exclusion Criteria Failures\nListing 16.2.6.1 Tumor Response Evaluation - EDC Data\nListing 16.2.6.2 Tumor Response Evaluation - CIV Data\nListing 16.2.6.3 Derived Efficacy Variables - EDC Data\nListing 16.2.6.4 Derived Efficacy Variables - CIV Data\nListing 16.2.6.5 Tumor Marker Ca 19.9\nListing 16.2.6.6 QLQ-C30 Questionnaire\nForm STATt004\nVersion Date: 20 May 2021\nPage 34 of 112",
+    "width" : 595.32000000000005
+  },
+  {
+    "height" : 841.91999999999996,
+    "page" : 9,
+    "text" : "Theriva Biologics, S.L. P-VCNA-003\nStatistical Analysis Plan\nListing 16.2.6.7 Target Lesions\nListing 16.2.6.8 Non-Target Lesions\n*Listing 16.2.6.9 Deaths\nListing 16.2.7.1 Adverse Events\nListing 16.2.7.2 Adverse Events Due to Progressive Disease\nListing 16.2.7.3 TEAE with Grade 4 or 5\nListing 16.2.8.1 Biochemistry Parameters\nListing 16.2.8.2 Hematology Parameters\nListing 16.2.8.3 Coagulation Parameters\nListing 16.2.8.4 TSH\nListing 16.2.8.5 Urinalysis Parameters\nListing 16.2.8.6 Serology Results\nListing 16.2.8.7 Pregnancy Results\nListing 16.2.9 Vital Signs\nListing 16.2.10 Physical Examination\nListing 16.2.11 12-Lead ECG\nListing 16.2.12 Prior and Concomitant Medications\nListing 16.2.13 Pharmacodynamic Parameters\nListing 16.2.14 COVID-19 Results\nListing 16.2.15 Left Ventricular Ejection Fraction Results\nListing 16.2.16 ECOG Score\nListing 16.2.17 Fibroscan Results\nListing 16.2.18 Subsequent Anticancer Treatment\nListing 16.2.19 Study Disease Diagnosis\nForm STATt004\nVersion Date: 20 May 2021\nPage 35 of 112",
+    "width" : 595.32000000000005
+  },
+  {
+    "height" : 841.91999999999996,
+    "page" : 10,
+    "text" : "Theriva Biologics, S.L. P-VCNA-003\nStatistical Analysis Plan\n15 SHELLS FOR TABLES, FIGURES AND LISTINGS\nThe intended layouts for tables, figures and listings are presented. However, it may be appropriate for\nthe Simbec-Orion programmer to change the layouts, upon review of the data available, for\ncompleteness and clarity.\nQCd output will be produced as Rich Text Format (.rtf) or MS Word (.docx) files for convenient\ninclusion in the CSR. All attempts will be made to combine outputs into 3 pdf format files corresponding\nto tables, listings and figures. Should this not be possible results will be provided in RTF of word\ndocument format only.\nSubject to this, the following will apply:\n• Layout will be landscape, fixed width, font size 9, with margin size 2.54 cm for all sides.\n• Each output will have the heading:\nP-VCNA-003 (left); date and time ddMMMyyyy HH:MM(right)\n• Table headings will define the analysis set used for the summary\/analysis.\n• All outputs will have a footer specifying the SAS program path and filename (left); page x\/y (right)\n• Tables will have a footer specifying the source listing\n• Figures will have a footer specifying the source table or listing\n• Additional footnotes will be included where appropriate for clarification.\n• Treatment arm and patient number and will be included in all listings.\nForm STATt004\nVersion Date: 20 May 2021\nPage 36 of 112",
+    "width" : 595.32000000000005
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 11,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.1.1 Patient Disposition (All Randomized Set)\nNumber of patients (%)\nRandomised xx\nCompleted study xx (xx.x%)\nEarly withdrawal xx (xx.x%)\nReason for early withdrawal:\nScreening Failure xx (xx.x%)\nLost to Follow-up xx (xx.x%)\nWithdrawal by Subject xx (xx.x%)\n…\nAnalysis Sets:\nSafety Analysis Set (SAF) xx (xx.x%)\nIntent-to-Treat Set (ITT) xx (xx.x%)\nFull Analysis Set (FAS) xx (xx.x%)\nPer-Protocol Set (PPS) xx (xx.x%)\nPharmacodynamics Set (PDS) xx (xx.x%)\nSubgroup analysis inclusion xx (xx.x%)\nPercentage is the number of patients in the category (n) divided by the number of patients within the column (N).\nSource: Listing 16.2.1.2\nPath\\Filename Page x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 37 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 12,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.1.2.1 Demographic and Baseline Characteristics (Intent-to-Treat Set)\nArm I\n(N=xx)\n(Nab-paclitaxel and gemcitabine)\nArm II\n(VCN-01 with Nab-paclitaxel and\ngemcitabine)\n(N=xx)\nAge (years) n xx xx\nMean xx xx\nSTD xx xx\nMedian xx xx\nMinimum xx xx\nMaximum xx xx\nGender Male n (%) xx (xx.x%) xx (xx.x%)\nFemale n (%) xx (xx.x%) xx (xx.x%)\nRace Black or African American n (%) xx (xx.x%) xx (xx.x%)\nAmerican Indian or Alaska Native n (%) xx (xx.x%) xx (xx.x%)\nAsian n (%) xx (xx.x%) xx (xx.x%)\nNative Hawaiian or Other Pacific Islander n (%) xx (xx.x%) xx (xx.x%)\nWhite n (%) xx (xx.x%) xx (xx.x%)\nOther n (%) xx (xx.x%) xx (xx.x%)\nEthnicity Not Hispanic or Latino n (%) xx (xx.x%) xx (xx.x%)\nHispanic or Latino n (%) xx (xx.x%) xx (xx.x%)\nNot Reported n (%) xx (xx.x%) xx (xx.x%)\nUnknown n (%) xx (xx.x%) xx (xx.x%)\nRegion of study site North America n (%) xx (xx.x%) xx (xx.x%)\nEuropean Union n (%) xx (xx.x%) xx (xx.x%)\nECOG status at\nrandomization\n0 n (%) xx (xx.x%) xx (xx.x%)\n1 n (%) xx (xx.x%) xx (xx.x%)\n[Continued overleaf…]\nForm STATt004\nVersion Date: 20 May 2021\nPage 38 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 13,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nHeight (cm) n xx xx\nMean xx xx\nSTD xx xx\nMedian xx xx\nMinimum xx xx\nMaximum xx xx\nWeight (kg) n xx xx\nMean xx xx\nSTD xx xx\nMedian xx xx\nMinimum xx xx\nMaximum xx xx\nBMI (kg\/m2) n xx xx\nMean xx xx\nSTD xx xx\nMedian xx xx\nMinimum xx xx\nMaximum xx xx\nPercentage is the number of patients in the category (n) divided by the number of patients within the column (N).\nAge was calculated using Year of Birth and date of first treatment and presented as age at last birthday.\nBMI is the patient’s body weight in kilograms divided by the square of the patient’s height in meters.\nSource: Listing 16.2.4.1\nPath\\Filename\nPage x\/y\nProgramming Note: This layout also applies to Table 14.1.2.2. (Full Analysis Set) and Table 14.1.2.3 (Safety Analysis Set)\nForm STATt004\nVersion Date: 20 May 2021\nPage 39 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 14,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.1.3 Medical History (Full Analysis Set)\nArm I\n(N=xx)\n(Nab-paclitaxel and gemcitabine)\nArm II\n(N=xx)\n(VCN-01 with Nab-paclitaxel and gemcitabine)\nAny medical history xx (xx.x%) xx (xx.x%)\nSOC xx (xx.x%) xx (xx.x%)\nPT xx (xx.x%) xx (xx.x%)\n…\nSOC xx (xx.x%) xx (xx.x%)\nPT xx (xx.x%) xx (xx.x%)\n…\n…\nPercentage is the number of patients in the category (n) divided by the number of patients within the column (N).\nMedDRA version <XX.X>.\nSource: Listing 16.2.4.2\nPath\\Filename\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 40 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 15,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.2.1.1 Overall Survival (Intent-to-Treat Set)\nParameter\/ Test\nArm I\n(N=xx)\n(Nab-paclitaxel and gemcitabine)\nArm II\n(VCN-01 with Nab-paclitaxel and\ngemcitabine)\n(N=xx) Hazard Ratio (95% CI) p-value\nKaplan-Meier\nestimate of\nSurvival Time\n(months)\nMedian xx xx\nLower 95% Confidence Interval xx Upper 95% Confidence Interval xx xx\nxx\nCox Proportional-\nHazards Model\nx.x (x.x , x.x) xxxxxx\nxxxxxx\nLog-rank test\nSurvival time is defined as time from randomization until death. Patients who are lost to follow-up are censored at the time of their last visit or contact.\nModel terms include region, ECOG performance status at randomization and treatment.\nSource: Listing 16.2.6.3\nPath\\Filename\nPage x\/y\nProgramming Note: This layout also applies to Table 14.2.1.2. Overall Survival (Full Analysis Set), Table 14.2.1.3. Overall Survival (Per-Protocol Set), Table 14.2.1.4 Subgroup Analysis:\nOverall Survival (Intent-to-Treat Set), Table 14.2.1.5 Subgroup Analysis: Overall Survival (Per Protocol Set), Table 14.2.2.1 Progression-free Survival and Time to Progression – EDC Data\n(Intent-to-Treat Set), Table 14.2.2.2 Progression-free Survival and Time to Progression – EDC Data (Full Analysis Set), Table 14.2.2.3 Subgroup Analysis: Progression-free Survival and Time\nto Progression – EDC Data (Intent-to-Treat Set), Table 14.2.2.4 Progression-free Survival and Time to Progression – CIV Data (Intent-to-Treat Set), Table 14.2.2.5 Progression-free Survival\nand Time to Progression – CIV Data (Full Analysis Set) and Table 14.2.2.6 Subgroup Analysis: Progression-free Survival and Time to Progression – CIV Data (Intent-to-Treat\nSet),Table14.2.2.21-24 All Duration of Response tables.\nFootnotes to be included for Table 14.2.2.1 – 14.2.2.24:\n- EDC data: PFS (Progression-free Survival) and TTP (Time to Progression) were assessed based on EDC (Electronic Data Capture) data.\n- CIV data: PFS (Progression-free Survival) and TTP (Time to Progression) were assessed based on CIV (Central Imaging Vendor) data.\nSource listing for CIV data: Listing 16.2.6.4\nForm STATt004\nVersion Date: 20 May 2021\nPage 41 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 16,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.2.2.7 Objective Response Rate – EDC Data (Intent-to-Treat Set)\nParameter\/ Test Component\nArm I\n(Nab-paclitaxel and\ngemcitabine)\n(N=xx)\nArm II\n(VCN-01 with Nab-\npaclitaxel and gemcitabine)\n(N=xx) Odds Ratio (95% CI) p-value\nObjective Response Rate (ORR) n (%) xx (xx.x %) xx (xx.x %)\nCR n xx xx\nPR n xx xx\nCochran-Mantel-Haenszel (CMH) test* Sensitivity analysis** x.x (x.x , x.x) xxxxxx\nx.x (x.x , x.x) xxxxxx\nPercentage is the number of patients in the category (n) divided by the number of patients within the column (N).\n* CMH test was stratified by region and ECOG performance status at randomization.\n** CMH test was stratified by age group (<65 years and >=65 years), region and ECOG performance status at randomization.\nCR = Complete Response, PR = Partial Response.\nSource: Listing 16.2.6.3\nPath\\Filename\nPage x\/y\nProgramming Note: This layout also applies to Table 14.2.2.8 Objective Response Rate - EDC Data (Full Analysis Set), Table 14.2.2.9 Subgroup Analysis: Objective Response Rate - EDC Data\n(Intent-to-Treat Set), Table 14.2.2.10 Objective Response Rate - CIV Data (Intent-to-Treat Set), Table 14.2.2.11 Objective Response Rate - CIV Data (Full Analysis Set) and Table 14.2.2.12\nSubgroup Analysis: Objective Response Rate - CIV Data (Intent-to-Treat Set)\nFootnotes to be included:\n- EDC data: ORR (Objective Response Rate) was assessed based on EDC (Electronic Data Capture) data.\n- CIV data: ORR (Objective Response Rate) was assessed based on CIV (Central Imaging Vendor) data.\nSource listing for CIV data: Listing 16.2.6.4\nForm STATt004\nVersion Date: 20 May 2021\nPage 42 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 17,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.2.2.13 Disease Control Rate - EDC Data (Intent-to-Treat Set)\nParameter\/ Test Component\nArm I\n(N=xx)\n(Nab-paclitaxel and gemcitabine)\nArm II\n(VCN-01 with Nab-paclitaxel and\ngemcitabine)\n(N=xx) Odds Ratio (95% CI) p-value\nDisease Control Rate (DCR) n (%) xx (xx.x %) xx (xx.x %)\nCR n xx xx\nPR n xx xx\nSD n xx xx\nCochran-Mantel-Haenszel (CMH) test* Sensitivity analysis** x.x (x.x , x.x) xxxxxx\nx.x (x.x , x.x) xxxxxx\nPercentage is the number of patients in the category (n) divided by the number of patients within the column (N).\n* CMH test was stratified by region and ECOG performance status at randomization.\n** CMH test was stratified by age group (<65 years and >=65 years), region and ECOG performance status at randomization.\nCR = Complete Response, PR = Partial Response, SD = Stable Disease.\nSource: Listing 16.2.6.3\nPath\\Filename\nPage x\/y\nProgramming Note: This layout also applies to Table 14.2.2.14 Disease Control Rate - EDC Data (Full Analysis Set), Table 14.2.2.15 Disease Control Rate - CIV Data (Intent-to-Treat Set),\nTable 14.2.2.16 Disease Control Rate - CIV Data (Full Analysis Set), Table 14.2.3.2 Disease Control Rate for Patients with Subsequent Anti-Cancer Therapies - EDC Data (Full Analysis Set)\nand Table 14.2.3.3 Disease Control Rate for Patients with Subsequent Anti-Cancer Therapies - CIV Data (Full Analysis Set)\nFootnotes to be included:\n- EDC data: DCR (Disease Control Rate) was assessed based on EDC (Electronic Data Capture) data.\n- CIV data: DCR (Disease Control Rate) was assessed based on CIV (Central Imaging Vendor) data.\nSource listing for CIV data: Listing 16.2.6.4\nForm STATt004\nVersion Date: 20 May 2021\nPage 43 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 18,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.2.2.17 Landmark 1-year Survival and PFS at the 1-year Landmark - EDC Data (Intent-to-Treat Set)\nParameter\/ Test\nArm I\n(N=xx)\n(Nab-paclitaxel and gemcitabine)\nArm II\n(VCN-01 with Nab-paclitaxel and\ngemcitabine)\n(N=xx) Odds Ratio (95% CI) p-value\nLandmark 1-year survival n (%) xx (xx.x %) xx (xx.x %)\nCochran-Mantel-Haenszel (CMH) test* Sensitivity analysis** PFS at the 1-year Landmark n (%) xx (xx.x %) xx (xx.x %)\nCochran-Mantel-Haenszel (CMH) test* Sensitivity analysis** x.x (x.x , x.x) xxxxxx\nx.x (x.x , x.x) xxxxxx\nx.x (x.x , x.x) xxxxxx\nx.x (x.x , x.x) xxxxxx\nPercentage is the number of patients in the category (n) divided by the number of patients within the column (N).\n* CMH test was stratified by region and ECOG performance status at randomization.\n** CMH test was stratified by age group (<65 years and >=65 years), region and ECOG performance status at randomization.\nSource: Listing 16.2.6.3\nPath\\Filename\nPage x\/y\nProgramming Note: This layout also applies to Table 14.2.2.18 Landmark 1-year Survival and PFS at the 1-year Landmark - EDC Data (Full Analysis Set), Table 14.2.2.19 Landmark 1-year\nSurvival and PFS at the 1-year Landmark - CIV Data (Intent-to-Treat Set) and Table 14.2.2.20 Landmark 1-year Survival and PFS at the 1-year Landmark - CIV Data (Full Analysis Set)\nFootnotes to be included:\n- EDC data: Landmark 1-year Survival and PFS (Progression-free Survival) at the 1-year Landmark were assessed based on EDC (Electronic Data Capture) data.\n- CIV data: Landmark 1-year Survival and PFS (Progression-free Survival) at the 1-year Landmark were assessed based on CIV (Central Imaging Vendor) data.\nSource listing for CIV data: Listing 16.2.6.4\nForm STATt004\nVersion Date: 20 May 2021\nPage 44 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 19,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.2.2.21 Duration of Response - EDC Data (Intent-to-Treat Set)\nParameter\nArm I\n(N=xx)\n(Nab-paclitaxel and gemcitabine)\nArm II\n(N=xx)\n(VCN-01 with Nab-paclitaxel and gemcitabine)\nKaplan-Meier estimate of\nDuration of Response (months)\nMedian xx xx\nLower 95% Confidence Interval xx xx\nUpper 95% Confidence Interval xx xx\nSource: Listing 16.2.6.3\nPath\\Filename\nPage x\/y\nProgramming Note: This layout also applies to Table 14.2.2.22 Duration of Response - EDC Data (Full Analysis Set), Table 14.2.2.23 Duration of Response - CIV Data (Intent-to-Treat Set)\nand Table 14.2.2.24 Duration of Response - CIV Data (Full Analysis Set)\nFootnotes to be included:\n- EDC data: Duration of Response was assessed based on EDC (Electronic Data Capture) data.\n- CIV data: Duration of Response was assessed based on CIV (Central Imaging Vendor) data.\nSource listing for CIV data: Listing 16.2.6.4\nForm STATt004\nVersion Date: 20 May 2021\nPage 45 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 20,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.2.2.25 Tumor Marker Ca 19.9 (Intent-to-Treat Set)\nCa 19.9 (<unit>)\nVisit\nArm I\n(N=xx)\n(Nab-paclitaxel and gemcitabine)\nArm II\n(N=xx)\n(VCN-01 with Nab-paclitaxel and gemcitabine)\nScreening n xx xx\nMean xx xx\nSTD xx xx\nMedian xx xx\nMinimum xx xx\nMaximum xx xx\nBaseline n xx xx\nMean xx xx\nSTD xx xx\nMedian xx xx\nMinimum xx xx\nMaximum xx xx\n<Visit> n xx xx\nMean xx xx\n…\nChange from Baseline to <Visit> n xx xx\nMean xx xx\n…\n…\nSource: Listing 16.2.6.5\nPath\\Filename\nPage x\/y\nProgramming Note: This layout also applies to Table 14.2.2.26 Tumor Marker Ca 19.9 (Full Analysis Set)\nPlease start a new page when unit of Ca 19.9 is different (U\/mL or KU\/L).\nForm STATt004\nVersion Date: 20 May 2021\nPage 46 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 21,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.2.3.1 QLQ-C30 Questionnaire (Full Analysis Set)\n<Scale>\nVisit\nArm I\n(N=xx)\n(Nab-paclitaxel and gemcitabine)\nArm II\n(N=xx)\n(VCN-01 with Nab-paclitaxel and gemcitabine)\nScreening n xx xx\nMean xx xx\nSTD xx xx\nMedian xx xx\nMinimum xx xx\nMaximum xx xx\nBaseline n xx xx\nMean xx xx\nSTD xx xx\nMedian xx xx\nMinimum xx xx\nMaximum xx xx\n<Visit> n xx xx\nMean xx xx\n…\nChange from Baseline to <Visit> n xx xx\nMean xx xx\n…\n…\nSource: Listing 16.2.6.6\nPath\\Filename\nPage x\/y\nProgramming Note: Please summarize values by each scale described in section 11.3.3.1.\nForm STATt004\nVersion Date: 20 May 2021\nPage 47 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 22,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.3.1.1 Summary of Adverse Events (Safety Analysis Set)\nArm I\n(N=xx)\n(Nab-paclitaxel and gemcitabine)\nArm II\n(VCN-01 with Nab-\npaclitaxel and\ngemcitabine)\n(N=xx)\nn(%) n(%)\nAny Treatment-Emergent Adverse Event\nxx (xx.x%) Xx (xx.x%)\n(TEAE)\nAny Serious TEAE xx (xx.x%) xx (xx.x%)\nAny Adverse Reaction xx (xx.x%) xx (xx.x%)\nAny Serious Adverse Reaction xx (xx.x%) xx (xx.x%)\nxx (xx.x%) xx (xx.x%)\nTEAEs by Severity Grade 1 xx (xx.x%) xx (xx.x%)\nGrade 2 xx (xx.x%) xx (xx.x%)\nGrade 3 xx (xx.x%) xx (xx.x%)\nGrade 4 xx (xx.x%) xx (xx.x%)\nGrade 5 xx (xx.x%) xx (xx.x%)\nxx (xx.x%) xx (xx.x%)\nTEAEs by Relationship to VCN-01 Definitely Related xx (xx.x%) xx (xx.x%)\nProbably Related xx (xx.x%) xx (xx.x%)\nPossibly Related xx (xx.x%) xx (xx.x%)\nUnlikely Related xx (xx.x%) xx (xx.x%)\nNot Related xx (xx.x%) xx (xx.x%)\nxx (xx.x%) xx (xx.x%)\nTEAEs by Relationship to Gemcitabine Definitely Related xx (xx.x%) xx (xx.x%)\nProbably Related xx (xx.x%) xx (xx.x%)\n…\nTEAEs by Relationship to Nab-paclitaxel Definitely Related xx (xx.x%) xx (xx.x%)\nProbably Related xx (xx.x%) xx (xx.x%)\n…\nA patient with multiple occurrences of any AE is counted only once at the maximum level of severity or the strongest relationship to study treatment.\nPercentage is the number of patients in the category (n) divided by the number of patients within the column (N).\nMedDRA version <XX.X>.\nForm STATt004\nVersion Date: 20 May 2021\nPage 48 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 23,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nSource: Listing 16.2.7.1\nPath\\Filename\nPage x\/y\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.3.1.2 Treatment-Emergent Adverse Events, by System Organ Class and Preferred Term (Safety Analysis Set)\nArm I\n(N=xx)\n(Nab-paclitaxel and gemcitabine)\nArm II\n(VCN-01 with Nab-paclitaxel and\ngemcitabine)\n(N=xx)\nn (%) n (%)\nAny Treatment-Emergent Adverse Event xx (xx.x%) xx (xx.x%)\nSOC xx (xx.x%) xx (xx.x%)\nPT xx (xx.x%) xx (xx.x%)\nPT xx (xx.x%) xx (xx.x%)\nxx (xx.x%) xx (xx.x%)\nSOC\n…\n…\nThe table presents number of patients (n) who have at least one occurrence of the event, and percentage of patients (n %).\nPercentage is the number of patients in the category (n) divided by the number of patients within the column (N).\nMedDRA version <XX.X>.\nSource: Listing 16.2.7.1\nPath\\Filename\nPage x\/y\nProgramming Note: This layout also applies to Table 14.3.1.7 Serious Treatment-Emergent Adverse Events, by System Organ Class and Preferred Term (Safety Analysis Set), Table 14.3.1.8\nDrug-related Treatment-Emergent Adverse Events, by System Organ Class and Preferred Term (Safety Analysis Set) and Table 14.3.1.9 Treatment-Emergent Adverse Events Leading to\nPermanent Discontinuation of Study Drug, by System Organ Class and Preferred Term (Safety Analysis Set)\nForm STATt004\nVersion Date: 20 May 2021\nPage 49 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 24,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.3.1.3 Treatment-Emergent Adverse Events, by System Organ Class, Preferred Term and Severity (Safety Analysis Set)\nArm I\n(N=xx)\n(Nab-paclitaxel and gemcitabine)\nArm II\n(VCN-01 with Nab-paclitaxel and\ngemcitabine)\n(N=xx)\nSeverity n (%) n (%)\nAny Treatment-Emergent Adverse Event <Grade X> xx (xx.x%) xx (xx.x%)\n<Grade X> xx (xx.x%) xx (xx.x%)\n<Grade X> xx (xx.x%) xx (xx.x%)\n<Grade X> xx (xx.x%) xx (xx.x%)\n<Grade X> xx (xx.x%) xx (xx.x%)\nSOC <Grade X> xx (xx.x%) xx (xx.x%)\n<Grade X> xx (xx.x%) xx (xx.x%)\n<Grade X> xx (xx.x%) xx (xx.x%)\nPT <Grade X> xx (xx.x%) xx (xx.x%)\nPT <Grade X> xx (xx.x%) xx (xx.x%)\n<Grade X> xx (xx.x%) xx (xx.x%)\n<Grade X> xx (xx.x%) xx (xx.x%)\nSOC\n…\n…\nThe table presents number of patients (n) who have at least one occurrence of the event, and percentage of patients (n(%)).\nPercentage is the number of patients in the category (n) divided by the number of patients within the column (N).\nMedDRA version <XX.X>.\nSource: Listing 16.2.7.1\nPath\\Filename\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 50 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 25,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.3.1.4 Treatment-Emergent Adverse Events, by System Organ Class, Preferred Term and Relationship to VCN-01 (Safety Analysis Set)\nArm I\n(N=xx)\n(Nab-paclitaxel and gemcitabine)\nArm II\n(VCN-01 with Nab-paclitaxel and\ngemcitabine)\n(N=xx)\nRelationship to VCN-01 n (%) n (%)\nAny Treatment-Emergent Adverse Event <Relationship> xx (xx.x%) xx (xx.x%)\n<Relationship> xx (xx.x%) xx (xx.x%)\n<Relationship> xx (xx.x%) xx (xx.x%)\n<Relationship> xx (xx.x%) xx (xx.x%)\n<Relationship> xx (xx.x%) xx (xx.x%)\nSOC <Relationship> xx (xx.x%) xx (xx.x%)\n<Relationship> xx (xx.x%) xx (xx.x%)\n<Relationship> xx (xx.x%) xx (xx.x%)\nPT <Relationship> xx (xx.x%) xx (xx.x%)\nPT <Relationship> xx (xx.x%) xx (xx.x%)\n<Relationship> xx (xx.x%) xx (xx.x%)\n<Relationship> xx (xx.x%) xx (xx.x%)\nSOC\n…\n…\nThe table presents number of patients (n) who have at least one occurrence of the event, and percentage of patients(n(%)).\nPercentage is the number of patients in the category (n) divided by the number of patients within the column (N).\nMedDRA version <XX.X>.\nSource: Listing 16.2.7.1\nPath\\Filename\nPage x\/y\nProgramming Note: This layout also applies to Table 14.3.1.5 Treatment-Emergent Adverse Events, by System Organ Class, Preferred Term and Relationship to Gemcitabine (Safety\nAnalysis Set), Table 14.3.1.6 Treatment-Emergent Adverse Events, by System Organ Class, Preferred Term and Relationship to Nab-paclitaxel (Safety Analysis Set), Table 14.3.1.10 Serious\nTreatment-Emergent Adverse Events, by System Organ Class, Preferred Term and Relationship to VCN-01 (Safety Analysis Set), ), Table 14.3.1.11 Serious Treatment-Emergent Adverse\nEvents, by System Organ Class, Preferred Term and Relationship to Gemcitabine (Safety Analysis Set) and Table 14.3.1.12 Serious Treatment-Emergent Adverse Events, by System Organ\nClass, Preferred Term and Relationship to Nab-paclitaxel (Safety Analysis Set). Please update second column header according to the table title.\nForm STATt004\nVersion Date: 20 May 2021\nPage 51 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 26,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.3.2.1 Listing of Deaths due to Adverse Events – (1)\nPatient\nNumber\nAdverse Event\nSOC\nPT Due to PD\nOnset\ndate\/time\/TEAE\nResolution\ndate\/time\n\/ Ongoing Serious Severity\nRelationship to\nVCN-01 Gemcitabine Nab-paclitaxel\nxxxxxxx xxxxxxxxx\nxxxxxxxxx\nxxxxxxxxx\nDue to PD\/\nNot Due to\nPD\nxxxxxxxx\nTxx:xx \/Yes or\nYes1\nxxxxxxxxT\nxx:xx\/\nOngoing\nYes\n(criteria)\/\nNo\nGrade 1\/\nGrade 2\/\nGrade 3\/\nGrade 4\/\nGrade 5\nxxxxxxxxx\nxxxxxxxxx\nxxxxxxxxx\nDue to PD\/\nNot Due to\nPD\nxxxxxxxx\nTxx:xx \/Yes or\nYes1\nxxxxxxxxT\nxx:xx\/\nOngoing\nYes\n(criteria)\/\nNo\nGrade 1\/\nGrade 2\/\nGrade 3\/\nGrade 4\/\nGrade 5\nDefinitely Related\n(specify)\/\nProbably Related\n(specify)\/\nPossibly Related\n(specify)\/\nUnlikely Related\/\nNot Related\nDefinitely Related\n(specify)\/\nProbably Related\n(specify)\/\nPossibly Related\n(specify)\/\nUnlikely Related\/\nNot Related\nDefinitely Related\n(specify)\/\nProbably Related\n(specify)\/\nPossibly Related\n(specify)\/\nUnlikely Related\/\nNot Related\nDefinitely Related\n(specify)\/\nProbably Related\n(specify)\/\nPossibly Related\n(specify)\/\nUnlikely Related\/\nNot Related\nDefinitely Related\n(specify)\/\nProbably Related\n(specify)\/\nPossibly Related\n(specify)\/\nUnlikely Related\/\nNot Related\nDefinitely Related\n(specify)\/\nProbably Related\n(specify)\/\nPossibly Related\n(specify)\/\nUnlikely Related\/\nNot Related\n…\n…\nPD = Progressive Disease.\nMedDRA version <XX.X>.\nTEAE = Treatment Emergent Adverse Event.\nYes = Treatment Emergent for all study drugs. Yes1 = Treatment Emergent for VCN-01.\nPath\\Filename\nPage x\/y\nProgramming Note: This layout also applies to Table 14.3.2.2 Listing of Serious Adverse Events (please include “Occurred after 1st VCN-01 Dose” and “Occurred after 2nd VCN-01 dose”\ncolumns after Due to PD column), Table 14.3.2.3 Listing of Withdrawals Due to Adverse Events and Table 14.3.2.4 Listing of Serious Adverse Reactions (please include “Occurred after 1st\nVCN-01 Dose” and “Occurred after 2nd VCN-01 dose” columns after Due to PD column).\nPlease include (1) and (2) pages in one output, for every (1) page there will be a consecutive (2) page.\nForm STATt004\nVersion Date: 20 May 2021\nPage 52 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 27,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nIf the relationship to study treatment is marked as “Definitely Related, Probably Related or Possibly Related” please present the reason for decision in brackets.\nForm STATt004\nVersion Date: 20 May 2021\nPage 53 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 28,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.3.2.1 Listing of Deaths due to Adverse Events – (2)\nPatient\nNumber\nAdverse Event\nSOC\nPT Outcome\nAction taken with\nVCN-01 Gemcitabine Nab-paclitaxel\nOther action taken\nxxxxxxx xxxxxxxxx\nxxxxxxxxx\nxxxxxxxxx\nxxxxxxxxx\nxxxxxxxxx\nxxxxxxxxx\n…\nFatal\/\nNot Recovered\/Not Resolved \/\nRecovered\/Resolved \/\nRecovered\/Resolved with Sequelae \/\nRecovering\/\nUnknown\nFatal\/\nNot Recovered\/Not Resolved \/\nRecovered\/Resolved \/\nRecovered\/Resolved with Sequelae \/\nRecovering\/\nUnknown\nDose Not Changed\/\nDose Reduced\/\nDrug Interrupted\/\nDrug Withdrawn\/\nNot Applicable\/\nUnknown\nDose Not Changed\/\nDose Reduced\/\nDrug Interrupted\/\nDrug Withdrawn\/\nNot Applicable\/\nUnknown\nDose Not Changed\/\nDose Reduced\/\nDrug Interrupted\/\nDrug Withdrawn\/\nNot Applicable\/\nUnknown\nDose Not Changed\/\nDose Reduced\/\nDrug Interrupted\/\nDrug Withdrawn\/\nNot Applicable\/\nUnknown\nxxxxxx\nDose Not Changed\/\nDose Reduced\/\nDrug Interrupted\/\nDrug Withdrawn\/\nNot Applicable\/\nUnknown\nDose Not Changed\/\nDose Reduced\/\nDrug Interrupted\/\nDrug Withdrawn\/\nNot Applicable\/\nUnknown\nxxxxxx\n…\nMedDRA version <XX.X>.\nPath\\Filename\nPage x\/y\nProgramming Note:\nThis layout also applies to Table 14.3.2.2 Listing of Serious Adverse Events (please include “Occurred after 1st VCN-01 Dose” and “Occurred after 2nd VCN-01 dose” columns after Due to PD\ncolumn), Table 14.3.2.3 Listing of Withdrawals Due to Adverse Events and Table 14.3.2.4 Listing of Serious Adverse Reactions (please include “Occurred after 1st VCN-01 Dose” and “Occurred\nafter 2nd VCN-01 dose” columns after Due to PD column).\nPlease include (1) and (2) pages in one output, for every (1) page there will be a consecutive (2) page.\nIf the relationship to study treatment is marked as “Definitely Related, Probably Related or Possibly Related” please present the reason for decision in brackets.\nForm STATt004\nVersion Date: 20 May 2021\nPage 54 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 29,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.3.3 Listing of Abnormal Laboratory Values\nPatient Number Visit Parameter Result Unit\nReference range\nLower\nxxxxxxx <Visit> xxxxxxxxxxxxxxxxxxx xx xxxx xx xx Abnormal CS\/\nReference range\nUpper Interpretation\nAbnormal NCS\nxxxxxxxxxxxxxxxxxxx xx xxxx xx xx Abnormal CS\/\nAbnormal NCS\n…\n…\n…\nNCS = Not Clinically Significant; CS = Clinically Significant.\nPath\\Filename\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 55 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 30,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.3.4.1 Summary of Biochemistry Parameters (Safety Analysis Set)\n<Parameter (unit)>\nVisit\nArm I\n(N=xx)\n(Nab-paclitaxel and gemcitabine)\nArm II\n(N=xx)\n(VCN-01 with Nab-paclitaxel and gemcitabine)\nScreening n xx xx\nMean xx xx\nSTD xx xx\nMedian xx xx\nMinimum xx xx\nMaximum xx xx\nBaseline n xx xx\nMean xx xx\nSTD xx xx\nMedian xx xx\nMinimum xx xx\nMaximum xx xx\n<Visit> n xx xx\nMean xx xx\n…\nChange from Baseline to <Visit> n xx xx\nMean xx xx\n…\n…\nSource: Listing 16.2.8.1\nPath\\Filename\nPage x\/y\nProgramming Note: This layout also applies to Table 14.3.4.2 Summary of Hematology Parameters (Safety Analysis Set), Table 14.3.4.3 Summary of Coagulation Parameters (Safety\nAnalysis Set), Table 14.3.4.4 Summary of TSH (Safety Analysis Set), Table 14.3.4.5 Summary of Urinalysis Parameters (Safety Analysis Set), Table 14.3.5.1 Summary of Vital Signs (Safety\nAnalysis Set) and Table 14.3.7.1 Summary of 12-lead Electrocardiogram (Safety Analysis Set). Please update source listings.\nForm STATt004\nVersion Date: 20 May 2021\nPage 56 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 31,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.3.4.6 Shift Table of Biochemistry Parameters (Safety Analysis Set)\n<Parameter (unit)>\nVisit\nArm I\n(N=xx)\n(Nab-paclitaxel and gemcitabine)\nArm II\n(N=xx)\n(VCN-01 with Nab-paclitaxel and gemcitabine)\nScreening n xx xx\nNormal xx (xx.x%) xx (xx.x%)\nAbnormal NCS xx (xx.x%) xx (xx.x%)\nAbnormal CS xx (xx.x%) xx (xx.x%)\nBaseline n xx xx\nNormal xx (xx.x%) xx (xx.x%)\n…\n<Visit> n xx xx\n…\nChange from Baseline to <Visit> n xx xx\nNormal -> Normal xx (xx.x%) xx (xx.x%)\nNormal -> Abnormal NCS xx (xx.x%) xx (xx.x%)\nNormal -> Abnormal CS xx (xx.x%) xx (xx.x%)\nAbnormal NCS -> Normal xx (xx.x%) xx (xx.x%)\nAbnormal NCS -> Abnormal NCS xx (xx.x%) xx (xx.x%)\nAbnormal NCS -> Abnormal CS xx (xx.x%) xx (xx.x%)\nAbnormal CS -> Normal xx (xx.x%) xx (xx.x%)\nAbnormal CS -> Abnormal NCS xx (xx.x%) xx (xx.x%)\nAbnormal CS -> Abnormal CS xx (xx.x%) xx (xx.x%)\n…\nPercentage is the number of patients in the category (n) divided by the number of patients within the column (N).\nSource: Listing 16.2.8.1\nPath\\Filename\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 57 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 32,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nProgramming Note: This layout also applies to Table 14.3.4.7 Shift Table of Hematology Parameters (Safety Analysis Set), Table 14.3.4.8 Shift Table of Coagulation Parameters (Safety\nAnalysis Set), Table 14.3.4.9 Shift Table of TSH (Safety Analysis Set) and Table 14.3.4.10 Shift Table of Urinalysis Parameters (Safety Analysis Set). Please update source listings.\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.3.5.2 Shift Table of Vital Signs (Safety Analysis Set)\nVisit\nArm I\n(N=xx)\n(Nab-paclitaxel and gemcitabine)\nArm II\n(N=xx)\n(VCN-01 with Nab-paclitaxel and gemcitabine)\nScreening n xx xx\nNormal xx (xx.x%) xx (xx.x%)\nAbnormal NCS xx (xx.x%) xx (xx.x%)\nAbnormal CS xx (xx.x%) xx (xx.x%)\nBaseline n xx xx\nNormal xx (xx.x%) xx (xx.x%)\n…\n<Visit> n xx xx\n…\nChange from Baseline to <Visit> n xx xx\nNormal -> Normal xx (xx.x%) xx (xx.x%)\nNormal -> Abnormal NCS xx (xx.x%) xx (xx.x%)\nNormal -> Abnormal CS xx (xx.x%) xx (xx.x%)\nAbnormal NCS -> Normal xx (xx.x%) xx (xx.x%)\nAbnormal NCS -> Abnormal NCS xx (xx.x%) xx (xx.x%)\nAbnormal NCS -> Abnormal CS xx (xx.x%) xx (xx.x%)\nAbnormal CS -> Normal xx (xx.x%) xx (xx.x%)\nAbnormal CS -> Abnormal NCS xx (xx.x%) xx (xx.x%)\nAbnormal CS -> Abnormal CS xx (xx.x%) xx (xx.x%)\n…\nPercentage is the number of patients in the category (n) divided by the number of patients within the column (N).\nSource: Listing 16.2.9\nPath\\Filename\nPage x\/y\nProgramming Note: This layout also applies to Table 14.3.7.2 Shift Table of 12-lead Electrocardiogram (Safety Analysis Set). Please update source listing.\nForm STATt004\nVersion Date: 20 May 2021\nPage 58 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 33,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.3.6 Physical Examination (Safety Analysis Set)\n<Body system>\nVisit\nArm I\n(N=xx)\n(Nab-paclitaxel and gemcitabine)\nArm II\n(N=xx)\n(VCN-01 with Nab-paclitaxel and gemcitabine)\nScreening n xx xx\nNormal xx (xx.x%) xx (xx.x%)\nAbnormal NCS xx (xx.x%) xx (xx.x%)\nAbnormal CS xx (xx.x%) xx (xx.x%)\nBaseline n xx xx\nNormal xx (xx.x%) xx (xx.x%)\n…\n<Visit> n xx xx\n…\nChange from Baseline to <Visit> n xx xx\nNormal -> Normal xx (xx.x%) xx (xx.x%)\nNormal -> Abnormal NCS xx (xx.x%) xx (xx.x%)\nNormal -> Abnormal CS xx (xx.x%) xx (xx.x%)\nAbnormal NCS -> Normal xx (xx.x%) xx (xx.x%)\nAbnormal NCS -> Abnormal NCS xx (xx.x%) xx (xx.x%)\nAbnormal NCS -> Abnormal CS xx (xx.x%) xx (xx.x%)\nAbnormal CS -> Normal xx (xx.x%) xx (xx.x%)\nAbnormal CS -> Abnormal NCS xx (xx.x%) xx (xx.x%)\nAbnormal CS -> Abnormal CS xx (xx.x%) xx (xx.x%)\n…\nPercentage is the number of patients in the category (n) divided by the number of patients within the column (N).\nSource: Listing 16.2.10\nPath\\Filename\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 59 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 34,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.3.8 ECOG Score (Safety Analysis Set)\nVisit\nArm I\n(N=xx)\n(Nab-paclitaxel and gemcitabine)\nArm II\n(N=xx)\n(VCN-01 with Nab-paclitaxel and gemcitabine)\n<Visit> n xx xx\n0 xx (xx.x%) xx (xx.x%)\n1 xx (xx.x%) xx (xx.x%)\n2 xx (xx.x%) xx (xx.x%)\n3 xx (xx.x%) xx (xx.x%)\n4 xx (xx.x%) xx (xx.x%)\n5 xx (xx.x%) xx (xx.x%)\n<Visit> n xx xx\n0 xx (xx.x%) xx (xx.x%)\n…\n…\nPercentage is the number of patients in the category (n) divided by the number of patients within the column (N).\nSource: Listing 16.2.16\nPath\\Filename\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 60 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 35,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.3.9 Subsequent Anticancer Treatment (Safety Analysis Set)\nArm I\n(N=xx)\n(Nab-paclitaxel and gemcitabine)\nArm II\n(N=xx)\n(VCN-01 with Nab-paclitaxel and gemcitabine)\nAny subsequent anticancer treatment xx (xx.x%) xx (xx.x%)\nATC4 term xx (xx.x%) xx (xx.x%)\nPT xx (xx.x%) xx (xx.x%)\n…\nATC4 term xx (xx.x%) xx (xx.x%)\nPT xx (xx.x%) xx (xx.x%)\n…\n…\nPercentage is the number of patients in the category (n) divided by the number of patients within the column (N).\nWHO-DDE version <XXXX>.\nSource: Listing 16.2.18\nPath\\Filename\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 61 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 36,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.3.10 Study Drug Exposure and Compliance (Safety Analysis Set)\nArm I\n(N=xx)\n(Nab-paclitaxel and gemcitabine)\nArm II\n(VCN-01 with Nab-paclitaxel and\ngemcitabine)\n(N=xx)\nTreatment duration (days) n xx xx\nMean xx xx\nSTD xx xx\nMedian xx xx\nMinimum xx xx\nMaximum xx xx\n<Treatment> administration Number of doses n xx xx\nMean xx xx\nSTD xx xx\nMedian xx xx\nMinimum xx xx\nMaximum xx xx\nTotal dose administered\n(unit)\nn Xx xx\nMean xx xx\n…\nDose intensity (unit) n xx xx\nMean xx xx\n…\nRelative dose intensity (%) n xx xx\nMean xx xx\n…\nDose prolongation[a] Yes xx xx (%) xx xx (%)\nNo xx xx (%) xx xx (%)\nForm STATt004\nVersion Date: 20 May 2021\nPage 62 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 37,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nDose Interruption[a] Yes xx xx (%) xx xx (%)\nNo xx xx (%) xx xx (%)\nDose Reduction[a] Yes xx xx (%) xx xx (%)\nNo xx xx (%) xx xx (%)\nReason for dose\nreduction[a] [b]\nxxxxxx xx xx (%) xx xx (%)\nxxxxxx xx xx (%) xx xx (%)\nxxxxxx xx xx (%) xx xx (%)\nTreatment compliance[c] Mean xx xx\nSTD xx xx\nMedian xx xx\nMinimum xx xx\nMaximum xx xx\nPercentage is the number of patients in the category (n) divided by the number of patients within the column (N) unless otherwise specified below.\n[a]: Represents number of events, number of patients with at least one event and percentage of patients with at least one event.\n[b]: The denominator for each percentage is the number of patients with dose reduction.\n[c]: Treatment compliance = percentage of injection administered (actual\/planned).\nSource: Listing 16.2.1.3, 16.2.1.4, 16.2.1.5, 16.2.1.6, 16.2.1.7\nPath\\Filename\nProgramming Note: Please present summaries by the following treatments: VCN-01, Nab-paclitaxel, Gemcitabine.\nPlease note that dose reduction is not applicable for VCN-01 administration, this category should be excluded for the treatment.\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 63 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 38,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.3.11.1 Prior Medications (Safety Analysis Set)\nArm I\n(N=xx)\n(Nab-paclitaxel and gemcitabine)\nArm II\n(VCN-01 with Nab-paclitaxel and\ngemcitabine)\n(N=xx)\nAny prior medications xx (xx.x%) xx (xx.x%)\nX, xxxxxxxxxxxxxx xx (xx.x%) xx (xx.x%)\nX0N, xxxxxxxxxxxxx xx (xx.x%) xx (xx.x%)\nX0NXX, xxxxxxxxxxx xx (xx.x%) xx (xx.x%)\nxxxxxxxxxxxxx xx (xx.x%) xx (xx.x%)\nX0NXX, xxxxxxxxxxx xx (xx.x%) xx (xx.x%)\nxxxxxxxxxxxx xx (xx.x%) xx (xx.x%)\n…\n…\nPrior medications\/medical procedures are defined as any medication taken\/any medical procedures performed within 28 days of the Screening visit.\nData are summarized by: Anatomical main group (ATC level 1); Therapeutic subgroup (ATC level 2); Therapeutic\/pharmacological subgroup (ATC level 3);\nChemical\/therapeutic\/pharmacological subgroup (ATC level 4); Preferred term.\nPercentage is the number of patients in the category (n) divided by the number of patients within the column (N).\nWHO-DDE version <XXXX>.\nSource: Listing 16.2.12\nPath\\Filename\nPage x\/y\nProgramming Note: This layout also applies to Table 14.3.11.2 Concomitant Medications (Safety Analysis Set) [Footnote: Concomitant medications are defined as any medication taken at\nor after the time of the Screening visit.]\nForm STATt004\nVersion Date: 20 May 2021\nPage 64 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 39,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.5.1 Pharmacodynamic Parameters (Pharmacodynamic Set)\n<Parameter>\nVisit\nArm I\n(N=xx)\n(Nab-paclitaxel and gemcitabine)\nArm II\n(VCN-01 with Nab-paclitaxel and gemcitabine)\n(N=xx) p-value\nScreening n xx xx\nMean xx xx\nSTD xx xx\nMedian xx xx\nMinimum xx xx\nMaximum xx xx\nBaseline n xx xx\nMean xx xx\nSTD xx xx\nMedian xx xx\nMinimum xx xx\nMaximum xx xx\n<Visit> n xx xx\nMean xx xx\n…\nChange from Baseline to <Visit> n xx xx\nMean xx xx\n…\n<Test> x.xxxx\n…\nSource: Listing 16.2.6\nPath\\Filename\nPage x\/y\nProgramming Note: Above layout should be used for parameters where both arms as assessed. Please indicate test used in the first column as appropriate.\nForm STATt004\nVersion Date: 20 May 2021\nPage 65 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 40,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\n<Parameter>\nVisit\nArm I\n(N=xx)\n(Nab-paclitaxel and gemcitabine)\nArm II\n(VCN-01 with Nab-paclitaxel and\ngemcitabine)\n(N=xx) p-value\nScreening n NA xx\nMean xx\nSTD xx\nMedian xx\nMinimum xx\nMaximum xx\nBaseline n NA xx\nMean xx\nSTD xx\nMedian xx\nMinimum xx\nMaximum xx\n<Visit> n NA xx\nMean xx\n…\n<Test> x.xxxx\nChange from Baseline to <Visit> n NA xx\nMean xx\n…\n…\nNA = Not applicable.\nSource: Listing 16.2.13\nPath\\Filename\nPage x\/y\nProgramming Note: Above layout should be used for parameters only applicable for Arm II. Please indicate test used in the first column as appropriate.\nThese two layouts should be combined in one output, starting each parameter on a new page.\nForm STATt004\nVersion Date: 20 May 2021\nPage 66 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 41,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nFigure 14.2.1 Kaplan-Meier Plot of Overall Survival (Intent-to-Treat Set)\nFigure Specifications\nProcedure: PROC LIFETEST – survival plot\nBy: Arm\nx axis: Time\nx axis: Label: Time Post-Dose (months)\nx axis: values: As appropriate\nY axis: Survival proportion\nY axis Label: Proportion\nY axis values: As appropriate\nLegend:\nArm I (Nab-paclitaxel and gemcitabine) (N=xx) – linestyle = solid, colour = blue\nArm II (VCN-01 with Nab-paclitaxel and gemcitabine) (N=xx) – linestyle = solid, colour = green\nNumber of patients at risk over time to be presented below the x axis.\nFootnote:\nPatients who are lost to follow-up are censored at the time of their last visit or contact.\nProgramming Note: This layout also applies to Figure 14.2.2 Kaplan-Meier Plot of Overall Survival (Full Analysis Set) and Figure 14.2.3 Kaplan-Meier Plot of Overall Survival (Per Protocol\nSet), Figure 14.2.4 Subgroup Analysis: Kaplan-Meier Plot of Overall Survival (ITT), Figure 14.2.5 Kaplan-Meier Plot of Progression Free Survival (ITT), Figure 14.2.6 Kaplan-Meier Plot of\nProgression Free Survival (Full Analysis Set), Figure 14.2.7 Subgroup Analysis: Kaplan-Meier Plot of Progression Free Survival (ITT), Figure 14.2.8 Kaplan-Meier Plot of Time to Progression,\nFigure 14.2.9 Kaplan-Meier Plot of Duration of Response\nProgramming note for Figure 14.2.6 Kaplan-Meier Plot for Duration of Response: The starting point for both arms is not 100%, but the response rate per arm.\nForm STATt004\nVersion Date: 20 May 2021\nPage 67 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 42,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nFigure 14.3.1 ECOG Score (Safety Analysis Set)\nFigure Specifications\nPlot: Kaplan-Meier time to event plot\nx axis: Visit\nx axis: Label: Visit\nx axis: values: As appropriate\nY axis: Percentage\nY axis Label: Percentage of patients\nY axis values: 0 - 100\nFootnote:\nFor each level of the ECOG score, the proportion of patients continuing on that or a better score were estimated for each visit using Kaplan-Meier estimates. At death the patient was\nassumed to have risen to the highest ECOG score.\nForm STATt004\nVersion Date: 20 May 2021\nPage 68 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 43,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.1.1 Visit Dates\n<Arm>\nPatient Number Visit Date Type Reason for Unscheduled Visit\nxxxxxxx xx xxxxxxxxxxxxxx Site Visit\/\nxx xxxxxxxxxxxxxx Site Visit\/\nxx xxxxxxxxxxxxxx Site Visit\/\nxx xxxxxxxxxxxxxx Site Visit\/\nRemote Visit\nRemote Visit\nRemote Visit\nRemote Visit\nxxxxxxxxxxxxxxxxxxxxxxxxxxx\n…\n…\nPath\\Filename\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 69 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 44,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.1.2 Patient Disposition – (1)\n<Arm>\nPatient\nNumber\nDate\/Time of\nInformed\nConsent\nInformed\nConsent\nVersion\nCompleted\nstudy If no, specify\nProtocol\nVersion Completed Treatment If no, specify\nxxxxxxx xxxxxxxTxx:xx x.x xxxxxxxxxx Yes\/No xxxxxxxxxxxxxxx Yes\/No xxxxxxx\nxxxxxxx xxxxxxxTxx:xx x.x xxxxxxxxxx Yes\/No Yes\/No xxxxxxx\nxxxxxxx xxxxxxxTxx:xx x.x xxxxxxxxxx Yes\/No Yes\/No xxxxxxxxxxxxxxxxxxxxx xxxxxxx\nxxxxxxx xxxxxxxTxx:xx x.x xxxxxxxxxx Yes\/No Yes\/No xxxxxxx\nDate of\ncompletion\/\nwithdrawal\n…\nCompleted treatment refers to completed treatment period, completed study refers to completed FU period.\nPath\\Filename\nPage x\/y\nProgramming Note: Please include (1) and (2) pages in one output, for every (1) page there will be a consecutive (2) page.\nForm STATt004\nVersion Date: 20 May 2021\nPage 70 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 45,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.1.2 Patient Disposition – (2)\n<Arm>\nPatient Number Safety Analysis Set (SAF) Intent-to-Treat Set (ITT) Full Analysis Set (FAS) Per-Protocol Set (PPS) Pharmacodynamic Set\n(PDS)\nSubgroup Analysis\nInclusion\nxxxxxxx Yes\/No Yes\/No Yes\/No Yes\/No Yes\/No Yes\/No\nxxxxxxx Yes\/No Yes\/No Yes\/No Yes\/No Yes\/No Yes\/No\nxxxxxxx Yes\/No Yes\/No Yes\/No Yes\/No Yes\/No Yes\/No\nxxxxxxx Yes\/No Yes\/No Yes\/No Yes\/No Yes\/No Yes\/No\n…\nInclusion for subgroup analysis is defined as patients who had the first 3 cycles of SoC chemotherapy and started the 4th SoC chemotherapy in Arm I, and patients who had the first 3\ncycles of SoC chemotherapy, started the 4th cycle of SoC chemotherapy and received 2 doses of VCN-01.\nPath\\Filename\nPage x\/y\nProgramming Note: Please include (1) and (2) pages in one output, for every (1) page there will be a consecutive (2) page.\nForm STATt004\nVersion Date: 20 May 2021\nPage 71 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 46,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.1.3 SoC Administration – Nab-Paclitaxel – (1)\n<Arm>\nPatient Number Visit Administered\nStart Date\/time\n(Stop Date\/Time)\nProtocol\nAssigned Dose\n(mg\/m2)\nPatient BSA (m2)\n(Calculation Method)\nConcentration of\nInfusion Solution\n(mg\/ml)\nVolume to be\nInfused (ml)\nActual Volume\nInfused (ml)\nxxxxxxx xxxxxxxxx Yes\/\nxxxxxxxxx Yes\/\nNo (reason)\nNo (reason)\nxxxxxxxxTxx:xx\n(xxxxxxxxTxx:xx)\nxxxxxxxxTxx:xx\n(xxxxxxxxTxx:xx)\nxxx xx (method) xx xx xx\nxxx xx (method) xx xx xx\n…\nBSA = Body Surface Area.\nPath\\Filename\nPage x\/y\nProgramming Note: Please include (1) and (2) pages in one output, for every (1) page there will be a consecutive (2) page.\nForm STATt004\nVersion Date: 20 May 2021\nPage 72 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 47,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.1.3 SoC Administration – Nab-Paclitaxel – (2)\n<Arm>\nPatient Number Visit Actual Assigned Dose Administered Dose (mg)\nComplete Protocol\nAssigned Dose\nAdministered Prolongation of Infusion\nDose Reduction\/\nInterruption\nxxxxxxx xxxxxxxxx xxxxxxxxx xx Yes\/\nxxxxxxxxx xxxxxxxxx xx Yes\/\nNo (reason)\nNo (reason)\nYes (reason)\/\nNo\nYes (reason)\/\nNo\nYes\/\nNo\nYes\/\nNo\n…\nPath\\Filename\nPage x\/y\nProgramming Note: Please include (1) and (2) pages in one output, for every (1) page there will be a consecutive (2) page.\nForm STATt004\nVersion Date: 20 May 2021\nPage 73 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 48,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.1.4 SoC Administration – Gemcitabine – (1)\n<Arm>\nPatient Number Visit\nNeutrophils and\nPlatelets\nReviewed prior\nto Dosing\nPremedication\nAdministered\nGemcitabine\nAdministered\nStart Date\/time\n(Stop Date\/Time)\nProtocol\nAssigned Dose\n(mg\/m2)\nPatient BSA (m2)\n(Calculation\nMethod)\nConcentration\nof Infusion\nSolution\n(mg\/ml)\nxxxxxxx xxxxxxxxx Yes\/\nNo\nxxxxxxxxx Yes\/\nNo\nYes\/\nNo\nYes\/\nNo\nYes\/\nNo (reason)\nYes\/\nNo (reason)\nxxxxxxxxTxx:xx\n(xxxxxxxxTxx:xx)\nxxxxxxxxTxx:xx\n(xxxxxxxxTxx:xx)\nxx xx (method) xx\nxx xx (method) xx\n…\nBSA = Body Surface Area.\nPath\\Filename\nPage x\/y\nProgramming Note: Please include (1) and (2) pages in one output, for every (1) page there will be a consecutive (2) page.\nForm STATt004\nVersion Date: 20 May 2021\nPage 74 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 49,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.1.4 SoC Administration – Gemcitabine – (2)\n<Arm>\nPatient\nNumber Visit\nVolume to be Infused\n(ml)\nActual Volume\nInfused (ml) Actual Assigned Dose\nAdministered\nDose (mg)\nComplete\nProtocol\nAssigned Dose\nAdministered\nProlongation of\nInfusion\nDose Reduction\/\nInterruption\nxxxxxxx xxxxxxxxx xx xx xxxxxxxxx xx Yes\/\nxxxxxxxxx xx xx xxxxxxxxx xx Yes\/\nNo (reason)\nNo (reason)\nYes (reason)\/\nNo\nYes (reason)\/\nNo\nYes\/\nNo\nYes\/\nNo\n…\nPath\\Filename\nPage x\/y\nProgramming Note: Please include (1) and (2) pages in one output, for every (1) page there will be a consecutive (2) page.\nForm STATt004\nVersion Date: 20 May 2021\nPage 75 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 50,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.1.5 SoC Dose Adjustments\n<Arm>\nPatient Number Visit Treatment Action Taken\nReason for\nAdjustment\/\nModification\nInterrupted Dose\nAdministration\nContinued\nStart Date\/time\n(Stop\nDate\/Time)\nAdministered\nVolume after\nContinuation\n(mg)\nAdministered\nVolume after\nContinuation\n(ml)\nxxxxxxx xxxxxxxxx Nap-paclitaxel\/\nGemcitabine\nDrug Interrupted\/\nDrug Withdrawn\/\nDose Reduced\nxxxxxxxxxxx Yes\/\nNo\nxxxxxxxxTxx:xx\n(xxxxxxxxTxx:xx)\nxx xx\nxxxxxxxxx Nap-paclitaxel\/\nGemcitabine\nDrug Interrupted\/\nDrug Withdrawn\/\nDose Reduced\nxxxxxxxxxxx Yes\/\nNo\nxxxxxxxxTxx:xx\n(xxxxxxxxTxx:xx)\nxx xx\n…\nPath\\Filename\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 76 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 51,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.1.6 VCN-01 Administration – (1)\n<Arm>\nPatient Number Visit Administered\nAntipyretic\nTreatment p.o. Given\nPrior to\nAdministration\nStart Date\/time\n(Stop Date\/Time)\nProtocol\nAssigned\nVolume Infused\n(mL)\nConcentration of\nInfusion Solution\n(vp\/mL)\nActual Volume\nInfused (mL)\nAdministered\nDose\n(x10^13 vp)\nxxxxxxx xxxxxxxxx Yes\/\nxxxxxxxxx Yes\/\nNo (reason)\nNo (reason)\nYes\/\nNo\nYes\/\nNo\nxxxxxxxxTxx:xx\n(xxxxxxxxTxx:xx)\nxxxxxxxxTxx:xx\n(xxxxxxxxTxx:xx)\nxx xx xx xx\nxx xx xx xx\n…\nPath\\Filename\nPage x\/y\nProgramming Note: Please include (1) and (2) pages in one output, for every (1) page there will be a consecutive (2) page.\nForm STATt004\nVersion Date: 20 May 2021\nPage 77 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 52,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.1.6 VCN-01 Administration - (2)\n<Arm>\nPatient Number Visit Required Dose (vp)\nFraction of Required Dose\nAdministered (%) Prolongation of Infusion Dose Interruption\nxxxxxxx xxxxxxxxx xx xx Yes (reason)\/\nNo\nxxxxxxxxx xx xx Yes (reason)\/\nNo\nYes\/\nNo\nYes\/\nNo\n…\nPath\\Filename\nPage x\/y\nProgramming Note: Please include (1) and (2) pages in one output, for every (1) page there will be a consecutive (2) page.\nForm STATt004\nVersion Date: 20 May 2021\nPage 78 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 53,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.1.7 VCN-01 Dose Interruptions\n<Arm>\nPatient Number Visit Reason for Interruption\nStart Date\/time\n(Stop Date\/Time)\nAdministered Volume after\nContinuation (mL)\nxxxxxxx xxxxxxxxx xxxxxxxxxxx xxxxxxxxTxx:xx\n(xxxxxxxxTxx:xx)\nxxxxxxxxx xxxxxxxxxxx xxxxxxxxTxx:xx\n(xxxxxxxxTxx:xx)\nxx\nxx\n…\nPath\\Filename\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 79 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 54,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.2.1 Protocol Deviations\n<Arm>\nPatient Number Deviation Number Date of Deviation Type Protocol Deviation Major\/Minor\nxxxxxxx xx xxxxxxxxx xxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Major\/Minor\nxx xxxxxxxxx xxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Major\/Minor\nxxxxxxx xx xxxxxxxxx xxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Major\/Minor\nxxxxxxx xx xxxxxxxxx xxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Major\/Minor\n…\nPath\\Filename\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 80 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 55,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.4.1 Demographics and Baseline Characteristics\n<Arm>\nPatient\nNumber\nYear of\nbirth\nAge\n(years) Gender Ethnicity Race\nWeight\n(kg)\nHeight\n(cm)\nBMI\n(kg\/m2)\nRegion of Study\nSite\nECOG status\nat\nrandomization\nxxxxxxx xxxx xx xxxx Not Hispanic or Latino\/\nHispanic or Latino\/\nNot Reported\/\nUnknown\nxxxxxxx xxxx xx xxxx Not Hispanic or Latino\/\nHispanic or Latino\/\nNot Reported\/\nUnknown\nBlack or African American\/\nAmerican Indian or Alaska Native\/\nAsian\/\nNative Hawaiian or Other Pacific\nIslander\/\nWhite\/\nOther (specify)\nBlack or African American\/\nAmerican Indian or Alaska Native\/\nAsian\/\nNative Hawaiian or Other Pacific\nIslander\/\nWhite\/\nOther (specify)\nxx xx xx European Union\/\nNorth American\n0\/\n1\nxx xx xx European Union\/\nNorth American\n0\/\n1\n…\nPath\\Filename\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 81 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 56,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.4.2 Medical History\n<Arm>\nCondition\nSOC\nPatient Number\nPT Date of diagnosis Ongoing (End date)\nAny medication taken\/\ntreatment given?\nxxxxxxx xxxxxxxxxxxxxx\nxxxxxxxxxxxxxx\nxxxxxxxxxxxxxx\nxxxxxxx Yes\/ No (ddMMMyyyy) Yes\/ No\nxxxxxxxxxxxxxx\nxxxxxxxxxxxxxx\nxxxxxxxxxxxxxx\nxxxxxxx Yes\/ No (ddMMMyyyy) Yes\/ No\n…\nMedDRA version <XX.X>.\nPath\\Filename\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 82 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 57,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.4.3 Substance Use History\n<Arm>\nAlcohol History Smoking History Recreational Drug History\nPatient\nNumber\nAverage\nalcohol units\nper week\nDid patient suffer\nfrom alcoholism in\nthe past? Smoking History\nAverage number of\ncigarettes per day Comment\nHistory of\nrecreational\ndrug use Comment\nxxxxxxx xx Yes\/\nNo\nxxxxxxx xx Yes\/\nNo\nNever Smoked\/\nSmoker\/\nEx-Smoker (Date stopped\nsmoking: date)\nNever Smoked\/\nSmoker\/\nEx-Smoker (Date stopped\nsmoking: date)\nxx xxxxxxxxxxxx Yes\/\nxxxxxxxxxxxx\nNo\nxx xxxxxxxxxxxx Yes\/\nxxxxxxxxxxxx\nNo\n…\nPath\\Filename\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 83 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 58,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.4.4 Obstetric History\n<Arm>\nPatient\nNumber\nChildbearing\nPotential\nContraception\nMethods Postmenopausal\nPostmenopausal\nAdditional\nInformation\nDate of Last\nMenstrual\nPeriod\nSurgically\nSterile\nxxxxxxx Yes\/ No xxxxxxxxxxxxxxx Yes\/\nNo\/\nNot Reported\nSurgically Sterile\nAdditional\nInformation Hysterectomy\nxxxxxxxxxxx Yes (date)\/\nNo\/\nNot Reported\nAdditional\nInformation\nxxxxxxx Yes\/ No xxxxxxxxxxxxxxx Yes\/\nNo\/\nNot Reported\nxxxxxxxxxxx xxxxxxxxxx Yes (date of\nsterilisation)\/\nNo\/\nNot Reported\nxxxxxxxxxxx xxxxxxxxxx Yes (date of\nsterilisation)\/\nNo\/\nNot Reported\nxxxxxxxxxxx\nxxxxxxxxxxx Yes (date)\/\nNo\/\nNot Reported\nxxxxxxxxxxx\n…\nPath\\Filename\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 84 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 59,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.4.5 Menopausal Status\n<Arm>\nPatient Number Date\/Time of Sample Status\nxxxxxxx xxxxxxxxTxx:xx Menopausal\/\nPremenopausal\/\nPeri-menopausal\nxxxxxxx xxxxxxxxTxx:xx Menopausal\/\nPremenopausal\/\nPeri-menopausal\n…\nPath\\Filename\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 85 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 60,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.4.6 Inclusion\/ Exclusion Criteria Failures\n<Arm>\nPatient Number Visit Inclusion\/ Exclusion Criteria Number Result\nxxxxxxx xxxxx Inclusion\/\nExclusion\nxxxxx Inclusion\/\nExclusion\nxxxxxxx xxxxx Inclusion\/\nExclusion\nxxxxxxx xxxxx Inclusion\/\nExclusion\nxx xxxxxx\nxx xxxxxx\nxx xxxxxx\nxx xxxxxx\n…\nPath\\Filename\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 86 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 61,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.6.1 Tumor Response Evaluation - EDC Data\n<Arm>\nPatient Number Visit\nDate of\nTumor\nAssessment Target Lesion Assessment\nxxxxxxx xxxxxxxxx xxxxxxxx Complete Response (CR)\/\nPartial Response (PR)\/\nStable Disease (SD)\/\nNot All Evaluated\/\nProgressive Disease (PD)\nTarget Lesions:\nSum of Diameters\n(mm)\nNon-Target Lesion\nAssessment New Lesions Overall Response\nxx Absent (No Non-Target\nLesion at Baseline)\/\nComplete Response (CR)\/\nNon-CR\/Non-PD\/\nNot Evaluated\/\nProgressive Disease (PD)\nYes\/\nNo\nComplete Response (CR)\/\nPartial Response (PR)\/\nStable Disease (SD)\/\nInevaluable (NE)\/\nProgressive Disease (PD)\nxxxxxxxxx Yes\/\nNo (reason)\nYes\/\nNo\nxxxxxxxxTxx:xx\n(xxxxxxxxTxx:xx)\nxx xx xx\n…\nPath\\Filename\nProgramming Note: This layout also applies to Listing 16.2.6.2 Tumor Response Evaluation - CIV Data.\nFootnotes to be included:\n- EDC = Electronic Data Capture.\n- CIV = Central Imaging Vendor.\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 87 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 62,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.6.3 Derived Efficacy Variables - EDC Data\n<Arm>\nPatient\nNumber\nOverall\nSurvival (OS)\n(months)\nProgression – Free Survival\n(PFS) (months)\nTime to\nProgression (TTP)\n(months)\nObjective\nResponse\nDisease\nControl\nLandmark 1-year\nSurvival\nNew PFS at\nthe 1-year\nLandmark\nDuration of\nResponse (DoR)\n(months)\nxxxxxxx xx xx xx Yes\/\nxx xx xx Yes\/\nNo\nNo\nYes\/\nNo\nYes\/\nNo\nYes\/\nNo\nYes\/\nNo\nYes\/\nNo\nYes\/\nNo\nxx\nxx\n…\nPath\\Filename\nProgramming Note: This layout also applies to Listing 16.2.6.4 Derived Efficacy Variables - CIV Data.\nFootnotes to be included:\n- EDC = Electronic Data Capture.\n- CIV = Central Imaging Vendor.\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 88 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 63,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.6.5 Tumor Marker Ca 19.9\n<Arm>\nPatient\nNormal Range\nNumber Visit Date\/Time Result Unit\nLower Upper Unit\nEvaluation\nxxxxxxx xxxxx xxxxxxxTxx:xx xx xxx xx xx xxx Normal\/\nxxxxx xxxxxxxTxx:xx xx xxx xx xx xxx Normal\/\nAbnormal NCS\/\nAbnormal CS\nAbnormal NCS\/\nAbnormal CS\n…\nNCS = Not Clinically Significant; CS = Clinically Significant.\nPath\\Filename\nBelow Detectable Value (if any present in the data) should be included in the result column as “BDV’ with a footnote for clarification.\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 89 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 64,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.6.6 QLQ-C30 Questionnaire\n<Arm>\nPatient Number Visit Scale Score\nxxxxxxx xxxxxx xxxxxxxxxxxxxxxxxxx xx\nxxxxxxxxxxxxxxxxxxx xx\nxxxxxxxxxxxxxxxxxxx xx\n…\nxxxxxx xxxxxxxxxxxxxxxxxxx xx\n…\n…\n…\nPath\\Filename\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 90 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 65,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.6.7 Target Lesions\n<Arm>\nPatient Number Lesion Number Lesion Site Date of Scan Lesion Measurable\nSize of Longest\nDiameter\/ Short Axis\n(mm)\nxxxxxxx xx xxxxxxxxxxx xxxxxxxx Yes\/\nxx\nNo (reason)\nxxxxxxxx Yes\/\nNo (reason)\nxx xxxxxxxxxxx xxxxxxxx Yes\/\nNo (reason)\nxx\nxx\n…\nPath\\Filename\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 91 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 66,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.6.8 Non-Target Lesions\n<Arm>\nPatient Number Lesion Number Lesion Site Date of Scan Lesion Assessment\nxxxxxxx xx xxxxxxxxxxx xxxxxxxx Absent\/\nxx xxxxxxxxxxx xxxxxxxx Absent\/\nPresent\/\nUnequivocal progression\/\nNot evaluable\nxxxxxxxx Absent\/\nPresent\/\nUnequivocal progression\/\nNot evaluable\nPresent\/\nUnequivocal progression\/\nNot evaluable\n…\nPath\\Filename\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 92 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 67,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.6.9 Deaths\n<Arm>\nPatient Number Date of Death Primary Cause of Death\nxxxxxxx xxxxxxxx Progressive Disease\/\nOther (specify)\nxxxxxxx xxxxxxxx Progressive Disease\/\nOther (specify)\n…\nPath\\Filename\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 93 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 68,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.7.1 Adverse Events – (1)\n<Arm>\nPatient\nNumber\nAdverse Event\nSOC\nPT Due to PD\nOnset\ndate\/time\/TEAE\nResolution\ndate\/time\n\/ Ongoing Serious Severity\nRelationship to\nVCN-01 Gemcitabine Nab-paclitaxel\nxxxxxxx xxxxxxxxx\nxxxxxxxxx\nxxxxxxxxx\nDue to PD\/\nNot Due to\nPD\nxxxxxxxx\nTxx:xx \/Yes or\nYes1\nxxxxxxxxT\nxx:xx\/\nOngoing\nYes\n(criteria)\/\nNo\nGrade 1\/\nGrade 2\/\nGrade 3\/\nGrade 4\/\nGrade 5\nxxxxxxxxx\nxxxxxxxxx\nxxxxxxxxx\nDue to PD\/\nNot Due to\nPD\nxxxxxxxx\nTxx:xx \/Yes or\nYes1\nxxxxxxxxT\nxx:xx\/\nOngoing\nYes\n(criteria)\/\nNo\nGrade 1\/\nGrade 2\/\nGrade 3\/\nGrade 4\/\nGrade 5\nDefinitely Related\n(specify)\/\nProbably Related\n(specify)\/\nPossibly Related\n(specify)\/\nUnlikely Related\/\nNot Related\nDefinitely Related\n(specify)\/\nProbably Related\n(specify)\/\nPossibly Related\n(specify)\/\nUnlikely Related\/\nNot Related\nDefinitely Related\n(specify)\/\nProbably Related\n(specify)\/\nPossibly Related\n(specify)\/\nUnlikely Related\/\nNot Related\nDefinitely Related\n(specify)\/\nProbably Related\n(specify)\/\nPossibly Related\n(specify)\/\nUnlikely Related\/\nNot Related\nDefinitely Related\n(specify)\/\nProbably Related\n(specify)\/\nPossibly Related\n(specify)\/\nUnlikely Related\/\nNot Related\nDefinitely Related\n(specify)\/\nProbably Related\n(specify)\/\nPossibly Related\n(specify)\/\nUnlikely Related\/\nNot Related\n…\n…\nPD = Progressive Disease.\nMedDRA version <XX.X>.\nTEAE = Treatment Emergent Adverse Event.\nYes = Treatment Emergent for all study drugs. Yes1 = Treatment Emergent for VCN-01.\nPath\\Filename\nPage x\/y\nProgramming Note: This layout also applies to Listing 16.2.7.2 Adverse Events Due to Progressive Disease. and Listing 16.2.7.3 TEAE with Grade 4 or 5 (please include “Occurred after 1st\nVCN-01 Dose” and “Occurred after 2nd VCN-01 dose” columns after Due to PD column)\nForm STATt004\nVersion Date: 20 May 2021\nPage 94 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 69,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nPlease include (1) and (2) pages in one output, for every (1) page there will be a consecutive (2) page.\nIf the relationship to study treatment is marked as “Definitely Related, Probably Related or Possibly Related” please present the reason for decision in brackets.\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.7.1 Adverse Events – (2)\n<Arm>\nPatient\nNumber\nAdverse Event\nSOC\nPT Outcome\nAction taken with\nVCN-01 Gemcitabine Nab-paclitaxel\nOther action taken\nxxxxxxx xxxxxxxxx\nxxxxxxxxx\nxxxxxxxxx\nxxxxxxxxx\nxxxxxxxxx\nxxxxxxxxx\n…\nFatal\/\nNot Recovered\/Not Resolved \/\nRecovered\/Resolved \/\nRecovered\/Resolved with Sequelae \/\nRecovering\/\nUnknown\nFatal\/\nNot Recovered\/Not Resolved \/\nRecovered\/Resolved \/\nRecovered\/Resolved with Sequelae \/\nRecovering\/\nUnknown\nDose Not Changed\/\nDose Reduced\/\nDrug Interrupted\/\nDrug Withdrawn\/\nNot Applicable\/\nUnknown\nDose Not Changed\/\nDose Reduced\/\nDrug Interrupted\/\nDrug Withdrawn\/\nNot Applicable\/\nUnknown\nDose Not Changed\/\nDose Reduced\/\nDrug Interrupted\/\nDrug Withdrawn\/\nNot Applicable\/\nUnknown\nDose Not Changed\/\nDose Reduced\/\nDrug Interrupted\/\nDrug Withdrawn\/\nNot Applicable\/\nUnknown\nxxxxxx\nDose Not Changed\/\nDose Reduced\/\nDrug Interrupted\/\nDrug Withdrawn\/\nNot Applicable\/\nUnknown\nDose Not Changed\/\nDose Reduced\/\nDrug Interrupted\/\nDrug Withdrawn\/\nNot Applicable\/\nUnknown\nxxxxxx\n…\nMedDRA version <XX.X>.\nPath\\Filename\nPage x\/y\nProgramming Note: This layout also applies to Listing 16.2.7.2 Adverse Events Due to Progressive Disease\nand Listing 16.2.7.3 TEAE with Grade 4 or 5 (please include “Occurred after 1st VCN-01 Dose” and “Occurred after 2nd VCN-01 dose” columns after Due to PD column)Please include (1) and\n(2) pages in one output, for every (1) page there will be a consecutive (2) page.\nIf the relationship to study treatment is marked as “Definitely Related, Probably Related or Possibly Related” please present the reason for decision in brackets.\nForm STATt004\nVersion Date: 20 May 2021\nPage 95 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 70,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.8.1 Biochemistry Parameters\n<Arm>\nNormal Range\nPatient\nLower Upper Unit\nNumber Visit Date\/Time Parameter Result Unit\nEvaluation\nxxxxxxx xxxxxxxx xxxxxxxxTxx:xx xxxxxxxxxx xx xxxx xx xx xxxx Normal\/\nAbnormal CS\/\nAbnormal NCS\nxxxxxxxx xxxxxxxxTxx:xx xxxxxxxxxx xx xxxx xx xx xxxx Normal\/\nAbnormal CS\/\nAbnormal NCS\nxxxxxxxx xxxxxxxxTxx:xx xxxxxxxxxx xx xxxx xx xx xxxx Normal\/\nAbnormal CS\/\nAbnormal NCS\n…\nCS=Clinically Significant; NCS=Not Clinically Significant\nPath\\Filename\nPage x\/y\nProgramming Note: This layout also applies to Listing 16.2.8.2 Hematology Parameters, Listing16.2.8.3 Coagulation Parameters and Listing 16.2.8.4 TSH\nBelow Detectable Value (if any present in the data) should be included in the result column as “BDV’ with a footnote for clarification.\nForm STATt004\nVersion Date: 20 May 2021\nPage 96 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 71,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.8.5 Urinalysis Parameters\n<Arm>\nPatient\nNumber Visit Date\/Time Parameter Result Unit Evaluation\nxxxxxxx xxxxxxxx xxxxxxxxTxx:xx xxxxxxxxxx xx xxxx Normal\/\nAbnormal CS\/\nAbnormal NCS\nxxxxxxxx xxxxxxxxTxx:xx xxxxxxxxxx xx xxxx Normal\/\nAbnormal CS\/\nAbnormal NCS\nxxxxxxxx xxxxxxxxTxx:xx xxxxxxxxxx xx xxxx Normal\/\nAbnormal CS\/\nAbnormal NCS\n…\nCS=Clinically Significant; NCS=Not Clinically Significant\nPath\\Filename\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 97 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 72,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.8.6 Serology Results\n<Arm>\nPatient\nNumber Visit Date\/Time Parameter Result Unit\nxxxxxxx xxxxxxxx xxxxxxxxTxx:xx xxxxxxxxxx xx xxxx\nxxxxxxxx xxxxxxxxTxx:xx xxxxxxxxxx xx xxxx\nxxxxxxxx xxxxxxxxTxx:xx xxxxxxxxxx xx xxxx\n…\nPath\\Filename\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 98 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 73,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.8.7 Pregnancy Results\n<Arm>\nPatient\nNumber Visit Date\/Time Specimen Type Result\nxxxxxxx xxxxxxxx xxxxxxxxTxx:xx Urine\/\nSerum\nPositive\/\nNegative\nxxxxxxxx xxxxxxxxTxx:xx Urine\/\nSerum\nPositive\/\nNegative\nxxxxxxxx xxxxxxxxTxx:xx Urine\/\nSerum\nPositive\/\nNegative\n…\nPath\\Filename\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 99 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 74,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.9 Vital Signs\n<Arm>\nPatient\nnumber\nVisit Date\/ Time Body\nTemperature\n(°C)\nWeight\n(kg)\nSystolic BP\n(mmHg)\nDiastolic BP\n(mmHg)\nPulse rate\n(bpm)\nRespirations\n(breaths\/min)\nReview Comments\nxxxxxxx xxxxx xxxxxxxxTxx:xx xx xx xx xx xx Normal\/\nxxxxxxxxx\nxxxxx xxxxxxxxTxx:xx xx xx xx xx xx Normal\/\nxxxxx xxxxxxxxTxx:xx xx xx xx xx xx Normal\/\nAbnormal NCS\/\nAbnormal CS\nAbnormal NCS\/\nAbnormal CS\nAbnormal NCS\/\nAbnormal CS\nxxxxxxxxx\nxxxxxxxxx\n…\nCS=Clinically Significant; NCS=Not Clinically Significant\nPath\\Filename\nForm STATt004\nVersion Date: 20 May 2021\nPage 100 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 75,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.10 Physical Examination\n<Arm>\nPatient\nNumber Visit Date Body system Status Abnormality Clinically Significant\nxxxxxxx xxxx xxxxxx xxxxxxxx Normal\/\nxxxxxxxxxxxxxxxxxxxxxxxxxxx Yes\/\nNo\nAbnormal\/\nNot done\/\nNot Applicable\nxxxxxxxx Normal\/\nAbnormal\/\nNot done\/\nNot Applicable\nxxxxxxxx Normal\/\nAbnormal\/\nNot done\/\nNot Applicable\nxxxxxxxxxxxxxxxxxxxxxxxxxxx Yes\/\nNo\n…\nCS=Clinically Significant; NCS=Not Clinically Significant\nPath\\Filename\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 101 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 76,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.11 12-Lead ECG\n<Arm>\nPatient\nNumber Visit Date\/Time\nHeart rate\n(bpm)\nPR Interval\n(msec)\nRR Interval\n(msec)\nQRS width\n(msec)\nQT Interval\n(msec)\nQTcF Interval\n(msec) Investigator’s Interpretation\nxxxxxxx xxxx xxxxxxTxx:xx xx xx xx xx xx xx Normal\/\nxxxx xxxxxxTxx:xx xx xx xx xx xx xx Normal\/\nxxxx xxxxxxTxx:xx xx xx xx xx xx xx Normal\/\nAbnormal NCS\/\nAbnormal CS\nAbnormal NCS\/\nAbnormal CS\nAbnormal NCS\/\nAbnormal CS\n…\nCS=Clinically Significant; NCS=Not Clinically Significant\nPath\\Filename\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 102 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 77,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.12 Prior and Concomitant Medications – (1)\n<Arm>\nPatient\nNumber\nMedication Name\nATC4\nPT Indication Dose Unit Frequency Route\nStart date\n(Stop date \/ Ongoing)\nxxxxxxx xxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxx\nxxxxxxx xx xxx xxx xxx xxxxxxxxxxxxx\n(xxxxxxxxxxxxx)\nxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxx\nxxxxxxx xx xxx xxx xxx xxxxxxxxxxxxx\n(xxxxxxxxxxxxx)\nxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxx\nxxxxxxx xx xxx xxx xxx xxxxxxxxxxxxx\n(Ongoing)\n…\nWHO-DDE version <XXXX>.\nPath\\Filename\nPage x\/y\nProgramming Note: Please include (1) and (2) pages in one output, for every (1) page there will be a consecutive (2) page.\nForm STATt004\nVersion Date: 20 May 2021\nPage 103 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 78,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.12 Prior and Concomitant Medications – (2)\n<Arm>\nPatient\nNumber\nMedication Name\nATC4\nPT\nNot Allowed Per\nProtocol Prophylactic\nGiven for\nPre-Existing\nCondition\nGiven for Adverse\nEvent\nGiven as Pre-\nMedication for\nGemcitabine\nGiven as Antipyretic\nTreatment Prior to\nDosing?\nxxxxxxx xxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxx\nYes\/\nNo\nYes\/\nNo\nYes\/\nNo\nYes\/\nNo\nYes\/\nNo\nYes\/\nNo\nYes\/\nNo\nYes\/\nNo\nYes\/\nNo\nYes\/\nNo\nYes\/\nNo\nYes\/\nNo\nYes\/\nNo\nYes\/\nNo\nYes\/\nNo\nYes\/\nNo\/\nNot Applicable\nYes\/\nNo\/\nNot Applicable\nYes\/\nNo\/\nNot Applicable\n…\nWHO-DDE version <XXXX>.\nPath\\Filename\nPage x\/y\nProgramming Note: Please include (1) and (2) pages in one output, for every (1) page there will be a consecutive (2) page.\nForm STATt004\nVersion Date: 20 May 2021\nPage 104 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 79,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.13 Pharmacodynamic Parameters\n<Arm>\nPatient\nNumber Visit Date\/Time Parameter Result Unit\nxxxxxxx xxxxxxxx xxxxxxxxTxx:xx xxxxxxxxxx xx xxxx\nxxxxxxxx xxxxxxxxTxx:xx xxxxxxxxxx xx xxxx\nxxxxxxxx xxxxxxxxTxx:xx xxxxxxxxxx xx xxxx\n…\nPath\\Filename\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 105 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 80,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.14 COVID-19 Results\n<Arm>\nPatient\nNumber\nVisit Date\/Time Where was the test Performed? Result\nxxxxxxx xxxxxxxx xxxxxxxxTxx:xx At Study Site\/\nOther Test Center\/\nTest not performed\nxxxxxxxx xxxxxxxxTxx:xx At Study Site\/\nOther Test Center\/\nTest not performed\nxxxxxxxx xxxxxxxxTxx:xx At Study Site\/\nOther Test Center\/\nTest not performed\nPositive\/\nNegative\/\nIndistinct\nPositive\/\nNegative\/\nIndistinct\nPositive\/\nNegative\/\nIndistinct\n…\nPath\\Filename\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 106 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 81,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.15 Left Ventricular Ejection Fraction Results\n<Arm>\nPatient Number Visit LVEF Performed Date of Scan Method Result (%)\nxxxxxxx xxxxxxxx Yes\/\nxxxxxxxx Yes\/\nxxxxxxxx Yes\/\nNot applicable (no clinical indication)\nNot applicable (no clinical indication)\nNot applicable (no clinical indication)\nxxxxxxxx Multigated Acquisition Scan\/\nECHO\nxxxxxxxx Multigated Acquisition Scan\/\nECHO\nxxxxxxxx Multigated Acquisition Scan\/\nECHO\nxx\nxx\nxx\n…\nPath\\Filename\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 107 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 82,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.16 ECOG Score\n<Arm>\nPatient Number Visit Date Grade\nxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx xxxxxxxx 0 (Fully active, able to carry on all pre-disease performance without restriction)\/\n1 (Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature, e.g.,\nlight housework or office work)\/\n2 (Ambulatory and capable of all self-care but unable to carry out any work activities. Up and about > 50% of waking hours)\/\n3 (Capable of only limited self-care, confined to a bed or chair > 50% of waking hours)\/\n4 (Completely disabled. Cannot carry on any self-care. Totally confined to bed or chair)\/\n5 (Dead)\n0 (Fully active, able to carry on all pre-disease performance without restriction)\/\n1 (Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature, e.g.,\nlight housework or office work)\/\n2 (Ambulatory and capable of all self-care but unable to carry out any work activities. Up and about > 50% of waking hours)\/\n3 (Capable of only limited self-care, confined to a bed or chair > 50% of waking hours)\/\n4 (Completely disabled. Cannot carry on any self-care. Totally confined to bed or chair)\/\n5 (Dead)\n0 (Fully active, able to carry on all pre-disease performance without restriction)\/\n1 (Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature, e.g.,\nlight housework or office work)\/\n2 (Ambulatory and capable of all self-care but unable to carry out any work activities. Up and about > 50% of waking hours)\/\n3 (Capable of only limited self-care, confined to a bed or chair > 50% of waking hours)\/\n4 (Completely disabled. Cannot carry on any self-care. Totally confined to bed or chair)\/\n5 (Dead)\n…\nPath\\Filename\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 108 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 83,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.17 Fibroscan Results\n<Arm>\nPatient\nNumber Visit Fibroscan Performed Date of Scan\nResult\n(kPa)\nxxxxxxx xxxxxxxx Yes\/\nxxxxxxxx xx\nxxxxxxxx Yes\/\nxxxxxxxx Yes\/\nNot applicable (no clinical indication)\nNot applicable (no clinical indication)\nNot applicable (no clinical indication)\nxxxxxxxx xx\nxxxxxxxx xx\n…\nPath\\Filename\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 109 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 84,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.18 Subsequent Anticancer Treatment\n<Arm>\nPatient\nNumber\nMedication Name\nATC4\nPT Indication Dose Unit Frequency Route\nStart date\n(Stop date \/ Ongoing) Reason Therapy Ended\nxxxxxxx xxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxx\nxxxxxxx xx xxx xxx xxx xxxxxxxxxxxxx\n(xxxxxxxxxxxxx)\nxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxx\nxxxxxxx xx xxx xxx xxx xxxxxxxxxxxxx\n(xxxxxxxxxxxxx)\nxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxx\nxxxxxxxxxxxxxxx\nxxxxxxx xx xxx xxx xxx xxxxxxxxxxxxx\n(Ongoing)\nDeath\/\nTherapy changed\/\nOther (specify)\nDeath\/\nTherapy changed\/\nOther (specify)\nDeath\/\nTherapy changed\/\nOther (specify)\n…\nWHO-DDE version <XXXX>.\nPath\\Filename\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 110 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 85,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nListing 16.2.19 Study Disease Diagnosis\n<Arm>\nPatient\nNumber\nDate of\nDiagnosis\nCancer\nStage at\nDiagnosis\nSource of\nDiagnosis\nIf Other,\nspecify\nLocation of\nPrimary\nPancreatic\nTumour\nTNM\nCriteria (T)\nTNM\nCriteria (N)\nTNM\nCriteria (M)\nDate of\nMetastatic\nDisease\nDiagnosis\nTumour\nGrade\nMetastasis\nLocation\nxxxxxxx xxxxxxx xxxxxxx xx xxx xxx xxx xxx xxx xxxxxxx xxx xxxxxxx\nxxxxxxx xxx xxx xxxxxxx xxx xxxxxxx\nxxxxxxx xxxxxxx xx xxx xxx xxx xxx xxx xxxxxxx xxx xxxxxxx\nxxxxxxx xxx xxx xxxxxxx xxx xxxxxxx\nxxxxxxx xxxxxxx xx xxx xxx xxx xxx xxx xxxxxxx xxx xxxxxxx\n…\nPath\\Filename\nPage x\/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 111 of 112",
+    "width" : 841.92000000000007
+  },
+  {
+    "height" : 595.32000000000005,
+    "page" : 86,
+    "text" : "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\n16 APPENDICES\n16.1 STUDY DESIGN\nForm STATt004\nVersion Date: 20 May 2021\nPage 112 of 112",
+    "width" : 841.92000000000007
+  }
+]

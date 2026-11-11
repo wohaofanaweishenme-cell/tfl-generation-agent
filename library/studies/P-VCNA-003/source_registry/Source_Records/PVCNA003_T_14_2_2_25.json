@@ -1,0 +1,30 @@
+{
+  "schema_version": "2.4",
+  "template_id": "PVCNA003_T_14_2_2_25",
+  "source_regions": [
+    {
+      "document_id": "SAP_001_11",
+      "pdf_page": 20,
+      "bbox": [
+        0,
+        0,
+        841.9200000000001,
+        595.32
+      ],
+      "coordinate_system": "pdf_points_top_left"
+    }
+  ],
+  "source_docx_locations": [],
+  "text_checkpoints": [
+    {
+      "document_id": "SAP_001_11",
+      "location": "PDF physical page 20; owned region in source_regions; printed page 46",
+      "text": "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.2.2.25 Tumor Marker Ca 19.9 (Intent-to-Treat Set)\nCa 19.9 (<unit>)\nVisit\nArm I\n(N=xx)\n(Nab-paclitaxel and gemcitabine)\nArm II\n(N=xx)\n(VCN-01 with Nab-paclitaxel and gemcitabine)\nScreening n xx xx\nMean xx xx\nSTD xx xx\nMedian xx xx\nMinimum xx xx\nMaximum xx xx\nBaseline n xx xx\nMean xx xx\nSTD xx xx\nMedian xx xx\nMinimum xx xx\nMaximum xx xx\n<Visit> n xx xx\nMean xx xx\n…\nChange from Baseline to <Visit> n xx xx\nMean xx xx\n…\n…\nSource: Listing 16.2.6.5\nPath\\Filename\nPage x/y\nProgramming Note: This layout also applies to Table 14.2.2.26 Tumor Marker Ca 19.9 (Full Analysis Set)\nPlease start a new page when unit of Ca 19.9 is different (U/mL or KU/L).\nForm STATt004\nVersion Date: 20 May 2021\nPage 46 of 112",
+      "readable": true
+    }
+  ],
+  "notes": [
+    "Original title retained from first panel; all panel titles are retained in text checkpoints.",
+    "Regions conservatively retain page wrappers; fine-grained exclusion and structural transcription deferred to stage 2."
+  ]
+}

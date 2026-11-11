@@ -1,0 +1,3549 @@
+{
+  "schema_version": "2.4",
+  "template_id": "PVCNA003_T_14_1_1",
+  "output_type": "table",
+  "structural_family": "table",
+  "extraction_status": "complete",
+  "source_regions": [
+    {
+      "document_id": "SAP_001_11",
+      "pdf_page": 11,
+      "bbox": [
+        0,
+        0,
+        841.9200000000001,
+        595.32
+      ],
+      "coordinate_system": "pdf_points_top_left"
+    }
+  ],
+  "source_docx_locations": [],
+  "physical_blocks": [
+    {
+      "block_id": "B00034",
+      "kind": "other",
+      "display_order": 0,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            624.19,
+            35.50716,
+            770.9195200000001,
+            47.05079999999998
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "VCN Biosciences S.L. P-VCNA-003",
+      "source_element_ids": [
+        "E00057"
+      ],
+      "notes": "Corporate source header wrapper; retained for traceability, separate from shell title/header."
+    },
+    {
+      "block_id": "B00035",
+      "kind": "other",
+      "display_order": 1,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            678.58,
+            47.1471600000001,
+            770.8494400000001,
+            58.69080000000008
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Statistical Analysis Plan",
+      "source_element_ids": [
+        "E00058"
+      ],
+      "notes": "Corporate source header wrapper; retained for traceability, separate from shell title/header."
+    },
+    {
+      "block_id": "B00036",
+      "kind": "placeholder",
+      "display_order": 2,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            90.504,
+            78.35000000000002,
+            735.433,
+            87.35000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "P-VCNA-003 ddMMMyyyy HH:MM",
+      "source_element_ids": [
+        "E00059",
+        "E00060",
+        "E00061"
+      ],
+      "notes": null
+    },
+    {
+      "block_id": "B00037",
+      "kind": "title",
+      "display_order": 3,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            333.89,
+            89.27000000000004,
+            527.557,
+            98.27000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Table 14.1.1 Patient Disposition (All Randomized Set)",
+      "source_element_ids": [
+        "E00062"
+      ],
+      "notes": null
+    },
+    {
+      "block_id": "B00001",
+      "kind": "body",
+      "display_order": 4,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            161,
+            110,
+            451,
+            136
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "",
+      "source_element_ids": [
+        "E00001"
+      ],
+      "notes": "cell_id=CELL00001; row=P01_H001; column=P01_C01; spans=1x1; header"
+    },
+    {
+      "block_id": "B00002",
+      "kind": "body",
+      "display_order": 5,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            451,
+            110,
+            780,
+            136
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Number of patients (%)",
+      "source_element_ids": [
+        "E00002"
+      ],
+      "notes": "cell_id=CELL00002; row=P01_H001; column=P01_C02; spans=1x1; header"
+    },
+    {
+      "block_id": "B00003",
+      "kind": "body",
+      "display_order": 6,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            161,
+            139.27000000000004,
+            451,
+            161.23000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Randomised",
+      "source_element_ids": [
+        "E00003"
+      ],
+      "notes": "cell_id=CELL00003; row=P01_R001; column=P01_C01; spans=1x1; body"
+    },
+    {
+      "block_id": "B00004",
+      "kind": "placeholder",
+      "display_order": 7,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            451,
+            139.27000000000004,
+            780,
+            161.23000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xx",
+      "source_element_ids": [
+        "E00004",
+        "E00005"
+      ],
+      "notes": "cell_id=CELL00004; row=P01_R001; column=P01_C02; spans=1x1; body"
+    },
+    {
+      "block_id": "B00005",
+      "kind": "body",
+      "display_order": 8,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            161,
+            161.23000000000002,
+            451,
+            172.15000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Completed study",
+      "source_element_ids": [
+        "E00006"
+      ],
+      "notes": "cell_id=CELL00005; row=P01_R002; column=P01_C01; spans=1x1; body"
+    },
+    {
+      "block_id": "B00006",
+      "kind": "placeholder",
+      "display_order": 9,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            451,
+            161.23000000000002,
+            780,
+            172.15000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xx (xx.x%)",
+      "source_element_ids": [
+        "E00007",
+        "E00008",
+        "E00009"
+      ],
+      "notes": "cell_id=CELL00006; row=P01_R002; column=P01_C02; spans=1x1; body"
+    },
+    {
+      "block_id": "B00007",
+      "kind": "body",
+      "display_order": 10,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            161,
+            172.15000000000003,
+            451,
+            183.22000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Early withdrawal",
+      "source_element_ids": [
+        "E00010"
+      ],
+      "notes": "cell_id=CELL00007; row=P01_R003; column=P01_C01; spans=1x1; body"
+    },
+    {
+      "block_id": "B00008",
+      "kind": "placeholder",
+      "display_order": 11,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            451,
+            172.15000000000003,
+            780,
+            183.22000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xx (xx.x%)",
+      "source_element_ids": [
+        "E00011",
+        "E00012",
+        "E00013"
+      ],
+      "notes": "cell_id=CELL00008; row=P01_R003; column=P01_C02; spans=1x1; body"
+    },
+    {
+      "block_id": "B00009",
+      "kind": "body",
+      "display_order": 12,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            161,
+            183.22000000000003,
+            451,
+            194.26000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Reason for early withdrawal:",
+      "source_element_ids": [
+        "E00014"
+      ],
+      "notes": "cell_id=CELL00009; row=P01_R004; column=P01_C01; spans=1x1; body"
+    },
+    {
+      "block_id": "B00010",
+      "kind": "body",
+      "display_order": 13,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            451,
+            183.22000000000003,
+            780,
+            194.26000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "",
+      "source_element_ids": [
+        "E00015"
+      ],
+      "notes": "cell_id=CELL00010; row=P01_R004; column=P01_C02; spans=1x1; body"
+    },
+    {
+      "block_id": "B00011",
+      "kind": "body",
+      "display_order": 14,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            161,
+            194.26000000000005,
+            451,
+            205.18000000000006
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Screening Failure",
+      "source_element_ids": [
+        "E00016"
+      ],
+      "notes": "cell_id=CELL00011; row=P01_R005; column=P01_C01; spans=1x1; body"
+    },
+    {
+      "block_id": "B00012",
+      "kind": "placeholder",
+      "display_order": 15,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            451,
+            194.26000000000005,
+            780,
+            205.18000000000006
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xx (xx.x%)",
+      "source_element_ids": [
+        "E00017",
+        "E00018",
+        "E00019"
+      ],
+      "notes": "cell_id=CELL00012; row=P01_R005; column=P01_C02; spans=1x1; body"
+    },
+    {
+      "block_id": "B00013",
+      "kind": "body",
+      "display_order": 16,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            161,
+            205.18000000000006,
+            451,
+            216.22000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Lost to Follow-up",
+      "source_element_ids": [
+        "E00020"
+      ],
+      "notes": "cell_id=CELL00013; row=P01_R006; column=P01_C01; spans=1x1; body"
+    },
+    {
+      "block_id": "B00014",
+      "kind": "placeholder",
+      "display_order": 17,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            451,
+            205.18000000000006,
+            780,
+            216.22000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xx (xx.x%)",
+      "source_element_ids": [
+        "E00021",
+        "E00022",
+        "E00023"
+      ],
+      "notes": "cell_id=CELL00014; row=P01_R006; column=P01_C02; spans=1x1; body"
+    },
+    {
+      "block_id": "B00015",
+      "kind": "body",
+      "display_order": 18,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            161,
+            216.22000000000003,
+            451,
+            227.14000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Withdrawal by Subject",
+      "source_element_ids": [
+        "E00024"
+      ],
+      "notes": "cell_id=CELL00015; row=P01_R007; column=P01_C01; spans=1x1; body"
+    },
+    {
+      "block_id": "B00016",
+      "kind": "placeholder",
+      "display_order": 19,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            451,
+            216.22000000000003,
+            780,
+            227.14000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xx (xx.x%)",
+      "source_element_ids": [
+        "E00025",
+        "E00026",
+        "E00027"
+      ],
+      "notes": "cell_id=CELL00016; row=P01_R007; column=P01_C02; spans=1x1; body"
+    },
+    {
+      "block_id": "B00017",
+      "kind": "body",
+      "display_order": 20,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            161,
+            227.14000000000004,
+            451,
+            249.10000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "…",
+      "source_element_ids": [
+        "E00028"
+      ],
+      "notes": "cell_id=CELL00017; row=P01_R008; column=P01_C01; spans=1x1; body"
+    },
+    {
+      "block_id": "B00018",
+      "kind": "body",
+      "display_order": 21,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            451,
+            227.14000000000004,
+            780,
+            249.10000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "",
+      "source_element_ids": [
+        "E00029"
+      ],
+      "notes": "cell_id=CELL00018; row=P01_R008; column=P01_C02; spans=1x1; body"
+    },
+    {
+      "block_id": "B00019",
+      "kind": "body",
+      "display_order": 22,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            161,
+            249.10000000000002,
+            451,
+            260.14000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Analysis Sets:",
+      "source_element_ids": [
+        "E00030"
+      ],
+      "notes": "cell_id=CELL00019; row=P01_R009; column=P01_C01; spans=1x1; body"
+    },
+    {
+      "block_id": "B00020",
+      "kind": "body",
+      "display_order": 23,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            451,
+            249.10000000000002,
+            780,
+            260.14000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "",
+      "source_element_ids": [
+        "E00031"
+      ],
+      "notes": "cell_id=CELL00020; row=P01_R009; column=P01_C02; spans=1x1; body"
+    },
+    {
+      "block_id": "B00021",
+      "kind": "body",
+      "display_order": 24,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            161,
+            260.14000000000004,
+            451,
+            271.06000000000006
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Safety Analysis Set (SAF)",
+      "source_element_ids": [
+        "E00032"
+      ],
+      "notes": "cell_id=CELL00021; row=P01_R010; column=P01_C01; spans=1x1; body"
+    },
+    {
+      "block_id": "B00022",
+      "kind": "placeholder",
+      "display_order": 25,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            451,
+            260.14000000000004,
+            780,
+            271.06000000000006
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xx (xx.x%)",
+      "source_element_ids": [
+        "E00033",
+        "E00034",
+        "E00035"
+      ],
+      "notes": "cell_id=CELL00022; row=P01_R010; column=P01_C02; spans=1x1; body"
+    },
+    {
+      "block_id": "B00023",
+      "kind": "body",
+      "display_order": 26,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            161,
+            271.06000000000006,
+            451,
+            282.1
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Intent-to-Treat Set (ITT)",
+      "source_element_ids": [
+        "E00036"
+      ],
+      "notes": "cell_id=CELL00023; row=P01_R011; column=P01_C01; spans=1x1; body"
+    },
+    {
+      "block_id": "B00024",
+      "kind": "placeholder",
+      "display_order": 27,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            451,
+            271.06000000000006,
+            780,
+            282.1
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xx (xx.x%)",
+      "source_element_ids": [
+        "E00037",
+        "E00038",
+        "E00039"
+      ],
+      "notes": "cell_id=CELL00024; row=P01_R011; column=P01_C02; spans=1x1; body"
+    },
+    {
+      "block_id": "B00025",
+      "kind": "body",
+      "display_order": 28,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            161,
+            282.1,
+            451,
+            293.14000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Full Analysis Set (FAS)",
+      "source_element_ids": [
+        "E00040"
+      ],
+      "notes": "cell_id=CELL00025; row=P01_R012; column=P01_C01; spans=1x1; body"
+    },
+    {
+      "block_id": "B00026",
+      "kind": "placeholder",
+      "display_order": 29,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            451,
+            282.1,
+            780,
+            293.14000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xx (xx.x%)",
+      "source_element_ids": [
+        "E00041",
+        "E00042",
+        "E00043"
+      ],
+      "notes": "cell_id=CELL00026; row=P01_R012; column=P01_C02; spans=1x1; body"
+    },
+    {
+      "block_id": "B00027",
+      "kind": "body",
+      "display_order": 30,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            161,
+            293.14000000000004,
+            451,
+            304.06000000000006
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Per-Protocol Set (PPS)",
+      "source_element_ids": [
+        "E00044"
+      ],
+      "notes": "cell_id=CELL00027; row=P01_R013; column=P01_C01; spans=1x1; body"
+    },
+    {
+      "block_id": "B00028",
+      "kind": "placeholder",
+      "display_order": 31,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            451,
+            293.14000000000004,
+            780,
+            304.06000000000006
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xx (xx.x%)",
+      "source_element_ids": [
+        "E00045",
+        "E00046",
+        "E00047"
+      ],
+      "notes": "cell_id=CELL00028; row=P01_R013; column=P01_C02; spans=1x1; body"
+    },
+    {
+      "block_id": "B00029",
+      "kind": "body",
+      "display_order": 32,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            161,
+            304.06000000000006,
+            451,
+            326.04
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Pharmacodynamics Set (PDS)",
+      "source_element_ids": [
+        "E00048"
+      ],
+      "notes": "cell_id=CELL00029; row=P01_R014; column=P01_C01; spans=1x1; body"
+    },
+    {
+      "block_id": "B00030",
+      "kind": "placeholder",
+      "display_order": 33,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            451,
+            304.06000000000006,
+            780,
+            326.04
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xx (xx.x%)",
+      "source_element_ids": [
+        "E00049",
+        "E00050",
+        "E00051"
+      ],
+      "notes": "cell_id=CELL00030; row=P01_R014; column=P01_C02; spans=1x1; body"
+    },
+    {
+      "block_id": "B00031",
+      "kind": "body",
+      "display_order": 34,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            161,
+            326.04,
+            451,
+            340
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Subgroup analysis inclusion",
+      "source_element_ids": [
+        "E00052"
+      ],
+      "notes": "cell_id=CELL00031; row=P01_R015; column=P01_C01; spans=1x1; body"
+    },
+    {
+      "block_id": "B00032",
+      "kind": "placeholder",
+      "display_order": 35,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            451,
+            326.04,
+            780,
+            340
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "xx (xx.x%)",
+      "source_element_ids": [
+        "E00053",
+        "E00054",
+        "E00055"
+      ],
+      "notes": "cell_id=CELL00032; row=P01_R015; column=P01_C02; spans=1x1; body"
+    },
+    {
+      "block_id": "B00033",
+      "kind": "footnote",
+      "display_order": 36,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            165.62,
+            349.48,
+            581.098,
+            358.48
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Percentage is the number of patients in the category (n) divided by the number of patients within the column (N).",
+      "source_element_ids": [
+        "E00056"
+      ],
+      "notes": "footnote_id=FN001"
+    },
+    {
+      "block_id": "B00038",
+      "kind": "source_line",
+      "display_order": 37,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            90.504,
+            382.96000000000004,
+            174.97400000000002,
+            391.96000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Source: Listing 16.2.1.2",
+      "source_element_ids": [
+        "E00063"
+      ],
+      "notes": null
+    },
+    {
+      "block_id": "B00039",
+      "kind": "placeholder",
+      "display_order": 38,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            90.504,
+            394.00000000000006,
+            735.556,
+            403.00000000000006
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Path\\Filename Page x/y",
+      "source_element_ids": [
+        "E00064",
+        "E00065"
+      ],
+      "notes": null
+    },
+    {
+      "block_id": "B00040",
+      "kind": "other",
+      "display_order": 39,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            95.904,
+            519.975,
+            765.751,
+            530.4060000000001
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Form STATt004 Page 37 of 112",
+      "source_element_ids": [
+        "E00066"
+      ],
+      "notes": "Corporate form footer retained separately; not a clinical footnote."
+    },
+    {
+      "block_id": "B00041",
+      "kind": "other",
+      "display_order": 40,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            95.904,
+            530.4150000000001,
+            195.88400000000001,
+            540.846
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Version Date: 20 May 2021",
+      "source_element_ids": [
+        "E00067"
+      ],
+      "notes": "Corporate form footer retained separately; not a clinical footnote."
+    }
+  ],
+  "source_elements": [
+    {
+      "element_id": "E00001",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00001",
+          "docx_locator": "bookmark:O_O00001",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_0bcd4a7b707b7b8c"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00002",
+      "element_type": "header_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00002",
+          "docx_locator": "bookmark:O_O00002",
+          "source_text": "Number of patients (%)",
+          "role": "header_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_30d253adb9d01a93"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00003",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00003",
+          "docx_locator": "bookmark:O_O00003",
+          "source_text": "Randomised",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_325d7b861bc615c1"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00004",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00004",
+          "docx_locator": "bookmark:O_O00004",
+          "source_text": "xx",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_fefbb756ad348c61"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00005",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00005",
+          "docx_locator": "bookmark:O_O00005",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_478eddc0b5bb207f"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00004; no target substitution requested."
+    },
+    {
+      "element_id": "E00006",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00006",
+          "docx_locator": "bookmark:O_O00006",
+          "source_text": "Completed study",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_566911195456df12"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00007",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00007",
+          "docx_locator": "bookmark:O_O00007",
+          "source_text": "xx (xx.x%)",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_ef5f662d74d16f45"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00008",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00008",
+          "docx_locator": "bookmark:O_O00008",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_9204c1b8123c7715"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00006; no target substitution requested."
+    },
+    {
+      "element_id": "E00009",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00009",
+          "docx_locator": "bookmark:O_O00009",
+          "source_text": "(xx.x%)",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_e520da48da021fe8"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00006; no target substitution requested."
+    },
+    {
+      "element_id": "E00010",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00010",
+          "docx_locator": "bookmark:O_O00010",
+          "source_text": "Early withdrawal",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_204f143939294756"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00011",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00011",
+          "docx_locator": "bookmark:O_O00011",
+          "source_text": "xx (xx.x%)",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_ad600fa1306ec70a"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00012",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00012",
+          "docx_locator": "bookmark:O_O00012",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_324560cc10fe4289"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00008; no target substitution requested."
+    },
+    {
+      "element_id": "E00013",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00013",
+          "docx_locator": "bookmark:O_O00013",
+          "source_text": "(xx.x%)",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_7562e540835acf94"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00008; no target substitution requested."
+    },
+    {
+      "element_id": "E00014",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00014",
+          "docx_locator": "bookmark:O_O00014",
+          "source_text": "Reason for early withdrawal:",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_0955e3591c27f8f5"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00015",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00015",
+          "docx_locator": "bookmark:O_O00015",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_052dc48c9dd3b0a9"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00016",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00016",
+          "docx_locator": "bookmark:O_O00016",
+          "source_text": "Screening Failure",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_89b7ba793a509319"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00017",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00017",
+          "docx_locator": "bookmark:O_O00017",
+          "source_text": "xx (xx.x%)",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_d16249d2051b847b"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00018",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00018",
+          "docx_locator": "bookmark:O_O00018",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_152c90fec4356e3f"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00012; no target substitution requested."
+    },
+    {
+      "element_id": "E00019",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00019",
+          "docx_locator": "bookmark:O_O00019",
+          "source_text": "(xx.x%)",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_26e3bfbe1e205164"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00012; no target substitution requested."
+    },
+    {
+      "element_id": "E00020",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00020",
+          "docx_locator": "bookmark:O_O00020",
+          "source_text": "Lost to Follow-up",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_c7fd857419e904dd"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00021",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00021",
+          "docx_locator": "bookmark:O_O00021",
+          "source_text": "xx (xx.x%)",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_294b6674f2178466"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00022",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00022",
+          "docx_locator": "bookmark:O_O00022",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_ded39c5fa66f45c2"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00014; no target substitution requested."
+    },
+    {
+      "element_id": "E00023",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00023",
+          "docx_locator": "bookmark:O_O00023",
+          "source_text": "(xx.x%)",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_d02f39a06547c5e3"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00014; no target substitution requested."
+    },
+    {
+      "element_id": "E00024",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00024",
+          "docx_locator": "bookmark:O_O00024",
+          "source_text": "Withdrawal by Subject",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_aac8bd747522996f"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00025",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00025",
+          "docx_locator": "bookmark:O_O00025",
+          "source_text": "xx (xx.x%)",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_aa3d0ace9b1d6d05"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00026",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00026",
+          "docx_locator": "bookmark:O_O00026",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_1cc9b10f34e3a996"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00016; no target substitution requested."
+    },
+    {
+      "element_id": "E00027",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00027",
+          "docx_locator": "bookmark:O_O00027",
+          "source_text": "(xx.x%)",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_6dc45fbbbe2823c0"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00016; no target substitution requested."
+    },
+    {
+      "element_id": "E00028",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00028",
+          "docx_locator": "bookmark:O_O00028",
+          "source_text": "…",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_cb96fb201170caeb"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00029",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00029",
+          "docx_locator": "bookmark:O_O00029",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_fa76616d00d00822"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00030",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00030",
+          "docx_locator": "bookmark:O_O00030",
+          "source_text": "Analysis Sets:",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_d9bcd1421f7e2fa7"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00031",
+      "element_type": "blank_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00031",
+          "docx_locator": "bookmark:O_O00031",
+          "source_text": "",
+          "role": "blank_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_2a36a69c443ff061"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00032",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00032",
+          "docx_locator": "bookmark:O_O00032",
+          "source_text": "Safety Analysis Set (SAF)",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_73a4a38790179ca5"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00033",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00033",
+          "docx_locator": "bookmark:O_O00033",
+          "source_text": "xx (xx.x%)",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_ae758869b9cedd56"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00034",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00034",
+          "docx_locator": "bookmark:O_O00034",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_5019534e6dea489c"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00022; no target substitution requested."
+    },
+    {
+      "element_id": "E00035",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00035",
+          "docx_locator": "bookmark:O_O00035",
+          "source_text": "(xx.x%)",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_fef5e2546d311175"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00022; no target substitution requested."
+    },
+    {
+      "element_id": "E00036",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00036",
+          "docx_locator": "bookmark:O_O00036",
+          "source_text": "Intent-to-Treat Set (ITT)",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_3ee47c5fd20feb73"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00037",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00037",
+          "docx_locator": "bookmark:O_O00037",
+          "source_text": "xx (xx.x%)",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_a7491dd6f6a4a05d"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00038",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00038",
+          "docx_locator": "bookmark:O_O00038",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_56ec905eaa13b2e7"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00024; no target substitution requested."
+    },
+    {
+      "element_id": "E00039",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00039",
+          "docx_locator": "bookmark:O_O00039",
+          "source_text": "(xx.x%)",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_4a2d29b61376a09a"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00024; no target substitution requested."
+    },
+    {
+      "element_id": "E00040",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00040",
+          "docx_locator": "bookmark:O_O00040",
+          "source_text": "Full Analysis Set (FAS)",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_1d819bc7f824e756"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00041",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00041",
+          "docx_locator": "bookmark:O_O00041",
+          "source_text": "xx (xx.x%)",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_882ae9c61c7c83b9"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00042",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00042",
+          "docx_locator": "bookmark:O_O00042",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_b14719ddbd18fb40"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00026; no target substitution requested."
+    },
+    {
+      "element_id": "E00043",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00043",
+          "docx_locator": "bookmark:O_O00043",
+          "source_text": "(xx.x%)",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_768e39ded1121796"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00026; no target substitution requested."
+    },
+    {
+      "element_id": "E00044",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00044",
+          "docx_locator": "bookmark:O_O00044",
+          "source_text": "Per-Protocol Set (PPS)",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_f6ffc657d8a66a73"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00045",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00045",
+          "docx_locator": "bookmark:O_O00045",
+          "source_text": "xx (xx.x%)",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_dfa3fd3ddddc2bf9"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00046",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00046",
+          "docx_locator": "bookmark:O_O00046",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_cc87efa3c793b450"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00028; no target substitution requested."
+    },
+    {
+      "element_id": "E00047",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00047",
+          "docx_locator": "bookmark:O_O00047",
+          "source_text": "(xx.x%)",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_7e9870b2efd3a44b"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00028; no target substitution requested."
+    },
+    {
+      "element_id": "E00048",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00048",
+          "docx_locator": "bookmark:O_O00048",
+          "source_text": "Pharmacodynamics Set (PDS)",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_be110ad095fae89f"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00049",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00049",
+          "docx_locator": "bookmark:O_O00049",
+          "source_text": "xx (xx.x%)",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_15c9dd8583acd78b"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00050",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00050",
+          "docx_locator": "bookmark:O_O00050",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_df7e098812584110"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00030; no target substitution requested."
+    },
+    {
+      "element_id": "E00051",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00051",
+          "docx_locator": "bookmark:O_O00051",
+          "source_text": "(xx.x%)",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_207ad04dc8f3fba2"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00030; no target substitution requested."
+    },
+    {
+      "element_id": "E00052",
+      "element_type": "body_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00052",
+          "docx_locator": "bookmark:O_O00052",
+          "source_text": "Subgroup analysis inclusion",
+          "role": "body_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_d886f6e32782ddcc"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00053",
+      "element_type": "placeholder_cell",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00053",
+          "docx_locator": "bookmark:O_O00053",
+          "source_text": "xx (xx.x%)",
+          "role": "placeholder_cell",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_b6fdaf53180b7ef4"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Native source text/blank retained; geometry bounded by source columns and reviewed row bands."
+    },
+    {
+      "element_id": "E00054",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00054",
+          "docx_locator": "bookmark:O_O00054",
+          "source_text": "xx",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_6b3ce8420241c4f5"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00032; no target substitution requested."
+    },
+    {
+      "element_id": "E00055",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00055",
+          "docx_locator": "bookmark:O_O00055",
+          "source_text": "(xx.x%)",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_ad188deae205531d"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Within CELL00032; no target substitution requested."
+    },
+    {
+      "element_id": "E00056",
+      "element_type": "footnote",
+      "metadata_pointer": "/footnotes/0/exact_text",
+      "occurrences": [
+        {
+          "occurrence_id": "O00056",
+          "docx_locator": "bookmark:O_O00056",
+          "source_text": "Percentage is the number of patients in the category (n) divided by the number of patients within the column (N).",
+          "role": "footnote",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_5f211120cfcd9851"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Physical note retained; semantic rules deferred. Region recorded by evidence_ref_ids and physical block."
+    },
+    {
+      "element_id": "E00057",
+      "element_type": "other",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00057",
+          "docx_locator": null,
+          "source_text": "VCN Biosciences S.L. P-VCNA-003",
+          "role": "other",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_9a657b8456a49093"
+          ],
+          "verification_status": "unverified"
+        }
+      ],
+      "notes": "Corporate source header wrapper; retained for traceability, separate from shell title/header. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed."
+    },
+    {
+      "element_id": "E00058",
+      "element_type": "other",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00058",
+          "docx_locator": null,
+          "source_text": "Statistical Analysis Plan",
+          "role": "other",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_f20d9b9292a7302d"
+          ],
+          "verification_status": "unverified"
+        }
+      ],
+      "notes": "Corporate source header wrapper; retained for traceability, separate from shell title/header. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed."
+    },
+    {
+      "element_id": "E00059",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00059",
+          "docx_locator": "bookmark:O_O00059",
+          "source_text": "P-VCNA-003 ddMMMyyyy HH:MM",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_60cd1e7248dd0be7"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00060",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00060",
+          "docx_locator": "bookmark:O_O00060",
+          "source_text": "ddMMMyyyy",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_221f0e5069907dd2"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Actual source placeholder; no replacement operation."
+    },
+    {
+      "element_id": "E00061",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00061",
+          "docx_locator": "bookmark:O_O00061",
+          "source_text": "HH:MM",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_7873d20d132f34e2"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Actual source placeholder; no replacement operation."
+    },
+    {
+      "element_id": "E00062",
+      "element_type": "title",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00062",
+          "docx_locator": "bookmark:O_O00062",
+          "source_text": "Table 14.1.1 Patient Disposition (All Randomized Set)",
+          "role": "title",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_95f7719d908aaee8"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00063",
+      "element_type": "source_line",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00063",
+          "docx_locator": "bookmark:O_O00063",
+          "source_text": "Source: Listing 16.2.1.2",
+          "role": "source_line",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_a0f25f4a564ebb8e"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00064",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00064",
+          "docx_locator": "bookmark:O_O00064",
+          "source_text": "Path\\Filename Page x/y",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_9735119cb2f74a5b"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00065",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00065",
+          "docx_locator": "bookmark:O_O00065",
+          "source_text": "x/y",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_2e508d8b01f9d42b"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Actual source placeholder; no replacement operation."
+    },
+    {
+      "element_id": "E00066",
+      "element_type": "other",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00066",
+          "docx_locator": null,
+          "source_text": "Form STATt004 Page 37 of 112",
+          "role": "other",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_1370180aa3661c5a"
+          ],
+          "verification_status": "unverified"
+        }
+      ],
+      "notes": "Corporate form footer retained separately; not a clinical footnote. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed."
+    },
+    {
+      "element_id": "E00067",
+      "element_type": "other",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00067",
+          "docx_locator": null,
+          "source_text": "Version Date: 20 May 2021",
+          "role": "other",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_1b4fb030619f6a8a"
+          ],
+          "verification_status": "unverified"
+        }
+      ],
+      "notes": "Corporate form footer retained separately; not a clinical footnote. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed."
+    }
+  ],
+  "occurrence_relations": [],
+  "footnotes": [
+    {
+      "footnote_id": "FN001",
+      "marker": null,
+      "exact_text": "Percentage is the number of patients in the category (n) divided by the number of patients within the column (N).",
+      "applies_to": [],
+      "category": "study_specific",
+      "display_order": 0,
+      "applies_to_refs": [
+        {
+          "target_type": "unknown",
+          "target_id": null,
+          "panel_id": "P01",
+          "mapping_status": "unresolved"
+        }
+      ],
+      "semantic_extraction_status": "extracted",
+      "semantic_rules": [
+        {
+          "rule_id": "FN001_RULE01",
+          "rule_type": "denominator",
+          "normalized_rule": "Percentage is the number of patients in the category (n) divided by the number of patients within the column (N).",
+          "rule_status": "explicit",
+          "adaptation_field": null,
+          "evidence_ref_ids": [
+            "SRC_5f211120cfcd9851"
+          ],
+          "applies_to_refs": [
+            {
+              "target_type": "cell",
+              "target_id": "P01_R002:P01_C02",
+              "panel_id": "P01",
+              "mapping_status": "inferred"
+            },
+            {
+              "target_type": "cell",
+              "target_id": "P01_R003:P01_C02",
+              "panel_id": "P01",
+              "mapping_status": "inferred"
+            },
+            {
+              "target_type": "cell",
+              "target_id": "P01_R005:P01_C02",
+              "panel_id": "P01",
+              "mapping_status": "inferred"
+            },
+            {
+              "target_type": "cell",
+              "target_id": "P01_R006:P01_C02",
+              "panel_id": "P01",
+              "mapping_status": "inferred"
+            },
+            {
+              "target_type": "cell",
+              "target_id": "P01_R007:P01_C02",
+              "panel_id": "P01",
+              "mapping_status": "inferred"
+            },
+            {
+              "target_type": "cell",
+              "target_id": "P01_R010:P01_C02",
+              "panel_id": "P01",
+              "mapping_status": "inferred"
+            },
+            {
+              "target_type": "cell",
+              "target_id": "P01_R011:P01_C02",
+              "panel_id": "P01",
+              "mapping_status": "inferred"
+            },
+            {
+              "target_type": "cell",
+              "target_id": "P01_R012:P01_C02",
+              "panel_id": "P01",
+              "mapping_status": "inferred"
+            },
+            {
+              "target_type": "cell",
+              "target_id": "P01_R013:P01_C02",
+              "panel_id": "P01",
+              "mapping_status": "inferred"
+            },
+            {
+              "target_type": "cell",
+              "target_id": "P01_R014:P01_C02",
+              "panel_id": "P01",
+              "mapping_status": "inferred"
+            },
+            {
+              "target_type": "cell",
+              "target_id": "P01_R015:P01_C02",
+              "panel_id": "P01",
+              "mapping_status": "inferred"
+            }
+          ]
+        }
+      ],
+      "evidence_ref_ids": [
+        "SRC_5f211120cfcd9851"
+      ]
+    }
+  ],
+  "programming_notes": [],
+  "listing_rows": [],
+  "physical_cells": [
+    {
+      "cell_id": "CELL00001",
+      "panel_id": "P01",
+      "row_id": "P01_H001",
+      "column_id": "P01_C01",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "",
+      "is_blank": true,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            161,
+            110,
+            451,
+            136
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00002",
+      "panel_id": "P01",
+      "row_id": "P01_H001",
+      "column_id": "P01_C02",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "Number of patients (%)",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            451,
+            110,
+            780,
+            136
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00003",
+      "panel_id": "P01",
+      "row_id": "P01_R001",
+      "column_id": "P01_C01",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "Randomised",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            161,
+            139.27000000000004,
+            451,
+            161.23000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00004",
+      "panel_id": "P01",
+      "row_id": "P01_R001",
+      "column_id": "P01_C02",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xx",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            451,
+            139.27000000000004,
+            780,
+            161.23000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00005",
+      "panel_id": "P01",
+      "row_id": "P01_R002",
+      "column_id": "P01_C01",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "Completed study",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            161,
+            161.23000000000002,
+            451,
+            172.15000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00006",
+      "panel_id": "P01",
+      "row_id": "P01_R002",
+      "column_id": "P01_C02",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xx (xx.x%)",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            451,
+            161.23000000000002,
+            780,
+            172.15000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00007",
+      "panel_id": "P01",
+      "row_id": "P01_R003",
+      "column_id": "P01_C01",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "Early withdrawal",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            161,
+            172.15000000000003,
+            451,
+            183.22000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00008",
+      "panel_id": "P01",
+      "row_id": "P01_R003",
+      "column_id": "P01_C02",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xx (xx.x%)",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            451,
+            172.15000000000003,
+            780,
+            183.22000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00009",
+      "panel_id": "P01",
+      "row_id": "P01_R004",
+      "column_id": "P01_C01",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "Reason for early withdrawal:",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            161,
+            183.22000000000003,
+            451,
+            194.26000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00010",
+      "panel_id": "P01",
+      "row_id": "P01_R004",
+      "column_id": "P01_C02",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "",
+      "is_blank": true,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            451,
+            183.22000000000003,
+            780,
+            194.26000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00011",
+      "panel_id": "P01",
+      "row_id": "P01_R005",
+      "column_id": "P01_C01",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "Screening Failure",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            161,
+            194.26000000000005,
+            451,
+            205.18000000000006
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00012",
+      "panel_id": "P01",
+      "row_id": "P01_R005",
+      "column_id": "P01_C02",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xx (xx.x%)",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            451,
+            194.26000000000005,
+            780,
+            205.18000000000006
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00013",
+      "panel_id": "P01",
+      "row_id": "P01_R006",
+      "column_id": "P01_C01",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "Lost to Follow-up",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            161,
+            205.18000000000006,
+            451,
+            216.22000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00014",
+      "panel_id": "P01",
+      "row_id": "P01_R006",
+      "column_id": "P01_C02",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xx (xx.x%)",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            451,
+            205.18000000000006,
+            780,
+            216.22000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00015",
+      "panel_id": "P01",
+      "row_id": "P01_R007",
+      "column_id": "P01_C01",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "Withdrawal by Subject",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            161,
+            216.22000000000003,
+            451,
+            227.14000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00016",
+      "panel_id": "P01",
+      "row_id": "P01_R007",
+      "column_id": "P01_C02",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xx (xx.x%)",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            451,
+            216.22000000000003,
+            780,
+            227.14000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00017",
+      "panel_id": "P01",
+      "row_id": "P01_R008",
+      "column_id": "P01_C01",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "…",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            161,
+            227.14000000000004,
+            451,
+            249.10000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00018",
+      "panel_id": "P01",
+      "row_id": "P01_R008",
+      "column_id": "P01_C02",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "",
+      "is_blank": true,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            451,
+            227.14000000000004,
+            780,
+            249.10000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00019",
+      "panel_id": "P01",
+      "row_id": "P01_R009",
+      "column_id": "P01_C01",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "Analysis Sets:",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            161,
+            249.10000000000002,
+            451,
+            260.14000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00020",
+      "panel_id": "P01",
+      "row_id": "P01_R009",
+      "column_id": "P01_C02",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "",
+      "is_blank": true,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            451,
+            249.10000000000002,
+            780,
+            260.14000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00021",
+      "panel_id": "P01",
+      "row_id": "P01_R010",
+      "column_id": "P01_C01",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "Safety Analysis Set (SAF)",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            161,
+            260.14000000000004,
+            451,
+            271.06000000000006
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00022",
+      "panel_id": "P01",
+      "row_id": "P01_R010",
+      "column_id": "P01_C02",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xx (xx.x%)",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            451,
+            260.14000000000004,
+            780,
+            271.06000000000006
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00023",
+      "panel_id": "P01",
+      "row_id": "P01_R011",
+      "column_id": "P01_C01",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "Intent-to-Treat Set (ITT)",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            161,
+            271.06000000000006,
+            451,
+            282.1
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00024",
+      "panel_id": "P01",
+      "row_id": "P01_R011",
+      "column_id": "P01_C02",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xx (xx.x%)",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            451,
+            271.06000000000006,
+            780,
+            282.1
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00025",
+      "panel_id": "P01",
+      "row_id": "P01_R012",
+      "column_id": "P01_C01",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "Full Analysis Set (FAS)",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            161,
+            282.1,
+            451,
+            293.14000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00026",
+      "panel_id": "P01",
+      "row_id": "P01_R012",
+      "column_id": "P01_C02",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xx (xx.x%)",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            451,
+            282.1,
+            780,
+            293.14000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00027",
+      "panel_id": "P01",
+      "row_id": "P01_R013",
+      "column_id": "P01_C01",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "Per-Protocol Set (PPS)",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            161,
+            293.14000000000004,
+            451,
+            304.06000000000006
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00028",
+      "panel_id": "P01",
+      "row_id": "P01_R013",
+      "column_id": "P01_C02",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xx (xx.x%)",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            451,
+            293.14000000000004,
+            780,
+            304.06000000000006
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00029",
+      "panel_id": "P01",
+      "row_id": "P01_R014",
+      "column_id": "P01_C01",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "Pharmacodynamics Set (PDS)",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            161,
+            304.06000000000006,
+            451,
+            326.04
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00030",
+      "panel_id": "P01",
+      "row_id": "P01_R014",
+      "column_id": "P01_C02",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xx (xx.x%)",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            451,
+            304.06000000000006,
+            780,
+            326.04
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00031",
+      "panel_id": "P01",
+      "row_id": "P01_R015",
+      "column_id": "P01_C01",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "Subgroup analysis inclusion",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            161,
+            326.04,
+            451,
+            340
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "cell_id": "CELL00032",
+      "panel_id": "P01",
+      "row_id": "P01_R015",
+      "column_id": "P01_C02",
+      "row_span": 1,
+      "column_span": 1,
+      "text": "xx (xx.x%)",
+      "is_blank": false,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            451,
+            326.04,
+            780,
+            340
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    }
+  ],
+  "issues": [
+    {
+      "issue_id": "PVCNA003_T_14_1_1_I001",
+      "template_id": "PVCNA003_T_14_1_1",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Each physical note has its own ID, text, display order, evidence region and source occurrence. Unmarked or unconfirmed scopes remain unknown/unresolved; semantic_rules=[] and needs_review. Marker-supported [a]/[b]/[c] associations are captured where visible.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 经用户接受的已知限制，延期保留。原文、证据及不确定/冲突状态不变；本次批准不消除来源缺陷，不推断脚注范围，不声称独立审核已执行。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_T_14_1_1_I002",
+      "template_id": "PVCNA003_T_14_1_1",
+      "severity": "info",
+      "category": "independent_qa_pending",
+      "description": "Source-region images, word coordinates, full native text coverage and static references have been checked by the executing agent. Independent final visual/clinical QA is not_run. Source blank continuation cells remain blank; no unseen rowspans asserted. Source-supported physical ambiguities, where present, remain open in separate issues.\nHuman disposition 2026-11-11 (qa/Human_Approval_2026-11-11.json): 用户人工审核及库使用批准已记录；历史独立visual/semantic not_run继续保留并作为已接受限制延期，不视为Agent完成该检查。",
+      "status": "deferred",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 11,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    }
+  ],
+  "table_spec": {
+    "rows": [
+      {
+        "id": "P01_H001",
+        "order": 0,
+        "parent_id": null,
+        "label": "",
+        "role": "other",
+        "statistic": null,
+        "placeholder": null,
+        "editable": true
+      },
+      {
+        "id": "P01_R001",
+        "order": 1,
+        "parent_id": null,
+        "label": "Randomised",
+        "role": "category",
+        "statistic": null,
+        "placeholder": "xx",
+        "editable": true
+      },
+      {
+        "id": "P01_R002",
+        "order": 2,
+        "parent_id": null,
+        "label": "Completed study",
+        "role": "category",
+        "statistic": null,
+        "placeholder": "xx (xx.x%)",
+        "editable": true
+      },
+      {
+        "id": "P01_R003",
+        "order": 3,
+        "parent_id": null,
+        "label": "Early withdrawal",
+        "role": "category",
+        "statistic": null,
+        "placeholder": "xx (xx.x%)",
+        "editable": true
+      },
+      {
+        "id": "P01_R004",
+        "order": 4,
+        "parent_id": "P01_R003",
+        "label": "Reason for early withdrawal:",
+        "role": "category",
+        "statistic": null,
+        "placeholder": null,
+        "editable": true
+      },
+      {
+        "id": "P01_R005",
+        "order": 5,
+        "parent_id": "P01_R004",
+        "label": "Screening Failure",
+        "role": "category",
+        "statistic": null,
+        "placeholder": "xx (xx.x%)",
+        "editable": true
+      },
+      {
+        "id": "P01_R006",
+        "order": 6,
+        "parent_id": "P01_R004",
+        "label": "Lost to Follow-up",
+        "role": "category",
+        "statistic": null,
+        "placeholder": "xx (xx.x%)",
+        "editable": true
+      },
+      {
+        "id": "P01_R007",
+        "order": 7,
+        "parent_id": "P01_R004",
+        "label": "Withdrawal by Subject",
+        "role": "category",
+        "statistic": null,
+        "placeholder": "xx (xx.x%)",
+        "editable": true
+      },
+      {
+        "id": "P01_R008",
+        "order": 8,
+        "parent_id": "P01_R004",
+        "label": "…",
+        "role": "category",
+        "statistic": null,
+        "placeholder": null,
+        "editable": true
+      },
+      {
+        "id": "P01_R009",
+        "order": 9,
+        "parent_id": null,
+        "label": "Analysis Sets:",
+        "role": "category",
+        "statistic": null,
+        "placeholder": null,
+        "editable": true
+      },
+      {
+        "id": "P01_R010",
+        "order": 10,
+        "parent_id": "P01_R009",
+        "label": "Safety Analysis Set (SAF)",
+        "role": "category",
+        "statistic": null,
+        "placeholder": "xx (xx.x%)",
+        "editable": true
+      },
+      {
+        "id": "P01_R011",
+        "order": 11,
+        "parent_id": "P01_R009",
+        "label": "Intent-to-Treat Set (ITT)",
+        "role": "category",
+        "statistic": null,
+        "placeholder": "xx (xx.x%)",
+        "editable": true
+      },
+      {
+        "id": "P01_R012",
+        "order": 12,
+        "parent_id": "P01_R009",
+        "label": "Full Analysis Set (FAS)",
+        "role": "category",
+        "statistic": null,
+        "placeholder": "xx (xx.x%)",
+        "editable": true
+      },
+      {
+        "id": "P01_R013",
+        "order": 13,
+        "parent_id": "P01_R009",
+        "label": "Per-Protocol Set (PPS)",
+        "role": "category",
+        "statistic": null,
+        "placeholder": "xx (xx.x%)",
+        "editable": true
+      },
+      {
+        "id": "P01_R014",
+        "order": 14,
+        "parent_id": "P01_R009",
+        "label": "Pharmacodynamics Set (PDS)",
+        "role": "category",
+        "statistic": null,
+        "placeholder": "xx (xx.x%)",
+        "editable": true
+      },
+      {
+        "id": "P01_R015",
+        "order": 15,
+        "parent_id": null,
+        "label": "Subgroup analysis inclusion",
+        "role": "category",
+        "statistic": null,
+        "placeholder": "xx (xx.x%)",
+        "editable": true
+      }
+    ],
+    "columns": [
+      {
+        "id": "P01_C01",
+        "order": 0,
+        "parent_id": null,
+        "label": "",
+        "role": "stub",
+        "placeholder": null,
+        "editable": true
+      },
+      {
+        "id": "P01_C02",
+        "order": 1,
+        "parent_id": null,
+        "label": "Number of patients (%)",
+        "role": "stub",
+        "placeholder": null,
+        "editable": true
+      }
+    ],
+    "statistics": [],
+    "denominator_rule": null,
+    "cell_rules": [
+      {
+        "row_id": "P01_R001",
+        "column_id": "P01_C02",
+        "display_format": null,
+        "placeholder": "xx",
+        "rule_description": "Source placeholder retained at its observed physical row/column; no analysis or target rule inferred."
+      },
+      {
+        "row_id": "P01_R002",
+        "column_id": "P01_C02",
+        "display_format": null,
+        "placeholder": "xx (xx.x%)",
+        "rule_description": "Source placeholder retained at its observed physical row/column; no analysis or target rule inferred."
+      },
+      {
+        "row_id": "P01_R003",
+        "column_id": "P01_C02",
+        "display_format": null,
+        "placeholder": "xx (xx.x%)",
+        "rule_description": "Source placeholder retained at its observed physical row/column; no analysis or target rule inferred."
+      },
+      {
+        "row_id": "P01_R005",
+        "column_id": "P01_C02",
+        "display_format": null,
+        "placeholder": "xx (xx.x%)",
+        "rule_description": "Source placeholder retained at its observed physical row/column; no analysis or target rule inferred."
+      },
+      {
+        "row_id": "P01_R006",
+        "column_id": "P01_C02",
+        "display_format": null,
+        "placeholder": "xx (xx.x%)",
+        "rule_description": "Source placeholder retained at its observed physical row/column; no analysis or target rule inferred."
+      },
+      {
+        "row_id": "P01_R007",
+        "column_id": "P01_C02",
+        "display_format": null,
+        "placeholder": "xx (xx.x%)",
+        "rule_description": "Source placeholder retained at its observed physical row/column; no analysis or target rule inferred."
+      },
+      {
+        "row_id": "P01_R010",
+        "column_id": "P01_C02",
+        "display_format": null,
+        "placeholder": "xx (xx.x%)",
+        "rule_description": "Source placeholder retained at its observed physical row/column; no analysis or target rule inferred."
+      },
+      {
+        "row_id": "P01_R011",
+        "column_id": "P01_C02",
+        "display_format": null,
+        "placeholder": "xx (xx.x%)",
+        "rule_description": "Source placeholder retained at its observed physical row/column; no analysis or target rule inferred."
+      },
+      {
+        "row_id": "P01_R012",
+        "column_id": "P01_C02",
+        "display_format": null,
+        "placeholder": "xx (xx.x%)",
+        "rule_description": "Source placeholder retained at its observed physical row/column; no analysis or target rule inferred."
+      },
+      {
+        "row_id": "P01_R013",
+        "column_id": "P01_C02",
+        "display_format": null,
+        "placeholder": "xx (xx.x%)",
+        "rule_description": "Source placeholder retained at its observed physical row/column; no analysis or target rule inferred."
+      },
+      {
+        "row_id": "P01_R014",
+        "column_id": "P01_C02",
+        "display_format": null,
+        "placeholder": "xx (xx.x%)",
+        "rule_description": "Source placeholder retained at its observed physical row/column; no analysis or target rule inferred."
+      },
+      {
+        "row_id": "P01_R015",
+        "column_id": "P01_C02",
+        "display_format": null,
+        "placeholder": "xx (xx.x%)",
+        "rule_description": "Source placeholder retained at its observed physical row/column; no analysis or target rule inferred."
+      }
+    ],
+    "header_row_count": 1,
+    "merged_cell_notes": [
+      "Only explicit multi-column header spans are asserted. Visually blank continuation cells are retained as blanks; row merging is not inferred from repeated or absent strings."
+    ],
+    "orientation": "landscape",
+    "layout_notes": [
+      "Columns and body row bands selected from source-region images and word coordinates; see checkpoints/Structure_Region_Plan.json and PDF character/line evidence.",
+      "parent_id encodes visible stub indentation or source blank-stub continuation with a visible statistic/category. It does not infer ownership of unlabeled result-only rows. No source row is added or combined."
+    ],
+    "panels": [
+      {
+        "panel_id": "P01",
+        "title": "Table 14.1.1 Patient Disposition (All Randomized Set)",
+        "page_numbers": [
+          11
+        ],
+        "column_ids": [
+          "P01_C01",
+          "P01_C02"
+        ],
+        "row_ids": [
+          "P01_H001",
+          "P01_R001",
+          "P01_R002",
+          "P01_R003",
+          "P01_R004",
+          "P01_R005",
+          "P01_R006",
+          "P01_R007",
+          "P01_R008",
+          "P01_R009",
+          "P01_R010",
+          "P01_R011",
+          "P01_R012",
+          "P01_R013",
+          "P01_R014",
+          "P01_R015"
+        ],
+        "notes": "Source physical page/panel; continuation pages retain separate geometry within the same shell. Blank cells are visually empty within these row bands; no fill-down or invented rowspan."
+      }
+    ]
+  }
+}

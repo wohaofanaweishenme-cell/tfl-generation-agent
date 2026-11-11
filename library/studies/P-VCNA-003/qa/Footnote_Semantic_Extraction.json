@@ -1,0 +1,662 @@
+{
+  "note": "Agent-authored clause interpretation of inspected supplied source only; physical notes and scopes are unchanged.",
+  "records": [
+    {
+      "template_id": "PVCNA003_T_14_1_1",
+      "footnote_id": "FN001",
+      "source_text_sha256": "3536e61118b78db6a11af951980ca34a0e9fc1c4db1d464ded43a510dc859f04",
+      "semantic_extraction_status": "extracted",
+      "rules": 1,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_1_2_1",
+      "footnote_id": "FN001",
+      "source_text_sha256": "3536e61118b78db6a11af951980ca34a0e9fc1c4db1d464ded43a510dc859f04",
+      "semantic_extraction_status": "extracted",
+      "rules": 1,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_1_2_1",
+      "footnote_id": "FN002",
+      "source_text_sha256": "cb9f6cdcdc0314ff863757bccbdfcad6b0a6162be485fef2383906f2145106d2",
+      "semantic_extraction_status": "extracted",
+      "rules": 2,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_1_2_1",
+      "footnote_id": "FN003",
+      "source_text_sha256": "f53b332a14903f91d476a3e735cc6e10ee8c4f15dcd40400e65018ed257614a7",
+      "semantic_extraction_status": "extracted",
+      "rules": 1,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_1_3",
+      "footnote_id": "FN001",
+      "source_text_sha256": "3536e61118b78db6a11af951980ca34a0e9fc1c4db1d464ded43a510dc859f04",
+      "semantic_extraction_status": "extracted",
+      "rules": 1,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_1_3",
+      "footnote_id": "FN002",
+      "source_text_sha256": "466fbd5e1375dfc26097ccdfef5ec7f5a176eaf69aac2e2507928494d5855df5",
+      "semantic_extraction_status": "extracted",
+      "rules": 2,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_2_1_1",
+      "footnote_id": "FN001",
+      "source_text_sha256": "870e1a6479c445b323f0e661e3bd54f48cc614df21c18970833fb5dfe0c43b7c",
+      "semantic_extraction_status": "extracted",
+      "rules": 2,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_2_1_1",
+      "footnote_id": "FN002",
+      "source_text_sha256": "3d2236eed3c50f74752e2d4b5fbaf150d1fed321217da758cff040cd96d20f2d",
+      "semantic_extraction_status": "extracted",
+      "rules": 1,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_2_2_7",
+      "footnote_id": "FN001",
+      "source_text_sha256": "3536e61118b78db6a11af951980ca34a0e9fc1c4db1d464ded43a510dc859f04",
+      "semantic_extraction_status": "extracted",
+      "rules": 1,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_2_2_7",
+      "footnote_id": "FN002",
+      "source_text_sha256": "0835df1ca9906347ac7ca3a7c6b9d29534f8c77d136118f128a268294fee312b",
+      "semantic_extraction_status": "extracted",
+      "rules": 1,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_2_2_7",
+      "footnote_id": "FN003",
+      "source_text_sha256": "5f3009d1e2ba40a724ee0ace542de47bb4cfc4cc1ff1549593c4cf5c8c70cc70",
+      "semantic_extraction_status": "extracted",
+      "rules": 1,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_2_2_7",
+      "footnote_id": "FN004",
+      "source_text_sha256": "ce35ee807588bfa1f4b859046368f560c2d4ba97a5a178b524a8e351aead5e55",
+      "semantic_extraction_status": "extracted",
+      "rules": 2,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_2_2_13",
+      "footnote_id": "FN001",
+      "source_text_sha256": "3536e61118b78db6a11af951980ca34a0e9fc1c4db1d464ded43a510dc859f04",
+      "semantic_extraction_status": "extracted",
+      "rules": 1,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_2_2_13",
+      "footnote_id": "FN002",
+      "source_text_sha256": "0835df1ca9906347ac7ca3a7c6b9d29534f8c77d136118f128a268294fee312b",
+      "semantic_extraction_status": "extracted",
+      "rules": 1,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_2_2_13",
+      "footnote_id": "FN003",
+      "source_text_sha256": "5f3009d1e2ba40a724ee0ace542de47bb4cfc4cc1ff1549593c4cf5c8c70cc70",
+      "semantic_extraction_status": "extracted",
+      "rules": 1,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_2_2_13",
+      "footnote_id": "FN004",
+      "source_text_sha256": "f81cd5518170321c3fe10de45dc08c03ea99e04aa818a2024f87d82f8039769e",
+      "semantic_extraction_status": "extracted",
+      "rules": 3,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_2_2_17",
+      "footnote_id": "FN001",
+      "source_text_sha256": "3536e61118b78db6a11af951980ca34a0e9fc1c4db1d464ded43a510dc859f04",
+      "semantic_extraction_status": "extracted",
+      "rules": 1,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_2_2_17",
+      "footnote_id": "FN002",
+      "source_text_sha256": "0835df1ca9906347ac7ca3a7c6b9d29534f8c77d136118f128a268294fee312b",
+      "semantic_extraction_status": "extracted",
+      "rules": 1,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_2_2_17",
+      "footnote_id": "FN003",
+      "source_text_sha256": "5f3009d1e2ba40a724ee0ace542de47bb4cfc4cc1ff1549593c4cf5c8c70cc70",
+      "semantic_extraction_status": "extracted",
+      "rules": 1,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_1_1",
+      "footnote_id": "FN001",
+      "source_text_sha256": "d96813ac1ce382f324368b2599127c5587a11a9d07f95747ac269a20fd96eaa0",
+      "semantic_extraction_status": "extracted",
+      "rules": 2,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_1_1",
+      "footnote_id": "FN002",
+      "source_text_sha256": "3536e61118b78db6a11af951980ca34a0e9fc1c4db1d464ded43a510dc859f04",
+      "semantic_extraction_status": "extracted",
+      "rules": 1,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_1_1",
+      "footnote_id": "FN003",
+      "source_text_sha256": "466fbd5e1375dfc26097ccdfef5ec7f5a176eaf69aac2e2507928494d5855df5",
+      "semantic_extraction_status": "extracted",
+      "rules": 2,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_1_2",
+      "footnote_id": "FN001",
+      "source_text_sha256": "3724bbc7e25bc6a5ce8f294e1ba46a1686326a93c201a309019476d32cddf7b4",
+      "semantic_extraction_status": "extracted",
+      "rules": 2,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_1_2",
+      "footnote_id": "FN002",
+      "source_text_sha256": "3536e61118b78db6a11af951980ca34a0e9fc1c4db1d464ded43a510dc859f04",
+      "semantic_extraction_status": "extracted",
+      "rules": 1,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_1_2",
+      "footnote_id": "FN003",
+      "source_text_sha256": "466fbd5e1375dfc26097ccdfef5ec7f5a176eaf69aac2e2507928494d5855df5",
+      "semantic_extraction_status": "extracted",
+      "rules": 2,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_1_3",
+      "footnote_id": "FN001",
+      "source_text_sha256": "3cde4ae4c3d58ffb6132fd1acd6cda17be768add378596d0e98535b510a466c6",
+      "semantic_extraction_status": "extracted",
+      "rules": 2,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_1_3",
+      "footnote_id": "FN002",
+      "source_text_sha256": "3536e61118b78db6a11af951980ca34a0e9fc1c4db1d464ded43a510dc859f04",
+      "semantic_extraction_status": "extracted",
+      "rules": 1,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_1_3",
+      "footnote_id": "FN003",
+      "source_text_sha256": "466fbd5e1375dfc26097ccdfef5ec7f5a176eaf69aac2e2507928494d5855df5",
+      "semantic_extraction_status": "extracted",
+      "rules": 2,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_1_4",
+      "footnote_id": "FN001",
+      "source_text_sha256": "25d55d805af0536de418ae320ec7a903574a54bdb7cdc0361e02ce6d1a21f464",
+      "semantic_extraction_status": "extracted",
+      "rules": 2,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_1_4",
+      "footnote_id": "FN002",
+      "source_text_sha256": "3536e61118b78db6a11af951980ca34a0e9fc1c4db1d464ded43a510dc859f04",
+      "semantic_extraction_status": "extracted",
+      "rules": 1,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_1_4",
+      "footnote_id": "FN003",
+      "source_text_sha256": "466fbd5e1375dfc26097ccdfef5ec7f5a176eaf69aac2e2507928494d5855df5",
+      "semantic_extraction_status": "extracted",
+      "rules": 2,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_2_1",
+      "footnote_id": "FN001",
+      "source_text_sha256": "73215ce9dde99b03ca853daf570474fb9c67dd32cbfff5c238e02f95de8b6b5d",
+      "semantic_extraction_status": "extracted",
+      "rules": 1,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_2_1",
+      "footnote_id": "FN002",
+      "source_text_sha256": "466fbd5e1375dfc26097ccdfef5ec7f5a176eaf69aac2e2507928494d5855df5",
+      "semantic_extraction_status": "extracted",
+      "rules": 2,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_2_1",
+      "footnote_id": "FN003",
+      "source_text_sha256": "dedb72f8121bb77faca9e160e214604f5f813b6a03c2bd6568c12bfe70405b26",
+      "semantic_extraction_status": "extracted",
+      "rules": 1,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_2_1",
+      "footnote_id": "FN004",
+      "source_text_sha256": "bef0c317d0af3fbda2fb28194eea127ee6400fa0092dcfc72ef1bbe4b949a8c8",
+      "semantic_extraction_status": "extracted",
+      "rules": 2,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_2_1",
+      "footnote_id": "FN005",
+      "source_text_sha256": "466fbd5e1375dfc26097ccdfef5ec7f5a176eaf69aac2e2507928494d5855df5",
+      "semantic_extraction_status": "extracted",
+      "rules": 2,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_3",
+      "footnote_id": "FN001",
+      "source_text_sha256": "6da80b6fe7cba60e9686be07856fd457a5e7b4897bed874292bf9aac9bd171f0",
+      "semantic_extraction_status": "extracted",
+      "rules": 2,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_4_6",
+      "footnote_id": "FN001",
+      "source_text_sha256": "3536e61118b78db6a11af951980ca34a0e9fc1c4db1d464ded43a510dc859f04",
+      "semantic_extraction_status": "extracted",
+      "rules": 1,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_5_2",
+      "footnote_id": "FN001",
+      "source_text_sha256": "3536e61118b78db6a11af951980ca34a0e9fc1c4db1d464ded43a510dc859f04",
+      "semantic_extraction_status": "extracted",
+      "rules": 1,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_6",
+      "footnote_id": "FN001",
+      "source_text_sha256": "3536e61118b78db6a11af951980ca34a0e9fc1c4db1d464ded43a510dc859f04",
+      "semantic_extraction_status": "extracted",
+      "rules": 1,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_8",
+      "footnote_id": "FN001",
+      "source_text_sha256": "3536e61118b78db6a11af951980ca34a0e9fc1c4db1d464ded43a510dc859f04",
+      "semantic_extraction_status": "extracted",
+      "rules": 1,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_9",
+      "footnote_id": "FN001",
+      "source_text_sha256": "3536e61118b78db6a11af951980ca34a0e9fc1c4db1d464ded43a510dc859f04",
+      "semantic_extraction_status": "extracted",
+      "rules": 1,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_9",
+      "footnote_id": "FN002",
+      "source_text_sha256": "4eed9b020d109285d9c4db9ceb78be6f9e9281e3ebb0d58681bfa81a5388c258",
+      "semantic_extraction_status": "extracted",
+      "rules": 2,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_10",
+      "footnote_id": "FN001",
+      "source_text_sha256": "7979b57585beacc2152adceca37ec55ddf316819de254e18ec5c764d416f5b62",
+      "semantic_extraction_status": "extracted",
+      "rules": 1,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_10",
+      "footnote_id": "FN002",
+      "source_text_sha256": "2e46454e332640c8236f2b4ee8542a34743565350799c960ec35c7c00f67c0fa",
+      "semantic_extraction_status": "extracted",
+      "rules": 3,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_10",
+      "footnote_id": "FN003",
+      "source_text_sha256": "11e8b37ad4ff133ec01dd61c832c83f73a12125a680e2ccd6fd4428acd80047b",
+      "semantic_extraction_status": "extracted",
+      "rules": 1,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_10",
+      "footnote_id": "FN004",
+      "source_text_sha256": "b251851b0e5005446df46337f8cb79f0bc4e75eba90ce7ca22ed91a78be4f934",
+      "semantic_extraction_status": "extracted",
+      "rules": 1,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_11_1",
+      "footnote_id": "FN001",
+      "source_text_sha256": "8cca96f985208e965a6d593cf4d3cd4af69b01a91ca5e881ecb2c9a1b1db90e5",
+      "semantic_extraction_status": "extracted",
+      "rules": 2,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_11_1",
+      "footnote_id": "FN002",
+      "source_text_sha256": "d63c7ddd1405e5001862afbef071108fd764371821a3edb0159c278f62c2230f",
+      "semantic_extraction_status": "extracted",
+      "rules": 1,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_11_1",
+      "footnote_id": "FN003",
+      "source_text_sha256": "3536e61118b78db6a11af951980ca34a0e9fc1c4db1d464ded43a510dc859f04",
+      "semantic_extraction_status": "extracted",
+      "rules": 1,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_3_11_1",
+      "footnote_id": "FN004",
+      "source_text_sha256": "4eed9b020d109285d9c4db9ceb78be6f9e9281e3ebb0d58681bfa81a5388c258",
+      "semantic_extraction_status": "extracted",
+      "rules": 2,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_T_14_5_1",
+      "footnote_id": "FN001",
+      "source_text_sha256": "0a7f45be50abfa5d76bbfce0e0dbaedaf642ebd443e064a0e6453c57f0160c1f",
+      "semantic_extraction_status": "extracted",
+      "rules": 1,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_F_14_2_1",
+      "footnote_id": "FN001",
+      "source_text_sha256": "76c5c31b5c44d0c0561aa33bbb4da641f2df7b585a6556c03f68a0376ed2e823",
+      "semantic_extraction_status": "extracted",
+      "rules": 1,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_F_14_3_1",
+      "footnote_id": "FN001",
+      "source_text_sha256": "269b736027a22bf7b2bbf66bf6811b4cf9834b0fc76fb2b0e075f735f19ead3f",
+      "semantic_extraction_status": "extracted",
+      "rules": 2,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_1_2",
+      "footnote_id": "FN001",
+      "source_text_sha256": "0e46e5daf026db501b62c030dc839d4ac9c3cd8c2978a99dd8cb123cad9335ff",
+      "semantic_extraction_status": "extracted",
+      "rules": 2,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_1_2",
+      "footnote_id": "FN002",
+      "source_text_sha256": "b8ddd54b0c97463d6a684f91d4de5474a128302a72a0a1428ddb1e2350fc9634",
+      "semantic_extraction_status": "extracted",
+      "rules": 2,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_1_3",
+      "footnote_id": "FN001",
+      "source_text_sha256": "3d143770f978dde3c67c2017eeadca7accab8473fa1f6d5926c37877b61221d6",
+      "semantic_extraction_status": "extracted",
+      "rules": 1,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_1_4",
+      "footnote_id": "FN001",
+      "source_text_sha256": "3d143770f978dde3c67c2017eeadca7accab8473fa1f6d5926c37877b61221d6",
+      "semantic_extraction_status": "extracted",
+      "rules": 1,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_4_2",
+      "footnote_id": "FN001",
+      "source_text_sha256": "466fbd5e1375dfc26097ccdfef5ec7f5a176eaf69aac2e2507928494d5855df5",
+      "semantic_extraction_status": "extracted",
+      "rules": 2,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_6_5",
+      "footnote_id": "FN001",
+      "source_text_sha256": "6da80b6fe7cba60e9686be07856fd457a5e7b4897bed874292bf9aac9bd171f0",
+      "semantic_extraction_status": "extracted",
+      "rules": 2,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_7_1",
+      "footnote_id": "FN001",
+      "source_text_sha256": "73215ce9dde99b03ca853daf570474fb9c67dd32cbfff5c238e02f95de8b6b5d",
+      "semantic_extraction_status": "extracted",
+      "rules": 1,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_7_1",
+      "footnote_id": "FN002",
+      "source_text_sha256": "466fbd5e1375dfc26097ccdfef5ec7f5a176eaf69aac2e2507928494d5855df5",
+      "semantic_extraction_status": "extracted",
+      "rules": 2,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_7_1",
+      "footnote_id": "FN003",
+      "source_text_sha256": "dedb72f8121bb77faca9e160e214604f5f813b6a03c2bd6568c12bfe70405b26",
+      "semantic_extraction_status": "extracted",
+      "rules": 1,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_7_1",
+      "footnote_id": "FN004",
+      "source_text_sha256": "bef0c317d0af3fbda2fb28194eea127ee6400fa0092dcfc72ef1bbe4b949a8c8",
+      "semantic_extraction_status": "extracted",
+      "rules": 2,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_7_1",
+      "footnote_id": "FN005",
+      "source_text_sha256": "466fbd5e1375dfc26097ccdfef5ec7f5a176eaf69aac2e2507928494d5855df5",
+      "semantic_extraction_status": "extracted",
+      "rules": 2,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_8_1",
+      "footnote_id": "FN001",
+      "source_text_sha256": "98048173dbb8b006e3b840bffec39452d7fe51112502c98125a6c7b782c32f3e",
+      "semantic_extraction_status": "extracted",
+      "rules": 2,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_8_5",
+      "footnote_id": "FN001",
+      "source_text_sha256": "98048173dbb8b006e3b840bffec39452d7fe51112502c98125a6c7b782c32f3e",
+      "semantic_extraction_status": "extracted",
+      "rules": 2,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_9",
+      "footnote_id": "FN001",
+      "source_text_sha256": "98048173dbb8b006e3b840bffec39452d7fe51112502c98125a6c7b782c32f3e",
+      "semantic_extraction_status": "extracted",
+      "rules": 2,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_10",
+      "footnote_id": "FN001",
+      "source_text_sha256": "98048173dbb8b006e3b840bffec39452d7fe51112502c98125a6c7b782c32f3e",
+      "semantic_extraction_status": "extracted",
+      "rules": 2,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_11",
+      "footnote_id": "FN001",
+      "source_text_sha256": "98048173dbb8b006e3b840bffec39452d7fe51112502c98125a6c7b782c32f3e",
+      "semantic_extraction_status": "extracted",
+      "rules": 2,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_12",
+      "footnote_id": "FN001",
+      "source_text_sha256": "4eed9b020d109285d9c4db9ceb78be6f9e9281e3ebb0d58681bfa81a5388c258",
+      "semantic_extraction_status": "extracted",
+      "rules": 2,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_12",
+      "footnote_id": "FN002",
+      "source_text_sha256": "4eed9b020d109285d9c4db9ceb78be6f9e9281e3ebb0d58681bfa81a5388c258",
+      "semantic_extraction_status": "extracted",
+      "rules": 2,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    },
+    {
+      "template_id": "PVCNA003_L_16_2_18",
+      "footnote_id": "FN001",
+      "source_text_sha256": "4eed9b020d109285d9c4db9ceb78be6f9e9281e3ebb0d58681bfa81a5388c258",
+      "semantic_extraction_status": "extracted",
+      "rules": 2,
+      "interpretation": "agent-authored faithful source paraphrase; not an approved default",
+      "physical_scope_unchanged": true
+    }
+  ]
+}

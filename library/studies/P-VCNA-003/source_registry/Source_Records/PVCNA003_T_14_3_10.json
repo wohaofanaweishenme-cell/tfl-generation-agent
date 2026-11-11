@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.4",
+  "template_id": "PVCNA003_T_14_3_10",
+  "source_regions": [
+    {
+      "document_id": "SAP_001_11",
+      "pdf_page": 36,
+      "bbox": [
+        0,
+        0,
+        841.9200000000001,
+        595.32
+      ],
+      "coordinate_system": "pdf_points_top_left"
+    },
+    {
+      "document_id": "SAP_001_11",
+      "pdf_page": 37,
+      "bbox": [
+        0,
+        0,
+        841.9200000000001,
+        595.32
+      ],
+      "coordinate_system": "pdf_points_top_left"
+    }
+  ],
+  "source_docx_locations": [],
+  "text_checkpoints": [
+    {
+      "document_id": "SAP_001_11",
+      "location": "PDF physical page 36; owned region in source_regions; printed page 62",
+      "text": "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.3.10 Study Drug Exposure and Compliance (Safety Analysis Set)\nArm I\n(N=xx)\n(Nab-paclitaxel and gemcitabine)\nArm II\n(VCN-01 with Nab-paclitaxel and\ngemcitabine)\n(N=xx)\nTreatment duration (days) n xx xx\nMean xx xx\nSTD xx xx\nMedian xx xx\nMinimum xx xx\nMaximum xx xx\n<Treatment> administration Number of doses n xx xx\nMean xx xx\nSTD xx xx\nMedian xx xx\nMinimum xx xx\nMaximum xx xx\nTotal dose administered\n(unit)\nn Xx xx\nMean xx xx\n…\nDose intensity (unit) n xx xx\nMean xx xx\n…\nRelative dose intensity (%) n xx xx\nMean xx xx\n…\nDose prolongation[a] Yes xx xx (%) xx xx (%)\nNo xx xx (%) xx xx (%)\nForm STATt004\nVersion Date: 20 May 2021\nPage 62 of 112",
+      "readable": true
+    },
+    {
+      "document_id": "SAP_001_11",
+      "location": "PDF physical page 37; owned region in source_regions; printed page 63",
+      "text": "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nDose Interruption[a] Yes xx xx (%) xx xx (%)\nNo xx xx (%) xx xx (%)\nDose Reduction[a] Yes xx xx (%) xx xx (%)\nNo xx xx (%) xx xx (%)\nReason for dose\nreduction[a] [b]\nxxxxxx xx xx (%) xx xx (%)\nxxxxxx xx xx (%) xx xx (%)\nxxxxxx xx xx (%) xx xx (%)\nTreatment compliance[c] Mean xx xx\nSTD xx xx\nMedian xx xx\nMinimum xx xx\nMaximum xx xx\nPercentage is the number of patients in the category (n) divided by the number of patients within the column (N) unless otherwise specified below.\n[a]: Represents number of events, number of patients with at least one event and percentage of patients with at least one event.\n[b]: The denominator for each percentage is the number of patients with dose reduction.\n[c]: Treatment compliance = percentage of injection administered (actual/planned).\nSource: Listing 16.2.1.3, 16.2.1.4, 16.2.1.5, 16.2.1.6, 16.2.1.7\nPath\\Filename\nProgramming Note: Please present summaries by the following treatments: VCN-01, Nab-paclitaxel, Gemcitabine.\nPlease note that dose reduction is not applicable for VCN-01 administration, this category should be excluded for the treatment.\nPage x/y\nForm STATt004\nVersion Date: 20 May 2021\nPage 63 of 112",
+      "readable": true
+    }
+  ],
+  "notes": [
+    "Original title retained from first panel; all panel titles are retained in text checkpoints.",
+    "Regions conservatively retain page wrappers; fine-grained exclusion and structural transcription deferred to stage 2."
+  ]
+}

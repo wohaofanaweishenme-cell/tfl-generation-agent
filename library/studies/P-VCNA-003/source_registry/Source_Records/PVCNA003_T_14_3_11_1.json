@@ -1,0 +1,30 @@
+{
+  "schema_version": "2.4",
+  "template_id": "PVCNA003_T_14_3_11_1",
+  "source_regions": [
+    {
+      "document_id": "SAP_001_11",
+      "pdf_page": 38,
+      "bbox": [
+        0,
+        0,
+        841.9200000000001,
+        595.32
+      ],
+      "coordinate_system": "pdf_points_top_left"
+    }
+  ],
+  "source_docx_locations": [],
+  "text_checkpoints": [
+    {
+      "document_id": "SAP_001_11",
+      "location": "PDF physical page 38; owned region in source_regions; printed page 64",
+      "text": "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.3.11.1 Prior Medications (Safety Analysis Set)\nArm I\n(N=xx)\n(Nab-paclitaxel and gemcitabine)\nArm II\n(VCN-01 with Nab-paclitaxel and\ngemcitabine)\n(N=xx)\nAny prior medications xx (xx.x%) xx (xx.x%)\nX, xxxxxxxxxxxxxx xx (xx.x%) xx (xx.x%)\nX0N, xxxxxxxxxxxxx xx (xx.x%) xx (xx.x%)\nX0NXX, xxxxxxxxxxx xx (xx.x%) xx (xx.x%)\nxxxxxxxxxxxxx xx (xx.x%) xx (xx.x%)\nX0NXX, xxxxxxxxxxx xx (xx.x%) xx (xx.x%)\nxxxxxxxxxxxx xx (xx.x%) xx (xx.x%)\n…\n…\nPrior medications/medical procedures are defined as any medication taken/any medical procedures performed within 28 days of the Screening visit.\nData are summarized by: Anatomical main group (ATC level 1); Therapeutic subgroup (ATC level 2); Therapeutic/pharmacological subgroup (ATC level 3);\nChemical/therapeutic/pharmacological subgroup (ATC level 4); Preferred term.\nPercentage is the number of patients in the category (n) divided by the number of patients within the column (N).\nWHO-DDE version <XXXX>.\nSource: Listing 16.2.12\nPath\\Filename\nPage x/y\nProgramming Note: This layout also applies to Table 14.3.11.2 Concomitant Medications (Safety Analysis Set) [Footnote: Concomitant medications are defined as any medication taken at\nor after the time of the Screening visit.]\nForm STATt004\nVersion Date: 20 May 2021\nPage 64 of 112",
+      "readable": true
+    }
+  ],
+  "notes": [
+    "Original title retained from first panel; all panel titles are retained in text checkpoints.",
+    "Regions conservatively retain page wrappers; fine-grained exclusion and structural transcription deferred to stage 2."
+  ]
+}

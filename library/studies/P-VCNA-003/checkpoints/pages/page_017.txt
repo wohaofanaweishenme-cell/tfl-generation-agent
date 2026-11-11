@@ -1,0 +1,35 @@
+VCN Biosciences S.L. P-VCNA-003
+Statistical Analysis Plan
+P-VCNA-003 ddMMMyyyy HH:MM
+Table 14.2.2.13 Disease Control Rate - EDC Data (Intent-to-Treat Set)
+Parameter/ Test Component
+Arm I
+(N=xx)
+(Nab-paclitaxel and gemcitabine)
+Arm II
+(VCN-01 with Nab-paclitaxel and
+gemcitabine)
+(N=xx) Odds Ratio (95% CI) p-value
+Disease Control Rate (DCR) n (%) xx (xx.x %) xx (xx.x %)
+CR n xx xx
+PR n xx xx
+SD n xx xx
+Cochran-Mantel-Haenszel (CMH) test* Sensitivity analysis** x.x (x.x , x.x) xxxxxx
+x.x (x.x , x.x) xxxxxx
+Percentage is the number of patients in the category (n) divided by the number of patients within the column (N).
+* CMH test was stratified by region and ECOG performance status at randomization.
+** CMH test was stratified by age group (<65 years and >=65 years), region and ECOG performance status at randomization.
+CR = Complete Response, PR = Partial Response, SD = Stable Disease.
+Source: Listing 16.2.6.3
+Path\Filename
+Page x/y
+Programming Note: This layout also applies to Table 14.2.2.14 Disease Control Rate - EDC Data (Full Analysis Set), Table 14.2.2.15 Disease Control Rate - CIV Data (Intent-to-Treat Set),
+Table 14.2.2.16 Disease Control Rate - CIV Data (Full Analysis Set), Table 14.2.3.2 Disease Control Rate for Patients with Subsequent Anti-Cancer Therapies - EDC Data (Full Analysis Set)
+and Table 14.2.3.3 Disease Control Rate for Patients with Subsequent Anti-Cancer Therapies - CIV Data (Full Analysis Set)
+Footnotes to be included:
+- EDC data: DCR (Disease Control Rate) was assessed based on EDC (Electronic Data Capture) data.
+- CIV data: DCR (Disease Control Rate) was assessed based on CIV (Central Imaging Vendor) data.
+Source listing for CIV data: Listing 16.2.6.4
+Form STATt004
+Version Date: 20 May 2021
+Page 43 of 112

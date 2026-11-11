@@ -1,0 +1,41 @@
+VCN Biosciences S.L. P-VCNA-003
+Statistical Analysis Plan
+Programming Note: This layout also applies to Table 14.3.4.7 Shift Table of Hematology Parameters (Safety Analysis Set), Table 14.3.4.8 Shift Table of Coagulation Parameters (Safety
+Analysis Set), Table 14.3.4.9 Shift Table of TSH (Safety Analysis Set) and Table 14.3.4.10 Shift Table of Urinalysis Parameters (Safety Analysis Set). Please update source listings.
+P-VCNA-003 ddMMMyyyy HH:MM
+Table 14.3.5.2 Shift Table of Vital Signs (Safety Analysis Set)
+Visit
+Arm I
+(N=xx)
+(Nab-paclitaxel and gemcitabine)
+Arm II
+(N=xx)
+(VCN-01 with Nab-paclitaxel and gemcitabine)
+Screening n xx xx
+Normal xx (xx.x%) xx (xx.x%)
+Abnormal NCS xx (xx.x%) xx (xx.x%)
+Abnormal CS xx (xx.x%) xx (xx.x%)
+Baseline n xx xx
+Normal xx (xx.x%) xx (xx.x%)
+…
+<Visit> n xx xx
+…
+Change from Baseline to <Visit> n xx xx
+Normal -> Normal xx (xx.x%) xx (xx.x%)
+Normal -> Abnormal NCS xx (xx.x%) xx (xx.x%)
+Normal -> Abnormal CS xx (xx.x%) xx (xx.x%)
+Abnormal NCS -> Normal xx (xx.x%) xx (xx.x%)
+Abnormal NCS -> Abnormal NCS xx (xx.x%) xx (xx.x%)
+Abnormal NCS -> Abnormal CS xx (xx.x%) xx (xx.x%)
+Abnormal CS -> Normal xx (xx.x%) xx (xx.x%)
+Abnormal CS -> Abnormal NCS xx (xx.x%) xx (xx.x%)
+Abnormal CS -> Abnormal CS xx (xx.x%) xx (xx.x%)
+…
+Percentage is the number of patients in the category (n) divided by the number of patients within the column (N).
+Source: Listing 16.2.9
+Path\Filename
+Page x/y
+Programming Note: This layout also applies to Table 14.3.7.2 Shift Table of 12-lead Electrocardiogram (Safety Analysis Set). Please update source listing.
+Form STATt004
+Version Date: 20 May 2021
+Page 58 of 112

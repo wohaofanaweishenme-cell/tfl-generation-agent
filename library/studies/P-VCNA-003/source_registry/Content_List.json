@@ -1,0 +1,2777 @@
+{
+  "schema_version": "2.4",
+  "entries": [
+    {
+      "entry_id": "CL_001",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.1.1",
+      "output_type": "table",
+      "original_title": "Patient Disposition",
+      "population": "All Randomized Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 4,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_002",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.1.2.1",
+      "output_type": "table",
+      "original_title": "Demographics and Baseline Characteristics",
+      "population": "Intent-to-Treat Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 4,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_003",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.1.2.2",
+      "output_type": "table",
+      "original_title": "Demographics and Baseline Characteristics",
+      "population": "Full Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 4,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_004",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.1.2.3",
+      "output_type": "table",
+      "original_title": "Demographics and Baseline Characteristics",
+      "population": "Safety Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 4,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_005",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.1.3",
+      "output_type": "table",
+      "original_title": "Medical History",
+      "population": "Full Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 4,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_006",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.1.1",
+      "output_type": "table",
+      "original_title": "Overall Survival",
+      "population": "Intent-to-Treat Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 4,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_007",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.1.2",
+      "output_type": "table",
+      "original_title": "Overall Survival",
+      "population": "Full Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 4,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_008",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.1.3",
+      "output_type": "table",
+      "original_title": "Overall Survival",
+      "population": "Per Protocol Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 4,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_009",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.1.4",
+      "output_type": "table",
+      "original_title": "Subgroup Analysis: Overall Survival",
+      "population": "Intent-to-Treat Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 4,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_010",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.1.5",
+      "output_type": "table",
+      "original_title": "Subgroup Analysis: Overall Survival",
+      "population": "Per Protocol Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 4,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_011",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.2.1",
+      "output_type": "table",
+      "original_title": "Progression-free Survival and Time to Progression - EDC Data",
+      "population": "Intent-to-Treat Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 4,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_012",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.2.2",
+      "output_type": "table",
+      "original_title": "Progression-free Survival and Time to Progression - EDC  Data",
+      "population": "Full Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 4,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_013",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.2.3",
+      "output_type": "table",
+      "original_title": "Subgroup Analysis: Progression-free Survival and Time to Progression - EDC Data",
+      "population": "Intent-to-Treat Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 4,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_014",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.2.4",
+      "output_type": "table",
+      "original_title": "Progression-free Survival and Time to Progression - CIV  Data",
+      "population": "Intent-to-Treat Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 4,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_015",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.2.5",
+      "output_type": "table",
+      "original_title": "Progression-free Survival and Time to Progression - CIV  Data",
+      "population": "Full Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 4,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_016",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.2.6",
+      "output_type": "table",
+      "original_title": "Subgroup Analysis: Progression-free Survival and Time to Progression - CIV Data",
+      "population": "Intent-to-Treat Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 4,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_017",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.2.7",
+      "output_type": "table",
+      "original_title": "Objective Response Rate - EDC Data",
+      "population": "Intent-to-Treat Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 4,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_018",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.2.8",
+      "output_type": "table",
+      "original_title": "Objective Response Rate - EDC Data",
+      "population": "Full Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 4,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_019",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.2.9",
+      "output_type": "table",
+      "original_title": "Subgroup Analysis: Objective Response Rate - EDC Data",
+      "population": "Intent-to-Treat Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 5,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_020",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.2.10",
+      "output_type": "table",
+      "original_title": "Objective Response Rate - CIV Data",
+      "population": "Intent-to-Treat Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 5,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_021",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.2.11",
+      "output_type": "table",
+      "original_title": "Objective Response Rate - CIV Data",
+      "population": "Full Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 5,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_022",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.2.12",
+      "output_type": "table",
+      "original_title": "Subgroup Analysis: Objective Response Rate - CIV Data",
+      "population": "Intent-to-Treat Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 5,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_023",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.2.13",
+      "output_type": "table",
+      "original_title": "Disease Control Rate - EDC Data",
+      "population": "Intent-to-Treat Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 5,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_024",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.2.14",
+      "output_type": "table",
+      "original_title": "Disease Control Rate - EDC Data",
+      "population": "Full Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 5,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_025",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.2.15",
+      "output_type": "table",
+      "original_title": "Disease Control Rate - CIV Data",
+      "population": "Intent-to-Treat Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 5,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_026",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.2.16",
+      "output_type": "table",
+      "original_title": "Disease Control Rate - CIV Data",
+      "population": "Full Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 5,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_027",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.2.17",
+      "output_type": "table",
+      "original_title": "Landmark 1-year Survival and PFS at the 1-year Landmark - EDC Data",
+      "population": "Intent-to-Treat Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 5,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_028",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.2.18",
+      "output_type": "table",
+      "original_title": "Landmark 1-year Survival and PFS at the 1-year Landmark - EDC Data",
+      "population": "Full Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 5,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_029",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.2.19",
+      "output_type": "table",
+      "original_title": "Landmark 1-year Survival and PFS at the 1-year Landmark - CIV Data",
+      "population": "Intent-to-Treat Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 5,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_030",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.2.20",
+      "output_type": "table",
+      "original_title": "Landmark 1-year Survival and PFS at the 1-year Landmark  - CIV Data",
+      "population": "Full Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 5,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_031",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.2.21",
+      "output_type": "table",
+      "original_title": "Duration of Response - EDC Data",
+      "population": "Intent-to-Treat Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 5,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_032",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.2.22",
+      "output_type": "table",
+      "original_title": "Duration of Response - EDC Data",
+      "population": "Full Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 5,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_033",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.2.23",
+      "output_type": "table",
+      "original_title": "Duration of Response - CIV Data",
+      "population": "Intent-to-Treat Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 5,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_034",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.2.24",
+      "output_type": "table",
+      "original_title": "Duration of Response - CIV Data",
+      "population": "Full Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 5,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_035",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.2.25",
+      "output_type": "table",
+      "original_title": "Tumor Marker Ca 19.9",
+      "population": "Intent-to-Treat Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 5,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_036",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.2.26",
+      "output_type": "table",
+      "original_title": "Tumor Marker Ca 19.9",
+      "population": "Full Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 5,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_037",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.3.1",
+      "output_type": "table",
+      "original_title": "QLQ-C30 Questionnaire",
+      "population": "Full Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 5,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_038",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.3.2",
+      "output_type": "table",
+      "original_title": "Disease Control Rate for Patients with Subsequent Anti- Cancer Therapies - EDC Data",
+      "population": "Full Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 5,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_039",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.3.3",
+      "output_type": "table",
+      "original_title": "Disease Control Rate for Patients with Subsequent Anti- Cancer Therapies - CIV Data",
+      "population": "Full Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 5,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_040",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.1.1",
+      "output_type": "table",
+      "original_title": "Summary of Adverse Events",
+      "population": "Safety Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 5,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_041",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.1.2",
+      "output_type": "table",
+      "original_title": "Treatment-Emergent Adverse Events, by System Organ Class and Preferred Term",
+      "population": "Safety Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 5,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_042",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.1.3",
+      "output_type": "table",
+      "original_title": "Treatment-Emergent Adverse Events, by System Organ Class, Preferred Term and Severity",
+      "population": "Safety Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 5,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_043",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.1.4",
+      "output_type": "table",
+      "original_title": "Treatment-Emergent Adverse Events, by System Organ Class, Preferred Term and Relationship to VCN-01",
+      "population": "Safety Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 5,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_044",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.1.5",
+      "output_type": "table",
+      "original_title": "Treatment-Emergent Adverse Events, by System Organ Class, Preferred Term and Relationship to Gemcitabine",
+      "population": "Safety Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 5,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_045",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.1.6",
+      "output_type": "table",
+      "original_title": "Treatment-Emergent Adverse Events, by System Organ Class, Preferred Term and Relationship to Nab-paclitaxel",
+      "population": "Safety Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 6,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_046",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.1.7",
+      "output_type": "table",
+      "original_title": "Serious Treatment-Emergent Adverse Events, by System Organ Class and Preferred Term",
+      "population": "Safety Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 6,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_047",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.1.8",
+      "output_type": "table",
+      "original_title": "Drug-related Treatment-Emergent Adverse Events, by System Organ Class and Preferred Term",
+      "population": "Safety Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 6,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_048",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.1.9",
+      "output_type": "table",
+      "original_title": "Treatment-Emergent Adverse Events Leading to Permanent Discontinuation of Study Drug, by System  Organ Class and Preferred Term",
+      "population": "Safety Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 6,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_049",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.1.10",
+      "output_type": "table",
+      "original_title": "Serious Treatment-Emergent Adverse Events, by System Organ Class, Preferred Term and Relationship to VCN- 01",
+      "population": "Safety Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 6,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_050",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.1.11",
+      "output_type": "table",
+      "original_title": "Serious Treatment-Emergent Adverse Events, by System Organ Class, Preferred Term and Relationship to Gemcitabine",
+      "population": "Safety Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 6,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_051",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.1.12",
+      "output_type": "table",
+      "original_title": "Serious Treatment-Emergent Adverse Events, by System Organ Class, Preferred Term and Relationship to Nab- paclitaxel",
+      "population": "Safety Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 6,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_052",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.2.1",
+      "output_type": "table",
+      "original_title": "Listing of Deaths due to Adverse Events",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 6,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_053",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.2.2",
+      "output_type": "table",
+      "original_title": "Listing of Serious Adverse Events",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 6,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_054",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.2.3",
+      "output_type": "table",
+      "original_title": "Listing of Withdrawals Due to Adverse Events",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 6,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_055",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.2.4",
+      "output_type": "table",
+      "original_title": "Listing of Serious Adverse Reactions",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 6,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_056",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.3",
+      "output_type": "table",
+      "original_title": "Listing of Abnormal Laboratory Values",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 6,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_057",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.4.1",
+      "output_type": "table",
+      "original_title": "Summary of Biochemistry Parameters",
+      "population": "Safety Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 6,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_058",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.4.2",
+      "output_type": "table",
+      "original_title": "Summary of Hematology Parameters",
+      "population": "Safety Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 6,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_059",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.4.3",
+      "output_type": "table",
+      "original_title": "Summary of Coagulation Parameters",
+      "population": "Safety Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 6,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_060",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.4.4",
+      "output_type": "table",
+      "original_title": "Summary of TSH",
+      "population": "Safety Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 6,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_061",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.4.5",
+      "output_type": "table",
+      "original_title": "Summary of Urinalysis Parameters",
+      "population": "Safety Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 6,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_062",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.4.6",
+      "output_type": "table",
+      "original_title": "Shift Table of Biochemistry Parameters",
+      "population": "Safety Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 6,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_063",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.4.7",
+      "output_type": "table",
+      "original_title": "Shift Table of Hematology Parameters",
+      "population": "Safety Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 6,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_064",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.4.8",
+      "output_type": "table",
+      "original_title": "Shift Table of Coagulation Parameters",
+      "population": "Safety Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 6,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_065",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.4.9",
+      "output_type": "table",
+      "original_title": "Shift Table of TSH",
+      "population": "Safety Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 6,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_066",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.4.10",
+      "output_type": "table",
+      "original_title": "Shift Table of Urinalysis Parameters",
+      "population": "Safety Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 6,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_067",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.5.1",
+      "output_type": "table",
+      "original_title": "Summary of Vital Signs",
+      "population": "Safety Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 6,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_068",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.5.2",
+      "output_type": "table",
+      "original_title": "Shift Table of Vital Signs",
+      "population": "Safety Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 6,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_069",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.6",
+      "output_type": "table",
+      "original_title": "Physical Examination",
+      "population": "Safety Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 6,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_070",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.7.1",
+      "output_type": "table",
+      "original_title": "Summary of 12-lead Electrocardiogram",
+      "population": "Safety Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 6,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_071",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.7.2",
+      "output_type": "table",
+      "original_title": "Shift Table of 12-lead Electrocardiogram",
+      "population": "Safety Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 6,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_072",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.8",
+      "output_type": "table",
+      "original_title": "ECOG Score",
+      "population": "Safety Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 6,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_073",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.9",
+      "output_type": "table",
+      "original_title": "Subsequent Anticancer Treatment",
+      "population": "Safety Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 7,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_074",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.10",
+      "output_type": "table",
+      "original_title": "Study Drug Exposure and Compliance",
+      "population": "Safety Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 7,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_075",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.11.1",
+      "output_type": "table",
+      "original_title": "Prior Medications",
+      "population": "Safety Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 7,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_076",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.11.2",
+      "output_type": "table",
+      "original_title": "Concomitant Medications",
+      "population": "Safety Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 7,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_077",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.5.1",
+      "output_type": "table",
+      "original_title": "Pharmacodynamic Parameters",
+      "population": "Pharmacodynamic Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 7,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_078",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.1",
+      "output_type": "figure",
+      "original_title": "Kaplan-Meier Plot of Overall Survival",
+      "population": "Intent-to-Treat Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 8,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_079",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.2",
+      "output_type": "figure",
+      "original_title": "Kaplan-Meier Plot of Overall Survival",
+      "population": "Full Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 8,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_080",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.3",
+      "output_type": "figure",
+      "original_title": "Kaplan-Meier Plot of Overall Survival",
+      "population": "Per Protocol Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 8,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_081",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.4",
+      "output_type": "figure",
+      "original_title": "Subgroup Analysis: Kaplan-Meier Plot of Overall Survival",
+      "population": "Intent-to-Treat Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 8,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_082",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.5",
+      "output_type": "figure",
+      "original_title": "Kaplan-Meier Plot of Progression Free Survival",
+      "population": "Intent-to-Treat Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 8,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_083",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.6",
+      "output_type": "figure",
+      "original_title": "Kaplan-Meier Plot of Progression Free Survival",
+      "population": "Full Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 8,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_084",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.7",
+      "output_type": "figure",
+      "original_title": "Subgroup Analysis: Kaplan-Meier Plot of Progression Free Survival",
+      "population": "Intent-to-Treat Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 8,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_085",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.8",
+      "output_type": "figure",
+      "original_title": "Kaplan-Meier Plot of Time to Progression",
+      "population": "Intent-to-Treat Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 8,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_086",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.9",
+      "output_type": "figure",
+      "original_title": "Kaplan-Meier Plot of Duration of Response",
+      "population": "Intent-to-Treat Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 8,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_087",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.10",
+      "output_type": "figure",
+      "original_title": "Kaplan-Meier Plot of Duration of Response",
+      "population": "Full Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 8,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_088",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.1",
+      "output_type": "figure",
+      "original_title": "ECOG Score",
+      "population": "Safety Analysis Set",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 8,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_089",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.1.1",
+      "output_type": "listing",
+      "original_title": "Visit Dates",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 8,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_090",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.1.2",
+      "output_type": "listing",
+      "original_title": "Patient Disposition",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 8,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_091",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.1.3",
+      "output_type": "listing",
+      "original_title": "SoC Administration - Nab-Paclitaxel",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 8,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_092",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.1.4",
+      "output_type": "listing",
+      "original_title": "SoC Administration - Gemcitabine",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 8,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_093",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.1.5",
+      "output_type": "listing",
+      "original_title": "SoC Dose Adjustments",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 8,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_094",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.1.6",
+      "output_type": "listing",
+      "original_title": "VCN-01 Administration",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 8,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_095",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.1.7",
+      "output_type": "listing",
+      "original_title": "VCN-01 Dose Interruptions",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 8,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_096",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.2.1",
+      "output_type": "listing",
+      "original_title": "Protocol Deviations",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 8,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_097",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.4.1",
+      "output_type": "listing",
+      "original_title": "Demographic and Baseline Characteristics",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 8,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_098",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.4.2",
+      "output_type": "listing",
+      "original_title": "Medical History",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 8,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_099",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.4.3",
+      "output_type": "listing",
+      "original_title": "Substance Use History",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 8,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_100",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.4.4",
+      "output_type": "listing",
+      "original_title": "Obstetric History",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 8,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_101",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.4.5",
+      "output_type": "listing",
+      "original_title": "Menopausal Status",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 8,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_102",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.4.6",
+      "output_type": "listing",
+      "original_title": "Inclusion/ Exclusion Criteria Failures",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 8,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_103",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.6.1",
+      "output_type": "listing",
+      "original_title": "Tumor Response Evaluation - EDC Data",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 8,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_104",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.6.2",
+      "output_type": "listing",
+      "original_title": "Tumor Response Evaluation - CIV Data",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 8,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_105",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.6.3",
+      "output_type": "listing",
+      "original_title": "Derived Efficacy Variables - EDC Data",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 8,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_106",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.6.4",
+      "output_type": "listing",
+      "original_title": "Derived Efficacy Variables - CIV Data",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 8,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_107",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.6.5",
+      "output_type": "listing",
+      "original_title": "Tumor Marker Ca 19.9",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 8,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_108",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.6.6",
+      "output_type": "listing",
+      "original_title": "QLQ-C30 Questionnaire",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 8,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_109",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.6.7",
+      "output_type": "listing",
+      "original_title": "Target Lesions",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 9,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_110",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.6.8",
+      "output_type": "listing",
+      "original_title": "Non-Target Lesions",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 9,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_111",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.6.9",
+      "output_type": "listing",
+      "original_title": "Deaths",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 9,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_112",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.7.1",
+      "output_type": "listing",
+      "original_title": "Adverse Events",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 9,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_113",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.7.2",
+      "output_type": "listing",
+      "original_title": "Adverse Events Due to Progressive Disease",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 9,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_114",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.7.3",
+      "output_type": "listing",
+      "original_title": "TEAE with Grade 4 or 5",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 9,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_115",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.8.1",
+      "output_type": "listing",
+      "original_title": "Biochemistry Parameters",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 9,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_116",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.8.2",
+      "output_type": "listing",
+      "original_title": "Hematology Parameters",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 9,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_117",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.8.3",
+      "output_type": "listing",
+      "original_title": "Coagulation Parameters",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 9,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_118",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.8.4",
+      "output_type": "listing",
+      "original_title": "TSH",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 9,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_119",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.8.5",
+      "output_type": "listing",
+      "original_title": "Urinalysis Parameters",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 9,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_120",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.8.6",
+      "output_type": "listing",
+      "original_title": "Serology Results",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 9,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_121",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.8.7",
+      "output_type": "listing",
+      "original_title": "Pregnancy Results",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 9,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_122",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.9",
+      "output_type": "listing",
+      "original_title": "Vital Signs",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 9,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_123",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.10",
+      "output_type": "listing",
+      "original_title": "Physical Examination",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 9,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_124",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.11",
+      "output_type": "listing",
+      "original_title": "12-Lead ECG",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 9,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_125",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.12",
+      "output_type": "listing",
+      "original_title": "Prior and Concomitant Medications",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 9,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_126",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.13",
+      "output_type": "listing",
+      "original_title": "Pharmacodynamic Parameters",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 9,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_127",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.14",
+      "output_type": "listing",
+      "original_title": "COVID-19 Results",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 9,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_128",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.15",
+      "output_type": "listing",
+      "original_title": "Left Ventricular Ejection Fraction Results",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 9,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_129",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.16",
+      "output_type": "listing",
+      "original_title": "ECOG Score",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 9,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_130",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.17",
+      "output_type": "listing",
+      "original_title": "Fibroscan Results",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 9,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_131",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.18",
+      "output_type": "listing",
+      "original_title": "Subsequent Anticancer Treatment",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 9,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "entry_id": "CL_132",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.19",
+      "output_type": "listing",
+      "original_title": "Study Disease Diagnosis",
+      "population": null,
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 9,
+          "bbox": [
+            0,
+            0,
+            595.32,
+            841.92
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    }
+  ]
+}

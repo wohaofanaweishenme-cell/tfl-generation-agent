@@ -1,0 +1,23 @@
+Theriva Biologics, S.L. P-VCNA-003
+Statistical Analysis Plan
+15 SHELLS FOR TABLES, FIGURES AND LISTINGS
+The intended layouts for tables, figures and listings are presented. However, it may be appropriate for
+the Simbec-Orion programmer to change the layouts, upon review of the data available, for
+completeness and clarity.
+QCd output will be produced as Rich Text Format (.rtf) or MS Word (.docx) files for convenient
+inclusion in the CSR. All attempts will be made to combine outputs into 3 pdf format files corresponding
+to tables, listings and figures. Should this not be possible results will be provided in RTF of word
+document format only.
+Subject to this, the following will apply:
+• Layout will be landscape, fixed width, font size 9, with margin size 2.54 cm for all sides.
+• Each output will have the heading:
+P-VCNA-003 (left); date and time ddMMMyyyy HH:MM(right)
+• Table headings will define the analysis set used for the summary/analysis.
+• All outputs will have a footer specifying the SAS program path and filename (left); page x/y (right)
+• Tables will have a footer specifying the source listing
+• Figures will have a footer specifying the source table or listing
+• Additional footnotes will be included where appropriate for clarification.
+• Treatment arm and patient number and will be included in all listings.
+Form STATt004
+Version Date: 20 May 2021
+Page 36 of 112

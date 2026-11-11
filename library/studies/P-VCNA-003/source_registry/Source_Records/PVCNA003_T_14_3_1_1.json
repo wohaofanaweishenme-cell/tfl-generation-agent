@@ -1,0 +1,47 @@
+{
+  "schema_version": "2.4",
+  "template_id": "PVCNA003_T_14_3_1_1",
+  "source_regions": [
+    {
+      "document_id": "SAP_001_11",
+      "pdf_page": 22,
+      "bbox": [
+        0,
+        0,
+        841.9200000000001,
+        595.32
+      ],
+      "coordinate_system": "pdf_points_top_left"
+    },
+    {
+      "document_id": "SAP_001_11",
+      "pdf_page": 23,
+      "bbox": [
+        0,
+        0,
+        841.9200000000001,
+        108.55000000000007
+      ],
+      "coordinate_system": "pdf_points_top_left"
+    }
+  ],
+  "source_docx_locations": [],
+  "text_checkpoints": [
+    {
+      "document_id": "SAP_001_11",
+      "location": "PDF physical page 22; owned region in source_regions; printed page 48",
+      "text": "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nTable 14.3.1.1 Summary of Adverse Events (Safety Analysis Set)\nArm I\n(N=xx)\n(Nab-paclitaxel and gemcitabine)\nArm II\n(VCN-01 with Nab-\npaclitaxel and\ngemcitabine)\n(N=xx)\nn(%) n(%)\nAny Treatment-Emergent Adverse Event\nxx (xx.x%) Xx (xx.x%)\n(TEAE)\nAny Serious TEAE xx (xx.x%) xx (xx.x%)\nAny Adverse Reaction xx (xx.x%) xx (xx.x%)\nAny Serious Adverse Reaction xx (xx.x%) xx (xx.x%)\nxx (xx.x%) xx (xx.x%)\nTEAEs by Severity Grade 1 xx (xx.x%) xx (xx.x%)\nGrade 2 xx (xx.x%) xx (xx.x%)\nGrade 3 xx (xx.x%) xx (xx.x%)\nGrade 4 xx (xx.x%) xx (xx.x%)\nGrade 5 xx (xx.x%) xx (xx.x%)\nxx (xx.x%) xx (xx.x%)\nTEAEs by Relationship to VCN-01 Definitely Related xx (xx.x%) xx (xx.x%)\nProbably Related xx (xx.x%) xx (xx.x%)\nPossibly Related xx (xx.x%) xx (xx.x%)\nUnlikely Related xx (xx.x%) xx (xx.x%)\nNot Related xx (xx.x%) xx (xx.x%)\nxx (xx.x%) xx (xx.x%)\nTEAEs by Relationship to Gemcitabine Definitely Related xx (xx.x%) xx (xx.x%)\nProbably Related xx (xx.x%) xx (xx.x%)\n…\nTEAEs by Relationship to Nab-paclitaxel Definitely Related xx (xx.x%) xx (xx.x%)\nProbably Related xx (xx.x%) xx (xx.x%)\n…\nA patient with multiple occurrences of any AE is counted only once at the maximum level of severity or the strongest relationship to study treatment.\nPercentage is the number of patients in the category (n) divided by the number of patients within the column (N).\nMedDRA version <XX.X>.\nForm STATt004\nVersion Date: 20 May 2021\nPage 48 of 112",
+      "readable": true
+    },
+    {
+      "document_id": "SAP_001_11",
+      "location": "PDF physical page 23 leading source/path/page footer, before next shell header",
+      "text": "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nSource: Listing 16.2.7.1\nPath\\Filename\nPage x/y",
+      "readable": true
+    }
+  ],
+  "notes": [
+    "Original title retained from first panel; all panel titles are retained in text checkpoints.",
+    "Regions conservatively retain page wrappers; fine-grained exclusion and structural transcription deferred to stage 2."
+  ]
+}

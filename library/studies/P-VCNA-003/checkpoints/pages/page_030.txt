@@ -1,0 +1,40 @@
+VCN Biosciences S.L. P-VCNA-003
+Statistical Analysis Plan
+P-VCNA-003 ddMMMyyyy HH:MM
+Table 14.3.4.1 Summary of Biochemistry Parameters (Safety Analysis Set)
+<Parameter (unit)>
+Visit
+Arm I
+(N=xx)
+(Nab-paclitaxel and gemcitabine)
+Arm II
+(N=xx)
+(VCN-01 with Nab-paclitaxel and gemcitabine)
+Screening n xx xx
+Mean xx xx
+STD xx xx
+Median xx xx
+Minimum xx xx
+Maximum xx xx
+Baseline n xx xx
+Mean xx xx
+STD xx xx
+Median xx xx
+Minimum xx xx
+Maximum xx xx
+<Visit> n xx xx
+Mean xx xx
+…
+Change from Baseline to <Visit> n xx xx
+Mean xx xx
+…
+…
+Source: Listing 16.2.8.1
+Path\Filename
+Page x/y
+Programming Note: This layout also applies to Table 14.3.4.2 Summary of Hematology Parameters (Safety Analysis Set), Table 14.3.4.3 Summary of Coagulation Parameters (Safety
+Analysis Set), Table 14.3.4.4 Summary of TSH (Safety Analysis Set), Table 14.3.4.5 Summary of Urinalysis Parameters (Safety Analysis Set), Table 14.3.5.1 Summary of Vital Signs (Safety
+Analysis Set) and Table 14.3.7.1 Summary of 12-lead Electrocardiogram (Safety Analysis Set). Please update source listings.
+Form STATt004
+Version Date: 20 May 2021
+Page 56 of 112

@@ -1,0 +1,30 @@
+{
+  "schema_version": "2.4",
+  "template_id": "PVCNA003_F_14_2_1",
+  "source_regions": [
+    {
+      "document_id": "SAP_001_11",
+      "pdf_page": 41,
+      "bbox": [
+        0,
+        0,
+        841.9200000000001,
+        595.32
+      ],
+      "coordinate_system": "pdf_points_top_left"
+    }
+  ],
+  "source_docx_locations": [],
+  "text_checkpoints": [
+    {
+      "document_id": "SAP_001_11",
+      "location": "PDF physical page 41; owned region in source_regions; printed page 67",
+      "text": "VCN Biosciences S.L. P-VCNA-003\nStatistical Analysis Plan\nP-VCNA-003 ddMMMyyyy HH:MM\nFigure 14.2.1 Kaplan-Meier Plot of Overall Survival (Intent-to-Treat Set)\nFigure Specifications\nProcedure: PROC LIFETEST – survival plot\nBy: Arm\nx axis: Time\nx axis: Label: Time Post-Dose (months)\nx axis: values: As appropriate\nY axis: Survival proportion\nY axis Label: Proportion\nY axis values: As appropriate\nLegend:\nArm I (Nab-paclitaxel and gemcitabine) (N=xx) – linestyle = solid, colour = blue\nArm II (VCN-01 with Nab-paclitaxel and gemcitabine) (N=xx) – linestyle = solid, colour = green\nNumber of patients at risk over time to be presented below the x axis.\nFootnote:\nPatients who are lost to follow-up are censored at the time of their last visit or contact.\nProgramming Note: This layout also applies to Figure 14.2.2 Kaplan-Meier Plot of Overall Survival (Full Analysis Set) and Figure 14.2.3 Kaplan-Meier Plot of Overall Survival (Per Protocol\nSet), Figure 14.2.4 Subgroup Analysis: Kaplan-Meier Plot of Overall Survival (ITT), Figure 14.2.5 Kaplan-Meier Plot of Progression Free Survival (ITT), Figure 14.2.6 Kaplan-Meier Plot of\nProgression Free Survival (Full Analysis Set), Figure 14.2.7 Subgroup Analysis: Kaplan-Meier Plot of Progression Free Survival (ITT), Figure 14.2.8 Kaplan-Meier Plot of Time to Progression,\nFigure 14.2.9 Kaplan-Meier Plot of Duration of Response\nProgramming note for Figure 14.2.6 Kaplan-Meier Plot for Duration of Response: The starting point for both arms is not 100%, but the response rate per arm.\nForm STATt004\nVersion Date: 20 May 2021\nPage 67 of 112",
+      "readable": true
+    }
+  ],
+  "notes": [
+    "Original title retained from first panel; all panel titles are retained in text checkpoints.",
+    "Regions conservatively retain page wrappers; fine-grained exclusion and structural transcription deferred to stage 2."
+  ]
+}

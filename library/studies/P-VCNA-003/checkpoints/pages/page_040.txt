@@ -1,0 +1,40 @@
+VCN Biosciences S.L. P-VCNA-003
+Statistical Analysis Plan
+<Parameter>
+Visit
+Arm I
+(N=xx)
+(Nab-paclitaxel and gemcitabine)
+Arm II
+(VCN-01 with Nab-paclitaxel and
+gemcitabine)
+(N=xx) p-value
+Screening n NA xx
+Mean xx
+STD xx
+Median xx
+Minimum xx
+Maximum xx
+Baseline n NA xx
+Mean xx
+STD xx
+Median xx
+Minimum xx
+Maximum xx
+<Visit> n NA xx
+Mean xx
+…
+<Test> x.xxxx
+Change from Baseline to <Visit> n NA xx
+Mean xx
+…
+…
+NA = Not applicable.
+Source: Listing 16.2.13
+Path\Filename
+Page x/y
+Programming Note: Above layout should be used for parameters only applicable for Arm II. Please indicate test used in the first column as appropriate.
+These two layouts should be combined in one output, starting each parameter on a new page.
+Form STATt004
+Version Date: 20 May 2021
+Page 66 of 112

@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Source_Page_Index v2.4",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "2.4"
+    },
+    "pages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "document_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "pdf_page": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "printed_page": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "width_points": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "height_points": {
+            "type": "number",
+            "exclusiveMinimum": 0
+          },
+          "scan_status": {
+            "enum": [
+              "examined",
+              "unreadable",
+              "not_examined"
+            ]
+          },
+          "notes": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "document_id",
+          "pdf_page",
+          "printed_page",
+          "width_points",
+          "height_points",
+          "scan_status",
+          "notes"
+        ]
+      },
+      "minItems": 0
+    },
+    "docx_source_scan_notes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "exact_text": {
+            "type": "string"
+          },
+          "source_regions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "document_id": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "pdf_page": {
+                  "type": "integer",
+                  "minimum": 1
+                },
+                "bbox": {
+                  "type": "array",
+                  "items": {
+                    "type": "number",
+                    "minimum": 0
+                  },
+                  "minItems": 4,
+                  "maxItems": 4
+                },
+                "coordinate_system": {
+                  "const": "pdf_points_top_left"
+                }
+              },
+              "required": [
+                "document_id",
+                "pdf_page",
+                "bbox",
+                "coordinate_system"
+              ]
+            },
+            "minItems": 0
+          },
+          "notes": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "exact_text",
+          "source_regions",
+          "notes"
+        ]
+      },
+      "minItems": 0
+    }
+  },
+  "required": [
+    "schema_version",
+    "pages",
+    "docx_source_scan_notes"
+  ]
+}

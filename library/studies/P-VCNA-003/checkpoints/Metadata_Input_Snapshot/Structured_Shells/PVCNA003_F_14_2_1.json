@@ -1,0 +1,1291 @@
+{
+  "schema_version": "2.4",
+  "template_id": "PVCNA003_F_14_2_1",
+  "output_type": "figure",
+  "structural_family": "figure",
+  "extraction_status": "complete",
+  "source_regions": [
+    {
+      "document_id": "SAP_001_11",
+      "pdf_page": 41,
+      "bbox": [
+        0,
+        0,
+        841.9200000000001,
+        595.32
+      ],
+      "coordinate_system": "pdf_points_top_left"
+    }
+  ],
+  "source_docx_locations": [],
+  "physical_blocks": [
+    {
+      "block_id": "B00016",
+      "kind": "other",
+      "display_order": 0,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 41,
+          "bbox": [
+            624.19,
+            35.50716,
+            770.9195200000001,
+            47.05079999999998
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "VCN Biosciences S.L. P-VCNA-003",
+      "source_element_ids": [
+        "E00016"
+      ],
+      "notes": "Corporate source header wrapper; retained for traceability, separate from shell title/header."
+    },
+    {
+      "block_id": "B00017",
+      "kind": "other",
+      "display_order": 1,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 41,
+          "bbox": [
+            678.58,
+            47.1471600000001,
+            770.8494400000001,
+            58.69080000000008
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Statistical Analysis Plan",
+      "source_element_ids": [
+        "E00017"
+      ],
+      "notes": "Corporate source header wrapper; retained for traceability, separate from shell title/header."
+    },
+    {
+      "block_id": "B00018",
+      "kind": "placeholder",
+      "display_order": 2,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 41,
+          "bbox": [
+            90.504,
+            65.50999999999999,
+            735.433,
+            74.50999999999999
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "P-VCNA-003 ddMMMyyyy HH:MM",
+      "source_element_ids": [
+        "E00018",
+        "E00019",
+        "E00020"
+      ],
+      "notes": null
+    },
+    {
+      "block_id": "B00019",
+      "kind": "title",
+      "display_order": 3,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 41,
+          "bbox": [
+            318.77,
+            76.55000000000007,
+            578.557,
+            85.55000000000007
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Figure 14.2.1 Kaplan-Meier Plot of Overall Survival (Intent-to-Treat Set)",
+      "source_element_ids": [
+        "E00021"
+      ],
+      "notes": null
+    },
+    {
+      "block_id": "B00001",
+      "kind": "body",
+      "display_order": 4,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 41,
+          "bbox": [
+            96.144,
+            98.99000000000007,
+            172.60800000000006,
+            107.99000000000007
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Figure Specifications",
+      "source_element_ids": [
+        "E00001"
+      ],
+      "notes": null
+    },
+    {
+      "block_id": "B00002",
+      "kind": "body",
+      "display_order": 5,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 41,
+          "bbox": [
+            96.144,
+            120.95000000000005,
+            245.79500000000002,
+            129.95000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Procedure: PROC LIFETEST – survival plot",
+      "source_element_ids": [
+        "E00002"
+      ],
+      "notes": null
+    },
+    {
+      "block_id": "B00003",
+      "kind": "body",
+      "display_order": 6,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 41,
+          "bbox": [
+            96.144,
+            142.91000000000003,
+            125.069,
+            151.91000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "By: Arm",
+      "source_element_ids": [
+        "E00003"
+      ],
+      "notes": null
+    },
+    {
+      "block_id": "B00004",
+      "kind": "body",
+      "display_order": 7,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 41,
+          "bbox": [
+            96.144,
+            164.99000000000007,
+            138.52500000000003,
+            173.99000000000007
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "x axis: Time",
+      "source_element_ids": [
+        "E00004"
+      ],
+      "notes": null
+    },
+    {
+      "block_id": "B00005",
+      "kind": "body",
+      "display_order": 8,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 41,
+          "bbox": [
+            96.144,
+            175.91000000000003,
+            236.507,
+            184.91000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "x axis: Label: Time Post-Dose (months)",
+      "source_element_ids": [
+        "E00005"
+      ],
+      "notes": null
+    },
+    {
+      "block_id": "B00006",
+      "kind": "body",
+      "display_order": 9,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 41,
+          "bbox": [
+            96.144,
+            186.98000000000002,
+            202.002,
+            195.98000000000002
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "x axis: values: As appropriate",
+      "source_element_ids": [
+        "E00006"
+      ],
+      "notes": null
+    },
+    {
+      "block_id": "B00007",
+      "kind": "body",
+      "display_order": 10,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 41,
+          "bbox": [
+            96.144,
+            219.86000000000007,
+            191.07600000000002,
+            228.86000000000007
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Y axis: Survival proportion",
+      "source_element_ids": [
+        "E00007"
+      ],
+      "notes": null
+    },
+    {
+      "block_id": "B00008",
+      "kind": "body",
+      "display_order": 11,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 41,
+          "bbox": [
+            96.144,
+            230.90000000000003,
+            181.93200000000002,
+            239.90000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Y axis Label: Proportion",
+      "source_element_ids": [
+        "E00008"
+      ],
+      "notes": null
+    },
+    {
+      "block_id": "B00009",
+      "kind": "body",
+      "display_order": 12,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 41,
+          "bbox": [
+            96.144,
+            241.82000000000005,
+            200.07500000000002,
+            250.82000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Y axis values: As appropriate",
+      "source_element_ids": [
+        "E00009"
+      ],
+      "notes": null
+    },
+    {
+      "block_id": "B00010",
+      "kind": "body",
+      "display_order": 13,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 41,
+          "bbox": [
+            96.144,
+            274.82000000000005,
+            124.827,
+            283.82000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Legend:",
+      "source_element_ids": [
+        "E00010"
+      ],
+      "notes": null
+    },
+    {
+      "block_id": "B00011",
+      "kind": "body",
+      "display_order": 14,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 41,
+          "bbox": [
+            96.144,
+            285.86000000000007,
+            380.9900000000001,
+            294.86000000000007
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Arm I (Nab-paclitaxel and gemcitabine) (N=xx) – linestyle = solid, colour = blue",
+      "source_element_ids": [
+        "E00011"
+      ],
+      "notes": null
+    },
+    {
+      "block_id": "B00012",
+      "kind": "body",
+      "display_order": 15,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 41,
+          "bbox": [
+            96.144,
+            296.78000000000003,
+            436.283,
+            305.78000000000003
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Arm II (VCN-01 with Nab-paclitaxel and gemcitabine) (N=xx) – linestyle = solid, colour = green",
+      "source_element_ids": [
+        "E00012"
+      ],
+      "notes": null
+    },
+    {
+      "block_id": "B00013",
+      "kind": "body",
+      "display_order": 16,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 41,
+          "bbox": [
+            96.144,
+            318.76000000000005,
+            352.212,
+            327.76000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Number of patients at risk over time to be presented below the x axis.",
+      "source_element_ids": [
+        "E00013"
+      ],
+      "notes": null
+    },
+    {
+      "block_id": "B00014",
+      "kind": "body",
+      "display_order": 17,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 41,
+          "bbox": [
+            96.144,
+            340.72,
+            132.11700000000002,
+            349.72
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Footnote:",
+      "source_element_ids": [
+        "E00014"
+      ],
+      "notes": null
+    },
+    {
+      "block_id": "B00015",
+      "kind": "footnote",
+      "display_order": 18,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 41,
+          "bbox": [
+            96.144,
+            351.76000000000005,
+            414.29,
+            360.76000000000005
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Patients who are lost to follow-up are censored at the time of their last visit or contact.",
+      "source_element_ids": [
+        "E00015"
+      ],
+      "notes": "footnote_id=FN001"
+    },
+    {
+      "block_id": "B00020",
+      "kind": "programming_note",
+      "display_order": 19,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 41,
+          "bbox": [
+            90.504,
+            382.12,
+            764.962,
+            413.08000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Programming Note: This layout also applies to Figure 14.2.2 Kaplan-Meier Plot of Overall Survival (Full Analysis Set) and Figure 14.2.3 Kaplan-Meier Plot of Overall Survival (Per Protocol\nSet), Figure 14.2.4 Subgroup Analysis: Kaplan-Meier Plot of Overall Survival (ITT), Figure 14.2.5 Kaplan-Meier Plot of Progression Free Survival (ITT), Figure 14.2.6 Kaplan-Meier Plot of\nProgression Free Survival (Full Analysis Set), Figure 14.2.7 Subgroup Analysis: Kaplan-Meier Plot of Progression Free Survival (ITT), Figure 14.2.8 Kaplan-Meier Plot of Time to Progression,",
+      "source_element_ids": [
+        "E00022"
+      ],
+      "notes": null
+    },
+    {
+      "block_id": "B00021",
+      "kind": "programming_note",
+      "display_order": 20,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 41,
+          "bbox": [
+            90.504,
+            415.12,
+            295.514,
+            424.12
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Figure 14.2.9 Kaplan-Meier Plot of Duration of Response",
+      "source_element_ids": [
+        "E00023"
+      ],
+      "notes": "Continuation of source Programming Note; cited output is a layout reference, not a shell title."
+    },
+    {
+      "block_id": "B00022",
+      "kind": "programming_note",
+      "display_order": 21,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 41,
+          "bbox": [
+            90.504,
+            426.0400000000001,
+            662.2670000000005,
+            435.0400000000001
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Programming note for Figure 14.2.6 Kaplan-Meier Plot for Duration of Response: The starting point for both arms is not 100%, but the response rate per arm.",
+      "source_element_ids": [
+        "E00024"
+      ],
+      "notes": null
+    },
+    {
+      "block_id": "B00023",
+      "kind": "other",
+      "display_order": 22,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 41,
+          "bbox": [
+            95.904,
+            519.975,
+            765.751,
+            530.4060000000001
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Form STATt004 Page 67 of 112",
+      "source_element_ids": [
+        "E00025"
+      ],
+      "notes": "Corporate form footer retained separately; not a clinical footnote."
+    },
+    {
+      "block_id": "B00024",
+      "kind": "other",
+      "display_order": 23,
+      "panel_id": "P01",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 41,
+          "bbox": [
+            95.904,
+            530.4150000000001,
+            195.88400000000001,
+            540.846
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "source_docx_location": null,
+      "exact_text": "Version Date: 20 May 2021",
+      "source_element_ids": [
+        "E00026"
+      ],
+      "notes": "Corporate form footer retained separately; not a clinical footnote."
+    }
+  ],
+  "source_elements": [
+    {
+      "element_id": "E00001",
+      "element_type": "body",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00001",
+          "docx_locator": "bookmark:O_O00001",
+          "source_text": "Figure Specifications",
+          "role": "body",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_54dc9af04e86f551"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00002",
+      "element_type": "body",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00002",
+          "docx_locator": "bookmark:O_O00002",
+          "source_text": "Procedure: PROC LIFETEST – survival plot",
+          "role": "body",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_4870a52f25242be0"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00003",
+      "element_type": "body",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00003",
+          "docx_locator": "bookmark:O_O00003",
+          "source_text": "By: Arm",
+          "role": "body",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_675cb11f8ca0d8c8"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00004",
+      "element_type": "body",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00004",
+          "docx_locator": "bookmark:O_O00004",
+          "source_text": "x axis: Time",
+          "role": "body",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_2f72b1bfa4bd99cd"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00005",
+      "element_type": "body",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00005",
+          "docx_locator": "bookmark:O_O00005",
+          "source_text": "x axis: Label: Time Post-Dose (months)",
+          "role": "body",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_b4ae4014f5f4bc59"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00006",
+      "element_type": "body",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00006",
+          "docx_locator": "bookmark:O_O00006",
+          "source_text": "x axis: values: As appropriate",
+          "role": "body",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_defb3d78e34a9738"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00007",
+      "element_type": "body",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00007",
+          "docx_locator": "bookmark:O_O00007",
+          "source_text": "Y axis: Survival proportion",
+          "role": "body",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_f3787dd82a974fc8"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00008",
+      "element_type": "body",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00008",
+          "docx_locator": "bookmark:O_O00008",
+          "source_text": "Y axis Label: Proportion",
+          "role": "body",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_14377b6969a48a1e"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00009",
+      "element_type": "body",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00009",
+          "docx_locator": "bookmark:O_O00009",
+          "source_text": "Y axis values: As appropriate",
+          "role": "body",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_5c8c76e6a0989d63"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00010",
+      "element_type": "body",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00010",
+          "docx_locator": "bookmark:O_O00010",
+          "source_text": "Legend:",
+          "role": "body",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_1d23b08342b34471"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00011",
+      "element_type": "body",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00011",
+          "docx_locator": "bookmark:O_O00011",
+          "source_text": "Arm I (Nab-paclitaxel and gemcitabine) (N=xx) – linestyle = solid, colour = blue",
+          "role": "body",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_ff90b800ac74209c"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00012",
+      "element_type": "body",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00012",
+          "docx_locator": "bookmark:O_O00012",
+          "source_text": "Arm II (VCN-01 with Nab-paclitaxel and gemcitabine) (N=xx) – linestyle = solid, colour = green",
+          "role": "body",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_f1af6d9c963eb4c8"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00013",
+      "element_type": "body",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00013",
+          "docx_locator": "bookmark:O_O00013",
+          "source_text": "Number of patients at risk over time to be presented below the x axis.",
+          "role": "body",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_3cfa18a8215012e0"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00014",
+      "element_type": "body",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00014",
+          "docx_locator": "bookmark:O_O00014",
+          "source_text": "Footnote:",
+          "role": "body",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_d6f6e4445c4c73fb"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00015",
+      "element_type": "footnote",
+      "metadata_pointer": "/footnotes/0/exact_text",
+      "occurrences": [
+        {
+          "occurrence_id": "O00015",
+          "docx_locator": "bookmark:O_O00015",
+          "source_text": "Patients who are lost to follow-up are censored at the time of their last visit or contact.",
+          "role": "footnote",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_468124254c7ed381"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Physical note retained; semantic rules deferred. Region recorded by evidence_ref_ids and physical block."
+    },
+    {
+      "element_id": "E00016",
+      "element_type": "other",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00016",
+          "docx_locator": null,
+          "source_text": "VCN Biosciences S.L. P-VCNA-003",
+          "role": "other",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_5e26429c7ed5d423"
+          ],
+          "verification_status": "unverified"
+        }
+      ],
+      "notes": "Corporate source header wrapper; retained for traceability, separate from shell title/header. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed."
+    },
+    {
+      "element_id": "E00017",
+      "element_type": "other",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00017",
+          "docx_locator": null,
+          "source_text": "Statistical Analysis Plan",
+          "role": "other",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_22292ac6b7b8ddb0"
+          ],
+          "verification_status": "unverified"
+        }
+      ],
+      "notes": "Corporate source header wrapper; retained for traceability, separate from shell title/header. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed."
+    },
+    {
+      "element_id": "E00018",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00018",
+          "docx_locator": "bookmark:O_O00018",
+          "source_text": "P-VCNA-003 ddMMMyyyy HH:MM",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_76c1eb9550bfdd3a"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00019",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00019",
+          "docx_locator": "bookmark:O_O00019",
+          "source_text": "ddMMMyyyy",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_6ff9a62a1ba5a803"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Actual source placeholder; no replacement operation."
+    },
+    {
+      "element_id": "E00020",
+      "element_type": "placeholder",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00020",
+          "docx_locator": "bookmark:O_O00020",
+          "source_text": "HH:MM",
+          "role": "placeholder",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_ea4750c511438698"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": "Actual source placeholder; no replacement operation."
+    },
+    {
+      "element_id": "E00021",
+      "element_type": "title",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00021",
+          "docx_locator": "bookmark:O_O00021",
+          "source_text": "Figure 14.2.1 Kaplan-Meier Plot of Overall Survival (Intent-to-Treat Set)",
+          "role": "title",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_1d8879e51e200360"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00022",
+      "element_type": "programming_note",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00022",
+          "docx_locator": "bookmark:O_O00022",
+          "source_text": "Programming Note: This layout also applies to Figure 14.2.2 Kaplan-Meier Plot of Overall Survival (Full Analysis Set) and Figure 14.2.3 Kaplan-Meier Plot of Overall Survival (Per Protocol\nSet), Figure 14.2.4 Subgroup Analysis: Kaplan-Meier Plot of Overall Survival (ITT), Figure 14.2.5 Kaplan-Meier Plot of Progression Free Survival (ITT), Figure 14.2.6 Kaplan-Meier Plot of\nProgression Free Survival (Full Analysis Set), Figure 14.2.7 Subgroup Analysis: Kaplan-Meier Plot of Progression Free Survival (ITT), Figure 14.2.8 Kaplan-Meier Plot of Time to Progression,",
+          "role": "programming_note",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_1bfa85ccdc5db42b"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00023",
+      "element_type": "programming_note",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00023",
+          "docx_locator": "bookmark:O_O00023",
+          "source_text": "Figure 14.2.9 Kaplan-Meier Plot of Duration of Response",
+          "role": "programming_note",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_bb73cbeacaad6ab3"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00024",
+      "element_type": "programming_note",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00024",
+          "docx_locator": "bookmark:O_O00024",
+          "source_text": "Programming note for Figure 14.2.6 Kaplan-Meier Plot for Duration of Response: The starting point for both arms is not 100%, but the response rate per arm.",
+          "role": "programming_note",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_12ca9bac0127eff9"
+          ],
+          "verification_status": "verified"
+        }
+      ],
+      "notes": null
+    },
+    {
+      "element_id": "E00025",
+      "element_type": "other",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00025",
+          "docx_locator": null,
+          "source_text": "Form STATt004 Page 67 of 112",
+          "role": "other",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_53e6a620621e5422"
+          ],
+          "verification_status": "unverified"
+        }
+      ],
+      "notes": "Corporate form footer retained separately; not a clinical footnote. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed."
+    },
+    {
+      "element_id": "E00026",
+      "element_type": "other",
+      "metadata_pointer": null,
+      "occurrences": [
+        {
+          "occurrence_id": "O00026",
+          "docx_locator": null,
+          "source_text": "Version Date: 20 May 2021",
+          "role": "other",
+          "panel_id": "P01",
+          "source_ref_ids": [
+            "SRC_590cc89eaa99b09c"
+          ],
+          "verification_status": "unverified"
+        }
+      ],
+      "notes": "Corporate form footer retained separately; not a clinical footnote. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed. Excluded corporate wrapper/form footer by documented policy; retained in source inventory, not silently removed."
+    }
+  ],
+  "occurrence_relations": [],
+  "footnotes": [
+    {
+      "footnote_id": "FN001",
+      "marker": null,
+      "exact_text": "Patients who are lost to follow-up are censored at the time of their last visit or contact.",
+      "applies_to": [],
+      "category": "study_specific",
+      "display_order": 0,
+      "applies_to_refs": [
+        {
+          "target_type": "unknown",
+          "target_id": null,
+          "panel_id": "P01",
+          "mapping_status": "unresolved"
+        }
+      ],
+      "semantic_extraction_status": "needs_review",
+      "semantic_rules": [],
+      "evidence_ref_ids": [
+        "SRC_468124254c7ed381"
+      ]
+    }
+  ],
+  "programming_notes": [
+    {
+      "exact_text": "Programming Note: This layout also applies to Figure 14.2.2 Kaplan-Meier Plot of Overall Survival (Full Analysis Set) and Figure 14.2.3 Kaplan-Meier Plot of Overall Survival (Per Protocol\nSet), Figure 14.2.4 Subgroup Analysis: Kaplan-Meier Plot of Overall Survival (ITT), Figure 14.2.5 Kaplan-Meier Plot of Progression Free Survival (ITT), Figure 14.2.6 Kaplan-Meier Plot of\nProgression Free Survival (Full Analysis Set), Figure 14.2.7 Subgroup Analysis: Kaplan-Meier Plot of Progression Free Survival (ITT), Figure 14.2.8 Kaplan-Meier Plot of Time to Progression,",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 41,
+          "bbox": [
+            90.504,
+            382.12,
+            764.962,
+            413.08000000000004
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "notes": "Source note only; no shared-layout expansion, target adaptation, or simulation."
+    },
+    {
+      "exact_text": "Figure 14.2.9 Kaplan-Meier Plot of Duration of Response",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 41,
+          "bbox": [
+            90.504,
+            415.12,
+            295.514,
+            424.12
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "notes": "Continuation of source Programming Note; cited output is a layout reference, not a shell title."
+    },
+    {
+      "exact_text": "Programming note for Figure 14.2.6 Kaplan-Meier Plot for Duration of Response: The starting point for both arms is not 100%, but the response rate per arm.",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 41,
+          "bbox": [
+            90.504,
+            426.0400000000001,
+            662.2670000000005,
+            435.0400000000001
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ],
+      "notes": "Source note only; no shared-layout expansion, target adaptation, or simulation."
+    }
+  ],
+  "listing_rows": [],
+  "physical_cells": [],
+  "issues": [
+    {
+      "issue_id": "PVCNA003_F_14_2_1_I001",
+      "template_id": "PVCNA003_F_14_2_1",
+      "severity": "warning",
+      "category": "source_reference_conflict",
+      "description": "The programming note calls Figure 14.2.6 Duration of Response; Content List calls it Progression Free Survival. Preserve original inconsistent note; do not resolve clinically.",
+      "status": "open",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 41,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    },
+    {
+      "issue_id": "PVCNA003_F_14_2_1_I002",
+      "template_id": "PVCNA003_F_14_2_1",
+      "severity": "warning",
+      "category": "footnote_scope_pending",
+      "description": "Physical footnote is captured verbatim with source bounds; typed applicability and semantic rules remain needs_review until supported interpretation. No global scope assumed.",
+      "status": "open",
+      "source_regions": [
+        {
+          "document_id": "SAP_001_11",
+          "pdf_page": 41,
+          "bbox": [
+            0,
+            0,
+            841.9200000000001,
+            595.32
+          ],
+          "coordinate_system": "pdf_points_top_left"
+        }
+      ]
+    }
+  ],
+  "figure_spec": {
+    "figure_type": "Procedure: PROC LIFETEST – survival plot",
+    "panels": [
+      {
+        "panel_id": "P01",
+        "title": "Kaplan-Meier Plot of Overall Survival (Intent-to-Treat Set)",
+        "panel_description": "Figure Specifications\nProcedure: PROC LIFETEST – survival plot\nBy: Arm\nx axis: Time\nx axis: Label: Time Post-Dose (months)\nx axis: values: As appropriate\nY axis: Survival proportion\nY axis Label: Proportion\nY axis values: As appropriate\nLegend:\nArm I (Nab-paclitaxel and gemcitabine) (N=xx) – linestyle = solid, colour = blue\nArm II (VCN-01 with Nab-paclitaxel and gemcitabine) (N=xx) – linestyle = solid, colour = green\nNumber of patients at risk over time to be presented below the x axis.\nFootnote:\nPatients who are lost to follow-up are censored at the time of their last visit or contact.",
+        "x_axis": {
+          "variable": "Time",
+          "label": "Time Post-Dose (months)",
+          "unit": "months",
+          "scale": null,
+          "range": "As appropriate"
+        },
+        "y_axis": {
+          "variable": "Survival proportion",
+          "label": "Proportion",
+          "unit": null,
+          "scale": null,
+          "range": "As appropriate"
+        }
+      }
+    ],
+    "groupings": [
+      "Arm"
+    ],
+    "legend_items": [
+      "Arm I (Nab-paclitaxel and gemcitabine) (N=xx) – linestyle = solid, colour = blue",
+      "Arm II (VCN-01 with Nab-paclitaxel and gemcitabine) (N=xx) – linestyle = solid, colour = green"
+    ],
+    "annotations": [
+      "Number of patients at risk over time to be presented below the x axis."
+    ],
+    "displayed_statistics": [],
+    "source_representation": {
+      "mode": "description",
+      "description": "Figure Specifications\nProcedure: PROC LIFETEST – survival plot\nBy: Arm\nx axis: Time\nx axis: Label: Time Post-Dose (months)\nx axis: values: As appropriate\nY axis: Survival proportion\nY axis Label: Proportion\nY axis values: As appropriate\nLegend:\nArm I (Nab-paclitaxel and gemcitabine) (N=xx) – linestyle = solid, colour = blue\nArm II (VCN-01 with Nab-paclitaxel and gemcitabine) (N=xx) – linestyle = solid, colour = green\nNumber of patients at risk over time to be presented below the x axis.\nFootnote:\nPatients who are lost to follow-up are censored at the time of their last visit or contact.",
+      "code_language": null,
+      "code_in_docx": false,
+      "image_in_docx": false,
+      "empty_plot_frame": false,
+      "notes": "Source contains a bordered text specification box, not a plotting frame or plotted data. PROC name is not an executable program. No DOCX created at this stage."
+    },
+    "layout_notes": [
+      "Preserve actual native textual figure specification; do not create a plot, data, image or empty plotting frame."
+    ]
+  }
+}

@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "/Users/xinxin/Documents/JHU/Generative AI/content list/TFL_Extraction_Full_Package_v2_4/tools/validate_study.py", line 6, in <module>
+    from docx import Document
+ModuleNotFoundError: No module named 'docx'
