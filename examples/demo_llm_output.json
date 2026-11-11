@@ -1,0 +1,132 @@
+{
+  "_warning": "Synthetic fixed outputs for deterministic tests, not SAP-derived LLM predictions.",
+  "queries": [
+    "overall survival",
+    "ITT",
+    "treatment arms",
+    "median OS",
+    "Kaplan-Meier",
+    "footnote"
+  ],
+  "extraction": {
+    "statistical_requirements": {
+      "analysis_topic": "Overall Survival",
+      "endpoint_name": "Overall Survival",
+      "endpoint_type": null,
+      "analysis_population": [
+        "ITT"
+      ],
+      "analysis_methods": [
+        "Kaplan-Meier"
+      ],
+      "treatment_groups": [
+        "Arm A",
+        "Arm B"
+      ],
+      "treatment_comparisons": [],
+      "visits_or_timepoints": [],
+      "statistics_to_display": [
+        "Median OS (months)",
+        "95% CI"
+      ],
+      "variables_to_display": [],
+      "stratification_factors": [],
+      "notes": []
+    },
+    "table_requirements": {
+      "row_requirements": [
+        "Median OS (months)",
+        "95% CI"
+      ],
+      "column_requirements": [
+        "Arm A",
+        "Arm B"
+      ],
+      "denominator_rule": null,
+      "footnote_requirements": [
+        "Estimates are based on the Kaplan-Meier method."
+      ]
+    },
+    "claims": [
+      {
+        "json_pointer": "/statistical_requirements/analysis_topic",
+        "block_id": "sap:p1:b6",
+        "exact_quote": "Overall Survival (OS) is time from randomization to death from any cause.",
+        "derivation": "explicit"
+      },
+      {
+        "json_pointer": "/statistical_requirements/endpoint_name",
+        "block_id": "sap:p1:b6",
+        "exact_quote": "Overall Survival (OS) is time from randomization to death from any cause.",
+        "derivation": "explicit"
+      },
+      {
+        "json_pointer": "/statistical_requirements/analysis_population/0",
+        "block_id": "sap:p1:b2",
+        "exact_quote": "The ITT population includes all randomized patients.",
+        "derivation": "explicit"
+      },
+      {
+        "json_pointer": "/statistical_requirements/analysis_methods/0",
+        "block_id": "sap:p1:b7",
+        "exact_quote": "Overall survival will be analyzed using the Kaplan-Meier method.",
+        "derivation": "explicit"
+      },
+      {
+        "json_pointer": "/statistical_requirements/treatment_groups/0",
+        "block_id": "sap:p1:b4",
+        "exact_quote": "Subjects are assigned to Arm A or Arm B.",
+        "derivation": "explicit"
+      },
+      {
+        "json_pointer": "/statistical_requirements/treatment_groups/1",
+        "block_id": "sap:p1:b4",
+        "exact_quote": "Subjects are assigned to Arm A or Arm B.",
+        "derivation": "explicit"
+      },
+      {
+        "json_pointer": "/statistical_requirements/statistics_to_display/0",
+        "block_id": "sap:p1:b8",
+        "exact_quote": "Median OS (months) and 95% CI will be reported by treatment arm.",
+        "derivation": "explicit"
+      },
+      {
+        "json_pointer": "/statistical_requirements/statistics_to_display/1",
+        "block_id": "sap:p1:b8",
+        "exact_quote": "Median OS (months) and 95% CI will be reported by treatment arm.",
+        "derivation": "explicit"
+      },
+      {
+        "json_pointer": "/table_requirements/row_requirements/0",
+        "block_id": "sap:p1:b10",
+        "exact_quote": "Table rows: Median OS (months) and 95% CI.",
+        "derivation": "explicit"
+      },
+      {
+        "json_pointer": "/table_requirements/row_requirements/1",
+        "block_id": "sap:p1:b10",
+        "exact_quote": "Table rows: Median OS (months) and 95% CI.",
+        "derivation": "explicit"
+      },
+      {
+        "json_pointer": "/table_requirements/column_requirements/0",
+        "block_id": "sap:p1:b9",
+        "exact_quote": "Table columns: Arm A and Arm B.",
+        "derivation": "explicit"
+      },
+      {
+        "json_pointer": "/table_requirements/column_requirements/1",
+        "block_id": "sap:p1:b9",
+        "exact_quote": "Table columns: Arm A and Arm B.",
+        "derivation": "explicit"
+      },
+      {
+        "json_pointer": "/table_requirements/footnote_requirements/0",
+        "block_id": "sap:p1:b11",
+        "exact_quote": "Footnote: Estimates are based on the Kaplan-Meier method.",
+        "derivation": "explicit"
+      }
+    ],
+    "issues": []
+  }
+}

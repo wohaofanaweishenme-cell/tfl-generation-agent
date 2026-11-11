@@ -1,0 +1,10 @@
+{
+  "keyword_to_template_ids": {
+    "overall survival": [
+      "TBL_DEMO_OS"
+    ],
+    "kaplan meier": [
+      "TBL_DEMO_OS"
+    ]
+  }
+}

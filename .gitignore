@@ -1,0 +1,29 @@
+# Python and build artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Secrets and private study data
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.secrets/
+input/private/
+data/private/
+
+# Generated files and OS/editor noise
+output/
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

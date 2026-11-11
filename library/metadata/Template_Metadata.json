@@ -1,0 +1,60 @@
+{
+  "library_id": "SYNTHETIC_DEMO_LIBRARY",
+  "templates": [
+    {
+      "identity": {
+        "template_id": "TBL_DEMO_OS",
+        "output_type": "table",
+        "file_path": "table/TBL_DEMO_OS.docx",
+        "original_tfl_number": "DEMO",
+        "original_title": "Summary of Overall Survival",
+        "normalized_title": "Summary of Overall Survival"
+      },
+      "source": {
+        "study_id": "SYNTHETIC",
+        "sap_document_id": "SYNTHETIC_SAP"
+      },
+      "statistical_context": {
+        "analysis_topic": "Overall Survival",
+        "endpoint_name": "Overall Survival",
+        "analysis_population": [
+          "ITT"
+        ],
+        "analysis_methods": [
+          "Kaplan-Meier"
+        ],
+        "treatment_comparisons": [],
+        "visits_or_timepoints": []
+      },
+      "retrieval": {
+        "keywords": [
+          "overall survival",
+          "OS",
+          "Kaplan-Meier",
+          "Median OS",
+          "95% CI"
+        ],
+        "aliases": [
+          "survival analysis"
+        ],
+        "retrieval_text": "Overall Survival table by treatment arm, Kaplan-Meier median OS and 95% CI"
+      },
+      "adaptation": {
+        "editable_elements": [
+          {
+            "docx_locator": "{{TITLE}}",
+            "operation": "replace_text",
+            "element_type": "title",
+            "target_field": "/identity/title"
+          }
+        ]
+      },
+      "footnotes": [
+        {
+          "category": "placeholder",
+          "exact_text": "{{FOOTNOTE_1}}"
+        }
+      ]
+    }
+  ]
+}
