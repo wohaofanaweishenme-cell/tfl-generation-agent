@@ -135,6 +135,14 @@ def complete_required_fields(tfl, sap, llm, prompts_dir, raw, initial_spec, cand
     if not missing:
         return initial_spec, audit
 
+    # Fixture mode is a deterministic offline demo with only TWO scripted
+    # answers. Do not fabricate a third answer or turn an invalid citation
+    # into a runtime failure: retain the blocked/review result.
+    from tfl_agent.tools.llm_client import FixtureJSONClient
+    if isinstance(llm, FixtureJSONClient):
+        audit["skipped_reason"] = "Offline fixture has no completion response"
+        return initial_spec, audit
+
     queries = _completion_queries(tfl, missing)
     extra_blocks = SAPIndex(sap).search(queries, top_k=24)
     # Preserve all blocks used by first pass for future citation verification.
