@@ -27,3 +27,10 @@ RULES:
 - If relevant requirements may be elsewhere, leave field empty and report missing or ambiguous.
 - Preserve footnote requirements verbatim when available; omit uncertain ones.
 - No study-specific trial results should be invented.
+
+TARGET-TABLE SCOPE (important when the SAP describes several related outputs):
+- Extract requirements for the ONE requested TFL ID and title, not every table or figure about that endpoint.
+- If the title explicitly names ITT, PP, or Safety population, do not add other populations merely because the SAP says they are used elsewhere. Preserve truly ambiguous cases as issues.
+- Do not import 6-month/1-year *rate table* requirements into a separate time-to-event *summary table*, nor subgroup tables, listings, plots, or footnotes for another output. Report uncertainties instead of borrowing.
+- A descriptive Demographics/Disposition/Safety table is not required to have a named efficacy endpoint. `endpoint_name` may be null without a missing-field issue.
+- Prefer separate claim pointers for each list item. A single exact quote enumerating several items is allowed only when it literally contains each retained item; the validator will check and link them individually. Never treat the entire SAP block as proof for every field.
