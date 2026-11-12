@@ -195,7 +195,7 @@ class TFLSession:
             'review_reasons':((self.selection_decision or {}).get('reasons', [])
                               if not self.selection else [])+
                              ([x['description'] for x in self.spec['issues']]
-                               if self.spec['issues'] else []))+
+                               if self.spec['issues'] else [])+
                               (word_validation['issues'] if not word_validation['valid'] else []),
         }
         report={
