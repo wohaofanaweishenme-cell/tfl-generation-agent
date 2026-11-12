@@ -130,3 +130,7 @@ python -m pytest -q
 The repository includes tests for the package and notebook workflow. Local checks on the prepared midterm package passed **11 tests**; GitHub CI results (if configured) should be evaluated separately. Generated files belong in ignored `output/`.
 
 **Do not commit** API keys, tokens, `.env` files, proprietary SAPs, identifiable patient information or unreviewed private study data. Keep real inputs in a separately managed private location and configure paths at runtime. No code in this repository is intended to replace statistical review or regulatory validation.
+
+## Real Study DeepSeek Demo: targeted evidence repair and safe template selection
+
+Notebook: [03_Real_Study_DeepSeek_Colab.ipynb](notebooks/03_Real_Study_DeepSeek_Colab.ipynb). One extra DeepSeek call is attempted only when required Step 2 fields are missing. Step 3 reports best match separately from an automatically eligible template; mismatched populations and endpoints require manual adaptation review. See [REAL_STUDY_DEEPSEEK_GUIDE.md](REAL_STUDY_DEEPSEEK_GUIDE.md).
