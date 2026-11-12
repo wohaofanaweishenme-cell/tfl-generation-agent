@@ -35,3 +35,15 @@ Use the source `intermediate/DOCX_Locator_Map/<template_id>.json`, individual DO
 - A fresh Colab runtime may require mounting Drive again, but the PDF remains in Drive and does **not** need to be uploaded again.
 - `OUTPUT_DIR` still points to temporary Colab storage. The last cell exports a ZIP; save it privately if you need persistent audit results.
 - Ensure authorization to store or transmit any confidential study content, especially when using an external model provider.
+
+
+## Step 2 / Step 3 evidence and ranking update
+
+See [STEP2_STEP3_RETRIEVAL_CHANGES.md](STEP2_STEP3_RETRIEVAL_CHANGES.md) for implementation and limitations.
+
+- A verified SAP enumeration may substantiate multiple explicitly mentioned statistics, but unsupported claims are still discarded with review issues.
+- Descriptive Demographics/Disposition/Safety tables do not require a named efficacy endpoint.
+- The new ranking uses output family (45%), title terms (27%), statistics (13%), methods (10%) and analysis population (5%); scores are heuristics, not probabilities.
+- PFS may rank a structurally similar OS template, but a known different endpoint **must be manually reviewed** and is **not auto-selected**.
+- Use full target titles, including **Safety Analysis Set** or **ITT Analysis Set**, to avoid merging requirements for related populations.
+- Reopen the GitHub Notebook before testing: an old Colab browser tab may retain earlier cell code. The target PDF stays on Google Drive.
