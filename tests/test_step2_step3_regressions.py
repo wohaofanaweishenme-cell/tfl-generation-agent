@@ -4,7 +4,7 @@ Do not commit real trial SAP text or API responses to GitHub.
 """
 from copy import deepcopy
 from tfl_agent.agent.step2_spec_builder import build_specification_from_extraction
-from tfl_agent.agent.step3_retriever import retrieve_templates, select_template
+from tfl_agent.agent.step3_retriever import retrieve_templates, select_template, template_selection_decision
 
 
 def _empty_stats(**updates):
@@ -160,7 +160,11 @@ def test_demographics_beats_unrelated_ae_even_without_endpoint_metadata():
     assert candidates[0]['template_id'] == 'DEMO'
     assert candidates[0]['score'] > 0.55
     assert candidates[0]['population_change_required']
-    assert select_template(candidates)['template_id'] == 'DEMO'
+    assert select_template(candidates) is None
+    decision = template_selection_decision(candidates)
+    assert decision['status'] == 'retrieved_needs_adaptation_review'
+    assert decision['best_candidate_template_id'] == 'DEMO'
+    assert decision['selected_template_id'] is None
     assert not any(x['template_id'] == 'AE' for x in candidates)
 
 

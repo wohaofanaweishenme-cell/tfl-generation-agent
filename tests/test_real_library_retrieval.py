@@ -5,7 +5,7 @@ Source files remain read-only. This test does NOT send content to any API.
 from pathlib import Path
 import pytest
 from tfl_agent.tools.library_loader import load_library
-from tfl_agent.agent.step3_retriever import retrieve_templates, select_template
+from tfl_agent.agent.step3_retriever import retrieve_templates, select_template, template_selection_decision
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -29,7 +29,9 @@ def test_actual_study_demographics_and_pfs_rankings():
     assert ranked and ranked[0]['template_id'] == 'PVCNA003_T_14_1_2_1'
     assert ranked[0]['table_family'] == 'demographics'
     assert ranked[0]['score'] >= 0.55
-    assert select_template(ranked) is not None
+    assert ranked[0]['population_change_required']
+    assert select_template(ranked) is None  # ranking is NOT permission to adapt
+    assert template_selection_decision(ranked)['status'] == 'retrieved_needs_adaptation_review'
 
     pfs = {
         'identity': {'title': 'Summary of Progression Free Survival – ITT Analysis Set',

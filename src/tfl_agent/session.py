@@ -5,7 +5,7 @@ from typing import Any
 
 from tfl_agent.agent.step1_parser import parse_inputs
 from tfl_agent.agent.step2_spec_builder import build_specification
-from tfl_agent.agent.step3_retriever import retrieve_templates, select_template
+from tfl_agent.agent.step3_retriever import retrieve_templates, template_selection_decision
 from tfl_agent.agent.step4_generator import generate
 from tfl_agent.agent.step5_validator import validate_spec_document, validate_shell
 from tfl_agent.tools.docx_editor import plan_modifications
@@ -50,6 +50,7 @@ class TFLSession:
         self.spec_validation: dict|None=None
         self.matches: list[dict]|None=None
         self.selection: dict|None=None
+        self.selection_decision: dict|None=None
         self.shell_path: str|None=None
         self.plan: dict|None=None
         self.shell_status: str|None=None
@@ -126,19 +127,22 @@ class TFLSession:
     def step3_retrieve_templates(self,top_k=5,min_score=0.55):
         self._require('spec','Step 2')
         self.matches=retrieve_templates(self.spec,self.library,top_k=top_k)
-        self.selection=select_template(self.matches,min_score=min_score)
+        self.selection_decision=template_selection_decision(self.matches,min_score=min_score)
+        self.selection=self.selection_decision['selection']
         candidates=[{k:v for k,v in m.items() if k not in ('source_path','template')} for m in self.matches]
-        write_json(self.output_dir/'retrieval'/f'{_safe_file_id(self.tfl["tfl_id"])}_candidates.json', {
-            'candidates':candidates,
-            'selected_template_id':self.selection['template_id'] if self.selection else None,
-        })
-        return {'candidates':candidates,
-                'selected_template_id':self.selection['template_id'] if self.selection else None}
+        status_fields={k:v for k,v in self.selection_decision.items() if k != 'selection'}
+        result={'candidates':candidates, **status_fields}
+        write_json(self.output_dir/'retrieval'/f'{_safe_file_id(self.tfl["tfl_id"])}_candidates.json',result)
+        return result
 
     def preview_modification_plan(self):
         self._require('matches','Step 3')
         if self.selection is None:
-            return {'safe_to_generate':False,'reason':'No unique template above threshold'}
+            decision=self.selection_decision or {}
+            return {'safe_to_generate':False,
+                    'reason':'; '.join(decision.get('reasons', ['No reviewed source template available'])),
+                    'retrieval_status':decision.get('status','no_candidate'),
+                    'best_candidate_template_id':decision.get('best_candidate_template_id')}
         return plan_modifications(self.selection['source_path'],self.spec,
                                   locator_map_path=self.selection['template'].get('locator_map_path'))
 
@@ -155,7 +159,8 @@ class TFLSession:
         if self.selection is None:
             self.shell_status='needs_review'
             return {'status':self.shell_status,'shell_path':None,
-                    'issues':['No unique template exceeds matching threshold']}
+                    'issues':(self.selection_decision or {}).get('reasons',
+                                                             ['No automatically usable template'])}
         path=self.output_dir/'shells'/f'Table_{_safe_file_id(self.tfl["tfl_id"])}.docx'
         self.shell_path,self.plan=generate(self.spec,self.selection,path)
         write_json(self.output_dir/'modification_plans'/f'{_safe_file_id(self.tfl["tfl_id"])}.json',self.plan)
@@ -185,8 +190,12 @@ class TFLSession:
             'tfl_id':self.tfl['tfl_id'],'title':self.tfl['title'],'status':status,
             'template_id':self.selection['template_id'] if self.selection else None,
             'shell_path':self.shell_path,
-            'review_reasons': ([x['description'] for x in self.spec['issues']]
-                               if self.spec['issues'] else [])+
+            'best_candidate_template_id':(self.selection_decision or {}).get('best_candidate_template_id'),
+            'retrieval_status':(self.selection_decision or {}).get('status'),
+            'review_reasons':((self.selection_decision or {}).get('reasons', [])
+                              if not self.selection else [])+
+                             ([x['description'] for x in self.spec['issues']]
+                               if self.spec['issues'] else []))+
                               (word_validation['issues'] if not word_validation['valid'] else []),
         }
         report={
@@ -208,6 +217,9 @@ class TFLSession:
         write_json(self.output_dir/'Generation_Rationale.json',{
             'tfl_id':self.tfl['tfl_id'],'selected_template_id':record['template_id'],
             'selected_template_explanation':self.selection.get('explanation') if self.selection else None,
+            'best_candidate_template_id':(self.selection_decision or {}).get('best_candidate_template_id'),
+            'retrieval_status':(self.selection_decision or {}).get('status'),
+            'retrieval_review_reasons':(self.selection_decision or {}).get('reasons', []),
             'modification_plan':self.plan,
             'retrieval_candidates':[
                 {k:v for k,v in m.items() if k not in ('source_path','template')}

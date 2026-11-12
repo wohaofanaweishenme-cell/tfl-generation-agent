@@ -241,14 +241,47 @@ def retrieve_templates(spec, library, top_k=5):
     return matches[:top_k]
 
 
-def select_template(matches, min_score=0.55):
-    if not matches or matches[0]['score'] < min_score:
-        return None
+def template_selection_decision(matches, min_score=0.55, min_gap=0.04):
+    """Separate BEST RANKED candidate from AUTOMATICALLY USABLE template.
+
+    Retrieval is not clinical approval. Known population changes, endpoint
+    changes and close competing candidates must be reviewed before generation.
+    """
+    if not matches:
+        return {
+            'status':'no_candidate', 'best_candidate_template_id':None,
+            'selected_template_id':None, 'reasons':['No template candidates found'],
+            'selection':None, 'requires_manual_review':True,
+        }
     best = matches[0]
-    if best.get('requires_endpoint_review'):
-        # PFS and OS might reuse a common time-to-event layout, but the
-        # clinical definitions and footnotes are not interchangeable.
-        return None
-    if len(matches) > 1 and best['score'] - matches[1]['score'] < 0.04:
-        return None
-    return best
+    score = best['score']
+    reasons = []
+    if score < min_score:
+        status = 'retrieved_low_score'
+        reasons.append(f'Top score {score:.4f} below required {min_score:.2f}')
+    elif best.get('requires_endpoint_review') or best.get('cross_endpoint'):
+        status = 'retrieved_needs_adaptation_review'
+        reasons.append('Known target/source endpoints differ; statistics and footnotes require review')
+    elif best.get('population_change_required'):
+        status = 'retrieved_needs_adaptation_review'
+        reasons.append('Analysis populations differ; denominator, headers, and footnotes require review')
+    elif len(matches) > 1 and score - matches[1]['score'] < min_gap:
+        status = 'retrieved_ambiguous'
+        reasons.append(f'Top two template scores differ by less than {min_gap:.2f}')
+    else:
+        status = 'auto_selected'
+        reasons.append('Top ranked candidate passed the configured retrieval gates')
+    selection = best if status == 'auto_selected' else None
+    return {
+        'status':status,
+        'best_candidate_template_id':best['template_id'],
+        'selected_template_id':selection['template_id'] if selection else None,
+        'reasons':reasons,
+        'selection':selection,
+        'requires_manual_review':selection is None,
+    }
+
+
+def select_template(matches, min_score=0.55):
+    """Backward-compatible safe selection; None means NOT approved for generation."""
+    return template_selection_decision(matches, min_score=min_score)['selection']
