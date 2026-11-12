@@ -7,9 +7,9 @@ Open `notebooks/03_Real_Study_DeepSeek_Colab.ipynb` on Google Colab. It uses a l
 1. **Revoke any API key pasted into a chat**, and issue a fresh DeepSeek API key. Never commit it, copy it into notebook source, or print it.
 2. In Colab's **Secrets** (key icon), set `DEEPSEEK_API_KEY` and grant notebook access.
 3. Run the installation and Library audit cells. The new loader supports both the original `library/metadata/Template_Metadata.json` and the team's `library/studies/P-VCNA-003/Study_Metadata.json` with actual DOCX paths under `TFL_Template_Library/`.
-4. Upload a *text-selectable* target-study SAP PDF. Prefer a **different study** from P-VCNA-003 to avoid leakage.
-5. Edit `TARGET_TABLES` with the selected Table ID and title found in the *target SAP*, not the source library. Use 1–2 Tables for the midterm.
-6. When the PDF contains both SAP body and source shells, set `SAP_BODY_PAGE_RANGE=(start,end)` using **physical PDF pages** to exclude Content List/shell text from evidence retrieval. `None` does no filtering, so interpret any evidence cautiously.
+4. In Google Drive create **My Drive/TFL_Project/studies/** and upload the text-selectable target-study SAP **SAP_001_00.pdf** there once. The Notebook mounts Drive using `drive.mount('/content/drive')` and points `SAP_PATH` to `/content/drive/MyDrive/TFL_Project/studies/SAP_001_00.pdf`. Adjust `DRIVE_SAP_RELATIVE_PATH` if you use another folder or filename. The PDF is *not* committed to GitHub. Prefer a different study from P-VCNA-003 to avoid leakage.
+5. For SAP_001_00.pdf the notebook starts with Table 14.1.3.1 (Demographic and Baseline Characteristics), with Table 14.2.3.1 (Summary of Progression Free Survival) commented out for an optional second test. Edit `TARGET_TABLES` with the target Table ID/title, not the source-library template ID; the demo supports 1–2 Tables.
+6. For SAP_001_00.pdf the default `SAP_BODY_PAGE_RANGE=(4,21)` restricts retrieval to the statistical SAP body, excluding Content List on pages 23–26 and source shells from page 27. For other PDFs update this range using **physical PDF pages** (1-indexed); `None` does no filtering.
 7. Run the extraction and retrieval cells. These make paid API requests (normally two per Table). Download the output audit archive, including specifications and generation rationale.
 
 ## What this version actually supports
@@ -28,3 +28,10 @@ Use the source `intermediate/DOCX_Locator_Map/<template_id>.json`, individual DO
 ## Fallback
 
 `notebooks/02_Midterm_Demo_GitHub_Colab.ipynb` is still an offline synthetic fixture test that **can generate one editable example Table**. Do not present its fixture result as evidence that the live DeepSeek run succeeded.
+
+## Google Drive troubleshooting
+
+- If `FileNotFoundError` occurs, run the Drive cell and check whether it prints the exact missing path and any PDF names detected in that folder. Put the PDF in the configured location or change `DRIVE_SAP_RELATIVE_PATH`.
+- A fresh Colab runtime may require mounting Drive again, but the PDF remains in Drive and does **not** need to be uploaded again.
+- `OUTPUT_DIR` still points to temporary Colab storage. The last cell exports a ZIP; save it privately if you need persistent audit results.
+- Ensure authorization to store or transmit any confidential study content, especially when using an external model provider.
