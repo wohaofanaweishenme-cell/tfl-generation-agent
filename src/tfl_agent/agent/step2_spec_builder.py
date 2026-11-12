@@ -365,4 +365,13 @@ def build_specification(tfl, sap, llm, prompts_dir):
     prompt = json.dumps({'tfl': tfl, 'candidate_blocks': candidates}, ensure_ascii=False)
     raw = llm.json(extract_prompt, prompt)
     spec = build_specification_from_extraction(tfl, sap, raw, candidates)
-    return spec, {'queries': queries, 'candidates': candidates, 'raw_extraction': raw}
+    # One extra real LLM call ONLY when required fields were left blank.
+    # Candidate sourcing and all repaired claims remain independently verified.
+    from tfl_agent.agent.step2_completion import complete_required_fields
+    spec, completion_audit = complete_required_fields(
+        tfl, sap, llm, prompts_dir, raw, spec, candidates
+    )
+    return spec, {
+        'queries': queries, 'candidates': candidates,
+        'raw_extraction': raw, 'completion': completion_audit,
+    }
