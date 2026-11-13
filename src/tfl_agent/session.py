@@ -27,7 +27,8 @@ class TFLSession:
 
     def __init__(self, *, sap_path, library_path, schema_path, prompts_dir,
                  output_dir, llm, content_list_path=None, tfl_id=None,
-                 title=None, tfl_index=0, allow_review=False, sap_body_page_range=None):
+                 title=None, tfl_index=0, allow_review=False, sap_body_page_range=None,
+                 reviewed_adaptation=None):
         self.sap_path=Path(sap_path).resolve()
         self.library_path=Path(library_path).resolve()
         self.schema_path=Path(schema_path).resolve()
@@ -39,6 +40,7 @@ class TFLSession:
         self.title=title
         self.tfl_index=tfl_index
         self.allow_review=allow_review
+        self.reviewed_adaptation=reviewed_adaptation
         self.sap_body_page_range=sap_body_page_range
         self.sap: dict[str,Any]|None=None
         self.inventory: list[dict]|None=None
@@ -135,16 +137,39 @@ class TFLSession:
         write_json(self.output_dir/'retrieval'/f'{_safe_file_id(self.tfl["tfl_id"])}_candidates.json',result)
         return result
 
+    def _reviewed_source_selection(self):
+        """An explicit review record may permit a *draft* from a blocked candidate.
+
+        This does not alter Step 3's automatic selection decision.  Only an
+        actual retrieved candidate can be used; the adapter validates the
+        review fields and exact source anchors before any edits are made.
+        """
+        if self.selection is not None:
+            return self.selection
+        approval = self.reviewed_adaptation
+        if not isinstance(approval, dict):
+            return None
+        required = ("template_id", "tfl_id", "reviewed_by", "review_reason")
+        if any(not isinstance(approval.get(k), str) or not approval[k].strip()
+               for k in required):
+            return None
+        if approval["tfl_id"] != self.tfl["tfl_id"]:
+            return None
+        return next((m for m in self.matches or []
+                     if m["template_id"] == approval["template_id"]), None)
+
     def preview_modification_plan(self):
         self._require('matches','Step 3')
-        if self.selection is None:
+        selection = self._reviewed_source_selection()
+        if selection is None:
             decision=self.selection_decision or {}
             return {'safe_to_generate':False,
                     'reason':'; '.join(decision.get('reasons', ['No reviewed source template available'])),
                     'retrieval_status':decision.get('status','no_candidate'),
                     'best_candidate_template_id':decision.get('best_candidate_template_id')}
-        return plan_modifications(self.selection['source_path'],self.spec,
-                                  locator_map_path=self.selection['template'].get('locator_map_path'))
+        return plan_modifications(selection['source_path'],self.spec,
+                                  locator_map_path=selection['template'].get('locator_map_path'),
+                                  reviewed_adaptation=self.reviewed_adaptation)
 
     def step4_generate_shell(self):
         self._require('matches','Step 3')
@@ -156,13 +181,15 @@ class TFLSession:
             self.shell_status='needs_review'
             return {'status':self.shell_status,'shell_path':None,
                     'issues':[x['description'] for x in self.spec['issues']]}
+        self.selection = self._reviewed_source_selection()
         if self.selection is None:
             self.shell_status='needs_review'
             return {'status':self.shell_status,'shell_path':None,
                     'issues':(self.selection_decision or {}).get('reasons',
                                                              ['No automatically usable template'])}
         path=self.output_dir/'shells'/f'Table_{_safe_file_id(self.tfl["tfl_id"])}.docx'
-        self.shell_path,self.plan=generate(self.spec,self.selection,path)
+        self.shell_path,self.plan=generate(self.spec,self.selection,path,
+                                           reviewed_adaptation=self.reviewed_adaptation)
         write_json(self.output_dir/'modification_plans'/f'{_safe_file_id(self.tfl["tfl_id"])}.json',self.plan)
         if self.shell_path is None:
             self.shell_status='needs_review'
@@ -170,7 +197,10 @@ class TFLSession:
                     'issues':[self.plan.get('reason','Unverified DOCX template placeholders')]+
                     [f'Missing: {x}' for x in self.plan['missing_placeholders']]+
                     [f'Unexpected: {x}' for x in self.plan['unexpected_placeholders']]}
-        self.shell_status='generated' if self.spec['readiness']=='ready' else 'draft_needs_review'
+        self.shell_status=('draft_needs_review'
+                           if self.plan.get('editing_mode')=='verified_bookmark_draft'
+                           or self.spec['readiness']!='ready'
+                           else 'generated')
         return {'status':self.shell_status,'shell_path':self.shell_path,'issues':[]}
 
     def step5_validate_and_export(self):
