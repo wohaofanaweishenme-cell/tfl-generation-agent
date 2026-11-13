@@ -61,6 +61,35 @@ def _range(start, end):
     return texts, breaks
 
 
+def _range_text(start, end):
+    """Read bookmarked runs including Word breaks and paragraph separators."""
+    parent = start.getparent()
+    texts, breaks = _range(start, end)  # also checks nesting and range boundaries
+    siblings = list(parent)
+    a, b = siblings.index(start), siblings.index(end)
+    chunks = []
+    for node in siblings[a + 1:b]:
+        paragraphs = list(node.iter(qn("w:p")))
+        if node.tag == qn("w:p"):
+            paragraphs = [node] + paragraphs
+        if paragraphs:
+            for i, p in enumerate(paragraphs):
+                if i:
+                    chunks.append(" ")
+                for descendant in p.iter():
+                    if descendant.tag == qn("w:t"):
+                        chunks.append(descendant.text or "")
+                    elif descendant.tag in (qn("w:br"), qn("w:tab")):
+                        chunks.append(" ")
+        else:
+            for descendant in node.iter():
+                if descendant.tag == qn("w:t"):
+                    chunks.append(descendant.text or "")
+                elif descendant.tag in (qn("w:br"), qn("w:tab")):
+                    chunks.append(" ")
+    return "".join(chunks)
+
+
 def _index_locator(locator):
     occurrences = {}
     for element in locator.get("source_elements", []):
@@ -92,7 +121,18 @@ def _title_for(spec):
 def _coverage(text, requirements):
     # Conservative: do not guess semantic equivalence of variables, units or footnotes.
     haystack = _norm(text)
-    return [str(value) for value in requirements if _norm(value) not in haystack]
+    missing = []
+    for value in requirements:
+        needle = _norm(value)
+        if not needle:
+            continue
+        if len(needle) <= 2 and needle.isalnum():
+            found = bool(re.search(r"(?<!\w)" + re.escape(needle) + r"(?!\w)", haystack))
+        else:
+            found = needle in haystack
+        if not found:
+            missing.append(str(value))
+    return missing
 
 
 def plan_bookmark_adaptation(template_path, spec, locator_map_path, reviewed_adaptation=None):
@@ -188,7 +228,7 @@ def plan_bookmark_adaptation(template_path, spec, locator_map_path, reviewed_ada
             if not item or item[0] not in ends:
                 raise ValueError(f"Source bookmark missing its start/end: {name}")
             texts, _ = _range(item[1], ends[item[0]])
-            current = "".join(t.text or "" for t in texts)
+            current = _range_text(item[1], ends[item[0]])
             if _norm(current) != _norm(rec["source_text"]):
                 raise ValueError(f"Bookmark text mismatch against verified locator: {name}")
             if not texts:
@@ -262,7 +302,7 @@ def _apply_one(doc, edit):
     starts, ends = _bookmarks(doc)
     ident, start = starts[edit["bookmark"]]
     texts, breaks = _range(start, ends[ident])
-    if _norm("".join(t.text or "" for t in texts)) != _norm(edit["expected_source_text"]):
+    if _norm(_range_text(start, ends[ident])) != _norm(edit["expected_source_text"]):
         raise ValueError("Bookmark content changed since plan was validated")
     first = texts[0]
     for extra in texts[1:]:
