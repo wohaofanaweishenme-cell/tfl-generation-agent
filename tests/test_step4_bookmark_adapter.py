@@ -197,3 +197,25 @@ def test_review_scaffold_is_unapproved_and_does_not_modify_library(tmp_path):
         "O_O00002", "O_O00003"
     ]
     assert source.read_bytes() == before
+
+
+def test_real_demographics_source_bookmark_integrity_if_library_present():
+    """Read-only source integration; no target SAP or API interaction."""
+    import pytest
+    from tfl_agent.tools.io_utils import read_json
+    root = Path(__file__).resolve().parents[1] / "library" / "studies" / "P-VCNA-003"
+    if not root.exists():
+        pytest.skip("Teammate real Library not checked out")
+    template = root / "TFL_Template_Library" / "table" / "PVCNA003_T_14_1_2_1.docx"
+    locator = root / "intermediate" / "DOCX_Locator_Map" / "PVCNA003_T_14_1_2_1.json"
+    loc = read_json(locator)
+    source_notes = [e["occurrences"][0]["source_text"] for e in loc["source_elements"]
+                    if e["element_type"] == "footnote"]
+    spec = _spec(columns=["Arm I", "Arm II"], footnotes=source_notes)
+    spec["table_requirements"]["row_requirements"] = ["Age (years)"]
+    plan = plan_bookmark_adaptation(template, spec, locator)
+    assert plan["bookmark_count"] > 0
+    assert plan.get("source_sha256") == hashlib.sha256(template.read_bytes()).hexdigest()
+    # A real bookmarked source title must be resolvable; other differences
+    # can still rightfully block generation.
+    assert any(e.get("source_role") == "title" for e in plan["edits"]), plan["reason"]
