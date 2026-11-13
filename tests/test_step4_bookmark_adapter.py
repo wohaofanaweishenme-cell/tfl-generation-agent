@@ -175,3 +175,7 @@ def test_missing_locator_and_source_output_protection(tmp_path):
                                 locator_map_path=locator)
     assert path is None and not plan["safe_to_generate"]
     assert not (source.parent / "unsafe.docx").exists()
+    other_library_location = locator.parents[2] / "should_not_write.docx"
+    path, plan = generate_shell(source, _spec(), other_library_location,
+                                locator_map_path=locator)
+    assert path is None and not other_library_location.exists()
