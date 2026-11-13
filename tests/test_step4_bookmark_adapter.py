@@ -7,7 +7,7 @@ from docx import Document
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 
-from tfl_agent.tools.bookmark_adapter import plan_bookmark_adaptation
+from tfl_agent.tools.bookmark_adapter import plan_bookmark_adaptation, build_bookmark_review_scaffold
 from tfl_agent.tools.docx_editor import generate_shell, plan_modifications
 
 
@@ -179,3 +179,21 @@ def test_missing_locator_and_source_output_protection(tmp_path):
     path, plan = generate_shell(source, _spec(), other_library_location,
                                 locator_map_path=locator)
     assert path is None and not other_library_location.exists()
+
+
+def test_review_scaffold_is_unapproved_and_does_not_modify_library(tmp_path):
+    source, locator = _source(tmp_path)
+    before = source.read_bytes()
+    scaffold = build_bookmark_review_scaffold(
+        source, _spec(columns=["Target Arm A", "Target Arm B"]), locator
+    )
+    assert scaffold["template_id"] == "SOURCE_DEMO"
+    assert scaffold["reviewed_by"] == ""
+    assert scaffold["edits"] == []
+    assert not scaffold["initial_automatic_plan"]["safe_to_generate"]
+    header = scaffold["unapproved_candidate_mappings"]["column_headers"]
+    assert header["target_required"] == ["Target Arm A", "Target Arm B"]
+    assert [r["bookmark"] for r in header["source_bookmarks"]] == [
+        "O_O00002", "O_O00003"
+    ]
+    assert source.read_bytes() == before
