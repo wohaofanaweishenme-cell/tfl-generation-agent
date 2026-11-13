@@ -164,15 +164,15 @@ def plan_bookmark_adaptation(template_path, spec, locator_map_path, reviewed_ada
         locator = read_json(locator_file)
         boundary = locator.get("docx_boundary") or {}
         sha = hashlib.sha256(path.read_bytes()).hexdigest()
+        doc = Document(path)
+        starts, ends = _bookmarks(doc)
+        result["bookmark_count"] = len(starts)
         if locator.get("template_id") != path.stem:
             raise ValueError("Locator template_id does not match DOCX filename")
         if boundary.get("verification_status") != "verified":
             raise ValueError("Source DOCX locator boundary is not verified")
         if boundary.get("document_sha256") != sha:
             raise ValueError("Source DOCX SHA-256 differs from verified locator boundary")
-        doc = Document(path)
-        starts, ends = _bookmarks(doc)
-        result["bookmark_count"] = len(starts)
         locs = _index_locator(locator)
         result["source_sha256"] = sha
         result["template_id"] = locator["template_id"]
@@ -293,7 +293,7 @@ def plan_bookmark_adaptation(template_path, spec, locator_map_path, reviewed_ada
                             "and source-attribution review" if result["safe_to_generate"]
                             else "; ".join(result["issues"]))
     except (OSError, ValueError, KeyError, TypeError) as exc:
-        result["issues"].append(f"{type(exc).__name__}: {exc}")
+        result["issues"].append(f"Source-to-target bookmark edits have not yet been validated: {type(exc).__name__}: {exc}")
         result["reason"] = "; ".join(result["issues"])
     return result
 
