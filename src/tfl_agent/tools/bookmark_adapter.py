@@ -334,9 +334,14 @@ def generate_bookmark_draft(template_path, spec, out_path, locator_map_path,
         return None, plan
     source = Path(template_path).resolve()
     dest = Path(out_path).resolve()
-    if dest == source or dest.is_relative_to(source.parent):
+    locator = Path(locator_map_path).resolve()
+    # Root layout: <study>/intermediate/DOCX_Locator_Map/<template_id>.json.
+    # Reject ANY output anywhere inside the source study Library, not merely
+    # in the source DOCX folder. This keeps every teammate-managed artifact read-only.
+    library_root = locator.parents[2]
+    if dest == source or dest.is_relative_to(library_root):
         plan["safe_to_generate"] = False
-        plan["issues"].append("Output must be outside source template directory")
+        plan["issues"].append("Output must be outside the entire source study Library")
         return None, plan
     doc = Document(source)
     for edit in plan["edits"]:
