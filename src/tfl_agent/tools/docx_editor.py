@@ -48,12 +48,12 @@ def plan_modifications(template_path,spec,locator_map_path=None,reviewed_adaptat
     doc=Document(template_path)
     source_text='\n'.join(p.text for p in iter_paragraphs(doc))
     placeholders=set(TOKEN_RE.findall(source_text))
-    replacements=make_replacements(spec)
     if not placeholders and locator_map_path:
         return plan_bookmark_adaptation(
             template_path, spec, locator_map_path,
             reviewed_adaptation=reviewed_adaptation,
         )
+    replacements=make_replacements(spec)
     required=set(replacements)
     missing=sorted(required-placeholders)
     unexpected=sorted(placeholders-required)
