@@ -355,3 +355,63 @@ def generate_bookmark_draft(template_path, spec, out_path, locator_map_path,
     plan["applied_bookmarks"] = [x["bookmark"] for x in plan["edits"]]
     plan["replacement_counts"] = {x["bookmark"]: 1 for x in plan["edits"]}
     return str(dest), plan
+
+
+def build_bookmark_review_scaffold(template_path, spec, locator_map_path):
+    """Create an unapproved, reviewable proposal from a retrieved source candidate.
+
+    Do not prefill edits or reviewer signatures. Source and target candidates
+    are shown side-by-side; similarity is not a semantic mapping.
+    """
+    locator = read_json(locator_map_path)
+    locs = _index_locator(locator)
+    by_role = {role: [
+        {"bookmark": rec["bookmark"], "element_id": rec["element_id"],
+         "occurrence_id": rec["occurrence_id"], "expected_source_text": rec["source_text"]}
+        for rec in locs.values()
+        if rec["element_type"] == role and rec["verified"] and _norm(rec["source_text"])
+    ] for role in ("title", "header_cell", "body_cell", "footnote")}
+    requirements = spec.get("table_requirements") or {}
+    plan = plan_bookmark_adaptation(template_path, spec, locator_map_path)
+    return {
+        "template_id": locator.get("template_id"),
+        "tfl_id": spec["identity"]["tfl_id"],
+        "reviewed_by": "",
+        "review_reason": "",
+        "edits": [],
+        "unapproved_candidate_mappings": {
+            "title": {"target_text": _title_for(spec),
+                      "source_bookmarks": by_role["title"]},
+            "column_headers": {
+                "target_required": requirements.get("column_requirements", []),
+                "source_bookmarks": by_role["header_cell"],
+            },
+            "rows": {
+                "target_required": requirements.get("row_requirements", []),
+                "source_body_labels": by_role["body_cell"],
+            },
+            "footnotes": {
+                "target_required": requirements.get("footnote_requirements", []),
+                "source_bookmarks": by_role["footnote"],
+            },
+            "denominator_rule": requirements.get("denominator_rule"),
+        },
+        "step2_provenance_links": [
+            link for link in spec.get("provenance", {}).get("field_links", [])
+            if link.get("json_pointer", "").startswith(("/table_requirements/",
+                                                        "/statistical_requirements/"))
+        ],
+        "initial_automatic_plan": {
+            "safe_to_generate": plan["safe_to_generate"],
+            "issues": plan["issues"],
+            "warnings": plan["warnings"],
+        },
+        "instructions": [
+            "This scaffold is NOT an approval and contains zero preapproved edits.",
+            "Compare source against target SAP evidence and statistics, not retrieval score.",
+            "For each approved one-to-one text change, copy bookmark and exact expected_source_text into edits, provide new_text and reason.",
+            "Review source sponsor/study branding, programmed data provenance and Word layout.",
+            "Rows/columns needing structural insertion, deletion or reordering cannot be adapted by Stage B.1.",
+            "Sign reviewed_by and supply an explicit review_reason only after real review.",
+        ],
+    }
