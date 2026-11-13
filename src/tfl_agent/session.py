@@ -9,6 +9,7 @@ from tfl_agent.agent.step3_retriever import retrieve_templates, template_selecti
 from tfl_agent.agent.step4_generator import generate
 from tfl_agent.agent.step5_validator import validate_spec_document, validate_shell
 from tfl_agent.tools.docx_editor import plan_modifications
+from tfl_agent.tools.bookmark_adapter import build_bookmark_review_scaffold
 from tfl_agent.tools.io_utils import write_json
 from tfl_agent.tools.library_loader import load_library
 
@@ -157,6 +158,28 @@ class TFLSession:
             return None
         return next((m for m in self.matches or []
                      if m["template_id"] == approval["template_id"]), None)
+
+    def export_bookmark_review_scaffold(self):
+        """Output an unapproved review form for the best ranked source DOCX.
+
+        This is useful even when Step 3 correctly refuses automatic selection.
+        Only writes to output_dir; never modifies the source Library.
+        """
+        self._require('matches', 'Step 3')
+        if not self.matches:
+            return None
+        candidate = self.matches[0]
+        locator = candidate['template'].get('locator_map_path')
+        if not locator:
+            return None
+        scaffold = build_bookmark_review_scaffold(
+            candidate['source_path'], self.spec, locator
+        )
+        path = self.output_dir / 'review_scaffolds' / (
+            f'{_safe_file_id(self.tfl["tfl_id"])}_bookmark_review.json'
+        )
+        write_json(path, scaffold)
+        return str(path)
 
     def preview_modification_plan(self):
         self._require('matches','Step 3')
