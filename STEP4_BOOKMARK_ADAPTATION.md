@@ -16,6 +16,10 @@ The agent proposes one title change from the Step 2 specification automatically.
 
 **Source contamination warning:** Original study logos, corporate attribution, programming notes, source lines, and original study metadata may remain. Stage B.1 does not automatically remove/rewrite them, and every generated document is marked **draft_needs_review**. A structural validity check is not clinical approval.
 
+## Automatically export an unapproved review scaffold
+
+After Step 3, call session.export_bookmark_review_scaffold(). This works even when Step 3 appropriately leaves selected_template_id null. It writes a JSON file under output/<target>/review_scaffolds/ listing the original title/header/body/footnote bookmarks beside the requested target requirements. The output starts with blank reviewer fields and an empty edits list; no automatic semantic source-to-target mapping is inferred. The real-study Colab notebook now displays a download link to this file. Review and complete this JSON outside library/ before providing it as reviewed_adaptation.
+
 ## Review-gated candidate selection
 
 When Step 3 reports retrieved_needs_adaptation_review (including the real Demographics case with heuristic retrieval score 0.8108), selected_template_id remains null. To draft from that candidate, supply an **explicit, standalone review record**, not edits to the Library:
