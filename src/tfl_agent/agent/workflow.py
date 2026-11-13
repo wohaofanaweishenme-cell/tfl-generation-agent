@@ -67,7 +67,9 @@ def run_agent(*,sap_path,library_path,output_dir,llm,schema_path,prompts_dir,
             report=validate_shell(shell,spec,plan)
             write_json(out/'validation'/f'{safe_name(tfl["tfl_id"])}_docx.json',report)
             record['shell_path']=shell
-            record['status']=('generated' if report['valid'] and spec['readiness']=='ready' else 'draft_needs_review') if report['valid'] else 'validation_failed'
+            record['status'] = ('validation_failed' if not report['valid'] else
+                                'draft_needs_review' if plan.get('editing_mode') == 'verified_bookmark_draft'
+                                or spec['readiness'] != 'ready' else 'generated')
             if not report['valid']:record['review_reasons'].extend(report['issues'])
         except Exception as e:
             record['status']='failed';record['review_reasons'].append(f'{type(e).__name__}: {e}')

@@ -38,4 +38,15 @@ def validate_shell(path,spec,plan):
         'no_unresolved_placeholders':not bool(re.search(r'\{\{[A-Z][A-Z0-9_]*\}\}',all_text)),
         'all_replacements_applied':all(x>0 for x in plan.get('replacement_counts',{}).values())
     }
+    if plan.get('editing_mode') == 'verified_bookmark_draft':
+        from tfl_agent.tools.bookmark_adapter import _norm
+        edits = plan.get('edits', [])
+        checks['bookmark_edits_applied'] = (
+            len(plan.get('applied_bookmarks', [])) == len(edits) and
+            all((not e['new_text']) or _norm(e['new_text']) in _norm(all_text)
+                for e in edits)
+        )
+        checks['source_sha_recorded'] = bool(plan.get('source_sha256'))
+        # A structurally valid DOCX remains a draft pending manual clinical review.
+        checks['review_required_not_suppressed'] = bool(plan.get('review_required'))
     return {'valid':all(checks.values()),'checks':checks,'issues':[k for k,v in checks.items() if not v]}
