@@ -288,7 +288,12 @@ class TFLSession:
             'needs_review':int(status in ('needs_review','draft_needs_review')),
             'failed':int(status=='validation_failed'),
             'coverage_scope':'One selected TFL; complete-study coverage is not asserted',
-            'note':'Verifiable source quotations do not prove clinical/statistical correctness.',
+            'draft_mode':self.draft_mode,
+            'clinical_approval':False,
+            'note':('Draft is an unapproved, source-verified target-spec reconstruction. '
+                    'Mechanical validity never proves clinical/statistical correctness.'
+                    if self.draft_mode else
+                    'Verifiable source quotations do not prove clinical/statistical correctness.'),
         }
         write_json(self.output_dir/'TFL_Specification.json',self._aggregate())
         write_json(self.output_dir/'TFL_Inventory.json',{
