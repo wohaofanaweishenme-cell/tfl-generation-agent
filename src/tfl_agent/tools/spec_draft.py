@@ -48,7 +48,7 @@ def _columns_for_draft(spec):
         # Preserve genuinely additional, explicit non-aggregate column names.
         for x in raw:
             low = x.lower()
-            arm_label = re.sub(r"^Group\\s+\\d+\\s*:\\s*", "", x, flags=re.I)
+            arm_label = re.sub(r"^Group\s+\d+\s*:\s*", "", x, flags=re.I)
             if (low == "overall" or "treatment group" in low
                     or "by treatment" in low
                     or arm_label.casefold() in {y.casefold() for y in columns}):
