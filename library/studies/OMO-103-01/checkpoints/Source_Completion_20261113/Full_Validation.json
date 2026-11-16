@@ -1,0 +1,162 @@
+{
+  "schema_version": "2.4",
+  "validator_scope": "Static contracts, references, actual file/hash/bookmark checks only; no visual/clinical approval or generic PDF extraction.",
+  "stage": "qa",
+  "static_result": "pass_with_review_warnings",
+  "errors": [],
+  "warnings": [
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_T_14_1_1_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_T_14_1_2_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_T_14_2_2_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_T_14_2_6: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_F_14_2_6_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_T_14_3_1_2: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_T_14_3_1_6: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_L_16_2_1_2: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_L_16_2_9_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_L_16_2_13_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_T_14_2_1_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_T_14_2_5: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_T_14_3_1_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_T_14_3_1_2a: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_T_14_3_1_3: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_T_14_3_1_4: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_T_14_3_1_5: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_T_14_3_2_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_T_14_3_2_4: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_T_14_3_2_5: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_T_14_3_3_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_T_14_3_4_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_T_14_3_5_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_T_14_3_6_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_L_16_2_1_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_L_16_2_2_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_L_16_2_3_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_L_16_2_4_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_L_16_2_4_2: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_L_16_2_4_3: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_L_16_2_5_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_L_16_2_7_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_L_16_2_7_5: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_L_16_2_8_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_L_16_2_10_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_L_16_2_11_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "OMO10301_L_16_2_12_1: semantic"
+    }
+  ],
+  "counts": {
+    "structured_records_checked": 37,
+    "docx_files_checked": 37
+  },
+  "approval_granted": false
+}

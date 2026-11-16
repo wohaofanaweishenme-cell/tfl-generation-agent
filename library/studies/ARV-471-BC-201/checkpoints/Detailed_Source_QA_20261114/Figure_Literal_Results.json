@@ -1,0 +1,148 @@
+{
+  "records": [
+    {
+      "template_id": "ARV471BC201_F_14_2_1_1",
+      "source_page": 134,
+      "docx_sha256": "45441036512257a7c826131e6337b30cc9182ff8debc60ae5a7d76e8b5db89f2",
+      "physical_panels": 2,
+      "readable_elements": 25,
+      "source_issues": [],
+      "content_status": "pass",
+      "structure_status": "pass"
+    },
+    {
+      "template_id": "ARV471BC201_F_14_2_1_2_1",
+      "source_page": 135,
+      "docx_sha256": "ec93db13f5140224e90aacd1b12b3a9b32af430380527843b124d160e88f2803",
+      "physical_panels": 1,
+      "readable_elements": 17,
+      "source_issues": [],
+      "content_status": "pass",
+      "structure_status": "pass"
+    },
+    {
+      "template_id": "ARV471BC201_F_14_2_1_2_2",
+      "source_page": 136,
+      "docx_sha256": "4941b1759490a1b44a22cd29f9338b57a71465a60cb27d88261a410581363edd",
+      "physical_panels": 1,
+      "readable_elements": 16,
+      "source_issues": [],
+      "content_status": "pass",
+      "structure_status": "pass"
+    },
+    {
+      "template_id": "ARV471BC201_F_14_2_3_1",
+      "source_page": 137,
+      "docx_sha256": "10b64ed35c4a12c7c61a606e3aa857440f4c9f86b24787936aa992dcefdef8b0",
+      "physical_panels": 2,
+      "readable_elements": 18,
+      "source_issues": [
+        "Original example uses blue bars in both treatment subplots while its programming note requests blue/red; no recoloring or treatment assumption."
+      ],
+      "content_status": "pass",
+      "structure_status": "pass"
+    },
+    {
+      "template_id": "ARV471BC201_F_14_2_3_2_1",
+      "source_page": 138,
+      "docx_sha256": "e7eca6ca42ae79d95daa872d98d5ba71f4cc7b91dee69ac7e695eccab086fb7f",
+      "physical_panels": 2,
+      "readable_elements": 26,
+      "source_issues": [
+        "Original example uses blue bars in both treatment subplots while its programming note requests blue/red; no recoloring or treatment assumption."
+      ],
+      "content_status": "pass",
+      "structure_status": "pass"
+    },
+    {
+      "template_id": "ARV471BC201_F_14_2_3_2_2",
+      "source_page": 139,
+      "docx_sha256": "5aef8880e33fc2305a107889bcf8517f0dee50e20e5a4f476bef9efe48494d37",
+      "physical_panels": 2,
+      "readable_elements": 25,
+      "source_issues": [],
+      "content_status": "pass",
+      "structure_status": "pass"
+    },
+    {
+      "template_id": "ARV471BC201_F_14_2_4_1",
+      "source_page": 140,
+      "docx_sha256": "e93019789809fa525b43a2b3617a4b3df3df86485c887b7af3569e60bfcf40e3",
+      "physical_panels": 1,
+      "readable_elements": 20,
+      "source_issues": [],
+      "content_status": "pass",
+      "structure_status": "pass"
+    },
+    {
+      "template_id": "ARV471BC201_F_14_2_4_2_1",
+      "source_page": 141,
+      "docx_sha256": "d82e0da29d9e51c7c20bfab5d29c7083c4a85232b8e54ba5b1eb040358929552",
+      "physical_panels": 1,
+      "readable_elements": 17,
+      "source_issues": [
+        "Original plot retains embedded Ki-67 axis label alongside ER/PR label; source conflict not adjudicated."
+      ],
+      "content_status": "pass",
+      "structure_status": "pass"
+    },
+    {
+      "template_id": "ARV471BC201_F_14_2_4_2_2",
+      "source_page": 142,
+      "docx_sha256": "e75b6d79e7b74cff09d94a5ea0de043ec15501a0c3781f71c7aa31abc7555a56",
+      "physical_panels": 1,
+      "readable_elements": 17,
+      "source_issues": [
+        "Original plot retains embedded Ki-67 axis label alongside ER/PR label; source conflict not adjudicated."
+      ],
+      "content_status": "pass",
+      "structure_status": "pass"
+    },
+    {
+      "template_id": "ARV471BC201_F_14_2_5_1",
+      "source_page": 143,
+      "docx_sha256": "b104cdc3e5cf9ee2c8147b67208c307f21760bb22c67a38622fa1cf11d2e9e06",
+      "physical_panels": 2,
+      "readable_elements": 25,
+      "source_issues": [],
+      "content_status": "pass",
+      "structure_status": "pass"
+    },
+    {
+      "template_id": "ARV471BC201_F_14_2_5_2_1",
+      "source_page": 144,
+      "docx_sha256": "b1000ad7a8645d7da27f07f7523109760830b6a4db84cb4f1d0dfa8187b7d85c",
+      "physical_panels": 1,
+      "readable_elements": 15,
+      "source_issues": [
+        "Original plot top tick is clipped at left: 000 visible; leading digit not asserted. Embedded Ki-67 axis label conflicts with PR H-Score figure title."
+      ],
+      "content_status": "needs_review",
+      "structure_status": "pass"
+    },
+    {
+      "template_id": "ARV471BC201_F_14_2_5_2_2",
+      "source_page": 145,
+      "docx_sha256": "d913f58934224fa929739aad6eef706a4800e25ebf304838dd0bc76f461eb185",
+      "physical_panels": 1,
+      "readable_elements": 15,
+      "source_issues": [
+        "Original plot retains embedded Ki-67 axis label alongside ER/PR label; source conflict not adjudicated."
+      ],
+      "content_status": "pass",
+      "structure_status": "pass"
+    },
+    {
+      "template_id": "ARV471BC201_F_14_3_2_8",
+      "source_page": 146,
+      "docx_sha256": "c0ae0c7f52fd56f57e82d4c31b9887ecda183e3c99161cfa1e6c00d0f82bd736",
+      "physical_panels": 2,
+      "readable_elements": 19,
+      "source_issues": [
+        "Original figure omits Arm A/Arm B color legend; orange/blue bars cannot be associated with named treatment arms. Programming note asks for this legend; no invented mapping."
+      ],
+      "content_status": "pass",
+      "structure_status": "pass"
+    }
+  ]
+}

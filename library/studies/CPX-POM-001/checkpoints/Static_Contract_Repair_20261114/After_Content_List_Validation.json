@@ -1,0 +1,258 @@
+{
+  "schema_version": "2.4",
+  "validator_scope": "Static contracts, references, actual file/hash/bookmark checks only; no visual/clinical approval or generic PDF extraction.",
+  "stage": "qa",
+  "static_result": "pass_with_review_warnings",
+  "errors": [],
+  "warnings": [
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_T_14_2_5_2: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_L_16_2_4_8_1_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_L_16_2_1_2_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_L_16_2_1_2_2: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_L_16_2_3_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_L_16_2_4_2_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_L_16_2_4_6_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_L_16_2_4_9_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_L_16_2_4_3_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_L_16_2_4_4_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_L_16_2_4_5_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_L_16_2_4_7_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_L_16_2_4_8_2_2: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_L_16_2_5_1_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_L_16_2_5_2_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_L_16_2_5_3_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_L_16_2_6_1_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_L_16_2_6_2_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_L_16_2_6_3_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_L_16_2_6_4_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_L_16_2_6_5_2: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_L_16_2_6_6_2: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_L_16_2_6_7_2: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_L_16_2_7_1_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_L_16_2_8_1_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_L_16_2_8_5_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_L_16_2_9_2_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_L_16_2_9_3_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_T_14_1_2_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_T_14_1_2_2: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_T_14_1_5_1_2: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_T_14_2_1_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_T_14_3_1_0: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_T_14_3_2_5_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_L_16_2_1_1_1_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_L_16_2_1_1_2_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_L_16_2_2_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_L_16_2_4_1_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_T_14_1_4_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_T_14_1_5_2_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_T_14_1_6_1_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_T_14_1_7_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_T_14_3_1_1_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_T_14_3_1_2_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_T_14_3_2_1_3_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_T_14_2_3_2: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_T_14_3_2_1_1_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_T_14_3_2_1_2_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_T_14_3_2_1_4_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_T_14_3_4_3_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_F_14_2_4_2: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_L_16_2_6_8_2: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_T_14_1_1_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_T_14_1_1_2: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_T_14_1_3_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_T_14_1_5_1_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_T_14_2_2_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_T_14_3_3_2_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_T_14_3_4_2_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_T_14_3_1_8_1: semantic"
+    },
+    {
+      "code": "review_not_passed",
+      "detail": "CPXPOM001_L_16_2_9_1_1: semantic"
+    }
+  ],
+  "counts": {
+    "structured_records_checked": 61,
+    "docx_files_checked": 61
+  },
+  "approval_granted": false
+}

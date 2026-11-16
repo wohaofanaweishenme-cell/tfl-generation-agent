@@ -1,0 +1,92 @@
+{
+  "records": [
+    {
+      "template_id": "ARV471BC201_F_14_2_3_1",
+      "source_pages": [
+        137
+      ],
+      "docx_sha256": "10b64ed35c4a12c7c61a606e3aa857440f4c9f86b24787936aa992dcefdef8b0",
+      "status": "needs_review",
+      "reasons": [
+        "Original example uses blue bars in both treatment subplots while its programming note requests blue/red; no recoloring or treatment assumption."
+      ]
+    },
+    {
+      "template_id": "ARV471BC201_F_14_2_3_2_1",
+      "source_pages": [
+        138
+      ],
+      "docx_sha256": "e7eca6ca42ae79d95daa872d98d5ba71f4cc7b91dee69ac7e695eccab086fb7f",
+      "status": "needs_review",
+      "reasons": [
+        "Original example uses blue bars in both treatment subplots while its programming note requests blue/red; no recoloring or treatment assumption."
+      ]
+    },
+    {
+      "template_id": "ARV471BC201_F_14_2_4_2_1",
+      "source_pages": [
+        141
+      ],
+      "docx_sha256": "d82e0da29d9e51c7c20bfab5d29c7083c4a85232b8e54ba5b1eb040358929552",
+      "status": "needs_review",
+      "reasons": [
+        "Original plot retains embedded Ki-67 axis label alongside ER/PR label; source conflict not adjudicated."
+      ]
+    },
+    {
+      "template_id": "ARV471BC201_F_14_2_4_2_2",
+      "source_pages": [
+        142
+      ],
+      "docx_sha256": "e75b6d79e7b74cff09d94a5ea0de043ec15501a0c3781f71c7aa31abc7555a56",
+      "status": "needs_review",
+      "reasons": [
+        "Original plot retains embedded Ki-67 axis label alongside ER/PR label; source conflict not adjudicated."
+      ]
+    },
+    {
+      "template_id": "ARV471BC201_F_14_2_5_2_1",
+      "source_pages": [
+        144
+      ],
+      "docx_sha256": "b1000ad7a8645d7da27f07f7523109760830b6a4db84cb4f1d0dfa8187b7d85c",
+      "status": "needs_review",
+      "reasons": [
+        "Original plot top tick is clipped at left: 000 visible; leading digit not asserted. Embedded Ki-67 axis label conflicts with PR H-Score figure title."
+      ]
+    },
+    {
+      "template_id": "ARV471BC201_F_14_2_5_2_2",
+      "source_pages": [
+        145
+      ],
+      "docx_sha256": "d913f58934224fa929739aad6eef706a4800e25ebf304838dd0bc76f461eb185",
+      "status": "needs_review",
+      "reasons": [
+        "Original plot retains embedded Ki-67 axis label alongside ER/PR label; source conflict not adjudicated."
+      ]
+    },
+    {
+      "template_id": "ARV471BC201_F_14_3_2_8",
+      "source_pages": [
+        146
+      ],
+      "docx_sha256": "c0ae0c7f52fd56f57e82d4c31b9887ecda183e3c99161cfa1e6c00d0f82bd736",
+      "status": "needs_review",
+      "reasons": [
+        "Original figure omits Arm A/Arm B color legend; orange/blue bars cannot be associated with named treatment arms. Programming note asks for this legend; no invented mapping."
+      ]
+    },
+    {
+      "template_id": "ARV471BC201_L_16_2_6_2",
+      "source_pages": [
+        161
+      ],
+      "docx_sha256": "f5e7fa4cde9c08933cd61b15803047d7ee009c9126dddeb3f38abf365f8c703f",
+      "status": "needs_review",
+      "reasons": [
+        "Original p161 header word collisions prevent reliable physical column ownership: Actual/Random% and Local/Central/RaResponse/Derived. Need clearer source or author confirmation; no clinical/spelling reconstruction."
+      ]
+    }
+  ]
+}

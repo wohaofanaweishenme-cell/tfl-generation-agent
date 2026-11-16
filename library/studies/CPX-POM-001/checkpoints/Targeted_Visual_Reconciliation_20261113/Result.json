@@ -1,0 +1,28 @@
+{
+  "template_id": "CPXPOM001_T_14_3_2_5_1",
+  "source_pdf_page": 64,
+  "docx_sha256": "03742c71facb5d598aeba420f55ea17197605af7b513e5e2060f90d4f2deb604",
+  "docx_changed": false,
+  "content": "pass",
+  "physical_structure": "pass",
+  "docx_static": "pass",
+  "docx_visual": "pass",
+  "render_pages": 1,
+  "fresh_render_matches_previous_final_pixels": true,
+  "final_render_path": "Study_CPX-POM-001/qa/Targeted_Visual_Recheck_20261113/CPXPOM001_T_14_3_2_5_1/page-1.png",
+  "final_render_sha256": "aac22f7a7e7d0ef20c472dd6dc0d6002316293e46bb6d57a8605db592b9ae61e",
+  "source_comparison": [
+    "Seven dose headers 30mg/m^2 and D2-D7 visible",
+    "SCR/BAS + Pregnancy group labels, real blank group cells retained",
+    "Negative/Positive in each group: 28 exact XX (XX.X) values",
+    "Repeat instruction, denominator note [a], Program/Filename and All Doses source instruction retained"
+  ],
+  "independent_semantic_review": "not_run",
+  "semantic_status": "needs_review",
+  "approval": "pending",
+  "formal_use_eligible": false,
+  "other_templates_changed": false,
+  "all_docx_files_checked_unchanged": 353,
+  "index_and_approved_view_unchanged": true,
+  "historical_visual_checks": "Historical_Visual_Checks.json"
+}

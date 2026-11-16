@@ -1,0 +1,87 @@
+{
+  "study_id": "SP11631",
+  "source_filename": "SAP_001_99 copy.pdf",
+  "source_sha256": "513b744f284eca557817ab39dd036972ff6b1e5e12ff924b71a56646168c55f7",
+  "physical_pages": 135,
+  "physical_shells": 70,
+  "types": {
+    "table": 37,
+    "listing": 32,
+    "figure": 1
+  },
+  "generated": 70,
+  "rendered": 70,
+  "final_pages_inspected": 78,
+  "source_scan": {
+    "pass": 70
+  },
+  "content": {
+    "pass": 67,
+    "needs_review": 3
+  },
+  "structure": {
+    "pass": 67,
+    "needs_review": 3
+  },
+  "docx_static": {
+    "pass": 70
+  },
+  "docx_visual": {
+    "pass": 67,
+    "needs_review": 3
+  },
+  "independent_semantic_review": {
+    "not_run": 70
+  },
+  "human_approval": {
+    "not_run": 70
+  },
+  "registered": 70,
+  "approved": 0,
+  "review_status": "pending",
+  "formal_use_eligible": false,
+  "remaining_source_review_ids": [
+    "SP11631_L_16_2_2_1",
+    "SP11631_L_16_2_2_6",
+    "SP11631_L_16_2_4_5_2"
+  ],
+  "full_study_complete": false,
+  "scope": "Study 6 extraction and incremental unified Library connection only. No overall project wrap-up.",
+  "updated_at": "2026-11-13T21:16:46.827796-05:00",
+  "user_checkpoint_acceptance": {
+    "record_type": "user_acceptance_of_pending_checkpoint",
+    "user_declared_date": "2026-11-14",
+    "timezone": "America/New_York",
+    "affected_template_ids": [
+      "SP11631_L_16_2_2_1",
+      "SP11631_L_16_2_2_6",
+      "SP11631_L_16_2_4_5_2"
+    ],
+    "statement": "Study 6本轮到此收尾。我接受按当前来源保留三份受限模板的可确认内容及问题证据，暂不要求猜测补全或继续重建。保留三份模板的具体来源限制和needs_review，后续取得清晰来源或作者确认后再处理。本条仅表示接受当前受限成果作为pending检查点，不代表缺失内容已核验、问题已解决或模板已获批准。全部70份继续pending、formal_use_eligible=false。仅同步必要的收尾记录，不重建其他DOCX，不改动前五Study。",
+    "accepted_scope": "Current source-limited deliverables as a pending checkpoint only",
+    "missing_content_verified": false,
+    "issues_resolved": false,
+    "template_approval_granted": false,
+    "review_status": "pending",
+    "formal_use_eligible": false,
+    "next_action": "Wait for a clean source or author confirmation before revisiting the three source limitations.",
+    "evidence_paths": [
+      "qa/Extraction_Issues.json",
+      "qa/source_limitations",
+      "qa/Final_Page_Review.json"
+    ]
+  },
+  "current_execution_state": "closed_for_this_round; source limitations retained; awaiting clearer source or author confirmation",
+  "closeout_integrity": {
+    "scope": "Only these six existing closure-record files may change; all DOCX, Metadata, QA, prior studies and approved_view protected.",
+    "protected_existing_files": 16989,
+    "expected_changed_paths": [
+      "Library/studies/SP11631/Report.md",
+      "Library/studies/SP11631/checkpoints/Current_20261114/Report.md",
+      "Library/studies/SP11631/checkpoints/Current_20261114/Status.json",
+      "Study_SP11631/Report.md",
+      "Study_SP11631/checkpoints/Current_20261114/Report.md",
+      "Study_SP11631/checkpoints/Current_20261114/Status.json"
+    ]
+  }
+}

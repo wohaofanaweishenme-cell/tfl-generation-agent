@@ -1,0 +1,478 @@
+{
+  "render_engine": "LibreOffice",
+  "pages": [
+    {
+      "template_id": "OMO10301_T_14_1_1_1",
+      "docx_page": 1,
+      "source_pdf_page": 36,
+      "render_path": "docx_previews/OMO10301_T_14_1_1_1/page-1.png",
+      "render_sha256": "239547c966edcc4503798ad67fcb8fea52447cd49cf567957514dac1f634b0b1",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Checked dosed/reason indentation, blank Dosed cell and all population lines; source denominator retained."
+    },
+    {
+      "template_id": "OMO10301_T_14_1_2_1",
+      "docx_page": 1,
+      "source_pdf_page": 37,
+      "render_path": "docx_previews/OMO10301_T_14_1_2_1/page-1.png",
+      "render_sha256": "251355ea028d1a9b6aed54c4a5f24681a3f5ad9243cc251c52f37d343c4a4ca0",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Checked all three physical pages, note-only PDF38, four sets of six summary statistics, separate race and gender labels/categories, repeated title and notes."
+    },
+    {
+      "template_id": "OMO10301_T_14_1_2_1",
+      "docx_page": 2,
+      "source_pdf_page": 38,
+      "render_path": "docx_previews/OMO10301_T_14_1_2_1/page-2.png",
+      "render_sha256": "93e73afc4cdab5e75290bafb9a9ae4f416b41371f080204a3bd233ec1b2feb3a",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Checked all three physical pages, note-only PDF38, four sets of six summary statistics, separate race and gender labels/categories, repeated title and notes."
+    },
+    {
+      "template_id": "OMO10301_T_14_1_2_1",
+      "docx_page": 3,
+      "source_pdf_page": 39,
+      "render_path": "docx_previews/OMO10301_T_14_1_2_1/page-3.png",
+      "render_sha256": "af697cfff4228055d4fc2dc9d57c7c4bcbe230c84e31dc129a76b61a3ea5bbee",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Checked all three physical pages, note-only PDF38, four sets of six summary statistics, separate race and gender labels/categories, repeated title and notes."
+    },
+    {
+      "template_id": "OMO10301_T_14_2_2_1",
+      "docx_page": 1,
+      "source_pdf_page": 42,
+      "render_path": "docx_previews/OMO10301_T_14_2_2_1/page-1.png",
+      "render_sha256": "5c9adac4ad85c7420f2d8e5bd56ee7b230e777544872a80517d4c71a95f7ff0e",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Checked DCR cohort/component/statistic columns, literal Cohort 2 Escalation, TTP and second-page Median/Max outside header, TTR/DOR and cross-page notes."
+    },
+    {
+      "template_id": "OMO10301_T_14_2_2_1",
+      "docx_page": 2,
+      "source_pdf_page": 43,
+      "render_path": "docx_previews/OMO10301_T_14_2_2_1/page-2.png",
+      "render_sha256": "9471815d82a4cf66f869a5b48f1ef29584ad18d8f210df7e0055e146e3b94696",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Checked DCR cohort/component/statistic columns, literal Cohort 2 Escalation, TTP and second-page Median/Max outside header, TTR/DOR and cross-page notes."
+    },
+    {
+      "template_id": "OMO10301_T_14_2_6",
+      "docx_page": 1,
+      "source_pdf_page": 45,
+      "render_path": "docx_previews/OMO10301_T_14_2_6/page-1.png",
+      "render_sha256": "dc23f778e0d23988a72f4a98901c345dd8b41c99c4c3208661fe67a10a98c3b1",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Checked physical four displayed cohort/ellipsis/overall columns, blank ellipsis results, separate n/Mean rows, wrapped change label and all QoL component notes plus note-only PDF46."
+    },
+    {
+      "template_id": "OMO10301_T_14_2_6",
+      "docx_page": 2,
+      "source_pdf_page": 46,
+      "render_path": "docx_previews/OMO10301_T_14_2_6/page-2.png",
+      "render_sha256": "ff31e4b6428677d3c19bb5b7a971d772b3aab483591c59e049754aa791cc5061",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Checked physical four displayed cohort/ellipsis/overall columns, blank ellipsis results, separate n/Mean rows, wrapped change label and all QoL component notes plus note-only PDF46."
+    },
+    {
+      "template_id": "OMO10301_F_14_2_6_1",
+      "docx_page": 1,
+      "source_pdf_page": 47,
+      "render_path": "docx_previews/OMO10301_F_14_2_6_1/page-1.png",
+      "render_sha256": "12e75701ca624f13859fcfee0ceec0a21cd827e0bcaf33cf2dc231f23667166a",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Checked all specifications, procedure option, original axis units, legend drug ID, at-risk text, censoring note and exact self-reference. No curve or plotting frame added."
+    },
+    {
+      "template_id": "OMO10301_T_14_3_1_2",
+      "docx_page": 1,
+      "source_pdf_page": 49,
+      "render_path": "docx_previews/OMO10301_T_14_3_1_2/page-1.png",
+      "render_sha256": "ca5aecab2af01bf1499c33309ee816c39dfa91b0cd83351c5989f0efed69b16c",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Checked merged count parent over four displayed columns, source cohort identities, SOC/PT indentation, blank first SOC result row and both counting/denominator notes."
+    },
+    {
+      "template_id": "OMO10301_T_14_3_1_6",
+      "docx_page": 1,
+      "source_pdf_page": 54,
+      "render_path": "docx_previews/OMO10301_T_14_3_1_6/page-1.png",
+      "render_sha256": "7498547d3e45c8d312883b349ae2d288d1f61fe6b2e5f482d119fd4cdbb6c003",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Checked both panels with distinct columns, 4 physical records each, actual blank Subject continuation, date/time wraps, all repeated notes."
+    },
+    {
+      "template_id": "OMO10301_T_14_3_1_6",
+      "docx_page": 2,
+      "source_pdf_page": 55,
+      "render_path": "docx_previews/OMO10301_T_14_3_1_6/page-2.png",
+      "render_sha256": "15b40f1b7d572642a63eaa22e638ebbbe6061676ff312399c93fd84eff1a3a2f",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Checked both panels with distinct columns, 4 physical records each, actual blank Subject continuation, date/time wraps, all repeated notes."
+    },
+    {
+      "template_id": "OMO10301_L_16_2_1_2",
+      "docx_page": 1,
+      "source_pdf_page": 66,
+      "render_path": "docx_previews/OMO10301_L_16_2_1_2/page-1.png",
+      "render_sha256": "a20a27b54488a5f2c6003563a04e08273b4a2a179bf2fbbe40b33af4c78f6233",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Checked informed consent/re-consent grouped headers and Physician belongs below parent; panel2 Enrollment vs Study Completion and cycles values including Xx preserved in final column; cycle footnote."
+    },
+    {
+      "template_id": "OMO10301_L_16_2_1_2",
+      "docx_page": 2,
+      "source_pdf_page": 67,
+      "render_path": "docx_previews/OMO10301_L_16_2_1_2/page-2.png",
+      "render_sha256": "925a7be2a53ae92b97c2667ca671cf8654871540bc117a02de0d099ad43ae0bb",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Checked informed consent/re-consent grouped headers and Physician belongs below parent; panel2 Enrollment vs Study Completion and cycles values including Xx preserved in final column; cycle footnote."
+    },
+    {
+      "template_id": "OMO10301_L_16_2_9_1",
+      "docx_page": 1,
+      "source_pdf_page": 78,
+      "render_path": "docx_previews/OMO10301_L_16_2_9_1/page-1.png",
+      "render_sha256": "e9dd937613b482ccf0d523e31797e300cc3e18b1f70fb434e52b1d3479ce99e6",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Checked 12 parameter rows, first date/time wrap retained in first date cell, subsequent blanks, Flag sparsity, Normal Range Low/High grouped header, coding note and shared-layout note."
+    },
+    {
+      "template_id": "OMO10301_L_16_2_13_1",
+      "docx_page": 1,
+      "source_pdf_page": 82,
+      "render_path": "docx_previews/OMO10301_L_16_2_13_1/page-1.png",
+      "render_sha256": "ae406086c3e2ad6b6140e804d45068e03f3560e288e13631cbbbdfb4c3c8f202",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Checked 3 medication records, ATC/preferred/reported-term lines, separate dose/unit/frequency, indication, route and both dates, WHO version and repeat note."
+    },
+    {
+      "template_id": "OMO10301_T_14_2_1_1",
+      "docx_page": 1,
+      "source_pdf_page": 40,
+      "render_path": "docx_previews/OMO10301_T_14_2_1_1/page-1.png",
+      "render_sha256": "86da1196f33fc364c18dffceafb02fb579679fd17143128c32e764a9fe67421c",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Original source image and native DOCX page compared: header identity, cell text, sparse blanks, source lines and all owned notes; no clipping, overlaps or missing glyphs."
+    },
+    {
+      "template_id": "OMO10301_T_14_2_1_1",
+      "docx_page": 2,
+      "source_pdf_page": 41,
+      "render_path": "docx_previews/OMO10301_T_14_2_1_1/page-2.png",
+      "render_sha256": "3d43f5528aa9bdc5facd3283c6cb93bc0a769b931a3058051bd608db075e00d4",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Original source image and native DOCX page compared: header identity, cell text, sparse blanks, source lines and all owned notes; no clipping, overlaps or missing glyphs."
+    },
+    {
+      "template_id": "OMO10301_T_14_2_5",
+      "docx_page": 1,
+      "source_pdf_page": 44,
+      "render_path": "docx_previews/OMO10301_T_14_2_5/page-1.png",
+      "render_sha256": "7adfc370e8344e3bd3801ab5aa49b45f1a1ba758f626b27e10c86c221b93c4ca",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Original source image and native DOCX page compared: header identity, cell text, sparse blanks, source lines and all owned notes; no clipping, overlaps or missing glyphs."
+    },
+    {
+      "template_id": "OMO10301_T_14_3_1_1",
+      "docx_page": 1,
+      "source_pdf_page": 48,
+      "render_path": "docx_previews/OMO10301_T_14_3_1_1/page-1.png",
+      "render_sha256": "bec49a496b4e108b062c774007c564192514b79ff68682df7b23b6653c29e6f7",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Final repaired native paragraph with explicit line break inspected against PDF48: full counting sentence including study drug., percentage denominator, AE grade/relation rows and notes retained. No clipping or altered source clinical wording. LibreOffice, not Microsoft Word."
+    },
+    {
+      "template_id": "OMO10301_T_14_3_1_2a",
+      "docx_page": 1,
+      "source_pdf_page": 50,
+      "render_path": "docx_previews/OMO10301_T_14_3_1_2a/page-1.png",
+      "render_sha256": "db42979636f0f276e90541b1d487953a658e99a3b847076f31b24f5ba4c6c814",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Original source image and native DOCX page compared: header identity, cell text, sparse blanks, source lines and all owned notes; no clipping, overlaps or missing glyphs."
+    },
+    {
+      "template_id": "OMO10301_T_14_3_1_3",
+      "docx_page": 1,
+      "source_pdf_page": 51,
+      "render_path": "docx_previews/OMO10301_T_14_3_1_3/page-1.png",
+      "render_sha256": "f99461b4041bb51a6df6cf733849ad87dda45beec63dac7ba9e70d48ebc3de90",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Original source image and native DOCX page compared: header identity, cell text, sparse blanks, source lines and all owned notes; no clipping, overlaps or missing glyphs."
+    },
+    {
+      "template_id": "OMO10301_T_14_3_1_4",
+      "docx_page": 1,
+      "source_pdf_page": 52,
+      "render_path": "docx_previews/OMO10301_T_14_3_1_4/page-1.png",
+      "render_sha256": "206f912f91ea69864ddc71958766c10314ceecc202112280589338f903ecb9ca",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Original source image and native DOCX page compared: header identity, cell text, sparse blanks, source lines and all owned notes; no clipping, overlaps or missing glyphs."
+    },
+    {
+      "template_id": "OMO10301_T_14_3_1_5",
+      "docx_page": 1,
+      "source_pdf_page": 53,
+      "render_path": "docx_previews/OMO10301_T_14_3_1_5/page-1.png",
+      "render_sha256": "085ee866653c0ff93fcd4b186914c7f7ac3f3b7afdd999bbba2f2f76efbe7515",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Original source image and native DOCX page compared: header identity, cell text, sparse blanks, source lines and all owned notes; no clipping, overlaps or missing glyphs."
+    },
+    {
+      "template_id": "OMO10301_T_14_3_2_1",
+      "docx_page": 1,
+      "source_pdf_page": 56,
+      "render_path": "docx_previews/OMO10301_T_14_3_2_1/page-1.png",
+      "render_sha256": "80b9e9c5c40695a1d750b5bfd963b46dad2d25ebd91fdff9cd64f956971ce7bd",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Original source image and native DOCX page compared: header identity, cell text, sparse blanks, source lines and all owned notes; no clipping, overlaps or missing glyphs."
+    },
+    {
+      "template_id": "OMO10301_T_14_3_2_4",
+      "docx_page": 1,
+      "source_pdf_page": 57,
+      "render_path": "docx_previews/OMO10301_T_14_3_2_4/page-1.png",
+      "render_sha256": "7d935124412e30f85427809fd29dc3a2466a7c52ac9104e042bfb27ccf55fe5d",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Original source image and native DOCX page compared: header identity, cell text, sparse blanks, source lines and all owned notes; no clipping, overlaps or missing glyphs."
+    },
+    {
+      "template_id": "OMO10301_T_14_3_2_5",
+      "docx_page": 1,
+      "source_pdf_page": 58,
+      "render_path": "docx_previews/OMO10301_T_14_3_2_5/page-1.png",
+      "render_sha256": "ad4f415d4874ea93a33e9f1c27def0c12d70bd3b200882457d3b01f2211a36a0",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Original source image and native DOCX page compared: header identity, cell text, sparse blanks, source lines and all owned notes; no clipping, overlaps or missing glyphs."
+    },
+    {
+      "template_id": "OMO10301_T_14_3_3_1",
+      "docx_page": 1,
+      "source_pdf_page": 59,
+      "render_path": "docx_previews/OMO10301_T_14_3_3_1/page-1.png",
+      "render_sha256": "8a4ebc5aa24db1bda65c9799dce08b6397662b823e5a667135d3e9de0e7f9f6e",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Original source image and native DOCX page compared: header identity, cell text, sparse blanks, source lines and all owned notes; no clipping, overlaps or missing glyphs."
+    },
+    {
+      "template_id": "OMO10301_T_14_3_4_1",
+      "docx_page": 1,
+      "source_pdf_page": 60,
+      "render_path": "docx_previews/OMO10301_T_14_3_4_1/page-1.png",
+      "render_sha256": "b454ffacb8f35313f985c51b53426d0cda8057f71d485d672ebe1bd7b35fd11f",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Original source image and native DOCX page compared: header identity, cell text, sparse blanks, source lines and all owned notes; no clipping, overlaps or missing glyphs."
+    },
+    {
+      "template_id": "OMO10301_T_14_3_4_1",
+      "docx_page": 2,
+      "source_pdf_page": 61,
+      "render_path": "docx_previews/OMO10301_T_14_3_4_1/page-2.png",
+      "render_sha256": "71f075f5ac54cb10b443830973969b8e8e3d82e59669167cabd9a75a269f6c31",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Original source image and native DOCX page compared: header identity, cell text, sparse blanks, source lines and all owned notes; no clipping, overlaps or missing glyphs."
+    },
+    {
+      "template_id": "OMO10301_T_14_3_5_1",
+      "docx_page": 1,
+      "source_pdf_page": 62,
+      "render_path": "docx_previews/OMO10301_T_14_3_5_1/page-1.png",
+      "render_sha256": "e82113022cb0a2be7a2b76d7edefaa49df48d9a2049d897733a296841f8a8e37",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Original source image and native DOCX page compared: header identity, cell text, sparse blanks, source lines and all owned notes; no clipping, overlaps or missing glyphs."
+    },
+    {
+      "template_id": "OMO10301_T_14_3_5_1",
+      "docx_page": 2,
+      "source_pdf_page": 63,
+      "render_path": "docx_previews/OMO10301_T_14_3_5_1/page-2.png",
+      "render_sha256": "47a4befa21583e5e3654c566459a734af7b68b807a6172b46582c97be0e2b5ae",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Original source image and native DOCX page compared: header identity, cell text, sparse blanks, source lines and all owned notes; no clipping, overlaps or missing glyphs."
+    },
+    {
+      "template_id": "OMO10301_T_14_3_6_1",
+      "docx_page": 1,
+      "source_pdf_page": 64,
+      "render_path": "docx_previews/OMO10301_T_14_3_6_1/page-1.png",
+      "render_sha256": "85890f45be4f44b060a6fea1585f2715662fa4352ced9ee78a86f197e62bfdcd",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Original source image and native DOCX page compared: header identity, cell text, sparse blanks, source lines and all owned notes; no clipping, overlaps or missing glyphs."
+    },
+    {
+      "template_id": "OMO10301_L_16_2_1_1",
+      "docx_page": 1,
+      "source_pdf_page": 65,
+      "render_path": "docx_previews/OMO10301_L_16_2_1_1/page-1.png",
+      "render_sha256": "708c4fc7990c53c5b1f32efd9fd5ca51574c4b4d50319e607c789fd42a9e294a",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Original source image and native DOCX page compared: header identity, cell text, sparse blanks, source lines and all owned notes; no clipping, overlaps or missing glyphs."
+    },
+    {
+      "template_id": "OMO10301_L_16_2_2_1",
+      "docx_page": 1,
+      "source_pdf_page": 68,
+      "render_path": "docx_previews/OMO10301_L_16_2_2_1/page-1.png",
+      "render_sha256": "0f47122fdd4322a29250de19fc8316295b91da209172a057e60cbfc51d14612d",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Original source image and native DOCX page compared: header identity, cell text, sparse blanks, source lines and all owned notes; no clipping, overlaps or missing glyphs."
+    },
+    {
+      "template_id": "OMO10301_L_16_2_3_1",
+      "docx_page": 1,
+      "source_pdf_page": 69,
+      "render_path": "docx_previews/OMO10301_L_16_2_3_1/page-1.png",
+      "render_sha256": "8a72f1496d5430da5742596d49215b0c5bf2e6fb3958fc05447f2b943ef26fc6",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Original source image and native DOCX page compared: header identity, cell text, sparse blanks, source lines and all owned notes; no clipping, overlaps or missing glyphs."
+    },
+    {
+      "template_id": "OMO10301_L_16_2_4_1",
+      "docx_page": 1,
+      "source_pdf_page": 70,
+      "render_path": "docx_previews/OMO10301_L_16_2_4_1/page-1.png",
+      "render_sha256": "b7015c3ce61ef2aa028217017fb61c0c1245ede8e0c45ee48aac1b0c415e3b8d",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Original source image and native DOCX page compared: header identity, cell text, sparse blanks, source lines and all owned notes; no clipping, overlaps or missing glyphs."
+    },
+    {
+      "template_id": "OMO10301_L_16_2_4_2",
+      "docx_page": 1,
+      "source_pdf_page": 71,
+      "render_path": "docx_previews/OMO10301_L_16_2_4_2/page-1.png",
+      "render_sha256": "edfd5b66a942750a3da185a0212e9452c75245dd55adb296458d5b4e351e4d07",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Original source image and native DOCX page compared: header identity, cell text, sparse blanks, source lines and all owned notes; no clipping, overlaps or missing glyphs."
+    },
+    {
+      "template_id": "OMO10301_L_16_2_4_3",
+      "docx_page": 1,
+      "source_pdf_page": 72,
+      "render_path": "docx_previews/OMO10301_L_16_2_4_3/page-1.png",
+      "render_sha256": "18f7c3d11452bc08caef6dd0354be4187b113b775150f47835deeb922f6e08a6",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Original source image and native DOCX page compared: header identity, cell text, sparse blanks, source lines and all owned notes; no clipping, overlaps or missing glyphs."
+    },
+    {
+      "template_id": "OMO10301_L_16_2_5_1",
+      "docx_page": 1,
+      "source_pdf_page": 73,
+      "render_path": "docx_previews/OMO10301_L_16_2_5_1/page-1.png",
+      "render_sha256": "08ad1c49441121a8beb007f530163faf038c1071180fc4644f8123951bc21748",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Original source image and native DOCX page compared: header identity, cell text, sparse blanks, source lines and all owned notes; no clipping, overlaps or missing glyphs."
+    },
+    {
+      "template_id": "OMO10301_L_16_2_7_1",
+      "docx_page": 1,
+      "source_pdf_page": 74,
+      "render_path": "docx_previews/OMO10301_L_16_2_7_1/page-1.png",
+      "render_sha256": "f79e423aeb449420c9189042dd97482dcefbd942654ef91cad00d93ecfb1d484",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Original source image and native DOCX page compared: header identity, cell text, sparse blanks, source lines and all owned notes; no clipping, overlaps or missing glyphs."
+    },
+    {
+      "template_id": "OMO10301_L_16_2_7_5",
+      "docx_page": 1,
+      "source_pdf_page": 75,
+      "render_path": "docx_previews/OMO10301_L_16_2_7_5/page-1.png",
+      "render_sha256": "186231689624c7d8f1d9d270acc7ad94196f8e58bae87ac13fff293ee7b508c1",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Original source image and native DOCX page compared: header identity, cell text, sparse blanks, source lines and all owned notes; no clipping, overlaps or missing glyphs."
+    },
+    {
+      "template_id": "OMO10301_L_16_2_8_1",
+      "docx_page": 1,
+      "source_pdf_page": 76,
+      "render_path": "docx_previews/OMO10301_L_16_2_8_1/page-1.png",
+      "render_sha256": "00972189ec8811383db30971026665e8c5079d908d3626be428faf02e446fe03",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Original source image and native DOCX page compared: header identity, cell text, sparse blanks, source lines and all owned notes; no clipping, overlaps or missing glyphs."
+    },
+    {
+      "template_id": "OMO10301_L_16_2_8_1",
+      "docx_page": 2,
+      "source_pdf_page": 77,
+      "render_path": "docx_previews/OMO10301_L_16_2_8_1/page-2.png",
+      "render_sha256": "e01a7189406c58cc91437f6a2d131de6286603262a42a139566557f16d1621f5",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Original source image and native DOCX page compared: header identity, cell text, sparse blanks, source lines and all owned notes; no clipping, overlaps or missing glyphs."
+    },
+    {
+      "template_id": "OMO10301_L_16_2_10_1",
+      "docx_page": 1,
+      "source_pdf_page": 79,
+      "render_path": "docx_previews/OMO10301_L_16_2_10_1/page-1.png",
+      "render_sha256": "13aa1b9fdcebb35bf3a4f0c469eed4717c3c5069b1b58f9dc585cc3e9e04d8ce",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Original source image and native DOCX page compared: header identity, cell text, sparse blanks, source lines and all owned notes; no clipping, overlaps or missing glyphs."
+    },
+    {
+      "template_id": "OMO10301_L_16_2_11_1",
+      "docx_page": 1,
+      "source_pdf_page": 80,
+      "render_path": "docx_previews/OMO10301_L_16_2_11_1/page-1.png",
+      "render_sha256": "31be83ec04df7b4a0e7c45e780fda82f6ea79f9776966da931fd06f211c84821",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Original source image and native DOCX page compared: header identity, cell text, sparse blanks, source lines and all owned notes; no clipping, overlaps or missing glyphs."
+    },
+    {
+      "template_id": "OMO10301_L_16_2_12_1",
+      "docx_page": 1,
+      "source_pdf_page": 81,
+      "render_path": "docx_previews/OMO10301_L_16_2_12_1/page-1.png",
+      "render_sha256": "f9e306487adde9f9cc41cc79f8a5159447a9c61cda88e52afcefc6a00eba896d",
+      "status": "pass",
+      "reviewer": "same extraction agent",
+      "details": "Original source image and native DOCX page compared: header identity, cell text, sparse blanks, source lines and all owned notes; no clipping, overlaps or missing glyphs."
+    }
+  ],
+  "source_page_count": 47,
+  "docx_page_count": 47,
+  "microsoft_word_display_validation": "not_run"
+}

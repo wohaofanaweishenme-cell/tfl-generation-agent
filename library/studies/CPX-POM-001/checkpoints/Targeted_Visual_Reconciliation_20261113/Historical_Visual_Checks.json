@@ -1,0 +1,29 @@
+{
+  "template_id": "CPXPOM001_T_14_3_2_5_1",
+  "checks": [
+    {
+      "check_id": "CPXPOM001_T_14_3_2_5_1_VISUAL",
+      "template_id": "CPXPOM001_T_14_3_2_5_1",
+      "layer": "visual",
+      "status": "needs_review",
+      "details": "Dose header visibility inconsistent in raster; do not count visual pass.",
+      "evidence_paths": [
+        "batches/batch_005/CPXPOM001_T_14_3_2_5_1_structure.json",
+        "batches/batch_005/CPXPOM001_T_14_3_2_5_1/page-1.png",
+        "qa/Final_Artifact_Render_Check.json"
+      ]
+    },
+    {
+      "check_id": "CPXPOM001_T_14_3_2_5_1_VISUAL_DETAIL_RECHECK",
+      "template_id": "CPXPOM001_T_14_3_2_5_1",
+      "layer": "visual",
+      "status": "pass",
+      "details": "Enlarged PDFium header/body detail inspected: all seven dose headers and exact source cells visible. Supersedes earlier preview concern; no DOCX content change.",
+      "evidence_paths": [
+        "batches/batch_005/CPXPOM001_T_14_3_2_5_1/verification_detail.png",
+        "qa/Final_Artifact_Render_Check.json"
+      ]
+    }
+  ],
+  "policy": "Original statuses preserved. Superseded by current VISUAL check after actual final-DOCX rerender and source-page comparison."
+}
