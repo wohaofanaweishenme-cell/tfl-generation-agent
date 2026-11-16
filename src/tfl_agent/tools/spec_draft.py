@@ -193,6 +193,16 @@ def generate_spec_draft(source_path, spec, out_path, locator_map_path, *,
                 else "NOT EXTRACTED — REVIEW REQUIRED"
             )
         )
+        denom = str(req.get("denominator_rule") or "").strip()
+        document.add_paragraph(
+            "Target denominator rule: " +
+            (denom if denom else "NOT EXTRACTED — REVIEW REQUIRED")
+        )
+        methods = _unique(stats.get("analysis_methods") or [])
+        document.add_paragraph(
+            "Target analysis methods: " +
+            ("; ".join(methods) if methods else "NOT EXTRACTED — REVIEW REQUIRED")
+        )
         document.add_paragraph(
             "Target footnotes: " + (
                 "; ".join(notes) if notes
@@ -205,7 +215,7 @@ def generate_spec_draft(source_path, spec, out_path, locator_map_path, *,
             "against the target SAP and target TFL shell."
         )
         document.add_paragraph(
-            f"Source layout reference only: {source.stem}"
+            f"Source page-geometry reference only: {source.stem}"
             + (f" (study {source_study_id})" if source_study_id else "")
             + f"; retrieval status: {retrieval_status or 'unknown'}. "
             "No source clinical table cells or statistical footnotes were reused."
@@ -236,6 +246,8 @@ def generate_spec_draft(source_path, spec, out_path, locator_map_path, *,
             "target_columns": columns,
             "raw_target_columns": raw_columns,
             "target_footnotes": notes,
+            "target_denominator_rule": denom,
+            "target_analysis_methods": methods,
             "missing_rows": not bool(req.get("row_requirements")),
             "missing_columns": not bool(req.get("column_requirements")),
             "missing_footnotes": not bool(notes),
@@ -246,7 +258,7 @@ def generate_spec_draft(source_path, spec, out_path, locator_map_path, *,
             "reason": "Source bookmarks and SHA checked; target-spec Table draft constructed for review",
             "warnings": [
                 "Draft generated from target Step-2 requirements, not source bookmark-level adaptation",
-                "Source rows, columns, footnotes and sponsor branding were not reused",
+                "Only page geometry was taken from source; rows, columns, footnotes and sponsor branding were not reused",
                 "Review target SAP, denominator, missing fields and formatting before approval",
             ],
         }
