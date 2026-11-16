@@ -154,3 +154,30 @@ def test_actual_official_bookmarked_ae_template_if_present(tmp_path):
     assert hashlib.sha256(source.read_bytes()).hexdigest() == original_sha
     assert plan["verified_locator_bookmark_overlap"] > 0
     assert validate_shell(path, _spec(), plan)["valid"]
+
+
+@pytest.mark.parametrize("study_id, template_id", [
+    ("ARV-471-BC-201", "ARV471BC201_T_14_1_2_1"),
+    ("CPX-POM-001", "CPXPOM001_T_14_1_3_1"),
+    ("WTX-330x2101", "WTX330X2101_T_14_2_1_1"),
+    ("OMO-103-01", "OMO10301_T_14_2_1_1"),
+    ("P-VCNA-003", "PVCNA003_T_14_3_1_1"),
+    ("SP11631", "SP11631_T_14_5_2_1_1"),
+])
+def test_six_official_study_source_bookmarks_support_drafts(tmp_path, study_id, template_id):
+    """Read-only integration of all six real Library studies; no DeepSeek."""
+    root = Path(__file__).resolve().parents[1] / "library"
+    source = root / "TFL_Template_Library" / "table" / f"{template_id}.docx"
+    locator = root / "studies" / study_id / "intermediate" / "DOCX_Locator_Map" / f"{template_id}.json"
+    if not source.is_file() or not locator.is_file():
+        pytest.skip("Official Library source files not present")
+    before = hashlib.sha256(source.read_bytes()).hexdigest()
+    out = tmp_path / f"{template_id}_DRAFT.docx"
+    path, plan = generate_spec_draft(
+        source, _spec(), out, locator, source_study_id=study_id,
+    )
+    assert path and out.is_file(), plan
+    assert plan["verified_locator_bookmark_overlap"] > 0
+    assert plan["source_sha256"] == before
+    assert hashlib.sha256(source.read_bytes()).hexdigest() == before
+    assert validate_shell(path, _spec(), plan)["valid"]
