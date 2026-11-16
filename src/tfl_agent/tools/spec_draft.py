@@ -8,7 +8,9 @@ target specification; source study table contents and footnotes are NEVER copied
 from __future__ import annotations
 
 import hashlib
+import os
 import re
+import tempfile
 from pathlib import Path
 
 from docx import Document
@@ -229,10 +231,18 @@ def generate_spec_draft(source_path, spec, out_path, locator_map_path, *,
                 paragraph = document.add_paragraph(style="List Bullet")
                 paragraph.add_run(str(issue.get("description") or issue.get("issue_type") or issue))
         dest.parent.mkdir(parents=True, exist_ok=True)
-        document.save(dest)
-        if hashlib.sha256(source.read_bytes()).hexdigest() != source_hash_before:
-            dest.unlink(missing_ok=True)
-            raise RuntimeError("Source DOCX changed while generating draft")
+        with tempfile.NamedTemporaryFile(
+            dir=dest.parent, prefix=".step4_", suffix=".docx", delete=False
+        ) as handle:
+            temp_path = Path(handle.name)
+        try:
+            document.save(temp_path)
+            if hashlib.sha256(source.read_bytes()).hexdigest() != source_hash_before:
+                raise RuntimeError("Source DOCX changed while generating draft")
+            # Atomic overwrite only after the source has been revalidated.
+            os.replace(temp_path, dest)
+        finally:
+            temp_path.unlink(missing_ok=True)
         plan = {
             "editing_mode": "source_verified_spec_draft",
             "safe_to_generate": True,
@@ -267,5 +277,4 @@ def generate_spec_draft(source_path, spec, out_path, locator_map_path, *,
         }
         return str(dest), plan
     except (OSError, ValueError, KeyError, TypeError, RuntimeError) as exc:
-        dest.unlink(missing_ok=True)
         return _fail(f"{type(exc).__name__}: {exc}", source, locator)
