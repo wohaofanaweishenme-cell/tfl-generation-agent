@@ -33,8 +33,7 @@ The source-only study library at `library/studies/P-VCNA-003/` is read-only.
 The loader supports its `Study_Metadata.json` + `TFL_Template_Library/` layout.
 This first **Stage-A** run makes real DeepSeek calls to extract target SAP requirements,
 then shows evidence, ranked templates, and adaptation feasibility.
-**Authentic bookmarked source DOCX files cannot yet be safely adapted by the old placeholder editor;
-these are flagged `needs_review`, not claimed as generated documents.**
+**Stage B.1 now supports verified bookmark-addressed text edits and creates review-required DOCX drafts.** Population mismatches, unmapped rows/headers/footnotes, and unsupported structure remain gated as `needs_review`; bookmarked drafts are never reported as clinically approved. See [Step 4 Bookmark Adaptation](STEP4_BOOKMARK_ADAPTATION.md).
 Revoke exposed API keys; store a new key only in Colab Secrets as `DEEPSEEK_API_KEY`.
 
 ## Local development
@@ -106,7 +105,7 @@ print(report)
 | 1. Parse SAP | Read PDF blocks and identify target context | Text-selectable PDFs, one selected target |
 | 2. Build specification | Extract populations, endpoint, statistics and cited SAP snippets | Fixture response or API; evidence checks are limited |
 | 3. Retrieve template | Match specification to a metadata/keyword-indexed library | Simple ranking, synthetic example library |
-| 4. Generate shell | Safely fill supported placeholders in a DOCX template | One **Table**; figure/listing not implemented |
+| 4. Generate shell | Fill synthetic placeholders or edit verified v2.4 bookmarks | One **Table**; review-gated bookmark drafts; figure/listing and structural insertions not implemented |
 | 5. Validate/export | Check schemas, source quotes, document structure and generate reports | Structural checks, **not** clinical correctness |
 
 The optional Content List is **not required** for the current workflow. The current demonstration takes a single predefined target TFL rather than automatically generating all TFLs for an entire study. Source templates in `library/` are not modified.
@@ -115,7 +114,7 @@ The optional Content List is **not required** for the current workflow. The curr
 
 - **Fixture mode** uses a prewritten LLM output, so it is not evidence of model performance. API mode requires separate testing and evaluation.
 - Scanned PDFs without extractable text are not supported (no OCR); cross-section retrieval and inference may fail on longer SAPs.
-- Current generator handles **Table DOCX placeholders only**. Unsupported or mismatched templates are flagged for review rather than silently rewritten.
+- Generator supports Table DOCX placeholders **and** verified, review-gated bookmark text edits. Unsupported structural changes, unmatched SAP values, and cross-study source-attribution cleanup require manual review; bookmark outputs are drafts.
 - Footnotes are represented as ordinary document paragraphs, not Word's native footnote XML. Verify they match the source SAP.
 - Validation does not guarantee the correct population, statistical methods, denominator, censoring rules or medical interpretation.
 - Planned: real reviewed library, systematic success/failure evaluation, broader TFL coverage, retrieval improvements, polished outputs.
@@ -134,3 +133,7 @@ The repository includes tests for the package and notebook workflow. Local check
 ## Real Study DeepSeek Demo: targeted evidence repair and safe template selection
 
 Notebook: [03_Real_Study_DeepSeek_Colab.ipynb](notebooks/03_Real_Study_DeepSeek_Colab.ipynb). One extra DeepSeek call is attempted only when required Step 2 fields are missing. Step 3 reports best match separately from an automatically eligible template; mismatched populations and endpoints require manual adaptation review. See [REAL_STUDY_DEEPSEEK_GUIDE.md](REAL_STUDY_DEEPSEEK_GUIDE.md).
+
+## Stage B.1: review-gated Bookmark DOCX drafts
+
+The new [STEP4_BOOKMARK_ADAPTATION.md](STEP4_BOOKMARK_ADAPTATION.md) explains source hash verification, target-to-source bookmark edits, audit trails, and the optional `TFLSession(reviewed_adaptation=..., allow_review=True)` input. The real Demographics retrieval score **0.8108** is a heuristic, not adaptation approval; when source and target populations differ the default Step 3 selection remains blocked. The `library/` tree remains teammate-maintained and read-only.

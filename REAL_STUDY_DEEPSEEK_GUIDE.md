@@ -17,13 +17,13 @@ Open `notebooks/03_Real_Study_DeepSeek_Colab.ipynb` on Google Colab. It uses a l
 - Reads all P-VCNA-003 study-scoped v2.4 metadata and 64 source DOCX template paths, using the keywords and aliases *inside* each template's Metadata. There is no global Keyword Index in that study folder.
 - Does live DeepSeek JSON extraction (non-thinking JSON mode by default to limit truncation); verifies text quotations and schema, and **drops unsupported inferred values** rather than silently accepting them.
 - Ranks Table templates and shows endpoint, methods, overlapping tokens, score, and a deterministic explanation. A high score is a retrieval heuristic, **not** calibrated model confidence.
-- Detects when a real source DOCX uses bookmarks, not MVP `{{PLACEHOLDER}}` tokens. **The current safe generator blocks these unverified adaptations** rather than misrepresenting the result as a generated shell. `source_bookmarks_requires_adaptation` is an expected Stage-A compatibility outcome. The source library remains unchanged.
+- Supports verified v2.4 Word bookmark text changes through the Stage B.1 adapter. Unverified locators and unapproved source-to-target mappings are still blocked. **Any generated bookmark DOCX is a draft needing clinical and source-attribution review**, never an approved shell. The source library remains unchanged.
 - If no relevant source template is retrieved, Step 3 shows candidates/no selection. If missing evidence blocks the specification, Step 4 does not produce a DOCX.
 - Supports one selected Table per `TFLSession`; the notebook loops over at most two target Tables. **Does not auto-generate the entire study Content List.**
 
-## Next: Stage B generator
+## Stage B.1 Bookmark draft generator and remaining work
 
-Use the source `intermediate/DOCX_Locator_Map/<template_id>.json`, individual DOCX bookmarks and target SAP Specification to build **source-element to target-element adaptation plans**. Only validated edits to title, headers, rows/columns and footnotes may be applied; original sources must never be overwritten. Add independent source/target evidence checks and review reasons for unsupported modifications. No claim of complete Table adaptation until it is implemented and tested.
+The implemented adapter uses the source `intermediate/DOCX_Locator_Map/<template_id>.json`, verified bookmarks and the target SAP Specification to build auditable, narrowly scoped source-to-target **text** plans. The original Library is never overwritten. It cannot yet safely insert or delete rows/columns, repair merged cells, or remove original sponsor/source branding. For a Step-3 candidate with different analysis populations, use an explicit manual review record (see [Step 4 guide](STEP4_BOOKMARK_ADAPTATION.md)); a high retrieval score alone is not permission to adapt.
 
 ## Fallback
 
@@ -55,4 +55,4 @@ See [STEP2_STEP3_RETRIEVAL_CHANGES.md](STEP2_STEP3_RETRIEVAL_CHANGES.md) for imp
 - Step 3 records both `best_candidate_template_id` and `selected_template_id`. For different known analysis populations (e.g. target Safety versus source ITT), selection status is `retrieved_needs_adaptation_review`, with `selected_template_id: null`. No automatic DOCX modification is permitted from that result. Cross-endpoint templates have the same safeguard.
 - When reusing a currently open Colab runtime, restart the runtime and rerun from the first cell to avoid using cached Python modules from a previous GitHub commit.
 - The default Google Drive source path is `MyDrive/Colab Notebooks/agent/midterm demo/SAP_001_00.pdf`; adjust `DRIVE_SAP_RELATIVE_PATH` if your location differs.
-- **Step 4 Bookmark-based adaptation is still not implemented.** A successful retrieval, even with a complete Specification, is not proof of a valid generated shell.
+- **Step 4 verified Bookmark draft editing is now implemented for simple text anchors**, but an end-to-end clinically correct Table (especially cross-population Demographics) is not yet demonstrated. See [STEP4_BOOKMARK_ADAPTATION.md](STEP4_BOOKMARK_ADAPTATION.md).
