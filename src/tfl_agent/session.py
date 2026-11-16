@@ -9,12 +9,39 @@ from tfl_agent.agent.step3_retriever import retrieve_templates, template_selecti
 from tfl_agent.agent.step4_generator import generate
 from tfl_agent.agent.step5_validator import validate_spec_document, validate_shell
 from tfl_agent.tools.docx_editor import plan_modifications
+from tfl_agent.tools.spec_draft import generate_spec_draft
 from tfl_agent.tools.io_utils import write_json
 from tfl_agent.tools.library_loader import load_library
 
 
 def _safe_file_id(value: str) -> str:
     return ''.join(c if c.isalnum() or c in '._-' else '_' for c in value)
+
+
+def _choose_draft_source(matches, target_title):
+    """Pick a plausible *layout reference*, not a clinically approved substitution.
+
+    Prefer the same known endpoint, then the same lab subtype; skip explicit
+    endpoint contradictions (e.g. PFS versus OS) even if those score higher.
+    """
+    candidates = [m for m in matches if not m.get('cross_endpoint') and
+                  not m.get('requires_endpoint_review')]
+    if not candidates:
+        return None
+    endpoint_matches = [m for m in candidates if m.get('endpoint_match')]
+    if endpoint_matches:
+        candidates = endpoint_matches
+    title = str(target_title or '').casefold()
+    for subtype in ('hematology', 'biochemistry', 'vital signs', 'demograph',
+                    'medical history', 'adverse events'):
+        if subtype in title:
+            same = [m for m in candidates if subtype in str(
+                m['template']['identity'].get('original_title') or
+                m['template']['identity'].get('normalized_title') or '').casefold()]
+            if same:
+                candidates = same
+            break
+    return max(candidates, key=lambda m: (m['score'], -matches.index(m)))
 
 
 class TFLSession:
@@ -27,7 +54,8 @@ class TFLSession:
 
     def __init__(self, *, sap_path, library_path, schema_path, prompts_dir,
                  output_dir, llm, content_list_path=None, tfl_id=None,
-                 title=None, tfl_index=0, allow_review=False, sap_body_page_range=None):
+                 title=None, tfl_index=0, allow_review=False, sap_body_page_range=None,
+                 draft_mode=False):
         self.sap_path=Path(sap_path).resolve()
         self.library_path=Path(library_path).resolve()
         self.schema_path=Path(schema_path).resolve()
@@ -39,6 +67,7 @@ class TFLSession:
         self.title=title
         self.tfl_index=tfl_index
         self.allow_review=allow_review
+        self.draft_mode=bool(draft_mode)
         self.sap_body_page_range=sap_body_page_range
         self.sap: dict[str,Any]|None=None
         self.inventory: list[dict]|None=None
@@ -137,6 +166,18 @@ class TFLSession:
 
     def preview_modification_plan(self):
         self._require('matches','Step 3')
+        if self.draft_mode:
+            candidate = _choose_draft_source(self.matches or [], self.tfl['title'])
+            return {
+                'safe_to_generate': False,
+                'draft_can_be_attempted': bool(candidate),
+                'editing_mode': 'source_verified_spec_draft',
+                'candidate_template_id': candidate['template_id'] if candidate else None,
+                'review_required': True,
+                'reason': ('Source candidate available for integrity-checked target-spec draft; '
+                           'not a bookmark-faithful edit or clinical approval'
+                           if candidate else 'No endpoint-compatible source candidate'),
+            }
         if self.selection is None:
             decision=self.selection_decision or {}
             return {'safe_to_generate':False,
@@ -149,6 +190,9 @@ class TFLSession:
     def step4_generate_shell(self):
         self._require('matches','Step 3')
         self.shell_path=None
+        self.plan=None
+        if self.draft_mode:
+            return self._step4_generate_spec_draft()
         if not self.spec_validation['schema_valid']:
             self.shell_status='blocked_schema'
             return {'status':self.shell_status,'shell_path':None,'issues':self.spec_validation['errors']}
@@ -172,6 +216,44 @@ class TFLSession:
                     [f'Unexpected: {x}' for x in self.plan['unexpected_placeholders']]}
         self.shell_status='generated' if self.spec['readiness']=='ready' else 'draft_needs_review'
         return {'status':self.shell_status,'shell_path':self.shell_path,'issues':[]}
+
+    def _step4_generate_spec_draft(self):
+        """Produce a clearly marked target-spec Table draft from verified source.
+
+        This explicit experiment mode does not claim bookmark-level adaptation.
+        It can run with blocked/incomplete specifications, but records all
+        deficiencies and always returns draft_needs_review, never 'generated'.
+        """
+        if not self.spec_validation or not self.spec_validation['schema_valid']:
+            self.shell_status='blocked_schema'
+            return {'status':self.shell_status,'shell_path':None,
+                    'issues':(self.spec_validation or {}).get('errors', ['Missing schema validation'])}
+        candidate=_choose_draft_source(self.matches or [], self.tfl['title'])
+        if candidate is None:
+            self.shell_status='needs_review'
+            return {'status':self.shell_status,'shell_path':None,
+                    'issues':['No endpoint-compatible source for draft generation']}
+        self.selection=candidate
+        destination=self.output_dir/'shells'/f'Table_{_safe_file_id(self.tfl["tfl_id"])}_DRAFT.docx'
+        self.shell_path,self.plan=generate_spec_draft(
+            candidate['source_path'],self.spec,destination,
+            candidate['template'].get('locator_map_path'),
+            source_study_id=candidate.get('source_study_id'),
+            retrieval_status=(self.selection_decision or {}).get('status'),
+        )
+        write_json(self.output_dir/'modification_plans'/f'{_safe_file_id(self.tfl["tfl_id"])}.json',self.plan)
+        if not self.shell_path:
+            self.shell_status='needs_review'
+            return {'status':self.shell_status,'shell_path':None,
+                    'issues':self.plan.get('issues', ['Source verification failed'])}
+        self.shell_status='draft_needs_review'
+        review_issues=[x.get('description', str(x)) for x in self.spec.get('issues', [])]
+        if (self.selection_decision or {}).get('status')!='auto_selected':
+            review_issues.append('Retrieved source was used as layout reference ONLY; '
+                                 'selection requires target-study review')
+        review_issues.extend(self.plan.get('warnings', []))
+        return {'status':self.shell_status,'shell_path':self.shell_path,
+                'issues':review_issues}
 
     def step5_validate_and_export(self):
         self._require('spec','Step 2')
