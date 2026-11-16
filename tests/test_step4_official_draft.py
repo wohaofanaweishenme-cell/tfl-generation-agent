@@ -181,3 +181,33 @@ def test_six_official_study_source_bookmarks_support_drafts(tmp_path, study_id, 
     assert plan["source_sha256"] == before
     assert hashlib.sha256(source.read_bytes()).hexdigest() == before
     assert validate_shell(path, _spec(), plan)["valid"]
+
+
+def test_group_label_deduplication_for_real_demographics_spec():
+    from tfl_agent.tools.spec_draft import _columns_for_draft
+    spec = _spec()
+    spec["statistical_requirements"]["treatment_groups"] = [
+        "Group 1: Tenalisib 800 mg BID", "Group 2: Tenalisib 1200 mg BID",
+    ]
+    spec["table_requirements"]["column_requirements"] = [
+        "Group 1: Tenalisib 800 mg BID", "Group 2: Tenalisib 1200 mg BID", "Overall",
+    ]
+    columns, raw = _columns_for_draft(spec)
+    assert columns == ["Tenalisib 800 mg BID", "Tenalisib 1200 mg BID", "Overall"]
+    assert len(raw) == 3
+
+
+def test_both_real_library_colab_notebooks_have_valid_python_cells():
+    root = Path(__file__).resolve().parents[1] / "notebooks"
+    for filename in [
+        "04_Official_Library_DeepSeek_Colab.ipynb",
+        "05_Step4_Official_Library_Replay.ipynb",
+    ]:
+        path = root / filename
+        nb = json.loads(path.read_text(encoding="utf-8"))
+        assert nb["nbformat"] == 4
+        assert nb["cells"]
+        for cell in nb["cells"]:
+            if cell.get("cell_type") == "code":
+                code = "".join(cell.get("source", []))
+                compile(code, f"{filename}:{cell.get('id')}", "exec")
