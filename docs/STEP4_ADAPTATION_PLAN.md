@@ -96,3 +96,95 @@ Enhancements added without modifying the official Library:
 All v2 plans remain review_required with execution_supported:false. DOCX structural editing, clinical approval, and independent per-operation source quote validation are not implemented.
 
 The standalone Colab 06 shows adaptation mode, row match counts and evidence gaps and exports plan-only JSON. Tests: tests/test_step4_adaptation_v2.py (real AE geometry, demographic hierarchy, PFS axis, BOR children, footnotes, missing evidence and incomplete Hematology).
+
+
+## Stage B.5 — Adaptation Planner v3: evidence-gated, role-aware planning
+
+This stage **does not generate or modify any DOCX files**. All operations
+continue to have `execution_supported=false` and the plan has
+`executor_ready=false`; a verified SAP quote is not clinical approval.
+
+### Planning gate (`agent/planning_gate.py`)
+
+`evaluate_target_completeness` classifies requirements by Table family
+(Adverse Events, Demographics, PFS, Response, Disposition, Laboratory).
+The gate reports `hard_blockers` and `review_items`. A target with
+`readiness=blocked` always has `planning_gate.status=blocked`. Missing
+rows, columns, or statistics are hard blockers. Unverified population,
+categorical levels, footnotes, or denominator rules are separately reported.
+A diagnostic Plan may still be produced for blocked inputs, but physical
+edits may not execute.
+
+### Column Role Matcher (`agent/column_roles.py`)
+
+Source Word headers are classified as `treatment_arm_candidate`,
+`overall`, `cohort_axis`, `statistic_or_measurement` or `unknown`
+before matching. Source `Total` can match target `Overall` but must
+NEVER be mapped to a Tenalisib treatment arm merely because it is the first
+available header. An arm-to-arm text edit remains a candidate requiring
+dose/patient-count review.
+
+Proposed columns use `table_index`, `insert_after_physical_grid_index`
+and `insertion_physical_grid_index`, all distinct from target ordinal
+`target_column_index`. AE's proposed Overall insertion remains at
+physical Word grid index 4 after source Arm II, not index 2.
+
+### Row Hierarchy and Clinical Review (`source_structure_parser.py`,
+`structure_alignment.py`, `target_layout_builder.py`)
+
+The parser recognizes category children displayed in the first-column
+(Race -> White/Asian; Sex -> Male/Female) and on the *same* Word row
+(TEAEs by Severity -> Grade 1, with Grades 2–5 underneath).
+Statistical subrows (Age -> n/Mean/SD) retain parent IDs.
+
+- `Gender` vs `Sex` produces `domain_synonym_requires_review`, not
+  a silently approved clinical equivalence.
+- `Grade >=3`, `Grade >= 3`, `Grade ≥3` and `Grade ≥ 3` match a
+  source severity family with Grades 3–5 only as
+  `aggregation_candidate`. It explicitly prohibits summing patient
+  counts across grades; a patient-level union is needed. Related Grade >=3
+  is NOT matched to an unrelated severity-only source group.
+- BOR's explicit CR/PR/SD/PD children are aligned individually. When all
+  four are matched, its parent becomes `MATCH_GROUP`, not an additional
+  `INSERT_ROW_CANDIDATE`.
+
+### Read-only SAP Evidence Resolver (`agent/target_evidence_resolver.py`)
+
+The optional `parsed_sap_blocks` and `sap_body_page_range` inputs
+verify cached target-SAP quotations against the **explicitly permitted**
+SAP body pages. This study uses physical pages 4–21 (not the target
+study's held-out shell pages). A quote's presence in a block establishes
+only textual provenance, not support for a proposed clinical/statistical
+edit. Missing footnotes, percentage denominators, and other requirements
+return ranked *candidate* SAP body blocks, without modifying the
+Specification. Source-study footnotes are never copied.
+
+Call after Step 3:
+
+```python
+result = session.step4_build_adaptation_plan(
+    parsed_sap_blocks=saved_parsed_sap_blocks,
+    sap_body_page_range=(4, 21),
+)
+```
+
+The v3 plan JSON adds `planning_gate`, `column_alignment`, and
+`target_evidence_lookup` (or null without saved SAP blocks). It keeps
+the v2 Source IR, Target IR and operation list.
+
+### Testing and limits
+
+Run:
+```bash
+python -m pytest -q tests/test_step4_official_draft.py tests/test_step4_adaptation_planner.py tests/test_step4_adaptation_v2.py tests/test_step4_adaptation_v3.py
+```
+
+The focused official-library workflow passed **44 tests** after these
+changes. Separate full-project legacy demo fixture tests still fail from
+mismatches between legacy fixtures and the official 431-template Library;
+that broader issue is outside this milestone.
+
+Not implemented: LLM-based clinical relation adjudication, updating
+Specifications from candidates, independent semantic validation of each
+operation against SAP evidence, human approval UI, OOXML document editing,
+or evidence-backed final clinical approval.
