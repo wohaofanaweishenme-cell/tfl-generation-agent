@@ -74,6 +74,223 @@ def _bookmark_locations(doc):
     return positions
 
 
+
+
+# Stage B.4: structural geometry and hierarchical row analysis.
+# These fields are additive: v1 readers can continue to use row_candidates.
+def _statistic_kind(label):
+    s = _clean(label).casefold()
+    match = re.fullmatch(
+        r"(?:n(?:\s*\(missing\))?|mean(?:\s*\(sd\))?|median|sd|"
+        r"standard deviation|min(?:imum)?(?:\s*,\s*max(?:imum)?)?|"
+        r"max(?:imum)?|q[123]|95% ci|lower ci|upper ci)",
+        s,
+    )
+    return bool(match)
+
+
+def _source_category_parent(label):
+    s = _clean(label).casefold()
+    return bool(
+        re.search(
+            r"\b(?:race|sex|gender|age group|menopausal|ethnicity|"
+            r"severity|relationship|bor|best overall response|"
+            r"disposition reason|visit|baseline)\b",
+            s,
+        )
+    )
+
+
+def _column_header_like(label):
+    s = _clean(label)
+    return bool(re.search(
+        r"\b(?:arm\s+(?:i|ii|iii|\d+)|cohort\s*\d+|"
+        r"(?:n\s*=\s*[^)]*)|dose|mg(?:/kg|/m|/day)|overall|total|"
+        r"safety population|treatment)\b", s, flags=re.I,
+    ))
+
+
+def _native_header_columns(tables, locator_headers):
+    """Detect header positions from actual Word cells, not bookmark counts.
+
+    The output uses 0-based *physical logical grid coordinates*.  A distinct
+    header index is not a column coordinate; merged cells are documented.
+    """
+    result = []
+    seen = set()
+    for table in tables:
+        ti, grid = table["table_index"], table["grid"]
+        if not grid:
+            continue
+        # Header rows may be sparse or repeated across continuation panels.
+        for ri, cells in enumerate(grid[:min(3, len(grid))]):
+            labels = [c["text"] for c in cells if c["text"]]
+            if not labels:
+                continue
+            if (ri > 0 and not any(_column_header_like(x) for x in labels)):
+                continue
+            for cell in cells:
+                value = cell["text"]
+                if not value or not _column_header_like(value):
+                    continue
+                if _norm(value) in {"parameter", "statistic", "cohort"}:
+                    continue
+                pos = {"location_type": "table_cell", "table_index": ti,
+                       "row_index": ri, "column_index": cell["column_index"]}
+                key = (ti, ri, cell["column_index"])
+                if key in seen:
+                    continue
+                seen.add(key)
+                matches = [h for h in locator_headers if
+                           h.get("position") == pos]
+                result.append({
+                    "label": value,
+                    "physical_grid_index": cell["column_index"],
+                    "table_index": ti, "header_row_index": ri,
+                    "position": pos,
+                    "bookmark": matches[0]["bookmark"] if matches else (
+                        cell["bookmark_names"][0] if cell["bookmark_names"] else None
+                    ),
+                    "source": "verified_header_cell" if matches else "word_grid_header_heuristic",
+                    "is_reviewed": False,
+                    "geometry_inferred": not bool(matches),
+                    "grid_span": cell.get("grid_span", 1),
+                    "vertical_merge": cell.get("vertical_merge"),
+                })
+            if result and any(c["table_index"] == ti for c in result):
+                break
+    return result
+
+
+def _hierarchical_rows(tables):
+    """Group repeated n/Mean/SD under a local parent, keeping all Word coords.
+
+    Category inference is conservative: a subrow carries 'inferred' status;
+    Word indentation and source-study labels are not clinical proof.
+    """
+    rows = []
+    for table in tables:
+        ti = table["table_index"]
+        current_parent = None
+        for ri, cells in enumerate(table["grid"]):
+            if ri == 0 or not cells:
+                continue
+            main = _clean(cells[0]["text"])
+            sub = _clean(cells[1]["text"]) if len(cells) > 1 else ""
+            is_sub = False
+            if not main and sub and current_parent and _source_category_parent(current_parent["label"]):
+                # Only child content next to a row-family label, never a
+                # Cohort/Statistic matrix where column 1 is a data axis.
+                if not re.search(r"\b(?:cohort|dose|n\s*=)\b", sub, flags=re.I):
+                    main, is_sub = sub, True
+                    chosen_col = 1
+                else:
+                    continue
+            elif main:
+                chosen_col = 0
+                is_sub = _statistic_kind(main)
+            else:
+                continue
+            if not _meaningful_row(main) and not is_sub:
+                continue
+            row_id = f"T{ti:02d}R{ri:04d}C{chosen_col:02d}"
+            parent = current_parent["row_id"] if is_sub and current_parent else None
+            item = {
+                "row_id": row_id, "label": main,
+                "parent_row_id": parent,
+                "row_type": ("statistic_subrow" if _statistic_kind(main)
+                             else "category_subrow" if parent else "section_or_variable"),
+                "inference_status": "inferred_requires_review" if parent else "word_grid_observed",
+                "position": {"location_type": "table_cell",
+                             "table_index": ti, "row_index": ri,
+                             "column_index": chosen_col},
+                "bookmark_names": cells[chosen_col]["bookmark_names"],
+            }
+            rows.append(item)
+            if not is_sub:
+                current_parent = item
+    return rows
+
+
+def _layout_profile(tables, header_columns):
+    if not tables:
+        return {
+            "axis_orientation": "no_word_table",
+            "column_coordinates_verified": False,
+            "notes": ["Source has no native Word table"],
+        }
+    vertical = False
+    for table in tables:
+        grid = table["grid"]
+        if grid and len(grid[0]) >= 3:
+            head = [_norm(c["text"]) for c in grid[0]]
+            if "cohort" in head and "statistic" in head:
+                vertical = True
+                break
+    if vertical:
+        mode = "cohort_rows_statistic_columns"
+    elif header_columns:
+        mode = "treatment_arm_columns"
+    else:
+        mode = "unclassified"
+    return {
+        "axis_orientation": mode,
+        "column_coordinates_verified": False,  # not independently reviewed
+        "word_table_count": len(tables),
+        "panel_column_counts": [t["logical_column_count"] for t in tables],
+        "notes": (["Cohorts appear vertically; horizontal arm-column surgery is unsafe"]
+                  if vertical else []),
+    }
+
+
+def _group_footnotes(footnotes):
+    result = []
+    by_key = {}
+    for item in footnotes:
+        key = _norm(item["text"])
+        if not key:
+            continue
+        if key not in by_key:
+            group = {
+                "footnote_id": f"FN{len(result)+1:03d}",
+                "text": item["text"],
+                "occurrences": [],
+                "origin": "source_study_not_target_evidence",
+            }
+            result.append(group)
+            by_key[key] = group
+        by_key[key]["occurrences"].append({
+            "bookmark": item["bookmark"],
+            "position": item["position"],
+            "source_ref_ids": item["source_ref_ids"],
+        })
+    return result
+
+
+def _title_mapping(title_candidates):
+    # Sponsor identifiers can be tagged 'title'. Prefer a literal Table
+    # marker; retain heading continuation fragments without silently
+    # equating them to a single safe bookmark-edit range.
+    anchored = [
+        c for c in title_candidates if
+        re.search(r"\btable\s*\d[\d.\-]*\b", c["text"], flags=re.I)
+    ]
+    primary = anchored[0] if anchored else None
+    if primary is not None:
+        idx = title_candidates.index(primary)
+        continuation = []
+        for item in title_candidates[idx+1:idx+3]:
+            if re.search(r"\b(?:safety|analysis|population)\b", item["text"], re.I):
+                break
+            continuation.append(item)
+        return {
+            "anchor": primary, "continuation_candidates": continuation,
+            "status": "title_anchor_candidate_requires_review",
+        }
+    return {"anchor": None, "continuation_candidates": [],
+            "status": "title_anchor_missing"}
+
+
 def parse_source_template(template_path, locator_map_path):
     """Return a JSON-serializable IR; reject unverifiable source revisions.
 
@@ -133,8 +350,16 @@ def parse_source_template(template_path, locator_map_path):
             cells = []
             for ci, cell in enumerate(row.cells):
                 # Native cells can span several logical grid positions.
+                tcpr = cell._tc.tcPr
+                span_nodes = tcpr.xpath("./w:gridSpan") if tcpr is not None else []
+                merge_nodes = tcpr.xpath("./w:vMerge") if tcpr is not None else []
+                span = int(span_nodes[0].get(qn("w:val"), "1")) if span_nodes else 1
+                vmerge = (merge_nodes[0].get(qn("w:val"), "continue")
+                          if merge_nodes else None)
                 cells.append({
                     "column_index": ci,
+                    "grid_span": span, "vertical_merge": vmerge,
+                    "physical_cell_key": str(id(cell._tc)),
                     "text": _clean(cell.text),
                     "bookmark_names": [
                         start.get(qn("w:name"))
@@ -203,13 +428,25 @@ def parse_source_template(template_path, locator_map_path):
         "source_ref_ids": e["source_ref_ids"],
     } for e in verified_elements if e["role"] == "footnote" and _clean(e["text"])]
 
+    # Prefer native Word grid geometry and bookmarked positions.
+    # Preserve v1 candidates independently for backward compatibility.
+    structural_headers = _native_header_columns(tables, column_candidates)
+    hierarchy = _hierarchical_rows(tables)
+    layout = _layout_profile(tables, structural_headers)
+    grouped_footnotes = _group_footnotes(footnotes)
+    title_nodes = [{
+        "text": _clean(e["text"]), "bookmark": e["bookmark"],
+        "position": e["position"],
+    } for e in verified_elements if e["role"] == "title"]
+    title_mapping = _title_mapping(title_nodes)
+
     placeholders = sorted({
         _clean(e["text"]) for e in verified_elements
         if e["role"] in ("placeholder_cell", "placeholder")
         and 0 < len(_clean(e["text"])) <= 55
     })[:40]
     return {
-        "ir_version": "source-ir-1.0",
+        "ir_version": "source-ir-2.0",
         "template_id": template.stem,
         "source_docx": str(template),
         "locator_map_path": str(locator_path),
@@ -220,13 +457,15 @@ def parse_source_template(template_path, locator_map_path):
         "table_count": len(tables),
         "tables": tables,
         "row_candidates": row_candidates,
-        "column_candidates": column_candidates,
+        "column_candidates": structural_headers or column_candidates,
+        "locator_header_candidates": column_candidates,
+        "layout_profile": layout,
+        "hierarchical_rows": hierarchy,
+        "footnote_groups": grouped_footnotes,
+        "title_mapping": title_mapping,
         "footnotes": footnotes,
         "placeholder_formats": placeholders,
-        "title_candidates": [{
-            "text": _clean(e["text"]), "bookmark": e["bookmark"],
-            "position": e["position"],
-        } for e in verified_elements if e["role"] == "title"],
+        "title_candidates": title_nodes,
         "warnings": (
             ["Some verified locator bookmarks were not present in DOCX: review mapping"]
             if missing_bookmarks else []
@@ -235,6 +474,6 @@ def parse_source_template(template_path, locator_map_path):
             if not tables else []
         ) + (
             ["No explicit header_cell roles: column mapping requires geometry review"]
-            if not column_candidates else []
+            if not structural_headers else []
         ),
     }
