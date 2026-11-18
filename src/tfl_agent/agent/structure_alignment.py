@@ -11,9 +11,9 @@ import re
 
 
 def normalize_row_label(label):
-    """Normalize presentation variation, not clinical definitions."""
+    """Normalize spelling and presentation, without silently dropping AEs."""
     s = str(label or "").casefold()
-    s = s.replace("≥", ">=").replace("–", "-")
+    s = s.replace("≥", ">=").replace("–", "-").replace("—", "-")
     s = re.sub(r"\btreatment[\s-]*emergent adverse events?\b", "teae", s)
     s = re.sub(r"\bteaes\b", "teae", s)
     s = re.sub(r"\badverse events?\b", "ae", s)
@@ -21,12 +21,66 @@ def normalize_row_label(label):
     s = re.sub(r"\bcomplete response\b", "cr", s)
     s = re.sub(r"\bpartial response\b", "pr", s)
     s = re.sub(r"\bstable disease\b", "sd", s)
+    s = re.sub(r"\bgender\b", "sex", s)  # a CANDIDATE, not proven identical
     s = re.sub(r"\bany\b", "", s)
+    s = re.sub(r"\[\s*n\s*\(\s*%\s*\)\s*\]", "", s)
     s = re.sub(r"\b(?:years?|kg|cm)\b", "", s)
-    s = re.sub(r"\[[a-z]\]", "", s)  # source-only footnote superscripts
+    s = re.sub(r"\[[a-z]\]", "", s)
     s = re.sub(r"\s*\((cr|pr|sd|pd|teae)\)", "", s)
+    s = re.sub(r"(grade)\s*>=\s*(\d+)", r"\1 >= \2", s)
     s = re.sub(r"[^a-z0-9><=]+", " ", s)
     return " ".join(s.split())
+
+
+def _domain_alias(target, source):
+    # Gender and sex are NOT interchangeable for all studies; return a
+    # review-needed synonym candidate rather than a clinical equivalence.
+    a, b = str(target).casefold(), str(source).casefold()
+    return (
+        ("gender" in a and re.search(r"\bsex\b", b) is not None)
+        or ("gender" in b and re.search(r"\bsex\b", a) is not None)
+    )
+
+
+def _grade_threshold(label):
+    """Recognize Grade >=3, Grade >= 3, Grade ≥3 and Grade ≥ 3."""
+    s = str(label or "").replace("≥", ">=")
+    m = re.search(r"\bgrade\s*>=\s*([1-5])\b", s, re.I)
+    return int(m.group(1)) if m else None
+
+
+def _severity_aggregation_candidate(label, pool):
+    threshold = _grade_threshold(label)
+    if threshold is None or threshold != 3:
+        return None
+    # Related >=3 requires a joint severity/relationship classification;
+    # a plain severity group cannot be treated as an adequate source.
+    if re.search(r"\brelated\b", str(label), flags=re.I):
+        return None
+    grade_rows = [
+        r for r in pool
+        if re.fullmatch(r"grade\s*[345]", r["label"], flags=re.I)
+    ]
+    by_parent = {}
+    for row in grade_rows:
+        parent_id = row.get("parent_row_id")
+        if parent_id:
+            by_parent.setdefault(parent_id, []).append(row)
+    families = [
+        sorted(rows, key=lambda r: int(re.search(r"[345]", r["label"]).group()))
+        for rows in by_parent.values()
+        if {int(re.search(r"[345]", r["label"]).group()) for r in rows}
+           == {3, 4, 5}
+    ]
+    if len(families) != 1:
+        return None
+    return {
+        "source_rows": families[0],
+        "source_parent_row_id": families[0][0]["parent_row_id"],
+        "requires_patient_level_calculation": True,
+        "aggregation_logic": "union_of_patients_with_severity_grade_3_or_higher",
+        "status": "requires_review",
+    }
 
 
 def _protected_concepts(label):
@@ -96,7 +150,10 @@ def _candidate_for(label, pool, used):
             continue
         sim = SequenceMatcher(None, key, other).ratio()
         if key == other:
-            choices.append((3, 1.0, j, item, "lexical_normalized"))
+            relation = ("domain_synonym_requires_review"
+                        if _domain_alias(label, item["label"])
+                        else "lexical_normalized")
+            choices.append((3, 1.0, j, item, relation))
         elif _compatible(label, item["label"]) and sim >= .74:
             choices.append((2, sim, j, item, "fuzzy_requires_review"))
     if choices:
@@ -122,69 +179,92 @@ def _candidate_for(label, pool, used):
 
 
 def align_target_rows(source, target):
-    """Return row alignment candidates including explicit target children."""
+    """Align target row *trees* to source rows; never approve clinical edits."""
     pool = _source_row_pool(source)
     used = set()
     results = []
+
+    def make_match(requested, *, override=None):
+        matching = _candidate_for(requested["label"], pool, used)
+        if matching:
+            used.add(matching["index"])
+            return {
+                "target": requested, "source": matching["source"],
+                "relation": matching["relation"],
+                "label_similarity": matching["label_similarity"],
+                "status": "requires_review",
+                "reason": (
+                    "Normalization aligned row labels; clinical definition remains unverified"
+                    if matching["relation"] == "lexical_normalized" else
+                    "Synonym or clinical alias candidate; requires target SAP definition review"
+                ),
+            }
+        if override is not None:
+            return override
+        return {
+            "target": requested, "source": None, "relation": "unmatched",
+            "label_similarity": None, "status": "requires_review",
+            "reason": "No source row matches with the permitted conservative rules",
+        }
+
     for target_row in target.get("rows") or []:
-        requested = [{
+        parent = {
             "label": target_row["label"],
-            "parent": None,
-            "origin": "target_spec_requirement",
-        }]
-        requested.extend({
-            "label": child["label"],
-            "parent": target_row["label"],
-            "origin": child["origin"],
-        } for child in target_row.get("explicit_category_children") or [])
-        for requested_row in requested:
-            m = _candidate_for(requested_row["label"], pool, used)
-            if m:
-                # This one-to-one assignment is only a planning proposal.
-                used.add(m["index"])
-                results.append({
-                    "target": requested_row,
-                    "source": m["source"],
-                    "relation": m["relation"],
-                    "label_similarity": m["label_similarity"],
-                    "status": "requires_review",
-                    "reason": (
-                        "Normalized row text corresponds; clinical context unverified"
-                        if m["relation"] == "lexical_normalized" else
-                        "Potential clinical row correspondence; do not execute without definition review"
-                    ),
-                })
-            else:
-                results.append({
-                    "target": requested_row,
-                    "source": None,
-                    "relation": "unmatched",
-                    "label_similarity": None,
-                    "status": "requires_review",
-                    "reason": "No safe corresponding source row identified",
-                })
-        if (">= 3" in normalize_row_label(target_row["label"]) or
-                "grade ≥ 3" in target_row["label"].casefold() or
-                "grade >= 3" in target_row["label"].casefold()):
-            # Severity level aggregation is a structural candidate, never
-            # authorization to add category counts across individual patients.
-            grades = [
-                row for row in pool
-                if re.fullmatch(r"grade\s*[345]", row["label"], re.I)
-            ]
-            if len(grades) >= 2:
-                results.append({
-                    "target": {"label": target_row["label"], "parent": None,
-                               "origin": "target_spec_requirement"},
-                    "source": {"source_rows": grades},
-                    "relation": "aggregation_candidate",
-                    "label_similarity": None,
-                    "status": "requires_review",
-                    "reason": (
-                        "Source has severity categories 3-5; display grouping "
-                        "does not imply patient-count arithmetic"
-                    ),
-                })
+            "parent": None, "origin": "target_spec_requirement",
+            "row_type": target_row.get("row_type", "unspecified"),
+        }
+        children = target_row.get("explicit_category_children") or []
+
+        if children:
+            child_matches = []
+            for child in children:
+                requested = {
+                    "label": child["label"], "parent": parent["label"],
+                    "origin": child["origin"], "row_type": "category",
+                }
+                child_matches.append(make_match(requested))
+            matched = [x for x in child_matches if x["source"] is not None]
+            relation = (
+                "group_covered_by_children" if len(matched) == len(child_matches)
+                else "group_partially_matched_review"
+            )
+            results.append({
+                "target": parent,
+                "source": {
+                    "matched_children": [
+                        {"source": c["source"], "target": c["target"]}
+                        for c in child_matches if c["source"] is not None
+                    ],
+                    "child_count": len(children),
+                },
+                "relation": relation, "label_similarity": None,
+                "status": "requires_review",
+                "reason": (
+                    "Explicit target categories matched as separate Word rows; "
+                    "no additional parent row insertion is implied"
+                    if relation == "group_covered_by_children" else
+                    "Only some explicit target categories were matched; "
+                    "group-level layout requires review"
+                ),
+            })
+            results.extend(child_matches)
+            continue
+
+        aggregation = _severity_aggregation_candidate(parent["label"], pool)
+        if aggregation:
+            results.append({
+                "target": parent, "source": aggregation,
+                "relation": "aggregation_candidate",
+                "label_similarity": None, "status": "requires_review",
+                "reason": (
+                    "Source Grade 3, 4, 5 share a severity parent. "
+                    "This is a layout candidate ONLY; patient-level union "
+                    "must be computed, not a sum of source category counts"
+                ),
+            })
+            continue
+        results.append(make_match(parent))
+
     return {
         "matches": results,
         "matched_source_indices": sorted(used),
@@ -241,6 +321,9 @@ def classify_layout_compatibility(source, target):
     if not target.get("rows") or not target.get("columns"):
         blockers.append("Target rows/columns not extracted; structural edits must wait")
         mode = "blocked_target_incomplete"
+    elif str(target.get("readiness") or "").casefold() == "blocked":
+        blockers.append("Target Specification readiness is blocked; structural operations cannot be executed")
+        mode = "blocked_target_readiness"
     elif axis == "cohort_rows_statistic_columns":
         mode = "rebuild_with_source_style"
         reasons.append("Source uses cohort rows/statistic columns; target expects treatment-group headings")
@@ -252,6 +335,10 @@ def classify_layout_compatibility(source, target):
     elif axis == "unclassified":
         mode = "layout_review_before_edit"
         reasons.append("No reliable treatment-group header orientation found")
+    elif target_km and src_features["descriptive_mean_sd"] and not src_features["kaplan_meier_explicit"]:
+        mode = "rebuild_with_source_style"
+        reasons.append("Target survival method incompatible with source descriptive-statistics layout")
+        risks.append("Method mismatch: do not repurpose Mean/SD into Kaplan-Meier estimates")
     elif source_count > max(4, target_count + 2):
         mode = "rebuild_with_source_style"
         reasons.append("Source has substantially more treatment columns than target")
