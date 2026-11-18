@@ -169,6 +169,14 @@ def build_target_layout(spec):
     rows = []
     for label in row_labels:
         kind = _kind_for(label)
+        explicit_children = _explicit_children(label)
+        structural_role = (
+            "group" if explicit_children else
+            "categorical_variable" if kind == "categorical_candidate" else
+            "continuous_variable" if kind == "continuous_candidate" else
+            "event_or_summary_row" if kind == "event_category" else
+            "unspecified"
+        )
         # These are target-layout *proposals*, never claims that the SAP
         # explicitly specified the corresponding hierarchy.  A human or a
         # later evidence-retrieval step must confirm subrows/category levels.
@@ -176,11 +184,12 @@ def build_target_layout(spec):
         rows.append({
             "label": label,
             "kind": kind,
+            "row_type": structural_role,
             "origin": "target_spec",
             "source_pointer": "/table_requirements/row_requirements",
             "evidence": _field_evidence(spec, "/table_requirements/row_requirements"),
             "proposed_statistic_subrows": subrows,
-            "explicit_category_children": _explicit_children(label),
+            "explicit_category_children": explicit_children,
             "subrow_status": (
                 "inferred_requires_review" if subrows else
                 "categories_not_extracted" if kind == "categorical_candidate"
@@ -238,7 +247,7 @@ def build_target_layout(spec):
         unresolved.append("statistics_to_display")
 
     return {
-        "ir_version": "target-layout-ir-2.0",
+        "ir_version": "target-layout-ir-3.0",
         "identity": identity,
         "readiness": spec.get("readiness"),
         "rows": rows,
