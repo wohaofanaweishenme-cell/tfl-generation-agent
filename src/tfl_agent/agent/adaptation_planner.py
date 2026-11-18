@@ -397,6 +397,14 @@ def build_adaptation_plan(spec, candidate):
             evidence=evidence["denominator"],
             reason="Review denominator consistency across headers, percent cells and footnotes",
         )
+    elif target.get("denominator_applicability") == "unknown":
+        _op(
+            operations, "REVIEW_DENOMINATOR_APPLICABILITY", "denominator",
+            target={"rule": None, "applicability": "unknown"},
+            evidence=evidence["statistics"],
+            reason="Target statistics are absent; cannot determine whether a percentage denominator is needed",
+            risk=["Do not claim denominator is irrelevant until the target statistical layout is recovered"],
+        )
 
     if not source["tables"]:
         _op(
