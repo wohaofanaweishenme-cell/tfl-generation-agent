@@ -11,6 +11,7 @@ on:
       - 'tests/test_step4_adaptation_v2.py'
       - 'tests/test_step4_adaptation_v3.py'
       - 'tests/test_step4_adaptation_v4.py'
+      - 'tests/test_step4_auto_text_draft.py'
       - '.github/workflows/step4-draft-tests.yml'
 
 jobs:
