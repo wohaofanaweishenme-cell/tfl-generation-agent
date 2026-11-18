@@ -104,7 +104,7 @@ def _source_category_parent(label):
 def _column_header_like(label):
     s = _clean(label)
     return bool(re.search(
-        r"\b(?:arm\s+(?:i|ii|iii|\d+)|cohort\s*\d+|"
+        r"\b(?:arm\s+(?:iii|ii|i|a|b|c|d|\d+)|cohort\s*\d+|"
         r"(?:n\s*=\s*[^)]*)|dose|mg(?:/kg|/m|/day)|overall|total|"
         r"safety population|treatment)\b", s, flags=re.I,
     ))
