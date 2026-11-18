@@ -191,12 +191,15 @@ class TFLSession:
         )
         write_json(path, plan)
         return {
-            'status': 'review_required',
+            'status': plan['planning_status'],
             'path': str(path),
             'source_template_id': plan['source_template_id'],
             'operation_count': plan['summary']['operation_count'],
             'by_action': plan['summary']['by_action'],
             'unresolved_fields': plan['summary']['target_unresolved_fields'],
+            'adaptation_mode': plan['adaptation_mode'],
+            'gate_status': plan['planning_gate']['status'],
+            'linked_quotes_verified': plan['summary']['linked_quotes_verified'],
             'execution_status': 'not_executed',
         }
 
