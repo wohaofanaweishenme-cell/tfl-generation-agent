@@ -103,17 +103,29 @@ def _bookmark_span(document, bookmark):
     risky = [
         n.tag.split("}", 1)[-1] for n in covered
         if n.tag in (qn("w:instrText"), qn("w:drawing"), qn("w:tab"),
-                     qn("w:br"), qn("w:bookmarkStart"), qn("w:bookmarkEnd"))
+                     qn("w:bookmarkStart"), qn("w:bookmarkEnd"))
     ]
+    for n in covered:
+        if n.tag == qn("w:br") and n.get(qn("w:type")) not in (
+            None, "textWrapping"
+        ):
+            risky.append("non-text-linebreak")
     if risky:
         raise ValueError(
             "Complex bookmark range cannot be safely text-edited: " +
             ", ".join(sorted(set(risky)))
         )
-    nodes = [n for n in covered if n.tag == qn("w:t")]
-    if not nodes:
-        raise ValueError("No Word text nodes inside bookmarked range")
-    return paragraph, nodes, "".join(n.text or "" for n in nodes)
+    # Source AE treatment headers contain normal Word line breaks. Treat
+    # those as whitespace for exact-quote comparison, then remove them when
+    # replacing the whole bookmarked label. Never allow page/column breaks.
+    nodes = [n for n in covered if n.tag in (qn("w:t"), qn("w:br"))]
+    if not nodes or nodes[0].tag != qn("w:t"):
+        raise ValueError("Bookmark must start with a Word text node")
+    original = "".join(
+        n.text or "" if n.tag == qn("w:t") else " "
+        for n in nodes
+    )
+    return paragraph, nodes, original
 
 
 def _replace_bookmark(document, bookmark, before, after):
@@ -127,7 +139,10 @@ def _replace_bookmark(document, bookmark, before, after):
     nodes[0].text = after
     nodes[0].set("{http://www.w3.org/XML/1998/namespace}space", "preserve")
     for node in nodes[1:]:
-        node.text = ""
+        if node.tag == qn("w:br"):
+            node.getparent().remove(node)
+        else:
+            node.text = ""
 
 
 def build_pending_review_packet(plan):
