@@ -165,7 +165,8 @@ class TFLSession:
         write_json(self.output_dir/'retrieval'/f'{_safe_file_id(self.tfl["tfl_id"])}_candidates.json',result)
         return result
 
-    def step4_build_adaptation_plan(self):
+    def step4_build_adaptation_plan(self, *, parsed_sap_blocks=None,
+                                     sap_body_page_range=None):
         """Compare the retrieved official DOCX with the target spec.
 
         This planning-only stage has no DeepSeek calls and NEVER edits source
@@ -176,7 +177,11 @@ class TFLSession:
         candidate = _choose_draft_source(self.matches or [], self.tfl['title'])
         if candidate is None:
             raise ValueError("No endpoint-compatible template for adaptation planning")
-        plan = build_adaptation_plan(self.spec, candidate)
+        plan = build_adaptation_plan(
+            self.spec, candidate,
+            parsed_sap_blocks=parsed_sap_blocks,
+            sap_body_page_range=sap_body_page_range,
+        )
         plan['retrieval']['status'] = (self.selection_decision or {}).get('status')
         plan['retrieval']['best_candidate_template_id'] = (
             (self.selection_decision or {}).get('best_candidate_template_id')
