@@ -130,17 +130,18 @@ def test_blocked_hematology_preserves_uncertainty():
     spec = _spec()
     spec["table_requirements"]["row_requirements"] = []
     spec["statistical_requirements"]["statistics_to_display"] = []
+    spec["statistical_requirements"]["analysis_methods"] = []
     spec["table_requirements"]["column_requirements"] = []
     spec["statistical_requirements"]["treatment_groups"] = []
     layout = build_target_layout(spec)
     compatibility = classify_layout_compatibility(ir, layout)
     assert compatibility["mode"] == "blocked_target_incomplete"
     assert compatibility["executor_ready"] is False
-    assert layout["denominator_applicability"] == "not_applicable_for_current_spec"
+    assert layout["denominator_applicability"] == "unknown"
     plan = build_adaptation_plan(spec, _candidate(source, locator))
     assert "REVIEW_SOURCE_ROWS_TARGET_INCOMPLETE" in plan["summary"]["by_action"]
     assert "REVIEW_SOURCE_ONLY_ROW" not in plan["summary"]["by_action"]
-    assert "SEARCH_TARGET_DENOMINATOR_EVIDENCE" not in plan["summary"]["by_action"]
+    assert "REVIEW_DENOMINATOR_APPLICABILITY" in plan["summary"]["by_action"]
 
 
 def test_source_footnotes_grouped_in_plan_and_no_implicit_copy():
@@ -152,3 +153,13 @@ def test_source_footnotes_grouped_in_plan_and_no_implicit_copy():
     assert len(notes) == len(ir["footnote_groups"])
     assert p["summary"]["source_footnotes"] == len(ir["footnotes"])
     assert all(op["execution_supported"] is False for op in notes)
+
+
+def test_continuous_only_validated_statistics_do_not_require_percentage_denominator():
+    spec = _spec()
+    spec["statistical_requirements"]["statistics_to_display"] = ["n", "Mean", "SD", "Median"]
+    spec["statistical_requirements"]["analysis_methods"] = ["Descriptive statistics"]
+    spec["table_requirements"]["row_requirements"] = ["Age (years)"]
+    layout = build_target_layout(spec)
+    assert layout["denominator_applicability"] == "not_applicable_for_current_spec"
+    assert "denominator_rule" not in layout["unresolved_fields"]
