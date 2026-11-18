@@ -18,7 +18,7 @@ def source_column_role(label):
         return "statistic_or_measurement"
     if re.search(r"\bcohort\s*(?:\d+|i|ii|iii)\b", text):
         return "cohort_axis"
-    if re.search(r"\b(?:arm\s*(?:i|ii|iii|iv|\d+)|treatment|dose|\d+(?:\.\d+)?\s*mg|n\s*=\s*\w+)\b", text):
+    if re.search(r"\b(?:arm\s*(?:i|ii|iii|iv|a|b|c|d|\d+)|treatment|dose|\d+(?:\.\d+)?\s*mg|n\s*=\s*\w+)\b", text):
         return "treatment_arm_candidate"
     return "unknown"
 
