@@ -221,3 +221,17 @@ def test_parse_real_official_source_ir_without_modifying_library(study_id, templ
         })
         assert plan["summary"]["source_footnotes"] > 0
         assert "SEARCH_TARGET_FOOTNOTE_EVIDENCE" in plan["summary"]["by_action"]
+
+
+def test_blocked_target_does_not_suggest_mass_source_row_deletion(tmp_path):
+    docx, locator = _fixtures(tmp_path)
+    spec = _spec()
+    spec["readiness"] = "blocked"
+    spec["table_requirements"]["row_requirements"] = []
+    spec["table_requirements"]["column_requirements"] = []
+    plan = build_adaptation_plan(spec, _candidate(docx, locator))
+    actions = [op["action"] for op in plan["operations"]]
+    assert "REVIEW_SOURCE_ROWS_TARGET_INCOMPLETE" in actions
+    assert "REVIEW_SOURCE_ONLY_ROW" not in actions
+    assert "RESOLVE_TARGET_SPEC_GAP" in actions
+    assert plan["executable_without_review"] is False
