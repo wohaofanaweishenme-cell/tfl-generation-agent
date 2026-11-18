@@ -235,3 +235,28 @@ def test_blocked_target_does_not_suggest_mass_source_row_deletion(tmp_path):
     assert "REVIEW_SOURCE_ONLY_ROW" not in actions
     assert "RESOLVE_TARGET_SPEC_GAP" in actions
     assert plan["executable_without_review"] is False
+
+
+def test_session_exposes_plan_only_without_creating_docx(tmp_path):
+    from tfl_agent.session import TFLSession
+    source, locator = _fixtures(tmp_path)
+    session = TFLSession.__new__(TFLSession)
+    session.matches = [_candidate(source, locator) | {
+        "template": {"locator_map_path": str(locator),
+                     "identity": {"original_title": "Overall Summary of Adverse Events"}}
+    }]
+    session.tfl = {"tfl_id": "14.3.1.1",
+                   "title": "Overall Summary of Adverse Events"}
+    session.spec = _spec()
+    session.output_dir = tmp_path / "output"
+    session.selection_decision = {
+        "status": "auto_selected", "best_candidate_template_id": source.stem,
+    }
+    result = session.step4_build_adaptation_plan()
+    assert result["status"] == "review_required"
+    path = Path(result["path"])
+    assert path.is_file()
+    saved = json.loads(path.read_text(encoding="utf-8"))
+    assert saved["execution_status"] == "not_executed"
+    assert saved["source_integrity"]["verified"]
+    assert not list((tmp_path / "output").rglob("*.docx"))
