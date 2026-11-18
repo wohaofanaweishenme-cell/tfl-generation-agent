@@ -56,8 +56,20 @@ def _header_evidence_confirmed(plan, op):
     if not target_name:
         return False
     # Target arm name must literally occur in the SAP quotations provided.
-    previews = " ".join(str(x) for x in evidence.get("quote_previews") or []).casefold()
-    return target_name in previews
+    previews = " ".join(
+        str(x) for x in evidence.get("quote_previews") or []
+    ).casefold()
+    # Step-2 quote_previews are clipped to 220 characters; the second
+    # Tenalisib arm occurs near that limit. Use only independently verified
+    # quote previews from the authorized SAP-body resolver as additional
+    # evidence, never raw target template content.
+    verified_quote_previews = " ".join(
+        str(item.get("exact_text_preview") or "")
+        for item in resolver.get("linked_evidence_quote_checks") or []
+        if item.get("ref_id") in refs
+        and item.get("status") == "quote_text_verified"
+    ).casefold()
+    return target_name in previews or target_name in verified_quote_previews
 
 
 def _summary(plan, applied, skipped, *, status, output=None, warnings=None):
