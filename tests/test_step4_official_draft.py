@@ -203,6 +203,7 @@ def test_both_real_library_colab_notebooks_have_valid_python_cells():
         "04_Official_Library_DeepSeek_Colab.ipynb",
         "05_Step4_Official_Library_Replay.ipynb",
         "06_Step4_Adaptation_Plans_Official_Library.ipynb",
+        "07_Step4_Approved_Text_Executor.ipynb",
     ]:
         path = root / filename
         nb = json.loads(path.read_text(encoding="utf-8"))
