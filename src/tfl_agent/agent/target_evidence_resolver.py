@@ -38,6 +38,17 @@ def _keywords(target, field):
     ))
 
 
+_SECTION_RE = re.compile(r"^\s*(\d+(?:\.\d+){1,3})\s+([A-Z][^\n]{2,120})")
+_SECTION_PREFERENCES = {
+    "adverse_events": ("8.8.2", "6.6"),
+    "demographics": ("8.4", "6.3"),
+    "tumor_response": ("8.7.2", "6.4.2", "8.7"),
+    "time_to_event": ("8.7.2", "6.4.2", "8.7"),
+    "laboratory": ("8.8.3", "6.6.2", "8.8"),
+    "disposition": ("8.1", "8.3"),
+}
+
+
 def _body_blocks(parsed, allowed_body_pages):
     if not isinstance(parsed, dict):
         return {}
@@ -49,19 +60,113 @@ def _body_blocks(parsed, allowed_body_pages):
         raise ValueError("Explicit 1-based SAP body-page range is required")
     lo, hi = allowed_body_pages
     blocks = {}
-    for block in parsed.get("blocks") or []:
+    current_section = None
+    previous_page = None
+    # Preserve the order from parsed PDF; no external shell material.
+    for seq, block in enumerate(parsed.get("blocks") or []):
         if not isinstance(block, dict):
             continue
         page = block.get("page")
         name = block.get("block_id")
         if not isinstance(page, int) or not (lo <= page <= hi) or not name:
             continue
-        # Preserve only the allowed body area, no later holdout shell pages.
+        value = str(block.get("text") or "")
+        match = _SECTION_RE.match(value)
+        if match:
+            current_section = match.group(1)
+        # A headingless page can continue the prior section.
         blocks[name] = {
             "page": page, "block_id": name,
-            "text": str(block.get("text") or ""),
+            "text": value, "section_id": current_section,
+            "is_section_heading": bool(match),
+            "sequence": seq,
         }
+        previous_page = page
     return blocks
+
+
+def _is_glossary(block):
+    text = str(block.get("text") or "").strip()
+    if re.search(r"^(?:list of )?abbreviations\b|^acronyms\b", text, re.I):
+        return True
+    # Abbreviation lists contain many all-caps definitions on the same page.
+    return block.get("page", 99) <= 5 and len(re.findall(
+        r"\b[A-Z]{2,6}\s+[A-Z][a-z]{3,}", text
+    )) >= 5
+
+
+def _section_matches(section, favored):
+    if not section:
+        return False
+    return any(section == x or section.startswith(x + ".") for x in favored)
+
+
+def _rank_requirement_candidates(blocks, *, family, field, limit):
+    """Endpoint section first; generic methodology may only be a fallback.
+
+    Scoring is a candidate discovery heuristic, not proof of a Table-specific
+    denominator, footnote, or statistical method.
+    """
+    preferred = _SECTION_PREFERENCES.get(family, ())
+    query = _keywords({"identity": {"title": {
+        "adverse_events": "adverse events",
+        "demographics": "demographics",
+        "tumor_response": "overall response",
+        "time_to_event": "progression free survival",
+        "laboratory": "hematology",
+        "disposition": "disposition",
+    }.get(family, "")}}, field)
+    anchors = [b for b in blocks.values()
+               if b["is_section_heading"] and _section_matches(b["section_id"], preferred)]
+    scored = []
+    for block in blocks.values():
+        text = _norm(block["text"])
+        if len(text) < 30 or _is_glossary(block):
+            continue
+        hits = sum(1 for term in query if term in text)
+        belongs = _section_matches(block.get("section_id"), preferred)
+        neighbors = [
+            anchor for anchor in anchors
+            if abs(block["sequence"]-anchor["sequence"]) <= 2 and
+            abs(block["page"]-anchor["page"]) <= 1
+        ]
+        is_generic = bool(re.match(r"^(?:7\.1|7\.2|7\.3)(?:\.|$)",
+                                   str(block.get("section_id") or "")))
+        # Section-oriented matching is enough to nominate a paragraph even
+        # when it contains a family definition but few generic keywords.
+        if not (hits or belongs or neighbors):
+            continue
+        source_type = ("target_section" if belongs
+                       else "adjacent_to_target_section" if neighbors
+                       else "general_methodology" if is_generic
+                       else "cross_section_candidate")
+        # Avoid the common error: score 4 generic hits above a 2-hit
+        # endpoint-specific definition. Generic methodology is still
+        # available but cannot be presented as target-specific.
+        section_priority = {
+            "target_section": 4,
+            "adjacent_to_target_section": 3,
+            "cross_section_candidate": 1,
+            "general_methodology": 0,
+        }[source_type]
+        score = 10 * section_priority + min(hits, 9)
+        scored.append((
+            -score, block["page"], block["sequence"], block, hits,
+            source_type, score,
+        ))
+    scored.sort(key=lambda row: row[:3])
+    result = []
+    for _, _, _, b, hits, source_type, score in scored[:limit]:
+        result.append({
+            "ref_id": b["block_id"], "page": b["page"],
+            "section_id": b.get("section_id"),
+            "source_section_relevance": source_type,
+            "ranking_score": score,
+            "text_preview": b["text"][:650],
+            "keyword_match_count": hits,
+            "verification": "candidate_only_not_semantically_validated",
+        })
+    return result
 
 
 def resolve_target_evidence(spec, parsed_sap_blocks, *, allowed_body_pages,
@@ -133,30 +238,20 @@ def resolve_target_evidence(spec, parsed_sap_blocks, *, allowed_body_pages,
     ]:
         if not empty:
             continue
-        queries = _keywords(target, field)
-        ranked = []
-        for b in blocks.values():
-            text = _norm(b["text"])
-            count = sum(1 for term in queries if term in text)
-            if not count or len(text) < 30:
-                continue
-            ranked.append((count, b["page"], b["block_id"], b))
-        ranked.sort(key=lambda a: (-a[0], a[1], a[2]))
+        section_candidates = _rank_requirement_candidates(
+            blocks, family=table_family(target), field=field,
+            limit=max_candidates,
+        )
         missing.append({
             "json_pointer": pointer,
             "field": field,
             "status": "evidence_retrieval_candidates_only",
-            "candidate_blocks": [{
-                "ref_id": b["block_id"],
-                "page": b["page"],
-                "text_preview": b["text"][:650],
-                "keyword_match_count": count,
-                "verification": "candidate_only_not_semantically_validated",
-            } for count, _, _, b in ranked[:max_candidates]],
+            "retrieval_strategy": "endpoint_section_first_with_general_fallback",
+            "candidate_blocks": section_candidates,
         })
     invalid = [x for x in checks if x["status"] != "quote_text_verified"]
     return {
-        "resolver_version": "target-sap-evidence-v3",
+        "resolver_version": "target-sap-evidence-v4",
         "source": "previously_parsed_target_sap_body_only",
         "allowed_body_pages": list(allowed_body_pages),
         "authorized_block_count": len(blocks),
