@@ -13,6 +13,9 @@ import re
 from tfl_agent.agent.source_structure_parser import parse_source_template
 from tfl_agent.agent.target_layout_builder import build_target_layout
 from tfl_agent.agent.structure_alignment import align_target_rows, classify_layout_compatibility
+from tfl_agent.agent.planning_gate import evaluate_target_completeness
+from tfl_agent.agent.column_roles import map_column_roles
+from tfl_agent.agent.target_evidence_resolver import resolve_target_evidence
 
 
 def _canon(text):
@@ -81,7 +84,7 @@ def _op(operations, action, scope, *,
     return item
 
 
-def build_adaptation_plan(spec, candidate):
+def build_adaptation_plan(spec, candidate, *, parsed_sap_blocks=None, sap_body_page_range=None):
     """Build a source-backed plan for one approved, real Table candidate.
 
     Args:
@@ -105,8 +108,27 @@ def build_adaptation_plan(spec, candidate):
 
     operations = []
     evidence = target["evidence_by_field"]
+    if parsed_sap_blocks is not None and sap_body_page_range is None:
+        raise ValueError("SAP body page range is required to audit evidence without leaking shell pages")
+    evidence_audit = (
+        resolve_target_evidence(
+            spec, parsed_sap_blocks, allowed_body_pages=sap_body_page_range
+        ) if parsed_sap_blocks is not None else None
+    )
+    gate = evaluate_target_completeness(target, evidence_assessment=evidence_audit)
     compatibility = classify_layout_compatibility(source, target)
+    if gate["status"] == "blocked":
+        compatibility["status"] = "blocked"
+        compatibility["blockers"] = list(dict.fromkeys(
+            compatibility["blockers"] + gate["hard_blockers"]
+        ))
+        if compatibility["mode"] not in ("blocked_target_incomplete", "blocked_target_readiness"):
+            compatibility["underlying_layout_mode"] = compatibility["mode"]
+            compatibility["mode"] = "blocked_target_completeness"
     row_alignment = align_target_rows(source, target)
+    column_alignment = map_column_roles(
+        source, target, compatibility, completeness=gate
+    )
     title_source = (source.get("title_mapping") or {}).get("anchor")
     _op(
         operations, "REPLACE_TITLE", "title",
@@ -144,7 +166,8 @@ def build_adaptation_plan(spec, candidate):
         }
 
     if compatibility["mode"] in (
-        "blocked_target_incomplete", "rebuild_with_source_style",
+        "blocked_target_incomplete", "blocked_target_readiness",
+        "blocked_target_completeness", "rebuild_with_source_style",
         "layout_review_before_edit",
     ):
         _op(
@@ -155,117 +178,24 @@ def build_adaptation_plan(spec, candidate):
             risk=compatibility["blockers"] + compatibility["risks"],
         )
 
-    # Column suggestions always preserve their *physical* Word grid index.
-    # Header ordinal or candidate count MUST NOT become an insertion index.
-    headers = [
-        h for h in source["column_candidates"]
-        if (h.get("position") or {}).get("location_type") == "table_cell"
-    ]
-    if headers:
-        # Treat panel 1 as the master source column layout. Other panels
-        # must be updated consistently by a future executor.
-        primary_index = min(h["position"]["table_index"] for h in headers)
-        primary_headers = [
-            h for h in headers if h["position"]["table_index"] == primary_index
-        ]
-        primary_headers.sort(key=lambda h: h["position"]["column_index"])
-    else:
-        primary_headers = []
-    target_cols = target["columns"]
-    if compatibility["source_axis"] == "cohort_rows_statistic_columns":
-        _op(
-            operations, "REVIEW_COLUMN_AXIS_TRANSFORMATION", "columns",
-            source={"axis": compatibility["source_axis"],
-                    "physical_headers": compatibility["source_header_coordinates"]},
-            target={"treatment_columns": [c["label"] for c in target_cols]},
-            evidence=evidence["columns"],
-            reason="Target columns and vertically listed source cohorts use different axes",
-            risk=["Cannot map source column header ordinals to target treatment columns"],
+    # Role matching precedes ordinal matching.  A source Total can map only
+    # to target Overall, never to a drug arm.  All coordinates originate in
+    # actual Word grid positions, distinct from target ordinal indices.
+    for proposal in column_alignment["proposed_operations"]:
+        proposed_target = proposal.get("target")
+        field_evidence = (
+            proposed_target.get("basis")
+            if isinstance(proposed_target, dict) and "basis" in proposed_target
+            else evidence["columns"]
         )
-    elif compatibility["mode"] in ("blocked_target_incomplete", "rebuild_with_source_style"):
         _op(
-            operations, "REBUILD_COLUMN_LAYOUT_CANDIDATE", "columns",
-            source={"headers": primary_headers, "source_table_count": source["table_count"]},
-            target={"columns": target_cols},
-            evidence=evidence["columns"],
-            reason="Column count/target extraction requires panel-aware rebuilding, not direct column surgery",
-            risk=["Source page continuation, merged cells, repeated headers and population N must be checked"],
+            operations, proposal["action"], "columns",
+            source=proposal.get("source"),
+            target=proposed_target,
+            evidence=field_evidence,
+            reason=proposal["reason"],
+            risk=proposal.get("risk", []),
         )
-    elif not primary_headers:
-        _op(
-            operations, "REVIEW_COLUMN_GEOMETRY", "columns",
-            target={"labels": [c["label"] for c in target_cols]},
-            evidence=evidence["columns"],
-            reason="No reliable Word header cell candidates",
-            risk=["Column insertion positions are unverified"],
-        )
-    else:
-        source_cursor = 0
-        for target_index, col in enumerate(target_cols):
-            existing_overall = next(
-                (h for h in primary_headers if
-                 ("overall" in h["label"].casefold() or
-                  re.search(r"\btotal\b", h["label"], flags=re.I))),
-                None,
-            )
-            if col["kind"] == "overall" and existing_overall is None:
-                after = primary_headers[-1]
-                _op(
-                    operations, "INSERT_COLUMN_CANDIDATE", "columns",
-                    source={
-                        "after_column": after,
-                        "insert_after_physical_grid_index":
-                            after["position"]["column_index"],
-                        "insertion_physical_grid_index":
-                            after["position"]["column_index"] + 1,
-                        "table_index": after["position"]["table_index"],
-                        "target_column_index": target_index,
-                        "multi_panel_review_required": source["table_count"] > 1,
-                    },
-                    target=col, evidence=col["basis"],
-                    reason="Target explicitly requires Overall; no Overall source treatment header",
-                    risk=["Check header grid spans, inserted cells and denominator rules"],
-                )
-                continue
-            if source_cursor >= len(primary_headers):
-                after = primary_headers[-1]
-                _op(
-                    operations, "INSERT_COLUMN_CANDIDATE", "columns",
-                    source={
-                        "after_column": after,
-                        "insert_after_physical_grid_index": after["position"]["column_index"],
-                        "insertion_physical_grid_index": after["position"]["column_index"] + 1,
-                        "table_index": after["position"]["table_index"],
-                        "target_column_index": target_index,
-                        "multi_panel_review_required": source["table_count"] > 1,
-                    },
-                    target=col, evidence=col["basis"],
-                    reason="More target columns than source treatment headings",
-                    risk=["Cell merges and physical grid must be reviewed before insertion"],
-                )
-                continue
-            original = (
-                existing_overall if col["kind"] == "overall" and existing_overall
-                else primary_headers[source_cursor]
-            )
-            if original is primary_headers[source_cursor]:
-                source_cursor += 1
-            _op(
-                operations,
-                "KEEP_HEADER" if _canon(original["label"]) == _canon(col["label"])
-                else "REPLACE_HEADER_CANDIDATE",
-                "columns", source=original, target=col, evidence=col["basis"],
-                reason="Candidate treatment column mapping from Word physical grid coordinates",
-                risk=["Dose/arm meaning, target N, and merged cells need review"],
-            )
-        if source_cursor < len(primary_headers):
-            remaining = primary_headers[source_cursor:]
-            _op(
-                operations, "REVIEW_SOURCE_ONLY_COLUMNS", "columns",
-                source={"headers": remaining, "count": len(remaining)},
-                reason="Some source treatment-group columns have no target mapping",
-                risk=["Do not delete physical columns or merge geometry automatically"],
-            )
 
     # Match hierarchical rows, including category children literally listed
     # in target specifications. Normalized or clinical-alias matches are
@@ -286,6 +216,10 @@ def build_adaptation_plan(spec, candidate):
             action = "INSERT_ROW_CANDIDATE"
         elif relation == "lexical_normalized":
             action = "KEEP_ROW"
+        elif relation == "group_covered_by_children":
+            action = "MATCH_GROUP"
+        elif relation == "group_partially_matched_review":
+            action = "REVIEW_GROUP_STRUCTURE"
         else:
             action = "REVIEW_SEMANTIC_ROW_MATCH"
         _op(
@@ -430,17 +364,22 @@ def build_adaptation_plan(spec, candidate):
         if rec.get("evidence_status") in ("missing", "invalid")
     ]
     return {
-        "schema_version": "adaptation-plan-2.0",
+        "schema_version": "adaptation-plan-3.0",
+        "planning_gate": gate,
+        "column_alignment": column_alignment,
+        "target_evidence_lookup": evidence_audit,
         "adaptation_mode": compatibility["mode"],
         "layout_compatibility": compatibility,
         "row_alignment": row_alignment,
         "evidence_validation": {
             "status": "review_required",
             "missing_or_invalid_fields": evidence_issues,
-            "source_quote_verification_performed": False,
+            "source_quote_verification_performed": evidence_audit is not None,
+            "linked_quote_checks": (evidence_audit or {}).get("linked_evidence_quote_checks", []),
+            "clinical_semantic_verification_performed": False,
         },
         "executor_ready": False,
-        "planning_status": "review_required",
+        "planning_status": "blocked_review" if gate["status"] == "blocked" else "review_required",
         "execution_status": "not_executed",
         "executable_without_review": False,
         "clinical_approval": False,
@@ -473,6 +412,16 @@ def build_adaptation_plan(spec, candidate):
             "source_footnotes": len(source["footnotes"]),
             "unique_source_footnotes": len(source.get("footnote_groups", [])),
             "row_matching": row_alignment["counts_by_relation"],
+            "gate_status": gate["status"],
+            "gate_blockers": gate["hard_blockers"],
+            "source_column_roles": {
+                role: sum(x["role"] == role for x in column_alignment["source_columns"])
+                for role in sorted({x["role"] for x in column_alignment["source_columns"]})
+            },
+            "linked_quotes_verified": sum(
+                x["status"] == "quote_text_verified"
+                for x in (evidence_audit or {}).get("linked_evidence_quote_checks", [])
+            ),
             "layout_mode": compatibility["mode"],
             "evidence_gaps": len(evidence_issues),
             "target_footnotes": len(target["footnotes"]),
