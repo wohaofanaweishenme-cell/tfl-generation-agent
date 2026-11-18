@@ -10,6 +10,7 @@ from tfl_agent.agent.step4_generator import generate
 from tfl_agent.agent.step5_validator import validate_spec_document, validate_shell
 from tfl_agent.tools.docx_editor import plan_modifications
 from tfl_agent.tools.spec_draft import generate_spec_draft
+from tfl_agent.agent.adaptation_planner import build_adaptation_plan
 from tfl_agent.tools.io_utils import write_json
 from tfl_agent.tools.library_loader import load_library
 
@@ -163,6 +164,36 @@ class TFLSession:
         result={'candidates':candidates, **status_fields}
         write_json(self.output_dir/'retrieval'/f'{_safe_file_id(self.tfl["tfl_id"])}_candidates.json',result)
         return result
+
+    def step4_build_adaptation_plan(self):
+        """Compare the retrieved official DOCX with the target spec.
+
+        This planning-only stage has no DeepSeek calls and NEVER edits source
+        templates or generates the DOCX.  It may be run even for incomplete
+        Step-2 specs; gaps are reported as review operations.
+        """
+        self._require('matches', 'Step 3')
+        candidate = _choose_draft_source(self.matches or [], self.tfl['title'])
+        if candidate is None:
+            raise ValueError("No endpoint-compatible template for adaptation planning")
+        plan = build_adaptation_plan(self.spec, candidate)
+        plan['retrieval']['status'] = (self.selection_decision or {}).get('status')
+        plan['retrieval']['best_candidate_template_id'] = (
+            (self.selection_decision or {}).get('best_candidate_template_id')
+        )
+        path = self.output_dir / 'adaptation_plans' / (
+            f'{_safe_file_id(self.tfl["tfl_id"])}_adaptation_plan.json'
+        )
+        write_json(path, plan)
+        return {
+            'status': 'review_required',
+            'path': str(path),
+            'source_template_id': plan['source_template_id'],
+            'operation_count': plan['summary']['operation_count'],
+            'by_action': plan['summary']['by_action'],
+            'unresolved_fields': plan['summary']['target_unresolved_fields'],
+            'execution_status': 'not_executed',
+        }
 
     def preview_modification_plan(self):
         self._require('matches','Step 3')
