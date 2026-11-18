@@ -163,52 +163,70 @@ def _native_header_columns(tables, locator_headers):
 
 
 def _hierarchical_rows(tables):
-    """Group repeated n/Mean/SD under a local parent, keeping all Word coords.
+    """Extract candidate local parent/child row groups from Word grid cells.
 
-    Category inference is conservative: a subrow carries 'inferred' status;
-    Word indentation and source-study labels are not clinical proof.
+    Observed coordinates are authoritative; *semantic* parent-child grouping
+    is explicitly inferred.  Handles (a) Age -> Mean/SD, (b) Race/Sex ->
+    categories in the first column, and (c) Severity -> Grade 1 in the same
+    physical row (the source AE shell uses the second label column).
     """
     rows = []
     for table in tables:
         ti = table["table_index"]
-        current_parent = None
+        parent = None
+        parent_kind = None
         for ri, cells in enumerate(table["grid"]):
             if ri == 0 or not cells:
                 continue
-            main = _clean(cells[0]["text"])
-            sub = _clean(cells[1]["text"]) if len(cells) > 1 else ""
-            is_sub = False
-            if not main and sub and current_parent and _source_category_parent(current_parent["label"]):
-                # Only child content next to a row-family label, never a
-                # Cohort/Statistic matrix where column 1 is a data axis.
-                if not re.search(r"\b(?:cohort|dose|n\s*=)\b", sub, flags=re.I):
-                    main, is_sub = sub, True
-                    chosen_col = 1
+            first = _clean(cells[0]["text"])
+            second = _clean(cells[1]["text"]) if len(cells) > 1 else ""
+            if not first and not second:
+                continue
+
+            def append(label, ci, *, parent_item=None, kind="section_or_variable"):
+                row_id = f"T{ti:02d}R{ri:04d}C{ci:02d}"
+                item = {
+                    "row_id": row_id, "label": label,
+                    "parent_row_id": parent_item["row_id"] if parent_item else None,
+                    "row_type": kind,
+                    "inference_status": (
+                        "inferred_requires_review" if parent_item else "word_grid_observed"
+                    ),
+                    "position": {"location_type": "table_cell",
+                                 "table_index": ti, "row_index": ri,
+                                 "column_index": ci},
+                    "bookmark_names": cells[ci]["bookmark_names"],
+                }
+                rows.append(item)
+                return item
+
+            if first:
+                stat = _statistic_kind(first)
+                known_group = _source_category_parent(first)
+                # A row with a label but no value cells generally introduces
+                # a section, rather than being a category under the previous
+                # heading; this is heuristic, not a semantic guarantee.
+                empty_data = not any(_clean(c["text"]) for c in cells[1:])
+                if stat and parent is not None:
+                    append(first, 0, parent_item=parent, kind="statistic_subrow")
+                elif (parent is not None and parent_kind == "categorical"
+                      and not known_group and not empty_data):
+                    append(first, 0, parent_item=parent, kind="category_subrow")
                 else:
-                    continue
-            elif main:
-                chosen_col = 0
-                is_sub = _statistic_kind(main)
-            else:
-                continue
-            if not _meaningful_row(main) and not is_sub:
-                continue
-            row_id = f"T{ti:02d}R{ri:04d}C{chosen_col:02d}"
-            parent = current_parent["row_id"] if is_sub and current_parent else None
-            item = {
-                "row_id": row_id, "label": main,
-                "parent_row_id": parent,
-                "row_type": ("statistic_subrow" if _statistic_kind(main)
-                             else "category_subrow" if parent else "section_or_variable"),
-                "inference_status": "inferred_requires_review" if parent else "word_grid_observed",
-                "position": {"location_type": "table_cell",
-                             "table_index": ti, "row_index": ri,
-                             "column_index": chosen_col},
-                "bookmark_names": cells[chosen_col]["bookmark_names"],
-            }
-            rows.append(item)
-            if not is_sub:
-                current_parent = item
+                    item = append(first, 0)
+                    parent = item
+                    parent_kind = "categorical" if known_group else "continuous_or_section"
+
+                # Source AE has "TEAEs by Severity" and "Grade 1" in the
+                # same row but *different cells*.  Capture both nodes and
+                # preserve Grade 1's actual physical column.
+                if second and known_group and not re.search(
+                    r"\b(?:cohort|dose|n\s*=)\b", second, flags=re.I
+                ):
+                    append(second, 1, parent_item=parent, kind="category_subrow")
+            elif second and parent is not None and parent_kind == "categorical":
+                if not re.search(r"\b(?:cohort|dose|n\s*=)\b", second, flags=re.I):
+                    append(second, 1, parent_item=parent, kind="category_subrow")
     return rows
 
 
