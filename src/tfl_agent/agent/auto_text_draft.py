@@ -126,7 +126,7 @@ def build_unapproved_auto_text_draft(plan, *, source_docx, output_docx):
         raise ValueError("Auto preview expects adaptation-plan-4.0")
     source = Path(source_docx).resolve()
     destination = Path(output_docx).resolve()
-    if source == destination or source.parent == destination.parent:
+    if source == destination or destination.is_relative_to(source.parent):
         raise ValueError("Cannot modify original Library or save into source directory")
     if destination.exists():
         raise FileExistsError("Output DOCX already exists")
