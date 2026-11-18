@@ -44,7 +44,7 @@ def test_synthetic_overall_insertion_uses_word_grid_index(tmp_path):
     assert insertion["source"]["insertion_physical_grid_index"] == 3
     assert insertion["source"]["target_column_index"] == 2
     assert plan["executor_ready"] is False
-    assert plan["schema_version"] == "adaptation-plan-2.0"
+    assert plan["schema_version"] == "adaptation-plan-3.0"
 
 
 def test_aes_real_word_grid_col_index_is_not_header_ordinal():
