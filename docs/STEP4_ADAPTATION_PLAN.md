@@ -265,3 +265,51 @@ Focused regression suite:
 ```bash
 python -m pytest -q tests/test_step4_official_draft.py tests/test_step4_adaptation_planner.py tests/test_step4_adaptation_v2.py tests/test_step4_adaptation_v3.py tests/test_step4_adaptation_v4.py
 ```
+
+
+## Stage B.7 — Zero-approval automatic **unapproved** text previews
+
+The six real v4 Plans produced **only three pending text-eligible operations
+and all three are in AE Table 14.3.1.1**: one title and two Tenalisib arm
+labels. All other five pending review packets are empty because the source
+layout must be rebuilt or the target Specification is blocked. Human approval
+of these three text fields is not the principal barrier to end-to-end shell
+generation.
+
+To avoid one-by-one approval **during prototype/demonstration**, use:
+
+- [Notebook 08 — Batch Auto Text Drafts](../notebooks/08_Step4_Batch_Auto_Text_Drafts.ipynb).
+- Input: Notebook 06 \`step4_adaptation_plan_outputs.zip\`; no DeepSeek call.
+- Source: \`src/tfl_agent/agent/auto_text_draft.py\`.
+- Output: one summary CSV, one risk/exception JSON per table, and an unapproved
+  text-only DOCX **copy** where deterministic checks permit edits.
+
+This is an *automatic draft mode*, not a bypass that forges human approval.
+It does not use, modify or auto-fill the manual approval packets required by
+Notebook 07. Each preview edit verifies the source SHA-256, the source Table
+ID, the unique Word bookmark, and the exact source text. A treatment-arm
+header additionally requires that the same target arm name occurs literally
+in a **verified target SAP-body quote**. Generic \`N=xx\` placeholders may be
+preserved; patient counts are never invented. If any check fails, it skips
+that particular edit. Blocked or rebuild-mode plans generate **no** Word
+output; they instead yield a diagnostic report.
+
+All generated text copies are named
+\`Table_<id>_AUTO_TEXT_PREVIEW_UNAPPROVED.docx\`, with
+\`auto_approval_performed=false\`, \`clinical_approval=false\`,
+\`shell_complete=false\`, and \`word_layout_validated=false\`. The source
+Library is never overwritten. The exception report retains unperformed
+INSERT_ROW, INSERT_COLUMN, footnote, denominator and statistical-method
+operations.
+
+The strict human-approved Notebook 07 remains optional for formal review
+workflows. **Notebook 08 is recommended for the classroom MVP**, but its
+text-only preview does NOT replace a structure-aware DOCX Executor. To make
+the final project truly end-to-end, next prioritize generating/editing missing
+rows and Overall columns, target-SAP-based footnotes, and systematic
+post-generation verification.
+
+Test suite includes:
+\`tests/test_step4_auto_text_draft.py\` (synthetic and actual AE source Word
+bookmarks, evidence-gated labels, zero approvals, source integrity and
+blocked/incompatible skip behavior).
