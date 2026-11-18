@@ -155,7 +155,7 @@ def test_ae_overall_insertion_index_four_and_alias_not_autoapproved():
         x for x in plan["row_alignment"]["matches"]
         if x["relation"] == "clinical_alias_requires_definitional_review"
     ]
-    assert related
+    assert related, [(m['target']['label'], m['relation'], (m.get('source') or {}).get('label')) for m in plan['row_alignment']['matches'][:8]]
 
 
 def test_pfs_rebuild_and_incomplete_hema_blocked():
