@@ -16,6 +16,7 @@ from tfl_agent.agent.structure_alignment import align_target_rows, classify_layo
 from tfl_agent.agent.planning_gate import evaluate_target_completeness
 from tfl_agent.agent.column_roles import map_column_roles
 from tfl_agent.agent.target_evidence_resolver import resolve_target_evidence
+from tfl_agent.agent.operation_readiness import gate_adaptation_operations
 
 
 def _canon(text):
@@ -355,16 +356,23 @@ def build_adaptation_plan(spec, candidate, *, parsed_sap_blocks=None, sap_body_p
             risk=["Cannot certify planned source-to-target equivalence"],
         )
 
-    counts = dict(Counter(x["action"] for x in operations))
-    # Absence of evidence is never interpreted as a validated quotation.
+    # Identify evidence gaps BEFORE per-operation preflight.
     evidence_issues = [
         {"field": field, "status": rec.get("evidence_status"),
          "ref_ids": rec.get("ref_ids", [])}
         for field, rec in evidence.items()
         if rec.get("evidence_status") in ("missing", "invalid")
     ]
+    # A blocked target remains a useful mapping diagnostic, but MUST NOT
+    # contain executable-looking INSERT/REPLACE operations.  The full raw
+    # candidate comparison remains in row_alignment/column_alignment.
+    operations = gate_adaptation_operations(
+        operations, gate, compatibility,
+        {"missing_or_invalid_fields": evidence_issues},
+    )
+    counts = dict(Counter(x["action"] for x in operations))
     return {
-        "schema_version": "adaptation-plan-3.0",
+        "schema_version": "adaptation-plan-4.0",
         "planning_gate": gate,
         "column_alignment": column_alignment,
         "target_evidence_lookup": evidence_audit,
@@ -379,6 +387,13 @@ def build_adaptation_plan(spec, candidate, *, parsed_sap_blocks=None, sap_body_p
             "clinical_semantic_verification_performed": False,
         },
         "executor_ready": False,
+        "execution_policy": {
+            "default": "deny",
+            "approval_required": True,
+            "supported_ops": ["REPLACE_TITLE", "REPLACE_HEADER_CANDIDATE"],
+            "reviewed_source_edits_only": True,
+            "blocked_plans_diagnostic_only": gate["status"] == "blocked",
+        },
         "planning_status": "blocked_review" if gate["status"] == "blocked" else "review_required",
         "execution_status": "not_executed",
         "executable_without_review": False,
