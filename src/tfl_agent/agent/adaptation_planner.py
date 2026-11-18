@@ -230,12 +230,35 @@ def build_adaptation_plan(spec, candidate):
                 risk=["Do not borrow levels from another clinical study"],
             )
 
-    for i, row in enumerate(source_rows):
-        if i not in used:
+    unmatched_rows = [row for i, row in enumerate(source_rows) if i not in used]
+    # Do not flood incomplete specifications (especially Hematology) with
+    # misleading DELETE candidates.  Source IR retains the complete list.
+    if not target["rows"] and unmatched_rows:
+        _op(
+            operations, "REVIEW_SOURCE_ROWS_TARGET_INCOMPLETE", "rows",
+            source={
+                "unmatched_count": len(unmatched_rows),
+                "sample_labels": [r["label"] for r in unmatched_rows[:12]],
+            },
+            reason="Target Step-2 row requirements are empty; source rows cannot be classified as extraneous",
+            risk=["Do not remove or transplant any source rows until target requirements are recovered"],
+        )
+    else:
+        for row in unmatched_rows[:12]:
             _op(
                 operations, "REVIEW_SOURCE_ONLY_ROW", "rows", source=row,
                 reason="Source row not mapped by target Specification; review for retention or removal",
                 risk=["Step-2 omissions may make an important source row appear unnecessary"],
+            )
+        if len(unmatched_rows) > 12:
+            _op(
+                operations, "REVIEW_ADDITIONAL_SOURCE_ROWS", "rows",
+                source={
+                    "additional_unmatched_count": len(unmatched_rows) - 12,
+                    "see_full_list": "source_ir.row_candidates",
+                },
+                reason="Remaining source rows require classification after Step-2 completion",
+                risk=["Unmatched row lists are not deletion instructions"],
             )
 
     cell_format = target["cell_format_proposal"]
