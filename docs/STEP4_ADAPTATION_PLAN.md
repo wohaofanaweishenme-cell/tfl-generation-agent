@@ -80,3 +80,19 @@ The existing Step 4 draft generator remains separate. Plan JSON is saved under `
 ## Evaluation after planning
 
 Use the source SAP body for extraction and planning, and compare final reviewed/generated Table shells against the target study's held-out original TFL shells. Evaluate row/column coverage, hierarchical statistics, footnotes, denominator definitions, and Word visual fidelity separately. Never interpret successful JSON schema validation as clinical correctness.
+
+## Stage B.4 — Adaptation Planner v2
+
+Enhancements added without modifying the official Library:
+
+- Source IR v2: Word physical logical grid columns, grid-span/merge flags, hierarchy row IDs and parent IDs, title anchors favoring literal Table numbers, duplicate footnote grouping with original occurrences.
+- Target Layout IR v2: explicit BOR categories CR/PR/SD/PD as reviewable child rows, unresolved categories retained, denominator applicability as required / not_applicable_for_current_spec / unknown.
+- Semantic row alignment: normalized TEAE spelling and plurals, distinct clinical alias review, category aggregation review; no clinical equivalence is auto-approved.
+- Layout compatibility: detects vertical Cohort/statistic axes (PFS), excessive source treatment columns, missing target row requirements (Hematology), and targets that require reconstruction.
+- Physical column insertion: stores source table index, insert-after grid column and insertion physical grid index, separately from target column index; never equates header ordinal with Word column.
+- Evidence statuses: missing, invalid, linked_unverified; presence of a provenance ID is not evidence that a row-level clinical edit has been proven.
+- Plan 2.0 output: adaptation_mode, layout_compatibility, row_alignment, evidence_validation, executor_ready:false, plus all earlier proposed operations.
+
+All v2 plans remain review_required with execution_supported:false. DOCX structural editing, clinical approval, and independent per-operation source quote validation are not implemented.
+
+The standalone Colab 06 shows adaptation mode, row match counts and evidence gaps and exports plan-only JSON. Tests: tests/test_step4_adaptation_v2.py (real AE geometry, demographic hierarchy, PFS axis, BOR children, footnotes, missing evidence and incomplete Hematology).
