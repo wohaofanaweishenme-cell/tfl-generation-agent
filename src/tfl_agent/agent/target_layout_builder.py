@@ -220,6 +220,7 @@ def build_target_layout(spec):
     # table.  n and N alone do not establish a percentage denominator.
     display_text = " ".join(all_stats + methods + row_labels).casefold()
     denominator_applicability = (
+        "unknown" if not all_stats and not methods else
         "required" if any(token in display_text for token in (
             "percentage", "percent", "n (%)", "n(%)", "%", "frequency", "frequencies"
         )) else "not_applicable_for_current_spec"
