@@ -165,3 +165,21 @@ def test_real_ae_plan_offers_only_reviewable_bookmarked_header_edits():
     assert any("Tenalisib 800 mg BID" in str(x["target"])
                for x in packet["operations"])
     assert all(x["bookmark"] for x in packet["operations"])
+
+
+def test_real_ae_bookmarked_header_text_can_be_edited_in_a_copy(tmp_path):
+    """Prove that the real official Word bookmark, not only a test fixture,
+    supports at least one strictly approved single-paragraph text edit."""
+    docx, locator = real_source("P-VCNA-003", "PVCNA003_T_14_3_1_1")
+    digest = hashlib.sha256(docx.read_bytes()).hexdigest()
+    plan = build_adaptation_plan(_spec(), _candidate(docx, locator))
+    packet, selected = _make_approval(plan)
+    assert selected["action"] == "REPLACE_HEADER_CANDIDATE"
+    out = tmp_path / "reviewed" / "AE_TEXT_ONLY.docx"
+    result = execute_approved_docx_edits(
+        plan, packet, source_docx=docx, output_docx=out
+    )
+    assert result["applied_count"] == 1
+    assert out.is_file()
+    assert hashlib.sha256(docx.read_bytes()).hexdigest() == digest
+    assert result["clinical_approval"] is False
