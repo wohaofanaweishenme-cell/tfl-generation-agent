@@ -227,7 +227,7 @@ def test_planner_plan_only_with_verified_target_blocks(tmp_path):
         _spec(), _candidate(docx, locator),
         parsed_sap_blocks=blocks, sap_body_page_range=(4, 21),
     )
-    assert plan["schema_version"] == "adaptation-plan-3.0"
+    assert plan["schema_version"] == "adaptation-plan-4.0"
     assert plan["evidence_validation"]["source_quote_verification_performed"] is True
     assert plan["target_evidence_lookup"]["authorized_block_count"] == 1
     assert plan["target_evidence_lookup"]["invalid_quotes"] == []
