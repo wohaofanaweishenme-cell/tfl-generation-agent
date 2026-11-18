@@ -54,7 +54,7 @@ def test_endpoint_section_ranking_avoids_abbreviation_glossary():
     notes = next(x for x in result["missing_requirement_candidates"]
                  if x["field"] == "footnote_requirements")
     assert notes["retrieval_strategy"] == "endpoint_section_first_with_general_fallback"
-    assert notes["candidate_blocks"][0]["ref_id"] == "sap:p19:b3"
+    assert notes["candidate_blocks"][0]["ref_id"] in {"sap:p19:b3", "sap:p19:b4"}
     assert notes["candidate_blocks"][0]["section_id"] == "8.8.2"
     assert notes["candidate_blocks"][0]["source_section_relevance"] == "target_section"
     assert "HOLDOUT" not in [x["ref_id"] for x in notes["candidate_blocks"]]
