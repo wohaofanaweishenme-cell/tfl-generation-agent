@@ -145,7 +145,11 @@ def test_only_total_source_cannot_replace_treatment_group_even_if_first():
 
 def test_ae_overall_insertion_index_four_and_alias_not_autoapproved():
     docx, loc = real_source("P-VCNA-003", "PVCNA003_T_14_3_1_1")
-    plan = build_adaptation_plan(_spec(), _candidate(docx, loc))
+    spec = _spec()
+    spec["table_requirements"]["row_requirements"] = [
+        "Any TEAE", "Related TEAEs", "Serious TEAEs", "Related Serious TEAEs",
+    ]
+    plan = build_adaptation_plan(spec, _candidate(docx, loc))
     op = next(op for op in plan["operations"]
               if op["action"] == "INSERT_COLUMN_CANDIDATE")
     assert op["source"]["insertion_physical_grid_index"] == 4
@@ -155,7 +159,8 @@ def test_ae_overall_insertion_index_four_and_alias_not_autoapproved():
         x for x in plan["row_alignment"]["matches"]
         if x["relation"] == "clinical_alias_requires_definitional_review"
     ]
-    assert related, [(m['target']['label'], m['relation'], (m.get('source') or {}).get('label')) for m in plan['row_alignment']['matches'][:8]]
+    assert len(related) == 2
+    assert all(m["status"] == "requires_review" for m in related)
 
 
 def test_pfs_rebuild_and_incomplete_hema_blocked():
