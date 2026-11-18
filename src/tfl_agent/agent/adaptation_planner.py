@@ -12,6 +12,7 @@ import re
 
 from tfl_agent.agent.source_structure_parser import parse_source_template
 from tfl_agent.agent.target_layout_builder import build_target_layout
+from tfl_agent.agent.structure_alignment import align_target_rows, classify_layout_compatibility
 
 
 def _canon(text):
@@ -104,8 +105,9 @@ def build_adaptation_plan(spec, candidate):
 
     operations = []
     evidence = target["evidence_by_field"]
-    title_candidates = source["title_candidates"]
-    title_source = title_candidates[0] if title_candidates else None
+    compatibility = classify_layout_compatibility(source, target)
+    row_alignment = align_target_rows(source, target)
+    title_source = (source.get("title_mapping") or {}).get("anchor")
     _op(
         operations, "REPLACE_TITLE", "title",
         source=title_source,
@@ -125,92 +127,179 @@ def build_adaptation_plan(spec, candidate):
             risk=["Denominators and analysis population definitions can change"],
         )
 
-    # Header/arm mapping: the locator's 'header_cell' gives a candidate anchor,
-    # not proof of a one-to-one clinical treatment mapping.
-    raw_headers = source["column_candidates"]
-    target_columns = target["columns"]
-    if not raw_headers:
+    if title_source is None:
         _op(
-            operations, "REVIEW_COLUMN_GEOMETRY", "columns",
-            target={"labels": [x["label"] for x in target_columns]},
-            evidence=evidence["columns"],
-            reason="Source has no verified header_cell roles; inspect actual table/paragraph geometry",
-            risk=["Cannot assign source treatment-group bookmarks deterministically"],
+            operations, "REVIEW_TITLE_ANCHOR", "title",
+            target={"text": target["identity"]["title"]}, evidence=evidence["title"],
+            reason="No source bookmark safely identified as a Table title",
+            risk=["Sponsor name must not be replaced as a Table title"],
         )
     else:
-        source_index = 0
-        for column in target_columns:
-            if column["kind"] == "overall" and not any(
-                "overall" in x["label"].casefold() or "total" in x["label"].casefold()
-                for x in raw_headers
-            ):
-                _op(
-                    operations, "INSERT_COLUMN_CANDIDATE", "columns",
-                    source={"after_column": raw_headers[-1], "logical_index": len(raw_headers)},
-                    target=column, evidence=column["basis"],
-                    reason="Target explicitly requests Overall; no explicit Overall source header",
-                    risk=["Merged header geometry and denominators require review"],
-                )
-                continue
-            if source_index >= len(raw_headers):
-                _op(
-                    operations, "INSERT_COLUMN_CANDIDATE", "columns",
-                    source={"after_column": raw_headers[-1], "logical_index": len(raw_headers)},
-                    target=column, evidence=column["basis"],
-                    reason="More target columns than verified source header candidates",
-                    risk=["Physical column insertion and cell merges are not automatic"],
-                )
-                continue
-            original = raw_headers[source_index]
-            source_index += 1
-            _op(
-                operations, "KEEP_HEADER" if _canon(original["label"]) == _canon(column["label"])
-                else "REPLACE_HEADER_CANDIDATE",
-                "columns",
-                source=original, target=column, evidence=column["basis"],
-                reason="Candidate source column order; verify its treatment group and header geometry",
-                risk=["Source population N, allocation and column-level footnotes may differ"],
-            )
-        for header in raw_headers[source_index:]:
-            _op(
-                operations, "REVIEW_SOURCE_ONLY_COLUMN", "columns", source=header,
-                reason="Source column has no mapped target column",
-                risk=["Do not remove merged source columns without structural review"],
-            )
+        # The initially proposed title replacement remains review-gated even
+        # when a real Table marker is found.
+        operations[0]["source"] = {
+            **title_source,
+            "anchor_status": source["title_mapping"]["status"],
+            "continuation_candidates": source["title_mapping"]["continuation_candidates"],
+        }
 
-    # Row matching is label-based, not evidence of statistical equivalence.
-    # Source statistics such as Mean/SD might occur below several parent rows;
-    # never match these globally to an unrelated target variable.
-    source_rows = [x for x in source["row_candidates"]
-                   if not x["is_statistic_subrow"]]
-    used = set()
-    for row in target["rows"]:
-        match = _candidate_pair(row["label"], source_rows, used)
-        if match:
-            idx, src_row, exact, score = match
-            used.add(idx)
+    if compatibility["mode"] in (
+        "blocked_target_incomplete", "rebuild_with_source_style",
+        "layout_review_before_edit",
+    ):
+        _op(
+            operations, "REVIEW_LAYOUT_COMPATIBILITY", "document",
+            source={"layout_profile": source.get("layout_profile")},
+            target={"adaptation_mode": compatibility["mode"]},
+            reason="Source/target Word axes or extraction gaps prevent automatic structural edits",
+            risk=compatibility["blockers"] + compatibility["risks"],
+        )
+
+    # Column suggestions always preserve their *physical* Word grid index.
+    # Header ordinal or candidate count MUST NOT become an insertion index.
+    headers = [
+        h for h in source["column_candidates"]
+        if (h.get("position") or {}).get("location_type") == "table_cell"
+    ]
+    if headers:
+        # Treat panel 1 as the master source column layout. Other panels
+        # must be updated consistently by a future executor.
+        primary_index = min(h["position"]["table_index"] for h in headers)
+        primary_headers = [
+            h for h in headers if h["position"]["table_index"] == primary_index
+        ]
+        primary_headers.sort(key=lambda h: h["position"]["column_index"])
+    else:
+        primary_headers = []
+    target_cols = target["columns"]
+    if compatibility["source_axis"] == "cohort_rows_statistic_columns":
+        _op(
+            operations, "REVIEW_COLUMN_AXIS_TRANSFORMATION", "columns",
+            source={"axis": compatibility["source_axis"],
+                    "physical_headers": compatibility["source_header_coordinates"]},
+            target={"treatment_columns": [c["label"] for c in target_cols]},
+            evidence=evidence["columns"],
+            reason="Target columns and vertically listed source cohorts use different axes",
+            risk=["Cannot map source column header ordinals to target treatment columns"],
+        )
+    elif compatibility["mode"] in ("blocked_target_incomplete", "rebuild_with_source_style"):
+        _op(
+            operations, "REBUILD_COLUMN_LAYOUT_CANDIDATE", "columns",
+            source={"headers": primary_headers, "source_table_count": source["table_count"]},
+            target={"columns": target_cols},
+            evidence=evidence["columns"],
+            reason="Column count/target extraction requires panel-aware rebuilding, not direct column surgery",
+            risk=["Source page continuation, merged cells, repeated headers and population N must be checked"],
+        )
+    elif not primary_headers:
+        _op(
+            operations, "REVIEW_COLUMN_GEOMETRY", "columns",
+            target={"labels": [c["label"] for c in target_cols]},
+            evidence=evidence["columns"],
+            reason="No reliable Word header cell candidates",
+            risk=["Column insertion positions are unverified"],
+        )
+    else:
+        source_cursor = 0
+        for target_index, col in enumerate(target_cols):
+            existing_overall = next(
+                (h for h in primary_headers if
+                 ("overall" in h["label"].casefold() or
+                  re.search(r"\btotal\b", h["label"], flags=re.I))),
+                None,
+            )
+            if col["kind"] == "overall" and existing_overall is None:
+                after = primary_headers[-1]
+                _op(
+                    operations, "INSERT_COLUMN_CANDIDATE", "columns",
+                    source={
+                        "after_column": after,
+                        "insert_after_physical_grid_index":
+                            after["position"]["column_index"],
+                        "insertion_physical_grid_index":
+                            after["position"]["column_index"] + 1,
+                        "table_index": after["position"]["table_index"],
+                        "target_column_index": target_index,
+                        "multi_panel_review_required": source["table_count"] > 1,
+                    },
+                    target=col, evidence=col["basis"],
+                    reason="Target explicitly requires Overall; no Overall source treatment header",
+                    risk=["Check header grid spans, inserted cells and denominator rules"],
+                )
+                continue
+            if source_cursor >= len(primary_headers):
+                after = primary_headers[-1]
+                _op(
+                    operations, "INSERT_COLUMN_CANDIDATE", "columns",
+                    source={
+                        "after_column": after,
+                        "insert_after_physical_grid_index": after["position"]["column_index"],
+                        "insertion_physical_grid_index": after["position"]["column_index"] + 1,
+                        "table_index": after["position"]["table_index"],
+                        "target_column_index": target_index,
+                        "multi_panel_review_required": source["table_count"] > 1,
+                    },
+                    target=col, evidence=col["basis"],
+                    reason="More target columns than source treatment headings",
+                    risk=["Cell merges and physical grid must be reviewed before insertion"],
+                )
+                continue
+            original = (
+                existing_overall if col["kind"] == "overall" and existing_overall
+                else primary_headers[source_cursor]
+            )
+            if original is primary_headers[source_cursor]:
+                source_cursor += 1
             _op(
                 operations,
-                "KEEP_ROW" if exact else "REVIEW_ROW_LABEL_REPLACEMENT",
-                "rows", source=src_row,
-                target={"label": row["label"], "kind": row["kind"],
-                        "label_similarity": round(score, 4)},
-                evidence=row["evidence"],
-                reason=(
-                    "Matching normalized label; keep structural row pending clinical review"
-                    if exact else "Possible corresponding row; semantic equivalence unverified"
-                ),
-                status="verified_no_edit" if exact else "review_required",
-                risk=[] if exact else ["A fuzzy label match must not be applied automatically"],
+                "KEEP_HEADER" if _canon(original["label"]) == _canon(col["label"])
+                else "REPLACE_HEADER_CANDIDATE",
+                "columns", source=original, target=col, evidence=col["basis"],
+                reason="Candidate treatment column mapping from Word physical grid coordinates",
+                risk=["Dose/arm meaning, target N, and merged cells need review"],
             )
-        else:
+        if source_cursor < len(primary_headers):
+            remaining = primary_headers[source_cursor:]
             _op(
-                operations, "INSERT_ROW_CANDIDATE", "rows",
-                target={"label": row["label"], "kind": row["kind"]},
-                evidence=row["evidence"],
-                reason="Target-required row not matched to a source row label",
-                risk=["Row hierarchy, correct insertion position and formula format unknown"],
+                operations, "REVIEW_SOURCE_ONLY_COLUMNS", "columns",
+                source={"headers": remaining, "count": len(remaining)},
+                reason="Some source treatment-group columns have no target mapping",
+                risk=["Do not delete physical columns or merge geometry automatically"],
             )
+
+    # Match hierarchical rows, including category children literally listed
+    # in target specifications. Normalized or clinical-alias matches are
+    # *proposals*, not permissions to edit source clinical content.
+    for match in row_alignment["matches"]:
+        tr = match["target"]
+        evidence_for_row = evidence["rows"]
+        relation = match["relation"]
+        if relation == "aggregation_candidate":
+            _op(
+                operations, "AGGREGATE_CATEGORIES_CANDIDATE", "rows",
+                source=match["source"], target=tr, evidence=evidence_for_row,
+                reason=match["reason"],
+                risk=["Never sum category patient counts; patient-level statistics required"],
+            )
+            continue
+        if relation == "unmatched":
+            action = "INSERT_ROW_CANDIDATE"
+        elif relation == "lexical_normalized":
+            action = "KEEP_ROW"
+        else:
+            action = "REVIEW_SEMANTIC_ROW_MATCH"
+        _op(
+            operations, action, "rows", source=match["source"],
+            target={**tr, "semantic_relation": relation,
+                    "label_similarity": match["label_similarity"]},
+            evidence=evidence_for_row,
+            reason=match["reason"],
+            risk=["Target SAP must establish clinical/statistical equivalence"]
+            if match["source"] else
+            ["Target row hierarchy and physical insertion position are unverified"],
+        )
+
+    for row in target["rows"]:
         if row["proposed_statistic_subrows"]:
             _op(
                 operations, "ALIGN_STATISTIC_SUBROWS", "rows",
@@ -218,21 +307,18 @@ def build_adaptation_plan(spec, candidate):
                         "proposed_children": row["proposed_statistic_subrows"],
                         "status": row["subrow_status"]},
                 evidence=evidence["statistics"],
-                reason="Continuous-variable subrow hierarchy is suggested by target methods",
-                risk=["Subrow placement and exact formatting are not confirmed by target SAP text"],
+                reason="Review proposed descriptive-statistic child hierarchy",
+                risk=["Exact parent-child semantics not verified by target shell"],
             )
         if row["subrow_status"] == "categories_not_extracted":
             _op(
                 operations, "REVIEW_CATEGORY_LEVELS", "rows",
                 target={"parent_label": row["label"], "levels": None},
                 evidence=row["evidence"],
-                reason="Target specification contains a categorical variable but not its categories",
-                risk=["Do not borrow levels from another clinical study"],
+                reason="Target categories were not fully extracted; do not borrow source-study levels",
             )
 
-    unmatched_rows = [row for i, row in enumerate(source_rows) if i not in used]
-    # Do not flood incomplete specifications (especially Hematology) with
-    # misleading DELETE candidates.  Source IR retains the complete list.
+    unmatched_rows = row_alignment["unmatched_source_rows"]
     if not target["rows"] and unmatched_rows:
         _op(
             operations, "REVIEW_SOURCE_ROWS_TARGET_INCOMPLETE", "rows",
@@ -240,25 +326,24 @@ def build_adaptation_plan(spec, candidate):
                 "unmatched_count": len(unmatched_rows),
                 "sample_labels": [r["label"] for r in unmatched_rows[:12]],
             },
-            reason="Target Step-2 row requirements are empty; source rows cannot be classified as extraneous",
-            risk=["Do not remove or transplant any source rows until target requirements are recovered"],
+            reason="Target row requirements are empty; source cannot be treated as extraneous",
+            risk=["Complete target row extraction before editing"],
         )
     else:
         for row in unmatched_rows[:12]:
             _op(
                 operations, "REVIEW_SOURCE_ONLY_ROW", "rows", source=row,
-                reason="Source row not mapped by target Specification; review for retention or removal",
-                risk=["Step-2 omissions may make an important source row appear unnecessary"],
+                reason="Source row has no mapped target requirement; review rather than delete",
+                risk=["Step-2 omissions may make source content appear unnecessary"],
             )
         if len(unmatched_rows) > 12:
             _op(
                 operations, "REVIEW_ADDITIONAL_SOURCE_ROWS", "rows",
                 source={
-                    "additional_unmatched_count": len(unmatched_rows) - 12,
-                    "see_full_list": "source_ir.row_candidates",
+                    "additional_unmatched_count": len(unmatched_rows)-12,
+                    "see_full_list": "row_alignment.unmatched_source_rows",
                 },
-                reason="Remaining source rows require classification after Step-2 completion",
-                risk=["Unmatched row lists are not deletion instructions"],
+                reason="Remaining source rows require review",
             )
 
     cell_format = target["cell_format_proposal"]
@@ -281,7 +366,7 @@ def build_adaptation_plan(spec, candidate):
             reason="Step-2 footnote_requirements is empty; inspect target SAP before editing",
             risk=["Empty extraction does not mean the target Table has no footnotes"],
         )
-    for note in source["footnotes"]:
+    for note in source.get("footnote_groups", []):
         _op(
             operations, "REVIEW_SOURCE_FOOTNOTE", "footnotes", source=note,
             target={"matched_target_footnote": None},
@@ -297,14 +382,15 @@ def build_adaptation_plan(spec, candidate):
             risk=["Footnote order, symbols and source note removal require review"],
         )
 
-    if not target["denominator_rule"]:
+    if (not target["denominator_rule"] and
+            target.get("denominator_applicability") == "required"):
         _op(
             operations, "SEARCH_TARGET_DENOMINATOR_EVIDENCE", "denominator",
             target={"rule": None}, evidence=evidence["denominator"],
             reason="No target Table-specific denominator rule extracted",
             risk=["Never inherit a source Study denominator merely from a similar table"],
         )
-    else:
+    elif target["denominator_rule"]:
         _op(
             operations, "REVIEW_TARGET_DENOMINATOR", "denominator",
             target={"rule": target["denominator_rule"]},
@@ -328,8 +414,24 @@ def build_adaptation_plan(spec, candidate):
         )
 
     counts = dict(Counter(x["action"] for x in operations))
+    # Absence of evidence is never interpreted as a validated quotation.
+    evidence_issues = [
+        {"field": field, "status": rec.get("evidence_status"),
+         "ref_ids": rec.get("ref_ids", [])}
+        for field, rec in evidence.items()
+        if rec.get("evidence_status") in ("missing", "invalid")
+    ]
     return {
-        "schema_version": "adaptation-plan-1.0",
+        "schema_version": "adaptation-plan-2.0",
+        "adaptation_mode": compatibility["mode"],
+        "layout_compatibility": compatibility,
+        "row_alignment": row_alignment,
+        "evidence_validation": {
+            "status": "review_required",
+            "missing_or_invalid_fields": evidence_issues,
+            "source_quote_verification_performed": False,
+        },
+        "executor_ready": False,
         "planning_status": "review_required",
         "execution_status": "not_executed",
         "executable_without_review": False,
@@ -361,6 +463,10 @@ def build_adaptation_plan(spec, candidate):
             "target_rows": len(target["rows"]),
             "target_columns": len(target["columns"]),
             "source_footnotes": len(source["footnotes"]),
+            "unique_source_footnotes": len(source.get("footnote_groups", [])),
+            "row_matching": row_alignment["counts_by_relation"],
+            "layout_mode": compatibility["mode"],
+            "evidence_gaps": len(evidence_issues),
             "target_footnotes": len(target["footnotes"]),
             "target_unresolved_fields": target["unresolved_fields"],
             "source_warnings": source["warnings"],
