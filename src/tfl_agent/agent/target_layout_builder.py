@@ -57,6 +57,11 @@ def _normalize_arm(text):
 
 
 def _field_evidence(spec, pointer):
+    """Record link presence; do not pretend that an existing ID proves a quote.
+
+    Target-SAP source-block verification is a separate validator.  Empty
+    ref_ids is 'missing', NOT all_refs_present=True evidence of support.
+    """
     prov = spec.get("provenance") or {}
     available = {x.get("ref_id"): x for x in prov.get("evidence", [])}
     refs = []
@@ -65,12 +70,50 @@ def _field_evidence(spec, pointer):
         if path == pointer or path.startswith(pointer + "/"):
             refs.extend(link.get("ref_ids") or [])
     refs = list(dict.fromkeys(refs))
+    resolved = [available[r] for r in refs if r in available]
+    if not refs:
+        status = "missing"
+    elif len(resolved) != len(refs):
+        status = "invalid"
+    else:
+        status = "linked_unverified"  # validate against parsed SAP blocks later
     return {
         "json_pointer": pointer,
         "ref_ids": refs,
-        "all_refs_present": all(ref in available for ref in refs),
-        "supported_excerpt_count": len(refs),
+        "all_refs_present": bool(refs) and len(resolved) == len(refs),
+        "supported_excerpt_count": len(resolved),
+        "evidence_status": status,
+        "quote_previews": [
+            str(item.get("exact_text") or item.get("quote") or "")[:220]
+            for item in resolved[:4]
+        ],
+        "claim_scope": "Field-level links only; semantic row equivalence not verified",
     }
+
+
+def _explicit_children(label):
+    """Only expand categories literally named in the target row requirement."""
+    text = str(label or "")
+    m = re.search(
+        r"(?:categories|best overall response)[^:]*:\s*((?:CR|PR|SD|PD)"
+        r"(?:\s*[,/]\s*(?:CR|PR|SD|PD))*)",
+        text, flags=re.I,
+    )
+    if not m:
+        return []
+    dictionary = {
+        "CR": "Complete Response (CR)",
+        "PR": "Partial Response (PR)",
+        "SD": "Stable Disease (SD)",
+        "PD": "Progressive Disease (PD)",
+    }
+    abbreviations = re.findall(r"\b(?:CR|PR|SD|PD)\b", m.group(1), re.I)
+    return [{
+        "label": dictionary[a.upper()],
+        "abbreviation": a.upper(),
+        "origin": "explicit_target_spec_text",
+        "status": "requires_target_SAP_quote_verification",
+    } for a in abbreviations]
 
 
 def build_target_layout(spec):
@@ -137,6 +180,7 @@ def build_target_layout(spec):
             "source_pointer": "/table_requirements/row_requirements",
             "evidence": _field_evidence(spec, "/table_requirements/row_requirements"),
             "proposed_statistic_subrows": subrows,
+            "explicit_category_children": _explicit_children(label),
             "subrow_status": (
                 "inferred_requires_review" if subrows else
                 "categories_not_extracted" if kind == "categorical_candidate"
@@ -172,6 +216,14 @@ def build_target_layout(spec):
             "note": "Cannot derive a single cell format from the target specification",
         }
 
+    # Denominator rules matter for percentages, not for every continuous-only
+    # table.  n and N alone do not establish a percentage denominator.
+    display_text = " ".join(all_stats + methods + row_labels).casefold()
+    denominator_applicability = (
+        "required" if any(token in display_text for token in (
+            "percentage", "percent", "n (%)", "n(%)", "%", "frequency", "frequencies"
+        )) else "not_applicable_for_current_spec"
+    )
     unresolved = []
     if not rows:
         unresolved.append("row_requirements")
@@ -179,13 +231,13 @@ def build_target_layout(spec):
         unresolved.append("column_requirements")
     if not notes:
         unresolved.append("footnote_requirements")
-    if not table.get("denominator_rule"):
+    if not table.get("denominator_rule") and denominator_applicability == "required":
         unresolved.append("denominator_rule")
     if not all_stats:
         unresolved.append("statistics_to_display")
 
     return {
-        "ir_version": "target-layout-ir-1.0",
+        "ir_version": "target-layout-ir-2.0",
         "identity": identity,
         "readiness": spec.get("readiness"),
         "rows": rows,
@@ -198,6 +250,7 @@ def build_target_layout(spec):
         "cell_format_proposal": cell_format,
         "footnotes": footnotes,
         "denominator_rule": table.get("denominator_rule"),
+        "denominator_applicability": denominator_applicability,
         "evidence_by_field": {
             name: _field_evidence(spec, pointer)
             for name, pointer in {
