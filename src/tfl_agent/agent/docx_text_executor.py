@@ -100,10 +100,16 @@ def _bookmark_span(document, bookmark):
     if finish <= begin:
         raise ValueError("Reversed or invalid bookmark span")
     covered = all_nodes[begin+1:finish]
-    if any(n.tag in (qn("w:instrText"), qn("w:drawing"), qn("w:tab"),
+    risky = [
+        n.tag.split("}", 1)[-1] for n in covered
+        if n.tag in (qn("w:instrText"), qn("w:drawing"), qn("w:tab"),
                      qn("w:br"), qn("w:bookmarkStart"), qn("w:bookmarkEnd"))
-           for n in covered):
-        raise ValueError("Complex bookmark range cannot be safely text-edited")
+    ]
+    if risky:
+        raise ValueError(
+            "Complex bookmark range cannot be safely text-edited: " +
+            ", ".join(sorted(set(risky)))
+        )
     nodes = [n for n in covered if n.tag == qn("w:t")]
     if not nodes:
         raise ValueError("No Word text nodes inside bookmarked range")
