@@ -188,3 +188,80 @@ Not implemented: LLM-based clinical relation adjudication, updating
 Specifications from candidates, independent semantic validation of each
 operation against SAP evidence, human approval UI, OOXML document editing,
 or evidence-backed final clinical approval.
+
+
+## Stage B.6 — Section-aware Evidence Retrieval + manual DOCX text executor
+
+**Section-aware evidence retrieval** (target_evidence_resolver.py):
+- The resolver detects numbered SAP headings and tracks each body's current section.
+- Target families prioritize their corresponding sections: AE 8.8.2,
+  Demographics 8.4, Disposition 8.1, Response/PFS 8.7.2, Hematology 8.8.3.
+- It prefers a relevant section and its close neighboring paragraphs over
+  generic Section 7.1 methodology; abbreviation glossaries are excluded.
+- It **never** reads outside explicitly supplied body pages (this demo: 4–21).
+- Results contain section_id, source_section_relevance and ranking_score;
+  they are still **candidates**, not confirmed table-specific footnotes.
+
+**Operation readiness** (operation_readiness.py):
+- Every operation contains operation_readiness.status, missing preconditions,
+  and whether its action type could be handled by the minimal executor.
+- Targets with planning_gate.status = blocked are **diagnostic-only**.
+  Their INSERT/REPLACE/KEEP proposals are demoted to DIAGNOSTIC_* operations;
+  original mapping hypotheses remain auditable in row_alignment and
+  column_alignment.
+- A nonblocked plan also remains executor_ready=false. There is **no**
+  automatic "approve" action.
+
+**Strict minimal Word executor** (docx_text_executor.py):
+- The only supported actions are REPLACE_TITLE and
+  REPLACE_HEADER_CANDIDATE, never rows, columns, footnotes or statistics.
+- A reviewer must explicitly edit a **pending** approval packet to provide
+  a named reviewer, approve specific op_ids, and choose an allowed exact
+  replacement_text. A packet is bound to the SHA-256 of both the source DOCX
+  and the full JSON plan; stale packets fail.
+- It verifies a single unambiguous Word bookmark span, checks bookmarked
+  source text against the plan, and writes only a **new DOCX outside the
+  Library template directory**. Original source SHA-256 is checked again.
+- Source N=xx placeholders may be preserved only when already present in
+  that header; no patient N or statistical value is invented.
+- Report status is text_edits_applied_to_unapproved_copy and clinical_approval
+  is always false. Rendered page review and actual clinical TFL validation
+  remain explicitly unfinished.
+
+### Usage in Colab
+
+1. Run Notebook 06 (plan-only) using the saved DeepSeek Audit ZIP. The output
+   includes per-table adaptation-plan-v4 JSON and
+   <TFL_ID>_review_packet_PENDING.json. No Word changes occur here.
+2. Open Notebook 07_Step4_Approved_Text_Executor.ipynb, upload the plan ZIP,
+   select the target, inspect the pending review packet.
+3. A qualified reviewer manually sets reviewer and selectively marks an
+   operation approved with one of the listed allowed_replacement_texts;
+   other entries remain pending. Upload the resulting *separate* JSON file.
+4. The executor checks the precise source, Plan digest, bookmark and approval
+   before saving one Word copy plus its JSON audit report. It never changes
+   a source Library DOCX.
+
+Python API:
+
+```python
+from tfl_agent.agent.docx_text_executor import (
+    build_pending_review_packet, execute_approved_docx_edits,
+)
+pending = build_pending_review_packet(plan)    # never preapproved
+# Explicit external review/edit of pending -> approved_packet required here.
+report = execute_approved_docx_edits(
+    plan, approved_packet,
+    source_docx="library/TFL_Template_Library/table/<source>.docx",
+    output_docx="outputs/TFL_REVIEW_REQUIRED.docx",
+)
+```
+
+The actual target Table Shell remains incomplete after the minimal executor
+unless its rows, columns, footnotes, statistical methods, and formatting are
+separately verified. **Do not use the resulting DOCX as a final clinical TFL.**
+
+Focused regression suite:
+```bash
+python -m pytest -q tests/test_step4_official_draft.py tests/test_step4_adaptation_planner.py tests/test_step4_adaptation_v2.py tests/test_step4_adaptation_v3.py tests/test_step4_adaptation_v4.py
+```
