@@ -15,8 +15,9 @@ from tfl_agent.agent.adaptation_planner import build_adaptation_plan
 from tfl_agent.agent.ae_spec_extractor import (
     extract_ae_spec_from_sap, _authorized_blocks,
 )
-from tfl_agent.agent.ae_structural_generator import (
-    generate_ae_structural_docx, validate_ae_shell,
+from tfl_agent.agent.reconstruction_blueprint import build_reconstruction_blueprint
+from tfl_agent.agent.blueprint_docx_generator import (
+    generate_docx_from_blueprint, validate_reconstructed_shell,
 )
 from tfl_agent.tools.io_utils import write_json
 
@@ -95,15 +96,22 @@ def run_single_sap_ae_pilot(
     final_docx = out / (
         f"Table_{spec['identity']['tfl_id']}_AE_STRUCTURAL_SHELL_DRAFT.docx"
     )
-    generated = generate_ae_structural_docx(
-        spec, final_docx, style_source=source["source_path"]
+    # The diagnostic Plan now feeds the actual generation Blueprint.
+    # On incompatible/unverified sources, use a target-only layout rather
+    # than silently transferring unrelated source-study clinical content.
+    blueprint = build_reconstruction_blueprint(spec, adaptation_plan=plan)
+    generated = generate_docx_from_blueprint(
+        blueprint, final_docx,
+        style_source=(source["source_path"] if plan else None),
     )
-    verified = validate_ae_shell(final_docx, spec)
+    verified = validate_reconstructed_shell(final_docx, blueprint)
     rebuild_plan = {
-        "plan_type": "automatic_ae_structural_rebuild_mvp",
+        "plan_type": "source_ir_guided_target_blueprint_rebuild_mvp",
+        "blueprint_version": blueprint["blueprint_version"],
+        "verified_source_structure_used": blueprint["source_structure"]["verified_source_ir_used"],
         "requires_manual_approval_to_generate": False,
         "clinical_approval": False,
-        "source_template_used_only_for_style": source["template_id"],
+        "source_template_reference": source["template_id"],
         "target_tfl_id": spec["identity"]["tfl_id"],
         "target_word_columns": [
             "Adverse Event Category",
@@ -116,12 +124,11 @@ def run_single_sap_ae_pilot(
         "source_study_content_copied": False,
         "unresolved_requirements": extraction["unresolved"],
         "steps": [
-            "CREATE_NEW_DOCX_USING_SOURCE_STYLING_ONLY",
-            "BUILD_TWO_HEADER_ROWS_4_COLUMNS",
-            "ADD_ALL_TARGET_AE_CATEGORIES",
-            "ADD_PLACEHOLDERS_FOR_TWO_ARMS_AND_OVERALL",
-            "ADD_ONLY_SAP_DERIVED_EXPLANATORY_NOTES",
-            "RUN_STRUCTURAL_VALIDATION",
+            "LOAD_VERIFIED_SOURCE_IR_WHEN_COMPATIBLE",
+            "MERGE_TARGET_LAYOUT_IR_WITH_SOURCE_PRESENTATION_PATTERN",
+            "WRITE_RECONSTRUCTION_BLUEPRINT_JSON",
+            "GENERATE_EDITABLE_NATIVE_WORD_TABLE_FROM_BLUEPRINT",
+            "RUN_BLUEPRINT_STRUCTURAL_VALIDATION",
         ],
     }
     diagnostics = {
@@ -140,12 +147,14 @@ def run_single_sap_ae_pilot(
             "requires_endpoint_review": x.get("requires_endpoint_review"),
         } for x in ranking[:5]],
         "chosen_style_template_id": source["template_id"],
+        "blueprint_version": blueprint["blueprint_version"],
+        "source_structure_used": generated["source_structure_used"],
         "steps": [
-            "Parse 1 uploaded SAP PDF (text blocks)",
+            "Parse 1 Drive-linked SAP PDF (text blocks)",
             "Extract one AE Specification from body sections using rules",
             "Retrieve approved editable source DOCX templates",
             "Construct a diagnostic Adaptation Plan, when compatible",
-            "Automatically rebuild all target AE rows + 2 arms + Overall",
+            "Reconstruct target AE Word directly from source-aware Blueprint",
             "Validate Word structure and source-content isolation",
         ],
         "manual_adaptation_review_required_to_generate": False,
@@ -172,6 +181,7 @@ def run_single_sap_ae_pilot(
     write_json(out / "Template_Retrieval.json", diagnostics["top_5_retrieval"])
     write_json(out / "SAP_Extraction_Evidence.json", extraction)
     write_json(out / "Automatic_Structural_Adaptation_Plan.json", rebuild_plan)
+    write_json(out / "Reconstruction_Blueprint.json", blueprint)
     if plan:
         write_json(out / "Adaptation_Plan.json", plan)
     write_json(out / "Generation_Rationale.json", diagnostics)
