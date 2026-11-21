@@ -13,6 +13,8 @@ on:
       - 'tests/test_step4_adaptation_v4.py'
       - 'tests/test_step4_auto_text_draft.py'
       - 'tests/test_e2e_ae_pilot.py'
+      - 'tests/test_blueprint_reconstruction.py'
+      - 'notebooks/10_Drive_SAP_Blueprint_Reconstruction.ipynb'
       - 'notebooks/09_One_SAP_to_AE_Shell_End_to_End.ipynb'
       - '.github/workflows/step4-draft-tests.yml'
 
@@ -27,4 +29,4 @@ jobs:
       - name: Install package and tests
         run: python -m pip install -e ".[test]"
       - name: Exercise Step 4 draft generation and adaptation planning
-        run: python -m pytest -q tests/test_step4_official_draft.py tests/test_step4_adaptation_planner.py tests/test_step4_adaptation_v2.py tests/test_step4_adaptation_v3.py tests/test_step4_adaptation_v4.py tests/test_step4_auto_text_draft.py tests/test_e2e_ae_pilot.py
+        run: python -m pytest -q tests/test_step4_official_draft.py tests/test_step4_adaptation_planner.py tests/test_step4_adaptation_v2.py tests/test_step4_adaptation_v3.py tests/test_step4_adaptation_v4.py tests/test_step4_auto_text_draft.py tests/test_e2e_ae_pilot.py tests/test_blueprint_reconstruction.py
