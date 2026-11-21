@@ -38,3 +38,9 @@ Source approved Library Word files are read-only and provide only styling cues. 
 The Word output is a structurally validated but UNAPPROVED draft. Clinical footnote applicability, denominators and Ground Truth comparison remain unresolved. For a different SAP layout, the extractor may stop instead of guessing.
 
 To run the integration regression: python -m pytest -q tests/test_e2e_ae_pilot.py.
+
+## PDF text-block segmentation regression fix
+
+The original AE Step 2 incorrectly required “Any non-TEAE” and “Any TEAE” to appear together in one of only 12 consecutive PDF blocks. This was a parser assumption, not an SAP requirement. The extractor now scans inside the authorized AE body section until the next subsection or follow-up summary, can join list fragments across PDF blocks and physical pages, retains each originating SAP Block ID, and skips repeated document headers/footers. It does **not** read held-out target TFL shell pages to recover missing items. Tests cover a TOC entry, more than 12 intervening blocks, separately captured list items, pagination, and hold-out leakage.
+
+The SAP PDF parser also uses `import pymupdf` rather than the deprecated `fitz` entry point. To pick up GitHub fixes in a previously run Colab runtime, restart the runtime before running all cells again; re-running the install cell alone may leave earlier Python modules cached.
