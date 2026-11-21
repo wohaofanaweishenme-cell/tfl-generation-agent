@@ -17,17 +17,94 @@ def _n(x: Any) -> str:
     return " ".join(str(x or "").split())
 
 
+def _is_page_furniture(text: str) -> bool:
+    """Skip repeated SAP headers/footers when a bullet list spans pages."""
+    value = _n(text).casefold()
+    return (not value or value == "statistical analysis plan"
+            or value.startswith("confidential page ")
+            or value.startswith("sponsor name:"))
+
+
 def _find_aes(parsed: dict) -> tuple[dict, dict]:
+    """Locate an authentic AE body section and concatenate its list fragments.
+
+    PDF text-block boundaries are *not* clinical paragraph boundaries.
+    The first section-like match may be a table-of-contents entry. Scan
+    candidate sections, stay inside authorized SAP body pages, stop at the
+    next section or the start of the SOC/PT follow-up summaries, and keep
+    the original per-block references for provenance.
+    """
     blocks = parsed.get("blocks") or []
-    header = next((b for b in blocks if AE_SECTION.search(b.get("text") or "")), None)
-    if header is None:
-        raise ValueError("No '8.8.2 Adverse Events' SAP body section. This pilot only generates Overall AE Shells.")
-    start = blocks.index(header)
-    detail = next((b for b in blocks[start+1:start+12] if "Any non-TEAE" in b.get("text", "")
-                   and "Any TEAE" in b.get("text", "")), None)
-    if detail is None:
-        raise ValueError("The AE SAP section does not contain a parseable bulleted overall-summary list")
-    return header, detail
+    candidates = [
+        (idx, block) for idx, block in enumerate(blocks)
+        if AE_SECTION.search(_n(block.get("text")))
+        and len(_n(block.get("text"))) > 70
+    ]
+    if not candidates:
+        raise ValueError(
+            "No full '8.8.2 Adverse Events' SAP body section was found. "
+            "This pilot does not support a different SAP structure."
+        )
+    checked_pages = []
+    for start, header in candidates:
+        try:
+            lo, hi = _body_range(parsed, header)
+        except ValueError:
+            continue
+        if not lo <= header.get("page", -1) <= hi:
+            continue
+        checked_pages.append(header.get("page"))
+        fragments = []
+        started = False
+        for block in blocks[start:]:
+            if block.get("page", 0) > hi:
+                break
+            if block is not header and re.match(
+                r"^\s*(?:8\.8\.[3-9]|8\.[9-9]\b|9\.)",
+                _n(block.get("text")), re.I,
+            ):
+                break
+            value = _n(block.get("text"))
+            if _is_page_furniture(value):
+                continue
+            # The leading list item is the start anchor. It may occur on a
+            # later page or in a standalone block; never assume a 12-block
+            # window or require two labels inside one block.
+            if not started:
+                m = re.search(r"\bAny\s+non[\s-]*TEAE\b", value, re.I)
+                if m is None:
+                    continue
+                started = True
+                value = value[m.start():]
+            fragments.append((block, value))
+            if re.search(r"\bSummaries\s+showing\b", value, re.I):
+                break
+        if not fragments:
+            continue
+        combined = " ".join(value for _, value in fragments)
+        # Verify that at least two independently mentioned AE categories
+        # appear in the list, even if split across multiple PDF blocks.
+        if not re.search(r"\bAny\s+TEAE\b", combined, re.I):
+            continue
+        source_blocks = []
+        seen = set()
+        for item, _ in fragments:
+            if item["block_id"] not in seen:
+                source_blocks.append(item)
+                seen.add(item["block_id"])
+        detail = {
+            "block_id": source_blocks[0]["block_id"],
+            "page": source_blocks[0]["page"],
+            "text": combined,
+            "source_blocks": source_blocks,
+        }
+        return header, detail
+    raise ValueError(
+        "AE section was found, but its Overall Summary list could not "
+        "be parsed within the SAP body (AE section pages checked: "
+        f"{checked_pages}). Expected separate or combined 'Any non-TEAE' "
+        "and 'Any TEAE' labels; no target-shell content was used."
+    )
 
 
 def _body_range(parsed: dict, ae_header: dict) -> tuple[int, int]:
@@ -110,7 +187,8 @@ def extract_ae_spec_from_sap(parsed: dict) -> tuple[dict, dict]:
     ae, detail = _find_aes(parsed)
     page_range = _body_range(parsed, ae)
     blocks = _authorized_blocks(parsed, page_range)
-    if ae not in blocks or detail not in blocks:
+    detail_source_blocks = detail.get("source_blocks") or [detail]
+    if ae not in blocks or any(item not in blocks for item in detail_source_blocks):
         raise ValueError("AE summary list lies beyond authorized SAP body pages")
     arms, arm_evidence = _extract_arms(blocks)
     rows = _parse_ae_rows(detail)
@@ -136,7 +214,7 @@ def extract_ae_spec_from_sap(parsed: dict) -> tuple[dict, dict]:
         "/statistical_requirements/treatment_groups": [arm_evidence],
         "/statistical_requirements/statistics_to_display": [ae],
         "/statistical_requirements/analysis_methods": [ae],
-        "/table_requirements/row_requirements": [detail],
+        "/table_requirements/row_requirements": detail_source_blocks,
         "/table_requirements/column_requirements": [ae],
         "/table_requirements/footnote_requirements": [ae],
     }
@@ -178,7 +256,7 @@ def extract_ae_spec_from_sap(parsed: dict) -> tuple[dict, dict]:
         "mode": "AE_STRUCTURAL_REBUILD_MVP",
         "body_page_range": list(page_range),
         "body_page_selection": "known_RP6530_body_4_21" if study_verified else "AE_section_bounded_heuristic",
-        "rules": ["8.8.2 AE section", "literal bullet list", "explicit Group 1/2", "SAP-quoted footnotes"],
+        "rules": ["8.8.2 AE body section", "multi-block AE category parsing", "explicit Group 1/2", "SAP-quoted footnotes"],
         "evidence_ref_ids": list(all_refs),
         "tfl_id_is_verified_for_this_study": study_verified,
         "inferred_presentation_elements": [
