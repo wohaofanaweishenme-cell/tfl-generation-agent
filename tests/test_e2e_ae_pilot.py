@@ -128,3 +128,87 @@ def test_notebook_is_thin_git_package_client():
     for cell in notebook["cells"]:
         if cell["cell_type"] == "code":
             compile("".join(cell["source"]), "Colab 09", "exec")
+
+
+
+def test_ae_list_can_span_many_pdf_blocks_and_pages():
+    """Regression: earlier Step 2 expected both row anchors within 12 blocks."""
+    sap = _synthetic_sap()
+    original = sap["blocks"]
+    # The TOC can mention 8.8.2 before the actual AE section.
+    toc = {
+        "block_id": "sap:p2:b4", "page": 2, "section": None,
+        "text": "8.8.2 Adverse Events ................................ 19",
+    }
+    header = next(b for b in original if b["block_id"] == "sap:p19:b0")
+    first = {
+        "block_id": "sap:p19:b30", "page": 19, "section": "8.8",
+        "text": "Any non-TEAE",
+    }
+    second = {
+        "block_id": "sap:p20:b2", "page": 20, "section": "8.8",
+        "text": "Any TEAE • Any Serious TEAE • Fatal TEAEs • "
+                "Grade >=3 TEAEs • AE leading to discontinuation. "
+                "Summaries showing number of events by SOC and PT",
+    }
+    filler = [{
+        "block_id": f"sap:p19:b{i+4}", "page": 19, "section": "8.8",
+        "text": f"Non-category section formatting block {i}",
+    } for i in range(16)]
+    sap["blocks"] = [
+        toc,
+        *[b for b in original if b["page"] < 19],
+        header,
+        *filler,
+        first,
+        {"block_id": "sap:p19:b99", "page": 19,
+         "text": "CONFIDENTIAL Page 19 of 106", "section": "8.8"},
+        {"block_id": "sap:p20:b0", "page": 20,
+         "text": "STATISTICAL ANALYSIS PLAN", "section": "8.8"},
+        {"block_id": "sap:p20:b1", "page": 20,
+         "text": "Sponsor Name: Test Protocol", "section": "8.8"},
+        second,
+        {"block_id": "sap:p20:b5", "page": 20, "section": "8.8",
+         "text": "8.8.3 Clinical Laboratory Evaluations"},
+        *[b for b in original if b["page"] > 20],
+    ]
+    spec, analysis = extract_ae_spec_from_sap(sap)
+    assert spec["table_requirements"]["row_requirements"] == [
+        "Any non-TEAE",
+        "Any TEAE",
+        "Any Serious TEAE",
+        "Fatal TEAEs",
+        "Grade >=3 TEAEs",
+        "AE leading to discontinuation.",
+    ]
+    links = next(x["ref_ids"] for x in spec["provenance"]["field_links"]
+                 if x["json_pointer"] == "/table_requirements/row_requirements")
+    assert links == ["sap:p19:b30", "sap:p20:b2"]
+    assert all(ref in analysis["evidence_ref_ids"] for ref in links)
+    assert analysis["body_page_range"] == [4, 21]
+
+
+def test_ae_parser_never_borrows_held_out_template_categories():
+    import pytest
+    sap = _synthetic_sap()
+    sap["blocks"] = [
+        block for block in sap["blocks"]
+        if block["block_id"] != "sap:p19:b1"
+    ]
+    sap["blocks"].append({
+        "block_id": "sap:p44:b1", "page": 44, "section": None,
+        "text": "Any non-TEAE • Any TEAE • Any Serious TEAE • "
+                "Fatal TEAEs • Grade >=3 TEAEs • AE leading to discontinuation",
+    })
+    with pytest.raises(ValueError, match="Overall Summary list could not"):
+        extract_ae_spec_from_sap(sap)
+
+
+def test_ae_heading_and_rows_may_be_separate_blocks():
+    sap = _synthetic_sap()
+    header = next(b for b in sap["blocks"] if b["block_id"] == "sap:p19:b0")
+    # Real PDFs may render a short 8.8.2 heading separately from the prose.
+    header["text"] = "8.8.2 Adverse Events " + header["text"].split("8.8.2 Adverse Events", 1)[1]
+    spec, analysis = extract_ae_spec_from_sap(sap)
+    assert len(spec["table_requirements"]["row_requirements"]) == 6
+    assert analysis["body_page_range"] == [4, 21]
