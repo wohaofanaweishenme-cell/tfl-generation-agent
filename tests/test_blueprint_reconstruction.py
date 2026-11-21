@@ -109,3 +109,22 @@ def test_rejects_source_content_copy_flag(tmp_path):
     bp["source_content_copied"] = True
     with pytest.raises(ValueError, match="Source-study"):
         generate_docx_from_blueprint(bp, tmp_path / "not_allowed.docx")
+
+
+def test_drive_notebook_has_valid_python_and_no_upload():
+    from pathlib import Path
+    notebook = json.loads((
+        Path(__file__).resolve().parents[1]
+        / "notebooks" / "10_Drive_SAP_Blueprint_Reconstruction.ipynb"
+    ).read_text(encoding="utf-8"))
+    code = "\n".join("".join(cell.get("source") or [])
+                     for cell in notebook["cells"]
+                     if cell["cell_type"] == "code")
+    for cell in notebook["cells"]:
+        if cell["cell_type"] == "code":
+            compile("".join(cell["source"]), "Drive Blueprint notebook", "exec")
+    assert 'drive.mount("/content/drive")' in code
+    assert "DRIVE_SAP_RELATIVE_PATH" in code
+    assert "run_single_sap_ae_pilot" in code
+    assert "run_table_blueprint_from_spec" in code
+    assert "files.upload(" not in code
