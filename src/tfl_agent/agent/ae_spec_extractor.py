@@ -38,7 +38,6 @@ def _find_aes(parsed: dict) -> tuple[dict, dict]:
     candidates = [
         (idx, block) for idx, block in enumerate(blocks)
         if AE_SECTION.search(_n(block.get("text")))
-        and len(_n(block.get("text"))) > 70
     ]
     if not candidates:
         raise ValueError(
@@ -59,9 +58,12 @@ def _find_aes(parsed: dict) -> tuple[dict, dict]:
         for block in blocks[start:]:
             if block.get("page", 0) > hi:
                 break
-            if block is not header and re.match(
-                r"^\s*(?:8\.8\.[3-9]|8\.[9-9]\b|9\.)",
-                _n(block.get("text")), re.I,
+            if block is not header and (
+                AE_SECTION.search(_n(block.get("text")))
+                or re.match(
+                    r"^\s*(?:8\.8\.[3-9]\b|8\.9\b|9\.)",
+                    _n(block.get("text")), re.I,
+                )
             ):
                 break
             value = _n(block.get("text"))
@@ -81,7 +83,26 @@ def _find_aes(parsed: dict) -> tuple[dict, dict]:
                 break
         if not fragments:
             continue
-        combined = " ".join(value for _, value in fragments)
+        # Some PDFs put each list item in its own text block but discard
+        # the original bullet glyph. Insert a separator ONLY when the next
+        # block visibly starts with a known AE category label. A block that
+        # continues an unfinished sentence is joined with a plain space.
+        pieces = []
+        for _, value in fragments:
+            if pieces and not re.match(r"^\s*[•▪◦●]", value):
+                item_start = re.match(
+                    r"^(?:Any\s|Related\s|Serious\s|Grade\s|TEAEs?\s|"
+                    r"Fatal\s|Protocol[- ]Defined\s|Pregnancy\s|Overdose\b)",
+                    value, re.I,
+                )
+                if item_start:
+                    pieces.append(" • ")
+                else:
+                    pieces.append(" ")
+            elif pieces:
+                pieces.append(" ")
+            pieces.append(value)
+        combined = "".join(pieces)
         # Verify that at least two independently mentioned AE categories
         # appear in the list, even if split across multiple PDF blocks.
         if not re.search(r"\bAny\s+TEAE\b", combined, re.I):
@@ -154,8 +175,7 @@ def _extract_arms(blocks: list[dict]) -> tuple[list[str], dict]:
 
 def _parse_ae_rows(block: dict) -> list[str]:
     text = str(block.get("text") or "")
-    if "Summaries showing" in text:
-        text = text.split("Summaries showing", 1)[0]
+    text = re.split(r"\bSummaries\s+showing\b", text, maxsplit=1, flags=re.I)[0]
     parts = [_n(x) for x in re.split(r"\s*[•▪]\s*", text) if _n(x)]
     rows = []
     special = None
