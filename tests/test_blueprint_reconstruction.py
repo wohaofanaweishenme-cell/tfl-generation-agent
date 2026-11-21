@@ -128,6 +128,9 @@ def test_drive_notebook_has_valid_python_and_no_upload():
     assert "run_single_sap_ae_pilot" in code
     assert "run_table_blueprint_from_spec" in code
     assert "files.upload(" not in code
+    assert 'sys.path.insert(0, str(SOURCE_DIR))' in code
+    assert 'PACKAGE_DIR / "__init__.py"' in code
+    assert "import tfl_agent" in code
 
 
 def test_incompatible_source_axis_forces_target_only_structure():
