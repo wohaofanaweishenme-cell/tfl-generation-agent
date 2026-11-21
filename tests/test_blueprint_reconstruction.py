@@ -128,3 +128,11 @@ def test_drive_notebook_has_valid_python_and_no_upload():
     assert "run_single_sap_ae_pilot" in code
     assert "run_table_blueprint_from_spec" in code
     assert "files.upload(" not in code
+
+
+def test_incompatible_source_axis_forces_target_only_structure():
+    incompatible = source_plan()
+    incompatible["adaptation_mode"] = "rebuild_with_source_style"
+    bp = build_reconstruction_blueprint(spec(), adaptation_plan=incompatible)
+    assert not bp["source_structure"]["verified_source_ir_used"]
+    assert [r["label"] for r in bp["rows"]] == ["Age", "Sex"]
