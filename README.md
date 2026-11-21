@@ -1,5 +1,14 @@
 # TFL Generation Agent (Midterm MVP)
 
+## Blueprint-driven reconstruction (Drive-only Colab, Stage B.8)
+
+[Open Notebook 10 in Colab](https://colab.research.google.com/github/wohaofanaweishenme-cell/tfl-generation-agent/blob/feature/official-library-colab/notebooks/10_Drive_SAP_Blueprint_Reconstruction.ipynb) · [Technical guide](docs/BLUEPRINT_RECONSTRUCTION.md)
+
+Notebook 10 reads the SAP **directly from a Google Drive path** (no upload). The updated Step 4 now turns a diagnostic Source IR / Target Layout IR adaptation plan into a JSON Reconstruction Blueprint and builds an editable native Word Table from that blueprint. The source Library is never edited, and source-study clinical rows/footnotes are never copied.
+
+The fully automatic **SAP-only** path is still the **Overall AE** pilot with two treatment arms. Demographics, Disposition, and other Table layouts can use the generic reconstruction path **when a target SAP-derived Specification JSON is already available** in Drive. These outputs remain unapproved structural drafts, not validated clinical TFLs.
+
+
 [![Open Midterm Demo in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/wohaofanaweishenme-cell/tfl-generation-agent/blob/main/notebooks/02_Midterm_Demo_GitHub_Colab.ipynb)
 
 A **Python package plus Jupyter/Colab notebooks** for a clinical-trial TFL (Tables, Figures, Listings) shell-generation research project. The current *midterm MVP* demonstrates the pipeline from a Statistical Analysis Plan (SAP) to **one editable Table shell**, with evidence references, template retrieval, and automated checks.
