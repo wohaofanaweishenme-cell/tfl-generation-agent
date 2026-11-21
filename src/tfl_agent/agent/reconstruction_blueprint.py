@@ -29,6 +29,12 @@ def _source_structure(plan):
         return None
     if plan.get("retrieval", {}).get("cross_endpoint"):
         return None
+    # Axis-incompatible plans may still guide *style* in a future renderer,
+    # but must not lend a row hierarchy to the target Blueprint.
+    if plan.get("adaptation_mode") not in (
+        "structural_edit_candidate", "text_or_structural_edit_candidate",
+    ):
+        return None
     source = plan.get("source_ir") or {}
     if not source.get("boundary_verified"):
         return None
