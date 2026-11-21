@@ -119,7 +119,12 @@ def test_notebook_is_thin_git_package_client():
         "".join(c.get("source") or [])
         for c in notebook["cells"] if c["cell_type"] == "code"
     )
-    assert code.count("files.upload()") == 1
+    assert "files.upload()" not in code
+    assert 'drive.mount("/content/drive")' in code
+    assert 'Colab Notebooks/agent/midterm demo/SAP_001_00.pdf' in code
+    assert 'OUTPUT_DIR = DRIVE_SAP_DIRECTORY / "AE_TFL_End_to_End_Outputs"' in code
+    assert 'ARCHIVE_PATH = DRIVE_SAP_DIRECTORY / "AE_TFL_End_to_End_Outputs.zip"' in code
+    assert "files.download(" not in code
     assert "from tfl_agent.agent.end_to_end_ae_pilot import run_single_sap_ae_pilot" in code
     assert "def extract_ae_spec_from_sap" not in code
     assert "def generate_ae_structural_docx" not in code
