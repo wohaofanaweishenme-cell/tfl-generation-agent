@@ -3,11 +3,11 @@ import re
 from pathlib import Path
 
 def parse_sap(path):
-    import fitz
+    import pymupdf
     path=Path(path)
     if not path.exists(): raise FileNotFoundError(path)
     blocks=[]; section=None
-    with fitz.open(str(path)) as pdf:
+    with pymupdf.open(str(path)) as pdf:
         for i, page in enumerate(pdf):
             for j, block in enumerate(sorted(page.get_text('blocks'),key=lambda b:(round(b[1],1),b[0]))):
                 if len(block)<5 or not isinstance(block[4],str): continue

@@ -38,4 +38,22 @@ def validate_shell(path,spec,plan):
         'no_unresolved_placeholders':not bool(re.search(r'\{\{[A-Z][A-Z0-9_]*\}\}',all_text)),
         'all_replacements_applied':all(x>0 for x in plan.get('replacement_counts',{}).values())
     }
+    if plan.get('editing_mode') == 'source_verified_spec_draft':
+        import hashlib
+        checks['visible_draft_warning'] = (
+            'DRAFT' in all_text and 'NOT FOR CLINICAL OR REGULATORY USE' in all_text
+        )
+        checks['verified_source_bookmarks'] = (
+            bool(plan.get('source_sha256')) and
+            plan.get('verified_locator_bookmark_overlap', 0) > 0
+        )
+        checks['source_content_not_transplanted'] = plan.get('source_contents_copied') is False
+        checks['explicit_human_review_required'] = plan.get('review_required') is True
+        checks['data_placeholders_present'] = any(
+            cell.text.strip() == 'xx' for table in doc.tables
+            for row in table.rows[1:] for cell in row.cells[1:]
+        )
+        checks['draft_hash_matches'] = (
+            hashlib.sha256(path.read_bytes()).hexdigest() == plan.get('output_sha256')
+        )
     return {'valid':all(checks.values()),'checks':checks,'issues':[k for k,v in checks.items() if not v]}
