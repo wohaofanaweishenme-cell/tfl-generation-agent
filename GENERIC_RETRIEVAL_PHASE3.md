@@ -32,3 +32,7 @@ are unchanged.
 Tests use synthetic claims; real DeepSeek extraction and clinical relevance
 are evaluated in the user's Colab. Test command:
 python -m pytest -q tests/test_scoped_specification_phase3.py tests/test_sap_scope_phase21.py tests/test_sap_hybrid_phase2.py tests/test_generic_library_phase1.py
+
+An explicitly named target-title population can link to its study-level SAP
+population definition. This is labelled target_title_selection_plus_sap_population_definition,
+not a SAP assertion about the specific TFL. Such evidence cannot fill unrelated fields.

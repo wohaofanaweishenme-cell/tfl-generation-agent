@@ -63,7 +63,10 @@ output_scope is one of study, table, figure, listing, unspecified.
 Study claims must use study scope. Target claims must be relevant to the requested
 output, not merely the same endpoint. A figure's graphical display requirements,
 landmark rate table, and subject listing do not define a time-to-event summary table.
-Use target evidence first; unclassified context is lower confidence. Do not import
+Use target evidence first; unclassified context is lower confidence. Evidence in
+ title_selected_study_population is ONLY for analysis_population: the supplied title
+ names a population and the SAP defines it, but does not necessarily say this TFL
+ uses it. Do not use those chunks for other fields. Do not import
 study rules into target fields simply because they exist. Treatment group labels
 are extracted separately at study level. For row_requirements/column_requirements,
 extract only explicitly described rows/groupings or columns; if layout is unspecified,
@@ -158,12 +161,19 @@ def study_evidence(package, store):
     return items
 
 
-def target_evidence(part, store):
+def target_evidence(part, store, shared=None):
     items = {}
     for name, pool in (("target_evidence", part["pool"]), ("context_evidence", "unclassified_context")):
         for c in part[name]:
             orig = store.validate_package_chunk(c)
             items.setdefault(c["chunk_id"], _entry(orig, pool))
+    # The requested population in the explicit target title is a separate input,
+    # not a SAP statement about this particular output. Retrieve its definition only.
+    wanted = population_kinds(part["target"]["title"])
+    if len(wanted) == 1 and shared:
+        for cid, e in shared.items():
+            if e["study_scope"] == "populations" and e["topic_scope"] is None and wanted & population_kinds(e["text"]):
+                items.setdefault(cid, {**e, "pool":"title_selected_study_population"})
     return items
 
 
@@ -190,7 +200,9 @@ def _scope_flags(field, value, quote, e, target, topic):
         if e["study_scope"] != STUDY_FIELDS[field] or e["topic_scope"] is not None:
             flags.append("study_scope_not_established")
         return flags
-    if not topic or e["topic_scope"] != topic or e["pool"] not in ("target_scoped", "completion_target_scoped"):
+    title_population = (field == "analysis_population" and e["pool"] == "title_selected_study_population"
+                        and e["study_scope"] == "populations" and len(population_kinds(target["title"])) == 1)
+    if not title_population and (not topic or e["topic_scope"] != topic or e["pool"] not in ("target_scoped", "completion_target_scoped")):
         flags.append("target_scope_not_established")
     # Reject population borrowing when the requested title fixes the population.
     if field == "analysis_population":
@@ -250,8 +262,12 @@ def verify_claims(raw, allowed, evidence, store, *, target=None, topic=None):
                   "source_spans": refs, "section": e["section"], "pool": e["pool"],
                   "study_scope": e["study_scope"], "topic_scope": e["topic_scope"],
                   "output_scope": declared, "applicability_reason": reason,
+                  "applicability_basis": ("target_title_selection_plus_sap_population_definition"
+                                          if e["pool"] == "title_selected_study_population" else "sap_scope_heuristic"),
                   "checks": {"exact_quote": True, "literal_support": True,
                              "scope_flags": flags}, "clinical_confirmation": False}
+        if e["pool"] == "title_selected_study_population" and field != "analysis_population":
+            flags.append("study_population_evidence_wrong_field")
         if flags:
             record["status"] = "needs_review"
             review.append(record)
@@ -373,7 +389,8 @@ def run_specification_extraction(retrieval_dir, out_dir, llm, *, encoder=None):
                           read_json(retrieval_dir / "Scoped_Chunks.json"))
     source = read_json(retrieval_dir / "Summary.json")
     completion = CompletionRetriever(store, encoder) if encoder is not None else None
-    study, sa = extract_scope(llm, study_evidence(package,store), store,
+    shared = study_evidence(package, store)
+    study, sa = extract_scope(llm, shared, store,
                               tuple(STUDY_FIELDS), STUDY_REQUIRED, completion=completion)
     study.update({"schema_version":"phase3-candidate-1.0","sap_filename":source["sap_filename"],
                   "sap_sha256":source["sap_sha256"],
@@ -383,7 +400,7 @@ def run_specification_extraction(retrieval_dir, out_dir, llm, *, encoder=None):
     specs, audits = [], []
     for part in package["targets"]:
         target, topic = part["target"], part["topic"]
-        spec, audit = extract_scope(llm, target_evidence(part,store), store,
+        spec, audit = extract_scope(llm, target_evidence(part,store,shared), store,
                                     TARGET_FIELDS, required_target(target,topic),
                                     target=target, topic=topic, completion=completion)
         spec.update({"identity":{**target,"output_type":output_type(target)},

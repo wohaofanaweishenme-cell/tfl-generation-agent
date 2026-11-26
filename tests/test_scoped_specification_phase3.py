@@ -93,3 +93,21 @@ def test_multispan_quote_offsets():
     store=EvidenceStore(blocks,chunks)
     assert store.locate("c","alpha\nbeta")==chunks[0]["source_spans"]
     assert store.locate("c","alpha beta")==[]
+
+
+def test_title_selected_population_has_distinct_provenance():
+    text="ITT Analysis Set includes all enrolled patients."
+    block={"block_id":"b","page":1,"text":text}
+    c={"chunk_id":"c","text":text,"section":"8.3.2","topic_scope":None,"study_scope":"populations",
+       "source_spans":[{"block_id":"b","page":1,"start":0,"end":len(text)}]}
+    store=EvidenceStore([block],[c])
+    target={"title":"PFS – ITT Analysis Set"}
+    shared={"c":{**c,"pool":"study_scoped"}}
+    ev=target_evidence({"target":target,"pool":"target_scoped","target_evidence":[],"context_evidence":[]},store,shared)
+    assert ev["c"]["pool"]=="title_selected_study_population"
+    raw={"claims":[claim("analysis_population","ITT Analysis Set","c",text),
+                    claim("statistics_to_display","patients","c",text)]}
+    a,r,x=verify_claims(raw,("analysis_population","statistics_to_display"),ev,store,target=target,topic="pfs")
+    assert len(a)==1 and len(r)==1 and not x
+    assert a[0]["applicability_basis"]=="target_title_selection_plus_sap_population_definition"
+    assert not a[0]["clinical_confirmation"]
