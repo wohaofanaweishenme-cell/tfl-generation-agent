@@ -14,12 +14,12 @@ from tfl_agent.tools.sap_hybrid import make_chunks
 SUB = re.compile(r"^\s*(\d+(?:\.\s*\d+){1,4})\s+([A-Z][A-Za-z])")
 MAJOR = re.compile(r"(?:^|(?<=[.!?])\s+)(\d{1,2})\.\s+([A-Z][A-Z &/-]+(?:\b|$))")
 ENDPOINTS = {
-    "pfs": r"progression[\s-]+free survival|PFS",
-    "os": r"overall survival|OS",
-    "orr": r"overall response rate|ORR",
-    "cbr": r"clinical benefit rate|CBR",
-    "dor": r"duration of response|DoR",
-    "docb": r"duration of clinical benefit|DoCB",
+    "pfs": r"progression[\s-]+free survival|\bPFS\b",
+    "os": r"overall survival|\bOS\b",
+    "orr": r"overall response rate|\bORR\b",
+    "cbr": r"clinical benefit rate|\bCBR\b",
+    "dor": r"duration of response|\bDoR\b",
+    "docb": r"duration of clinical benefit|\bDoCB\b",
     "treatment_duration": r"duration of treatment(?: exposure)?",
     "pfs_landmark": r"PFS rate at [^:.;•]{1,45}|proportion of patients with [^:.;•]{1,45}PFS",
 }
@@ -58,6 +58,8 @@ STUDY_QUERIES = {
 
 
 def _match_label(text, patterns):
+    if patterns is ENDPOINTS and re.search(patterns["pfs_landmark"], text, re.I):
+        return "pfs_landmark"
     for key, pattern in patterns.items():
         if re.search(pattern, text, re.I):
             return key
@@ -108,6 +110,10 @@ def segment_blocks(blocks):
             if len(re.findall(r"[A-Z]{2,}", m.group(2))) >= 2:
                 pos = m.start(1)
                 events[pos] = ("section", m.group(1), m.group(2).strip())
+        if re.match(r"^\s*(?:•\s*)?(?:additional efficacy variables|other efficacy variables)\s*[:.]?\s*$", text, re.I):
+            events[0] = ("endpoint", None, text)
+        if re.match(r"^\s*(?:•\s*)?(?:PFS rate at|proportion of patients with [^:.;•]{1,45}PFS)", text, re.I):
+            events[0] = ("endpoint", "pfs_landmark", text[:100])
         # Match anchors after a numbered heading too, when an explicit bullet occurs.
         for m in ANCHOR.finditer(text):
             pos = m.start()

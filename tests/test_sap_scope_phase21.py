@@ -64,3 +64,41 @@ def test_restrict_search_without_changing_default():
     result = index.search(plan, top_k=2, depth=2, allowed_chunk_ids=allowed)
     assert all(h["chunk_id"] in allowed for hits in result[0]["methods"].values() for h in hits)
     assert len(index.search(plan, top_k=2, depth=2)[0]["methods"]["dense"]) == 2
+
+
+def test_alias_boundaries_and_landmark_scope():
+    assert target_topic("Dose Exposure") is None
+    assert target_topic("Summary of Adverse Events by Dose") == "ae"
+    seg, _, _ = segment_blocks([
+        b(0, "Duration of Clinical Benefit: clinical benefit time."),
+        b(1, "Proportion of patients with 6-Month and 1-year PFS. PFS rate at 6-months or at 1-year: Proportion of patients alive."),
+        b(2, "Additional efficacy variables"),
+    ])
+    assert seg[1]["topic_scope"] == "pfs_landmark"
+    assert seg[2]["topic_scope"] is None
+
+
+def test_scope_pilot_exports(tmp_path):
+    import fitz
+    import json
+    from tfl_agent.agent.sap_scope_pilot import run_scope_retrieval
+    p = tmp_path / "sap.pdf"
+    doc = fitz.open()
+    for text in ("outside shell", "4.3 Method of Assignment to Treatment Groups",
+                 "8.7.2 Analysis of Secondary Efficacy Variables",
+                 "Progression Free Survival: survival time",
+                 "Duration of response: response time"):
+        page = doc.new_page()
+        page.insert_text((50,50), text)
+    doc.save(p)
+    doc.close()
+    out = tmp_path / "audit"
+    summary, rows = run_scope_retrieval(p, (2,5), [{"tfl_id":"T1","title":"Summary of Progression Free Survival"}],
+                                        out, encoder=FakeEncoder(), top_k=2, depth=3)
+    assert summary["provenance_verified"]
+    assert rows
+    package = json.loads((out/"Evidence_Package.json").read_text())
+    assert package["targets"][0]["topic"] == "pfs"
+    assert all(c["topic_scope"] == "pfs" for c in package["targets"][0]["target_evidence"])
+    assert any(c["topic_scope"] == "dor" for c in package["targets"][0]["excluded_from_target_pool"])
+    assert (out/"Phase2_Baseline"/"Summary.json").exists()
