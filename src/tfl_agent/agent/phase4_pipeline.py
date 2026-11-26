@@ -1,7 +1,7 @@
 """Run Phase 4 from a saved Phase 3 artifact, without calling an LLM."""
 from pathlib import Path
 import json
-from tfl_agent.agent.scoped_specification import EvidenceStore
+from tfl_agent.agent.scoped_specification import EvidenceStore, literal_support
 from tfl_agent.agent.requirement_normalizer import normalize_spec
 from tfl_agent.agent.sap_aware_retriever import SAPAwareRetriever, gap_analysis
 from tfl_agent.tools.generic_library import load_generic_library
@@ -31,7 +31,9 @@ def run_phase4(phase3_dir, library_path, out_dir, *, encoder=None):
     parts={p["target"]["tfl_id"]:p for p in package["targets"]}
     for s in [study,*specs]:
         for c in s["claims"]:
-            if c["status"]!="evidence_backed_candidate" or store.locate(c["chunk_id"],c["exact_quote"])!=c["source_spans"]:
+            if (c["status"]!="evidence_backed_candidate" or not c["source_spans"]
+                    or not literal_support(c["value"], c["exact_quote"])
+                    or store.locate(c["chunk_id"],c["exact_quote"])!=c["source_spans"]):
                 raise ValueError("Invalid candidate claim provenance")
     library=load_generic_library(library_path)
     retriever=SAPAwareRetriever(library,encoder if encoder is not None else LocalEncoder())

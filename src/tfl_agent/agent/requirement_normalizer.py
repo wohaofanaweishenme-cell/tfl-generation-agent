@@ -34,7 +34,13 @@ def canonical_variable(text):
 
 
 def matches(text, patterns):
-    return [k for k,p in patterns.items() if re.search(p,text,re.I)]
+    found = []
+    for k,p in patterns.items():
+        # Confidence level is not a displayed categorical percentage statistic.
+        value = re.sub(r"\b\d+(?:\.\d+)?\s*%\s*(?:CI(?:s)?\b|confidence intervals?\b)", "", text, flags=re.I) if k=="percentage" and patterns is STAT_PATTERNS else text
+        if re.search(p,value,re.I):
+            found.append(k)
+    return found
 
 
 def normalize_spec(spec):

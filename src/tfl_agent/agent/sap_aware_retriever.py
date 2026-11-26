@@ -303,8 +303,17 @@ def gap_analysis(normalized,study,part,result,library):
                             "source":"study_candidate","reason":"Study arms identified; target applicability and display labels not confirmed"})
         else:
             vals=normalized["raw_fields"].get(field_map.get(path,""),[])
+            if path=="columns.total":
+                vals=[v for v in vals if re.search(r"\b(?:overall|total|pooled)\b",v,re.I)]
             actions.append({"action":"modify_candidate" if vals else "review","element":path,"value":vals,
                             "reason":"Evidence-backed candidate; verify placement/applicability" if vals else "Required library slot not established by target claims"})
+    # Shared denominator rules are useful review context, not target-confirmed footnotes.
+    if "footnotes[FN_DENOM]" in [r["path"] for r in t["required_fields"]] and not normalized["raw_fields"].get("denominator_rule"):
+        for i,c in enumerate(study.get("claims",[])):
+            if c["field"]=="denominator_rules" and c["status"]=="evidence_backed_candidate":
+                actions.append({"action":"review","element":"shared_denominator_rule","value":c["value"],
+                                "evidence":[{"study_claim_index":i,"chunk_id":c["chunk_id"],"source_spans":c["source_spans"]}],
+                                "reason":"General SAP rule found; target applicability not confirmed"})
     for ref in normalized["reporting_dimensions"]:
         actions.append({"action":"review","element":"reporting_dimension","value":ref["value"],"evidence":[ref],
                         "reason":"Reporting by groups/subgroups does not establish row vs column layout"})

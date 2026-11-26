@@ -70,3 +70,17 @@ def test_nonstandard_and_type_conflict():
         r=SAPAwareRetriever(lib,Encoder()).retrieve(n)
         assert r["template_id"] is None
         assert not r["generation_authorized"]
+
+
+def test_confidence_level_is_not_categorical_percentage():
+    n=normalize_spec(spec("PFS", [claim("statistics_to_display","Median and 95% CI")]))
+    assert set(n["statistics"])=={"median","ci"}
+    n=normalize_spec(spec("PFS", [claim("statistics_to_display","Median, 95% CI and number and % censored")]))
+    assert set(n["statistics"])=={"median","ci","n","percentage"}
+
+
+def test_total_column_not_inferred_from_groups():
+    lib=load_generic_library(ROOT/"generic_template_library")
+    n=normalize_spec(spec("PFS",[claim("column_requirements","each treatment group")]))
+    g=gap_analysis(n,{"values":{}},{},{"template_id":"TBL_TIME_TO_EVENT","preset_id":"event_time_summary"},lib)
+    assert any(a["element"]=="columns.total" and a["action"]=="review" for a in g["actions"])
