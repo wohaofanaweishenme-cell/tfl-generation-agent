@@ -214,7 +214,7 @@ class HybridSAPIndex:
             raise ValueError("Zero embedding vector")
         return a / norm
 
-    def search(self, plans, top_k=5, depth=20, rrf_k=60):
+    def search(self, plans, top_k=5, depth=20, rrf_k=60, allowed_chunk_ids=None):
         if not 0 < top_k <= depth:
             raise ValueError("Require 0 < top_k <= depth")
         if not plans:
@@ -223,10 +223,14 @@ class HybridSAPIndex:
         qvec = self._unit(self.encoder.encode(queries, is_query=True), len(queries))
         if qvec.shape[1] != self.dense.shape[1]:
             raise ValueError("Query/document embedding dimension mismatch")
+        allowed = None if allowed_chunk_ids is None else set(allowed_chunk_ids)
+        def mask(scores):
+            return [s if allowed is None or c.chunk_id in allowed else float('-inf')
+                    for c, s in zip(self.chunks, scores)]
         out = []
         for plan, vec in zip(plans, qvec):
-            sparse = _rank(self.sparse.get_scores(tokens(plan["query"])), depth, positive_only=True)
-            dense = _rank(self.dense @ vec, depth)
+            sparse = _rank(mask(self.sparse.get_scores(tokens(plan["query"]))), depth, positive_only=True)
+            dense = _rank(mask(self.dense @ vec), depth)
             fused = rrf(sparse, dense, rrf_k)
             sparse_ranks = {i: r for r, (i, _) in enumerate(sparse, 1)}
             dense_ranks = {i: r for r, (i, _) in enumerate(dense, 1)}
