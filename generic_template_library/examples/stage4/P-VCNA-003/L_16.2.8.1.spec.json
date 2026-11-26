@@ -1,0 +1,293 @@
+{
+  "schema_version": "3.0",
+  "output_id": "16.2.8.1",
+  "output_type": "listing",
+  "template_id": "LST_SUBJECT_RECORDS",
+  "template_version": "1.0.0",
+  "preset_ids": [
+    "laboratory_records"
+  ],
+  "title": {
+    "value": "Biochemistry Parameters",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "population": {
+    "value": null,
+    "source": "unresolved",
+    "status": "unresolved",
+    "question_id": "Q008"
+  },
+  "columns": {
+    "stub_header": {
+      "value": "",
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "groups": [
+      {
+        "id": "ARM1",
+        "label": {
+          "value": "Arm I (Nab-paclitaxel and gemcitabine)",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "ARM2",
+        "label": {
+          "value": "Arm II (VCN-01 with Nab-paclitaxel and gemcitabine)",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      }
+    ],
+    "total": {
+      "enabled": {
+        "value": false,
+        "source": "study_setting",
+        "status": "resolved"
+      }
+    }
+  },
+  "row_blocks": [],
+  "footnotes": [
+    {
+      "id": "FN_STUDYDAY",
+      "marker": null,
+      "text": {
+        "value": "Study day: [study day definition]",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q009",
+        "note": "missing study setting: definitions.study_day_definition"
+      }
+    }
+  ],
+  "programming_notes": [
+    {
+      "id": "PN_SORT",
+      "marker": null,
+      "text": {
+        "value": "Sort by Treatment group, Subject ID, Visit.",
+        "source": "template_default",
+        "status": "resolved"
+      }
+    }
+  ],
+  "figure": null,
+  "listing": {
+    "record_grain": {
+      "value": "subject_param_visit",
+      "source": "template_default",
+      "status": "needs_review"
+    },
+    "fields": [
+      {
+        "id": "Treatment_group",
+        "label": {
+          "value": "Treatment group",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "group"
+        ]
+      },
+      {
+        "id": "Subject_ID",
+        "label": {
+          "value": "Subject ID",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "subject_id"
+        ]
+      },
+      {
+        "id": "Parameter__unit",
+        "label": {
+          "value": "Parameter (unit)",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "parameter"
+        ]
+      },
+      {
+        "id": "Visit",
+        "label": {
+          "value": "Visit",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "visit"
+        ]
+      },
+      {
+        "id": "Assessment_date",
+        "label": {
+          "value": "Assessment date",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "datetime"
+        ]
+      },
+      {
+        "id": "Change_from_baseline",
+        "label": {
+          "value": "Change from baseline",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "number"
+        ]
+      },
+      {
+        "id": "Result",
+        "label": {
+          "value": "Result",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "number"
+        ]
+      },
+      {
+        "id": "Unit",
+        "label": {
+          "value": "Unit",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "unit"
+        ]
+      },
+      {
+        "id": "Reference_range",
+        "label": {
+          "value": "Reference range",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "text"
+        ]
+      },
+      {
+        "id": "Severity___CTCAE_grade",
+        "label": {
+          "value": "Severity / CTCAE grade",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "category"
+        ]
+      },
+      {
+        "id": "Flag___interpretation",
+        "label": {
+          "value": "Flag / interpretation",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "category"
+        ]
+      }
+    ],
+    "sort_keys": {
+      "value": [
+        "Treatment group",
+        "Subject ID",
+        "Visit"
+      ],
+      "source": "template_default",
+      "status": "needs_review"
+    },
+    "group_by": {
+      "value": [
+        "Treatment group"
+      ],
+      "source": "template_default",
+      "status": "needs_review"
+    },
+    "repeat_identifiers": {
+      "value": [
+        "Subject ID",
+        "Treatment group"
+      ],
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "max_fields_per_panel": 10
+  },
+  "config": {
+    "group_display": "header_rows"
+  },
+  "page": {
+    "orientation": "landscape",
+    "paper": "letter",
+    "font": "Courier New",
+    "font_size_pt": 9,
+    "include_programming_notes": true
+  },
+  "issues": [
+    {
+      "question_id": "Q008",
+      "element_path": "population",
+      "kind": "missing",
+      "question": "The content-list entry does not state the analysis population. Which population applies?",
+      "answer": null
+    },
+    {
+      "question_id": "Q009",
+      "element_path": "footnotes[FN_STUDYDAY]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.study_day_definition (needed for: Study day: [study day definition]).",
+      "answer": null
+    }
+  ],
+  "provenance": {
+    "content_list_entry": {
+      "entry_id": "CL_115",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "16.2.8.1",
+      "output_type": "listing",
+      "original_title": "Biochemistry Parameters",
+      "population": null
+    },
+    "template_file_sha256": "618245f1af230e37da0345d121d27343915af1d1f37b44469ae3095c0ada1059",
+    "preset_file_sha256": {
+      "laboratory_records": "6857364d26045e5c982829ea1860e6c0a1332789002a9ae57a6b3f1179a24f8e"
+    },
+    "style_guide_version": "1.1.0",
+    "study_settings_version": "P-VCNA-003@example-0.3",
+    "match": {
+      "selected": "LST_SUBJECT_RECORDS",
+      "candidates": [
+        {
+          "template_id": "LST_SUBJECT_RECORDS",
+          "score": 3,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": "laboratory_records",
+          "preset_score": 2
+        }
+      ],
+      "explanation": "Selected LST_SUBJECT_RECORDS (score 3): title terms -; preset laboratory_records."
+    },
+    "generated_by": "tools/build_spec.py (rule-based); config: group_display=header_rows (template default)"
+  }
+}

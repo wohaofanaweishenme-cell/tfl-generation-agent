@@ -1,0 +1,62 @@
+{
+  "preset_id": "analysis_sets",
+  "template_id": "TBL_CRITERION_COUNTS",
+  "version": "1.0.0",
+  "name": "Analysis sets",
+  "keywords": [
+    "analysis sets"
+  ],
+  "aliases": [
+    "analysis set",
+    "analysis populations",
+    "populations"
+  ],
+  "defaults": {
+    "row_blocks": [
+      {
+        "block_id": "sets",
+        "block_type": "criterion",
+        "label": "Analysis sets",
+        "items": [
+          {
+            "label": "Enrolled",
+            "indent": 0,
+            "kind": "n"
+          },
+          {
+            "label": "[Analysis set 1]",
+            "indent": 0,
+            "kind": "n_pct"
+          },
+          {
+            "label": "[Analysis set 2]",
+            "indent": 0,
+            "kind": "n_pct"
+          },
+          {
+            "label": "[Analysis set 3]",
+            "indent": 0,
+            "kind": "n_pct"
+          }
+        ]
+      }
+    ],
+    "footnotes": [
+      {
+        "id": "FN_SETS",
+        "marker": null,
+        "text": "Analysis set definitions: {settings:definitions.analysis_set_definitions}"
+      }
+    ]
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "ARV471BC201_T_14_1_1_1",
+    "CPXPOM001_T_14_1_2_1",
+    "CPXPOM001_T_14_1_2_2",
+    "SP11631_T_14_1_2",
+    "WTX330X2101_T_14_1_1_1",
+    "WTX330X2101_T_14_1_1_2_1",
+    "WTX330X2101_T_14_1_1_2_2"
+  ]
+}

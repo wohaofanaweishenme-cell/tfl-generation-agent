@@ -1,0 +1,322 @@
+{
+  "template_id": "TBL_CONTINUOUS_COMPARISON",
+  "version": "1.0.0",
+  "output_type": "table",
+  "name": "Continuous endpoint with between-group estimate",
+  "structural_signature": {
+    "S1": "table",
+    "S2": "ENDPOINT_ANALYSIS",
+    "S3": [
+      "GROUPS_PLUS_COMPARISON",
+      "GROUPS"
+    ],
+    "S4": [
+      "MODEL_EST"
+    ],
+    "S5": [
+      "NONE",
+      "BY_PERIOD"
+    ]
+  },
+  "intended_use": "Descriptive statistics of a continuous endpoint and its baseline / post-baseline components, followed by a model-based or nonparametric between-group estimate (LS mean difference, Hodges-Lehmann shift) with confidence interval and optional p-value.",
+  "not_for": "Descriptive-only summaries (variable summary or parameter-by-visit templates); binary endpoints (response rate template).",
+  "keywords": [
+    "continuous endpoint comparison"
+  ],
+  "aliases": [
+    "percentage change from baseline",
+    "change from baseline at",
+    "LS mean",
+    "least squares",
+    "Hodges-Lehmann",
+    "duration of grade",
+    "nadir",
+    "covariate",
+    "without covariate",
+    "log-transformed"
+  ],
+  "match_cues": {
+    "title_terms": [
+      "percentage change from baseline at",
+      "change from baseline at",
+      "change at",
+      "covariate",
+      "duration of grade",
+      "nadir",
+      "log-transformed"
+    ],
+    "negative_terms": [
+      "by visit",
+      "listing",
+      "plot",
+      "box",
+      "rate",
+      "incidence"
+    ]
+  },
+  "required_fields": [
+    {
+      "path": "title",
+      "label": "Output title",
+      "allowed_sources": [
+        "content_list"
+      ]
+    },
+    {
+      "path": "population",
+      "label": "Analysis population",
+      "allowed_sources": [
+        "content_list",
+        "study_setting"
+      ]
+    },
+    {
+      "path": "columns.groups",
+      "label": "Treatment groups / cohorts",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    },
+    {
+      "path": "columns.total",
+      "label": "Total column on/off and membership",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    },
+    {
+      "path": "row_blocks[endpoint].items",
+      "label": "Endpoint components and time point",
+      "allowed_sources": [
+        "content_list",
+        "study_setting"
+      ]
+    },
+    {
+      "path": "footnotes[FN_MODEL]",
+      "label": "Model / estimation method, covariates, CI level",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    },
+    {
+      "path": "columns.comparison_columns",
+      "label": "Between-group estimate and test labels",
+      "allowed_sources": [
+        "study_setting"
+      ],
+      "description": "From study settings 'comparisons.continuous' (estimate label, test label, method); never defaulted."
+    }
+  ],
+  "permitted_defaults": [
+    {
+      "path": "columns.stub_header",
+      "value": "from preset",
+      "status_when_used": "resolved",
+      "basis": "House style stub header."
+    },
+    {
+      "path": "row_blocks[endpoint].items",
+      "value": "from preset",
+      "status_when_used": "needs_review",
+      "basis": "Row structure distilled from ARV (LS mean) and SP (Hodges-Lehmann) sources."
+    }
+  ],
+  "editable_elements": [
+    "title",
+    "population",
+    "columns.groups[].label",
+    "columns.comparison_columns",
+    "row_blocks[].items",
+    "footnotes",
+    "programming_notes",
+    "config"
+  ],
+  "config_options": {
+    "comparison": {
+      "values": [
+        "columns",
+        "rows"
+      ],
+      "default": "columns",
+      "description": "Difference shown as an extra column (ARV) or as rows below the group statistics (SP).",
+      "setting_path": "comparisons.continuous"
+    },
+    "repeat_by_period": {
+      "values": [
+        false,
+        true
+      ],
+      "default": false,
+      "description": "Repeat per cycle/period.",
+      "cues": {
+        "true": [
+          "cycle 2-4",
+          "all treatment periods"
+        ]
+      }
+    }
+  },
+  "presets": [
+    "change_from_baseline_model",
+    "nonparametric_estimate"
+  ],
+  "skeleton": {
+    "columns": {
+      "stub_header": "Statistic",
+      "suppress_total": true
+    },
+    "footnotes": [
+      {
+        "id": "FN_MODEL",
+        "marker": null,
+        "text": "Estimation method: {settings:comparisons.method}"
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "source_id": "ARV471BC201_T_14_2_1_1_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_2_1_1_2",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_2_1_1_3",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_2_1_2_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_2_1_2_2",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_2_1_2_3",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_2_1_2_4",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_2_1_3_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_2_1_3_2",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_2_1_3_3",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_2_1_4_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_2_1_4_2",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_2_1_4_3",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_2_4_1_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_2_4_1_2",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_2_4_1_3",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_2_4_2_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_2_4_2_2",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_2_4_2_3",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_2_5_1_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_2_5_1_2",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_2_5_2_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_2_5_2_2",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_T_14_3_1_1",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_T_14_3_1_4",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_T_14_3_3_1",
+      "study_id": "SP11631",
+      "fit": "config",
+      "config_used": "repeat per period; statistic_label_column"
+    },
+    {
+      "source_id": "SP11631_T_14_3_4_1",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_T_14_3_8_1",
+      "study_id": "SP11631",
+      "fit": "core"
+    }
+  ],
+  "evidence_level": "multi_study",
+  "review_status": "approved"
+}

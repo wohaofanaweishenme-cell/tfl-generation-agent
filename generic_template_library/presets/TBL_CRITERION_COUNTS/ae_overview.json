@@ -1,0 +1,101 @@
+{
+  "preset_id": "ae_overview",
+  "template_id": "TBL_CRITERION_COUNTS",
+  "version": "1.0.0",
+  "name": "Adverse event overview",
+  "keywords": [
+    "adverse event overview"
+  ],
+  "aliases": [
+    "overview of adverse events",
+    "overall summary of treatment-emergent adverse events",
+    "summary of adverse events",
+    "summary of treatment emergent adverse events",
+    "TEAE"
+  ],
+  "defaults": {
+    "row_blocks": [
+      {
+        "block_id": "ov",
+        "block_type": "criterion",
+        "label": "Subjects with any",
+        "items": [
+          {
+            "label": "Subjects with any",
+            "indent": 0,
+            "kind": "header"
+          },
+          {
+            "label": "TEAE",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "TEAE related to study drug",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "TEAE with CTCAE grade >= 3",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Related TEAE with CTCAE grade >= 3",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Serious TEAE",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Related serious TEAE",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "TEAE leading to study drug discontinuation",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "TEAE leading to dose modification",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "TEAE leading to death",
+            "indent": 1,
+            "kind": "n_pct"
+          }
+        ]
+      }
+    ],
+    "footnotes": [
+      {
+        "id": "FN_TEAE",
+        "marker": null,
+        "text": "TEAE: {settings:definitions.teae_definition}"
+      },
+      {
+        "id": "FN_GRADE",
+        "marker": null,
+        "text": "Severity graded according to NCI-CTCAE version {settings:coding.ctcae_version}."
+      }
+    ]
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "ARV471BC201_T_14_3_1",
+    "CPXPOM001_T_14_3_1_0",
+    "CPXPOM001_T_14_3_1_1_1",
+    "OMO10301_T_14_3_1_1",
+    "PVCNA003_T_14_3_1_1",
+    "SP11631_T_14_5_1_1",
+    "SP11631_T_14_5_1_2",
+    "WTX330X2101_T_14_3_1_1_1",
+    "WTX330X2101_T_14_3_1_1_2"
+  ]
+}

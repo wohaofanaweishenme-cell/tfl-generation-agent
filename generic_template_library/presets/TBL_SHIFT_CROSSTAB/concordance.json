@@ -1,0 +1,48 @@
+{
+  "preset_id": "concordance",
+  "template_id": "TBL_SHIFT_CROSSTAB",
+  "version": "1.0.0",
+  "name": "Concordance between two assessments",
+  "keywords": [
+    "concordance"
+  ],
+  "aliases": [
+    "concordance",
+    "central and local",
+    "by site",
+    "between"
+  ],
+  "defaults": {
+    "columns": {
+      "category_columns": [
+        "[Category A]",
+        "[Category B]",
+        "Total"
+      ]
+    },
+    "row_blocks": [
+      {
+        "block_id": "conc",
+        "block_type": "crosstab",
+        "label": "Concordance",
+        "row_variable": "[Assessment 1]",
+        "column_variable": "[Assessment 2]",
+        "row_categories": [
+          "[Category A]",
+          "[Category B]",
+          "Total"
+        ],
+        "parameters": [
+          "[Measure]"
+        ]
+      }
+    ]
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "ARV471BC201_T_14_2_1_5_1",
+    "ARV471BC201_T_14_2_1_5_2",
+    "ARV471BC201_T_14_2_1_5_3",
+    "SP11631_T_14_1_1_2"
+  ]
+}

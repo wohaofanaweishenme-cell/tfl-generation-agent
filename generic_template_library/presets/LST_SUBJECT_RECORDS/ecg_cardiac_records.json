@@ -1,0 +1,190 @@
+{
+  "preset_id": "ecg_cardiac_records",
+  "template_id": "LST_SUBJECT_RECORDS",
+  "version": "1.0.0",
+  "name": "ECG and cardiac assessment records",
+  "keywords": [
+    "ecg"
+  ],
+  "aliases": [
+    "ECG",
+    "12-lead",
+    "holter",
+    "cardiac",
+    "ejection fraction",
+    "doppler"
+  ],
+  "defaults": {
+    "listing": {
+      "record_grain": "subject_visit",
+      "fields": [
+        {
+          "id": "Treatment_group",
+          "label": "Treatment group",
+          "kinds": [
+            "group"
+          ]
+        },
+        {
+          "id": "Subject_ID",
+          "label": "Subject ID",
+          "kinds": [
+            "subject_id"
+          ]
+        },
+        {
+          "id": "Parameter__unit",
+          "label": "Parameter (unit)",
+          "kinds": [
+            "parameter"
+          ]
+        },
+        {
+          "id": "Visit",
+          "label": "Visit",
+          "kinds": [
+            "visit"
+          ]
+        },
+        {
+          "id": "Assessment_date",
+          "label": "Assessment date",
+          "kinds": [
+            "datetime"
+          ]
+        },
+        {
+          "id": "Time_point",
+          "label": "Time point",
+          "kinds": [
+            "category"
+          ]
+        },
+        {
+          "id": "Method",
+          "label": "Method",
+          "kinds": [
+            "category"
+          ]
+        },
+        {
+          "id": "Result",
+          "label": "Result",
+          "kinds": [
+            "number"
+          ]
+        },
+        {
+          "id": "Flag___interpretation",
+          "label": "Flag / interpretation",
+          "kinds": [
+            "category"
+          ]
+        },
+        {
+          "id": "Change_from_baseline",
+          "label": "Change from baseline",
+          "kinds": [
+            "number"
+          ]
+        }
+      ],
+      "sort_keys": [
+        "Treatment group",
+        "Subject ID",
+        "Visit"
+      ],
+      "group_by": [
+        "Treatment group"
+      ]
+    }
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "ARV471BC201_L_16_2_10",
+    "CPXPOM001_L_16_2_4_6_1",
+    "CPXPOM001_L_16_2_9_2_1",
+    "CPXPOM001_L_16_2_9_3_1",
+    "OMO10301_L_16_2_12_1",
+    "PVCNA003_L_16_2_11",
+    "PVCNA003_L_16_2_15",
+    "SP11631_L_16_2_2_5",
+    "SP11631_L_16_2_4_5_1",
+    "WTX330X2101_L_16_4_9_1"
+  ],
+  "source_frequency": {
+    "studies": [
+      "ARV-471-BC-201",
+      "CPX-POM-001",
+      "OMO-103-01",
+      "P-VCNA-003",
+      "SP11631",
+      "WTX-330x2101"
+    ],
+    "field_studies": {
+      "Treatment group": [
+        "CPX-POM-001",
+        "SP11631"
+      ],
+      "Subject ID": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "OMO-103-01",
+        "P-VCNA-003",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "Parameter (unit)": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "WTX-330x2101"
+      ],
+      "Visit": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "OMO-103-01",
+        "P-VCNA-003",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "Assessment date": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "OMO-103-01",
+        "P-VCNA-003",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "Time point": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "OMO-103-01",
+        "WTX-330x2101"
+      ],
+      "Method": [
+        "CPX-POM-001",
+        "P-VCNA-003"
+      ],
+      "Result": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "P-VCNA-003",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "Flag / interpretation": [
+        "CPX-POM-001",
+        "P-VCNA-003"
+      ],
+      "Change from baseline": [
+        "CPX-POM-001",
+        "WTX-330x2101"
+      ]
+    },
+    "grain_counts": {
+      "subject": 1,
+      "subject_visit": 6,
+      "subject_param_visit": 3
+    }
+  }
+}

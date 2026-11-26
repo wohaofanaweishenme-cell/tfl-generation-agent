@@ -1,0 +1,149 @@
+{
+  "preset_id": "change_from_baseline_model",
+  "template_id": "TBL_CONTINUOUS_COMPARISON",
+  "version": "1.0.0",
+  "name": "Change from baseline with model-based estimate",
+  "keywords": [
+    "continuous endpoint comparison"
+  ],
+  "aliases": [
+    "percentage change from baseline",
+    "change from baseline at",
+    "LS mean",
+    "covariate",
+    "log-transformed",
+    "Ki-67",
+    "AQUA",
+    "H-score"
+  ],
+  "defaults": {
+    "row_blocks": [
+      {
+        "block_id": "cfb",
+        "block_type": "endpoint",
+        "label": "Endpoint",
+        "items": [
+          {
+            "label": "[Endpoint] at baseline",
+            "indent": 0,
+            "kind": "header"
+          },
+          {
+            "label": "n",
+            "indent": 1,
+            "kind": "n"
+          },
+          {
+            "label": "Mean (SD)",
+            "indent": 1,
+            "kind": "mean_sd"
+          },
+          {
+            "label": "Median",
+            "indent": 1,
+            "kind": "median"
+          },
+          {
+            "label": "Min, Max",
+            "indent": 1,
+            "kind": "min_max"
+          },
+          {
+            "label": "[Endpoint] at [time point]",
+            "indent": 0,
+            "kind": "header"
+          },
+          {
+            "label": "n",
+            "indent": 1,
+            "kind": "n"
+          },
+          {
+            "label": "Mean (SD)",
+            "indent": 1,
+            "kind": "mean_sd"
+          },
+          {
+            "label": "Median",
+            "indent": 1,
+            "kind": "median"
+          },
+          {
+            "label": "Min, Max",
+            "indent": 1,
+            "kind": "min_max"
+          },
+          {
+            "label": "Change from baseline",
+            "indent": 0,
+            "kind": "header"
+          },
+          {
+            "label": "n",
+            "indent": 1,
+            "kind": "n"
+          },
+          {
+            "label": "Mean (SD)",
+            "indent": 1,
+            "kind": "mean_sd"
+          },
+          {
+            "label": "Median",
+            "indent": 1,
+            "kind": "median"
+          },
+          {
+            "label": "Min, Max",
+            "indent": 1,
+            "kind": "min_max"
+          },
+          {
+            "label": "LS mean (SE)",
+            "indent": 1,
+            "kind": "lsm_se",
+            "where": "both"
+          },
+          {
+            "label": "[xx]% CI for LS mean",
+            "indent": 1,
+            "kind": "ci",
+            "where": "both"
+          },
+          {
+            "label": "p-value",
+            "indent": 1,
+            "kind": "p_value",
+            "where": "comparison"
+          }
+        ]
+      }
+    ]
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "ARV471BC201_T_14_2_1_1_1",
+    "ARV471BC201_T_14_2_1_1_2",
+    "ARV471BC201_T_14_2_1_1_3",
+    "ARV471BC201_T_14_2_1_2_1",
+    "ARV471BC201_T_14_2_1_2_2",
+    "ARV471BC201_T_14_2_1_2_3",
+    "ARV471BC201_T_14_2_1_2_4",
+    "ARV471BC201_T_14_2_1_3_1",
+    "ARV471BC201_T_14_2_1_3_2",
+    "ARV471BC201_T_14_2_1_3_3",
+    "ARV471BC201_T_14_2_1_4_1",
+    "ARV471BC201_T_14_2_1_4_2",
+    "ARV471BC201_T_14_2_1_4_3",
+    "ARV471BC201_T_14_2_4_1_1",
+    "ARV471BC201_T_14_2_4_1_2",
+    "ARV471BC201_T_14_2_4_1_3",
+    "ARV471BC201_T_14_2_4_2_1",
+    "ARV471BC201_T_14_2_4_2_2",
+    "ARV471BC201_T_14_2_4_2_3",
+    "ARV471BC201_T_14_2_5_1_1",
+    "ARV471BC201_T_14_2_5_1_2",
+    "ARV471BC201_T_14_2_5_2_1",
+    "ARV471BC201_T_14_2_5_2_2"
+  ]
+}

@@ -1,0 +1,443 @@
+{
+  "schema_version": "3.0",
+  "output_id": "14.1.2.1",
+  "output_type": "table",
+  "template_id": "TBL_VARIABLE_SUMMARY",
+  "template_version": "0.1.0",
+  "preset_ids": [
+    "demographics"
+  ],
+  "title": {
+    "value": "Demographics and Baseline Characteristics",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "population": {
+    "value": "Intent-to-Treat Set",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "columns": {
+    "stub_header": {
+      "value": "Characteristic",
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "groups": [
+      {
+        "id": "ARM1",
+        "label": {
+          "value": "Arm I (Nab-paclitaxel and gemcitabine)",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "ARM2",
+        "label": {
+          "value": "Arm II (VCN-01 with Nab-paclitaxel and gemcitabine)",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      }
+    ],
+    "total": {
+      "enabled": {
+        "value": false,
+        "source": "study_setting",
+        "status": "resolved"
+      }
+    }
+  },
+  "row_blocks": [
+    {
+      "block_id": "age",
+      "block_type": "continuous",
+      "label": {
+        "value": "Age",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "unit": {
+        "value": "years",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "statistics": {
+        "value": [
+          "n",
+          "mean_sd",
+          "median",
+          "min_max"
+        ],
+        "source": "template_default",
+        "status": "resolved"
+      },
+      "footnote_refs": [
+        "FN_AGE"
+      ]
+    },
+    {
+      "block_id": "age_group",
+      "block_type": "categorical",
+      "label": {
+        "value": "Age group",
+        "source": "template_default",
+        "status": "needs_review",
+        "note": "Cut-points are study specific (sources use <45/45-<65/>=65, <65/>=65, <60/>=60)."
+      },
+      "unit": {
+        "value": "",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "statistics": {
+        "value": [
+          "n_pct"
+        ],
+        "source": "template_default",
+        "status": "resolved"
+      },
+      "categories": {
+        "value": [
+          "[Age group 1]",
+          "[Age group 2]"
+        ],
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "missing_row": {
+        "value": false,
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    },
+    {
+      "block_id": "sex",
+      "block_type": "categorical",
+      "label": {
+        "value": "Sex",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "unit": {
+        "value": "",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "statistics": {
+        "value": [
+          "n_pct"
+        ],
+        "source": "template_default",
+        "status": "resolved"
+      },
+      "categories": {
+        "value": [
+          "Male",
+          "Female"
+        ],
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "missing_row": {
+        "value": false,
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    },
+    {
+      "block_id": "race",
+      "block_type": "categorical",
+      "label": {
+        "value": "Race",
+        "source": "template_default",
+        "status": "needs_review",
+        "note": "ARV and WTX allow multiple races; confirm multiple-response handling."
+      },
+      "unit": {
+        "value": "",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "statistics": {
+        "value": [
+          "n_pct"
+        ],
+        "source": "template_default",
+        "status": "resolved"
+      },
+      "categories": {
+        "value": [
+          "American Indian or Alaska Native",
+          "Asian",
+          "Black or African American",
+          "Native Hawaiian or Other Pacific Islander",
+          "White",
+          "Other"
+        ],
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "missing_row": {
+        "value": false,
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "multiple_response": {
+        "value": false,
+        "source": "template_default",
+        "status": "needs_review",
+        "note": "ARV and WTX allow multiple races; confirm multiple-response handling."
+      }
+    },
+    {
+      "block_id": "ethnicity",
+      "block_type": "categorical",
+      "label": {
+        "value": "Ethnicity",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "unit": {
+        "value": "",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "statistics": {
+        "value": [
+          "n_pct"
+        ],
+        "source": "template_default",
+        "status": "resolved"
+      },
+      "categories": {
+        "value": [
+          "Hispanic or Latino",
+          "Not Hispanic or Latino",
+          "Not Reported"
+        ],
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "missing_row": {
+        "value": false,
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    },
+    {
+      "block_id": "weight",
+      "block_type": "continuous",
+      "label": {
+        "value": "Weight",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "unit": {
+        "value": "kg",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "statistics": {
+        "value": [
+          "n",
+          "mean_sd",
+          "median",
+          "min_max"
+        ],
+        "source": "template_default",
+        "status": "resolved"
+      }
+    },
+    {
+      "block_id": "height",
+      "block_type": "continuous",
+      "label": {
+        "value": "Height",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "unit": {
+        "value": "cm",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "statistics": {
+        "value": [
+          "n",
+          "mean_sd",
+          "median",
+          "min_max"
+        ],
+        "source": "template_default",
+        "status": "resolved"
+      }
+    },
+    {
+      "block_id": "bmi",
+      "block_type": "continuous",
+      "label": {
+        "value": "Body mass index",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "unit": {
+        "value": "kg/m^2",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "statistics": {
+        "value": [
+          "n",
+          "mean_sd",
+          "median",
+          "min_max"
+        ],
+        "source": "template_default",
+        "status": "resolved"
+      },
+      "footnote_refs": [
+        "FN_BMI"
+      ]
+    },
+    {
+      "block_id": "ecog",
+      "block_type": "categorical",
+      "label": {
+        "value": "ECOG performance status",
+        "source": "template_default",
+        "status": "needs_review",
+        "note": "Levels shown depend on eligibility criteria."
+      },
+      "unit": {
+        "value": "",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "statistics": {
+        "value": [
+          "n_pct"
+        ],
+        "source": "template_default",
+        "status": "resolved"
+      },
+      "categories": {
+        "value": [
+          "0",
+          "1",
+          "2"
+        ],
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "missing_row": {
+        "value": false,
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    }
+  ],
+  "footnotes": [
+    {
+      "id": "FN_AGE",
+      "marker": "a",
+      "text": {
+        "value": "Age was calculated using year of birth and date of first treatment and presented as age at last birthday.",
+        "source": "study_setting",
+        "status": "resolved"
+      }
+    },
+    {
+      "id": "FN_BMI",
+      "marker": "b",
+      "text": {
+        "value": "BMI = weight (kg) / height (m)^2.",
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    },
+    {
+      "id": "FN_DENOM",
+      "marker": null,
+      "text": {
+        "value": "Percentages are based on the number of patients within the column (N).",
+        "source": "study_setting",
+        "status": "resolved"
+      }
+    }
+  ],
+  "programming_notes": [
+    {
+      "id": "PN_STATS",
+      "marker": null,
+      "text": {
+        "value": "Display statistics in the order shown; categorical rows in the order listed.",
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    }
+  ],
+  "figure": null,
+  "listing": null,
+  "config": {
+    "column_layout": "groups",
+    "statistic_label_column": false,
+    "missing_display": "omit",
+    "repeat_by_period": false
+  },
+  "page": {
+    "orientation": "landscape",
+    "paper": "letter",
+    "font": "Courier New",
+    "font_size_pt": 9,
+    "include_programming_notes": true
+  },
+  "issues": [],
+  "provenance": {
+    "content_list_entry": {
+      "entry_id": "CL_002",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.1.2.1",
+      "output_type": "table",
+      "original_title": "Demographics and Baseline Characteristics",
+      "population": "Intent-to-Treat Set"
+    },
+    "template_file_sha256": "e551b11bc74ec8b83bfd45a64e88fa1cad5966e598f81c8b9202b0fbf4aaff0d",
+    "preset_file_sha256": {
+      "demographics": "7cf18710c4e95abf902fe7cb94bfcc250ac1757cd3fffd4801e96ae18717b5b8"
+    },
+    "style_guide_version": "1.0.0",
+    "study_settings_version": "P-VCNA-003@pilot-0.1",
+    "match": {
+      "selected": "TBL_VARIABLE_SUMMARY",
+      "candidates": [
+        {
+          "template_id": "TBL_VARIABLE_SUMMARY",
+          "score": 16,
+          "matched_terms": [
+            "baseline characteristic",
+            "baseline characteristics",
+            "demograph",
+            "demographics"
+          ],
+          "negative_terms": [],
+          "preset_id": "demographics",
+          "preset_score": 6
+        },
+        {
+          "template_id": "TBL_CODED_TERM_HIERARCHY",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        }
+      ],
+      "explanation": "Selected TBL_VARIABLE_SUMMARY (score 16): title terms baseline characteristic, baseline characteristics, demograph, demographics; preset demographics."
+    },
+    "generated_by": "tools/build_spec.py (rule-based pilot); config: column_layout=groups (template default); statistic_label_column=False (template default); missing_display=omit (template default); repeat_by_period=False (template default)"
+  }
+}

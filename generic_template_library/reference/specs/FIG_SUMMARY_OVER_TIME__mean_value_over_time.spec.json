@@ -1,0 +1,166 @@
+{
+  "schema_version": "3.0",
+  "output_id": "x.x.x",
+  "output_type": "figure",
+  "template_id": "FIG_SUMMARY_OVER_TIME",
+  "template_version": "1.0.0",
+  "preset_ids": [
+    "mean_value_over_time"
+  ],
+  "title": {
+    "value": "Mean laboratory / clinical value over time",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "population": {
+    "value": "[Analysis population]",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "columns": {
+    "stub_header": {
+      "value": "",
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "groups": [
+      {
+        "id": "A",
+        "label": {
+          "value": "[Treatment A]",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "B",
+        "label": {
+          "value": "[Treatment B]",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      }
+    ],
+    "total": {
+      "enabled": {
+        "value": true,
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "label": {
+        "value": "Total",
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "member_group_ids": [
+        "A",
+        "B"
+      ]
+    }
+  },
+  "row_blocks": [],
+  "footnotes": [
+    {
+      "id": "FN_STAT",
+      "marker": null,
+      "text": {
+        "value": "Points show [summary statistic]; error bars show [error bar].",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q001",
+        "note": "missing study setting: definitions.summary_statistic, definitions.error_bar"
+      }
+    }
+  ],
+  "programming_notes": [
+    {
+      "id": "PN_OFFSET",
+      "marker": null,
+      "text": {
+        "value": "Offset groups slightly on the x axis so that error bars do not overlap.",
+        "source": "template_default",
+        "status": "resolved"
+      }
+    }
+  ],
+  "figure": {
+    "plot_type": "SUMMARY_OVER_TIME",
+    "x_axis": {
+      "label": {
+        "value": "[Day / visit]",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "range": {
+        "value": "As appropriate",
+        "source": "template_default",
+        "status": "resolved"
+      }
+    },
+    "y_axis": {
+      "label": {
+        "value": "Mean ([unit])",
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    },
+    "legend": {
+      "value": [
+        "[Treatment A] (N=xx)",
+        "[Treatment B] (N=xx)"
+      ],
+      "source": "study_setting",
+      "status": "resolved"
+    },
+    "panels": {
+      "value": [
+        "single panel"
+      ],
+      "source": "template_default",
+      "status": "resolved"
+    }
+  },
+  "listing": null,
+  "config": {
+    "scale_panels": "linear"
+  },
+  "page": {
+    "orientation": "landscape",
+    "paper": "letter",
+    "font": "Courier New",
+    "font_size_pt": 9,
+    "include_programming_notes": true
+  },
+  "issues": [
+    {
+      "question_id": "Q001",
+      "element_path": "footnotes[FN_STAT]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.summary_statistic, definitions.error_bar (needed for: Points show [summary statistic]; error bars show [error bar].).",
+      "answer": null
+    }
+  ],
+  "provenance": {
+    "content_list_entry": {
+      "entry_id": "REF_FIG_SUMMARY_OVER_TIME__mean_value_over_time",
+      "original_tfl_number": "x.x.x",
+      "output_type": "figure",
+      "original_title": "Mean laboratory / clinical value over time",
+      "population": "[Analysis population]"
+    },
+    "template_file_sha256": "78d485d4996bf58832c057caba046e0048294aae8b92412d9ee1062d44f09ef0",
+    "preset_file_sha256": {
+      "mean_value_over_time": "e9f985681df9bffb5d1eb37dc8b7714fd6cd0a9336490cf90d64a3e31bf48d32"
+    },
+    "style_guide_version": "1.1.0",
+    "study_settings_version": "REFERENCE@1.0.0",
+    "match": {
+      "selected": "FIG_SUMMARY_OVER_TIME",
+      "candidates": [],
+      "explanation": "Reference shell: template and preset chosen directly (no matching)."
+    },
+    "generated_by": "tools/build_spec.py (rule-based); config: scale_panels=linear (template default)"
+  }
+}

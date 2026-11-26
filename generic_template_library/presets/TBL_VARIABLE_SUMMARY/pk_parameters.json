@@ -1,0 +1,82 @@
+{
+  "preset_id": "pk_parameters",
+  "template_id": "TBL_VARIABLE_SUMMARY",
+  "version": "1.0.0",
+  "name": "PK parameters by dose group",
+  "keywords": [
+    "pharmacokinetic concentration"
+  ],
+  "aliases": [
+    "pharmacokinetic parameters",
+    "PK parameters",
+    "Cmax",
+    "AUC"
+  ],
+  "defaults": {
+    "stub_header": "Parameter (unit)",
+    "row_blocks": [
+      {
+        "block_id": "cmax",
+        "block_type": "continuous",
+        "label": "Cmax",
+        "unit": "[unit]",
+        "statistics": [
+          "n",
+          "mean_sd",
+          "median",
+          "min_max",
+          "geo_mean",
+          "geo_cv"
+        ]
+      },
+      {
+        "block_id": "tmax",
+        "block_type": "continuous",
+        "label": "Tmax",
+        "unit": "[unit]",
+        "statistics": [
+          "n",
+          "median",
+          "min_max"
+        ]
+      },
+      {
+        "block_id": "auc",
+        "block_type": "continuous",
+        "label": "AUC[interval]",
+        "unit": "[unit]",
+        "statistics": [
+          "n",
+          "mean_sd",
+          "median",
+          "min_max",
+          "geo_mean",
+          "geo_cv"
+        ]
+      },
+      {
+        "block_id": "thalf",
+        "block_type": "continuous",
+        "label": "t1/2",
+        "unit": "[unit]",
+        "statistics": [
+          "n",
+          "mean_sd",
+          "median",
+          "min_max"
+        ]
+      }
+    ],
+    "footnotes": [
+      {
+        "id": "FN_PKP",
+        "marker": null,
+        "text": "PK parameters derived by {settings:definitions.pk_method}."
+      }
+    ]
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "WTX330X2101_T_14_4_2_1"
+  ]
+}

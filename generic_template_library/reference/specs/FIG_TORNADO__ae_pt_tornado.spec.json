@@ -1,0 +1,167 @@
+{
+  "schema_version": "3.0",
+  "output_id": "x.x.x",
+  "output_type": "figure",
+  "template_id": "FIG_TORNADO",
+  "template_version": "1.0.0",
+  "preset_ids": [
+    "ae_pt_tornado"
+  ],
+  "title": {
+    "value": "TEAE preferred terms",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "population": {
+    "value": "[Analysis population]",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "columns": {
+    "stub_header": {
+      "value": "",
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "groups": [
+      {
+        "id": "A",
+        "label": {
+          "value": "[Treatment A]",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "B",
+        "label": {
+          "value": "[Treatment B]",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      }
+    ],
+    "total": {
+      "enabled": {
+        "value": true,
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "label": {
+        "value": "Total",
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "member_group_ids": [
+        "A",
+        "B"
+      ]
+    }
+  },
+  "row_blocks": [],
+  "footnotes": [
+    {
+      "id": "FN_DICT",
+      "marker": null,
+      "text": {
+        "value": "Adverse events are coded using MedDRA version [meddra version].",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q001",
+        "note": "missing study setting: coding.meddra_version"
+      }
+    },
+    {
+      "id": "FN_TERMS",
+      "marker": null,
+      "text": {
+        "value": "Terms shown: [tornado term selection]",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q002",
+        "note": "missing study setting: definitions.tornado_term_selection"
+      }
+    }
+  ],
+  "programming_notes": [],
+  "figure": {
+    "plot_type": "TORNADO",
+    "x_axis": {
+      "label": {
+        "value": "Percentage of subjects (%)",
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    },
+    "y_axis": {
+      "label": {
+        "value": "Preferred term",
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    },
+    "legend": {
+      "value": [
+        "[Treatment A] (N=xx)",
+        "[Treatment B] (N=xx)"
+      ],
+      "source": "study_setting",
+      "status": "resolved"
+    },
+    "panels": {
+      "value": [
+        "single panel"
+      ],
+      "source": "template_default",
+      "status": "resolved"
+    }
+  },
+  "listing": null,
+  "config": {},
+  "page": {
+    "orientation": "landscape",
+    "paper": "letter",
+    "font": "Courier New",
+    "font_size_pt": 9,
+    "include_programming_notes": true
+  },
+  "issues": [
+    {
+      "question_id": "Q001",
+      "element_path": "footnotes[FN_DICT]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): coding.meddra_version (needed for: Adverse events are coded using MedDRA version [meddra version].).",
+      "answer": null
+    },
+    {
+      "question_id": "Q002",
+      "element_path": "footnotes[FN_TERMS]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.tornado_term_selection (needed for: Terms shown: [tornado term selection]).",
+      "answer": null
+    }
+  ],
+  "provenance": {
+    "content_list_entry": {
+      "entry_id": "REF_FIG_TORNADO__ae_pt_tornado",
+      "original_tfl_number": "x.x.x",
+      "output_type": "figure",
+      "original_title": "TEAE preferred terms",
+      "population": "[Analysis population]"
+    },
+    "template_file_sha256": "779c50c964193acdc9061f3a675a93c4b0194d413ce0687c1f8ad3abc12d5168",
+    "preset_file_sha256": {
+      "ae_pt_tornado": "5672e931fe7643a6c50caf7aab25df31c5fa829731c51936db91d28090c3ffba"
+    },
+    "style_guide_version": "1.1.0",
+    "study_settings_version": "REFERENCE@1.0.0",
+    "match": {
+      "selected": "FIG_TORNADO",
+      "candidates": [],
+      "explanation": "Reference shell: template and preset chosen directly (no matching)."
+    },
+    "generated_by": "tools/build_spec.py (rule-based); config: "
+  }
+}

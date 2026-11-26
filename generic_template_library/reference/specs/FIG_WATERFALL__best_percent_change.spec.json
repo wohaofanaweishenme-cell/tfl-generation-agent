@@ -1,0 +1,181 @@
+{
+  "schema_version": "3.0",
+  "output_id": "x.x.x",
+  "output_type": "figure",
+  "template_id": "FIG_WATERFALL",
+  "template_version": "1.0.0",
+  "preset_ids": [
+    "best_percent_change"
+  ],
+  "title": {
+    "value": "Best percent change in tumour size",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "population": {
+    "value": "[Analysis population]",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "columns": {
+    "stub_header": {
+      "value": "",
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "groups": [
+      {
+        "id": "A",
+        "label": {
+          "value": "[Treatment A]",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "B",
+        "label": {
+          "value": "[Treatment B]",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      }
+    ],
+    "total": {
+      "enabled": {
+        "value": true,
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "label": {
+        "value": "Total",
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "member_group_ids": [
+        "A",
+        "B"
+      ]
+    }
+  },
+  "row_blocks": [],
+  "footnotes": [
+    {
+      "id": "FN_REF",
+      "marker": null,
+      "text": {
+        "value": "Reference lines: [response thresholds]",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q001",
+        "note": "missing study setting: definitions.response_thresholds"
+      }
+    }
+  ],
+  "programming_notes": [
+    {
+      "id": "PN_ORDER",
+      "marker": null,
+      "text": {
+        "value": "Order bars from largest increase to largest decrease; one bar per subject with a post-baseline assessment.",
+        "source": "template_default",
+        "status": "resolved"
+      }
+    }
+  ],
+  "figure": {
+    "plot_type": "WATERFALL",
+    "x_axis": {
+      "label": {
+        "value": "Subjects",
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    },
+    "y_axis": {
+      "label": {
+        "value": "Best percentage change from baseline (%)",
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    },
+    "legend": {
+      "value": [
+        "[Treatment A] (N=xx)",
+        "[Treatment B] (N=xx)"
+      ],
+      "source": "study_setting",
+      "status": "resolved"
+    },
+    "panels": {
+      "value": [
+        "[Treatment A]",
+        "[Treatment B]"
+      ],
+      "source": "study_setting",
+      "status": "resolved"
+    },
+    "reference_lines": {
+      "value": [
+        "y = 20",
+        "y = -30"
+      ],
+      "source": "template_default",
+      "status": "needs_review"
+    },
+    "annotations": {
+      "value": [
+        "CR",
+        "PR",
+        "SD",
+        "PD",
+        "NE"
+      ],
+      "source": "template_default",
+      "status": "needs_review"
+    }
+  },
+  "listing": null,
+  "config": {
+    "panel_by_group": true
+  },
+  "page": {
+    "orientation": "landscape",
+    "paper": "letter",
+    "font": "Courier New",
+    "font_size_pt": 9,
+    "include_programming_notes": true
+  },
+  "issues": [
+    {
+      "question_id": "Q001",
+      "element_path": "footnotes[FN_REF]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.response_thresholds (needed for: Reference lines: [response thresholds]).",
+      "answer": null
+    }
+  ],
+  "provenance": {
+    "content_list_entry": {
+      "entry_id": "REF_FIG_WATERFALL__best_percent_change",
+      "original_tfl_number": "x.x.x",
+      "output_type": "figure",
+      "original_title": "Best percent change in tumour size",
+      "population": "[Analysis population]"
+    },
+    "template_file_sha256": "df7769126ec68db394ab990d722975349e1a3dbbed7633257c93782c7760f472",
+    "preset_file_sha256": {
+      "best_percent_change": "104ce397865322b5aa92ee112151869922ea1e65242bd6693515ea6c7810f485"
+    },
+    "style_guide_version": "1.1.0",
+    "study_settings_version": "REFERENCE@1.0.0",
+    "match": {
+      "selected": "FIG_WATERFALL",
+      "candidates": [],
+      "explanation": "Reference shell: template and preset chosen directly (no matching)."
+    },
+    "generated_by": "tools/build_spec.py (rule-based); config: panel_by_group=True (template default)"
+  }
+}

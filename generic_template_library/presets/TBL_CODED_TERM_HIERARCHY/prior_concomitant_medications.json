@@ -1,0 +1,64 @@
+{
+  "preset_id": "prior_concomitant_medications",
+  "template_id": "TBL_CODED_TERM_HIERARCHY",
+  "version": "1.0.0",
+  "name": "Prior / concomitant / subsequent medications by ATC class and preferred name",
+  "keywords": [
+    "prior medications",
+    "concomitant medications"
+  ],
+  "aliases": [
+    "prior medication",
+    "concomitant medication",
+    "medications",
+    "ATC",
+    "WHO Drug",
+    "therapeutic class",
+    "preferred name",
+    "subsequent anticancer"
+  ],
+  "defaults": {
+    "row_blocks": [
+      {
+        "block_id": "any",
+        "block_type": "any_row",
+        "label": "Subjects with at least one medication"
+      },
+      {
+        "block_id": "terms",
+        "block_type": "coded_hierarchy",
+        "label": "Medication terms",
+        "levels": [
+          "ATC Class",
+          "Preferred Name"
+        ],
+        "dictionary": "WHO Drug version {settings:coding.whodrug_version}",
+        "sort_rule": "Descending frequency in the Total column (first group if no Total); ties alphabetical",
+        "note": "ATC level (2, 3 or 4) differs across sources; confirm."
+      }
+    ],
+    "footnotes": [
+      {
+        "id": "FN_DICT",
+        "marker": null,
+        "text": "Medications are coded using WHO Drug version {settings:coding.whodrug_version}."
+      },
+      {
+        "id": "FN_PERIOD",
+        "marker": null,
+        "text": "Prior / concomitant classification: {settings:definitions.medication_period_definition}"
+      }
+    ]
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "PVCNA003_T_14_3_11_1",
+    "PVCNA003_T_14_3_9",
+    "ARV471BC201_T_14_1_9",
+    "ARV471BC201_T_14_1_10",
+    "CPXPOM001_T_14_1_6_1_1",
+    "WTX330X2101_T_14_1_8_2_1",
+    "WTX330X2101_T_14_1_8_2_2",
+    "SP11631_T_14_2_8"
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "preset_id": "disease_history_records",
+  "template_id": "LST_SUBJECT_RECORDS",
+  "version": "1.0.0",
+  "name": "Disease history and prior procedure records",
+  "keywords": [
+    "disease characteristics"
+  ],
+  "aliases": [
+    "diagnosis",
+    "cancer history",
+    "disease staging",
+    "surgery",
+    "radiation",
+    "procedures",
+    "molecular"
+  ],
+  "defaults": {
+    "listing": {
+      "record_grain": "subject_event",
+      "fields": [
+        {
+          "id": "Treatment_group",
+          "label": "Treatment group",
+          "kinds": [
+            "group"
+          ]
+        },
+        {
+          "id": "Subject_ID",
+          "label": "Subject ID",
+          "kinds": [
+            "subject_id"
+          ]
+        },
+        {
+          "id": "System_organ_class",
+          "label": "System organ class",
+          "kinds": [
+            "coded_term"
+          ]
+        },
+        {
+          "id": "Preferred_term",
+          "label": "Preferred term",
+          "kinds": [
+            "coded_term"
+          ]
+        },
+        {
+          "id": "Start_date__study_day",
+          "label": "Start date (study day)",
+          "kinds": [
+            "date"
+          ]
+        },
+        {
+          "id": "Site___location",
+          "label": "Site / location",
+          "kinds": [
+            "text"
+          ]
+        }
+      ],
+      "sort_keys": [
+        "Treatment group",
+        "Subject ID",
+        "Start date (study day)"
+      ],
+      "group_by": [
+        "Treatment group"
+      ]
+    }
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "ARV471BC201_L_16_2_4_3",
+    "ARV471BC201_L_16_2_4_4",
+    "ARV471BC201_L_16_2_4_5",
+    "ARV471BC201_L_16_2_6_5",
+    "ARV471BC201_L_16_2_6_7",
+    "ARV471BC201_L_16_2_6_8",
+    "CPXPOM001_L_16_2_4_3_1",
+    "CPXPOM001_L_16_2_4_9_1",
+    "CPXPOM001_L_16_2_6_5_2",
+    "PVCNA003_L_16_2_19",
+    "SP11631_L_16_2_2_2",
+    "SP11631_L_16_2_2_3",
+    "WTX330X2101_L_16_4_2_2_1",
+    "WTX330X2101_L_16_4_2_2_2",
+    "WTX330X2101_L_16_4_3_2",
+    "WTX330X2101_L_16_4_3_3",
+    "WTX330X2101_L_16_4_4_2"
+  ],
+  "source_frequency": {
+    "studies": [
+      "ARV-471-BC-201",
+      "CPX-POM-001",
+      "P-VCNA-003",
+      "SP11631",
+      "WTX-330x2101"
+    ],
+    "field_studies": {
+      "Treatment group": [
+        "CPX-POM-001",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "Subject ID": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "P-VCNA-003",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "System organ class": [
+        "CPX-POM-001",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "Preferred term": [
+        "CPX-POM-001",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "Start date (study day)": [
+        "CPX-POM-001",
+        "WTX-330x2101"
+      ],
+      "Site / location": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "P-VCNA-003",
+        "WTX-330x2101"
+      ]
+    },
+    "grain_counts": {
+      "subject": 7,
+      "subject_event": 8,
+      "subject_visit": 1,
+      "subject_param_visit": 1
+    }
+  }
+}

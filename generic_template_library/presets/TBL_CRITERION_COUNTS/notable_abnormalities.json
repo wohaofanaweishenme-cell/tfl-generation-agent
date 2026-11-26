@@ -1,0 +1,71 @@
+{
+  "preset_id": "notable_abnormalities",
+  "template_id": "TBL_CRITERION_COUNTS",
+  "version": "1.0.0",
+  "name": "Clinically notable abnormalities (thresholds)",
+  "keywords": [
+    "notable abnormalities"
+  ],
+  "aliases": [
+    "clinically significant",
+    "notable",
+    "liver function",
+    "xULN",
+    "worsening",
+    "on-treatment worsening"
+  ],
+  "defaults": {
+    "row_blocks": [
+      {
+        "block_id": "thr",
+        "block_type": "criterion",
+        "label": "Notable abnormalities",
+        "items": [
+          {
+            "label": "[Parameter 1]",
+            "indent": 0,
+            "kind": "header"
+          },
+          {
+            "label": "[Criterion 1]",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "[Criterion 2]",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "[Parameter 2]",
+            "indent": 0,
+            "kind": "header"
+          },
+          {
+            "label": "[Criterion 1]",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "...",
+            "indent": 1,
+            "kind": "header"
+          }
+        ]
+      }
+    ],
+    "footnotes": [
+      {
+        "id": "FN_THR",
+        "marker": null,
+        "text": "Criteria are not mutually exclusive; a subject may be counted in more than one category. Criteria definitions: {settings:definitions.notable_criteria}"
+      }
+    ]
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "ARV471BC201_T_14_3_7_2_2",
+    "WTX330X2101_T_14_3_7_2_7",
+    "WTX330X2101_T_14_3_8_3"
+  ]
+}

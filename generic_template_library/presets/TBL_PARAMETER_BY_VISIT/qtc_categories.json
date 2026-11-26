@@ -1,0 +1,50 @@
+{
+  "preset_id": "qtc_categories",
+  "template_id": "TBL_PARAMETER_BY_VISIT",
+  "version": "1.0.0",
+  "name": "QTc threshold categories",
+  "keywords": [
+    "ecg"
+  ],
+  "aliases": [
+    "QTc",
+    "QTcF",
+    "QTcB",
+    "QTcF categories",
+    "interval clinically significant"
+  ],
+  "defaults": {
+    "row_blocks": [
+      {
+        "block_id": "qtc",
+        "block_type": "parameter_visit",
+        "label": "QTc",
+        "cell_type": "categorical",
+        "parameters": [
+          "QTcF interval"
+        ],
+        "visits_from_settings": true,
+        "categories": [
+          "> 450 msec",
+          "> 480 msec",
+          "> 500 msec",
+          "Increase from baseline > 30 msec",
+          "Increase from baseline > 60 msec"
+        ]
+      }
+    ],
+    "footnotes": [
+      {
+        "id": "FN_QTC",
+        "marker": null,
+        "text": "Categories are cumulative and not mutually exclusive."
+      }
+    ]
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "ARV471BC201_T_14_3_8_2",
+    "SP11631_T_14_5_4_4",
+    "WTX330X2101_T_14_3_9_3"
+  ]
+}

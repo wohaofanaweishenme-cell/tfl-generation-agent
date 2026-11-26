@@ -1,0 +1,109 @@
+{
+  "preset_id": "best_overall_response",
+  "template_id": "TBL_RESPONSE_RATE",
+  "version": "1.0.0",
+  "name": "Best overall response and response rates",
+  "keywords": [
+    "response rate"
+  ],
+  "aliases": [
+    "best overall response",
+    "BOR",
+    "objective response rate",
+    "ORR",
+    "disease control rate",
+    "DCR",
+    "clinical benefit rate",
+    "RECIST"
+  ],
+  "defaults": {
+    "row_blocks": [
+      {
+        "block_id": "bor",
+        "block_type": "endpoint",
+        "label": "Best overall response",
+        "items": [
+          {
+            "label": "Best overall response",
+            "indent": 0,
+            "kind": "header"
+          },
+          {
+            "label": "Complete response (CR)",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Partial response (PR)",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Stable disease (SD)",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Progressive disease (PD)",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Not evaluable (NE)",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Objective response rate (CR + PR)",
+            "indent": 0,
+            "kind": "n_pct"
+          },
+          {
+            "label": "95% CI",
+            "indent": 1,
+            "kind": "ci"
+          },
+          {
+            "label": "{settings:comparisons.estimate_label}",
+            "indent": 1,
+            "kind": "estimate_ci",
+            "where": "comparison"
+          },
+          {
+            "label": "p-value",
+            "indent": 1,
+            "kind": "p_value",
+            "where": "comparison"
+          },
+          {
+            "label": "Disease control rate (CR + PR + SD)",
+            "indent": 0,
+            "kind": "n_pct"
+          },
+          {
+            "label": "95% CI",
+            "indent": 1,
+            "kind": "ci"
+          }
+        ]
+      }
+    ],
+    "footnotes": [
+      {
+        "id": "FN_CRIT",
+        "marker": null,
+        "text": "Response assessed per {settings:definitions.response_criteria}."
+      }
+    ]
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "ARV471BC201_T_14_2_2_1_1",
+    "ARV471BC201_T_14_2_2_1_2",
+    "PVCNA003_T_14_2_2_13",
+    "PVCNA003_T_14_2_2_7",
+    "WTX330X2101_T_14_2_1_1",
+    "WTX330X2101_T_14_2_1_2_1",
+    "WTX330X2101_T_14_2_1_2_2"
+  ]
+}

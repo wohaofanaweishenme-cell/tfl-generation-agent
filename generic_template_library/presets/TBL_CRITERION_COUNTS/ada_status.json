@@ -1,0 +1,81 @@
+{
+  "preset_id": "ada_status",
+  "template_id": "TBL_CRITERION_COUNTS",
+  "version": "1.0.0",
+  "name": "Anti-drug antibody status",
+  "keywords": [
+    "anti-drug antibodies"
+  ],
+  "aliases": [
+    "ADA",
+    "anti-drug antibody",
+    "immunogenicity"
+  ],
+  "defaults": {
+    "row_blocks": [
+      {
+        "block_id": "ada",
+        "block_type": "criterion",
+        "label": "ADA",
+        "items": [
+          {
+            "label": "ADA at baseline",
+            "indent": 0,
+            "kind": "header"
+          },
+          {
+            "label": "Positive",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Negative",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Unknown",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "ADA post-baseline",
+            "indent": 0,
+            "kind": "header"
+          },
+          {
+            "label": "At least one positive",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "All negative",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Treatment-induced ADA",
+            "indent": 0,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Treatment-boosted ADA",
+            "indent": 0,
+            "kind": "n_pct"
+          }
+        ]
+      }
+    ],
+    "footnotes": [
+      {
+        "id": "FN_ADA",
+        "marker": null,
+        "text": "ADA definitions: {settings:definitions.ada_definitions}"
+      }
+    ]
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "WTX330X2101_T_14_4_3_1"
+  ]
+}

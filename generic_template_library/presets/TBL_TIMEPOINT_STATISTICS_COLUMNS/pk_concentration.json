@@ -1,0 +1,52 @@
+{
+  "preset_id": "pk_concentration",
+  "template_id": "TBL_TIMEPOINT_STATISTICS_COLUMNS",
+  "version": "1.0.0",
+  "name": "Plasma concentration by nominal timepoint",
+  "keywords": [
+    "pharmacokinetic concentration"
+  ],
+  "aliases": [
+    "plasma concentration",
+    "serum concentration",
+    "concentration",
+    "PK",
+    "autoimmune values"
+  ],
+  "defaults": {
+    "columns": {
+      "statistic_columns": [
+        "n",
+        "mean_sd",
+        "median",
+        "min_max",
+        "geo_mean",
+        "geo_cv"
+      ]
+    },
+    "row_blocks": [
+      {
+        "block_id": "conc",
+        "block_type": "timepoint_stats",
+        "label": "Concentration",
+        "parameters": [
+          "[Analyte 1] ([unit])"
+        ],
+        "timepoints_from_settings": true
+      }
+    ],
+    "footnotes": [
+      {
+        "id": "FN_BLQ",
+        "marker": null,
+        "text": "Values below the lower limit of quantification: {settings:definitions.blq_handling}"
+      }
+    ]
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "ARV471BC201_T_14_3_10",
+    "OMO10301_T_14_3_2_4",
+    "WTX330X2101_T_14_4_1_1"
+  ]
+}

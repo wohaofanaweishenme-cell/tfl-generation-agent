@@ -1,0 +1,37 @@
+{
+  "study_id": "REFERENCE",
+  "version": "1.0.0",
+  "confirmed_by": "Neutral reference settings for the template library; not a real study. Generic group labels only; no analysis definitions, so every study-specific element shows as unresolved.",
+  "groups": [
+    {
+      "id": "A",
+      "label": "[Treatment A]"
+    },
+    {
+      "id": "B",
+      "label": "[Treatment B]"
+    }
+  ],
+  "total_column": {
+    "enabled": true,
+    "label": "Total",
+    "member_group_ids": [
+      "A",
+      "B"
+    ]
+  },
+  "populations": {
+    "[Analysis population]": "[definition from SAP]"
+  },
+  "comparisons": {
+    "response_rate": {
+      "enabled": true
+    },
+    "time_to_event": {
+      "enabled": true
+    },
+    "continuous": {
+      "enabled": true
+    }
+  }
+}

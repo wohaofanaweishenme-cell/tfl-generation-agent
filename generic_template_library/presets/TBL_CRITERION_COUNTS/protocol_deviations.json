@@ -1,0 +1,77 @@
+{
+  "preset_id": "protocol_deviations",
+  "template_id": "TBL_CRITERION_COUNTS",
+  "version": "1.0.0",
+  "name": "Protocol deviations",
+  "keywords": [
+    "protocol deviations"
+  ],
+  "aliases": [
+    "deviation",
+    "important protocol deviations",
+    "major protocol deviations",
+    "deviations from the clinical protocol"
+  ],
+  "defaults": {
+    "row_blocks": [
+      {
+        "block_id": "dev",
+        "block_type": "criterion",
+        "label": "Protocol deviations",
+        "items": [
+          {
+            "label": "Subjects with at least one protocol deviation",
+            "indent": 0,
+            "kind": "n_pct"
+          },
+          {
+            "label": "[Deviation category 1]",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "[Deviation category 2]",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "...",
+            "indent": 1,
+            "kind": "header"
+          },
+          {
+            "label": "Subjects with at least one major protocol deviation",
+            "indent": 0,
+            "kind": "n_pct"
+          },
+          {
+            "label": "[Deviation category 1]",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "...",
+            "indent": 1,
+            "kind": "header"
+          }
+        ]
+      }
+    ],
+    "programming_notes": [
+      {
+        "id": "PN_DEVCAT",
+        "marker": null,
+        "text": "Display only deviation categories with at least one subject, in the order of the protocol deviation plan."
+      }
+    ]
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "ARV471BC201_T_14_1_3",
+    "CPXPOM001_T_14_1_4_1",
+    "SP11631_T_14_1_3_1",
+    "SP11631_T_14_1_3_2",
+    "WTX330X2101_T_14_1_3_1",
+    "WTX330X2101_T_14_1_3_2"
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "preset_id": "event_time_summary",
+  "template_id": "TBL_TIME_TO_EVENT",
+  "version": "1.0.0",
+  "name": "Event-time summary",
+  "keywords": [
+    "time to event"
+  ],
+  "aliases": [
+    "overall survival",
+    "progression-free survival",
+    "recurrence-free survival",
+    "duration of response",
+    "time to progression",
+    "OS",
+    "PFS",
+    "RFS",
+    "DOR",
+    "TTP"
+  ],
+  "defaults": {
+    "row_blocks": [
+      {
+        "block_id": "tte",
+        "block_type": "endpoint",
+        "label": "Event time",
+        "items": [
+          {
+            "label": "Subjects included",
+            "indent": 0,
+            "kind": "n"
+          },
+          {
+            "label": "Events",
+            "indent": 0,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Censored",
+            "indent": 0,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Time to event ({settings:time_unit})",
+            "indent": 0,
+            "kind": "header"
+          },
+          {
+            "label": "25th percentile (95% CI)",
+            "indent": 1,
+            "kind": "median_ci"
+          },
+          {
+            "label": "Median (95% CI)",
+            "indent": 1,
+            "kind": "median_ci"
+          },
+          {
+            "label": "75th percentile (95% CI)",
+            "indent": 1,
+            "kind": "median_ci"
+          },
+          {
+            "label": "Min, Max",
+            "indent": 1,
+            "kind": "min_max"
+          },
+          {
+            "label": "{settings:comparisons.estimate_label}",
+            "indent": 0,
+            "kind": "estimate_ci",
+            "where": "comparison"
+          },
+          {
+            "label": "p-value",
+            "indent": 0,
+            "kind": "p_value",
+            "where": "comparison"
+          }
+        ]
+      }
+    ]
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "CPXPOM001_T_14_2_3_2",
+    "OMO10301_T_14_2_1_1",
+    "PVCNA003_T_14_2_1_1",
+    "PVCNA003_T_14_2_2_21"
+  ]
+}

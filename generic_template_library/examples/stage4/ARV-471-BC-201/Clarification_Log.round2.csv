@@ -1,0 +1,14 @@
+﻿output_id,output_type,question_id,kind,element_path,question
+14.1.11,table,Q001,missing,row_blocks[duration].unit,Please confirm study setting(s): definitions.exposure_duration_unit (needed for: [exposure duration unit]).
+14.1.11,table,Q002,missing,row_blocks[cum_dose].unit,Please confirm study setting(s): definitions.dose_unit (needed for: [dose unit]).
+14.1.11,table,Q003,missing,footnotes[FN_DUR],Please confirm study setting(s): definitions.exposure_duration_definition (needed for: Duration of exposure: [exposure duration definition]).
+14.1.11,table,Q004,missing,footnotes[FN_RDI],Please confirm study setting(s): definitions.relative_dose_intensity_definition (needed for: Relative dose intensity: [relative dose intensity definition]).
+14.1.11,table,Q005,missing,footnotes[FN_COMPL],Please confirm study setting(s): definitions.compliance_definition (needed for: Compliance: [compliance definition]).
+14.1.11,table,Q006,missing,footnotes[FN_DENOM],Please confirm study setting(s): definitions.percentage_denominator (needed for: Percentages are based on [percentage denominator].).
+14.3.2.8,table,Q007,missing,footnotes[FN_DENOM],Please confirm study setting(s): definitions.percentage_denominator (needed for: Percentages are based on [percentage denominator].).
+14.3.2.10,table,Q008,missing,footnotes[FN_DENOM],Please confirm study setting(s): definitions.percentage_denominator (needed for: Percentages are based on [percentage denominator].).
+14.3.7.1,table,Q009,missing,footnotes[FN_BASE],Please confirm study setting(s): definitions.baseline_definition (needed for: Baseline: [baseline definition]).
+14.2.1.2.1,figure,Q010,missing,footnotes[FN_BOX],Please confirm study setting(s): definitions.whisker_rule (needed for: Box: 25th to 75th percentile; line: median; marker: mean; whiskers: [whisker rule].).
+14.2.3.1,figure,Q011,missing,footnotes[FN_REF],Please confirm study setting(s): definitions.response_thresholds (needed for: Reference lines: [response thresholds]).
+14.2.3.2.2,figure,Q012,missing,figure.x_axis.label,Please confirm study setting(s): time_unit (needed for: Time since first dose ([time unit])).
+14.3.2.8,figure,Q013,missing,footnotes[FN_TERMS],Please confirm study setting(s): definitions.tornado_term_selection (needed for: Terms shown: [tornado term selection]).

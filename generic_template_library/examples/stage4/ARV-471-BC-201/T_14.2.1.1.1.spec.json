@@ -1,0 +1,306 @@
+{
+  "schema_version": "3.0",
+  "output_id": "14.2.1.1.1",
+  "output_type": "table",
+  "template_id": "TBL_CONTINUOUS_COMPARISON",
+  "template_version": "1.0.0",
+  "preset_ids": [
+    "change_from_baseline_model"
+  ],
+  "title": {
+    "value": "Summary of Ki-67 Percentage Change from Baseline at C1D15 with Central Ki-67 as a Covariate",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "population": {
+    "value": "Ki-67 Evaluable Set",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "columns": {
+    "stub_header": {
+      "value": "Statistic",
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "groups": [
+      {
+        "id": "ARV",
+        "label": {
+          "value": "ARV-471 200 mg",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "ANA",
+        "label": {
+          "value": "Anastrozole 1 mg",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      }
+    ],
+    "total": {
+      "enabled": {
+        "value": false,
+        "source": "template_default",
+        "status": "needs_review",
+        "note": "Total column suppressed: between-group comparison table"
+      }
+    },
+    "comparison_columns": {
+      "value": [
+        "Difference (80% CI)",
+        "p-value"
+      ],
+      "source": "study_setting",
+      "status": "resolved"
+    }
+  },
+  "row_blocks": [
+    {
+      "block_id": "cfb",
+      "block_type": "endpoint",
+      "label": {
+        "value": "Endpoint",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "items": {
+        "value": [
+          {
+            "label": "[Endpoint] at baseline",
+            "indent": 0,
+            "kind": "header"
+          },
+          {
+            "label": "n",
+            "indent": 1,
+            "kind": "n"
+          },
+          {
+            "label": "Mean (SD)",
+            "indent": 1,
+            "kind": "mean_sd"
+          },
+          {
+            "label": "Median",
+            "indent": 1,
+            "kind": "median"
+          },
+          {
+            "label": "Min, Max",
+            "indent": 1,
+            "kind": "min_max"
+          },
+          {
+            "label": "[Endpoint] at [time point]",
+            "indent": 0,
+            "kind": "header"
+          },
+          {
+            "label": "n",
+            "indent": 1,
+            "kind": "n"
+          },
+          {
+            "label": "Mean (SD)",
+            "indent": 1,
+            "kind": "mean_sd"
+          },
+          {
+            "label": "Median",
+            "indent": 1,
+            "kind": "median"
+          },
+          {
+            "label": "Min, Max",
+            "indent": 1,
+            "kind": "min_max"
+          },
+          {
+            "label": "Change from baseline",
+            "indent": 0,
+            "kind": "header"
+          },
+          {
+            "label": "n",
+            "indent": 1,
+            "kind": "n"
+          },
+          {
+            "label": "Mean (SD)",
+            "indent": 1,
+            "kind": "mean_sd"
+          },
+          {
+            "label": "Median",
+            "indent": 1,
+            "kind": "median"
+          },
+          {
+            "label": "Min, Max",
+            "indent": 1,
+            "kind": "min_max"
+          },
+          {
+            "label": "LS mean (SE)",
+            "indent": 1,
+            "kind": "lsm_se",
+            "where": "both"
+          },
+          {
+            "label": "[xx]% CI for LS mean",
+            "indent": 1,
+            "kind": "ci",
+            "where": "both"
+          },
+          {
+            "label": "p-value",
+            "indent": 1,
+            "kind": "p_value",
+            "where": "comparison"
+          }
+        ],
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    }
+  ],
+  "footnotes": [
+    {
+      "id": "FN_MODEL",
+      "marker": null,
+      "text": {
+        "value": "Estimation method: [ANCOVA model from SAP section x]",
+        "source": "study_setting",
+        "status": "resolved"
+      }
+    }
+  ],
+  "programming_notes": [],
+  "figure": null,
+  "listing": null,
+  "config": {
+    "comparison": "columns",
+    "repeat_by_period": false
+  },
+  "page": {
+    "orientation": "landscape",
+    "paper": "letter",
+    "font": "Courier New",
+    "font_size_pt": 9,
+    "include_programming_notes": true
+  },
+  "issues": [],
+  "provenance": {
+    "content_list_entry": {
+      "entry_id": "CL017",
+      "document_id": "SAP_001_05",
+      "original_tfl_number": "14.2.1.1.1",
+      "output_type": "table",
+      "original_title": "Summary of Ki-67 Percentage Change from Baseline at C1D15 with Central Ki-67 as a Covariate",
+      "population": "Ki-67 Evaluable Set"
+    },
+    "template_file_sha256": "b121676be747f28fd64bb7a09f77c7d606bd359e0229379c9ce6eead6a6ec63d",
+    "preset_file_sha256": {
+      "change_from_baseline_model": "7bd30cd49e0db182d87e5e978e5da67ab225abaff7ff4d8217f91ac0da559879"
+    },
+    "style_guide_version": "1.1.0",
+    "study_settings_version": "ARV-471-BC-201@example-0.3",
+    "match": {
+      "selected": "TBL_CONTINUOUS_COMPARISON",
+      "candidates": [
+        {
+          "template_id": "TBL_CONTINUOUS_COMPARISON",
+          "score": 23,
+          "matched_terms": [
+            "change from baseline at",
+            "covariate",
+            "percentage change from baseline",
+            "percentage change from baseline at"
+          ],
+          "negative_terms": [],
+          "preset_id": "change_from_baseline_model",
+          "preset_score": 8
+        },
+        {
+          "template_id": "TBL_CODED_TERM_HIERARCHY",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_CRITERION_COUNTS",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_RESPONSE_RATE",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_SHIFT_CROSSTAB",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_TIMEPOINT_STATISTICS_COLUMNS",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_TIME_TO_EVENT",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_PARAMETER_BY_VISIT",
+          "score": -3,
+          "matched_terms": [
+            "change from baseline"
+          ],
+          "negative_terms": [
+            "at c1d15",
+            "covariate"
+          ],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_VARIABLE_SUMMARY",
+          "score": -4,
+          "matched_terms": [],
+          "negative_terms": [
+            "change from baseline at"
+          ],
+          "preset_id": null,
+          "preset_score": 0
+        }
+      ],
+      "explanation": "Selected TBL_CONTINUOUS_COMPARISON (score 23): title terms change from baseline at, covariate, percentage change from baseline, percentage change from baseline at; preset change_from_baseline_model."
+    },
+    "generated_by": "tools/build_spec.py (rule-based); config: comparison=columns (template default); repeat_by_period=False (template default)"
+  }
+}

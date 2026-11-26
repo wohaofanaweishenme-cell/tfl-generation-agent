@@ -1,0 +1,268 @@
+{
+  "schema_version": "3.0",
+  "output_id": "14.1.3",
+  "output_type": "table",
+  "template_id": "TBL_CODED_TERM_HIERARCHY",
+  "template_version": "1.0.0",
+  "preset_ids": [
+    "medical_history_soc_pt"
+  ],
+  "title": {
+    "value": "Medical History",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "population": {
+    "value": "Full Analysis Set",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "columns": {
+    "stub_header": {
+      "value": "System Organ Class / Preferred Term",
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "groups": [
+      {
+        "id": "ARM1",
+        "label": {
+          "value": "Arm I (Nab-paclitaxel and gemcitabine)",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "ARM2",
+        "label": {
+          "value": "Arm II (VCN-01 with Nab-paclitaxel and gemcitabine)",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      }
+    ],
+    "total": {
+      "enabled": {
+        "value": false,
+        "source": "study_setting",
+        "status": "resolved"
+      }
+    }
+  },
+  "row_blocks": [
+    {
+      "block_id": "any",
+      "block_type": "any_row",
+      "label": {
+        "value": "Subjects with at least one medical history condition",
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    },
+    {
+      "block_id": "terms",
+      "block_type": "coded_hierarchy",
+      "label": {
+        "value": "Medical history terms",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "levels": {
+        "value": [
+          "System Organ Class",
+          "Preferred Term"
+        ],
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "dictionary": {
+        "value": "MedDRA version [meddra version]",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q001",
+        "note": "missing study setting: coding.meddra_version"
+      },
+      "sort_rule": {
+        "value": "Descending frequency in the Total column (first group if no Total); ties alphabetical",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "category_split": {
+        "value": "none",
+        "source": "template_default",
+        "status": "resolved"
+      }
+    }
+  ],
+  "footnotes": [
+    {
+      "id": "FN_DICT",
+      "marker": null,
+      "text": {
+        "value": "Medical history is coded using MedDRA version [meddra version].",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q002",
+        "note": "missing study setting: coding.meddra_version"
+      }
+    },
+    {
+      "id": "FN_DENOM",
+      "marker": null,
+      "text": {
+        "value": "Percentages are based on the number of patients within the column (N).",
+        "source": "study_setting",
+        "status": "resolved"
+      }
+    },
+    {
+      "id": "FN_COUNT_ONCE",
+      "marker": null,
+      "text": {
+        "value": "A subject is counted only once per System Organ Class and Preferred Term.",
+        "source": "template_default",
+        "status": "resolved"
+      }
+    }
+  ],
+  "programming_notes": [
+    {
+      "id": "PN_SORT",
+      "marker": null,
+      "text": {
+        "value": "Sort rule: Descending frequency in the Total column (first group if no Total); ties alphabetical.",
+        "source": "template_default",
+        "status": "resolved"
+      }
+    }
+  ],
+  "figure": null,
+  "listing": null,
+  "config": {
+    "hierarchy_depth": 2,
+    "category_split": "none",
+    "event_counts": false
+  },
+  "page": {
+    "orientation": "landscape",
+    "paper": "letter",
+    "font": "Courier New",
+    "font_size_pt": 9,
+    "include_programming_notes": true
+  },
+  "issues": [
+    {
+      "question_id": "Q001",
+      "element_path": "row_blocks[terms].dictionary",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): coding.meddra_version (needed for: MedDRA version [meddra version]).",
+      "answer": null
+    },
+    {
+      "question_id": "Q002",
+      "element_path": "footnotes[FN_DICT]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): coding.meddra_version (needed for: Medical history is coded using MedDRA version [meddra version].).",
+      "answer": null
+    }
+  ],
+  "provenance": {
+    "content_list_entry": {
+      "entry_id": "CL_005",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.1.3",
+      "output_type": "table",
+      "original_title": "Medical History",
+      "population": "Full Analysis Set"
+    },
+    "template_file_sha256": "fc30cec50530fce6a74f43f01db50ef1356d21525f1f4909a1301cedc4dcfaf0",
+    "preset_file_sha256": {
+      "medical_history_soc_pt": "f5c68b5ab930335ab8bb2bcb6b772f3e5d109484c9679cdf980be585c7a31d1e"
+    },
+    "style_guide_version": "1.1.0",
+    "study_settings_version": "P-VCNA-003@example-0.3",
+    "match": {
+      "selected": "TBL_CODED_TERM_HIERARCHY",
+      "candidates": [
+        {
+          "template_id": "TBL_CODED_TERM_HIERARCHY",
+          "score": 9,
+          "matched_terms": [
+            "medical history"
+          ],
+          "negative_terms": [],
+          "preset_id": "medical_history_soc_pt",
+          "preset_score": 4
+        },
+        {
+          "template_id": "TBL_CONTINUOUS_COMPARISON",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_CRITERION_COUNTS",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_PARAMETER_BY_VISIT",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_RESPONSE_RATE",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_SHIFT_CROSSTAB",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_TIMEPOINT_STATISTICS_COLUMNS",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_TIME_TO_EVENT",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_VARIABLE_SUMMARY",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        }
+      ],
+      "explanation": "Selected TBL_CODED_TERM_HIERARCHY (score 9): title terms medical history; preset medical_history_soc_pt."
+    },
+    "generated_by": "tools/build_spec.py (rule-based); config: hierarchy_depth=2 (template default); category_split=none (template default); event_counts=False (template default)"
+  }
+}

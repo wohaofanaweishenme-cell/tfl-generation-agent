@@ -1,0 +1,158 @@
+{
+  "template_id": "TBL_TIMEPOINT_STATISTICS_COLUMNS",
+  "version": "1.0.0",
+  "output_type": "table",
+  "name": "Timepoint summary with statistics in columns",
+  "structural_signature": {
+    "S1": "table",
+    "S2": "BY_TIMEPOINT",
+    "S3": [
+      "STATS_COLS"
+    ],
+    "S4": [
+      "PK_DESC",
+      "DESC"
+    ],
+    "S5": [
+      "BY_PARAM_VISIT"
+    ]
+  },
+  "intended_use": "Rows are nominal timepoints within analyte/parameter blocks, columns are statistics (n, Mean (SD), Median, Min, Max, geometric mean, geometric CV%); groups appear as row blocks.",
+  "not_for": "Layouts with groups as columns (parameter-by-visit template); PK parameter summaries (variable summary template).",
+  "keywords": [
+    "pharmacokinetic concentration",
+    "by timepoint"
+  ],
+  "aliases": [
+    "plasma concentration",
+    "serum concentration",
+    "concentration by visit",
+    "concentration by timepoint",
+    "PK concentration"
+  ],
+  "match_cues": {
+    "title_terms": [
+      "concentration",
+      "by timepoint",
+      "autoimmune values"
+    ],
+    "negative_terms": [
+      "parameters",
+      "listing",
+      "plot",
+      "individual"
+    ]
+  },
+  "required_fields": [
+    {
+      "path": "title",
+      "label": "Output title",
+      "allowed_sources": [
+        "content_list"
+      ]
+    },
+    {
+      "path": "population",
+      "label": "Analysis population",
+      "allowed_sources": [
+        "content_list",
+        "study_setting"
+      ]
+    },
+    {
+      "path": "columns.groups",
+      "label": "Treatment groups / cohorts",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    },
+    {
+      "path": "columns.total",
+      "label": "Total column on/off and membership",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    },
+    {
+      "path": "row_blocks[timepoint_stats].timepoints",
+      "label": "Nominal timepoints",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    },
+    {
+      "path": "row_blocks[timepoint_stats].parameters",
+      "label": "Analytes and units",
+      "allowed_sources": [
+        "content_list",
+        "study_setting"
+      ]
+    },
+    {
+      "path": "footnotes[FN_BLQ]",
+      "label": "Handling of values below the limit of quantification",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    }
+  ],
+  "permitted_defaults": [
+    {
+      "path": "columns.stub_header",
+      "value": "from preset",
+      "status_when_used": "resolved",
+      "basis": "House style stub header."
+    },
+    {
+      "path": "columns.statistic_columns",
+      "value": "from preset",
+      "status_when_used": "resolved",
+      "basis": "PK descriptive statistic set used by ARV and WTX."
+    }
+  ],
+  "editable_elements": [
+    "title",
+    "population",
+    "columns.groups[].label",
+    "columns.statistic_columns",
+    "row_blocks[].timepoints",
+    "row_blocks[].parameters",
+    "footnotes",
+    "programming_notes"
+  ],
+  "config_options": {},
+  "presets": [
+    "pk_concentration"
+  ],
+  "skeleton": {
+    "columns": {
+      "stub_header": "Group\n  Analyte (unit)\n    Timepoint"
+    },
+    "programming_notes": [
+      {
+        "id": "PN_GROUPS",
+        "marker": null,
+        "text": "Repeat the timepoint rows for each group and each analyte."
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "source_id": "ARV471BC201_T_14_3_10",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "OMO10301_T_14_3_2_4",
+      "study_id": "OMO-103-01",
+      "fit": "core"
+    },
+    {
+      "source_id": "WTX330X2101_T_14_4_1_1",
+      "study_id": "WTX-330x2101",
+      "fit": "core"
+    }
+  ],
+  "evidence_level": "multi_study",
+  "review_status": "approved"
+}

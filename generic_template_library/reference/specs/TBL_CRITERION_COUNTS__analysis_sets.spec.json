@@ -1,0 +1,185 @@
+{
+  "schema_version": "3.0",
+  "output_id": "x.x.x",
+  "output_type": "table",
+  "template_id": "TBL_CRITERION_COUNTS",
+  "template_version": "1.0.0",
+  "preset_ids": [
+    "analysis_sets"
+  ],
+  "title": {
+    "value": "Analysis sets",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "population": {
+    "value": "[Analysis population]",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "columns": {
+    "stub_header": {
+      "value": "Category",
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "groups": [
+      {
+        "id": "A",
+        "label": {
+          "value": "[Treatment A]",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "B",
+        "label": {
+          "value": "[Treatment B]",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      }
+    ],
+    "total": {
+      "enabled": {
+        "value": true,
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "label": {
+        "value": "Total",
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "member_group_ids": [
+        "A",
+        "B"
+      ]
+    }
+  },
+  "row_blocks": [
+    {
+      "block_id": "sets",
+      "block_type": "criterion",
+      "label": {
+        "value": "Analysis sets",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "items": {
+        "value": [
+          {
+            "label": "Enrolled",
+            "indent": 0,
+            "kind": "n"
+          },
+          {
+            "label": "[Analysis set 1]",
+            "indent": 0,
+            "kind": "n_pct"
+          },
+          {
+            "label": "[Analysis set 2]",
+            "indent": 0,
+            "kind": "n_pct"
+          },
+          {
+            "label": "[Analysis set 3]",
+            "indent": 0,
+            "kind": "n_pct"
+          }
+        ],
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    }
+  ],
+  "footnotes": [
+    {
+      "id": "FN_SETS",
+      "marker": null,
+      "text": {
+        "value": "Analysis set definitions: [analysis set definitions]",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q001",
+        "note": "missing study setting: definitions.analysis_set_definitions"
+      }
+    },
+    {
+      "id": "FN_DENOM",
+      "marker": null,
+      "text": {
+        "value": "Percentages are based on [percentage denominator].",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q002",
+        "note": "missing study setting: definitions.percentage_denominator"
+      }
+    }
+  ],
+  "programming_notes": [
+    {
+      "id": "PN_ROWS",
+      "marker": null,
+      "text": {
+        "value": "Display all listed categories even when the count is zero; indented rows are sub-categories of the row above.",
+        "source": "template_default",
+        "status": "resolved"
+      }
+    }
+  ],
+  "figure": null,
+  "listing": null,
+  "config": {
+    "column_layout": "groups",
+    "event_counts": false
+  },
+  "page": {
+    "orientation": "landscape",
+    "paper": "letter",
+    "font": "Courier New",
+    "font_size_pt": 9,
+    "include_programming_notes": true
+  },
+  "issues": [
+    {
+      "question_id": "Q001",
+      "element_path": "footnotes[FN_SETS]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.analysis_set_definitions (needed for: Analysis set definitions: [analysis set definitions]).",
+      "answer": null
+    },
+    {
+      "question_id": "Q002",
+      "element_path": "footnotes[FN_DENOM]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.percentage_denominator (needed for: Percentages are based on [percentage denominator].).",
+      "answer": null
+    }
+  ],
+  "provenance": {
+    "content_list_entry": {
+      "entry_id": "REF_TBL_CRITERION_COUNTS__analysis_sets",
+      "original_tfl_number": "x.x.x",
+      "output_type": "table",
+      "original_title": "Analysis sets",
+      "population": "[Analysis population]"
+    },
+    "template_file_sha256": "c10c4031b1aa915e97dd2e341392695fd58d875f26560cae351e6c0fe0299b73",
+    "preset_file_sha256": {
+      "analysis_sets": "dff223a69f47869c8b5e6bab79077721a019382b32e78a77d162d11413b727b5"
+    },
+    "style_guide_version": "1.1.0",
+    "study_settings_version": "REFERENCE@1.0.0",
+    "match": {
+      "selected": "TBL_CRITERION_COUNTS",
+      "candidates": [],
+      "explanation": "Reference shell: template and preset chosen directly (no matching)."
+    },
+    "generated_by": "tools/build_spec.py (rule-based); config: column_layout=groups (template default); event_counts=False (template default)"
+  }
+}

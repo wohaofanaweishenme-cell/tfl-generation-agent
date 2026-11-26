@@ -1,0 +1,268 @@
+{
+  "template_id": "TBL_SHIFT_CROSSTAB",
+  "version": "1.0.0",
+  "output_type": "table",
+  "name": "Shift / cross-classification table",
+  "structural_signature": {
+    "S1": "table",
+    "S2": "CROSSTAB",
+    "S3": [
+      "CATEGORY_COLS",
+      "GROUPS"
+    ],
+    "S4": [
+      "SUBJ_N_PCT"
+    ],
+    "S5": [
+      "BY_GROUP_BLOCK",
+      "BY_PARAM_VISIT",
+      "NONE"
+    ]
+  },
+  "intended_use": "Cross-classification of subjects by two categorical assessments: baseline category or grade (rows) by post-baseline / worst post-baseline category (columns), or two raters/methods (concordance), within treatment-group row blocks and optionally per parameter and visit.",
+  "not_for": "Single categorical distributions by visit (parameter-by-visit template); counts of non-exclusive criteria (criterion-count template).",
+  "keywords": [
+    "shift",
+    "cross-classification",
+    "concordance"
+  ],
+  "aliases": [
+    "shift table",
+    "shift from baseline",
+    "baseline to worst post-baseline",
+    "shift change",
+    "concordance",
+    "by site"
+  ],
+  "match_cues": {
+    "title_terms": [
+      "shift",
+      "concordance",
+      "baseline to worst",
+      "baseline to post",
+      "by site"
+    ],
+    "negative_terms": [
+      "listing",
+      "plot",
+      "system organ class"
+    ]
+  },
+  "required_fields": [
+    {
+      "path": "title",
+      "label": "Output title",
+      "allowed_sources": [
+        "content_list"
+      ]
+    },
+    {
+      "path": "population",
+      "label": "Analysis population",
+      "allowed_sources": [
+        "content_list",
+        "study_setting"
+      ]
+    },
+    {
+      "path": "columns.groups",
+      "label": "Treatment groups / cohorts",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    },
+    {
+      "path": "columns.total",
+      "label": "Total column on/off and membership",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    },
+    {
+      "path": "row_blocks[crosstab].row_categories",
+      "label": "Row categories",
+      "allowed_sources": [
+        "study_setting",
+        "content_list"
+      ]
+    },
+    {
+      "path": "columns.category_columns",
+      "label": "Column categories",
+      "allowed_sources": [
+        "study_setting",
+        "content_list"
+      ]
+    },
+    {
+      "path": "row_blocks[crosstab].parameters",
+      "label": "Parameters",
+      "allowed_sources": [
+        "content_list",
+        "study_setting"
+      ]
+    },
+    {
+      "path": "footnotes[FN_DENOM]",
+      "label": "Percentage denominator rule",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    }
+  ],
+  "permitted_defaults": [
+    {
+      "path": "columns.stub_header",
+      "value": "from preset",
+      "status_when_used": "resolved",
+      "basis": "House style stub header."
+    },
+    {
+      "path": "row_blocks[crosstab].row_categories / columns.category_columns",
+      "value": "from preset",
+      "status_when_used": "needs_review",
+      "basis": "Category scales distilled from sources (CTCAE grade, low/normal/high, clinical evaluation)."
+    }
+  ],
+  "editable_elements": [
+    "title",
+    "population",
+    "columns.groups[].label",
+    "columns.category_columns",
+    "row_blocks[].row_categories",
+    "row_blocks[].parameters",
+    "row_blocks[].visits",
+    "footnotes",
+    "programming_notes",
+    "config"
+  ],
+  "config_options": {
+    "layout": {
+      "values": [
+        "matrix",
+        "long_transitions"
+      ],
+      "default": "matrix",
+      "description": "matrix: row categories x column categories within group row blocks; long_transitions: category counts by visit followed by 'A -> B' transition rows under group columns."
+    }
+  },
+  "presets": [
+    "ctcae_grade_shift",
+    "normal_range_shift",
+    "clinical_evaluation_shift",
+    "concordance"
+  ],
+  "skeleton": {
+    "columns": {
+      "stub_header": "Group\n  Parameter\n    Baseline category"
+    },
+    "footnotes": [
+      {
+        "id": "FN_DENOM",
+        "marker": null,
+        "text": "Percentages are based on {settings:definitions.percentage_denominator}."
+      },
+      {
+        "id": "FN_BASE",
+        "marker": null,
+        "text": "Baseline: {settings:definitions.baseline_definition}"
+      }
+    ],
+    "programming_notes": [
+      {
+        "id": "PN_SHIFT",
+        "marker": null,
+        "text": "Repeat the cross-classification for each group, parameter and post-baseline visit shown; include Missing and Total rows and columns."
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "source_id": "ARV471BC201_T_14_2_1_5_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_2_1_5_2",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_2_1_5_3",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_3_7_2_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "CPXPOM001_T_14_3_2_1_2_1",
+      "study_id": "CPX-POM-001",
+      "fit": "core"
+    },
+    {
+      "source_id": "CPXPOM001_T_14_3_2_1_4_1",
+      "study_id": "CPX-POM-001",
+      "fit": "core"
+    },
+    {
+      "source_id": "CPXPOM001_T_14_3_4_3_1",
+      "study_id": "CPX-POM-001",
+      "fit": "core"
+    },
+    {
+      "source_id": "PVCNA003_T_14_3_4_6",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "long layout with transition rows"
+    },
+    {
+      "source_id": "PVCNA003_T_14_3_5_2",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "long layout with transition rows"
+    },
+    {
+      "source_id": "PVCNA003_T_14_3_6",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "long layout with transition rows"
+    },
+    {
+      "source_id": "SP11631_T_14_1_1_2",
+      "study_id": "SP11631",
+      "fit": "config_extension",
+      "config_used": "rows_are_sites",
+      "note": "site x disposition-status counts expressed as a cross-classification (rows = site, columns = status)"
+    },
+    {
+      "source_id": "SP11631_T_14_5_3_3_2",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_T_14_5_4_3",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_T_14_5_5_2",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "WTX330X2101_T_14_3_7_1_3",
+      "study_id": "WTX-330x2101",
+      "fit": "core"
+    },
+    {
+      "source_id": "WTX330X2101_T_14_3_7_1_5",
+      "study_id": "WTX-330x2101",
+      "fit": "core"
+    }
+  ],
+  "evidence_level": "multi_study",
+  "review_status": "approved"
+}

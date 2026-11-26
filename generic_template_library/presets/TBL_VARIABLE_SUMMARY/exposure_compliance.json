@@ -1,0 +1,127 @@
+{
+  "preset_id": "exposure_compliance",
+  "template_id": "TBL_VARIABLE_SUMMARY",
+  "version": "1.0.0",
+  "name": "Study drug exposure and compliance",
+  "keywords": [
+    "exposure",
+    "compliance"
+  ],
+  "aliases": [
+    "extent of exposure",
+    "drug exposure",
+    "study drug exposure",
+    "dose intensity",
+    "dose modification",
+    "dosing"
+  ],
+  "defaults": {
+    "row_blocks": [
+      {
+        "block_id": "duration",
+        "block_type": "continuous",
+        "label": "Duration of exposure",
+        "unit": "{settings:definitions.exposure_duration_unit}",
+        "statistics": [
+          "n",
+          "mean_sd",
+          "median",
+          "min_max"
+        ],
+        "footnote_refs": [
+          "FN_DUR"
+        ]
+      },
+      {
+        "block_id": "cum_dose",
+        "block_type": "continuous",
+        "label": "Cumulative dose",
+        "unit": "{settings:definitions.dose_unit}",
+        "statistics": [
+          "n",
+          "mean_sd",
+          "median",
+          "min_max"
+        ]
+      },
+      {
+        "block_id": "rdi",
+        "block_type": "continuous",
+        "label": "Relative dose intensity",
+        "unit": "%",
+        "statistics": [
+          "n",
+          "mean_sd",
+          "median",
+          "min_max"
+        ],
+        "footnote_refs": [
+          "FN_RDI"
+        ]
+      },
+      {
+        "block_id": "compliance",
+        "block_type": "continuous",
+        "label": "Compliance",
+        "unit": "%",
+        "statistics": [
+          "n",
+          "mean_sd",
+          "median",
+          "min_max"
+        ],
+        "footnote_refs": [
+          "FN_COMPL"
+        ]
+      },
+      {
+        "block_id": "interrupt",
+        "block_type": "categorical",
+        "label": "Subjects with at least one dose interruption",
+        "unit": "",
+        "categories": [
+          "Yes",
+          "No"
+        ],
+        "missing_row": false
+      },
+      {
+        "block_id": "reduce",
+        "block_type": "categorical",
+        "label": "Subjects with at least one dose reduction",
+        "unit": "",
+        "categories": [
+          "Yes",
+          "No"
+        ],
+        "missing_row": false
+      }
+    ],
+    "footnotes": [
+      {
+        "id": "FN_DUR",
+        "marker": "a",
+        "text": "Duration of exposure: {settings:definitions.exposure_duration_definition}"
+      },
+      {
+        "id": "FN_RDI",
+        "marker": "b",
+        "text": "Relative dose intensity: {settings:definitions.relative_dose_intensity_definition}"
+      },
+      {
+        "id": "FN_COMPL",
+        "marker": "c",
+        "text": "Compliance: {settings:definitions.compliance_definition}"
+      }
+    ]
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "PVCNA003_T_14_3_10",
+    "ARV471BC201_T_14_1_11",
+    "CPXPOM001_T_14_1_7_1",
+    "WTX330X2101_T_14_1_9_1",
+    "WTX330X2101_T_14_1_9_2",
+    "SP11631_T_14_2_10"
+  ]
+}

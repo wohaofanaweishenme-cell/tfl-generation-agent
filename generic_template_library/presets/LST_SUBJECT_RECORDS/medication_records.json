@@ -1,0 +1,270 @@
+{
+  "preset_id": "medication_records",
+  "template_id": "LST_SUBJECT_RECORDS",
+  "version": "1.0.0",
+  "name": "Medication and therapy records",
+  "keywords": [
+    "prior medications",
+    "concomitant medications"
+  ],
+  "aliases": [
+    "medication",
+    "concomitant",
+    "prior",
+    "anticancer",
+    "antineoplastic",
+    "chemotherapy",
+    "therapy"
+  ],
+  "defaults": {
+    "listing": {
+      "record_grain": "subject_event",
+      "fields": [
+        {
+          "id": "Treatment_group",
+          "label": "Treatment group",
+          "kinds": [
+            "group"
+          ]
+        },
+        {
+          "id": "Subject_ID",
+          "label": "Subject ID",
+          "kinds": [
+            "subject_id"
+          ]
+        },
+        {
+          "id": "Category",
+          "label": "Category",
+          "kinds": [
+            "category"
+          ]
+        },
+        {
+          "id": "Reported_term",
+          "label": "Reported term",
+          "kinds": [
+            "text"
+          ]
+        },
+        {
+          "id": "ATC_class",
+          "label": "ATC class",
+          "kinds": [
+            "coded_term"
+          ]
+        },
+        {
+          "id": "Preferred_term",
+          "label": "Preferred term",
+          "kinds": [
+            "coded_term"
+          ]
+        },
+        {
+          "id": "Unit",
+          "label": "Unit",
+          "kinds": [
+            "unit"
+          ]
+        },
+        {
+          "id": "Indication",
+          "label": "Indication",
+          "kinds": [
+            "text"
+          ]
+        },
+        {
+          "id": "Dose",
+          "label": "Dose",
+          "kinds": [
+            "number"
+          ]
+        },
+        {
+          "id": "Frequency",
+          "label": "Frequency",
+          "kinds": [
+            "category"
+          ]
+        },
+        {
+          "id": "Start_date__study_day",
+          "label": "Start date (study day)",
+          "kinds": [
+            "date"
+          ]
+        },
+        {
+          "id": "End_date__study_day____ongoing",
+          "label": "End date (study day) / ongoing",
+          "kinds": [
+            "date"
+          ]
+        },
+        {
+          "id": "Route",
+          "label": "Route",
+          "kinds": [
+            "category"
+          ]
+        },
+        {
+          "id": "Response",
+          "label": "Response",
+          "kinds": [
+            "category"
+          ]
+        },
+        {
+          "id": "Reason",
+          "label": "Reason",
+          "kinds": [
+            "text"
+          ]
+        }
+      ],
+      "sort_keys": [
+        "Treatment group",
+        "Subject ID",
+        "Start date (study day)"
+      ],
+      "group_by": [
+        "Treatment group"
+      ]
+    }
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "ARV471BC201_L_16_2_4_6",
+    "CPXPOM001_L_16_2_4_4_1",
+    "CPXPOM001_L_16_2_4_8_1_1",
+    "CPXPOM001_L_16_2_4_8_2_2",
+    "OMO10301_L_16_2_13_1",
+    "PVCNA003_L_16_2_12",
+    "PVCNA003_L_16_2_18",
+    "SP11631_L_16_2_2_7",
+    "SP11631_L_16_2_2_8",
+    "SP11631_L_16_2_4_1_4",
+    "SP11631_L_16_2_4_1_5",
+    "WTX330X2101_L_16_4_3_1",
+    "WTX330X2101_L_16_4_4_1",
+    "WTX330X2101_L_16_4_5_2_1",
+    "WTX330X2101_L_16_4_5_2_2",
+    "WTX330X2101_L_16_4_5_2_3"
+  ],
+  "source_frequency": {
+    "studies": [
+      "ARV-471-BC-201",
+      "CPX-POM-001",
+      "OMO-103-01",
+      "P-VCNA-003",
+      "SP11631",
+      "WTX-330x2101"
+    ],
+    "field_studies": {
+      "Treatment group": [
+        "CPX-POM-001",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "Subject ID": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "OMO-103-01",
+        "P-VCNA-003",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "Category": [
+        "CPX-POM-001",
+        "SP11631"
+      ],
+      "Reported term": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "P-VCNA-003",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "ATC class": [
+        "ARV-471-BC-201",
+        "OMO-103-01",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "Preferred term": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "OMO-103-01",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "Unit": [
+        "ARV-471-BC-201",
+        "OMO-103-01",
+        "P-VCNA-003",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "Indication": [
+        "OMO-103-01",
+        "P-VCNA-003",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "Dose": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "OMO-103-01",
+        "P-VCNA-003",
+        "WTX-330x2101"
+      ],
+      "Frequency": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "OMO-103-01",
+        "P-VCNA-003",
+        "SP11631"
+      ],
+      "Start date (study day)": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "OMO-103-01",
+        "P-VCNA-003",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "End date (study day) / ongoing": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "OMO-103-01",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "Route": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "OMO-103-01",
+        "P-VCNA-003",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "Response": [
+        "CPX-POM-001",
+        "WTX-330x2101"
+      ],
+      "Reason": [
+        "CPX-POM-001",
+        "P-VCNA-003",
+        "SP11631"
+      ]
+    },
+    "grain_counts": {
+      "subject": 2,
+      "subject_event": 14
+    }
+  }
+}

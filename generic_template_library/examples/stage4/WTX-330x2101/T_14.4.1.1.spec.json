@@ -1,0 +1,271 @@
+{
+  "schema_version": "3.0",
+  "output_id": "14.4.1.1",
+  "output_type": "table",
+  "template_id": "TBL_TIMEPOINT_STATISTICS_COLUMNS",
+  "template_version": "1.0.0",
+  "preset_ids": [
+    "pk_concentration"
+  ],
+  "title": {
+    "value": "Summary of WTX-330 Plasma Concentration (ug/mL) by Timepoint",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "population": {
+    "value": "Pharmacokinetic Analysis Set",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "columns": {
+    "stub_header": {
+      "value": "Group\n  Analyte (unit)\n    Timepoint",
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "groups": [
+      {
+        "id": "D1",
+        "label": {
+          "value": "WTX-330 0.016 mg/kg",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "D2",
+        "label": {
+          "value": "WTX-330 0.032 mg/kg",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "D3",
+        "label": {
+          "value": "WTX-330 0.056 mg/kg",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "D4",
+        "label": {
+          "value": "WTX-330 0.084 mg/kg",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      }
+    ],
+    "total": {
+      "enabled": {
+        "value": true,
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "label": {
+        "value": "Total",
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "member_group_ids": [
+        "D1",
+        "D2",
+        "D3",
+        "D4"
+      ]
+    },
+    "statistic_columns": {
+      "value": [
+        "n",
+        "mean_sd",
+        "median",
+        "min_max",
+        "geo_mean",
+        "geo_cv"
+      ],
+      "source": "template_default",
+      "status": "resolved"
+    }
+  },
+  "row_blocks": [
+    {
+      "block_id": "conc",
+      "block_type": "timepoint_stats",
+      "label": {
+        "value": "Concentration",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "parameters": {
+        "value": [
+          "[Analyte 1] ([unit])"
+        ],
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "timepoints": {
+        "value": [
+          "C1D1 pre-dose",
+          "C1D1 end of infusion",
+          "C1D1 4 h",
+          "C1D1 8 h",
+          "C1D2 24 h"
+        ],
+        "source": "study_setting",
+        "status": "resolved"
+      }
+    }
+  ],
+  "footnotes": [
+    {
+      "id": "FN_BLQ",
+      "marker": null,
+      "text": {
+        "value": "Values below the lower limit of quantification: [blq handling]",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q014",
+        "note": "missing study setting: definitions.blq_handling"
+      }
+    }
+  ],
+  "programming_notes": [
+    {
+      "id": "PN_GROUPS",
+      "marker": null,
+      "text": {
+        "value": "Repeat the timepoint rows for each group and each analyte.",
+        "source": "template_default",
+        "status": "resolved"
+      }
+    }
+  ],
+  "figure": null,
+  "listing": null,
+  "config": {},
+  "page": {
+    "orientation": "landscape",
+    "paper": "letter",
+    "font": "Courier New",
+    "font_size_pt": 9,
+    "include_programming_notes": true
+  },
+  "issues": [
+    {
+      "question_id": "Q014",
+      "element_path": "footnotes[FN_BLQ]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.blq_handling (needed for: Values below the lower limit of quantification: [blq handling]).",
+      "answer": null
+    }
+  ],
+  "provenance": {
+    "content_list_entry": {
+      "entry_id": "CL095",
+      "document_id": "SAP_001_98",
+      "original_tfl_number": "14.4.1.1",
+      "output_type": "table",
+      "original_title": "Summary of WTX-330 Plasma Concentration (ug/mL) by Timepoint",
+      "population": "Pharmacokinetic Analysis Set"
+    },
+    "template_file_sha256": "0def5840180743a26acb448e7b96e3accd8f4f5e6b701da7e0a262271c827a5e",
+    "preset_file_sha256": {
+      "pk_concentration": "6df8a936286c6557406ecf9e3553426e294c826fc6b5335da46e22823814f073"
+    },
+    "style_guide_version": "1.1.0",
+    "study_settings_version": "WTX-330x2101@example-0.3+answers(2)",
+    "match": {
+      "selected": "TBL_TIMEPOINT_STATISTICS_COLUMNS",
+      "candidates": [
+        {
+          "template_id": "TBL_TIMEPOINT_STATISTICS_COLUMNS",
+          "score": 14,
+          "matched_terms": [
+            "by timepoint",
+            "concentration",
+            "plasma concentration"
+          ],
+          "negative_terms": [],
+          "preset_id": "pk_concentration",
+          "preset_score": 4
+        },
+        {
+          "template_id": "TBL_PARAMETER_BY_VISIT",
+          "score": 1,
+          "matched_terms": [
+            "by time",
+            "by timepoint"
+          ],
+          "negative_terms": [
+            "concentration"
+          ],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_CODED_TERM_HIERARCHY",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_CONTINUOUS_COMPARISON",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_CRITERION_COUNTS",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_RESPONSE_RATE",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_SHIFT_CROSSTAB",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_TIME_TO_EVENT",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_VARIABLE_SUMMARY",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        }
+      ],
+      "explanation": "Selected TBL_TIMEPOINT_STATISTICS_COLUMNS (score 14): title terms by timepoint, concentration, plasma concentration; preset pk_concentration."
+    },
+    "generated_by": "tools/build_spec.py (rule-based); config: ; reviewer answers applied: coding.meddra_version, definitions.teae_definition"
+  }
+}

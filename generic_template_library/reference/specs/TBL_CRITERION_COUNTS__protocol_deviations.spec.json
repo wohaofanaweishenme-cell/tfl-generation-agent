@@ -1,0 +1,191 @@
+{
+  "schema_version": "3.0",
+  "output_id": "x.x.x",
+  "output_type": "table",
+  "template_id": "TBL_CRITERION_COUNTS",
+  "template_version": "1.0.0",
+  "preset_ids": [
+    "protocol_deviations"
+  ],
+  "title": {
+    "value": "Protocol deviations",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "population": {
+    "value": "[Analysis population]",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "columns": {
+    "stub_header": {
+      "value": "Category",
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "groups": [
+      {
+        "id": "A",
+        "label": {
+          "value": "[Treatment A]",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "B",
+        "label": {
+          "value": "[Treatment B]",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      }
+    ],
+    "total": {
+      "enabled": {
+        "value": true,
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "label": {
+        "value": "Total",
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "member_group_ids": [
+        "A",
+        "B"
+      ]
+    }
+  },
+  "row_blocks": [
+    {
+      "block_id": "dev",
+      "block_type": "criterion",
+      "label": {
+        "value": "Protocol deviations",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "items": {
+        "value": [
+          {
+            "label": "Subjects with at least one protocol deviation",
+            "indent": 0,
+            "kind": "n_pct"
+          },
+          {
+            "label": "[Deviation category 1]",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "[Deviation category 2]",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "...",
+            "indent": 1,
+            "kind": "header"
+          },
+          {
+            "label": "Subjects with at least one major protocol deviation",
+            "indent": 0,
+            "kind": "n_pct"
+          },
+          {
+            "label": "[Deviation category 1]",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "...",
+            "indent": 1,
+            "kind": "header"
+          }
+        ],
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    }
+  ],
+  "footnotes": [
+    {
+      "id": "FN_DENOM",
+      "marker": null,
+      "text": {
+        "value": "Percentages are based on [percentage denominator].",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q001",
+        "note": "missing study setting: definitions.percentage_denominator"
+      }
+    }
+  ],
+  "programming_notes": [
+    {
+      "id": "PN_DEVCAT",
+      "marker": null,
+      "text": {
+        "value": "Display only deviation categories with at least one subject, in the order of the protocol deviation plan.",
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    },
+    {
+      "id": "PN_ROWS",
+      "marker": null,
+      "text": {
+        "value": "Display all listed categories even when the count is zero; indented rows are sub-categories of the row above.",
+        "source": "template_default",
+        "status": "resolved"
+      }
+    }
+  ],
+  "figure": null,
+  "listing": null,
+  "config": {
+    "column_layout": "groups",
+    "event_counts": false
+  },
+  "page": {
+    "orientation": "landscape",
+    "paper": "letter",
+    "font": "Courier New",
+    "font_size_pt": 9,
+    "include_programming_notes": true
+  },
+  "issues": [
+    {
+      "question_id": "Q001",
+      "element_path": "footnotes[FN_DENOM]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.percentage_denominator (needed for: Percentages are based on [percentage denominator].).",
+      "answer": null
+    }
+  ],
+  "provenance": {
+    "content_list_entry": {
+      "entry_id": "REF_TBL_CRITERION_COUNTS__protocol_deviations",
+      "original_tfl_number": "x.x.x",
+      "output_type": "table",
+      "original_title": "Protocol deviations",
+      "population": "[Analysis population]"
+    },
+    "template_file_sha256": "c10c4031b1aa915e97dd2e341392695fd58d875f26560cae351e6c0fe0299b73",
+    "preset_file_sha256": {
+      "protocol_deviations": "3a2b2821238f91817b8abd34caf2f3f48b05b458e5124d34b5aeb3101d5a17cb"
+    },
+    "style_guide_version": "1.1.0",
+    "study_settings_version": "REFERENCE@1.0.0",
+    "match": {
+      "selected": "TBL_CRITERION_COUNTS",
+      "candidates": [],
+      "explanation": "Reference shell: template and preset chosen directly (no matching)."
+    },
+    "generated_by": "tools/build_spec.py (rule-based); config: column_layout=groups (template default); event_counts=False (template default)"
+  }
+}

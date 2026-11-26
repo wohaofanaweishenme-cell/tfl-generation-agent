@@ -1,0 +1,251 @@
+{
+  "schema_version": "3.0",
+  "output_id": "x.x.x",
+  "output_type": "table",
+  "template_id": "TBL_VARIABLE_SUMMARY",
+  "template_version": "1.0.0",
+  "preset_ids": [
+    "pk_parameters"
+  ],
+  "title": {
+    "value": "PK parameters by dose group",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "population": {
+    "value": "[Analysis population]",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "columns": {
+    "stub_header": {
+      "value": "Parameter (unit)",
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "groups": [
+      {
+        "id": "A",
+        "label": {
+          "value": "[Treatment A]",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "B",
+        "label": {
+          "value": "[Treatment B]",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      }
+    ],
+    "total": {
+      "enabled": {
+        "value": true,
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "label": {
+        "value": "Total",
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "member_group_ids": [
+        "A",
+        "B"
+      ]
+    }
+  },
+  "row_blocks": [
+    {
+      "block_id": "cmax",
+      "block_type": "continuous",
+      "label": {
+        "value": "Cmax",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "unit": {
+        "value": "[unit]",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "statistics": {
+        "value": [
+          "n",
+          "mean_sd",
+          "median",
+          "min_max",
+          "geo_mean",
+          "geo_cv"
+        ],
+        "source": "template_default",
+        "status": "resolved"
+      }
+    },
+    {
+      "block_id": "tmax",
+      "block_type": "continuous",
+      "label": {
+        "value": "Tmax",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "unit": {
+        "value": "[unit]",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "statistics": {
+        "value": [
+          "n",
+          "median",
+          "min_max"
+        ],
+        "source": "template_default",
+        "status": "resolved"
+      }
+    },
+    {
+      "block_id": "auc",
+      "block_type": "continuous",
+      "label": {
+        "value": "AUC[interval]",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "unit": {
+        "value": "[unit]",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "statistics": {
+        "value": [
+          "n",
+          "mean_sd",
+          "median",
+          "min_max",
+          "geo_mean",
+          "geo_cv"
+        ],
+        "source": "template_default",
+        "status": "resolved"
+      }
+    },
+    {
+      "block_id": "thalf",
+      "block_type": "continuous",
+      "label": {
+        "value": "t1/2",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "unit": {
+        "value": "[unit]",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "statistics": {
+        "value": [
+          "n",
+          "mean_sd",
+          "median",
+          "min_max"
+        ],
+        "source": "template_default",
+        "status": "resolved"
+      }
+    }
+  ],
+  "footnotes": [
+    {
+      "id": "FN_PKP",
+      "marker": null,
+      "text": {
+        "value": "PK parameters derived by [pk method].",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q001",
+        "note": "missing study setting: definitions.pk_method"
+      }
+    },
+    {
+      "id": "FN_DENOM",
+      "marker": null,
+      "text": {
+        "value": "Percentages are based on [percentage denominator].",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q002",
+        "note": "missing study setting: definitions.percentage_denominator"
+      }
+    }
+  ],
+  "programming_notes": [
+    {
+      "id": "PN_STATS",
+      "marker": null,
+      "text": {
+        "value": "Display statistics in the order shown; categorical rows in the order listed.",
+        "source": "template_default",
+        "status": "resolved"
+      }
+    }
+  ],
+  "figure": null,
+  "listing": null,
+  "config": {
+    "column_layout": "groups",
+    "statistic_label_column": false,
+    "missing_display": "omit",
+    "repeat_by_period": false
+  },
+  "page": {
+    "orientation": "landscape",
+    "paper": "letter",
+    "font": "Courier New",
+    "font_size_pt": 9,
+    "include_programming_notes": true
+  },
+  "issues": [
+    {
+      "question_id": "Q001",
+      "element_path": "footnotes[FN_PKP]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.pk_method (needed for: PK parameters derived by [pk method].).",
+      "answer": null
+    },
+    {
+      "question_id": "Q002",
+      "element_path": "footnotes[FN_DENOM]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.percentage_denominator (needed for: Percentages are based on [percentage denominator].).",
+      "answer": null
+    }
+  ],
+  "provenance": {
+    "content_list_entry": {
+      "entry_id": "REF_TBL_VARIABLE_SUMMARY__pk_parameters",
+      "original_tfl_number": "x.x.x",
+      "output_type": "table",
+      "original_title": "PK parameters by dose group",
+      "population": "[Analysis population]"
+    },
+    "template_file_sha256": "2a9fcfb08381025fa64106e4ee13b41da7b2b1453a6f9084be6dfe01782a3c89",
+    "preset_file_sha256": {
+      "pk_parameters": "9bd0110fbe488931fde11aaed9096ff2043c0d861baae1eb10081cf9a26c3212"
+    },
+    "style_guide_version": "1.1.0",
+    "study_settings_version": "REFERENCE@1.0.0",
+    "match": {
+      "selected": "TBL_VARIABLE_SUMMARY",
+      "candidates": [],
+      "explanation": "Reference shell: template and preset chosen directly (no matching)."
+    },
+    "generated_by": "tools/build_spec.py (rule-based); config: column_layout=groups (template default); statistic_label_column=False (template default); missing_display=omit (template default); repeat_by_period=False (template default)"
+  }
+}

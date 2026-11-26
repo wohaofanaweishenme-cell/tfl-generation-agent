@@ -1,0 +1,3465 @@
+{
+  "library": "Generic_Template_Build",
+  "style_guide_version": "1.1.0",
+  "style_guide_sha256": "f9ee9e4068abe4fea701e65ddb24600384e568ec6461eac314ec9345fd84dc13",
+  "normalisation": "lowercase, non-alphanumerics to space",
+  "terms": {
+    "12 lead": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "ecg_cardiac_records",
+        "field": "preset_alias"
+      }
+    ],
+    "12 lead ecg": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "ecg_by_visit",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "ada": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "ada_status",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": null,
+        "field": "alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "immunogenicity_records",
+        "field": "preset_alias"
+      }
+    ],
+    "administration": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "exposure_records",
+        "field": "preset_alias"
+      }
+    ],
+    "adverse event": [
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": "teae_soc_pt",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "adverse_event_records",
+        "field": "preset_alias"
+      }
+    ],
+    "adverse event overview": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "ae_overview",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": null,
+        "field": "keyword"
+      }
+    ],
+    "adverse events": [
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": "teae_soc_pt",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "adverse_event_records",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "FIG_TORNADO",
+        "preset_id": "ae_pt_tornado",
+        "field": "preset_keyword"
+      }
+    ],
+    "adverse events by causality": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "adverse events of special interest": [
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "aesi": [
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": "teae_soc_pt",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": null,
+        "field": "alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "adverse_event_records",
+        "field": "preset_alias"
+      }
+    ],
+    "analysis populations": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "analysis_sets",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "analysis set": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "analysis_sets",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": null,
+        "field": "alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "analysis_set_records",
+        "field": "preset_alias"
+      }
+    ],
+    "analysis sets": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "analysis_sets",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": null,
+        "field": "keyword"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "analysis_set_records",
+        "field": "preset_keyword"
+      }
+    ],
+    "anc": [
+      {
+        "template_id": "FIG_SUMMARY_OVER_TIME",
+        "preset_id": "mean_value_over_time",
+        "field": "preset_alias"
+      }
+    ],
+    "anti drug antibodies": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "ada_status",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": null,
+        "field": "keyword"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "immunogenicity_records",
+        "field": "preset_keyword"
+      }
+    ],
+    "anti drug antibody": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "ada_status",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "immunogenicity_records",
+        "field": "preset_alias"
+      }
+    ],
+    "anticancer": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "medication_records",
+        "field": "preset_alias"
+      }
+    ],
+    "antineoplastic": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "medication_records",
+        "field": "preset_alias"
+      }
+    ],
+    "aqua": [
+      {
+        "template_id": "TBL_CONTINUOUS_COMPARISON",
+        "preset_id": "change_from_baseline_model",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "FIG_BOX_PLOT",
+        "preset_id": "change_from_baseline_box",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "FIG_INDIVIDUAL_PROFILE",
+        "preset_id": "individual_values_by_visit",
+        "field": "preset_alias"
+      }
+    ],
+    "atc": [
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": "prior_concomitant_medications",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "auc": [
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": "pk_parameters",
+        "field": "preset_alias"
+      }
+    ],
+    "autoimmune": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "laboratory_by_visit",
+        "field": "preset_alias"
+      }
+    ],
+    "autoimmune values": [
+      {
+        "template_id": "TBL_TIMEPOINT_STATISTICS_COLUMNS",
+        "preset_id": "pk_concentration",
+        "field": "preset_alias"
+      }
+    ],
+    "baseline characteristics": [
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": "demographics",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": null,
+        "field": "keyword"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "demographic_records",
+        "field": "preset_alias"
+      }
+    ],
+    "baseline information": [
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": "demographics",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "baseline to worst post baseline": [
+      {
+        "template_id": "TBL_SHIFT_CROSSTAB",
+        "preset_id": "ctcae_grade_shift",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_SHIFT_CROSSTAB",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "bcs": [
+      {
+        "template_id": "TBL_RESPONSE_RATE",
+        "preset_id": "binary_rate",
+        "field": "preset_alias"
+      }
+    ],
+    "best overall response": [
+      {
+        "template_id": "TBL_RESPONSE_RATE",
+        "preset_id": "best_overall_response",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_RESPONSE_RATE",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "best percent change": [
+      {
+        "template_id": "FIG_WATERFALL",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "best percentage change": [
+      {
+        "template_id": "FIG_WATERFALL",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "between": [
+      {
+        "template_id": "TBL_SHIFT_CROSSTAB",
+        "preset_id": "concordance",
+        "field": "preset_alias"
+      }
+    ],
+    "biochemistry": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "laboratory_by_visit",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": null,
+        "field": "alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "laboratory_records",
+        "field": "preset_alias"
+      }
+    ],
+    "biomarker": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "pd_biomarker_records",
+        "field": "preset_alias"
+      }
+    ],
+    "biopsy": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "efficacy_records",
+        "field": "preset_alias"
+      }
+    ],
+    "body temperature": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "vital_signs_by_visit",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "vital_sign_records",
+        "field": "preset_alias"
+      }
+    ],
+    "bor": [
+      {
+        "template_id": "TBL_RESPONSE_RATE",
+        "preset_id": "best_overall_response",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_RESPONSE_RATE",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "box and whisker": [
+      {
+        "template_id": "FIG_BOX_PLOT",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "box plot": [
+      {
+        "template_id": "FIG_BOX_PLOT",
+        "preset_id": "change_from_baseline_box",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "FIG_BOX_PLOT",
+        "preset_id": null,
+        "field": "keyword"
+      },
+      {
+        "template_id": "FIG_BOX_PLOT",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "boxplot": [
+      {
+        "template_id": "FIG_BOX_PLOT",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "butterfly": [
+      {
+        "template_id": "FIG_TORNADO",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "by site": [
+      {
+        "template_id": "TBL_SHIFT_CROSSTAB",
+        "preset_id": "concordance",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_SHIFT_CROSSTAB",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "by subject": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": null,
+        "field": "alias"
+      },
+      {
+        "template_id": "FIG_INDIVIDUAL_PROFILE",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "by system organ class and preferred term": [
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": "teae_soc_pt",
+        "field": "preset_alias"
+      }
+    ],
+    "by time": [
+      {
+        "template_id": "FIG_SUMMARY_OVER_TIME",
+        "preset_id": "mean_value_over_time",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "FIG_SUMMARY_OVER_TIME",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "by timepoint": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": null,
+        "field": "alias"
+      },
+      {
+        "template_id": "TBL_TIMEPOINT_STATISTICS_COLUMNS",
+        "preset_id": null,
+        "field": "keyword"
+      }
+    ],
+    "by visit": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "tumor_size_change",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": null,
+        "field": "keyword"
+      },
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "caliper": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "tumor_size_change",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "FIG_WATERFALL",
+        "preset_id": "best_percent_change",
+        "field": "preset_alias"
+      }
+    ],
+    "cancer history": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "disease_history_records",
+        "field": "preset_alias"
+      }
+    ],
+    "cardiac": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "ecg_cardiac_records",
+        "field": "preset_alias"
+      }
+    ],
+    "category of": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "clinical_evaluation_by_visit",
+        "field": "preset_alias"
+      }
+    ],
+    "category of adverse event": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "cause of death": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "deaths",
+        "field": "preset_alias"
+      }
+    ],
+    "ccca": [
+      {
+        "template_id": "TBL_RESPONSE_RATE",
+        "preset_id": "binary_rate",
+        "field": "preset_alias"
+      }
+    ],
+    "central and local": [
+      {
+        "template_id": "TBL_SHIFT_CROSSTAB",
+        "preset_id": "concordance",
+        "field": "preset_alias"
+      }
+    ],
+    "change from baseline": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "change from baseline at": [
+      {
+        "template_id": "TBL_CONTINUOUS_COMPARISON",
+        "preset_id": "change_from_baseline_model",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_CONTINUOUS_COMPARISON",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "changes of": [
+      {
+        "template_id": "FIG_SUMMARY_OVER_TIME",
+        "preset_id": "mean_value_over_time",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "FIG_SUMMARY_OVER_TIME",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "chemistry": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "laboratory_by_visit",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": null,
+        "field": "alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "laboratory_records",
+        "field": "preset_alias"
+      }
+    ],
+    "chemotherapy": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "medication_records",
+        "field": "preset_alias"
+      }
+    ],
+    "chest": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "physical_exam_records",
+        "field": "preset_alias"
+      }
+    ],
+    "clinical benefit rate": [
+      {
+        "template_id": "TBL_RESPONSE_RATE",
+        "preset_id": "best_overall_response",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_RESPONSE_RATE",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "clinical evaluation": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "clinical_evaluation_by_visit",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_SHIFT_CROSSTAB",
+        "preset_id": "clinical_evaluation_shift",
+        "field": "preset_alias"
+      }
+    ],
+    "clinically significant": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "notable_abnormalities",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "cmax": [
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": "pk_parameters",
+        "field": "preset_alias"
+      }
+    ],
+    "coagulation": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "laboratory_records",
+        "field": "preset_alias"
+      }
+    ],
+    "coded terms": [
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": null,
+        "field": "keyword"
+      }
+    ],
+    "completion": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "disposition_records",
+        "field": "preset_alias"
+      }
+    ],
+    "compliance": [
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": "exposure_compliance",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": null,
+        "field": "keyword"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "exposure_records",
+        "field": "preset_alias"
+      }
+    ],
+    "concentration": [
+      {
+        "template_id": "TBL_TIMEPOINT_STATISTICS_COLUMNS",
+        "preset_id": "pk_concentration",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "pk_records",
+        "field": "preset_alias"
+      }
+    ],
+    "concentration by timepoint": [
+      {
+        "template_id": "TBL_TIMEPOINT_STATISTICS_COLUMNS",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "concentration by visit": [
+      {
+        "template_id": "TBL_TIMEPOINT_STATISTICS_COLUMNS",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "concomitant": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "medication_records",
+        "field": "preset_alias"
+      }
+    ],
+    "concomitant disease": [
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": "medical_history_soc_pt",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "medical_history_records",
+        "field": "preset_alias"
+      }
+    ],
+    "concomitant medication": [
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": "prior_concomitant_medications",
+        "field": "preset_alias"
+      }
+    ],
+    "concomitant medications": [
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": "prior_concomitant_medications",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": null,
+        "field": "keyword"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "medication_records",
+        "field": "preset_keyword"
+      }
+    ],
+    "concordance": [
+      {
+        "template_id": "TBL_SHIFT_CROSSTAB",
+        "preset_id": "concordance",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "TBL_SHIFT_CROSSTAB",
+        "preset_id": "concordance",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_SHIFT_CROSSTAB",
+        "preset_id": null,
+        "field": "keyword"
+      },
+      {
+        "template_id": "TBL_SHIFT_CROSSTAB",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "continuous endpoint comparison": [
+      {
+        "template_id": "TBL_CONTINUOUS_COMPARISON",
+        "preset_id": "change_from_baseline_model",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "TBL_CONTINUOUS_COMPARISON",
+        "preset_id": "nonparametric_estimate",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "TBL_CONTINUOUS_COMPARISON",
+        "preset_id": null,
+        "field": "keyword"
+      }
+    ],
+    "covariate": [
+      {
+        "template_id": "TBL_CONTINUOUS_COMPARISON",
+        "preset_id": "change_from_baseline_model",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_CONTINUOUS_COMPARISON",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "covid": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "laboratory_records",
+        "field": "preset_alias"
+      }
+    ],
+    "criteria failures": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "eligibility_records",
+        "field": "preset_alias"
+      }
+    ],
+    "cross classification": [
+      {
+        "template_id": "TBL_SHIFT_CROSSTAB",
+        "preset_id": null,
+        "field": "keyword"
+      }
+    ],
+    "ctcae grade": [
+      {
+        "template_id": "TBL_SHIFT_CROSSTAB",
+        "preset_id": "ctcae_grade_shift",
+        "field": "preset_alias"
+      }
+    ],
+    "cystectomy": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "efficacy_records",
+        "field": "preset_alias"
+      }
+    ],
+    "data": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "dcr": [
+      {
+        "template_id": "TBL_RESPONSE_RATE",
+        "preset_id": "best_overall_response",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_RESPONSE_RATE",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "death": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "deaths",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": null,
+        "field": "alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "death_records",
+        "field": "preset_alias"
+      }
+    ],
+    "deaths": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "deaths",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": null,
+        "field": "keyword"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "death_records",
+        "field": "preset_keyword"
+      }
+    ],
+    "deaths due to adverse events": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "adverse_event_records",
+        "field": "preset_alias"
+      }
+    ],
+    "demographic": [
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": "demographics",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "demographic_records",
+        "field": "preset_alias"
+      }
+    ],
+    "demographic and baseline characteristics": [
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "demographic characteristics": [
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": "demographics",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "demographics": [
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": "demographics",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": null,
+        "field": "keyword"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "demographic_records",
+        "field": "preset_keyword"
+      }
+    ],
+    "demographics and baseline characteristics": [
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": "demographics",
+        "field": "preset_alias"
+      }
+    ],
+    "derived efficacy": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "time_to_event_records",
+        "field": "preset_alias"
+      }
+    ],
+    "descriptive summary": [
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": null,
+        "field": "keyword"
+      }
+    ],
+    "deviation": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "protocol_deviations",
+        "field": "preset_alias"
+      }
+    ],
+    "deviations": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "deviation_records",
+        "field": "preset_alias"
+      }
+    ],
+    "deviations from the clinical protocol": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "protocol_deviations",
+        "field": "preset_alias"
+      }
+    ],
+    "diagnosis": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "disease_history_records",
+        "field": "preset_alias"
+      }
+    ],
+    "discontinuation": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "disposition",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "disease characteristics": [
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": null,
+        "field": "keyword"
+      },
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": null,
+        "field": "alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "disease_history_records",
+        "field": "preset_keyword"
+      }
+    ],
+    "disease control rate": [
+      {
+        "template_id": "TBL_RESPONSE_RATE",
+        "preset_id": "best_overall_response",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_RESPONSE_RATE",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "disease staging": [
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": null,
+        "field": "alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "disease_history_records",
+        "field": "preset_alias"
+      }
+    ],
+    "disposition": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "disposition",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": null,
+        "field": "keyword"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "disposition_records",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "disposition_records",
+        "field": "preset_alias"
+      }
+    ],
+    "dlt": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "dose_limiting_toxicity",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": null,
+        "field": "alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "adverse_event_records",
+        "field": "preset_alias"
+      }
+    ],
+    "doppler": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "ecg_cardiac_records",
+        "field": "preset_alias"
+      }
+    ],
+    "dor": [
+      {
+        "template_id": "TBL_TIME_TO_EVENT",
+        "preset_id": "event_time_summary",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_TIME_TO_EVENT",
+        "preset_id": null,
+        "field": "alias"
+      },
+      {
+        "template_id": "FIG_KAPLAN_MEIER",
+        "preset_id": "event_free_time",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "FIG_KAPLAN_MEIER",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "dose adjustment": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "exposure_records",
+        "field": "preset_alias"
+      }
+    ],
+    "dose intensity": [
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": "exposure_compliance",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "dose limiting toxicity": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "dose_limiting_toxicity",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "dose_limiting_toxicity",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": null,
+        "field": "keyword"
+      }
+    ],
+    "dose modification": [
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": "exposure_compliance",
+        "field": "preset_alias"
+      }
+    ],
+    "dosing": [
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": "exposure_compliance",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "exposure_records",
+        "field": "preset_alias"
+      }
+    ],
+    "drug exposure": [
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": "exposure_compliance",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "duration of": [
+      {
+        "template_id": "TBL_CONTINUOUS_COMPARISON",
+        "preset_id": "nonparametric_estimate",
+        "field": "preset_alias"
+      }
+    ],
+    "duration of grade": [
+      {
+        "template_id": "TBL_CONTINUOUS_COMPARISON",
+        "preset_id": "nonparametric_estimate",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_CONTINUOUS_COMPARISON",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "duration of response": [
+      {
+        "template_id": "TBL_TIME_TO_EVENT",
+        "preset_id": "event_time_summary",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_TIME_TO_EVENT",
+        "preset_id": null,
+        "field": "alias"
+      },
+      {
+        "template_id": "FIG_KAPLAN_MEIER",
+        "preset_id": "event_free_time",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "FIG_KAPLAN_MEIER",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "ecg": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "ecg_by_visit",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "ecg_by_visit",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "qtc_categories",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": null,
+        "field": "keyword"
+      },
+      {
+        "template_id": "TBL_SHIFT_CROSSTAB",
+        "preset_id": "clinical_evaluation_shift",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "ecg_cardiac_records",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "ecg_cardiac_records",
+        "field": "preset_alias"
+      }
+    ],
+    "ecog": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "ecog_by_visit",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": null,
+        "field": "alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "performance_status_records",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "FIG_SUMMARY_OVER_TIME",
+        "preset_id": "category_percentage_over_time",
+        "field": "preset_alias"
+      }
+    ],
+    "efficacy": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "efficacy_records",
+        "field": "preset_alias"
+      }
+    ],
+    "ejection fraction": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "ecg_cardiac_records",
+        "field": "preset_alias"
+      }
+    ],
+    "electrocardiogram": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "ecg_by_visit",
+        "field": "preset_alias"
+      }
+    ],
+    "eligibility": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "eligibility_records",
+        "field": "preset_keyword"
+      }
+    ],
+    "end of study": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "disposition",
+        "field": "preset_alias"
+      }
+    ],
+    "enrollment": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "disposition_records",
+        "field": "preset_alias"
+      }
+    ],
+    "event free": [
+      {
+        "template_id": "FIG_KAPLAN_MEIER",
+        "preset_id": "event_free_time",
+        "field": "preset_alias"
+      }
+    ],
+    "event free survival": [
+      {
+        "template_id": "FIG_KAPLAN_MEIER",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "excluded from": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "analysis_set_records",
+        "field": "preset_alias"
+      }
+    ],
+    "exclusion": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "eligibility_records",
+        "field": "preset_alias"
+      }
+    ],
+    "exposure": [
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": "exposure_compliance",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": null,
+        "field": "keyword"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "exposure_records",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "exposure_records",
+        "field": "preset_alias"
+      }
+    ],
+    "extent of exposure": [
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": "exposure_compliance",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "fibroscan": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "physical_exam_records",
+        "field": "preset_alias"
+      }
+    ],
+    "follow up": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "disposition_records",
+        "field": "preset_alias"
+      }
+    ],
+    "grade shift": [
+      {
+        "template_id": "TBL_SHIFT_CROSSTAB",
+        "preset_id": "ctcae_grade_shift",
+        "field": "preset_alias"
+      }
+    ],
+    "h score": [
+      {
+        "template_id": "TBL_CONTINUOUS_COMPARISON",
+        "preset_id": "change_from_baseline_model",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "FIG_BOX_PLOT",
+        "preset_id": "change_from_baseline_box",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "FIG_INDIVIDUAL_PROFILE",
+        "preset_id": "individual_values_by_visit",
+        "field": "preset_alias"
+      }
+    ],
+    "hematology": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "laboratory_by_visit",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": null,
+        "field": "alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "laboratory_records",
+        "field": "preset_alias"
+      }
+    ],
+    "high": [
+      {
+        "template_id": "TBL_SHIFT_CROSSTAB",
+        "preset_id": "normal_range_shift",
+        "field": "preset_alias"
+      }
+    ],
+    "hodges lehmann": [
+      {
+        "template_id": "TBL_CONTINUOUS_COMPARISON",
+        "preset_id": "nonparametric_estimate",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_CONTINUOUS_COMPARISON",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "holter": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "ecg_cardiac_records",
+        "field": "preset_alias"
+      }
+    ],
+    "immunogenicity": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "ada_status",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "immunogenicity_records",
+        "field": "preset_alias"
+      }
+    ],
+    "important protocol deviations": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "protocol_deviations",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "incidence of": [
+      {
+        "template_id": "TBL_RESPONSE_RATE",
+        "preset_id": "binary_rate",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_RESPONSE_RATE",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "incidence rate": [
+      {
+        "template_id": "TBL_RESPONSE_RATE",
+        "preset_id": "binary_rate",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "TBL_RESPONSE_RATE",
+        "preset_id": null,
+        "field": "keyword"
+      }
+    ],
+    "inclusion": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "eligibility_records",
+        "field": "preset_alias"
+      }
+    ],
+    "individual": [
+      {
+        "template_id": "FIG_INDIVIDUAL_PROFILE",
+        "preset_id": "individual_concentration_time",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "FIG_INDIVIDUAL_PROFILE",
+        "preset_id": "individual_values_by_visit",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "FIG_INDIVIDUAL_PROFILE",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "individual profiles": [
+      {
+        "template_id": "FIG_INDIVIDUAL_PROFILE",
+        "preset_id": "individual_values_by_visit",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "FIG_INDIVIDUAL_PROFILE",
+        "preset_id": "spider_percent_change",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "FIG_INDIVIDUAL_PROFILE",
+        "preset_id": null,
+        "field": "keyword"
+      }
+    ],
+    "interruption": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "exposure_records",
+        "field": "preset_alias"
+      }
+    ],
+    "interval clinically significant": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "qtc_categories",
+        "field": "preset_alias"
+      }
+    ],
+    "kaplan meier": [
+      {
+        "template_id": "FIG_KAPLAN_MEIER",
+        "preset_id": null,
+        "field": "keyword"
+      }
+    ],
+    "ki 67": [
+      {
+        "template_id": "TBL_CONTINUOUS_COMPARISON",
+        "preset_id": "change_from_baseline_model",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "FIG_BOX_PLOT",
+        "preset_id": "change_from_baseline_box",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "FIG_INDIVIDUAL_PROFILE",
+        "preset_id": "individual_values_by_visit",
+        "field": "preset_alias"
+      }
+    ],
+    "km": [
+      {
+        "template_id": "FIG_KAPLAN_MEIER",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "km plot": [
+      {
+        "template_id": "FIG_KAPLAN_MEIER",
+        "preset_id": null,
+        "field": "keyword"
+      }
+    ],
+    "laboratory": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "laboratory_by_visit",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "laboratory_by_visit",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": null,
+        "field": "keyword"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "laboratory_records",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "laboratory_records",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "pd_biomarker_records",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "FIG_SUMMARY_OVER_TIME",
+        "preset_id": "mean_value_over_time",
+        "field": "preset_keyword"
+      }
+    ],
+    "landmark": [
+      {
+        "template_id": "TBL_RESPONSE_RATE",
+        "preset_id": "binary_rate",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_RESPONSE_RATE",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "leading to": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "adverse_event_records",
+        "field": "preset_alias"
+      }
+    ],
+    "least squares": [
+      {
+        "template_id": "TBL_CONTINUOUS_COMPARISON",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "lesion": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "efficacy_records",
+        "field": "preset_alias"
+      }
+    ],
+    "lesion change": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "tumor_size_change",
+        "field": "preset_alias"
+      }
+    ],
+    "listing": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "listing of": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "liver function": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "notable_abnormalities",
+        "field": "preset_alias"
+      }
+    ],
+    "log transformed": [
+      {
+        "template_id": "TBL_CONTINUOUS_COMPARISON",
+        "preset_id": "change_from_baseline_model",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_CONTINUOUS_COMPARISON",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "low": [
+      {
+        "template_id": "TBL_SHIFT_CROSSTAB",
+        "preset_id": "normal_range_shift",
+        "field": "preset_alias"
+      }
+    ],
+    "lowest highest": [
+      {
+        "template_id": "TBL_SHIFT_CROSSTAB",
+        "preset_id": "normal_range_shift",
+        "field": "preset_alias"
+      }
+    ],
+    "ls mean": [
+      {
+        "template_id": "TBL_CONTINUOUS_COMPARISON",
+        "preset_id": "change_from_baseline_model",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_CONTINUOUS_COMPARISON",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "major protocol deviations": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "protocol_deviations",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "mean": [
+      {
+        "template_id": "FIG_SUMMARY_OVER_TIME",
+        "preset_id": "mean_value_over_time",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "FIG_SUMMARY_OVER_TIME",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "mean concentration": [
+      {
+        "template_id": "FIG_SUMMARY_OVER_TIME",
+        "preset_id": "mean_concentration_time",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "FIG_SUMMARY_OVER_TIME",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "meddra": [
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "medical history": [
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": "medical_history_soc_pt",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": "medical_history_soc_pt",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": null,
+        "field": "keyword"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "medical_history_records",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "medical_history_records",
+        "field": "preset_alias"
+      }
+    ],
+    "medication": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "medication_records",
+        "field": "preset_alias"
+      }
+    ],
+    "medications": [
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": "prior_concomitant_medications",
+        "field": "preset_alias"
+      }
+    ],
+    "menopausal": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "demographic_records",
+        "field": "preset_alias"
+      }
+    ],
+    "molecular": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "disease_history_records",
+        "field": "preset_alias"
+      }
+    ],
+    "molecular biology": [
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "mpepi": [
+      {
+        "template_id": "TBL_RESPONSE_RATE",
+        "preset_id": "binary_rate",
+        "field": "preset_alias"
+      }
+    ],
+    "nadir": [
+      {
+        "template_id": "TBL_CONTINUOUS_COMPARISON",
+        "preset_id": "nonparametric_estimate",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_CONTINUOUS_COMPARISON",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "normal range": [
+      {
+        "template_id": "TBL_SHIFT_CROSSTAB",
+        "preset_id": "normal_range_shift",
+        "field": "preset_alias"
+      }
+    ],
+    "notable": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "notable_abnormalities",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "notable abnormalities": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "notable_abnormalities",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": null,
+        "field": "keyword"
+      }
+    ],
+    "objective response rate": [
+      {
+        "template_id": "TBL_RESPONSE_RATE",
+        "preset_id": "best_overall_response",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_RESPONSE_RATE",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "obstetric": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "demographic_records",
+        "field": "preset_alias"
+      }
+    ],
+    "on treatment worsening": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "notable_abnormalities",
+        "field": "preset_alias"
+      }
+    ],
+    "ophthalmologic": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "physical_exam_records",
+        "field": "preset_alias"
+      }
+    ],
+    "orr": [
+      {
+        "template_id": "TBL_RESPONSE_RATE",
+        "preset_id": "best_overall_response",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_RESPONSE_RATE",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "os": [
+      {
+        "template_id": "TBL_TIME_TO_EVENT",
+        "preset_id": "event_time_summary",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_TIME_TO_EVENT",
+        "preset_id": null,
+        "field": "alias"
+      },
+      {
+        "template_id": "FIG_KAPLAN_MEIER",
+        "preset_id": "overall_survival",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "FIG_KAPLAN_MEIER",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "outside of normal range": [
+      {
+        "template_id": "TBL_SHIFT_CROSSTAB",
+        "preset_id": "normal_range_shift",
+        "field": "preset_alias"
+      }
+    ],
+    "overall interpretation": [
+      {
+        "template_id": "TBL_SHIFT_CROSSTAB",
+        "preset_id": "clinical_evaluation_shift",
+        "field": "preset_alias"
+      }
+    ],
+    "overall summary of treatment emergent adverse events": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "ae_overview",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "overall survival": [
+      {
+        "template_id": "TBL_TIME_TO_EVENT",
+        "preset_id": "event_time_summary",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_TIME_TO_EVENT",
+        "preset_id": null,
+        "field": "alias"
+      },
+      {
+        "template_id": "FIG_KAPLAN_MEIER",
+        "preset_id": "overall_survival",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "FIG_KAPLAN_MEIER",
+        "preset_id": "overall_survival",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "FIG_KAPLAN_MEIER",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "overdose": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "exposure_records",
+        "field": "preset_alias"
+      }
+    ],
+    "overview of adverse events": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "ae_overview",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "participants with": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "patient disposition": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "disposition",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "patients who": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "pcr": [
+      {
+        "template_id": "TBL_RESPONSE_RATE",
+        "preset_id": "binary_rate",
+        "field": "preset_alias"
+      }
+    ],
+    "pcr rate": [
+      {
+        "template_id": "TBL_RESPONSE_RATE",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "percent change": [
+      {
+        "template_id": "FIG_INDIVIDUAL_PROFILE",
+        "preset_id": "spider_percent_change",
+        "field": "preset_alias"
+      }
+    ],
+    "percentage change from baseline": [
+      {
+        "template_id": "TBL_CONTINUOUS_COMPARISON",
+        "preset_id": "change_from_baseline_model",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_CONTINUOUS_COMPARISON",
+        "preset_id": null,
+        "field": "alias"
+      },
+      {
+        "template_id": "FIG_BOX_PLOT",
+        "preset_id": "change_from_baseline_box",
+        "field": "preset_alias"
+      }
+    ],
+    "percentage of patients": [
+      {
+        "template_id": "FIG_SUMMARY_OVER_TIME",
+        "preset_id": "category_percentage_over_time",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "FIG_SUMMARY_OVER_TIME",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "performance status": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "ecog_by_visit",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "ecog_by_visit",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": null,
+        "field": "keyword"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "performance_status_records",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "FIG_SUMMARY_OVER_TIME",
+        "preset_id": "category_percentage_over_time",
+        "field": "preset_keyword"
+      }
+    ],
+    "pfs": [
+      {
+        "template_id": "TBL_TIME_TO_EVENT",
+        "preset_id": "event_time_summary",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_TIME_TO_EVENT",
+        "preset_id": null,
+        "field": "alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "time_to_event_records",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "FIG_KAPLAN_MEIER",
+        "preset_id": "event_free_time",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "FIG_KAPLAN_MEIER",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "pharmacodynamic": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "laboratory_by_visit",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": null,
+        "field": "alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "pd_biomarker_records",
+        "field": "preset_alias"
+      }
+    ],
+    "pharmacokinetic": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "pk_records",
+        "field": "preset_alias"
+      }
+    ],
+    "pharmacokinetic concentration": [
+      {
+        "template_id": "TBL_TIMEPOINT_STATISTICS_COLUMNS",
+        "preset_id": "pk_concentration",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "TBL_TIMEPOINT_STATISTICS_COLUMNS",
+        "preset_id": null,
+        "field": "keyword"
+      },
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": "pk_parameters",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "pk_records",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "FIG_INDIVIDUAL_PROFILE",
+        "preset_id": "individual_concentration_time",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "FIG_SUMMARY_OVER_TIME",
+        "preset_id": "mean_concentration_time",
+        "field": "preset_keyword"
+      }
+    ],
+    "pharmacokinetic parameters": [
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": "pk_parameters",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "physical examination": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "clinical_evaluation_by_visit",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "clinical_evaluation_by_visit",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": null,
+        "field": "keyword"
+      },
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": null,
+        "field": "alias"
+      },
+      {
+        "template_id": "TBL_SHIFT_CROSSTAB",
+        "preset_id": "clinical_evaluation_shift",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "physical_exam_records",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "physical_exam_records",
+        "field": "preset_alias"
+      }
+    ],
+    "pk": [
+      {
+        "template_id": "TBL_TIMEPOINT_STATISTICS_COLUMNS",
+        "preset_id": "pk_concentration",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "pk_records",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "FIG_SUMMARY_OVER_TIME",
+        "preset_id": "mean_concentration_time",
+        "field": "preset_alias"
+      }
+    ],
+    "pk concentration": [
+      {
+        "template_id": "TBL_TIMEPOINT_STATISTICS_COLUMNS",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "pk parameters": [
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": "pk_parameters",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "plasma concentration": [
+      {
+        "template_id": "TBL_TIMEPOINT_STATISTICS_COLUMNS",
+        "preset_id": "pk_concentration",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_TIMEPOINT_STATISTICS_COLUMNS",
+        "preset_id": null,
+        "field": "alias"
+      },
+      {
+        "template_id": "FIG_INDIVIDUAL_PROFILE",
+        "preset_id": "individual_concentration_time",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "FIG_SUMMARY_OVER_TIME",
+        "preset_id": "mean_concentration_time",
+        "field": "preset_alias"
+      }
+    ],
+    "populations": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "analysis_sets",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "analysis_set_records",
+        "field": "preset_alias"
+      }
+    ],
+    "post baseline tumor assessment": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "preferred name": [
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": "prior_concomitant_medications",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "preferred term": [
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": null,
+        "field": "keyword"
+      },
+      {
+        "template_id": "FIG_TORNADO",
+        "preset_id": "ae_pt_tornado",
+        "field": "preset_alias"
+      }
+    ],
+    "pregnancy": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "laboratory_records",
+        "field": "preset_alias"
+      }
+    ],
+    "primary tumor": [
+      {
+        "template_id": "FIG_WATERFALL",
+        "preset_id": "best_percent_change",
+        "field": "preset_alias"
+      }
+    ],
+    "prior": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "medication_records",
+        "field": "preset_alias"
+      }
+    ],
+    "prior cancer related surgery": [
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "prior disease": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "medical_history_records",
+        "field": "preset_alias"
+      }
+    ],
+    "prior diseases": [
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": "medical_history_soc_pt",
+        "field": "preset_alias"
+      }
+    ],
+    "prior medication": [
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": "prior_concomitant_medications",
+        "field": "preset_alias"
+      }
+    ],
+    "prior medications": [
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": "prior_concomitant_medications",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": null,
+        "field": "keyword"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "medication_records",
+        "field": "preset_keyword"
+      }
+    ],
+    "procedures": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "disease_history_records",
+        "field": "preset_alias"
+      }
+    ],
+    "progression free survival": [
+      {
+        "template_id": "TBL_TIME_TO_EVENT",
+        "preset_id": "event_time_summary",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_TIME_TO_EVENT",
+        "preset_id": null,
+        "field": "alias"
+      },
+      {
+        "template_id": "FIG_KAPLAN_MEIER",
+        "preset_id": "event_free_time",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "FIG_KAPLAN_MEIER",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "protocol deviation": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "deviation_records",
+        "field": "preset_alias"
+      }
+    ],
+    "protocol deviations": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "protocol_deviations",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": null,
+        "field": "keyword"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "deviation_records",
+        "field": "preset_keyword"
+      }
+    ],
+    "psa": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "efficacy_records",
+        "field": "preset_alias"
+      }
+    ],
+    "pt": [
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "qlq c30": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "questionnaire_scores",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": null,
+        "field": "alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "questionnaire_records",
+        "field": "preset_alias"
+      }
+    ],
+    "qol": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "questionnaire_scores",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "questionnaire_records",
+        "field": "preset_alias"
+      }
+    ],
+    "qtc": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "qtc_categories",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "qtcb": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "qtc_categories",
+        "field": "preset_alias"
+      }
+    ],
+    "qtcf": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "qtc_categories",
+        "field": "preset_alias"
+      }
+    ],
+    "qtcf categories": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "qtc_categories",
+        "field": "preset_alias"
+      }
+    ],
+    "quality of life": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "questionnaire_scores",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "questionnaire_scores",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": null,
+        "field": "keyword"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "questionnaire_records",
+        "field": "preset_keyword"
+      }
+    ],
+    "questionnaire": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "questionnaire_scores",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": null,
+        "field": "alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "questionnaire_records",
+        "field": "preset_alias"
+      }
+    ],
+    "radiation": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "disease_history_records",
+        "field": "preset_alias"
+      }
+    ],
+    "radical cystectomy": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "rate": [
+      {
+        "template_id": "TBL_RESPONSE_RATE",
+        "preset_id": "binary_rate",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_RESPONSE_RATE",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "recist": [
+      {
+        "template_id": "TBL_RESPONSE_RATE",
+        "preset_id": "best_overall_response",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "efficacy_records",
+        "field": "preset_alias"
+      }
+    ],
+    "records": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "recurrence": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "time_to_event_records",
+        "field": "preset_alias"
+      }
+    ],
+    "recurrence free survival": [
+      {
+        "template_id": "TBL_TIME_TO_EVENT",
+        "preset_id": "event_time_summary",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_TIME_TO_EVENT",
+        "preset_id": null,
+        "field": "alias"
+      },
+      {
+        "template_id": "FIG_KAPLAN_MEIER",
+        "preset_id": "event_free_time",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "FIG_KAPLAN_MEIER",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "response": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "efficacy_records",
+        "field": "preset_alias"
+      }
+    ],
+    "response rate": [
+      {
+        "template_id": "TBL_RESPONSE_RATE",
+        "preset_id": "best_overall_response",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "TBL_RESPONSE_RATE",
+        "preset_id": null,
+        "field": "keyword"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "efficacy_records",
+        "field": "preset_keyword"
+      }
+    ],
+    "rfs": [
+      {
+        "template_id": "TBL_TIME_TO_EVENT",
+        "preset_id": "event_time_summary",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_TIME_TO_EVENT",
+        "preset_id": null,
+        "field": "alias"
+      },
+      {
+        "template_id": "FIG_KAPLAN_MEIER",
+        "preset_id": "event_free_time",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "FIG_KAPLAN_MEIER",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "sae": [
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": "teae_soc_pt",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "adverse_event_records",
+        "field": "preset_alias"
+      }
+    ],
+    "score": [
+      {
+        "template_id": "FIG_INDIVIDUAL_PROFILE",
+        "preset_id": "individual_values_by_visit",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "FIG_SUMMARY_OVER_TIME",
+        "preset_id": "category_percentage_over_time",
+        "field": "preset_alias"
+      }
+    ],
+    "semi logarithmic": [
+      {
+        "template_id": "FIG_INDIVIDUAL_PROFILE",
+        "preset_id": "individual_concentration_time",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "FIG_SUMMARY_OVER_TIME",
+        "preset_id": "mean_concentration_time",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "FIG_SUMMARY_OVER_TIME",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "serious adverse events": [
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": "teae_soc_pt",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "adverse_event_records",
+        "field": "preset_alias"
+      }
+    ],
+    "serology": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "laboratory_records",
+        "field": "preset_alias"
+      }
+    ],
+    "serum concentration": [
+      {
+        "template_id": "TBL_TIMEPOINT_STATISTICS_COLUMNS",
+        "preset_id": "pk_concentration",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_TIMEPOINT_STATISTICS_COLUMNS",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "shift": [
+      {
+        "template_id": "TBL_SHIFT_CROSSTAB",
+        "preset_id": "clinical_evaluation_shift",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "TBL_SHIFT_CROSSTAB",
+        "preset_id": "ctcae_grade_shift",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "TBL_SHIFT_CROSSTAB",
+        "preset_id": "normal_range_shift",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "TBL_SHIFT_CROSSTAB",
+        "preset_id": null,
+        "field": "keyword"
+      }
+    ],
+    "shift change": [
+      {
+        "template_id": "TBL_SHIFT_CROSSTAB",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "shift from baseline": [
+      {
+        "template_id": "TBL_SHIFT_CROSSTAB",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "shift table": [
+      {
+        "template_id": "TBL_SHIFT_CROSSTAB",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "smq": [
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": "teae_soc_pt",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "soc": [
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "special interest": [
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": "teae_soc_pt",
+        "field": "preset_alias"
+      }
+    ],
+    "spider plot": [
+      {
+        "template_id": "FIG_INDIVIDUAL_PROFILE",
+        "preset_id": "spider_percent_change",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "FIG_INDIVIDUAL_PROFILE",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "staging": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "efficacy_records",
+        "field": "preset_alias"
+      }
+    ],
+    "study completion": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "disposition",
+        "field": "preset_alias"
+      }
+    ],
+    "study drug exposure": [
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": "exposure_compliance",
+        "field": "preset_alias"
+      }
+    ],
+    "study drug exposure and compliance": [
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "subject characteristics": [
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": "demographics",
+        "field": "preset_alias"
+      }
+    ],
+    "subject death": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "deaths",
+        "field": "preset_alias"
+      }
+    ],
+    "subject disposition": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "disposition",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "subject listing": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": null,
+        "field": "keyword"
+      }
+    ],
+    "subsequent anticancer": [
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": "prior_concomitant_medications",
+        "field": "preset_alias"
+      }
+    ],
+    "substance use": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "demographic_records",
+        "field": "preset_alias"
+      }
+    ],
+    "summary of adverse events": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "ae_overview",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "summary of death": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "deaths",
+        "field": "preset_alias"
+      }
+    ],
+    "summary of treatment emergent adverse events": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "ae_overview",
+        "field": "preset_alias"
+      }
+    ],
+    "summary of treatment emergent adverse events overview": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "summary over time": [
+      {
+        "template_id": "FIG_SUMMARY_OVER_TIME",
+        "preset_id": null,
+        "field": "keyword"
+      }
+    ],
+    "surgery": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "disease_history_records",
+        "field": "preset_alias"
+      }
+    ],
+    "surgery biopsy": [
+      {
+        "template_id": "TBL_VARIABLE_SUMMARY",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "surgical history": [
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": "medical_history_soc_pt",
+        "field": "preset_alias"
+      }
+    ],
+    "survival": [
+      {
+        "template_id": "TBL_TIME_TO_EVENT",
+        "preset_id": null,
+        "field": "keyword"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "time_to_event_records",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "FIG_KAPLAN_MEIER",
+        "preset_id": null,
+        "field": "keyword"
+      }
+    ],
+    "system organ class": [
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": null,
+        "field": "keyword"
+      }
+    ],
+    "target lesion": [
+      {
+        "template_id": "FIG_WATERFALL",
+        "preset_id": "best_percent_change",
+        "field": "preset_alias"
+      }
+    ],
+    "target lesion change": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "tumor_size_change",
+        "field": "preset_alias"
+      }
+    ],
+    "target lesion size": [
+      {
+        "template_id": "FIG_INDIVIDUAL_PROFILE",
+        "preset_id": "spider_percent_change",
+        "field": "preset_alias"
+      }
+    ],
+    "teae": [
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": "teae_soc_pt",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "ae_overview",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "adverse_event_records",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "FIG_TORNADO",
+        "preset_id": "ae_pt_tornado",
+        "field": "preset_alias"
+      }
+    ],
+    "teaes": [
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": "teae_soc_pt",
+        "field": "preset_alias"
+      }
+    ],
+    "therapeutic class": [
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": "prior_concomitant_medications",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "therapy": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "medication_records",
+        "field": "preset_alias"
+      }
+    ],
+    "thyroid": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "laboratory_records",
+        "field": "preset_alias"
+      }
+    ],
+    "time to": [
+      {
+        "template_id": "FIG_KAPLAN_MEIER",
+        "preset_id": "event_free_time",
+        "field": "preset_alias"
+      }
+    ],
+    "time to event": [
+      {
+        "template_id": "TBL_TIME_TO_EVENT",
+        "preset_id": "event_time_summary",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "TBL_TIME_TO_EVENT",
+        "preset_id": null,
+        "field": "keyword"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "time_to_event_records",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "FIG_KAPLAN_MEIER",
+        "preset_id": null,
+        "field": "keyword"
+      }
+    ],
+    "time to progression": [
+      {
+        "template_id": "TBL_TIME_TO_EVENT",
+        "preset_id": "event_time_summary",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_TIME_TO_EVENT",
+        "preset_id": null,
+        "field": "alias"
+      },
+      {
+        "template_id": "FIG_KAPLAN_MEIER",
+        "preset_id": "event_free_time",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "FIG_KAPLAN_MEIER",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "tornado": [
+      {
+        "template_id": "FIG_TORNADO",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "tornado plot": [
+      {
+        "template_id": "FIG_TORNADO",
+        "preset_id": null,
+        "field": "keyword"
+      }
+    ],
+    "treatment emergent adverse events": [
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": "teae_soc_pt",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "FIG_TORNADO",
+        "preset_id": "ae_pt_tornado",
+        "field": "preset_alias"
+      }
+    ],
+    "ttp": [
+      {
+        "template_id": "TBL_TIME_TO_EVENT",
+        "preset_id": "event_time_summary",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_TIME_TO_EVENT",
+        "preset_id": null,
+        "field": "alias"
+      },
+      {
+        "template_id": "FIG_KAPLAN_MEIER",
+        "preset_id": "event_free_time",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "FIG_KAPLAN_MEIER",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "tumor": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "efficacy_records",
+        "field": "preset_alias"
+      }
+    ],
+    "tumor biopsy": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "tumor change": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "tumor_size_change",
+        "field": "preset_alias"
+      }
+    ],
+    "tumor marker": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "laboratory_by_visit",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": null,
+        "field": "alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "efficacy_records",
+        "field": "preset_alias"
+      }
+    ],
+    "tumor size": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "tumor_size_change",
+        "field": "preset_alias"
+      }
+    ],
+    "tumour size": [
+      {
+        "template_id": "FIG_WATERFALL",
+        "preset_id": "best_percent_change",
+        "field": "preset_alias"
+      }
+    ],
+    "turbt": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "efficacy_records",
+        "field": "preset_alias"
+      }
+    ],
+    "ultrasound": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "clinical_evaluation_by_visit",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_SHIFT_CROSSTAB",
+        "preset_id": "clinical_evaluation_shift",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "physical_exam_records",
+        "field": "preset_alias"
+      }
+    ],
+    "urinalysis": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "clinical_evaluation_by_visit",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": null,
+        "field": "alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "laboratory_records",
+        "field": "preset_alias"
+      }
+    ],
+    "visit dates": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "visit_date_records",
+        "field": "preset_alias"
+      }
+    ],
+    "visits": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "visit_date_records",
+        "field": "preset_keyword"
+      }
+    ],
+    "vital signs": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "vital_signs_by_visit",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "vital_signs_by_visit",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": null,
+        "field": "keyword"
+      },
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": null,
+        "field": "alias"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "vital_sign_records",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "vital_sign_records",
+        "field": "preset_alias"
+      }
+    ],
+    "waterfall": [
+      {
+        "template_id": "FIG_WATERFALL",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "waterfall plot": [
+      {
+        "template_id": "FIG_WATERFALL",
+        "preset_id": "best_percent_change",
+        "field": "preset_keyword"
+      },
+      {
+        "template_id": "FIG_WATERFALL",
+        "preset_id": null,
+        "field": "keyword"
+      }
+    ],
+    "weight": [
+      {
+        "template_id": "TBL_PARAMETER_BY_VISIT",
+        "preset_id": "vital_signs_by_visit",
+        "field": "preset_alias"
+      }
+    ],
+    "who drug": [
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": "prior_concomitant_medications",
+        "field": "preset_alias"
+      },
+      {
+        "template_id": "TBL_CODED_TERM_HIERARCHY",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "withdrawal": [
+      {
+        "template_id": "LST_SUBJECT_RECORDS",
+        "preset_id": "disposition_records",
+        "field": "preset_alias"
+      }
+    ],
+    "without covariate": [
+      {
+        "template_id": "TBL_CONTINUOUS_COMPARISON",
+        "preset_id": null,
+        "field": "alias"
+      }
+    ],
+    "worsening": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "notable_abnormalities",
+        "field": "preset_alias"
+      }
+    ],
+    "worst post baseline": [
+      {
+        "template_id": "TBL_SHIFT_CROSSTAB",
+        "preset_id": "ctcae_grade_shift",
+        "field": "preset_alias"
+      }
+    ],
+    "xuln": [
+      {
+        "template_id": "TBL_CRITERION_COUNTS",
+        "preset_id": "notable_abnormalities",
+        "field": "preset_alias"
+      }
+    ]
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "purpose": "Controlled keyword vocabulary (conventions v1.0 section 5.1). Every template/preset keyword must appear here. Aliases are free text but must be wording seen in the six source studies.",
+  "version": "0.2.0",
+  "groups": {
+    "topic": [
+      "demographics",
+      "baseline characteristics",
+      "disease characteristics",
+      "exposure",
+      "compliance",
+      "adverse events",
+      "treatment-emergent adverse events",
+      "medical history",
+      "prior medications",
+      "concomitant medications",
+      "overall survival",
+      "progression-free survival",
+      "recurrence-free survival",
+      "time to progression",
+      "adverse event overview",
+      "analysis sets",
+      "anti-drug antibodies",
+      "by timepoint",
+      "deaths",
+      "disposition",
+      "dose-limiting toxicity",
+      "ecg",
+      "eligibility",
+      "laboratory",
+      "notable abnormalities",
+      "performance status",
+      "physical examination",
+      "protocol deviations",
+      "quality of life",
+      "visits",
+      "vital signs"
+    ],
+    "structure": [
+      "descriptive summary",
+      "coded terms",
+      "system organ class",
+      "preferred term",
+      "by visit",
+      "concordance",
+      "continuous endpoint comparison",
+      "cross-classification",
+      "incidence rate",
+      "pharmacokinetic concentration",
+      "response rate",
+      "shift",
+      "subject listing"
+    ],
+    "endpoint_type": [
+      "survival",
+      "time to event"
+    ],
+    "plot_type": [
+      "kaplan-meier",
+      "km plot",
+      "box plot",
+      "individual profiles",
+      "summary over time",
+      "tornado plot",
+      "waterfall plot"
+    ]
+  }
+}

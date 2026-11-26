@@ -1,0 +1,192 @@
+{
+  "template_id": "FIG_INDIVIDUAL_PROFILE",
+  "version": "1.0.0",
+  "output_type": "figure",
+  "name": "Individual subject profiles",
+  "structural_signature": {
+    "S1": "figure",
+    "S2": "PLOT",
+    "S3": [
+      "AXES"
+    ],
+    "S4": [
+      "PLOT"
+    ],
+    "S5": [
+      "NONE",
+      "PANELS"
+    ],
+    "S6": "INDIVIDUAL_PROFILE"
+  },
+  "intended_use": "One line per subject plotted against visit or time (spider plot of percent change, individual values, individual concentration-time), with one panel per group and optional reference lines.",
+  "not_for": "Group summaries (summary-over-time figure); best change per subject as bars (waterfall figure).",
+  "keywords": [
+    "individual profiles"
+  ],
+  "aliases": [
+    "spider plot",
+    "individual",
+    "by subject"
+  ],
+  "match_cues": {
+    "title_terms": [
+      "spider",
+      "individual"
+    ],
+    "negative_terms": [
+      "mean",
+      "box",
+      "waterfall",
+      "kaplan"
+    ]
+  },
+  "required_fields": [
+    {
+      "path": "title",
+      "label": "Output title",
+      "allowed_sources": [
+        "content_list"
+      ]
+    },
+    {
+      "path": "population",
+      "label": "Analysis population",
+      "allowed_sources": [
+        "content_list",
+        "study_setting"
+      ]
+    },
+    {
+      "path": "figure.legend",
+      "label": "Groups shown",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    },
+    {
+      "path": "figure.y_axis.label",
+      "label": "Measure and unit",
+      "allowed_sources": [
+        "content_list",
+        "study_setting"
+      ]
+    }
+  ],
+  "permitted_defaults": [
+    {
+      "path": "figure.panels",
+      "value": "one per group",
+      "status_when_used": "needs_review",
+      "basis": "ARV and WTX sources panel by group."
+    },
+    {
+      "path": "figure.reference_lines",
+      "value": "from preset",
+      "status_when_used": "needs_review",
+      "basis": "Response thresholds are criteria specific."
+    }
+  ],
+  "editable_elements": [
+    "title",
+    "population",
+    "figure.x_axis",
+    "figure.y_axis",
+    "figure.legend",
+    "figure.panels",
+    "figure.reference_lines",
+    "figure.annotations",
+    "footnotes",
+    "programming_notes",
+    "config"
+  ],
+  "config_options": {
+    "panel_by_group": {
+      "values": [
+        false,
+        true
+      ],
+      "default": true,
+      "description": "One panel per group instead of one panel with all groups."
+    },
+    "scale_panels": {
+      "values": [
+        "linear",
+        "linear_and_semilog"
+      ],
+      "default": "linear",
+      "description": "Linear only, or linear plus semi-log panels.",
+      "cues": {
+        "linear_and_semilog": [
+          "semi-log",
+          "semi-logarithmic"
+        ]
+      }
+    }
+  },
+  "presets": [
+    "spider_percent_change",
+    "individual_values_by_visit",
+    "individual_concentration_time"
+  ],
+  "skeleton": {
+    "figure": {
+      "plot_type": "INDIVIDUAL_PROFILE",
+      "x_axis": {
+        "label": "[Visit / time]",
+        "range": "As appropriate"
+      },
+      "y_axis": {
+        "label": "[Measure] ([unit])"
+      }
+    },
+    "programming_notes": [
+      {
+        "id": "PN_LINES",
+        "marker": null,
+        "text": "One line per subject; identical line style within a panel; no subject identifiers on the plot."
+      }
+    ]
+  },
+  "figure_plot": {
+    "plot_type": "INDIVIDUAL_PROFILE",
+    "plotter": "renderer/figure/shells.py:plot_individual_profile",
+    "data_contract": {
+      "required_columns": {
+        "subject": "str",
+        "group": "str",
+        "time": "float or visit label",
+        "value": "float"
+      }
+    },
+    "implementation_status": "shell_only"
+  },
+  "evidence": [
+    {
+      "source_id": "ARV471BC201_F_14_2_1_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_F_14_2_3_2_2",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_F_14_2_4_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_F_14_2_5_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "WTX330X2101_F_14_4_1_1_1",
+      "study_id": "WTX-330x2101",
+      "fit": "core"
+    }
+  ],
+  "evidence_level": "multi_study",
+  "review_status": "approved"
+}

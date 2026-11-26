@@ -1,0 +1,400 @@
+{
+  "schema_version": "3.0",
+  "output_id": "14.1.11",
+  "output_type": "table",
+  "template_id": "TBL_VARIABLE_SUMMARY",
+  "template_version": "0.1.0",
+  "preset_ids": [
+    "exposure_compliance"
+  ],
+  "title": {
+    "value": "Summary of ARV-471 and Anastrozole Compliance and Exposure",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "population": {
+    "value": "Safety Analysis Set",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "columns": {
+    "stub_header": {
+      "value": "Characteristic",
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "groups": [
+      {
+        "id": "ARV",
+        "label": {
+          "value": "ARV-471 200 mg",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "ANA",
+        "label": {
+          "value": "Anastrozole 1 mg",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      }
+    ],
+    "total": {
+      "enabled": {
+        "value": true,
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "label": {
+        "value": "Total",
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "member_group_ids": [
+        "ARV",
+        "ANA"
+      ]
+    }
+  },
+  "row_blocks": [
+    {
+      "block_id": "duration",
+      "block_type": "continuous",
+      "label": {
+        "value": "Duration of exposure",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "unit": {
+        "value": "[exposure duration unit]",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q001",
+        "note": "missing study setting: definitions.exposure_duration_unit"
+      },
+      "statistics": {
+        "value": [
+          "n",
+          "mean_sd",
+          "median",
+          "min_max"
+        ],
+        "source": "template_default",
+        "status": "resolved"
+      },
+      "footnote_refs": [
+        "FN_DUR"
+      ]
+    },
+    {
+      "block_id": "cum_dose",
+      "block_type": "continuous",
+      "label": {
+        "value": "Cumulative dose",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "unit": {
+        "value": "[dose unit]",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q002",
+        "note": "missing study setting: definitions.dose_unit"
+      },
+      "statistics": {
+        "value": [
+          "n",
+          "mean_sd",
+          "median",
+          "min_max"
+        ],
+        "source": "template_default",
+        "status": "resolved"
+      }
+    },
+    {
+      "block_id": "rdi",
+      "block_type": "continuous",
+      "label": {
+        "value": "Relative dose intensity",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "unit": {
+        "value": "%",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "statistics": {
+        "value": [
+          "n",
+          "mean_sd",
+          "median",
+          "min_max"
+        ],
+        "source": "template_default",
+        "status": "resolved"
+      },
+      "footnote_refs": [
+        "FN_RDI"
+      ]
+    },
+    {
+      "block_id": "compliance",
+      "block_type": "continuous",
+      "label": {
+        "value": "Compliance",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "unit": {
+        "value": "%",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "statistics": {
+        "value": [
+          "n",
+          "mean_sd",
+          "median",
+          "min_max"
+        ],
+        "source": "template_default",
+        "status": "resolved"
+      },
+      "footnote_refs": [
+        "FN_COMPL"
+      ]
+    },
+    {
+      "block_id": "interrupt",
+      "block_type": "categorical",
+      "label": {
+        "value": "Subjects with at least one dose interruption",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "unit": {
+        "value": "",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "statistics": {
+        "value": [
+          "n_pct"
+        ],
+        "source": "template_default",
+        "status": "resolved"
+      },
+      "categories": {
+        "value": [
+          "Yes",
+          "No"
+        ],
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "missing_row": {
+        "value": false,
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    },
+    {
+      "block_id": "reduce",
+      "block_type": "categorical",
+      "label": {
+        "value": "Subjects with at least one dose reduction",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "unit": {
+        "value": "",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "statistics": {
+        "value": [
+          "n_pct"
+        ],
+        "source": "template_default",
+        "status": "resolved"
+      },
+      "categories": {
+        "value": [
+          "Yes",
+          "No"
+        ],
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "missing_row": {
+        "value": false,
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    }
+  ],
+  "footnotes": [
+    {
+      "id": "FN_DUR",
+      "marker": "a",
+      "text": {
+        "value": "Duration of exposure: [exposure duration definition]",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q003",
+        "note": "missing study setting: definitions.exposure_duration_definition"
+      }
+    },
+    {
+      "id": "FN_RDI",
+      "marker": "b",
+      "text": {
+        "value": "Relative dose intensity: [relative dose intensity definition]",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q004",
+        "note": "missing study setting: definitions.relative_dose_intensity_definition"
+      }
+    },
+    {
+      "id": "FN_COMPL",
+      "marker": "c",
+      "text": {
+        "value": "Compliance: [compliance definition]",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q005",
+        "note": "missing study setting: definitions.compliance_definition"
+      }
+    },
+    {
+      "id": "FN_DENOM",
+      "marker": null,
+      "text": {
+        "value": "Percentages are based on [percentage denominator].",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q006",
+        "note": "missing study setting: definitions.percentage_denominator"
+      }
+    }
+  ],
+  "programming_notes": [
+    {
+      "id": "PN_STATS",
+      "marker": null,
+      "text": {
+        "value": "Display statistics in the order shown; categorical rows in the order listed.",
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    }
+  ],
+  "figure": null,
+  "listing": null,
+  "config": {
+    "column_layout": "groups",
+    "statistic_label_column": false,
+    "missing_display": "omit",
+    "repeat_by_period": false
+  },
+  "page": {
+    "orientation": "landscape",
+    "paper": "letter",
+    "font": "Courier New",
+    "font_size_pt": 9,
+    "include_programming_notes": true
+  },
+  "issues": [
+    {
+      "question_id": "Q001",
+      "element_path": "row_blocks[duration].unit",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.exposure_duration_unit (needed for: [exposure duration unit]).",
+      "answer": null
+    },
+    {
+      "question_id": "Q002",
+      "element_path": "row_blocks[cum_dose].unit",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.dose_unit (needed for: [dose unit]).",
+      "answer": null
+    },
+    {
+      "question_id": "Q003",
+      "element_path": "footnotes[FN_DUR]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.exposure_duration_definition (needed for: Duration of exposure: [exposure duration definition]).",
+      "answer": null
+    },
+    {
+      "question_id": "Q004",
+      "element_path": "footnotes[FN_RDI]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.relative_dose_intensity_definition (needed for: Relative dose intensity: [relative dose intensity definition]).",
+      "answer": null
+    },
+    {
+      "question_id": "Q005",
+      "element_path": "footnotes[FN_COMPL]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.compliance_definition (needed for: Compliance: [compliance definition]).",
+      "answer": null
+    },
+    {
+      "question_id": "Q006",
+      "element_path": "footnotes[FN_DENOM]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.percentage_denominator (needed for: Percentages are based on [percentage denominator].).",
+      "answer": null
+    }
+  ],
+  "provenance": {
+    "content_list_entry": {
+      "entry_id": "CL016",
+      "document_id": "SAP_001_05",
+      "original_tfl_number": "14.1.11",
+      "output_type": "table",
+      "original_title": "Summary of ARV-471 and Anastrozole Compliance and Exposure",
+      "population": "Safety Analysis Set"
+    },
+    "template_file_sha256": "e551b11bc74ec8b83bfd45a64e88fa1cad5966e598f81c8b9202b0fbf4aaff0d",
+    "preset_file_sha256": {
+      "exposure_compliance": "6a908a6cb68f3f2a7e39c3f1520b1a46cc858929d36a6aec7f8751cb496512f3"
+    },
+    "style_guide_version": "1.0.0",
+    "study_settings_version": "ARV-471-BC-201@pilot-0.1",
+    "match": {
+      "selected": "TBL_VARIABLE_SUMMARY",
+      "candidates": [
+        {
+          "template_id": "TBL_VARIABLE_SUMMARY",
+          "score": 14,
+          "matched_terms": [
+            "compliance",
+            "exposure"
+          ],
+          "negative_terms": [],
+          "preset_id": "exposure_compliance",
+          "preset_score": 4
+        },
+        {
+          "template_id": "TBL_CODED_TERM_HIERARCHY",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        }
+      ],
+      "explanation": "Selected TBL_VARIABLE_SUMMARY (score 14): title terms compliance, exposure; preset exposure_compliance."
+    },
+    "generated_by": "tools/build_spec.py (rule-based pilot); config: column_layout=groups (template default); statistic_label_column=False (template default); missing_display=omit (template default); repeat_by_period=False (template default)"
+  }
+}

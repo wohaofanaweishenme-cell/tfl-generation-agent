@@ -1,0 +1,32 @@
+{
+  "preset_id": "spider_percent_change",
+  "template_id": "FIG_INDIVIDUAL_PROFILE",
+  "version": "1.0.0",
+  "name": "Spider plot of percent change from baseline",
+  "keywords": [
+    "individual profiles"
+  ],
+  "aliases": [
+    "spider plot",
+    "percent change",
+    "target lesion size"
+  ],
+  "defaults": {
+    "figure": {
+      "x_axis": {
+        "label": "Time since first dose ({settings:time_unit})"
+      },
+      "y_axis": {
+        "label": "Change in target lesions from baseline (%)"
+      },
+      "reference_lines": [
+        "y = 20",
+        "y = -30"
+      ]
+    }
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "ARV471BC201_F_14_2_3_2_2"
+  ]
+}

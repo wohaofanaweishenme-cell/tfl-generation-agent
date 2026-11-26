@@ -1,0 +1,30 @@
+{
+  "preset_id": "mean_value_over_time",
+  "template_id": "FIG_SUMMARY_OVER_TIME",
+  "version": "1.0.0",
+  "name": "Mean laboratory / clinical value over time",
+  "keywords": [
+    "laboratory"
+  ],
+  "aliases": [
+    "mean",
+    "ANC",
+    "changes of",
+    "by time"
+  ],
+  "defaults": {
+    "figure": {
+      "x_axis": {
+        "label": "[Day / visit]"
+      },
+      "y_axis": {
+        "label": "Mean ([unit])"
+      }
+    }
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "SP11631_F_14_1_1_1",
+    "WTX330X2101_F_14_4_1_2_1"
+  ]
+}

@@ -1,0 +1,10 @@
+﻿output_id,question_id,kind,element_path,question
+14.1.11,Q001,missing,row_blocks[duration].unit,Please confirm study setting(s): definitions.exposure_duration_unit (needed for: [exposure duration unit]).
+14.1.11,Q002,missing,row_blocks[cum_dose].unit,Please confirm study setting(s): definitions.dose_unit (needed for: [dose unit]).
+14.1.11,Q003,missing,footnotes[FN_DUR],Please confirm study setting(s): definitions.exposure_duration_definition (needed for: Duration of exposure: [exposure duration definition]).
+14.1.11,Q004,missing,footnotes[FN_RDI],Please confirm study setting(s): definitions.relative_dose_intensity_definition (needed for: Relative dose intensity: [relative dose intensity definition]).
+14.1.11,Q005,missing,footnotes[FN_COMPL],Please confirm study setting(s): definitions.compliance_definition (needed for: Compliance: [compliance definition]).
+14.1.11,Q006,missing,footnotes[FN_DENOM],Please confirm study setting(s): definitions.percentage_denominator (needed for: Percentages are based on [percentage denominator].).
+14.3.2.8,Q001,missing,footnotes[FN_DENOM],Please confirm study setting(s): definitions.percentage_denominator (needed for: Percentages are based on [percentage denominator].).
+14.3.2.10,Q001,missing,footnotes[FN_DENOM],Please confirm study setting(s): definitions.percentage_denominator (needed for: Percentages are based on [percentage denominator].).
+14.3.2.8,-,no_compatible_template,(whole output),No template of type 'figure' matches the title terms; no compatible template in the library.

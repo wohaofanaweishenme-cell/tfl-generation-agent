@@ -1,0 +1,195 @@
+{
+  "schema_version": "3.0",
+  "output_id": "x.x.x",
+  "output_type": "table",
+  "template_id": "TBL_CRITERION_COUNTS",
+  "template_version": "1.0.0",
+  "preset_ids": [
+    "notable_abnormalities"
+  ],
+  "title": {
+    "value": "Clinically notable abnormalities (thresholds)",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "population": {
+    "value": "[Analysis population]",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "columns": {
+    "stub_header": {
+      "value": "Category",
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "groups": [
+      {
+        "id": "A",
+        "label": {
+          "value": "[Treatment A]",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "B",
+        "label": {
+          "value": "[Treatment B]",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      }
+    ],
+    "total": {
+      "enabled": {
+        "value": true,
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "label": {
+        "value": "Total",
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "member_group_ids": [
+        "A",
+        "B"
+      ]
+    }
+  },
+  "row_blocks": [
+    {
+      "block_id": "thr",
+      "block_type": "criterion",
+      "label": {
+        "value": "Notable abnormalities",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "items": {
+        "value": [
+          {
+            "label": "[Parameter 1]",
+            "indent": 0,
+            "kind": "header"
+          },
+          {
+            "label": "[Criterion 1]",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "[Criterion 2]",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "[Parameter 2]",
+            "indent": 0,
+            "kind": "header"
+          },
+          {
+            "label": "[Criterion 1]",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "...",
+            "indent": 1,
+            "kind": "header"
+          }
+        ],
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    }
+  ],
+  "footnotes": [
+    {
+      "id": "FN_THR",
+      "marker": null,
+      "text": {
+        "value": "Criteria are not mutually exclusive; a subject may be counted in more than one category. Criteria definitions: [notable criteria]",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q001",
+        "note": "missing study setting: definitions.notable_criteria"
+      }
+    },
+    {
+      "id": "FN_DENOM",
+      "marker": null,
+      "text": {
+        "value": "Percentages are based on [percentage denominator].",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q002",
+        "note": "missing study setting: definitions.percentage_denominator"
+      }
+    }
+  ],
+  "programming_notes": [
+    {
+      "id": "PN_ROWS",
+      "marker": null,
+      "text": {
+        "value": "Display all listed categories even when the count is zero; indented rows are sub-categories of the row above.",
+        "source": "template_default",
+        "status": "resolved"
+      }
+    }
+  ],
+  "figure": null,
+  "listing": null,
+  "config": {
+    "column_layout": "groups",
+    "event_counts": false
+  },
+  "page": {
+    "orientation": "landscape",
+    "paper": "letter",
+    "font": "Courier New",
+    "font_size_pt": 9,
+    "include_programming_notes": true
+  },
+  "issues": [
+    {
+      "question_id": "Q001",
+      "element_path": "footnotes[FN_THR]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.notable_criteria (needed for: Criteria are not mutually exclusive; a subject may be counted in more than one category. Criteria definitions: [notable criteria]).",
+      "answer": null
+    },
+    {
+      "question_id": "Q002",
+      "element_path": "footnotes[FN_DENOM]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.percentage_denominator (needed for: Percentages are based on [percentage denominator].).",
+      "answer": null
+    }
+  ],
+  "provenance": {
+    "content_list_entry": {
+      "entry_id": "REF_TBL_CRITERION_COUNTS__notable_abnormalities",
+      "original_tfl_number": "x.x.x",
+      "output_type": "table",
+      "original_title": "Clinically notable abnormalities (thresholds)",
+      "population": "[Analysis population]"
+    },
+    "template_file_sha256": "c10c4031b1aa915e97dd2e341392695fd58d875f26560cae351e6c0fe0299b73",
+    "preset_file_sha256": {
+      "notable_abnormalities": "d1929b9bfcd9e00914d9fae545d62d76c73c47a75b33d442d00384844e8ed265"
+    },
+    "style_guide_version": "1.1.0",
+    "study_settings_version": "REFERENCE@1.0.0",
+    "match": {
+      "selected": "TBL_CRITERION_COUNTS",
+      "candidates": [],
+      "explanation": "Reference shell: template and preset chosen directly (no matching)."
+    },
+    "generated_by": "tools/build_spec.py (rule-based); config: column_layout=groups (template default); event_counts=False (template default)"
+  }
+}

@@ -1,0 +1,599 @@
+{
+  "current": {
+    "approved_by": "Project owner",
+    "date": "2026-11-26",
+    "basis": "Explicit approval given by the project owner in the working session after reviewing the 16 template definitions (stage 4).",
+    "scope": "Approval covers each template's structure, intended use / not-for boundaries, required fields, config options, skeleton footnotes and programming notes (approved display conventions), and each preset as an approved set of CANDIDATE topic content. It does not approve study-specific values: preset variable / category / field lists remain needs_review in every generated shell until the study team confirms them, and analysis definitions remain unresolved until supplied in study settings.",
+    "items": [
+      {
+        "kind": "template",
+        "id": "TBL_CODED_TERM_HIERARCHY",
+        "version": "1.0.0",
+        "path": "templates/table/TBL_CODED_TERM_HIERARCHY.json",
+        "sha256": "fc30cec50530fce6a74f43f01db50ef1356d21525f1f4909a1301cedc4dcfaf0"
+      },
+      {
+        "kind": "preset",
+        "id": "TBL_CODED_TERM_HIERARCHY/medical_history_soc_pt",
+        "version": "1.0.0",
+        "path": "presets/TBL_CODED_TERM_HIERARCHY/medical_history_soc_pt.json",
+        "sha256": "f5c68b5ab930335ab8bb2bcb6b772f3e5d109484c9679cdf980be585c7a31d1e"
+      },
+      {
+        "kind": "preset",
+        "id": "TBL_CODED_TERM_HIERARCHY/prior_concomitant_medications",
+        "version": "1.0.0",
+        "path": "presets/TBL_CODED_TERM_HIERARCHY/prior_concomitant_medications.json",
+        "sha256": "a9e20496adf5d9f4e08e60c788faddfa77b3c111d177e34d649a83c3b9a78010"
+      },
+      {
+        "kind": "preset",
+        "id": "TBL_CODED_TERM_HIERARCHY/teae_soc_pt",
+        "version": "1.0.0",
+        "path": "presets/TBL_CODED_TERM_HIERARCHY/teae_soc_pt.json",
+        "sha256": "5d8f2fa4cc94b8a28f3943944127722c918be2561cf122b4c54827e8dfbbcc29"
+      },
+      {
+        "kind": "template",
+        "id": "TBL_CONTINUOUS_COMPARISON",
+        "version": "1.0.0",
+        "path": "templates/table/TBL_CONTINUOUS_COMPARISON.json",
+        "sha256": "b121676be747f28fd64bb7a09f77c7d606bd359e0229379c9ce6eead6a6ec63d"
+      },
+      {
+        "kind": "preset",
+        "id": "TBL_CONTINUOUS_COMPARISON/change_from_baseline_model",
+        "version": "1.0.0",
+        "path": "presets/TBL_CONTINUOUS_COMPARISON/change_from_baseline_model.json",
+        "sha256": "7bd30cd49e0db182d87e5e978e5da67ab225abaff7ff4d8217f91ac0da559879"
+      },
+      {
+        "kind": "preset",
+        "id": "TBL_CONTINUOUS_COMPARISON/nonparametric_estimate",
+        "version": "1.0.0",
+        "path": "presets/TBL_CONTINUOUS_COMPARISON/nonparametric_estimate.json",
+        "sha256": "89b6cb3cc32e79024a9620a3f06c6f3f36ea5d7fb96bfe154a3ba4e4e8bde650"
+      },
+      {
+        "kind": "template",
+        "id": "TBL_CRITERION_COUNTS",
+        "version": "1.0.0",
+        "path": "templates/table/TBL_CRITERION_COUNTS.json",
+        "sha256": "c10c4031b1aa915e97dd2e341392695fd58d875f26560cae351e6c0fe0299b73"
+      },
+      {
+        "kind": "preset",
+        "id": "TBL_CRITERION_COUNTS/ada_status",
+        "version": "1.0.0",
+        "path": "presets/TBL_CRITERION_COUNTS/ada_status.json",
+        "sha256": "e43ef04fc7be178955e696e596c2e4c77b2192ac44ed6f9afbaf0acbeae70386"
+      },
+      {
+        "kind": "preset",
+        "id": "TBL_CRITERION_COUNTS/ae_overview",
+        "version": "1.0.0",
+        "path": "presets/TBL_CRITERION_COUNTS/ae_overview.json",
+        "sha256": "79b74af02c8de6a61ab1288e5e8e510114d60197c1dfa57c7007497e891f5f4b"
+      },
+      {
+        "kind": "preset",
+        "id": "TBL_CRITERION_COUNTS/analysis_sets",
+        "version": "1.0.0",
+        "path": "presets/TBL_CRITERION_COUNTS/analysis_sets.json",
+        "sha256": "dff223a69f47869c8b5e6bab79077721a019382b32e78a77d162d11413b727b5"
+      },
+      {
+        "kind": "preset",
+        "id": "TBL_CRITERION_COUNTS/deaths",
+        "version": "1.0.0",
+        "path": "presets/TBL_CRITERION_COUNTS/deaths.json",
+        "sha256": "0489241290290abd85a9716624e44891846bc6f7dccfb52575f15517b8fd533b"
+      },
+      {
+        "kind": "preset",
+        "id": "TBL_CRITERION_COUNTS/disposition",
+        "version": "1.0.0",
+        "path": "presets/TBL_CRITERION_COUNTS/disposition.json",
+        "sha256": "059901f6ec9ae93886c085bb7a42ae8eb6f703fcd024baf3bc3c4b6757ed2b99"
+      },
+      {
+        "kind": "preset",
+        "id": "TBL_CRITERION_COUNTS/dose_limiting_toxicity",
+        "version": "1.0.0",
+        "path": "presets/TBL_CRITERION_COUNTS/dose_limiting_toxicity.json",
+        "sha256": "a61399c86d67e319bc1a29063bba2369a791dfca9c4e71b28098b14068d07fea"
+      },
+      {
+        "kind": "preset",
+        "id": "TBL_CRITERION_COUNTS/notable_abnormalities",
+        "version": "1.0.0",
+        "path": "presets/TBL_CRITERION_COUNTS/notable_abnormalities.json",
+        "sha256": "d1929b9bfcd9e00914d9fae545d62d76c73c47a75b33d442d00384844e8ed265"
+      },
+      {
+        "kind": "preset",
+        "id": "TBL_CRITERION_COUNTS/protocol_deviations",
+        "version": "1.0.0",
+        "path": "presets/TBL_CRITERION_COUNTS/protocol_deviations.json",
+        "sha256": "3a2b2821238f91817b8abd34caf2f3f48b05b458e5124d34b5aeb3101d5a17cb"
+      },
+      {
+        "kind": "template",
+        "id": "TBL_PARAMETER_BY_VISIT",
+        "version": "1.0.0",
+        "path": "templates/table/TBL_PARAMETER_BY_VISIT.json",
+        "sha256": "a37a7ab018d6f39522af1efa2582e19f2a95e5f036926e9755a98ac382024816"
+      },
+      {
+        "kind": "preset",
+        "id": "TBL_PARAMETER_BY_VISIT/clinical_evaluation_by_visit",
+        "version": "1.0.0",
+        "path": "presets/TBL_PARAMETER_BY_VISIT/clinical_evaluation_by_visit.json",
+        "sha256": "9b0f40460bd8372a6217dfdd4074c08e5b1e20cd890b7f7b9fdd2f0e69ec5a97"
+      },
+      {
+        "kind": "preset",
+        "id": "TBL_PARAMETER_BY_VISIT/ecg_by_visit",
+        "version": "1.0.0",
+        "path": "presets/TBL_PARAMETER_BY_VISIT/ecg_by_visit.json",
+        "sha256": "bb2679d013e73bcac9efc86a1630d2a7d906fc2fd17055ba099deeeb0c51b63b"
+      },
+      {
+        "kind": "preset",
+        "id": "TBL_PARAMETER_BY_VISIT/ecog_by_visit",
+        "version": "1.0.0",
+        "path": "presets/TBL_PARAMETER_BY_VISIT/ecog_by_visit.json",
+        "sha256": "1604213938c75925b1ddbbfa725729e37871342e6220e696faf3e71e3b72cb8e"
+      },
+      {
+        "kind": "preset",
+        "id": "TBL_PARAMETER_BY_VISIT/laboratory_by_visit",
+        "version": "1.0.0",
+        "path": "presets/TBL_PARAMETER_BY_VISIT/laboratory_by_visit.json",
+        "sha256": "cad3550a274e7c95c695e664f3b8b917d3e6abc86e9ff1dd1c7f696b37d1eda3"
+      },
+      {
+        "kind": "preset",
+        "id": "TBL_PARAMETER_BY_VISIT/qtc_categories",
+        "version": "1.0.0",
+        "path": "presets/TBL_PARAMETER_BY_VISIT/qtc_categories.json",
+        "sha256": "1e40ac587affc8008e11abc720a7afd334000de04ca5067b3d64fdd5a37896a4"
+      },
+      {
+        "kind": "preset",
+        "id": "TBL_PARAMETER_BY_VISIT/questionnaire_scores",
+        "version": "1.0.0",
+        "path": "presets/TBL_PARAMETER_BY_VISIT/questionnaire_scores.json",
+        "sha256": "4dd316e02d86ecc9ed3ed9ac57fe1a6898f3b29aea92f8464dc2642b9cfd0bef"
+      },
+      {
+        "kind": "preset",
+        "id": "TBL_PARAMETER_BY_VISIT/tumor_size_change",
+        "version": "1.0.0",
+        "path": "presets/TBL_PARAMETER_BY_VISIT/tumor_size_change.json",
+        "sha256": "f3e90f21a6601bab38300241b6c7cca525ec5ca4f22713375bc0ced90f099ada"
+      },
+      {
+        "kind": "preset",
+        "id": "TBL_PARAMETER_BY_VISIT/vital_signs_by_visit",
+        "version": "1.0.0",
+        "path": "presets/TBL_PARAMETER_BY_VISIT/vital_signs_by_visit.json",
+        "sha256": "b1260417fe2f384692c661008c2ee649c93be8a4a6843afd30b4715b1a42a68f"
+      },
+      {
+        "kind": "template",
+        "id": "TBL_RESPONSE_RATE",
+        "version": "1.0.0",
+        "path": "templates/table/TBL_RESPONSE_RATE.json",
+        "sha256": "9187dce4c31f25ed2f205017c6e3f8b384891f1189467098afc72120599b5c98"
+      },
+      {
+        "kind": "preset",
+        "id": "TBL_RESPONSE_RATE/best_overall_response",
+        "version": "1.0.0",
+        "path": "presets/TBL_RESPONSE_RATE/best_overall_response.json",
+        "sha256": "5694883e3b15989d5d2e1016e0e971915bbcbc1d560c395429329e5eedcb203b"
+      },
+      {
+        "kind": "preset",
+        "id": "TBL_RESPONSE_RATE/binary_rate",
+        "version": "1.0.0",
+        "path": "presets/TBL_RESPONSE_RATE/binary_rate.json",
+        "sha256": "d748a2376bf34caa5c7abf08a606fbcfe66c2e5661523ed81e2eb9c8ffd8cc1e"
+      },
+      {
+        "kind": "template",
+        "id": "TBL_SHIFT_CROSSTAB",
+        "version": "1.0.0",
+        "path": "templates/table/TBL_SHIFT_CROSSTAB.json",
+        "sha256": "0f9d9a67fe483a6c4f61d0d9a880f260606a26552f92da183f1a8df2a8f684f7"
+      },
+      {
+        "kind": "preset",
+        "id": "TBL_SHIFT_CROSSTAB/clinical_evaluation_shift",
+        "version": "1.0.0",
+        "path": "presets/TBL_SHIFT_CROSSTAB/clinical_evaluation_shift.json",
+        "sha256": "dc859db16a094872f71b6856877630a743152bae307b3a1e87e812f9a535663d"
+      },
+      {
+        "kind": "preset",
+        "id": "TBL_SHIFT_CROSSTAB/concordance",
+        "version": "1.0.0",
+        "path": "presets/TBL_SHIFT_CROSSTAB/concordance.json",
+        "sha256": "7a466efd5edfa7ac8dfaa5b57199d53d26ac8548e1f715408394465bc931bf1e"
+      },
+      {
+        "kind": "preset",
+        "id": "TBL_SHIFT_CROSSTAB/ctcae_grade_shift",
+        "version": "1.0.0",
+        "path": "presets/TBL_SHIFT_CROSSTAB/ctcae_grade_shift.json",
+        "sha256": "f655cac8895a9efa4d0216b6b76aa8c4aa5160c2d95f7bb7e1ef7e9325a84e89"
+      },
+      {
+        "kind": "preset",
+        "id": "TBL_SHIFT_CROSSTAB/normal_range_shift",
+        "version": "1.0.0",
+        "path": "presets/TBL_SHIFT_CROSSTAB/normal_range_shift.json",
+        "sha256": "20b03609d22afc6aa0c09cba6dad53c34d6b9086d629a78f057eaaa6f04f3ae1"
+      },
+      {
+        "kind": "template",
+        "id": "TBL_TIMEPOINT_STATISTICS_COLUMNS",
+        "version": "1.0.0",
+        "path": "templates/table/TBL_TIMEPOINT_STATISTICS_COLUMNS.json",
+        "sha256": "0def5840180743a26acb448e7b96e3accd8f4f5e6b701da7e0a262271c827a5e"
+      },
+      {
+        "kind": "preset",
+        "id": "TBL_TIMEPOINT_STATISTICS_COLUMNS/pk_concentration",
+        "version": "1.0.0",
+        "path": "presets/TBL_TIMEPOINT_STATISTICS_COLUMNS/pk_concentration.json",
+        "sha256": "6df8a936286c6557406ecf9e3553426e294c826fc6b5335da46e22823814f073"
+      },
+      {
+        "kind": "template",
+        "id": "TBL_TIME_TO_EVENT",
+        "version": "1.0.0",
+        "path": "templates/table/TBL_TIME_TO_EVENT.json",
+        "sha256": "a4c32bb90ff10c91b1ca3c2efbd899d8e8a9c910fc9d23f473896a8c0c3aed39"
+      },
+      {
+        "kind": "preset",
+        "id": "TBL_TIME_TO_EVENT/event_time_summary",
+        "version": "1.0.0",
+        "path": "presets/TBL_TIME_TO_EVENT/event_time_summary.json",
+        "sha256": "304817e4c1fd6de6b6aa1ad047b6a260acee523d4f50b5fec2ca204b981b1d0c"
+      },
+      {
+        "kind": "template",
+        "id": "TBL_VARIABLE_SUMMARY",
+        "version": "1.0.0",
+        "path": "templates/table/TBL_VARIABLE_SUMMARY.json",
+        "sha256": "2a9fcfb08381025fa64106e4ee13b41da7b2b1453a6f9084be6dfe01782a3c89"
+      },
+      {
+        "kind": "preset",
+        "id": "TBL_VARIABLE_SUMMARY/demographics",
+        "version": "1.0.0",
+        "path": "presets/TBL_VARIABLE_SUMMARY/demographics.json",
+        "sha256": "5a99820bd99a7dcea546fac59c55284a7861b3ffc6390a63c4bd29b7c819d238"
+      },
+      {
+        "kind": "preset",
+        "id": "TBL_VARIABLE_SUMMARY/exposure_compliance",
+        "version": "1.0.0",
+        "path": "presets/TBL_VARIABLE_SUMMARY/exposure_compliance.json",
+        "sha256": "c5f61ebb1bc3a3ca930edc42e87f672a0e9690e905b42b3bbde34583bc0ce1a9"
+      },
+      {
+        "kind": "preset",
+        "id": "TBL_VARIABLE_SUMMARY/pk_parameters",
+        "version": "1.0.0",
+        "path": "presets/TBL_VARIABLE_SUMMARY/pk_parameters.json",
+        "sha256": "9bd0110fbe488931fde11aaed9096ff2043c0d861baae1eb10081cf9a26c3212"
+      },
+      {
+        "kind": "template",
+        "id": "LST_SUBJECT_RECORDS",
+        "version": "1.0.0",
+        "path": "templates/listing/LST_SUBJECT_RECORDS.json",
+        "sha256": "618245f1af230e37da0345d121d27343915af1d1f37b44469ae3095c0ada1059"
+      },
+      {
+        "kind": "preset",
+        "id": "LST_SUBJECT_RECORDS/adverse_event_records",
+        "version": "1.0.0",
+        "path": "presets/LST_SUBJECT_RECORDS/adverse_event_records.json",
+        "sha256": "7caa2b2f66c9b7a7f78c49d61f07358d206f091633ec808bd16807c491a6ac4c"
+      },
+      {
+        "kind": "preset",
+        "id": "LST_SUBJECT_RECORDS/analysis_set_records",
+        "version": "1.0.0",
+        "path": "presets/LST_SUBJECT_RECORDS/analysis_set_records.json",
+        "sha256": "d5caa5f7e3d3b2429ad9309718c4d1aab29a929aa88e99a0fcaaacf7c6e11b38"
+      },
+      {
+        "kind": "preset",
+        "id": "LST_SUBJECT_RECORDS/death_records",
+        "version": "1.0.0",
+        "path": "presets/LST_SUBJECT_RECORDS/death_records.json",
+        "sha256": "12a842af92c761346fae293807dc1851842623e5b5cabdb1c56c0527c734bb98"
+      },
+      {
+        "kind": "preset",
+        "id": "LST_SUBJECT_RECORDS/demographic_records",
+        "version": "1.0.0",
+        "path": "presets/LST_SUBJECT_RECORDS/demographic_records.json",
+        "sha256": "4bc5463d37f526d6034fae5bf22247dbf2d141e802d2c92178aa1cafd5cf6304"
+      },
+      {
+        "kind": "preset",
+        "id": "LST_SUBJECT_RECORDS/deviation_records",
+        "version": "1.0.0",
+        "path": "presets/LST_SUBJECT_RECORDS/deviation_records.json",
+        "sha256": "073db2dcf227a71594783d78242a4afa1326f73eb690e3532b98fd92e643d144"
+      },
+      {
+        "kind": "preset",
+        "id": "LST_SUBJECT_RECORDS/disease_history_records",
+        "version": "1.0.0",
+        "path": "presets/LST_SUBJECT_RECORDS/disease_history_records.json",
+        "sha256": "5186f26152ee9fdc728ab6b0b13a6e24bed3375521f2ab29e21ad50340b7f616"
+      },
+      {
+        "kind": "preset",
+        "id": "LST_SUBJECT_RECORDS/disposition_records",
+        "version": "1.0.0",
+        "path": "presets/LST_SUBJECT_RECORDS/disposition_records.json",
+        "sha256": "c72ca4c58ff379c3d37f6e9ec6961471fcc25f40cd060d65ef26e5ba74c007f9"
+      },
+      {
+        "kind": "preset",
+        "id": "LST_SUBJECT_RECORDS/ecg_cardiac_records",
+        "version": "1.0.0",
+        "path": "presets/LST_SUBJECT_RECORDS/ecg_cardiac_records.json",
+        "sha256": "0e7511c9bf0de2589a1c4b1bd55984aa047f295fedb0ff7e4d61398cdba2fb3b"
+      },
+      {
+        "kind": "preset",
+        "id": "LST_SUBJECT_RECORDS/efficacy_records",
+        "version": "1.0.0",
+        "path": "presets/LST_SUBJECT_RECORDS/efficacy_records.json",
+        "sha256": "6bee61a95f66eafc6f81aea7a9e15fd3bd1df38514f9dbdd687d24df938cb044"
+      },
+      {
+        "kind": "preset",
+        "id": "LST_SUBJECT_RECORDS/eligibility_records",
+        "version": "1.0.0",
+        "path": "presets/LST_SUBJECT_RECORDS/eligibility_records.json",
+        "sha256": "c0febe97411c9c5f88a869bf7f2249e31222306363fd6e5ca907b9f11df656c7"
+      },
+      {
+        "kind": "preset",
+        "id": "LST_SUBJECT_RECORDS/exposure_records",
+        "version": "1.0.0",
+        "path": "presets/LST_SUBJECT_RECORDS/exposure_records.json",
+        "sha256": "311f231763ef00b7aa3bec83ffac3fb10471ff422318b400e5d2c5a801c933a8"
+      },
+      {
+        "kind": "preset",
+        "id": "LST_SUBJECT_RECORDS/immunogenicity_records",
+        "version": "1.0.0",
+        "path": "presets/LST_SUBJECT_RECORDS/immunogenicity_records.json",
+        "sha256": "a257859f84ce5c20527b6728f4753ec3c3ee89f749a7ab027cc301c10931771d"
+      },
+      {
+        "kind": "preset",
+        "id": "LST_SUBJECT_RECORDS/laboratory_records",
+        "version": "1.0.0",
+        "path": "presets/LST_SUBJECT_RECORDS/laboratory_records.json",
+        "sha256": "6857364d26045e5c982829ea1860e6c0a1332789002a9ae57a6b3f1179a24f8e"
+      },
+      {
+        "kind": "preset",
+        "id": "LST_SUBJECT_RECORDS/medical_history_records",
+        "version": "1.0.0",
+        "path": "presets/LST_SUBJECT_RECORDS/medical_history_records.json",
+        "sha256": "24e26289a57760220e836638361f21f85288a947499453f515a831686a4c8690"
+      },
+      {
+        "kind": "preset",
+        "id": "LST_SUBJECT_RECORDS/medication_records",
+        "version": "1.0.0",
+        "path": "presets/LST_SUBJECT_RECORDS/medication_records.json",
+        "sha256": "d98a4cf13daabe3515f1c063a946eac4ae1c338f04a3a9bb49e8e0f7e7db04d0"
+      },
+      {
+        "kind": "preset",
+        "id": "LST_SUBJECT_RECORDS/pd_biomarker_records",
+        "version": "1.0.0",
+        "path": "presets/LST_SUBJECT_RECORDS/pd_biomarker_records.json",
+        "sha256": "f95361828195a0aa03d3f381f36fc699454d8953ac1a5f679701f0989e830514"
+      },
+      {
+        "kind": "preset",
+        "id": "LST_SUBJECT_RECORDS/performance_status_records",
+        "version": "1.0.0",
+        "path": "presets/LST_SUBJECT_RECORDS/performance_status_records.json",
+        "sha256": "c762bb3e361b42d296d9797fc4b07e121b645764872ce052a3a25ff2f26816f3"
+      },
+      {
+        "kind": "preset",
+        "id": "LST_SUBJECT_RECORDS/physical_exam_records",
+        "version": "1.0.0",
+        "path": "presets/LST_SUBJECT_RECORDS/physical_exam_records.json",
+        "sha256": "0dadea1fa21ff4acd9af9176d91097ace42076c573e78b39ef3bd91cb5d685be"
+      },
+      {
+        "kind": "preset",
+        "id": "LST_SUBJECT_RECORDS/pk_records",
+        "version": "1.0.0",
+        "path": "presets/LST_SUBJECT_RECORDS/pk_records.json",
+        "sha256": "8a90f30e299ff857098ff3a5a30e454f979e7a833f80bba1820cf43139a85862"
+      },
+      {
+        "kind": "preset",
+        "id": "LST_SUBJECT_RECORDS/questionnaire_records",
+        "version": "1.0.0",
+        "path": "presets/LST_SUBJECT_RECORDS/questionnaire_records.json",
+        "sha256": "a63f70dba302c49bd5d62785a36ab5df287e68d4ac8020e59eb0d5bdb5ac26cb"
+      },
+      {
+        "kind": "preset",
+        "id": "LST_SUBJECT_RECORDS/time_to_event_records",
+        "version": "1.0.0",
+        "path": "presets/LST_SUBJECT_RECORDS/time_to_event_records.json",
+        "sha256": "f614ecead1210342b39cb04a3b514c34502b09ce79e3176d5a5109822f444230"
+      },
+      {
+        "kind": "preset",
+        "id": "LST_SUBJECT_RECORDS/visit_date_records",
+        "version": "1.0.0",
+        "path": "presets/LST_SUBJECT_RECORDS/visit_date_records.json",
+        "sha256": "7a7368efd2a137d125c25c93bfd2d25ea37cb6d3c30851c7c76241673d32f657"
+      },
+      {
+        "kind": "preset",
+        "id": "LST_SUBJECT_RECORDS/vital_sign_records",
+        "version": "1.0.0",
+        "path": "presets/LST_SUBJECT_RECORDS/vital_sign_records.json",
+        "sha256": "7f0a9456e8785a76d8a5b752b1afa6a81e03340a174afbdf08b9660ef9463f76"
+      },
+      {
+        "kind": "template",
+        "id": "FIG_BOX_PLOT",
+        "version": "1.0.0",
+        "path": "templates/figure/FIG_BOX_PLOT.json",
+        "sha256": "3f8e60d5e8889bfaef93e3d1e93a5aa7feff7626ce9e817fb518b9154f1f933c"
+      },
+      {
+        "kind": "preset",
+        "id": "FIG_BOX_PLOT/change_from_baseline_box",
+        "version": "1.0.0",
+        "path": "presets/FIG_BOX_PLOT/change_from_baseline_box.json",
+        "sha256": "68651c2b89482e37027bdfa5d801b177514e5374b3fdb06f643931e03b489460"
+      },
+      {
+        "kind": "template",
+        "id": "FIG_INDIVIDUAL_PROFILE",
+        "version": "1.0.0",
+        "path": "templates/figure/FIG_INDIVIDUAL_PROFILE.json",
+        "sha256": "e9cd8cb065cb2661925ec0b654e0a42cc83b58cb8202c335c1aae05b939d0549"
+      },
+      {
+        "kind": "preset",
+        "id": "FIG_INDIVIDUAL_PROFILE/individual_concentration_time",
+        "version": "1.0.0",
+        "path": "presets/FIG_INDIVIDUAL_PROFILE/individual_concentration_time.json",
+        "sha256": "013c7a4c00f0389de23dc2acab30dc8c486130e7ba1e5971cd52d1e881390c1b"
+      },
+      {
+        "kind": "preset",
+        "id": "FIG_INDIVIDUAL_PROFILE/individual_values_by_visit",
+        "version": "1.0.0",
+        "path": "presets/FIG_INDIVIDUAL_PROFILE/individual_values_by_visit.json",
+        "sha256": "840f34d8d8d78b407441d69d0b04e88f771af26d1bac14f95d424b9b2c9070f7"
+      },
+      {
+        "kind": "preset",
+        "id": "FIG_INDIVIDUAL_PROFILE/spider_percent_change",
+        "version": "1.0.0",
+        "path": "presets/FIG_INDIVIDUAL_PROFILE/spider_percent_change.json",
+        "sha256": "b21ccf1193b6d27cc4012e99ee8f85636864abae636fa07e91d88896c39d3ec2"
+      },
+      {
+        "kind": "template",
+        "id": "FIG_KAPLAN_MEIER",
+        "version": "1.0.0",
+        "path": "templates/figure/FIG_KAPLAN_MEIER.json",
+        "sha256": "59e28e1a9ce778a5775f5b7ebcc684b566cd9bab31eeb26fa68b0c7e38594cee"
+      },
+      {
+        "kind": "preset",
+        "id": "FIG_KAPLAN_MEIER/event_free_time",
+        "version": "1.0.0",
+        "path": "presets/FIG_KAPLAN_MEIER/event_free_time.json",
+        "sha256": "2115eea2c0eb178e2adf3ce374abc0f2e7aedd2ec6b47182d3704bb4dfa62639"
+      },
+      {
+        "kind": "preset",
+        "id": "FIG_KAPLAN_MEIER/overall_survival",
+        "version": "1.0.0",
+        "path": "presets/FIG_KAPLAN_MEIER/overall_survival.json",
+        "sha256": "f9227e1bd5fa839cff9af0e85b60d8b7756412e947be711a5507491ce6b74f94"
+      },
+      {
+        "kind": "template",
+        "id": "FIG_SUMMARY_OVER_TIME",
+        "version": "1.0.0",
+        "path": "templates/figure/FIG_SUMMARY_OVER_TIME.json",
+        "sha256": "78d485d4996bf58832c057caba046e0048294aae8b92412d9ee1062d44f09ef0"
+      },
+      {
+        "kind": "preset",
+        "id": "FIG_SUMMARY_OVER_TIME/category_percentage_over_time",
+        "version": "1.0.0",
+        "path": "presets/FIG_SUMMARY_OVER_TIME/category_percentage_over_time.json",
+        "sha256": "2ce758a8d2acb1495a0bb5f602bf84d8665f5e61b265861e961f02dc347bcc23"
+      },
+      {
+        "kind": "preset",
+        "id": "FIG_SUMMARY_OVER_TIME/mean_concentration_time",
+        "version": "1.0.0",
+        "path": "presets/FIG_SUMMARY_OVER_TIME/mean_concentration_time.json",
+        "sha256": "d277b75f9639e5ca3dc07a3ae1908a356899350c7ff1736c91b2484243ee0a21"
+      },
+      {
+        "kind": "preset",
+        "id": "FIG_SUMMARY_OVER_TIME/mean_value_over_time",
+        "version": "1.0.0",
+        "path": "presets/FIG_SUMMARY_OVER_TIME/mean_value_over_time.json",
+        "sha256": "e9f985681df9bffb5d1eb37dc8b7714fd6cd0a9336490cf90d64a3e31bf48d32"
+      },
+      {
+        "kind": "template",
+        "id": "FIG_TORNADO",
+        "version": "1.0.0",
+        "path": "templates/figure/FIG_TORNADO.json",
+        "sha256": "779c50c964193acdc9061f3a675a93c4b0194d413ce0687c1f8ad3abc12d5168"
+      },
+      {
+        "kind": "preset",
+        "id": "FIG_TORNADO/ae_pt_tornado",
+        "version": "1.0.0",
+        "path": "presets/FIG_TORNADO/ae_pt_tornado.json",
+        "sha256": "5672e931fe7643a6c50caf7aab25df31c5fa829731c51936db91d28090c3ffba"
+      },
+      {
+        "kind": "template",
+        "id": "FIG_WATERFALL",
+        "version": "1.0.0",
+        "path": "templates/figure/FIG_WATERFALL.json",
+        "sha256": "df7769126ec68db394ab990d722975349e1a3dbbed7633257c93782c7760f472"
+      },
+      {
+        "kind": "preset",
+        "id": "FIG_WATERFALL/best_percent_change",
+        "version": "1.0.0",
+        "path": "presets/FIG_WATERFALL/best_percent_change.json",
+        "sha256": "104ce397865322b5aa92ee112151869922ea1e65242bd6693515ea6c7810f485"
+      },
+      {
+        "kind": "style_guide",
+        "id": "HOUSE_STYLE",
+        "version": "1.1.0",
+        "path": "style/House_Style_Guide.json",
+        "sha256": "f9ee9e4068abe4fea701e65ddb24600384e568ec6461eac314ec9345fd84dc13"
+      }
+    ]
+  },
+  "history": [
+    {
+      "approved_by": "Project owner",
+      "date": "2026-11-26",
+      "basis": "Explicit approval given by the project owner in the working session after reviewing the 16 template definitions (stage 4).",
+      "item_count": 83
+    }
+  ]
+}

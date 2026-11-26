@@ -1,0 +1,310 @@
+{
+  "schema_version": "3.0",
+  "output_id": "14.3.2.1.1",
+  "output_type": "table",
+  "template_id": "TBL_CODED_TERM_HIERARCHY",
+  "template_version": "1.0.0",
+  "preset_ids": [
+    "teae_soc_pt"
+  ],
+  "title": {
+    "value": "Summary of Treatment-Emergent Adverse Events by System Organ Class and Preferred Term - Dose Escalation",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "population": {
+    "value": "Safety Analysis Set",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "columns": {
+    "stub_header": {
+      "value": "System Organ Class / Preferred Term",
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "groups": [
+      {
+        "id": "D1",
+        "label": {
+          "value": "WTX-330 0.016 mg/kg",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "D2",
+        "label": {
+          "value": "WTX-330 0.032 mg/kg",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "D3",
+        "label": {
+          "value": "WTX-330 0.056 mg/kg",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "D4",
+        "label": {
+          "value": "WTX-330 0.084 mg/kg",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      }
+    ],
+    "total": {
+      "enabled": {
+        "value": true,
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "label": {
+        "value": "Total",
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "member_group_ids": [
+        "D1",
+        "D2",
+        "D3",
+        "D4"
+      ]
+    }
+  },
+  "row_blocks": [
+    {
+      "block_id": "any",
+      "block_type": "any_row",
+      "label": {
+        "value": "Subjects with at least one TEAE",
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    },
+    {
+      "block_id": "terms",
+      "block_type": "coded_hierarchy",
+      "label": {
+        "value": "TEAE terms",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "levels": {
+        "value": [
+          "System Organ Class",
+          "Preferred Term"
+        ],
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "dictionary": {
+        "value": "MedDRA version 26.1",
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "sort_rule": {
+        "value": "Descending frequency in the Total column (first group if no Total); ties alphabetical",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "category_split": {
+        "value": "none",
+        "source": "template_default",
+        "status": "resolved"
+      }
+    }
+  ],
+  "footnotes": [
+    {
+      "id": "FN_TEAE",
+      "marker": null,
+      "text": {
+        "value": "TEAE: [TEAE definition from SAP section x]",
+        "source": "study_setting",
+        "status": "resolved"
+      }
+    },
+    {
+      "id": "FN_DICT",
+      "marker": null,
+      "text": {
+        "value": "Adverse events are coded using MedDRA version 26.1.",
+        "source": "study_setting",
+        "status": "resolved"
+      }
+    },
+    {
+      "id": "FN_DENOM",
+      "marker": null,
+      "text": {
+        "value": "Percentages are based on [percentage denominator].",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q010",
+        "note": "missing study setting: definitions.percentage_denominator"
+      }
+    },
+    {
+      "id": "FN_COUNT_ONCE",
+      "marker": null,
+      "text": {
+        "value": "A subject is counted only once per System Organ Class and Preferred Term.",
+        "source": "template_default",
+        "status": "resolved"
+      }
+    }
+  ],
+  "programming_notes": [
+    {
+      "id": "PN_SORT",
+      "marker": null,
+      "text": {
+        "value": "Sort rule: Descending frequency in the Total column (first group if no Total); ties alphabetical.",
+        "source": "template_default",
+        "status": "resolved"
+      }
+    }
+  ],
+  "figure": null,
+  "listing": null,
+  "config": {
+    "hierarchy_depth": 2,
+    "category_split": "none",
+    "event_counts": false
+  },
+  "page": {
+    "orientation": "landscape",
+    "paper": "letter",
+    "font": "Courier New",
+    "font_size_pt": 9,
+    "include_programming_notes": true
+  },
+  "issues": [
+    {
+      "question_id": "Q010",
+      "element_path": "footnotes[FN_DENOM]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.percentage_denominator (needed for: Percentages are based on [percentage denominator].).",
+      "answer": null
+    }
+  ],
+  "provenance": {
+    "content_list_entry": {
+      "entry_id": "CL021",
+      "document_id": "SAP_001_98",
+      "original_tfl_number": "14.3.2.1.1",
+      "output_type": "table",
+      "original_title": "Summary of Treatment-Emergent Adverse Events by System Organ Class and Preferred Term - Dose Escalation",
+      "population": "Safety Analysis Set"
+    },
+    "template_file_sha256": "fc30cec50530fce6a74f43f01db50ef1356d21525f1f4909a1301cedc4dcfaf0",
+    "preset_file_sha256": {
+      "teae_soc_pt": "5d8f2fa4cc94b8a28f3943944127722c918be2561cf122b4c54827e8dfbbcc29"
+    },
+    "style_guide_version": "1.1.0",
+    "study_settings_version": "WTX-330x2101@example-0.3+answers(2)",
+    "match": {
+      "selected": "TBL_CODED_TERM_HIERARCHY",
+      "candidates": [
+        {
+          "template_id": "TBL_CODED_TERM_HIERARCHY",
+          "score": 16,
+          "matched_terms": [
+            "preferred term",
+            "system organ class"
+          ],
+          "negative_terms": [],
+          "preset_id": "teae_soc_pt",
+          "preset_score": 6
+        },
+        {
+          "template_id": "TBL_CONTINUOUS_COMPARISON",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_TIMEPOINT_STATISTICS_COLUMNS",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_TIME_TO_EVENT",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_PARAMETER_BY_VISIT",
+          "score": -4,
+          "matched_terms": [],
+          "negative_terms": [
+            "system organ class"
+          ],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_RESPONSE_RATE",
+          "score": -4,
+          "matched_terms": [],
+          "negative_terms": [
+            "system organ class"
+          ],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_SHIFT_CROSSTAB",
+          "score": -4,
+          "matched_terms": [],
+          "negative_terms": [
+            "system organ class"
+          ],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_CRITERION_COUNTS",
+          "score": -6,
+          "matched_terms": [],
+          "negative_terms": [
+            "system organ class",
+            "preferred term"
+          ],
+          "preset_id": "ae_overview",
+          "preset_score": 2
+        },
+        {
+          "template_id": "TBL_VARIABLE_SUMMARY",
+          "score": -8,
+          "matched_terms": [],
+          "negative_terms": [
+            "system organ class",
+            "preferred term"
+          ],
+          "preset_id": null,
+          "preset_score": 0
+        }
+      ],
+      "explanation": "Selected TBL_CODED_TERM_HIERARCHY (score 16): title terms preferred term, system organ class; preset teae_soc_pt."
+    },
+    "generated_by": "tools/build_spec.py (rule-based); config: hierarchy_depth=2 (template default); category_split=none (template default); event_counts=False (template default); reviewer answers applied: coding.meddra_version, definitions.teae_definition"
+  }
+}

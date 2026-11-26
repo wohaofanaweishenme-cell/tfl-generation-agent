@@ -1,0 +1,2605 @@
+{
+  "library": "Generic_Template_Build",
+  "style_guide_version": "1.1.0",
+  "style_guide_sha256": "f9ee9e4068abe4fea701e65ddb24600384e568ec6461eac314ec9345fd84dc13",
+  "templates": [
+    {
+      "template_id": "TBL_CODED_TERM_HIERARCHY",
+      "version": "1.0.0",
+      "output_type": "table",
+      "name": "Coded term hierarchy summary",
+      "intended_use": "Number (%) of subjects (optionally also number of events) by dictionary-coded terms: System Organ Class / Preferred Term, ATC class / preferred name, AESI or SMQ category / Preferred Term, or Preferred Term only; data-driven term rows below an 'any' row; optional split by grade, severity or relationship.",
+      "not_for": "Predefined status or criterion rows such as AE overview flags, disposition or deviations (criterion-count template); subject-level listings of events.",
+      "keywords": [
+        "system organ class",
+        "preferred term",
+        "medical history",
+        "prior medications",
+        "concomitant medications",
+        "coded terms"
+      ],
+      "aliases": [
+        "SOC",
+        "PT",
+        "MedDRA",
+        "ATC",
+        "WHO Drug",
+        "preferred name",
+        "therapeutic class",
+        "adverse events of special interest",
+        "AESI",
+        "SMQ"
+      ],
+      "match_cues": {
+        "title_terms": [
+          "system organ class",
+          "preferred term",
+          "soc",
+          "atc",
+          "therapeutic class",
+          "medical history",
+          "prior medication",
+          "concomitant medication",
+          "smq",
+          "special interest",
+          "subsequent anticancer"
+        ],
+        "negative_terms": [
+          "overview",
+          "overall summary",
+          "listing",
+          "kaplan",
+          "plot",
+          "shift",
+          "by visit",
+          "laboratory"
+        ]
+      },
+      "required_fields": [
+        "title",
+        "population",
+        "columns.groups",
+        "columns.total",
+        "row_blocks[coded_hierarchy].dictionary",
+        "footnotes[FN_DENOM]"
+      ],
+      "config_options": {
+        "hierarchy_depth": {
+          "values": [
+            2,
+            1
+          ],
+          "default": 2
+        },
+        "category_split": {
+          "values": [
+            "none",
+            "subrows",
+            "subcolumns"
+          ],
+          "default": "none"
+        },
+        "event_counts": {
+          "values": [
+            false,
+            true
+          ],
+          "default": false
+        }
+      },
+      "presets": [
+        {
+          "preset_id": "medical_history_soc_pt",
+          "name": "Medical history by SOC and PT",
+          "keywords": [
+            "medical history"
+          ],
+          "aliases": [
+            "medical history",
+            "prior diseases",
+            "concomitant disease",
+            "surgical history"
+          ],
+          "path": "presets/TBL_CODED_TERM_HIERARCHY/medical_history_soc_pt.json",
+          "version": "1.0.0",
+          "sha256": "f5c68b5ab930335ab8bb2bcb6b772f3e5d109484c9679cdf980be585c7a31d1e"
+        },
+        {
+          "preset_id": "prior_concomitant_medications",
+          "name": "Prior / concomitant / subsequent medications by ATC class and preferred name",
+          "keywords": [
+            "prior medications",
+            "concomitant medications"
+          ],
+          "aliases": [
+            "prior medication",
+            "concomitant medication",
+            "medications",
+            "ATC",
+            "WHO Drug",
+            "therapeutic class",
+            "preferred name",
+            "subsequent anticancer"
+          ],
+          "path": "presets/TBL_CODED_TERM_HIERARCHY/prior_concomitant_medications.json",
+          "version": "1.0.0",
+          "sha256": "a9e20496adf5d9f4e08e60c788faddfa77b3c111d177e34d649a83c3b9a78010"
+        },
+        {
+          "preset_id": "teae_soc_pt",
+          "name": "Treatment-emergent adverse events by SOC and PT",
+          "keywords": [
+            "adverse events",
+            "treatment-emergent adverse events"
+          ],
+          "aliases": [
+            "TEAE",
+            "TEAEs",
+            "adverse event",
+            "serious adverse events",
+            "SAE",
+            "AESI",
+            "special interest",
+            "SMQ",
+            "by system organ class and preferred term"
+          ],
+          "path": "presets/TBL_CODED_TERM_HIERARCHY/teae_soc_pt.json",
+          "version": "1.0.0",
+          "sha256": "5d8f2fa4cc94b8a28f3943944127722c918be2561cf122b4c54827e8dfbbcc29"
+        }
+      ],
+      "evidence_sources": 34,
+      "evidence_studies": 6,
+      "evidence_level": "multi_study",
+      "review_status": "approved",
+      "path": "templates/table/TBL_CODED_TERM_HIERARCHY.json",
+      "sha256": "fc30cec50530fce6a74f43f01db50ef1356d21525f1f4909a1301cedc4dcfaf0",
+      "reference_shells": [
+        {
+          "preset_id": "medical_history_soc_pt",
+          "docx": "TFL_Template_Library/table/TBL_CODED_TERM_HIERARCHY__medical_history_soc_pt.docx",
+          "sha256": "a88ef4a2e7ea89a200e987140700f1c518b95e70e20b0fbe4577bd7582477f2b"
+        },
+        {
+          "preset_id": "prior_concomitant_medications",
+          "docx": "TFL_Template_Library/table/TBL_CODED_TERM_HIERARCHY__prior_concomitant_medications.docx",
+          "sha256": "32decd682d76dac250a271387665c63adf3ef2accf7df51cc7463d28705a6b43"
+        },
+        {
+          "preset_id": "teae_soc_pt",
+          "docx": "TFL_Template_Library/table/TBL_CODED_TERM_HIERARCHY__teae_soc_pt.docx",
+          "sha256": "fbedc44e4841b895d1441441745020c1c920df4ce51960865a7f3bd8603618c2"
+        }
+      ]
+    },
+    {
+      "template_id": "TBL_CONTINUOUS_COMPARISON",
+      "version": "1.0.0",
+      "output_type": "table",
+      "name": "Continuous endpoint with between-group estimate",
+      "intended_use": "Descriptive statistics of a continuous endpoint and its baseline / post-baseline components, followed by a model-based or nonparametric between-group estimate (LS mean difference, Hodges-Lehmann shift) with confidence interval and optional p-value.",
+      "not_for": "Descriptive-only summaries (variable summary or parameter-by-visit templates); binary endpoints (response rate template).",
+      "keywords": [
+        "continuous endpoint comparison"
+      ],
+      "aliases": [
+        "percentage change from baseline",
+        "change from baseline at",
+        "LS mean",
+        "least squares",
+        "Hodges-Lehmann",
+        "duration of grade",
+        "nadir",
+        "covariate",
+        "without covariate",
+        "log-transformed"
+      ],
+      "match_cues": {
+        "title_terms": [
+          "percentage change from baseline at",
+          "change from baseline at",
+          "change at",
+          "covariate",
+          "duration of grade",
+          "nadir",
+          "log-transformed"
+        ],
+        "negative_terms": [
+          "by visit",
+          "listing",
+          "plot",
+          "box",
+          "rate",
+          "incidence"
+        ]
+      },
+      "required_fields": [
+        "title",
+        "population",
+        "columns.groups",
+        "columns.total",
+        "row_blocks[endpoint].items",
+        "footnotes[FN_MODEL]",
+        "columns.comparison_columns"
+      ],
+      "config_options": {
+        "comparison": {
+          "values": [
+            "columns",
+            "rows"
+          ],
+          "default": "columns"
+        },
+        "repeat_by_period": {
+          "values": [
+            false,
+            true
+          ],
+          "default": false
+        }
+      },
+      "presets": [
+        {
+          "preset_id": "change_from_baseline_model",
+          "name": "Change from baseline with model-based estimate",
+          "keywords": [
+            "continuous endpoint comparison"
+          ],
+          "aliases": [
+            "percentage change from baseline",
+            "change from baseline at",
+            "LS mean",
+            "covariate",
+            "log-transformed",
+            "Ki-67",
+            "AQUA",
+            "H-score"
+          ],
+          "path": "presets/TBL_CONTINUOUS_COMPARISON/change_from_baseline_model.json",
+          "version": "1.0.0",
+          "sha256": "7bd30cd49e0db182d87e5e978e5da67ab225abaff7ff4d8217f91ac0da559879"
+        },
+        {
+          "preset_id": "nonparametric_estimate",
+          "name": "Duration / nadir with nonparametric estimate",
+          "keywords": [
+            "continuous endpoint comparison"
+          ],
+          "aliases": [
+            "Hodges-Lehmann",
+            "duration of grade",
+            "nadir",
+            "duration of"
+          ],
+          "path": "presets/TBL_CONTINUOUS_COMPARISON/nonparametric_estimate.json",
+          "version": "1.0.0",
+          "sha256": "89b6cb3cc32e79024a9620a3f06c6f3f36ea5d7fb96bfe154a3ba4e4e8bde650"
+        }
+      ],
+      "evidence_sources": 28,
+      "evidence_studies": 2,
+      "evidence_level": "multi_study",
+      "review_status": "approved",
+      "path": "templates/table/TBL_CONTINUOUS_COMPARISON.json",
+      "sha256": "b121676be747f28fd64bb7a09f77c7d606bd359e0229379c9ce6eead6a6ec63d",
+      "reference_shells": [
+        {
+          "preset_id": "change_from_baseline_model",
+          "docx": "TFL_Template_Library/table/TBL_CONTINUOUS_COMPARISON__change_from_baseline_model.docx",
+          "sha256": "45a01be12339c356139d1003cfa2d9eee438e0ec1866245eecd0b85ffb78fc56"
+        },
+        {
+          "preset_id": "nonparametric_estimate",
+          "docx": "TFL_Template_Library/table/TBL_CONTINUOUS_COMPARISON__nonparametric_estimate.docx",
+          "sha256": "dcc4dd43ccd7e1b195e4efa798daaeadf9a90581c24885bc8abd3f148b79b152"
+        }
+      ]
+    },
+    {
+      "template_id": "TBL_CRITERION_COUNTS",
+      "version": "1.0.0",
+      "output_type": "table",
+      "name": "Subject counts by criterion",
+      "intended_use": "Number (%) of subjects meeting each of a list of predefined criteria or status flags (disposition status and reasons, analysis-set membership, protocol-deviation categories, deaths and causes, AE overview categories, DLT, anti-drug antibody status, clinically notable thresholds). Rows may be nested and need not be mutually exclusive.",
+      "not_for": "Distribution of one variable over exhaustive categories (variable summary template); dictionary-coded terms (coded-term template); category counts repeated by visit (parameter-by-visit template).",
+      "keywords": [
+        "disposition",
+        "analysis sets",
+        "protocol deviations",
+        "deaths",
+        "adverse event overview",
+        "dose-limiting toxicity",
+        "anti-drug antibodies",
+        "notable abnormalities"
+      ],
+      "aliases": [
+        "subject disposition",
+        "patient disposition",
+        "discontinuation",
+        "analysis populations",
+        "analysis set",
+        "important protocol deviations",
+        "major protocol deviations",
+        "death",
+        "overview of adverse events",
+        "overall summary of treatment-emergent adverse events",
+        "summary of adverse events",
+        "DLT",
+        "ADA",
+        "clinically significant",
+        "notable",
+        "patients who",
+        "participants with",
+        "summary of treatment emergent adverse events overview",
+        "adverse events by causality",
+        "category of adverse event",
+        "radical cystectomy",
+        "tumor biopsy",
+        "post-baseline tumor assessment"
+      ],
+      "match_cues": {
+        "title_terms": [
+          "disposition",
+          "analysis set",
+          "analysis population",
+          "protocol deviation",
+          "deviations from",
+          "death",
+          "overview",
+          "overall summary",
+          "dose-limiting",
+          "dlt",
+          "anti-drug antibod",
+          "clinically significant",
+          "notable",
+          "liver function",
+          "worsening",
+          "patients who",
+          "participants with",
+          "causality",
+          "overview"
+        ],
+        "negative_terms": [
+          "system organ class",
+          "preferred term",
+          "by visit",
+          "shift",
+          "listing",
+          "plot",
+          "kaplan",
+          "by site"
+        ]
+      },
+      "required_fields": [
+        "title",
+        "population",
+        "columns.groups",
+        "columns.total",
+        "row_blocks[criterion].items",
+        "footnotes[FN_DENOM]"
+      ],
+      "config_options": {
+        "column_layout": {
+          "values": [
+            "groups",
+            "single_all_subjects"
+          ],
+          "default": "groups"
+        },
+        "event_counts": {
+          "values": [
+            false,
+            true
+          ],
+          "default": false
+        }
+      },
+      "presets": [
+        {
+          "preset_id": "ada_status",
+          "name": "Anti-drug antibody status",
+          "keywords": [
+            "anti-drug antibodies"
+          ],
+          "aliases": [
+            "ADA",
+            "anti-drug antibody",
+            "immunogenicity"
+          ],
+          "path": "presets/TBL_CRITERION_COUNTS/ada_status.json",
+          "version": "1.0.0",
+          "sha256": "e43ef04fc7be178955e696e596c2e4c77b2192ac44ed6f9afbaf0acbeae70386"
+        },
+        {
+          "preset_id": "ae_overview",
+          "name": "Adverse event overview",
+          "keywords": [
+            "adverse event overview"
+          ],
+          "aliases": [
+            "overview of adverse events",
+            "overall summary of treatment-emergent adverse events",
+            "summary of adverse events",
+            "summary of treatment emergent adverse events",
+            "TEAE"
+          ],
+          "path": "presets/TBL_CRITERION_COUNTS/ae_overview.json",
+          "version": "1.0.0",
+          "sha256": "79b74af02c8de6a61ab1288e5e8e510114d60197c1dfa57c7007497e891f5f4b"
+        },
+        {
+          "preset_id": "analysis_sets",
+          "name": "Analysis sets",
+          "keywords": [
+            "analysis sets"
+          ],
+          "aliases": [
+            "analysis set",
+            "analysis populations",
+            "populations"
+          ],
+          "path": "presets/TBL_CRITERION_COUNTS/analysis_sets.json",
+          "version": "1.0.0",
+          "sha256": "dff223a69f47869c8b5e6bab79077721a019382b32e78a77d162d11413b727b5"
+        },
+        {
+          "preset_id": "deaths",
+          "name": "Deaths",
+          "keywords": [
+            "deaths"
+          ],
+          "aliases": [
+            "death",
+            "summary of death",
+            "subject death",
+            "cause of death"
+          ],
+          "path": "presets/TBL_CRITERION_COUNTS/deaths.json",
+          "version": "1.0.0",
+          "sha256": "0489241290290abd85a9716624e44891846bc6f7dccfb52575f15517b8fd533b"
+        },
+        {
+          "preset_id": "disposition",
+          "name": "Subject disposition",
+          "keywords": [
+            "disposition"
+          ],
+          "aliases": [
+            "subject disposition",
+            "patient disposition",
+            "discontinuation",
+            "study completion",
+            "end of study"
+          ],
+          "path": "presets/TBL_CRITERION_COUNTS/disposition.json",
+          "version": "1.0.0",
+          "sha256": "059901f6ec9ae93886c085bb7a42ae8eb6f703fcd024baf3bc3c4b6757ed2b99"
+        },
+        {
+          "preset_id": "dose_limiting_toxicity",
+          "name": "Dose-limiting toxicity",
+          "keywords": [
+            "dose-limiting toxicity"
+          ],
+          "aliases": [
+            "DLT",
+            "dose limiting toxicity"
+          ],
+          "path": "presets/TBL_CRITERION_COUNTS/dose_limiting_toxicity.json",
+          "version": "1.0.0",
+          "sha256": "a61399c86d67e319bc1a29063bba2369a791dfca9c4e71b28098b14068d07fea"
+        },
+        {
+          "preset_id": "notable_abnormalities",
+          "name": "Clinically notable abnormalities (thresholds)",
+          "keywords": [
+            "notable abnormalities"
+          ],
+          "aliases": [
+            "clinically significant",
+            "notable",
+            "liver function",
+            "xULN",
+            "worsening",
+            "on-treatment worsening"
+          ],
+          "path": "presets/TBL_CRITERION_COUNTS/notable_abnormalities.json",
+          "version": "1.0.0",
+          "sha256": "d1929b9bfcd9e00914d9fae545d62d76c73c47a75b33d442d00384844e8ed265"
+        },
+        {
+          "preset_id": "protocol_deviations",
+          "name": "Protocol deviations",
+          "keywords": [
+            "protocol deviations"
+          ],
+          "aliases": [
+            "deviation",
+            "important protocol deviations",
+            "major protocol deviations",
+            "deviations from the clinical protocol"
+          ],
+          "path": "presets/TBL_CRITERION_COUNTS/protocol_deviations.json",
+          "version": "1.0.0",
+          "sha256": "3a2b2821238f91817b8abd34caf2f3f48b05b458e5124d34b5aeb3101d5a17cb"
+        }
+      ],
+      "evidence_sources": 39,
+      "evidence_studies": 6,
+      "evidence_level": "multi_study",
+      "review_status": "approved",
+      "path": "templates/table/TBL_CRITERION_COUNTS.json",
+      "sha256": "c10c4031b1aa915e97dd2e341392695fd58d875f26560cae351e6c0fe0299b73",
+      "reference_shells": [
+        {
+          "preset_id": "ada_status",
+          "docx": "TFL_Template_Library/table/TBL_CRITERION_COUNTS__ada_status.docx",
+          "sha256": "4b2e47bbe4b8b0adfe28b41aa2d95db76eccf5d3304efd11bb21374b6d9c35ab"
+        },
+        {
+          "preset_id": "ae_overview",
+          "docx": "TFL_Template_Library/table/TBL_CRITERION_COUNTS__ae_overview.docx",
+          "sha256": "14df74a0316d582c343b8cf2c2ff799a2f51e6bb98213cd06d5c4ce10530fc52"
+        },
+        {
+          "preset_id": "analysis_sets",
+          "docx": "TFL_Template_Library/table/TBL_CRITERION_COUNTS__analysis_sets.docx",
+          "sha256": "1cb253a3a3c1bcbc6b1fe6431d0fccab319fe0b1c6e902aa9c10d0e9fc4954b4"
+        },
+        {
+          "preset_id": "deaths",
+          "docx": "TFL_Template_Library/table/TBL_CRITERION_COUNTS__deaths.docx",
+          "sha256": "c41ca63b3c6c8915831a8dc5c673d2d169d1711af5825e4f3b0b2a839bdec20a"
+        },
+        {
+          "preset_id": "disposition",
+          "docx": "TFL_Template_Library/table/TBL_CRITERION_COUNTS__disposition.docx",
+          "sha256": "499f435b0f82650486eeeadae1c3307117fadc028ba01f0dfddc7fff048ce265"
+        },
+        {
+          "preset_id": "dose_limiting_toxicity",
+          "docx": "TFL_Template_Library/table/TBL_CRITERION_COUNTS__dose_limiting_toxicity.docx",
+          "sha256": "afff352b04373873698319d929157a2e4f381a48b41123b7295964804ed75f4e"
+        },
+        {
+          "preset_id": "notable_abnormalities",
+          "docx": "TFL_Template_Library/table/TBL_CRITERION_COUNTS__notable_abnormalities.docx",
+          "sha256": "5a4043ded0b472bce670b6060c69d9f3bdca16177982a7e176d70ca87b8fde5f"
+        },
+        {
+          "preset_id": "protocol_deviations",
+          "docx": "TFL_Template_Library/table/TBL_CRITERION_COUNTS__protocol_deviations.docx",
+          "sha256": "ca3da2d3178a176f2b05d45583f92263180971f683621a30a80c6ded53b39e63"
+        }
+      ]
+    },
+    {
+      "template_id": "TBL_PARAMETER_BY_VISIT",
+      "version": "1.0.0",
+      "output_type": "table",
+      "name": "Parameter by visit summary",
+      "intended_use": "For each parameter, a block per visit/timepoint: continuous descriptive statistics of observed value (and optionally change from baseline), or categorical n (%) of assessment categories (including threshold categories at baseline / worst post-baseline), by group.",
+      "not_for": "Statistics shown as columns (timepoint-statistics template); baseline x post-baseline cross-classification (shift template); single reference-point summaries (variable summary template).",
+      "keywords": [
+        "laboratory",
+        "vital signs",
+        "ecg",
+        "physical examination",
+        "performance status",
+        "quality of life",
+        "by visit"
+      ],
+      "aliases": [
+        "hematology",
+        "biochemistry",
+        "chemistry",
+        "urinalysis",
+        "vital signs",
+        "12-lead ECG",
+        "QTc",
+        "physical examination",
+        "ECOG",
+        "questionnaire",
+        "QLQ-C30",
+        "tumor marker",
+        "pharmacodynamic",
+        "change from baseline",
+        "by visit",
+        "by timepoint"
+      ],
+      "match_cues": {
+        "title_terms": [
+          "by visit",
+          "by time",
+          "hematology",
+          "biochemistry",
+          "laboratory",
+          "vital sign",
+          "ecg",
+          "temperature",
+          "physical exam",
+          "qlq",
+          "questionnaire",
+          "quality of life",
+          "tumor marker",
+          "pharmacodynamic",
+          "ecog",
+          "urinalysis",
+          "ultrasound",
+          "qtc",
+          "change from baseline",
+          "autoimmune",
+          "tumor change",
+          "lesion change"
+        ],
+        "negative_terms": [
+          "shift",
+          "system organ class",
+          "listing",
+          "plot",
+          "concentration",
+          "pharmacokinetic",
+          "at c1d15",
+          "at surgery",
+          "covariate"
+        ]
+      },
+      "required_fields": [
+        "title",
+        "population",
+        "columns.groups",
+        "columns.total",
+        "row_blocks[parameter_visit].visits",
+        "row_blocks[parameter_visit].parameters",
+        "footnotes[FN_BASE]"
+      ],
+      "config_options": {
+        "column_layout": {
+          "values": [
+            "groups",
+            "single_all_subjects"
+          ],
+          "default": "groups"
+        },
+        "change_from_baseline": {
+          "values": [
+            true,
+            false
+          ],
+          "default": true
+        }
+      },
+      "presets": [
+        {
+          "preset_id": "clinical_evaluation_by_visit",
+          "name": "Normal / abnormal evaluation by visit",
+          "keywords": [
+            "physical examination"
+          ],
+          "aliases": [
+            "physical examination",
+            "clinical evaluation",
+            "ultrasound",
+            "urinalysis",
+            "category of"
+          ],
+          "path": "presets/TBL_PARAMETER_BY_VISIT/clinical_evaluation_by_visit.json",
+          "version": "1.0.0",
+          "sha256": "9b0f40460bd8372a6217dfdd4074c08e5b1e20cd890b7f7b9fdd2f0e69ec5a97"
+        },
+        {
+          "preset_id": "ecg_by_visit",
+          "name": "ECG intervals by visit",
+          "keywords": [
+            "ecg"
+          ],
+          "aliases": [
+            "12-lead ECG",
+            "ECG",
+            "electrocardiogram"
+          ],
+          "path": "presets/TBL_PARAMETER_BY_VISIT/ecg_by_visit.json",
+          "version": "1.0.0",
+          "sha256": "bb2679d013e73bcac9efc86a1630d2a7d906fc2fd17055ba099deeeb0c51b63b"
+        },
+        {
+          "preset_id": "ecog_by_visit",
+          "name": "ECOG performance status by visit",
+          "keywords": [
+            "performance status"
+          ],
+          "aliases": [
+            "ECOG",
+            "performance status"
+          ],
+          "path": "presets/TBL_PARAMETER_BY_VISIT/ecog_by_visit.json",
+          "version": "1.0.0",
+          "sha256": "1604213938c75925b1ddbbfa725729e37871342e6220e696faf3e71e3b72cb8e"
+        },
+        {
+          "preset_id": "laboratory_by_visit",
+          "name": "Laboratory values by visit",
+          "keywords": [
+            "laboratory"
+          ],
+          "aliases": [
+            "hematology",
+            "biochemistry",
+            "chemistry",
+            "laboratory",
+            "autoimmune",
+            "tumor marker",
+            "pharmacodynamic"
+          ],
+          "path": "presets/TBL_PARAMETER_BY_VISIT/laboratory_by_visit.json",
+          "version": "1.0.0",
+          "sha256": "cad3550a274e7c95c695e664f3b8b917d3e6abc86e9ff1dd1c7f696b37d1eda3"
+        },
+        {
+          "preset_id": "qtc_categories",
+          "name": "QTc threshold categories",
+          "keywords": [
+            "ecg"
+          ],
+          "aliases": [
+            "QTc",
+            "QTcF",
+            "QTcB",
+            "QTcF categories",
+            "interval clinically significant"
+          ],
+          "path": "presets/TBL_PARAMETER_BY_VISIT/qtc_categories.json",
+          "version": "1.0.0",
+          "sha256": "1e40ac587affc8008e11abc720a7afd334000de04ca5067b3d64fdd5a37896a4"
+        },
+        {
+          "preset_id": "questionnaire_scores",
+          "name": "Questionnaire scores by visit",
+          "keywords": [
+            "quality of life"
+          ],
+          "aliases": [
+            "QLQ-C30",
+            "questionnaire",
+            "quality of life",
+            "QoL"
+          ],
+          "path": "presets/TBL_PARAMETER_BY_VISIT/questionnaire_scores.json",
+          "version": "1.0.0",
+          "sha256": "4dd316e02d86ecc9ed3ed9ac57fe1a6898f3b29aea92f8464dc2642b9cfd0bef"
+        },
+        {
+          "preset_id": "tumor_size_change",
+          "name": "Tumor size and percent change by assessment",
+          "keywords": [
+            "by visit"
+          ],
+          "aliases": [
+            "target lesion change",
+            "tumor change",
+            "tumor size",
+            "lesion change",
+            "caliper"
+          ],
+          "path": "presets/TBL_PARAMETER_BY_VISIT/tumor_size_change.json",
+          "version": "1.0.0",
+          "sha256": "f3e90f21a6601bab38300241b6c7cca525ec5ca4f22713375bc0ced90f099ada"
+        },
+        {
+          "preset_id": "vital_signs_by_visit",
+          "name": "Vital signs by visit",
+          "keywords": [
+            "vital signs"
+          ],
+          "aliases": [
+            "vital signs",
+            "body temperature",
+            "weight"
+          ],
+          "path": "presets/TBL_PARAMETER_BY_VISIT/vital_signs_by_visit.json",
+          "version": "1.0.0",
+          "sha256": "b1260417fe2f384692c661008c2ee649c93be8a4a6843afd30b4715b1a42a68f"
+        }
+      ],
+      "evidence_sources": 39,
+      "evidence_studies": 6,
+      "evidence_level": "multi_study",
+      "review_status": "approved",
+      "path": "templates/table/TBL_PARAMETER_BY_VISIT.json",
+      "sha256": "a37a7ab018d6f39522af1efa2582e19f2a95e5f036926e9755a98ac382024816",
+      "reference_shells": [
+        {
+          "preset_id": "clinical_evaluation_by_visit",
+          "docx": "TFL_Template_Library/table/TBL_PARAMETER_BY_VISIT__clinical_evaluation_by_visit.docx",
+          "sha256": "f35c6409d4c94db77269f3b54db477111d8e39fc43148e47fb758009ca8caac8"
+        },
+        {
+          "preset_id": "ecg_by_visit",
+          "docx": "TFL_Template_Library/table/TBL_PARAMETER_BY_VISIT__ecg_by_visit.docx",
+          "sha256": "e65f5d876ad66b376d1335bff33b570e9b7217ed796548512bd69d7075d93407"
+        },
+        {
+          "preset_id": "ecog_by_visit",
+          "docx": "TFL_Template_Library/table/TBL_PARAMETER_BY_VISIT__ecog_by_visit.docx",
+          "sha256": "5483db283d2d476e62458269460ab8f2911cd6bfd7b712f1a036939f6ddceec2"
+        },
+        {
+          "preset_id": "laboratory_by_visit",
+          "docx": "TFL_Template_Library/table/TBL_PARAMETER_BY_VISIT__laboratory_by_visit.docx",
+          "sha256": "e085d3f29134cd9fecda2f274e58ae5f10255913fea7667e42db37b5f86d651f"
+        },
+        {
+          "preset_id": "qtc_categories",
+          "docx": "TFL_Template_Library/table/TBL_PARAMETER_BY_VISIT__qtc_categories.docx",
+          "sha256": "8262285ba4e3a05a7cde66953e20b2b7668a0c94f7f36c842d0c8712ddf5ba93"
+        },
+        {
+          "preset_id": "questionnaire_scores",
+          "docx": "TFL_Template_Library/table/TBL_PARAMETER_BY_VISIT__questionnaire_scores.docx",
+          "sha256": "6dd3a8e4437e6cfa8898f55138a5037faefc7d06ba3db3a07613e95d4e5bbb00"
+        },
+        {
+          "preset_id": "tumor_size_change",
+          "docx": "TFL_Template_Library/table/TBL_PARAMETER_BY_VISIT__tumor_size_change.docx",
+          "sha256": "70cb399326f6c41fc56aef417e7b5bc2feba3e5c8589253af2d53bdf511ddfb1"
+        },
+        {
+          "preset_id": "vital_signs_by_visit",
+          "docx": "TFL_Template_Library/table/TBL_PARAMETER_BY_VISIT__vital_signs_by_visit.docx",
+          "sha256": "3756c9e6c015b3970d87f99acaca51e7a0339603554377dbfd6dd75dba4c142c"
+        }
+      ]
+    },
+    {
+      "template_id": "TBL_RESPONSE_RATE",
+      "version": "1.0.0",
+      "output_type": "table",
+      "name": "Response / incidence rate endpoint",
+      "intended_use": "Binary or categorical endpoint: distribution of response categories, rate n (%) with confidence interval, and optionally a between-group estimate (difference, odds ratio) and test.",
+      "not_for": "Time-to-event endpoints (time-to-event template); continuous endpoints with model estimates (continuous comparison template); plain category distributions without CI (variable summary template).",
+      "keywords": [
+        "response rate",
+        "incidence rate"
+      ],
+      "aliases": [
+        "objective response rate",
+        "ORR",
+        "disease control rate",
+        "DCR",
+        "clinical benefit rate",
+        "best overall response",
+        "BOR",
+        "pCR rate",
+        "incidence of",
+        "landmark",
+        "rate"
+      ],
+      "match_cues": {
+        "title_terms": [
+          "response rate",
+          "control rate",
+          "benefit rate",
+          "best overall response",
+          "pcr rate",
+          "rate",
+          "incidence of",
+          "landmark"
+        ],
+        "negative_terms": [
+          "listing",
+          "plot",
+          "kaplan",
+          "duration of",
+          "by visit",
+          "system organ class"
+        ]
+      },
+      "required_fields": [
+        "title",
+        "population",
+        "columns.groups",
+        "columns.total",
+        "row_blocks[endpoint].items",
+        "footnotes[FN_CI]",
+        "columns.comparison_columns"
+      ],
+      "config_options": {
+        "column_layout": {
+          "values": [
+            "groups",
+            "single_all_subjects"
+          ],
+          "default": "groups"
+        },
+        "comparison": {
+          "values": [
+            "none",
+            "columns",
+            "rows"
+          ],
+          "default": "none"
+        },
+        "repeat_by_period": {
+          "values": [
+            false,
+            true
+          ],
+          "default": false
+        }
+      },
+      "presets": [
+        {
+          "preset_id": "best_overall_response",
+          "name": "Best overall response and response rates",
+          "keywords": [
+            "response rate"
+          ],
+          "aliases": [
+            "best overall response",
+            "BOR",
+            "objective response rate",
+            "ORR",
+            "disease control rate",
+            "DCR",
+            "clinical benefit rate",
+            "RECIST"
+          ],
+          "path": "presets/TBL_RESPONSE_RATE/best_overall_response.json",
+          "version": "1.0.0",
+          "sha256": "5694883e3b15989d5d2e1016e0e971915bbcbc1d560c395429329e5eedcb203b"
+        },
+        {
+          "preset_id": "binary_rate",
+          "name": "Binary endpoint rate",
+          "keywords": [
+            "incidence rate"
+          ],
+          "aliases": [
+            "incidence of",
+            "rate",
+            "landmark",
+            "pCR",
+            "BCS",
+            "CCCA",
+            "mPEPI"
+          ],
+          "path": "presets/TBL_RESPONSE_RATE/binary_rate.json",
+          "version": "1.0.0",
+          "sha256": "d748a2376bf34caa5c7abf08a606fbcfe66c2e5661523ed81e2eb9c8ffd8cc1e"
+        }
+      ],
+      "evidence_sources": 15,
+      "evidence_studies": 5,
+      "evidence_level": "multi_study",
+      "review_status": "approved",
+      "path": "templates/table/TBL_RESPONSE_RATE.json",
+      "sha256": "9187dce4c31f25ed2f205017c6e3f8b384891f1189467098afc72120599b5c98",
+      "reference_shells": [
+        {
+          "preset_id": "best_overall_response",
+          "docx": "TFL_Template_Library/table/TBL_RESPONSE_RATE__best_overall_response.docx",
+          "sha256": "6ec2f259ecd1efd1bba62e3f30334d22f4c1de3e6ff93a64eb6f3b3a17b7b2cd"
+        },
+        {
+          "preset_id": "binary_rate",
+          "docx": "TFL_Template_Library/table/TBL_RESPONSE_RATE__binary_rate.docx",
+          "sha256": "74d9fc098e376e2e0690049a839b43de399c919dd3ce9b6a1bcf4b966f578cd3"
+        }
+      ]
+    },
+    {
+      "template_id": "TBL_SHIFT_CROSSTAB",
+      "version": "1.0.0",
+      "output_type": "table",
+      "name": "Shift / cross-classification table",
+      "intended_use": "Cross-classification of subjects by two categorical assessments: baseline category or grade (rows) by post-baseline / worst post-baseline category (columns), or two raters/methods (concordance), within treatment-group row blocks and optionally per parameter and visit.",
+      "not_for": "Single categorical distributions by visit (parameter-by-visit template); counts of non-exclusive criteria (criterion-count template).",
+      "keywords": [
+        "shift",
+        "cross-classification",
+        "concordance"
+      ],
+      "aliases": [
+        "shift table",
+        "shift from baseline",
+        "baseline to worst post-baseline",
+        "shift change",
+        "concordance",
+        "by site"
+      ],
+      "match_cues": {
+        "title_terms": [
+          "shift",
+          "concordance",
+          "baseline to worst",
+          "baseline to post",
+          "by site"
+        ],
+        "negative_terms": [
+          "listing",
+          "plot",
+          "system organ class"
+        ]
+      },
+      "required_fields": [
+        "title",
+        "population",
+        "columns.groups",
+        "columns.total",
+        "row_blocks[crosstab].row_categories",
+        "columns.category_columns",
+        "row_blocks[crosstab].parameters",
+        "footnotes[FN_DENOM]"
+      ],
+      "config_options": {
+        "layout": {
+          "values": [
+            "matrix",
+            "long_transitions"
+          ],
+          "default": "matrix"
+        }
+      },
+      "presets": [
+        {
+          "preset_id": "clinical_evaluation_shift",
+          "name": "Clinical evaluation shift",
+          "keywords": [
+            "shift"
+          ],
+          "aliases": [
+            "physical examination",
+            "ECG",
+            "ultrasound",
+            "clinical evaluation",
+            "overall interpretation"
+          ],
+          "path": "presets/TBL_SHIFT_CROSSTAB/clinical_evaluation_shift.json",
+          "version": "1.0.0",
+          "sha256": "dc859db16a094872f71b6856877630a743152bae307b3a1e87e812f9a535663d"
+        },
+        {
+          "preset_id": "concordance",
+          "name": "Concordance between two assessments",
+          "keywords": [
+            "concordance"
+          ],
+          "aliases": [
+            "concordance",
+            "central and local",
+            "by site",
+            "between"
+          ],
+          "path": "presets/TBL_SHIFT_CROSSTAB/concordance.json",
+          "version": "1.0.0",
+          "sha256": "7a466efd5edfa7ac8dfaa5b57199d53d26ac8548e1f715408394465bc931bf1e"
+        },
+        {
+          "preset_id": "ctcae_grade_shift",
+          "name": "CTCAE grade shift",
+          "keywords": [
+            "shift"
+          ],
+          "aliases": [
+            "CTCAE grade",
+            "worst post-baseline",
+            "baseline to worst post-baseline",
+            "grade shift"
+          ],
+          "path": "presets/TBL_SHIFT_CROSSTAB/ctcae_grade_shift.json",
+          "version": "1.0.0",
+          "sha256": "f655cac8895a9efa4d0216b6b76aa8c4aa5160c2d95f7bb7e1ef7e9325a84e89"
+        },
+        {
+          "preset_id": "normal_range_shift",
+          "name": "Normal-range shift (low / normal / high)",
+          "keywords": [
+            "shift"
+          ],
+          "aliases": [
+            "normal range",
+            "outside of normal range",
+            "lowest/highest",
+            "low",
+            "high"
+          ],
+          "path": "presets/TBL_SHIFT_CROSSTAB/normal_range_shift.json",
+          "version": "1.0.0",
+          "sha256": "20b03609d22afc6aa0c09cba6dad53c34d6b9086d629a78f057eaaa6f04f3ae1"
+        }
+      ],
+      "evidence_sources": 16,
+      "evidence_studies": 5,
+      "evidence_level": "multi_study",
+      "review_status": "approved",
+      "path": "templates/table/TBL_SHIFT_CROSSTAB.json",
+      "sha256": "0f9d9a67fe483a6c4f61d0d9a880f260606a26552f92da183f1a8df2a8f684f7",
+      "reference_shells": [
+        {
+          "preset_id": "clinical_evaluation_shift",
+          "docx": "TFL_Template_Library/table/TBL_SHIFT_CROSSTAB__clinical_evaluation_shift.docx",
+          "sha256": "402bf8621323edcd19659cf7e4f7c66b8df46f4c36c4743eb73ff4f3bccf50b0"
+        },
+        {
+          "preset_id": "concordance",
+          "docx": "TFL_Template_Library/table/TBL_SHIFT_CROSSTAB__concordance.docx",
+          "sha256": "0b3edc716878d15630f065cafbedfb439dbe61d8fc67ca76f6de979ddf3a56fe"
+        },
+        {
+          "preset_id": "ctcae_grade_shift",
+          "docx": "TFL_Template_Library/table/TBL_SHIFT_CROSSTAB__ctcae_grade_shift.docx",
+          "sha256": "b34cede151de81b7a4bfba77ebe52eef7172b1e58b2fa140c3afd1cb91572f24"
+        },
+        {
+          "preset_id": "normal_range_shift",
+          "docx": "TFL_Template_Library/table/TBL_SHIFT_CROSSTAB__normal_range_shift.docx",
+          "sha256": "d18ba7408bd927afaeae8f28f330035e0efe76b41aa62a0da6a1c9053e2df886"
+        }
+      ]
+    },
+    {
+      "template_id": "TBL_TIMEPOINT_STATISTICS_COLUMNS",
+      "version": "1.0.0",
+      "output_type": "table",
+      "name": "Timepoint summary with statistics in columns",
+      "intended_use": "Rows are nominal timepoints within analyte/parameter blocks, columns are statistics (n, Mean (SD), Median, Min, Max, geometric mean, geometric CV%); groups appear as row blocks.",
+      "not_for": "Layouts with groups as columns (parameter-by-visit template); PK parameter summaries (variable summary template).",
+      "keywords": [
+        "pharmacokinetic concentration",
+        "by timepoint"
+      ],
+      "aliases": [
+        "plasma concentration",
+        "serum concentration",
+        "concentration by visit",
+        "concentration by timepoint",
+        "PK concentration"
+      ],
+      "match_cues": {
+        "title_terms": [
+          "concentration",
+          "by timepoint",
+          "autoimmune values"
+        ],
+        "negative_terms": [
+          "parameters",
+          "listing",
+          "plot",
+          "individual"
+        ]
+      },
+      "required_fields": [
+        "title",
+        "population",
+        "columns.groups",
+        "columns.total",
+        "row_blocks[timepoint_stats].timepoints",
+        "row_blocks[timepoint_stats].parameters",
+        "footnotes[FN_BLQ]"
+      ],
+      "config_options": {},
+      "presets": [
+        {
+          "preset_id": "pk_concentration",
+          "name": "Plasma concentration by nominal timepoint",
+          "keywords": [
+            "pharmacokinetic concentration"
+          ],
+          "aliases": [
+            "plasma concentration",
+            "serum concentration",
+            "concentration",
+            "PK",
+            "autoimmune values"
+          ],
+          "path": "presets/TBL_TIMEPOINT_STATISTICS_COLUMNS/pk_concentration.json",
+          "version": "1.0.0",
+          "sha256": "6df8a936286c6557406ecf9e3553426e294c826fc6b5335da46e22823814f073"
+        }
+      ],
+      "evidence_sources": 3,
+      "evidence_studies": 3,
+      "evidence_level": "multi_study",
+      "review_status": "approved",
+      "path": "templates/table/TBL_TIMEPOINT_STATISTICS_COLUMNS.json",
+      "sha256": "0def5840180743a26acb448e7b96e3accd8f4f5e6b701da7e0a262271c827a5e",
+      "reference_shells": [
+        {
+          "preset_id": "pk_concentration",
+          "docx": "TFL_Template_Library/table/TBL_TIMEPOINT_STATISTICS_COLUMNS__pk_concentration.docx",
+          "sha256": "7843daa71906de1063f4bdb2d48c4b80b5d51ec728aa38448bbb1ea25b92de7c"
+        }
+      ]
+    },
+    {
+      "template_id": "TBL_TIME_TO_EVENT",
+      "version": "1.0.0",
+      "output_type": "table",
+      "name": "Time-to-event endpoint summary",
+      "intended_use": "Number of events and censored subjects, Kaplan-Meier quartiles of the event time with confidence intervals, optional landmark event-free rates, and optionally a hazard ratio and test.",
+      "not_for": "Rates at a fixed time analysed as binary (response/incidence rate template); KM curves (Kaplan-Meier figure).",
+      "keywords": [
+        "survival",
+        "time to event"
+      ],
+      "aliases": [
+        "overall survival",
+        "OS",
+        "progression-free survival",
+        "PFS",
+        "recurrence-free survival",
+        "RFS",
+        "duration of response",
+        "DOR",
+        "time to progression",
+        "TTP"
+      ],
+      "match_cues": {
+        "title_terms": [
+          "survival",
+          "time to",
+          "duration of response",
+          "pfs",
+          "rfs"
+        ],
+        "negative_terms": [
+          "plot",
+          "kaplan-meier plot",
+          "listing",
+          "landmark",
+          "rate"
+        ]
+      },
+      "required_fields": [
+        "title",
+        "population",
+        "columns.groups",
+        "columns.total",
+        "footnotes[FN_CENSOR]",
+        "footnotes[FN_CI]",
+        "row_blocks[endpoint].items[time unit]",
+        "columns.comparison_columns"
+      ],
+      "config_options": {
+        "comparison": {
+          "values": [
+            "none",
+            "columns",
+            "rows"
+          ],
+          "default": "none"
+        }
+      },
+      "presets": [
+        {
+          "preset_id": "event_time_summary",
+          "name": "Event-time summary",
+          "keywords": [
+            "time to event"
+          ],
+          "aliases": [
+            "overall survival",
+            "progression-free survival",
+            "recurrence-free survival",
+            "duration of response",
+            "time to progression",
+            "OS",
+            "PFS",
+            "RFS",
+            "DOR",
+            "TTP"
+          ],
+          "path": "presets/TBL_TIME_TO_EVENT/event_time_summary.json",
+          "version": "1.0.0",
+          "sha256": "304817e4c1fd6de6b6aa1ad047b6a260acee523d4f50b5fec2ca204b981b1d0c"
+        }
+      ],
+      "evidence_sources": 4,
+      "evidence_studies": 3,
+      "evidence_level": "multi_study",
+      "review_status": "approved",
+      "path": "templates/table/TBL_TIME_TO_EVENT.json",
+      "sha256": "a4c32bb90ff10c91b1ca3c2efbd899d8e8a9c910fc9d23f473896a8c0c3aed39",
+      "reference_shells": [
+        {
+          "preset_id": "event_time_summary",
+          "docx": "TFL_Template_Library/table/TBL_TIME_TO_EVENT__event_time_summary.docx",
+          "sha256": "6f4b5e13ed17a9d9035c27b76c2ff97566bbd8e47672857d6943994dcfc8563c"
+        }
+      ]
+    },
+    {
+      "template_id": "TBL_VARIABLE_SUMMARY",
+      "version": "1.0.0",
+      "output_type": "table",
+      "name": "Variable distribution summary",
+      "intended_use": "Summarise variables at a single reference point (e.g. baseline, overall treatment period): continuous variables as descriptive-statistic rows and categorical variables as exhaustive, mutually exclusive category rows with n (%), by treatment group.",
+      "not_for": "Summaries repeated by visit (parameter-by-visit template); rows that are non-exclusive criteria or status flags such as disposition, analysis sets, deviations or AE overview (criterion-count template); dictionary-coded terms such as SOC/PT or ATC (coded-term template); endpoints with confidence intervals or between-group estimates.",
+      "keywords": [
+        "demographics",
+        "baseline characteristics",
+        "disease characteristics",
+        "exposure",
+        "compliance",
+        "descriptive summary"
+      ],
+      "aliases": [
+        "demographic and baseline characteristics",
+        "demographic characteristics",
+        "baseline information",
+        "disease staging",
+        "molecular biology",
+        "extent of exposure",
+        "drug exposure",
+        "dose intensity",
+        "study drug exposure and compliance",
+        "pharmacokinetic parameters",
+        "PK parameters",
+        "prior cancer related surgery",
+        "surgery/biopsy",
+        "disease characteristics"
+      ],
+      "match_cues": {
+        "title_terms": [
+          "demograph",
+          "baseline characteristic",
+          "baseline information",
+          "disease characteristic",
+          "disease staging",
+          "exposure",
+          "compliance",
+          "dose intensity",
+          "pharmacokinetic parameter",
+          "prior cancer",
+          "characteristics"
+        ],
+        "negative_terms": [
+          "by visit",
+          "shift",
+          "system organ class",
+          "preferred term",
+          "change from baseline at",
+          "rate",
+          "survival",
+          "kaplan",
+          "disposition",
+          "analysis set",
+          "deviation",
+          "listing"
+        ]
+      },
+      "required_fields": [
+        "title",
+        "population",
+        "columns.groups",
+        "columns.total",
+        "footnotes[FN_DENOM]"
+      ],
+      "config_options": {
+        "column_layout": {
+          "values": [
+            "groups",
+            "single_all_subjects"
+          ],
+          "default": "groups"
+        },
+        "statistic_label_column": {
+          "values": [
+            false,
+            true
+          ],
+          "default": false
+        },
+        "missing_display": {
+          "values": [
+            "omit",
+            "count",
+            "count_if_nonzero"
+          ],
+          "default": "omit"
+        },
+        "repeat_by_period": {
+          "values": [
+            false,
+            true
+          ],
+          "default": false
+        }
+      },
+      "presets": [
+        {
+          "preset_id": "demographics",
+          "name": "Demographic and baseline characteristics",
+          "keywords": [
+            "demographics",
+            "baseline characteristics"
+          ],
+          "aliases": [
+            "demographic",
+            "demographics and baseline characteristics",
+            "demographic characteristics",
+            "baseline information",
+            "subject characteristics"
+          ],
+          "path": "presets/TBL_VARIABLE_SUMMARY/demographics.json",
+          "version": "1.0.0",
+          "sha256": "5a99820bd99a7dcea546fac59c55284a7861b3ffc6390a63c4bd29b7c819d238"
+        },
+        {
+          "preset_id": "exposure_compliance",
+          "name": "Study drug exposure and compliance",
+          "keywords": [
+            "exposure",
+            "compliance"
+          ],
+          "aliases": [
+            "extent of exposure",
+            "drug exposure",
+            "study drug exposure",
+            "dose intensity",
+            "dose modification",
+            "dosing"
+          ],
+          "path": "presets/TBL_VARIABLE_SUMMARY/exposure_compliance.json",
+          "version": "1.0.0",
+          "sha256": "c5f61ebb1bc3a3ca930edc42e87f672a0e9690e905b42b3bbde34583bc0ce1a9"
+        },
+        {
+          "preset_id": "pk_parameters",
+          "name": "PK parameters by dose group",
+          "keywords": [
+            "pharmacokinetic concentration"
+          ],
+          "aliases": [
+            "pharmacokinetic parameters",
+            "PK parameters",
+            "Cmax",
+            "AUC"
+          ],
+          "path": "presets/TBL_VARIABLE_SUMMARY/pk_parameters.json",
+          "version": "1.0.0",
+          "sha256": "9bd0110fbe488931fde11aaed9096ff2043c0d861baae1eb10081cf9a26c3212"
+        }
+      ],
+      "evidence_sources": 26,
+      "evidence_studies": 6,
+      "evidence_level": "multi_study",
+      "review_status": "approved",
+      "path": "templates/table/TBL_VARIABLE_SUMMARY.json",
+      "sha256": "2a9fcfb08381025fa64106e4ee13b41da7b2b1453a6f9084be6dfe01782a3c89",
+      "reference_shells": [
+        {
+          "preset_id": "demographics",
+          "docx": "TFL_Template_Library/table/TBL_VARIABLE_SUMMARY__demographics.docx",
+          "sha256": "62052cc4d2edd1994d55f676cd51701ad9bc223ed5126c27b76dc80f7e4e9382"
+        },
+        {
+          "preset_id": "exposure_compliance",
+          "docx": "TFL_Template_Library/table/TBL_VARIABLE_SUMMARY__exposure_compliance.docx",
+          "sha256": "47abf72c3fe505fcf7e63ccbda6d1648164f8c0dd315cc8e673656978d789f9c"
+        },
+        {
+          "preset_id": "pk_parameters",
+          "docx": "TFL_Template_Library/table/TBL_VARIABLE_SUMMARY__pk_parameters.docx",
+          "sha256": "7c2aae31dfaddc885c65de11e45733aea6ec0d277853ef4a4628ea93355a9293"
+        }
+      ]
+    },
+    {
+      "template_id": "LST_SUBJECT_RECORDS",
+      "version": "1.0.0",
+      "output_type": "listing",
+      "name": "Subject record listing",
+      "intended_use": "Any subject-level data listing: one row per subject, per subject and record, per subject and visit (wide) or per subject, parameter and visit (long), with configurable fields, stacked cells, group headers and column panels.",
+      "not_for": "Summary tables; catalogs that do not list subjects (e.g. protocol eligibility criteria text).",
+      "keywords": [
+        "subject listing"
+      ],
+      "aliases": [
+        "listing",
+        "listing of",
+        "by subject",
+        "records",
+        "data"
+      ],
+      "match_cues": {
+        "title_terms": [
+          "listing"
+        ],
+        "negative_terms": [
+          "number (%)",
+          "plot",
+          "preface"
+        ]
+      },
+      "required_fields": [
+        "title",
+        "population",
+        "listing.fields",
+        "listing.sort_keys"
+      ],
+      "config_options": {
+        "group_display": {
+          "values": [
+            "header_rows",
+            "column"
+          ],
+          "default": "header_rows"
+        }
+      },
+      "presets": [
+        {
+          "preset_id": "adverse_event_records",
+          "name": "Adverse event records",
+          "keywords": [
+            "adverse events"
+          ],
+          "aliases": [
+            "adverse event",
+            "TEAE",
+            "serious adverse events",
+            "SAE",
+            "AESI",
+            "DLT",
+            "leading to",
+            "deaths due to adverse events"
+          ],
+          "path": "presets/LST_SUBJECT_RECORDS/adverse_event_records.json",
+          "version": "1.0.0",
+          "sha256": "7caa2b2f66c9b7a7f78c49d61f07358d206f091633ec808bd16807c491a6ac4c"
+        },
+        {
+          "preset_id": "analysis_set_records",
+          "name": "Analysis-set membership records",
+          "keywords": [
+            "analysis sets"
+          ],
+          "aliases": [
+            "analysis set",
+            "populations",
+            "excluded from"
+          ],
+          "path": "presets/LST_SUBJECT_RECORDS/analysis_set_records.json",
+          "version": "1.0.0",
+          "sha256": "d5caa5f7e3d3b2429ad9309718c4d1aab29a929aa88e99a0fcaaacf7c6e11b38"
+        },
+        {
+          "preset_id": "death_records",
+          "name": "Death records",
+          "keywords": [
+            "deaths"
+          ],
+          "aliases": [
+            "death"
+          ],
+          "path": "presets/LST_SUBJECT_RECORDS/death_records.json",
+          "version": "1.0.0",
+          "sha256": "12a842af92c761346fae293807dc1851842623e5b5cabdb1c56c0527c734bb98"
+        },
+        {
+          "preset_id": "demographic_records",
+          "name": "Demographic and baseline records",
+          "keywords": [
+            "demographics"
+          ],
+          "aliases": [
+            "demographic",
+            "baseline characteristics",
+            "substance use",
+            "obstetric",
+            "menopausal"
+          ],
+          "path": "presets/LST_SUBJECT_RECORDS/demographic_records.json",
+          "version": "1.0.0",
+          "sha256": "4bc5463d37f526d6034fae5bf22247dbf2d141e802d2c92178aa1cafd5cf6304"
+        },
+        {
+          "preset_id": "deviation_records",
+          "name": "Protocol deviation records",
+          "keywords": [
+            "protocol deviations"
+          ],
+          "aliases": [
+            "protocol deviation",
+            "deviations"
+          ],
+          "path": "presets/LST_SUBJECT_RECORDS/deviation_records.json",
+          "version": "1.0.0",
+          "sha256": "073db2dcf227a71594783d78242a4afa1326f73eb690e3532b98fd92e643d144"
+        },
+        {
+          "preset_id": "disease_history_records",
+          "name": "Disease history and prior procedure records",
+          "keywords": [
+            "disease characteristics"
+          ],
+          "aliases": [
+            "diagnosis",
+            "cancer history",
+            "disease staging",
+            "surgery",
+            "radiation",
+            "procedures",
+            "molecular"
+          ],
+          "path": "presets/LST_SUBJECT_RECORDS/disease_history_records.json",
+          "version": "1.0.0",
+          "sha256": "5186f26152ee9fdc728ab6b0b13a6e24bed3375521f2ab29e21ad50340b7f616"
+        },
+        {
+          "preset_id": "disposition_records",
+          "name": "Disposition and enrollment records",
+          "keywords": [
+            "disposition"
+          ],
+          "aliases": [
+            "disposition",
+            "enrollment",
+            "withdrawal",
+            "follow-up",
+            "completion"
+          ],
+          "path": "presets/LST_SUBJECT_RECORDS/disposition_records.json",
+          "version": "1.0.0",
+          "sha256": "c72ca4c58ff379c3d37f6e9ec6961471fcc25f40cd060d65ef26e5ba74c007f9"
+        },
+        {
+          "preset_id": "ecg_cardiac_records",
+          "name": "ECG and cardiac assessment records",
+          "keywords": [
+            "ecg"
+          ],
+          "aliases": [
+            "ECG",
+            "12-lead",
+            "holter",
+            "cardiac",
+            "ejection fraction",
+            "doppler"
+          ],
+          "path": "presets/LST_SUBJECT_RECORDS/ecg_cardiac_records.json",
+          "version": "1.0.0",
+          "sha256": "0e7511c9bf0de2589a1c4b1bd55984aa047f295fedb0ff7e4d61398cdba2fb3b"
+        },
+        {
+          "preset_id": "efficacy_records",
+          "name": "Efficacy assessment records",
+          "keywords": [
+            "response rate"
+          ],
+          "aliases": [
+            "tumor",
+            "lesion",
+            "response",
+            "RECIST",
+            "efficacy",
+            "biopsy",
+            "tumor marker",
+            "PSA",
+            "cystectomy",
+            "TURBT",
+            "staging"
+          ],
+          "path": "presets/LST_SUBJECT_RECORDS/efficacy_records.json",
+          "version": "1.0.0",
+          "sha256": "6bee61a95f66eafc6f81aea7a9e15fd3bd1df38514f9dbdd687d24df938cb044"
+        },
+        {
+          "preset_id": "eligibility_records",
+          "name": "Eligibility failure records",
+          "keywords": [
+            "eligibility"
+          ],
+          "aliases": [
+            "inclusion",
+            "exclusion",
+            "criteria failures"
+          ],
+          "path": "presets/LST_SUBJECT_RECORDS/eligibility_records.json",
+          "version": "1.0.0",
+          "sha256": "c0febe97411c9c5f88a869bf7f2249e31222306363fd6e5ca907b9f11df656c7"
+        },
+        {
+          "preset_id": "exposure_records",
+          "name": "Study drug administration and exposure records",
+          "keywords": [
+            "exposure"
+          ],
+          "aliases": [
+            "administration",
+            "exposure",
+            "dosing",
+            "dose adjustment",
+            "interruption",
+            "overdose",
+            "compliance"
+          ],
+          "path": "presets/LST_SUBJECT_RECORDS/exposure_records.json",
+          "version": "1.0.0",
+          "sha256": "311f231763ef00b7aa3bec83ffac3fb10471ff422318b400e5d2c5a801c933a8"
+        },
+        {
+          "preset_id": "immunogenicity_records",
+          "name": "Immunogenicity records",
+          "keywords": [
+            "anti-drug antibodies"
+          ],
+          "aliases": [
+            "anti-drug antibody",
+            "immunogenicity",
+            "ADA"
+          ],
+          "path": "presets/LST_SUBJECT_RECORDS/immunogenicity_records.json",
+          "version": "1.0.0",
+          "sha256": "a257859f84ce5c20527b6728f4753ec3c3ee89f749a7ab027cc301c10931771d"
+        },
+        {
+          "preset_id": "laboratory_records",
+          "name": "Laboratory records",
+          "keywords": [
+            "laboratory"
+          ],
+          "aliases": [
+            "hematology",
+            "chemistry",
+            "biochemistry",
+            "urinalysis",
+            "coagulation",
+            "serology",
+            "pregnancy",
+            "laboratory",
+            "thyroid",
+            "COVID"
+          ],
+          "path": "presets/LST_SUBJECT_RECORDS/laboratory_records.json",
+          "version": "1.0.0",
+          "sha256": "6857364d26045e5c982829ea1860e6c0a1332789002a9ae57a6b3f1179a24f8e"
+        },
+        {
+          "preset_id": "medical_history_records",
+          "name": "Medical history records",
+          "keywords": [
+            "medical history"
+          ],
+          "aliases": [
+            "medical history",
+            "prior disease",
+            "concomitant disease"
+          ],
+          "path": "presets/LST_SUBJECT_RECORDS/medical_history_records.json",
+          "version": "1.0.0",
+          "sha256": "24e26289a57760220e836638361f21f85288a947499453f515a831686a4c8690"
+        },
+        {
+          "preset_id": "medication_records",
+          "name": "Medication and therapy records",
+          "keywords": [
+            "prior medications",
+            "concomitant medications"
+          ],
+          "aliases": [
+            "medication",
+            "concomitant",
+            "prior",
+            "anticancer",
+            "antineoplastic",
+            "chemotherapy",
+            "therapy"
+          ],
+          "path": "presets/LST_SUBJECT_RECORDS/medication_records.json",
+          "version": "1.0.0",
+          "sha256": "d98a4cf13daabe3515f1c063a946eac4ae1c338f04a3a9bb49e8e0f7e7db04d0"
+        },
+        {
+          "preset_id": "pd_biomarker_records",
+          "name": "Pharmacodynamic / biomarker records",
+          "keywords": [
+            "laboratory"
+          ],
+          "aliases": [
+            "pharmacodynamic",
+            "biomarker"
+          ],
+          "path": "presets/LST_SUBJECT_RECORDS/pd_biomarker_records.json",
+          "version": "1.0.0",
+          "sha256": "f95361828195a0aa03d3f381f36fc699454d8953ac1a5f679701f0989e830514"
+        },
+        {
+          "preset_id": "performance_status_records",
+          "name": "Performance status records",
+          "keywords": [
+            "performance status"
+          ],
+          "aliases": [
+            "ECOG"
+          ],
+          "path": "presets/LST_SUBJECT_RECORDS/performance_status_records.json",
+          "version": "1.0.0",
+          "sha256": "c762bb3e361b42d296d9797fc4b07e121b645764872ce052a3a25ff2f26816f3"
+        },
+        {
+          "preset_id": "physical_exam_records",
+          "name": "Physical / imaging examination records",
+          "keywords": [
+            "physical examination"
+          ],
+          "aliases": [
+            "physical examination",
+            "ophthalmologic",
+            "ultrasound",
+            "chest",
+            "fibroscan"
+          ],
+          "path": "presets/LST_SUBJECT_RECORDS/physical_exam_records.json",
+          "version": "1.0.0",
+          "sha256": "0dadea1fa21ff4acd9af9176d91097ace42076c573e78b39ef3bd91cb5d685be"
+        },
+        {
+          "preset_id": "pk_records",
+          "name": "PK concentration and parameter records",
+          "keywords": [
+            "pharmacokinetic concentration"
+          ],
+          "aliases": [
+            "concentration",
+            "pharmacokinetic",
+            "PK"
+          ],
+          "path": "presets/LST_SUBJECT_RECORDS/pk_records.json",
+          "version": "1.0.0",
+          "sha256": "8a90f30e299ff857098ff3a5a30e454f979e7a833f80bba1820cf43139a85862"
+        },
+        {
+          "preset_id": "questionnaire_records",
+          "name": "Questionnaire records",
+          "keywords": [
+            "quality of life"
+          ],
+          "aliases": [
+            "questionnaire",
+            "QLQ-C30",
+            "QoL"
+          ],
+          "path": "presets/LST_SUBJECT_RECORDS/questionnaire_records.json",
+          "version": "1.0.0",
+          "sha256": "a63f70dba302c49bd5d62785a36ab5df287e68d4ac8020e59eb0d5bdb5ac26cb"
+        },
+        {
+          "preset_id": "time_to_event_records",
+          "name": "Time-to-event derivation records",
+          "keywords": [
+            "time to event"
+          ],
+          "aliases": [
+            "survival",
+            "PFS",
+            "recurrence",
+            "derived efficacy"
+          ],
+          "path": "presets/LST_SUBJECT_RECORDS/time_to_event_records.json",
+          "version": "1.0.0",
+          "sha256": "f614ecead1210342b39cb04a3b514c34502b09ce79e3176d5a5109822f444230"
+        },
+        {
+          "preset_id": "visit_date_records",
+          "name": "Visit date records",
+          "keywords": [
+            "visits"
+          ],
+          "aliases": [
+            "visit dates"
+          ],
+          "path": "presets/LST_SUBJECT_RECORDS/visit_date_records.json",
+          "version": "1.0.0",
+          "sha256": "7a7368efd2a137d125c25c93bfd2d25ea37cb6d3c30851c7c76241673d32f657"
+        },
+        {
+          "preset_id": "vital_sign_records",
+          "name": "Vital sign records",
+          "keywords": [
+            "vital signs"
+          ],
+          "aliases": [
+            "vital signs",
+            "body temperature"
+          ],
+          "path": "presets/LST_SUBJECT_RECORDS/vital_sign_records.json",
+          "version": "1.0.0",
+          "sha256": "7f0a9456e8785a76d8a5b752b1afa6a81e03340a174afbdf08b9660ef9463f76"
+        }
+      ],
+      "evidence_sources": 206,
+      "evidence_studies": 6,
+      "evidence_level": "multi_study",
+      "review_status": "approved",
+      "path": "templates/listing/LST_SUBJECT_RECORDS.json",
+      "sha256": "618245f1af230e37da0345d121d27343915af1d1f37b44469ae3095c0ada1059",
+      "reference_shells": [
+        {
+          "preset_id": "adverse_event_records",
+          "docx": "TFL_Template_Library/listing/LST_SUBJECT_RECORDS__adverse_event_records.docx",
+          "sha256": "32f6e1635504da92818bafb5fbc6ed6bc97760a9e0c58bea55224ddeb5fd59f4"
+        },
+        {
+          "preset_id": "analysis_set_records",
+          "docx": "TFL_Template_Library/listing/LST_SUBJECT_RECORDS__analysis_set_records.docx",
+          "sha256": "ea2a0ee80b04ab2e5cd77484b0ba86d15d4d5e599000720789970631bf027a15"
+        },
+        {
+          "preset_id": "death_records",
+          "docx": "TFL_Template_Library/listing/LST_SUBJECT_RECORDS__death_records.docx",
+          "sha256": "ef629dd35e5ed1d816b2ba8777bab29aa2f36fdbf7ff3f9ccedc7b9ff36cab62"
+        },
+        {
+          "preset_id": "demographic_records",
+          "docx": "TFL_Template_Library/listing/LST_SUBJECT_RECORDS__demographic_records.docx",
+          "sha256": "1a8945950b5014d03225b89955c47ca510407ec190917f7121a1f6f8be591c94"
+        },
+        {
+          "preset_id": "deviation_records",
+          "docx": "TFL_Template_Library/listing/LST_SUBJECT_RECORDS__deviation_records.docx",
+          "sha256": "8307f5229e8a51a19fcf74ffbb8ff1451c3a690485bcc75cb84114de2b1c0bee"
+        },
+        {
+          "preset_id": "disease_history_records",
+          "docx": "TFL_Template_Library/listing/LST_SUBJECT_RECORDS__disease_history_records.docx",
+          "sha256": "774b9ba63b5f7e22865aade2c17c201fedcee26d4d0a2d2f93f8343998546f10"
+        },
+        {
+          "preset_id": "disposition_records",
+          "docx": "TFL_Template_Library/listing/LST_SUBJECT_RECORDS__disposition_records.docx",
+          "sha256": "04e4427fc736156f833e00980aa4ff5de3d41432083cf234201dbc5589fd1a85"
+        },
+        {
+          "preset_id": "ecg_cardiac_records",
+          "docx": "TFL_Template_Library/listing/LST_SUBJECT_RECORDS__ecg_cardiac_records.docx",
+          "sha256": "8edd3bebc81621772ff69e4260fdde530d46415e9228c510c3980a37d817f473"
+        },
+        {
+          "preset_id": "efficacy_records",
+          "docx": "TFL_Template_Library/listing/LST_SUBJECT_RECORDS__efficacy_records.docx",
+          "sha256": "8ea6ae4177027440356b651bc998c4095e21ab8abc65b681dc6b783943e93500"
+        },
+        {
+          "preset_id": "eligibility_records",
+          "docx": "TFL_Template_Library/listing/LST_SUBJECT_RECORDS__eligibility_records.docx",
+          "sha256": "f4fd753dd939a90000fd3304273ab32e6aed2d8087931de85202939a85d84fdb"
+        },
+        {
+          "preset_id": "exposure_records",
+          "docx": "TFL_Template_Library/listing/LST_SUBJECT_RECORDS__exposure_records.docx",
+          "sha256": "79d39ef38174379d585bd0e2b98d22f910a15eadcccdb1967af2feeaba4183ee"
+        },
+        {
+          "preset_id": "immunogenicity_records",
+          "docx": "TFL_Template_Library/listing/LST_SUBJECT_RECORDS__immunogenicity_records.docx",
+          "sha256": "b97cea6e133a43390c860bc704a9e1443c4268ea432961408b33d39098f1dc2b"
+        },
+        {
+          "preset_id": "laboratory_records",
+          "docx": "TFL_Template_Library/listing/LST_SUBJECT_RECORDS__laboratory_records.docx",
+          "sha256": "ff2874198e34b8bdd5cb7f5da52bf7d6ca997660eb804519f56e0e22c405746f"
+        },
+        {
+          "preset_id": "medical_history_records",
+          "docx": "TFL_Template_Library/listing/LST_SUBJECT_RECORDS__medical_history_records.docx",
+          "sha256": "b5942c70669175086b6e996cb9e19cf88e96c94080930920391e8632b9137e4c"
+        },
+        {
+          "preset_id": "medication_records",
+          "docx": "TFL_Template_Library/listing/LST_SUBJECT_RECORDS__medication_records.docx",
+          "sha256": "6681fb88b2ebf6f943e1596261d6a68923e6e4d75da34782b7b890de210b7baf"
+        },
+        {
+          "preset_id": "pd_biomarker_records",
+          "docx": "TFL_Template_Library/listing/LST_SUBJECT_RECORDS__pd_biomarker_records.docx",
+          "sha256": "e69d47b3e990a90b38fab3d3baa38d036dd2dcb1d634f3d349f7d41a93847fec"
+        },
+        {
+          "preset_id": "performance_status_records",
+          "docx": "TFL_Template_Library/listing/LST_SUBJECT_RECORDS__performance_status_records.docx",
+          "sha256": "be5f7f5f70c2a20dea700f0c43affed73097dbe3416f46d294c2d80f0229065e"
+        },
+        {
+          "preset_id": "physical_exam_records",
+          "docx": "TFL_Template_Library/listing/LST_SUBJECT_RECORDS__physical_exam_records.docx",
+          "sha256": "0a9c20dfa3d4fed5c8f913f80890070b99fc49f044c150ab8444c0383a51f79a"
+        },
+        {
+          "preset_id": "pk_records",
+          "docx": "TFL_Template_Library/listing/LST_SUBJECT_RECORDS__pk_records.docx",
+          "sha256": "19301b1b14bf8e7c3d59647aa65351ef270a519da4a39c6660ccf7f4a7f6525d"
+        },
+        {
+          "preset_id": "questionnaire_records",
+          "docx": "TFL_Template_Library/listing/LST_SUBJECT_RECORDS__questionnaire_records.docx",
+          "sha256": "42cf28ad05e97f4b61a5325587a285a158143b3f788e9c0c212be5856f3d7b3e"
+        },
+        {
+          "preset_id": "time_to_event_records",
+          "docx": "TFL_Template_Library/listing/LST_SUBJECT_RECORDS__time_to_event_records.docx",
+          "sha256": "8ac552975d5786628b16e5661722cf9844290224ad15f5a2105ea82b69a2ff50"
+        },
+        {
+          "preset_id": "visit_date_records",
+          "docx": "TFL_Template_Library/listing/LST_SUBJECT_RECORDS__visit_date_records.docx",
+          "sha256": "ec520d5427e703d1461ef3405df77050ab03797f6b563241f372d45fd57e260e"
+        },
+        {
+          "preset_id": "vital_sign_records",
+          "docx": "TFL_Template_Library/listing/LST_SUBJECT_RECORDS__vital_sign_records.docx",
+          "sha256": "a5a4582bf9045fe3f973234f035a5ed2580a26ffd16034dcc73eca066ebe0a72"
+        }
+      ]
+    },
+    {
+      "template_id": "FIG_BOX_PLOT",
+      "version": "1.0.0",
+      "output_type": "figure",
+      "name": "Box plot by group",
+      "intended_use": "Distribution of a continuous value (typically change or percent change from baseline at one time point) by group: box (quartiles), median line, whiskers, optional mean marker and individual points.",
+      "not_for": "Values over time (summary-over-time figure).",
+      "keywords": [
+        "box plot"
+      ],
+      "aliases": [
+        "box plot",
+        "boxplot",
+        "box and whisker"
+      ],
+      "match_cues": {
+        "title_terms": [
+          "box plot",
+          "boxplot"
+        ],
+        "negative_terms": [
+          "spider",
+          "waterfall",
+          "kaplan"
+        ]
+      },
+      "required_fields": [
+        "title",
+        "population",
+        "figure.legend",
+        "figure.y_axis.label"
+      ],
+      "config_options": {
+        "overlay_points": {
+          "values": [
+            true,
+            false
+          ],
+          "default": true
+        }
+      },
+      "presets": [
+        {
+          "preset_id": "change_from_baseline_box",
+          "name": "Percent change from baseline by group",
+          "keywords": [
+            "box plot"
+          ],
+          "aliases": [
+            "percentage change from baseline",
+            "Ki-67",
+            "AQUA",
+            "H-score"
+          ],
+          "path": "presets/FIG_BOX_PLOT/change_from_baseline_box.json",
+          "version": "1.0.0",
+          "sha256": "68651c2b89482e37027bdfa5d801b177514e5374b3fdb06f643931e03b489460"
+        }
+      ],
+      "evidence_sources": 6,
+      "evidence_studies": 1,
+      "evidence_level": "single_source",
+      "review_status": "approved",
+      "path": "templates/figure/FIG_BOX_PLOT.json",
+      "sha256": "3f8e60d5e8889bfaef93e3d1e93a5aa7feff7626ce9e817fb518b9154f1f933c",
+      "reference_shells": [
+        {
+          "preset_id": "change_from_baseline_box",
+          "docx": "TFL_Template_Library/figure/FIG_BOX_PLOT__change_from_baseline_box.docx",
+          "sha256": "c123de309e3f55012631d2edb81c5a34fda87d39494caa06f58746f44c69d182"
+        }
+      ]
+    },
+    {
+      "template_id": "FIG_INDIVIDUAL_PROFILE",
+      "version": "1.0.0",
+      "output_type": "figure",
+      "name": "Individual subject profiles",
+      "intended_use": "One line per subject plotted against visit or time (spider plot of percent change, individual values, individual concentration-time), with one panel per group and optional reference lines.",
+      "not_for": "Group summaries (summary-over-time figure); best change per subject as bars (waterfall figure).",
+      "keywords": [
+        "individual profiles"
+      ],
+      "aliases": [
+        "spider plot",
+        "individual",
+        "by subject"
+      ],
+      "match_cues": {
+        "title_terms": [
+          "spider",
+          "individual"
+        ],
+        "negative_terms": [
+          "mean",
+          "box",
+          "waterfall",
+          "kaplan"
+        ]
+      },
+      "required_fields": [
+        "title",
+        "population",
+        "figure.legend",
+        "figure.y_axis.label"
+      ],
+      "config_options": {
+        "panel_by_group": {
+          "values": [
+            false,
+            true
+          ],
+          "default": true
+        },
+        "scale_panels": {
+          "values": [
+            "linear",
+            "linear_and_semilog"
+          ],
+          "default": "linear"
+        }
+      },
+      "presets": [
+        {
+          "preset_id": "individual_concentration_time",
+          "name": "Individual concentration-time profiles",
+          "keywords": [
+            "pharmacokinetic concentration"
+          ],
+          "aliases": [
+            "individual",
+            "plasma concentration",
+            "semi-logarithmic"
+          ],
+          "path": "presets/FIG_INDIVIDUAL_PROFILE/individual_concentration_time.json",
+          "version": "1.0.0",
+          "sha256": "013c7a4c00f0389de23dc2acab30dc8c486130e7ba1e5971cd52d1e881390c1b"
+        },
+        {
+          "preset_id": "individual_values_by_visit",
+          "name": "Individual values by visit",
+          "keywords": [
+            "individual profiles"
+          ],
+          "aliases": [
+            "individual",
+            "Ki-67",
+            "AQUA",
+            "H-score",
+            "score"
+          ],
+          "path": "presets/FIG_INDIVIDUAL_PROFILE/individual_values_by_visit.json",
+          "version": "1.0.0",
+          "sha256": "840f34d8d8d78b407441d69d0b04e88f771af26d1bac14f95d424b9b2c9070f7"
+        },
+        {
+          "preset_id": "spider_percent_change",
+          "name": "Spider plot of percent change from baseline",
+          "keywords": [
+            "individual profiles"
+          ],
+          "aliases": [
+            "spider plot",
+            "percent change",
+            "target lesion size"
+          ],
+          "path": "presets/FIG_INDIVIDUAL_PROFILE/spider_percent_change.json",
+          "version": "1.0.0",
+          "sha256": "b21ccf1193b6d27cc4012e99ee8f85636864abae636fa07e91d88896c39d3ec2"
+        }
+      ],
+      "evidence_sources": 5,
+      "evidence_studies": 2,
+      "evidence_level": "multi_study",
+      "review_status": "approved",
+      "path": "templates/figure/FIG_INDIVIDUAL_PROFILE.json",
+      "sha256": "e9cd8cb065cb2661925ec0b654e0a42cc83b58cb8202c335c1aae05b939d0549",
+      "reference_shells": [
+        {
+          "preset_id": "individual_concentration_time",
+          "docx": "TFL_Template_Library/figure/FIG_INDIVIDUAL_PROFILE__individual_concentration_time.docx",
+          "sha256": "46c16f2e4e817c00803be7159679d6d6afb56ccfcc340ec0c27ca98be7a4b3fe"
+        },
+        {
+          "preset_id": "individual_values_by_visit",
+          "docx": "TFL_Template_Library/figure/FIG_INDIVIDUAL_PROFILE__individual_values_by_visit.docx",
+          "sha256": "ddfc527ac88d5ff6b84633cf92653ec0019e4b4a61293ab122a0ad05a7258eb8"
+        },
+        {
+          "preset_id": "spider_percent_change",
+          "docx": "TFL_Template_Library/figure/FIG_INDIVIDUAL_PROFILE__spider_percent_change.docx",
+          "sha256": "fe76ef6f66bb744c33cf6640580bd47d0268e12a5ab477e1e728de0e232954f2"
+        }
+      ]
+    },
+    {
+      "template_id": "FIG_KAPLAN_MEIER",
+      "version": "1.0.0",
+      "output_type": "figure",
+      "name": "Kaplan-Meier plot",
+      "intended_use": "Kaplan-Meier estimate of the probability of remaining event-free over time, one step curve per group, censor marks and an optional number-at-risk table below the x axis.",
+      "not_for": "Group means or percentages over visits (summary-over-time figure); cumulative incidence with competing risks; tables of KM estimates (time-to-event table).",
+      "keywords": [
+        "kaplan-meier",
+        "survival",
+        "time to event",
+        "km plot"
+      ],
+      "aliases": [
+        "KM",
+        "overall survival",
+        "OS",
+        "progression-free survival",
+        "PFS",
+        "recurrence-free survival",
+        "RFS",
+        "time to progression",
+        "TTP",
+        "duration of response",
+        "DOR",
+        "event-free survival"
+      ],
+      "match_cues": {
+        "title_terms": [
+          "kaplan",
+          "survival",
+          "time to",
+          "duration of response",
+          "time from"
+        ],
+        "negative_terms": [
+          "mean",
+          "box",
+          "waterfall",
+          "spider",
+          "tornado",
+          "table"
+        ]
+      },
+      "required_fields": [
+        "title",
+        "population",
+        "figure.legend",
+        "figure.x_axis.unit",
+        "footnotes[FN_CENSOR]"
+      ],
+      "config_options": {
+        "risk_table": {
+          "values": [
+            true,
+            false
+          ],
+          "default": true
+        }
+      },
+      "presets": [
+        {
+          "preset_id": "event_free_time",
+          "name": "Event-free time (PFS, RFS, TTP, DOR)",
+          "keywords": [
+            "progression-free survival",
+            "recurrence-free survival",
+            "time to progression"
+          ],
+          "aliases": [
+            "PFS",
+            "RFS",
+            "TTP",
+            "DOR",
+            "duration of response",
+            "event-free",
+            "time to"
+          ],
+          "path": "presets/FIG_KAPLAN_MEIER/event_free_time.json",
+          "version": "1.0.0",
+          "sha256": "2115eea2c0eb178e2adf3ce374abc0f2e7aedd2ec6b47182d3704bb4dfa62639"
+        },
+        {
+          "preset_id": "overall_survival",
+          "name": "Overall survival",
+          "keywords": [
+            "overall survival"
+          ],
+          "aliases": [
+            "OS",
+            "overall survival"
+          ],
+          "path": "presets/FIG_KAPLAN_MEIER/overall_survival.json",
+          "version": "1.0.0",
+          "sha256": "f9227e1bd5fa839cff9af0e85b60d8b7756412e947be711a5507491ce6b74f94"
+        }
+      ],
+      "evidence_sources": 3,
+      "evidence_studies": 3,
+      "evidence_level": "multi_study",
+      "review_status": "approved",
+      "path": "templates/figure/FIG_KAPLAN_MEIER.json",
+      "sha256": "59e28e1a9ce778a5775f5b7ebcc684b566cd9bab31eeb26fa68b0c7e38594cee",
+      "reference_shells": [
+        {
+          "preset_id": "event_free_time",
+          "docx": "TFL_Template_Library/figure/FIG_KAPLAN_MEIER__event_free_time.docx",
+          "sha256": "1df14eb31c9706dea9318989d2ea7f642c7ff3c05808fbd71cd89dca9dc91b71"
+        },
+        {
+          "preset_id": "overall_survival",
+          "docx": "TFL_Template_Library/figure/FIG_KAPLAN_MEIER__overall_survival.docx",
+          "sha256": "581ed5272bb4725954247e959e903e616eb9af94e0c4496b9100f0a175151dec"
+        }
+      ]
+    },
+    {
+      "template_id": "FIG_SUMMARY_OVER_TIME",
+      "version": "1.0.0",
+      "output_type": "figure",
+      "name": "Group summary over time",
+      "intended_use": "A group-level summary statistic (mean with SD/SE error bars, median, or percentage of subjects in a category) plotted against visit or nominal time, one line per group; optional linear and semi-logarithmic panels.",
+      "not_for": "Individual subject trajectories (individual-profile figure); survival curves (Kaplan-Meier figure).",
+      "keywords": [
+        "summary over time"
+      ],
+      "aliases": [
+        "mean",
+        "mean concentration",
+        "semi-logarithmic",
+        "by time",
+        "changes of",
+        "percentage of patients"
+      ],
+      "match_cues": {
+        "title_terms": [
+          "mean",
+          "changes of",
+          "by time",
+          "over time",
+          "ecog score"
+        ],
+        "negative_terms": [
+          "individual",
+          "spider",
+          "kaplan",
+          "box",
+          "waterfall"
+        ]
+      },
+      "required_fields": [
+        "title",
+        "population",
+        "figure.legend",
+        "figure.y_axis.label",
+        "figure.x_axis.unit"
+      ],
+      "config_options": {
+        "scale_panels": {
+          "values": [
+            "linear",
+            "linear_and_semilog"
+          ],
+          "default": "linear"
+        }
+      },
+      "presets": [
+        {
+          "preset_id": "category_percentage_over_time",
+          "name": "Percentage of subjects per category over visits",
+          "keywords": [
+            "performance status"
+          ],
+          "aliases": [
+            "ECOG",
+            "percentage of patients",
+            "score"
+          ],
+          "path": "presets/FIG_SUMMARY_OVER_TIME/category_percentage_over_time.json",
+          "version": "1.0.0",
+          "sha256": "2ce758a8d2acb1495a0bb5f602bf84d8665f5e61b265861e961f02dc347bcc23"
+        },
+        {
+          "preset_id": "mean_concentration_time",
+          "name": "Mean concentration-time profile",
+          "keywords": [
+            "pharmacokinetic concentration"
+          ],
+          "aliases": [
+            "mean concentration",
+            "plasma concentration",
+            "semi-logarithmic",
+            "PK"
+          ],
+          "path": "presets/FIG_SUMMARY_OVER_TIME/mean_concentration_time.json",
+          "version": "1.0.0",
+          "sha256": "d277b75f9639e5ca3dc07a3ae1908a356899350c7ff1736c91b2484243ee0a21"
+        },
+        {
+          "preset_id": "mean_value_over_time",
+          "name": "Mean laboratory / clinical value over time",
+          "keywords": [
+            "laboratory"
+          ],
+          "aliases": [
+            "mean",
+            "ANC",
+            "changes of",
+            "by time"
+          ],
+          "path": "presets/FIG_SUMMARY_OVER_TIME/mean_value_over_time.json",
+          "version": "1.0.0",
+          "sha256": "e9f985681df9bffb5d1eb37dc8b7714fd6cd0a9336490cf90d64a3e31bf48d32"
+        }
+      ],
+      "evidence_sources": 3,
+      "evidence_studies": 3,
+      "evidence_level": "multi_study",
+      "review_status": "approved",
+      "path": "templates/figure/FIG_SUMMARY_OVER_TIME.json",
+      "sha256": "78d485d4996bf58832c057caba046e0048294aae8b92412d9ee1062d44f09ef0",
+      "reference_shells": [
+        {
+          "preset_id": "category_percentage_over_time",
+          "docx": "TFL_Template_Library/figure/FIG_SUMMARY_OVER_TIME__category_percentage_over_time.docx",
+          "sha256": "48c563be2e3f27359fc055c5c72398119a11ee4a18492c2768b831f5d702df8f"
+        },
+        {
+          "preset_id": "mean_concentration_time",
+          "docx": "TFL_Template_Library/figure/FIG_SUMMARY_OVER_TIME__mean_concentration_time.docx",
+          "sha256": "562f009531f7e42abb634e258eba754d1c86024b88a8e7d146e1dba2134d7900"
+        },
+        {
+          "preset_id": "mean_value_over_time",
+          "docx": "TFL_Template_Library/figure/FIG_SUMMARY_OVER_TIME__mean_value_over_time.docx",
+          "sha256": "33ba8a19cd86a86aa2fc448c52f478c3597341ed61e004b57f259f3bcc117e34"
+        }
+      ]
+    },
+    {
+      "template_id": "FIG_TORNADO",
+      "version": "1.0.0",
+      "output_type": "figure",
+      "name": "Tornado (butterfly) plot",
+      "intended_use": "Mirrored horizontal bars of the percentage of subjects with each term for two groups (left and right), terms on the vertical axis.",
+      "not_for": "More than two groups; tables of term frequencies (coded-term template).",
+      "keywords": [
+        "tornado plot"
+      ],
+      "aliases": [
+        "tornado",
+        "butterfly"
+      ],
+      "match_cues": {
+        "title_terms": [
+          "tornado",
+          "butterfly"
+        ],
+        "negative_terms": [
+          "waterfall",
+          "box"
+        ]
+      },
+      "required_fields": [
+        "title",
+        "population",
+        "figure.legend",
+        "figure.legend",
+        "footnotes[FN_TERMS]"
+      ],
+      "config_options": {},
+      "presets": [
+        {
+          "preset_id": "ae_pt_tornado",
+          "name": "TEAE preferred terms",
+          "keywords": [
+            "adverse events"
+          ],
+          "aliases": [
+            "treatment emergent adverse events",
+            "preferred term",
+            "TEAE"
+          ],
+          "path": "presets/FIG_TORNADO/ae_pt_tornado.json",
+          "version": "1.0.0",
+          "sha256": "5672e931fe7643a6c50caf7aab25df31c5fa829731c51936db91d28090c3ffba"
+        }
+      ],
+      "evidence_sources": 1,
+      "evidence_studies": 1,
+      "evidence_level": "single_source",
+      "review_status": "approved",
+      "path": "templates/figure/FIG_TORNADO.json",
+      "sha256": "779c50c964193acdc9061f3a675a93c4b0194d413ce0687c1f8ad3abc12d5168",
+      "reference_shells": [
+        {
+          "preset_id": "ae_pt_tornado",
+          "docx": "TFL_Template_Library/figure/FIG_TORNADO__ae_pt_tornado.docx",
+          "sha256": "1462cb977a789dbc793154a84ec6afb346b930006a5a61dda750c5147862d48c"
+        }
+      ]
+    },
+    {
+      "template_id": "FIG_WATERFALL",
+      "version": "1.0.0",
+      "output_type": "figure",
+      "name": "Waterfall plot",
+      "intended_use": "Best percent change from baseline per subject as bars ordered from largest increase to largest decrease, optional fill by best overall response, reference lines at response thresholds, one panel per group.",
+      "not_for": "Trajectories over time (individual-profile figure).",
+      "keywords": [
+        "waterfall plot"
+      ],
+      "aliases": [
+        "waterfall",
+        "best percentage change",
+        "best percent change"
+      ],
+      "match_cues": {
+        "title_terms": [
+          "waterfall"
+        ],
+        "negative_terms": [
+          "spider",
+          "box",
+          "kaplan"
+        ]
+      },
+      "required_fields": [
+        "title",
+        "population",
+        "figure.legend",
+        "figure.reference_lines"
+      ],
+      "config_options": {
+        "panel_by_group": {
+          "values": [
+            false,
+            true
+          ],
+          "default": true
+        }
+      },
+      "presets": [
+        {
+          "preset_id": "best_percent_change",
+          "name": "Best percent change in tumour size",
+          "keywords": [
+            "waterfall plot"
+          ],
+          "aliases": [
+            "target lesion",
+            "primary tumor",
+            "tumour size",
+            "caliper"
+          ],
+          "path": "presets/FIG_WATERFALL/best_percent_change.json",
+          "version": "1.0.0",
+          "sha256": "104ce397865322b5aa92ee112151869922ea1e65242bd6693515ea6c7810f485"
+        }
+      ],
+      "evidence_sources": 2,
+      "evidence_studies": 1,
+      "evidence_level": "single_source",
+      "review_status": "approved",
+      "path": "templates/figure/FIG_WATERFALL.json",
+      "sha256": "df7769126ec68db394ab990d722975349e1a3dbbed7633257c93782c7760f472",
+      "reference_shells": [
+        {
+          "preset_id": "best_percent_change",
+          "docx": "TFL_Template_Library/figure/FIG_WATERFALL__best_percent_change.docx",
+          "sha256": "0add203021bb8b76cb5d1b1fbd875b5c51be8c95c6c5e1f6473961de8ae636c7"
+        }
+      ]
+    }
+  ]
+}

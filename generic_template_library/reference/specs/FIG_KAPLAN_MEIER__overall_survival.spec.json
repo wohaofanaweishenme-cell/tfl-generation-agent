@@ -1,0 +1,213 @@
+{
+  "schema_version": "3.0",
+  "output_id": "x.x.x",
+  "output_type": "figure",
+  "template_id": "FIG_KAPLAN_MEIER",
+  "template_version": "1.0.0",
+  "preset_ids": [
+    "overall_survival"
+  ],
+  "title": {
+    "value": "Overall survival",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "population": {
+    "value": "[Analysis population]",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "columns": {
+    "stub_header": {
+      "value": "",
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "groups": [
+      {
+        "id": "A",
+        "label": {
+          "value": "[Treatment A]",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "B",
+        "label": {
+          "value": "[Treatment B]",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      }
+    ],
+    "total": {
+      "enabled": {
+        "value": true,
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "label": {
+        "value": "Total",
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "member_group_ids": [
+        "A",
+        "B"
+      ]
+    }
+  },
+  "row_blocks": [],
+  "footnotes": [
+    {
+      "id": "FN_CENSOR",
+      "marker": null,
+      "text": {
+        "value": "Censoring: [censoring rule]",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q003",
+        "note": "missing study setting: definitions.censoring_rule"
+      }
+    },
+    {
+      "id": "FN_MARKS",
+      "marker": null,
+      "text": {
+        "value": "Censored observations are marked with '+'.",
+        "source": "template_default",
+        "status": "resolved"
+      }
+    }
+  ],
+  "programming_notes": [
+    {
+      "id": "PN_CURVES",
+      "marker": null,
+      "text": {
+        "value": "One step curve per group with the line styles listed in the legend; number at risk shown at each x-axis tick.",
+        "source": "template_default",
+        "status": "resolved"
+      }
+    }
+  ],
+  "figure": {
+    "plot_type": "KM",
+    "x_axis": {
+      "label": {
+        "value": "Time ([time unit])",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q001",
+        "note": "missing study setting: time_unit"
+      },
+      "unit": {
+        "value": "[time unit]",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q002",
+        "note": "missing study setting: time_unit"
+      },
+      "range": {
+        "value": "As appropriate",
+        "source": "template_default",
+        "status": "resolved"
+      }
+    },
+    "y_axis": {
+      "label": {
+        "value": "Overall Survival Probability",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "range": {
+        "value": "0 to 1",
+        "source": "template_default",
+        "status": "resolved"
+      }
+    },
+    "legend": {
+      "value": [
+        "[Treatment A] (N=xx)",
+        "[Treatment B] (N=xx)"
+      ],
+      "source": "study_setting",
+      "status": "resolved"
+    },
+    "panels": {
+      "value": [
+        "single panel"
+      ],
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "risk_table": {
+      "value": true,
+      "source": "template_default",
+      "status": "needs_review"
+    },
+    "censor_marks": {
+      "value": true,
+      "source": "template_default",
+      "status": "needs_review"
+    }
+  },
+  "listing": null,
+  "config": {
+    "risk_table": true
+  },
+  "page": {
+    "orientation": "landscape",
+    "paper": "letter",
+    "font": "Courier New",
+    "font_size_pt": 9,
+    "include_programming_notes": true
+  },
+  "issues": [
+    {
+      "question_id": "Q001",
+      "element_path": "figure.x_axis.label",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): time_unit (needed for: Time ([time unit])).",
+      "answer": null
+    },
+    {
+      "question_id": "Q002",
+      "element_path": "figure.x_axis.unit",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): time_unit (needed for: [time unit]).",
+      "answer": null
+    },
+    {
+      "question_id": "Q003",
+      "element_path": "footnotes[FN_CENSOR]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.censoring_rule (needed for: Censoring: [censoring rule]).",
+      "answer": null
+    }
+  ],
+  "provenance": {
+    "content_list_entry": {
+      "entry_id": "REF_FIG_KAPLAN_MEIER__overall_survival",
+      "original_tfl_number": "x.x.x",
+      "output_type": "figure",
+      "original_title": "Overall survival",
+      "population": "[Analysis population]"
+    },
+    "template_file_sha256": "59e28e1a9ce778a5775f5b7ebcc684b566cd9bab31eeb26fa68b0c7e38594cee",
+    "preset_file_sha256": {
+      "overall_survival": "f9227e1bd5fa839cff9af0e85b60d8b7756412e947be711a5507491ce6b74f94"
+    },
+    "style_guide_version": "1.1.0",
+    "study_settings_version": "REFERENCE@1.0.0",
+    "match": {
+      "selected": "FIG_KAPLAN_MEIER",
+      "candidates": [],
+      "explanation": "Reference shell: template and preset chosen directly (no matching)."
+    },
+    "generated_by": "tools/build_spec.py (rule-based); config: risk_table=True (template default)"
+  }
+}

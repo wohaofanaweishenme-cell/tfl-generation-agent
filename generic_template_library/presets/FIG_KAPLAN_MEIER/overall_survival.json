@@ -1,0 +1,24 @@
+{
+  "preset_id": "overall_survival",
+  "template_id": "FIG_KAPLAN_MEIER",
+  "version": "1.0.0",
+  "name": "Overall survival",
+  "keywords": [
+    "overall survival"
+  ],
+  "aliases": [
+    "OS",
+    "overall survival"
+  ],
+  "defaults": {
+    "figure": {
+      "y_axis": {
+        "label": "Overall Survival Probability"
+      }
+    }
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "PVCNA003_F_14_2_1"
+  ]
+}

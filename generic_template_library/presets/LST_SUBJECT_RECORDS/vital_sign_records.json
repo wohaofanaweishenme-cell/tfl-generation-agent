@@ -1,0 +1,168 @@
+{
+  "preset_id": "vital_sign_records",
+  "template_id": "LST_SUBJECT_RECORDS",
+  "version": "1.0.0",
+  "name": "Vital sign records",
+  "keywords": [
+    "vital signs"
+  ],
+  "aliases": [
+    "vital signs",
+    "body temperature"
+  ],
+  "defaults": {
+    "listing": {
+      "record_grain": "subject_visit",
+      "fields": [
+        {
+          "id": "Treatment_group",
+          "label": "Treatment group",
+          "kinds": [
+            "group"
+          ]
+        },
+        {
+          "id": "Subject_ID",
+          "label": "Subject ID",
+          "kinds": [
+            "subject_id"
+          ]
+        },
+        {
+          "id": "Parameter__unit",
+          "label": "Parameter (unit)",
+          "kinds": [
+            "parameter"
+          ]
+        },
+        {
+          "id": "Visit",
+          "label": "Visit",
+          "kinds": [
+            "visit"
+          ]
+        },
+        {
+          "id": "Assessment_date",
+          "label": "Assessment date",
+          "kinds": [
+            "datetime"
+          ]
+        },
+        {
+          "id": "Time_point",
+          "label": "Time point",
+          "kinds": [
+            "category"
+          ]
+        },
+        {
+          "id": "Weight__kg",
+          "label": "Weight (kg)",
+          "kinds": [
+            "number"
+          ]
+        },
+        {
+          "id": "Result",
+          "label": "Result",
+          "kinds": [
+            "number"
+          ]
+        },
+        {
+          "id": "Change_from_baseline",
+          "label": "Change from baseline",
+          "kinds": [
+            "number"
+          ]
+        }
+      ],
+      "sort_keys": [
+        "Treatment group",
+        "Subject ID",
+        "Visit"
+      ],
+      "group_by": [
+        "Treatment group"
+      ]
+    }
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "ARV471BC201_L_16_2_9",
+    "CPXPOM001_L_16_2_9_1_1",
+    "OMO10301_L_16_2_10_1",
+    "PVCNA003_L_16_2_9",
+    "SP11631_L_16_2_4_4_1",
+    "SP11631_L_16_2_4_4_2",
+    "WTX330X2101_L_16_2_9",
+    "WTX330X2101_L_16_4_9_2"
+  ],
+  "source_frequency": {
+    "studies": [
+      "ARV-471-BC-201",
+      "CPX-POM-001",
+      "OMO-103-01",
+      "P-VCNA-003",
+      "SP11631",
+      "WTX-330x2101"
+    ],
+    "field_studies": {
+      "Treatment group": [
+        "SP11631"
+      ],
+      "Subject ID": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "OMO-103-01",
+        "P-VCNA-003",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "Parameter (unit)": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "WTX-330x2101"
+      ],
+      "Visit": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "OMO-103-01",
+        "P-VCNA-003",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "Assessment date": [
+        "CPX-POM-001",
+        "OMO-103-01",
+        "P-VCNA-003",
+        "SP11631"
+      ],
+      "Time point": [
+        "CPX-POM-001",
+        "OMO-103-01"
+      ],
+      "Weight (kg)": [
+        "P-VCNA-003",
+        "SP11631"
+      ],
+      "Result": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "Change from baseline": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "SP11631",
+        "WTX-330x2101"
+      ]
+    },
+    "grain_counts": {
+      "subject_visit": 4,
+      "subject_param_visit": 4
+    }
+  }
+}

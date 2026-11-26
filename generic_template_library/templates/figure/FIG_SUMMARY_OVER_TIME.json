@@ -1,0 +1,192 @@
+{
+  "template_id": "FIG_SUMMARY_OVER_TIME",
+  "version": "1.0.0",
+  "output_type": "figure",
+  "name": "Group summary over time",
+  "structural_signature": {
+    "S1": "figure",
+    "S2": "PLOT",
+    "S3": [
+      "AXES"
+    ],
+    "S4": [
+      "PLOT"
+    ],
+    "S5": [
+      "NONE",
+      "PANELS"
+    ],
+    "S6": "SUMMARY_OVER_TIME"
+  },
+  "intended_use": "A group-level summary statistic (mean with SD/SE error bars, median, or percentage of subjects in a category) plotted against visit or nominal time, one line per group; optional linear and semi-logarithmic panels.",
+  "not_for": "Individual subject trajectories (individual-profile figure); survival curves (Kaplan-Meier figure).",
+  "keywords": [
+    "summary over time"
+  ],
+  "aliases": [
+    "mean",
+    "mean concentration",
+    "semi-logarithmic",
+    "by time",
+    "changes of",
+    "percentage of patients"
+  ],
+  "match_cues": {
+    "title_terms": [
+      "mean",
+      "changes of",
+      "by time",
+      "over time",
+      "ecog score"
+    ],
+    "negative_terms": [
+      "individual",
+      "spider",
+      "kaplan",
+      "box",
+      "waterfall"
+    ]
+  },
+  "required_fields": [
+    {
+      "path": "title",
+      "label": "Output title",
+      "allowed_sources": [
+        "content_list"
+      ]
+    },
+    {
+      "path": "population",
+      "label": "Analysis population",
+      "allowed_sources": [
+        "content_list",
+        "study_setting"
+      ]
+    },
+    {
+      "path": "figure.legend",
+      "label": "Groups shown",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    },
+    {
+      "path": "figure.y_axis.label",
+      "label": "Summary statistic and error bar",
+      "allowed_sources": [
+        "study_setting",
+        "content_list"
+      ]
+    },
+    {
+      "path": "figure.x_axis.unit",
+      "label": "Time unit or visit axis",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    }
+  ],
+  "permitted_defaults": [
+    {
+      "path": "figure.y_axis.label",
+      "value": "from preset",
+      "status_when_used": "needs_review",
+      "basis": "Endpoint-specific label."
+    }
+  ],
+  "editable_elements": [
+    "title",
+    "population",
+    "figure.x_axis",
+    "figure.y_axis",
+    "figure.legend",
+    "figure.panels",
+    "figure.reference_lines",
+    "figure.annotations",
+    "footnotes",
+    "programming_notes",
+    "config"
+  ],
+  "config_options": {
+    "scale_panels": {
+      "values": [
+        "linear",
+        "linear_and_semilog"
+      ],
+      "default": "linear",
+      "description": "Single linear panel, or linear plus semi-logarithmic panels.",
+      "cues": {
+        "linear_and_semilog": [
+          "semi-log",
+          "semi-logarithmic"
+        ]
+      }
+    }
+  },
+  "presets": [
+    "mean_concentration_time",
+    "mean_value_over_time",
+    "category_percentage_over_time"
+  ],
+  "skeleton": {
+    "figure": {
+      "plot_type": "SUMMARY_OVER_TIME",
+      "x_axis": {
+        "label": "[Visit / nominal time]",
+        "range": "As appropriate"
+      },
+      "y_axis": {
+        "label": "[Statistic of value] ([unit])"
+      }
+    },
+    "footnotes": [
+      {
+        "id": "FN_STAT",
+        "marker": null,
+        "text": "Points show {settings:definitions.summary_statistic}; error bars show {settings:definitions.error_bar}."
+      }
+    ],
+    "programming_notes": [
+      {
+        "id": "PN_OFFSET",
+        "marker": null,
+        "text": "Offset groups slightly on the x axis so that error bars do not overlap."
+      }
+    ]
+  },
+  "figure_plot": {
+    "plot_type": "SUMMARY_OVER_TIME",
+    "plotter": "renderer/figure/shells.py:plot_summary_over_time",
+    "data_contract": {
+      "required_columns": {
+        "group": "str",
+        "time": "float or visit label",
+        "value": "float"
+      },
+      "optional_columns": {
+        "lower": "float",
+        "upper": "float"
+      }
+    },
+    "implementation_status": "shell_only"
+  },
+  "evidence": [
+    {
+      "source_id": "PVCNA003_F_14_3_1",
+      "study_id": "P-VCNA-003",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_F_14_1_1_1",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "WTX330X2101_F_14_4_1_2_1",
+      "study_id": "WTX-330x2101",
+      "fit": "core"
+    }
+  ],
+  "evidence_level": "multi_study",
+  "review_status": "approved"
+}

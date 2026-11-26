@@ -1,0 +1,153 @@
+{
+  "template_id": "FIG_WATERFALL",
+  "version": "1.0.0",
+  "output_type": "figure",
+  "name": "Waterfall plot",
+  "structural_signature": {
+    "S1": "figure",
+    "S2": "PLOT",
+    "S3": [
+      "AXES"
+    ],
+    "S4": [
+      "PLOT"
+    ],
+    "S5": [
+      "NONE",
+      "PANELS"
+    ],
+    "S6": "WATERFALL"
+  },
+  "intended_use": "Best percent change from baseline per subject as bars ordered from largest increase to largest decrease, optional fill by best overall response, reference lines at response thresholds, one panel per group.",
+  "not_for": "Trajectories over time (individual-profile figure).",
+  "keywords": [
+    "waterfall plot"
+  ],
+  "aliases": [
+    "waterfall",
+    "best percentage change",
+    "best percent change"
+  ],
+  "match_cues": {
+    "title_terms": [
+      "waterfall"
+    ],
+    "negative_terms": [
+      "spider",
+      "box",
+      "kaplan"
+    ]
+  },
+  "required_fields": [
+    {
+      "path": "title",
+      "label": "Output title",
+      "allowed_sources": [
+        "content_list"
+      ]
+    },
+    {
+      "path": "population",
+      "label": "Analysis population",
+      "allowed_sources": [
+        "content_list",
+        "study_setting"
+      ]
+    },
+    {
+      "path": "figure.legend",
+      "label": "Groups shown",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    },
+    {
+      "path": "figure.reference_lines",
+      "label": "Response thresholds",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    }
+  ],
+  "permitted_defaults": [
+    {
+      "path": "figure.annotations",
+      "value": "best overall response categories",
+      "status_when_used": "needs_review",
+      "basis": "Bar fill by BOR is common but not stated in the ARV source."
+    }
+  ],
+  "editable_elements": [
+    "title",
+    "population",
+    "figure.x_axis",
+    "figure.y_axis",
+    "figure.legend",
+    "figure.panels",
+    "figure.reference_lines",
+    "figure.annotations",
+    "footnotes",
+    "programming_notes",
+    "config"
+  ],
+  "config_options": {
+    "panel_by_group": {
+      "values": [
+        false,
+        true
+      ],
+      "default": true,
+      "description": "One panel per group instead of one panel with all groups."
+    }
+  },
+  "presets": [
+    "best_percent_change"
+  ],
+  "skeleton": {
+    "figure": {
+      "plot_type": "WATERFALL",
+      "x_axis": {
+        "label": "Subjects"
+      },
+      "y_axis": {
+        "label": "Best percentage change from baseline (%)"
+      }
+    },
+    "programming_notes": [
+      {
+        "id": "PN_ORDER",
+        "marker": null,
+        "text": "Order bars from largest increase to largest decrease; one bar per subject with a post-baseline assessment."
+      }
+    ]
+  },
+  "figure_plot": {
+    "plot_type": "WATERFALL",
+    "plotter": "renderer/figure/shells.py:plot_waterfall",
+    "data_contract": {
+      "required_columns": {
+        "subject": "str",
+        "group": "str",
+        "best_pct_change": "float"
+      },
+      "optional_columns": {
+        "response": "str"
+      }
+    },
+    "implementation_status": "shell_only"
+  },
+  "evidence": [
+    {
+      "source_id": "ARV471BC201_F_14_2_3_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_F_14_2_3_2_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    }
+  ],
+  "evidence_level": "single_source",
+  "review_status": "approved"
+}

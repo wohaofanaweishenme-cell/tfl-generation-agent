@@ -1,0 +1,215 @@
+{
+  "schema_version": "3.0",
+  "output_id": "14.1.1.1",
+  "output_type": "figure",
+  "template_id": "FIG_SUMMARY_OVER_TIME",
+  "template_version": "1.0.0",
+  "preset_ids": [
+    "mean_value_over_time"
+  ],
+  "title": {
+    "value": "Changes of ANC Mean (log-transformed) by Time during Cycle 1 – FAS",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "population": {
+    "value": "FAS",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "columns": {
+    "stub_header": {
+      "value": "",
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "groups": [
+      {
+        "id": "F627",
+        "label": {
+          "value": "F-627",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "GRAN",
+        "label": {
+          "value": "GRAN",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      }
+    ],
+    "total": {
+      "enabled": {
+        "value": false,
+        "source": "study_setting",
+        "status": "resolved"
+      }
+    }
+  },
+  "row_blocks": [],
+  "footnotes": [
+    {
+      "id": "FN_STAT",
+      "marker": null,
+      "text": {
+        "value": "Points show [summary statistic]; error bars show [error bar].",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q002",
+        "note": "missing study setting: definitions.summary_statistic, definitions.error_bar"
+      }
+    }
+  ],
+  "programming_notes": [
+    {
+      "id": "PN_OFFSET",
+      "marker": null,
+      "text": {
+        "value": "Offset groups slightly on the x axis so that error bars do not overlap.",
+        "source": "template_default",
+        "status": "resolved"
+      }
+    }
+  ],
+  "figure": {
+    "plot_type": "SUMMARY_OVER_TIME",
+    "x_axis": {
+      "label": {
+        "value": "[Day / visit]",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "range": {
+        "value": "As appropriate",
+        "source": "template_default",
+        "status": "resolved"
+      }
+    },
+    "y_axis": {
+      "label": {
+        "value": "Mean ([unit])",
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    },
+    "legend": {
+      "value": [
+        "F-627 (N=xx)",
+        "GRAN (N=xx)"
+      ],
+      "source": "study_setting",
+      "status": "resolved"
+    },
+    "panels": {
+      "value": [
+        "single panel"
+      ],
+      "source": "template_default",
+      "status": "resolved"
+    }
+  },
+  "listing": null,
+  "config": {
+    "scale_panels": "linear"
+  },
+  "page": {
+    "orientation": "landscape",
+    "paper": "letter",
+    "font": "Courier New",
+    "font_size_pt": 9,
+    "include_programming_notes": true
+  },
+  "issues": [
+    {
+      "question_id": "Q002",
+      "element_path": "footnotes[FN_STAT]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.summary_statistic, definitions.error_bar (needed for: Points show [summary statistic]; error bars show [error bar].).",
+      "answer": null
+    }
+  ],
+  "provenance": {
+    "content_list_entry": {
+      "entry_id": "CL126",
+      "document_id": "SAP_001_99",
+      "original_tfl_number": "14.1.1.1",
+      "output_type": "figure",
+      "original_title": "Changes of ANC Mean (log-transformed) by Time during Cycle 1 – FAS",
+      "population": "FAS"
+    },
+    "template_file_sha256": "78d485d4996bf58832c057caba046e0048294aae8b92412d9ee1062d44f09ef0",
+    "preset_file_sha256": {
+      "mean_value_over_time": "e9f985681df9bffb5d1eb37dc8b7714fd6cd0a9336490cf90d64a3e31bf48d32"
+    },
+    "style_guide_version": "1.1.0",
+    "study_settings_version": "SP11631@example-0.3",
+    "match": {
+      "selected": "FIG_SUMMARY_OVER_TIME",
+      "candidates": [
+        {
+          "template_id": "FIG_SUMMARY_OVER_TIME",
+          "score": 23,
+          "matched_terms": [
+            "by time",
+            "changes of",
+            "mean"
+          ],
+          "negative_terms": [],
+          "preset_id": "mean_value_over_time",
+          "preset_score": 8
+        },
+        {
+          "template_id": "FIG_BOX_PLOT",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "FIG_TORNADO",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "FIG_WATERFALL",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "FIG_INDIVIDUAL_PROFILE",
+          "score": -4,
+          "matched_terms": [],
+          "negative_terms": [
+            "mean"
+          ],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "FIG_KAPLAN_MEIER",
+          "score": -4,
+          "matched_terms": [],
+          "negative_terms": [
+            "mean"
+          ],
+          "preset_id": null,
+          "preset_score": 0
+        }
+      ],
+      "explanation": "Selected FIG_SUMMARY_OVER_TIME (score 23): title terms by time, changes of, mean; preset mean_value_over_time."
+    },
+    "generated_by": "tools/build_spec.py (rule-based); config: scale_panels=linear (template default)"
+  }
+}

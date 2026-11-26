@@ -1,0 +1,3 @@
+﻿output_id,output_type,question_id,kind,element_path,question
+14.2.1,table,Q001,missing,footnotes[FN_AGE],Please confirm study setting(s): definitions.age_definition (needed for: [age definition]).
+14.1.1.1,figure,Q002,missing,footnotes[FN_STAT],"Please confirm study setting(s): definitions.summary_statistic, definitions.error_bar (needed for: Points show [summary statistic]; error bars show [error bar].)."

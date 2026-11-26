@@ -1,0 +1,135 @@
+{
+  "purpose": "Stage-4 examples: at least one real content-list entry per template (read from Library by study + entry_id). 'expect' is the reviewer's expected template/preset.",
+  "entries": [
+    {
+      "study_id": "P-VCNA-003",
+      "entry_id": "CL_002",
+      "expect": "TBL_VARIABLE_SUMMARY/demographics"
+    },
+    {
+      "study_id": "P-VCNA-003",
+      "entry_id": "CL_005",
+      "expect": "TBL_CODED_TERM_HIERARCHY/medical_history_soc_pt"
+    },
+    {
+      "study_id": "P-VCNA-003",
+      "entry_id": "CL_006",
+      "expect": "TBL_TIME_TO_EVENT/event_time_summary"
+    },
+    {
+      "study_id": "P-VCNA-003",
+      "entry_id": "CL_062",
+      "expect": "TBL_SHIFT_CROSSTAB/clinical_evaluation_shift"
+    },
+    {
+      "study_id": "P-VCNA-003",
+      "entry_id": "CL_078",
+      "expect": "FIG_KAPLAN_MEIER/overall_survival"
+    },
+    {
+      "study_id": "P-VCNA-003",
+      "entry_id": "CL_115",
+      "expect": "LST_SUBJECT_RECORDS/laboratory_records"
+    },
+    {
+      "study_id": "WTX-330x2101",
+      "entry_id": "CL004",
+      "expect": "TBL_CRITERION_COUNTS/disposition"
+    },
+    {
+      "study_id": "WTX-330x2101",
+      "entry_id": "CL008",
+      "expect": "TBL_VARIABLE_SUMMARY/demographics"
+    },
+    {
+      "study_id": "WTX-330x2101",
+      "entry_id": "CL016",
+      "expect": "TBL_RESPONSE_RATE/best_overall_response"
+    },
+    {
+      "study_id": "WTX-330x2101",
+      "entry_id": "CL021",
+      "expect": "TBL_CODED_TERM_HIERARCHY/teae_soc_pt"
+    },
+    {
+      "study_id": "WTX-330x2101",
+      "entry_id": "CL069",
+      "expect": "TBL_SHIFT_CROSSTAB/ctcae_grade_shift"
+    },
+    {
+      "study_id": "WTX-330x2101",
+      "entry_id": "CL095",
+      "expect": "TBL_TIMEPOINT_STATISTICS_COLUMNS/pk_concentration"
+    },
+    {
+      "study_id": "WTX-330x2101",
+      "entry_id": "CL117",
+      "expect": "LST_SUBJECT_RECORDS/adverse_event_records"
+    },
+    {
+      "study_id": "ARV-471-BC-201",
+      "entry_id": "CL016",
+      "expect": "TBL_VARIABLE_SUMMARY/exposure_compliance"
+    },
+    {
+      "study_id": "ARV-471-BC-201",
+      "entry_id": "CL017",
+      "expect": "TBL_CONTINUOUS_COMPARISON/change_from_baseline_model"
+    },
+    {
+      "study_id": "ARV-471-BC-201",
+      "entry_id": "CL069",
+      "expect": "TBL_CODED_TERM_HIERARCHY/teae_soc_pt"
+    },
+    {
+      "study_id": "ARV-471-BC-201",
+      "entry_id": "CL071",
+      "expect": "TBL_CODED_TERM_HIERARCHY/teae_soc_pt"
+    },
+    {
+      "study_id": "ARV-471-BC-201",
+      "entry_id": "CL082",
+      "expect": "TBL_PARAMETER_BY_VISIT/laboratory_by_visit"
+    },
+    {
+      "study_id": "ARV-471-BC-201",
+      "entry_id": "CL093",
+      "expect": "FIG_BOX_PLOT/change_from_baseline_box"
+    },
+    {
+      "study_id": "ARV-471-BC-201",
+      "entry_id": "CL095",
+      "expect": "FIG_WATERFALL/best_percent_change"
+    },
+    {
+      "study_id": "ARV-471-BC-201",
+      "entry_id": "CL097",
+      "expect": "FIG_INDIVIDUAL_PROFILE/spider_percent_change"
+    },
+    {
+      "study_id": "ARV-471-BC-201",
+      "entry_id": "CL104",
+      "expect": "FIG_TORNADO/ae_pt_tornado"
+    },
+    {
+      "study_id": "SP11631",
+      "entry_id": "CL006",
+      "expect": "TBL_VARIABLE_SUMMARY/demographics"
+    },
+    {
+      "study_id": "SP11631",
+      "entry_id": "CL020",
+      "expect": "TBL_CONTINUOUS_COMPARISON/nonparametric_estimate"
+    },
+    {
+      "study_id": "SP11631",
+      "entry_id": "CL126",
+      "expect": "FIG_SUMMARY_OVER_TIME/mean_value_over_time"
+    },
+    {
+      "study_id": "P-VCNA-003",
+      "entry_id": "CL_017",
+      "expect": "TBL_RESPONSE_RATE/best_overall_response"
+    }
+  ]
+}

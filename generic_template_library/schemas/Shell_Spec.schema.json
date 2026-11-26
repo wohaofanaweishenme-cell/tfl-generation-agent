@@ -1,0 +1,786 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:tfl:generic:shell-spec:3.0",
+  "title": "Shell Spec v3.0 (conventions v1.0 section 4)",
+  "description": "One structured shell for one content-list output. Same schema for table, listing and figure. Every replaceable element is a Slot that records its source and status.",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "output_id",
+    "output_type",
+    "template_id",
+    "template_version",
+    "preset_ids",
+    "title",
+    "population",
+    "columns",
+    "row_blocks",
+    "footnotes",
+    "programming_notes",
+    "page",
+    "issues",
+    "provenance"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "3.0"
+    },
+    "output_id": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Content-list number, kept verbatim (e.g. 14.1.2.1)."
+    },
+    "output_type": {
+      "enum": [
+        "table",
+        "listing",
+        "figure"
+      ]
+    },
+    "template_id": {
+      "type": "string"
+    },
+    "template_version": {
+      "type": "string"
+    },
+    "preset_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "title": {
+      "$ref": "#/$defs/text_slot"
+    },
+    "population": {
+      "$ref": "#/$defs/text_slot"
+    },
+    "columns": {
+      "$ref": "#/$defs/columns"
+    },
+    "row_blocks": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/row_block"
+      }
+    },
+    "footnotes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/note"
+      }
+    },
+    "programming_notes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/note"
+      }
+    },
+    "figure": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "#/$defs/figure"
+        }
+      ]
+    },
+    "listing": {
+      "oneOf": [
+        {
+          "type": "null"
+        },
+        {
+          "$ref": "#/$defs/listing"
+        }
+      ]
+    },
+    "config": {
+      "type": "object",
+      "description": "Values chosen for the template's config_options.",
+      "additionalProperties": {
+        "type": [
+          "string",
+          "boolean",
+          "integer",
+          "number"
+        ]
+      }
+    },
+    "page": {
+      "type": "object",
+      "required": [
+        "orientation",
+        "paper",
+        "font",
+        "font_size_pt"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "orientation": {
+          "enum": [
+            "landscape",
+            "portrait"
+          ]
+        },
+        "paper": {
+          "enum": [
+            "letter",
+            "a4"
+          ]
+        },
+        "font": {
+          "type": "string"
+        },
+        "font_size_pt": {
+          "type": "number"
+        },
+        "include_programming_notes": {
+          "type": "boolean"
+        }
+      }
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/issue"
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "content_list_entry",
+        "template_file_sha256",
+        "style_guide_version",
+        "study_settings_version",
+        "match"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "content_list_entry": {
+          "type": "object"
+        },
+        "template_file_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "preset_file_sha256": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "style_guide_version": {
+          "type": "string"
+        },
+        "study_settings_version": {
+          "type": "string"
+        },
+        "match": {
+          "type": "object",
+          "required": [
+            "selected",
+            "candidates",
+            "explanation"
+          ],
+          "properties": {
+            "selected": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "candidates": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            },
+            "explanation": {
+              "type": "string"
+            }
+          }
+        },
+        "generated_by": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "source": {
+      "enum": [
+        "content_list",
+        "study_setting",
+        "template_default",
+        "unresolved"
+      ]
+    },
+    "status": {
+      "enum": [
+        "resolved",
+        "needs_review",
+        "unresolved",
+        "conflict"
+      ]
+    },
+    "slot_common": {
+      "type": "object",
+      "required": [
+        "source",
+        "status"
+      ],
+      "properties": {
+        "source": {
+          "$ref": "#/$defs/source"
+        },
+        "status": {
+          "$ref": "#/$defs/status"
+        },
+        "question_id": {
+          "type": "string",
+          "pattern": "^Q\\d{3}$"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "source": {
+                "const": "unresolved"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "status": {
+                "const": "unresolved"
+              }
+            },
+            "required": [
+              "question_id"
+            ]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "enum": [
+                  "unresolved",
+                  "conflict"
+                ]
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "question_id"
+            ]
+          }
+        }
+      ]
+    },
+    "text_slot": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/slot_common"
+        }
+      ],
+      "required": [
+        "value"
+      ],
+      "properties": {
+        "value": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "unevaluatedProperties": false
+    },
+    "list_slot": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/slot_common"
+        }
+      ],
+      "required": [
+        "value"
+      ],
+      "properties": {
+        "value": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "unevaluatedProperties": false
+    },
+    "bool_slot": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/slot_common"
+        }
+      ],
+      "required": [
+        "value"
+      ],
+      "properties": {
+        "value": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        }
+      },
+      "unevaluatedProperties": false
+    },
+    "group": {
+      "type": "object",
+      "required": [
+        "id",
+        "label",
+        "show_n"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9_]*$"
+        },
+        "label": {
+          "$ref": "#/$defs/text_slot"
+        },
+        "show_n": {
+          "type": "boolean"
+        }
+      }
+    },
+    "columns": {
+      "type": "object",
+      "required": [
+        "stub_header",
+        "groups",
+        "total"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "stub_header": {
+          "$ref": "#/$defs/text_slot"
+        },
+        "statistic_header": {
+          "$ref": "#/$defs/text_slot"
+        },
+        "groups": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/group"
+          }
+        },
+        "total": {
+          "type": "object",
+          "required": [
+            "enabled"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "enabled": {
+              "$ref": "#/$defs/bool_slot"
+            },
+            "label": {
+              "$ref": "#/$defs/text_slot"
+            },
+            "member_group_ids": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "group_subcolumns": {
+          "$ref": "#/$defs/list_slot"
+        },
+        "comparison_columns": {
+          "$ref": "#/$defs/list_slot"
+        },
+        "statistic_columns": {
+          "$ref": "#/$defs/list_slot",
+          "description": "timepoint_stats: statistics shown as columns."
+        },
+        "category_columns": {
+          "$ref": "#/$defs/list_slot",
+          "description": "crosstab matrix layout: column categories (groups then become row blocks)."
+        }
+      }
+    },
+    "row_block": {
+      "type": "object",
+      "required": [
+        "block_id",
+        "block_type",
+        "label"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "block_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9_]*$"
+        },
+        "block_type": {
+          "enum": [
+            "continuous",
+            "categorical",
+            "criterion",
+            "coded_hierarchy",
+            "any_row",
+            "parameter_visit",
+            "crosstab",
+            "endpoint",
+            "timepoint_stats"
+          ]
+        },
+        "label": {
+          "$ref": "#/$defs/text_slot"
+        },
+        "unit": {
+          "$ref": "#/$defs/text_slot"
+        },
+        "statistics": {
+          "$ref": "#/$defs/list_slot"
+        },
+        "categories": {
+          "$ref": "#/$defs/list_slot"
+        },
+        "missing_row": {
+          "$ref": "#/$defs/bool_slot"
+        },
+        "multiple_response": {
+          "$ref": "#/$defs/bool_slot"
+        },
+        "denominator": {
+          "$ref": "#/$defs/text_slot"
+        },
+        "levels": {
+          "$ref": "#/$defs/list_slot",
+          "description": "coded_hierarchy: level names top-down, e.g. [System Organ Class, Preferred Term]."
+        },
+        "dictionary": {
+          "$ref": "#/$defs/text_slot"
+        },
+        "sort_rule": {
+          "$ref": "#/$defs/text_slot"
+        },
+        "category_split": {
+          "$ref": "#/$defs/text_slot",
+          "description": "coded_hierarchy: none | subrows | subcolumns plus the split variable, e.g. 'subrows: maximum CTCAE grade'."
+        },
+        "split_categories": {
+          "$ref": "#/$defs/list_slot"
+        },
+        "footnote_refs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "items": {
+          "$ref": "#/$defs/item_list_slot",
+          "description": "criterion / endpoint rows: ordered items with indent and statistic kind."
+        },
+        "visits": {
+          "$ref": "#/$defs/list_slot",
+          "description": "parameter_visit / crosstab: visits or timepoints shown."
+        },
+        "timepoints": {
+          "$ref": "#/$defs/list_slot",
+          "description": "timepoint_stats: nominal timepoints."
+        },
+        "parameters": {
+          "$ref": "#/$defs/list_slot",
+          "description": "parameter_visit / timepoint_stats / crosstab: parameters or analytes (placeholders allowed)."
+        },
+        "cell_type": {
+          "$ref": "#/$defs/text_slot",
+          "description": "parameter_visit: continuous | categorical."
+        },
+        "change_from_baseline": {
+          "$ref": "#/$defs/bool_slot"
+        },
+        "row_variable": {
+          "$ref": "#/$defs/text_slot",
+          "description": "crosstab: classification on rows (e.g. baseline grade)."
+        },
+        "column_variable": {
+          "$ref": "#/$defs/text_slot",
+          "description": "crosstab: classification on columns (e.g. worst post-baseline grade)."
+        },
+        "row_categories": {
+          "$ref": "#/$defs/list_slot"
+        }
+      }
+    },
+    "note": {
+      "type": "object",
+      "required": [
+        "id",
+        "text"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "marker": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "text": {
+          "$ref": "#/$defs/text_slot"
+        }
+      }
+    },
+    "axis": {
+      "type": "object",
+      "required": [
+        "label"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "label": {
+          "$ref": "#/$defs/text_slot"
+        },
+        "unit": {
+          "$ref": "#/$defs/text_slot"
+        },
+        "range": {
+          "$ref": "#/$defs/text_slot"
+        },
+        "scale": {
+          "$ref": "#/$defs/text_slot"
+        }
+      }
+    },
+    "figure": {
+      "type": "object",
+      "required": [
+        "plot_type",
+        "x_axis",
+        "y_axis",
+        "legend",
+        "panels"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "plot_type": {
+          "enum": [
+            "KM",
+            "SUMMARY_OVER_TIME",
+            "INDIVIDUAL_PROFILE",
+            "BOX",
+            "WATERFALL",
+            "TORNADO"
+          ]
+        },
+        "x_axis": {
+          "$ref": "#/$defs/axis"
+        },
+        "y_axis": {
+          "$ref": "#/$defs/axis"
+        },
+        "legend": {
+          "$ref": "#/$defs/list_slot"
+        },
+        "panels": {
+          "$ref": "#/$defs/list_slot"
+        },
+        "risk_table": {
+          "$ref": "#/$defs/bool_slot"
+        },
+        "censor_marks": {
+          "$ref": "#/$defs/bool_slot"
+        },
+        "reference_lines": {
+          "$ref": "#/$defs/list_slot"
+        },
+        "annotations": {
+          "$ref": "#/$defs/list_slot"
+        }
+      }
+    },
+    "issue": {
+      "type": "object",
+      "required": [
+        "question_id",
+        "element_path",
+        "kind",
+        "question"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "question_id": {
+          "type": "string",
+          "pattern": "^Q\\d{3}$"
+        },
+        "element_path": {
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "missing",
+            "conflict",
+            "ambiguous_match",
+            "no_compatible_template",
+            "needs_review"
+          ]
+        },
+        "question": {
+          "type": "string"
+        },
+        "answer": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "item_list_slot": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/slot_common"
+        }
+      ],
+      "required": [
+        "value"
+      ],
+      "properties": {
+        "value": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "object",
+            "required": [
+              "label",
+              "indent",
+              "kind"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "label": {
+                "type": "string"
+              },
+              "indent": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 4
+              },
+              "kind": {
+                "type": "string",
+                "description": "Statistic/placeholder key from the style guide statistic_formats, or 'header' for label-only rows."
+              },
+              "where": {
+                "enum": [
+                  "groups",
+                  "comparison",
+                  "both"
+                ],
+                "description": "Which value columns are filled on this row (default groups)."
+              }
+            }
+          }
+        }
+      },
+      "unevaluatedProperties": false
+    },
+    "listing_field": {
+      "type": "object",
+      "required": [
+        "id",
+        "label",
+        "kinds"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9_]*$"
+        },
+        "label": {
+          "$ref": "#/$defs/text_slot"
+        },
+        "kinds": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "enum": [
+              "subject_id",
+              "group",
+              "text",
+              "coded_term",
+              "date",
+              "datetime",
+              "number",
+              "category",
+              "flag",
+              "visit",
+              "parameter",
+              "unit"
+            ]
+          },
+          "description": "One kind per stacked sub-field; more than one means a stacked cell (A / B)."
+        }
+      }
+    },
+    "listing": {
+      "type": "object",
+      "required": [
+        "record_grain",
+        "fields",
+        "sort_keys",
+        "group_by"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "record_grain": {
+          "$ref": "#/$defs/text_slot"
+        },
+        "fields": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/listing_field"
+          }
+        },
+        "sort_keys": {
+          "$ref": "#/$defs/list_slot"
+        },
+        "group_by": {
+          "$ref": "#/$defs/list_slot"
+        },
+        "repeat_identifiers": {
+          "$ref": "#/$defs/list_slot"
+        },
+        "max_fields_per_panel": {
+          "type": "integer",
+          "minimum": 3
+        }
+      }
+    }
+  }
+}

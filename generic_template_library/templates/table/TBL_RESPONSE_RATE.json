@@ -1,0 +1,290 @@
+{
+  "template_id": "TBL_RESPONSE_RATE",
+  "version": "1.0.0",
+  "output_type": "table",
+  "name": "Response / incidence rate endpoint",
+  "structural_signature": {
+    "S1": "table",
+    "S2": "ENDPOINT_ANALYSIS",
+    "S3": [
+      "GROUPS",
+      "GROUPS_PLUS_COMPARISON",
+      "SINGLE"
+    ],
+    "S4": [
+      "RATE_CI"
+    ],
+    "S5": [
+      "NONE",
+      "BY_PERIOD",
+      "BY_GROUP_BLOCK"
+    ]
+  },
+  "intended_use": "Binary or categorical endpoint: distribution of response categories, rate n (%) with confidence interval, and optionally a between-group estimate (difference, odds ratio) and test.",
+  "not_for": "Time-to-event endpoints (time-to-event template); continuous endpoints with model estimates (continuous comparison template); plain category distributions without CI (variable summary template).",
+  "keywords": [
+    "response rate",
+    "incidence rate"
+  ],
+  "aliases": [
+    "objective response rate",
+    "ORR",
+    "disease control rate",
+    "DCR",
+    "clinical benefit rate",
+    "best overall response",
+    "BOR",
+    "pCR rate",
+    "incidence of",
+    "landmark",
+    "rate"
+  ],
+  "match_cues": {
+    "title_terms": [
+      "response rate",
+      "control rate",
+      "benefit rate",
+      "best overall response",
+      "pcr rate",
+      "rate",
+      "incidence of",
+      "landmark"
+    ],
+    "negative_terms": [
+      "listing",
+      "plot",
+      "kaplan",
+      "duration of",
+      "by visit",
+      "system organ class"
+    ]
+  },
+  "required_fields": [
+    {
+      "path": "title",
+      "label": "Output title",
+      "allowed_sources": [
+        "content_list"
+      ]
+    },
+    {
+      "path": "population",
+      "label": "Analysis population",
+      "allowed_sources": [
+        "content_list",
+        "study_setting"
+      ]
+    },
+    {
+      "path": "columns.groups",
+      "label": "Treatment groups / cohorts",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    },
+    {
+      "path": "columns.total",
+      "label": "Total column on/off and membership",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    },
+    {
+      "path": "row_blocks[endpoint].items",
+      "label": "Response categories and rate definition",
+      "allowed_sources": [
+        "content_list",
+        "study_setting"
+      ]
+    },
+    {
+      "path": "footnotes[FN_CI]",
+      "label": "Confidence-interval method and level",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    },
+    {
+      "path": "columns.comparison_columns",
+      "label": "Between-group estimate and test labels",
+      "allowed_sources": [
+        "study_setting"
+      ],
+      "description": "From study settings 'comparisons.response_rate' (estimate label, test label, method); never defaulted."
+    }
+  ],
+  "permitted_defaults": [
+    {
+      "path": "columns.stub_header",
+      "value": "from preset",
+      "status_when_used": "resolved",
+      "basis": "House style stub header."
+    },
+    {
+      "path": "row_blocks[endpoint].items",
+      "value": "from preset",
+      "status_when_used": "needs_review",
+      "basis": "Endpoint row structure distilled from sources."
+    }
+  ],
+  "editable_elements": [
+    "title",
+    "population",
+    "columns.groups[].label",
+    "columns.total",
+    "columns.comparison_columns",
+    "row_blocks[].items",
+    "footnotes",
+    "programming_notes",
+    "config"
+  ],
+  "config_options": {
+    "column_layout": {
+      "values": [
+        "groups",
+        "single_all_subjects"
+      ],
+      "default": "groups",
+      "description": "Group columns, or one all-subjects column for single-arm summaries."
+    },
+    "comparison": {
+      "values": [
+        "none",
+        "columns",
+        "rows"
+      ],
+      "default": "none",
+      "description": "Between-group comparison shown as extra columns, as extra rows, or not at all. Enabled only when study settings confirm a comparison.",
+      "setting_path": "comparisons.response_rate"
+    },
+    "repeat_by_period": {
+      "values": [
+        false,
+        true
+      ],
+      "default": false,
+      "description": "Repeat the endpoint block per cycle/period.",
+      "cues": {
+        "true": [
+          "cycle 2-4",
+          "all treatment periods",
+          "by cycle"
+        ]
+      }
+    }
+  },
+  "presets": [
+    "best_overall_response",
+    "binary_rate"
+  ],
+  "skeleton": {
+    "columns": {
+      "stub_header": "Endpoint"
+    },
+    "footnotes": [
+      {
+        "id": "FN_DENOM",
+        "marker": null,
+        "text": "Percentages are based on {settings:definitions.percentage_denominator}."
+      },
+      {
+        "id": "FN_CI",
+        "marker": null,
+        "text": "Confidence interval: {settings:definitions.ci_method}"
+      },
+      {
+        "id": "FN_COMP",
+        "marker": null,
+        "text": "Comparison: {settings:comparisons.method}",
+        "only_if_config": {
+          "comparison": [
+            "columns",
+            "rows"
+          ]
+        }
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "source_id": "ARV471BC201_T_14_2_2_1_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_2_2_1_2",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_2_2_2",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_2_2_3",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_2_2_5_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_2_2_5_2",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "OMO10301_T_14_2_2_1",
+      "study_id": "OMO-103-01",
+      "fit": "partial",
+      "config_used": "single all-subjects column; groups as row blocks; long_format_parameter_cohort_statistic_result",
+      "note": "several endpoints (DCR, ORR, TTP, TTR, DOR) in one long-format table; rate rows fit, time-to-event rows would need TBL_TIME_TO_EVENT content"
+    },
+    {
+      "source_id": "PVCNA003_T_14_2_2_13",
+      "study_id": "P-VCNA-003",
+      "fit": "core"
+    },
+    {
+      "source_id": "PVCNA003_T_14_2_2_17",
+      "study_id": "P-VCNA-003",
+      "fit": "core"
+    },
+    {
+      "source_id": "PVCNA003_T_14_2_2_7",
+      "study_id": "P-VCNA-003",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_T_14_3_2_1",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_T_14_3_2_3",
+      "study_id": "SP11631",
+      "fit": "config",
+      "config_used": "repeat per period; statistic_label_column"
+    },
+    {
+      "source_id": "WTX330X2101_T_14_2_1_1",
+      "study_id": "WTX-330x2101",
+      "fit": "core"
+    },
+    {
+      "source_id": "WTX330X2101_T_14_2_1_2_1",
+      "study_id": "WTX-330x2101",
+      "fit": "core"
+    },
+    {
+      "source_id": "WTX330X2101_T_14_2_1_2_2",
+      "study_id": "WTX-330x2101",
+      "fit": "core"
+    }
+  ],
+  "evidence_level": "multi_study",
+  "review_status": "approved"
+}

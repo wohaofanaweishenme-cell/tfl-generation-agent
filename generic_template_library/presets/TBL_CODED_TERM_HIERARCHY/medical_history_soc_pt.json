@@ -1,0 +1,49 @@
+{
+  "preset_id": "medical_history_soc_pt",
+  "template_id": "TBL_CODED_TERM_HIERARCHY",
+  "version": "1.0.0",
+  "name": "Medical history by SOC and PT",
+  "keywords": [
+    "medical history"
+  ],
+  "aliases": [
+    "medical history",
+    "prior diseases",
+    "concomitant disease",
+    "surgical history"
+  ],
+  "defaults": {
+    "row_blocks": [
+      {
+        "block_id": "any",
+        "block_type": "any_row",
+        "label": "Subjects with at least one medical history condition"
+      },
+      {
+        "block_id": "terms",
+        "block_type": "coded_hierarchy",
+        "label": "Medical history terms",
+        "levels": [
+          "System Organ Class",
+          "Preferred Term"
+        ],
+        "dictionary": "MedDRA version {settings:coding.meddra_version}",
+        "sort_rule": "Descending frequency in the Total column (first group if no Total); ties alphabetical"
+      }
+    ],
+    "footnotes": [
+      {
+        "id": "FN_DICT",
+        "marker": null,
+        "text": "Medical history is coded using MedDRA version {settings:coding.meddra_version}."
+      }
+    ]
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "PVCNA003_T_14_1_3",
+    "ARV471BC201_T_14_1_5",
+    "CPXPOM001_T_14_1_5_2_1",
+    "SP11631_T_14_2_5"
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "preset_id": "teae_soc_pt",
+  "template_id": "TBL_CODED_TERM_HIERARCHY",
+  "version": "1.0.0",
+  "name": "Treatment-emergent adverse events by SOC and PT",
+  "keywords": [
+    "adverse events",
+    "treatment-emergent adverse events"
+  ],
+  "aliases": [
+    "TEAE",
+    "TEAEs",
+    "adverse event",
+    "serious adverse events",
+    "SAE",
+    "AESI",
+    "special interest",
+    "SMQ",
+    "by system organ class and preferred term"
+  ],
+  "defaults": {
+    "row_blocks": [
+      {
+        "block_id": "any",
+        "block_type": "any_row",
+        "label": "Subjects with at least one TEAE"
+      },
+      {
+        "block_id": "terms",
+        "block_type": "coded_hierarchy",
+        "label": "TEAE terms",
+        "levels": [
+          "System Organ Class",
+          "Preferred Term"
+        ],
+        "dictionary": "MedDRA version {settings:coding.meddra_version}",
+        "sort_rule": "Descending frequency in the Total column (first group if no Total); ties alphabetical",
+        "split_categories": [
+          "Grade 1",
+          "Grade 2",
+          "Grade 3",
+          "Grade 4",
+          "Grade 5"
+        ]
+      }
+    ],
+    "footnotes": [
+      {
+        "id": "FN_TEAE",
+        "marker": null,
+        "text": "TEAE: {settings:definitions.teae_definition}"
+      },
+      {
+        "id": "FN_DICT",
+        "marker": null,
+        "text": "Adverse events are coded using MedDRA version {settings:coding.meddra_version}."
+      },
+      {
+        "id": "FN_GRADE",
+        "marker": null,
+        "text": "Subjects are counted once at the maximum grade; grades per NCI-CTCAE version {settings:coding.ctcae_version}.",
+        "only_if_config": {
+          "category_split": [
+            "subrows",
+            "subcolumns"
+          ]
+        }
+      }
+    ]
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "PVCNA003_T_14_3_1_2",
+    "PVCNA003_T_14_3_1_3",
+    "ARV471BC201_T_14_3_2_1",
+    "ARV471BC201_T_14_3_2_8",
+    "ARV471BC201_T_14_3_2_10",
+    "CPXPOM001_T_14_3_1_2_1",
+    "CPXPOM001_T_14_3_1_8_1",
+    "OMO10301_T_14_3_1_2",
+    "WTX330X2101_T_14_3_2_1_1",
+    "WTX330X2101_T_14_3_2_13_1",
+    "SP11631_T_14_5_1_3",
+    "SP11631_T_14_5_1_7"
+  ]
+}

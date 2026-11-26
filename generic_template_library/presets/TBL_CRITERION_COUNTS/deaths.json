@@ -1,0 +1,71 @@
+{
+  "preset_id": "deaths",
+  "template_id": "TBL_CRITERION_COUNTS",
+  "version": "1.0.0",
+  "name": "Deaths",
+  "keywords": [
+    "deaths"
+  ],
+  "aliases": [
+    "death",
+    "summary of death",
+    "subject death",
+    "cause of death"
+  ],
+  "defaults": {
+    "row_blocks": [
+      {
+        "block_id": "death",
+        "block_type": "criterion",
+        "label": "Deaths",
+        "items": [
+          {
+            "label": "Deaths",
+            "indent": 0,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Primary cause of death",
+            "indent": 1,
+            "kind": "header"
+          },
+          {
+            "label": "Disease progression",
+            "indent": 2,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Adverse event",
+            "indent": 2,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Unknown",
+            "indent": 2,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Other",
+            "indent": 2,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Death within [xx] days of last dose",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Death more than [xx] days after last dose",
+            "indent": 1,
+            "kind": "n_pct"
+          }
+        ]
+      }
+    ]
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "ARV471BC201_T_14_3_3_8",
+    "WTX330X2101_T_14_3_3_8_1"
+  ]
+}

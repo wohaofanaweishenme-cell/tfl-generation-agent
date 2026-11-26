@@ -1,0 +1,245 @@
+{
+  "schema_version": "3.0",
+  "output_id": "14.2.3.1",
+  "output_type": "figure",
+  "template_id": "FIG_WATERFALL",
+  "template_version": "1.0.0",
+  "preset_ids": [
+    "best_percent_change"
+  ],
+  "title": {
+    "value": "Waterfall Plot for Best Percentage Change of Primary Tumor from Baseline (Caliper-based)",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "population": {
+    "value": "Full Analysis Set",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "columns": {
+    "stub_header": {
+      "value": "",
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "groups": [
+      {
+        "id": "ARV",
+        "label": {
+          "value": "ARV-471 200 mg",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "ANA",
+        "label": {
+          "value": "Anastrozole 1 mg",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      }
+    ],
+    "total": {
+      "enabled": {
+        "value": true,
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "label": {
+        "value": "Total",
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "member_group_ids": [
+        "ARV",
+        "ANA"
+      ]
+    }
+  },
+  "row_blocks": [],
+  "footnotes": [
+    {
+      "id": "FN_REF",
+      "marker": null,
+      "text": {
+        "value": "Reference lines: [response thresholds]",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q011",
+        "note": "missing study setting: definitions.response_thresholds"
+      }
+    }
+  ],
+  "programming_notes": [
+    {
+      "id": "PN_ORDER",
+      "marker": null,
+      "text": {
+        "value": "Order bars from largest increase to largest decrease; one bar per subject with a post-baseline assessment.",
+        "source": "template_default",
+        "status": "resolved"
+      }
+    }
+  ],
+  "figure": {
+    "plot_type": "WATERFALL",
+    "x_axis": {
+      "label": {
+        "value": "Subjects",
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    },
+    "y_axis": {
+      "label": {
+        "value": "Best percentage change from baseline (%)",
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    },
+    "legend": {
+      "value": [
+        "ARV-471 200 mg (N=xx)",
+        "Anastrozole 1 mg (N=xx)"
+      ],
+      "source": "study_setting",
+      "status": "resolved"
+    },
+    "panels": {
+      "value": [
+        "ARV-471 200 mg",
+        "Anastrozole 1 mg"
+      ],
+      "source": "study_setting",
+      "status": "resolved"
+    },
+    "reference_lines": {
+      "value": [
+        "y = 20",
+        "y = -30"
+      ],
+      "source": "template_default",
+      "status": "needs_review"
+    },
+    "annotations": {
+      "value": [
+        "CR",
+        "PR",
+        "SD",
+        "PD",
+        "NE"
+      ],
+      "source": "template_default",
+      "status": "needs_review"
+    }
+  },
+  "listing": null,
+  "config": {
+    "panel_by_group": true
+  },
+  "page": {
+    "orientation": "landscape",
+    "paper": "letter",
+    "font": "Courier New",
+    "font_size_pt": 9,
+    "include_programming_notes": true
+  },
+  "issues": [
+    {
+      "question_id": "Q011",
+      "element_path": "footnotes[FN_REF]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.response_thresholds (needed for: Reference lines: [response thresholds]).",
+      "answer": null
+    }
+  ],
+  "provenance": {
+    "content_list_entry": {
+      "entry_id": "CL095",
+      "document_id": "SAP_001_05",
+      "original_tfl_number": "14.2.3.1",
+      "output_type": "figure",
+      "original_title": "Waterfall Plot for Best Percentage Change of Primary Tumor from Baseline (Caliper-based)",
+      "population": "Full Analysis Set"
+    },
+    "template_file_sha256": "df7769126ec68db394ab990d722975349e1a3dbbed7633257c93782c7760f472",
+    "preset_file_sha256": {
+      "best_percent_change": "104ce397865322b5aa92ee112151869922ea1e65242bd6693515ea6c7810f485"
+    },
+    "style_guide_version": "1.1.0",
+    "study_settings_version": "ARV-471-BC-201@example-0.3",
+    "match": {
+      "selected": "FIG_WATERFALL",
+      "candidates": [
+        {
+          "template_id": "FIG_WATERFALL",
+          "score": 15,
+          "matched_terms": [
+            "best percentage change",
+            "waterfall",
+            "waterfall plot"
+          ],
+          "negative_terms": [],
+          "preset_id": "best_percent_change",
+          "preset_score": 6
+        },
+        {
+          "template_id": "FIG_BOX_PLOT",
+          "score": -4,
+          "matched_terms": [],
+          "negative_terms": [
+            "waterfall"
+          ],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "FIG_INDIVIDUAL_PROFILE",
+          "score": -4,
+          "matched_terms": [],
+          "negative_terms": [
+            "waterfall"
+          ],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "FIG_KAPLAN_MEIER",
+          "score": -4,
+          "matched_terms": [],
+          "negative_terms": [
+            "waterfall"
+          ],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "FIG_SUMMARY_OVER_TIME",
+          "score": -4,
+          "matched_terms": [],
+          "negative_terms": [
+            "waterfall"
+          ],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "FIG_TORNADO",
+          "score": -4,
+          "matched_terms": [],
+          "negative_terms": [
+            "waterfall"
+          ],
+          "preset_id": null,
+          "preset_score": 0
+        }
+      ],
+      "explanation": "Selected FIG_WATERFALL (score 15): title terms best percentage change, waterfall, waterfall plot; preset best_percent_change."
+    },
+    "generated_by": "tools/build_spec.py (rule-based); config: panel_by_group=True (template default)"
+  }
+}

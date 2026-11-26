@@ -1,0 +1,29 @@
+{
+  "preset_id": "category_percentage_over_time",
+  "template_id": "FIG_SUMMARY_OVER_TIME",
+  "version": "1.0.0",
+  "name": "Percentage of subjects per category over visits",
+  "keywords": [
+    "performance status"
+  ],
+  "aliases": [
+    "ECOG",
+    "percentage of patients",
+    "score"
+  ],
+  "defaults": {
+    "figure": {
+      "x_axis": {
+        "label": "Visit"
+      },
+      "y_axis": {
+        "label": "Percentage of subjects (%)",
+        "range": "0 - 100"
+      }
+    }
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "PVCNA003_F_14_3_1"
+  ]
+}

@@ -1,0 +1,424 @@
+{
+  "template_id": "TBL_CODED_TERM_HIERARCHY",
+  "version": "1.0.0",
+  "output_type": "table",
+  "name": "Coded term hierarchy summary",
+  "structural_signature": {
+    "S1": "table",
+    "S2": "CODED_HIERARCHY",
+    "S3": [
+      "GROUPS",
+      "CATEGORY_COLS",
+      "GROUPS_X_SUBCOL"
+    ],
+    "S4": [
+      "SUBJ_N_PCT",
+      "SUBJ_AND_EVENTS",
+      "EVENTS"
+    ],
+    "S5": [
+      "NONE",
+      "SUBROWS_BY_CATEGORY"
+    ]
+  },
+  "intended_use": "Number (%) of subjects (optionally also number of events) by dictionary-coded terms: System Organ Class / Preferred Term, ATC class / preferred name, AESI or SMQ category / Preferred Term, or Preferred Term only; data-driven term rows below an 'any' row; optional split by grade, severity or relationship.",
+  "not_for": "Predefined status or criterion rows such as AE overview flags, disposition or deviations (criterion-count template); subject-level listings of events.",
+  "keywords": [
+    "system organ class",
+    "preferred term",
+    "medical history",
+    "prior medications",
+    "concomitant medications",
+    "coded terms"
+  ],
+  "aliases": [
+    "SOC",
+    "PT",
+    "MedDRA",
+    "ATC",
+    "WHO Drug",
+    "preferred name",
+    "therapeutic class",
+    "adverse events of special interest",
+    "AESI",
+    "SMQ"
+  ],
+  "match_cues": {
+    "title_terms": [
+      "system organ class",
+      "preferred term",
+      "soc",
+      "atc",
+      "therapeutic class",
+      "medical history",
+      "prior medication",
+      "concomitant medication",
+      "smq",
+      "special interest",
+      "subsequent anticancer"
+    ],
+    "negative_terms": [
+      "overview",
+      "overall summary",
+      "listing",
+      "kaplan",
+      "plot",
+      "shift",
+      "by visit",
+      "laboratory"
+    ]
+  },
+  "required_fields": [
+    {
+      "path": "title",
+      "label": "Output title",
+      "allowed_sources": [
+        "content_list"
+      ]
+    },
+    {
+      "path": "population",
+      "label": "Analysis population",
+      "allowed_sources": [
+        "content_list",
+        "study_setting"
+      ]
+    },
+    {
+      "path": "columns.groups",
+      "label": "Treatment groups / cohorts",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    },
+    {
+      "path": "columns.total",
+      "label": "Total column on/off and membership",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    },
+    {
+      "path": "row_blocks[coded_hierarchy].dictionary",
+      "label": "Coding dictionary and version",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    },
+    {
+      "path": "footnotes[FN_DENOM]",
+      "label": "Percentage denominator rule",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    }
+  ],
+  "permitted_defaults": [
+    {
+      "path": "row_blocks[coded_hierarchy].levels",
+      "value": "from preset",
+      "status_when_used": "needs_review",
+      "basis": "Level names depend on the dictionary level chosen in the SAP (e.g. ATC level 2 vs 4)."
+    },
+    {
+      "path": "row_blocks[coded_hierarchy].sort_rule",
+      "value": "Descending frequency in the Total column (or first group if no Total); ties alphabetical",
+      "status_when_used": "needs_review",
+      "basis": "Most frequent convention; CPX uses alphabetical SOC order, so confirmation is required."
+    },
+    {
+      "path": "footnotes[FN_COUNT_ONCE]",
+      "value": "A subject is counted only once per {level_names}.",
+      "status_when_used": "needs_review",
+      "basis": "Counting note present in CPX, OMO and WTX sources; wording is display convention, rule must match SAP."
+    },
+    {
+      "path": "row_blocks[any_row].label",
+      "value": "from preset",
+      "status_when_used": "resolved",
+      "basis": "Any-row wording follows preset term."
+    },
+    {
+      "path": "columns.stub_header",
+      "value": "derived from levels",
+      "status_when_used": "resolved",
+      "basis": "Stub header lists hierarchy level names joined by ' / '."
+    }
+  ],
+  "editable_elements": [
+    "title",
+    "population",
+    "columns.groups[].label",
+    "columns.total",
+    "row_blocks[].levels",
+    "row_blocks[].sort_rule",
+    "row_blocks[].category_split",
+    "row_blocks[].split_categories",
+    "footnotes",
+    "programming_notes",
+    "config"
+  ],
+  "config_options": {
+    "hierarchy_depth": {
+      "values": [
+        2,
+        1
+      ],
+      "default": 2,
+      "description": "2 = class and term (SOC/PT, ATC/PN); 1 = term only (PT only).",
+      "cues": {
+        "1": [
+          "by preferred term",
+          "by pt"
+        ]
+      }
+    },
+    "category_split": {
+      "values": [
+        "none",
+        "subrows",
+        "subcolumns"
+      ],
+      "default": "none",
+      "description": "Split each term by grade / severity / relationship as indented sub-rows or as sub-columns within each group.",
+      "cues": {
+        "subrows": [
+          "grade",
+          "severity",
+          "relationship",
+          "causality",
+          "relation"
+        ]
+      }
+    },
+    "event_counts": {
+      "values": [
+        false,
+        true
+      ],
+      "default": false,
+      "description": "Add a number-of-events sub-column next to n (%) in each group.",
+      "cues": {
+        "true": [
+          "number of events",
+          "events and subjects"
+        ]
+      }
+    }
+  },
+  "presets": [
+    "teae_soc_pt",
+    "medical_history_soc_pt",
+    "prior_concomitant_medications"
+  ],
+  "skeleton": {
+    "columns": {
+      "stub_header": "{level_names}"
+    },
+    "footnotes": [
+      {
+        "id": "FN_DENOM",
+        "marker": null,
+        "text": "Percentages are based on {settings:definitions.percentage_denominator}."
+      },
+      {
+        "id": "FN_COUNT_ONCE",
+        "marker": null,
+        "text": "A subject is counted only once per {level_names}."
+      }
+    ],
+    "programming_notes": [
+      {
+        "id": "PN_SORT",
+        "marker": null,
+        "text": "Sort rule: {sort_rule}."
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "source_id": "ARV471BC201_T_14_1_10",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_1_5",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_1_9",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_3_2_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_3_2_10",
+      "study_id": "ARV-471-BC-201",
+      "fit": "config",
+      "config_used": "category sub-rows"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_3_2_12",
+      "study_id": "ARV-471-BC-201",
+      "fit": "config",
+      "config_used": "category sub-rows"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_3_2_8",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "CPXPOM001_T_14_1_5_2_1",
+      "study_id": "CPX-POM-001",
+      "fit": "core"
+    },
+    {
+      "source_id": "CPXPOM001_T_14_1_6_1_1",
+      "study_id": "CPX-POM-001",
+      "fit": "core"
+    },
+    {
+      "source_id": "CPXPOM001_T_14_3_1_2_1",
+      "study_id": "CPX-POM-001",
+      "fit": "core"
+    },
+    {
+      "source_id": "CPXPOM001_T_14_3_1_8_1",
+      "study_id": "CPX-POM-001",
+      "fit": "config",
+      "config_used": "categories as columns"
+    },
+    {
+      "source_id": "OMO10301_T_14_3_1_2",
+      "study_id": "OMO-103-01",
+      "fit": "config",
+      "config_used": "group sub-columns; event counts"
+    },
+    {
+      "source_id": "OMO10301_T_14_3_1_2a",
+      "study_id": "OMO-103-01",
+      "fit": "config",
+      "config_used": "group sub-columns; event counts"
+    },
+    {
+      "source_id": "OMO10301_T_14_3_1_3",
+      "study_id": "OMO-103-01",
+      "fit": "config",
+      "config_used": "group sub-columns; event counts"
+    },
+    {
+      "source_id": "OMO10301_T_14_3_1_4",
+      "study_id": "OMO-103-01",
+      "fit": "config",
+      "config_used": "group sub-columns; category sub-rows; event counts"
+    },
+    {
+      "source_id": "OMO10301_T_14_3_1_5",
+      "study_id": "OMO-103-01",
+      "fit": "config",
+      "config_used": "group sub-columns; category sub-rows; event counts"
+    },
+    {
+      "source_id": "PVCNA003_T_14_1_3",
+      "study_id": "P-VCNA-003",
+      "fit": "core"
+    },
+    {
+      "source_id": "PVCNA003_T_14_3_11_1",
+      "study_id": "P-VCNA-003",
+      "fit": "core"
+    },
+    {
+      "source_id": "PVCNA003_T_14_3_1_2",
+      "study_id": "P-VCNA-003",
+      "fit": "core"
+    },
+    {
+      "source_id": "PVCNA003_T_14_3_1_3",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "category sub-rows"
+    },
+    {
+      "source_id": "PVCNA003_T_14_3_1_4",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "category sub-rows"
+    },
+    {
+      "source_id": "PVCNA003_T_14_3_9",
+      "study_id": "P-VCNA-003",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_T_14_2_5",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_T_14_2_8",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_T_14_5_1_10",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_T_14_5_1_3",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_T_14_5_1_7",
+      "study_id": "SP11631",
+      "fit": "config",
+      "config_used": "category sub-rows"
+    },
+    {
+      "source_id": "WTX330X2101_T_14_1_8_2_1",
+      "study_id": "WTX-330x2101",
+      "fit": "core"
+    },
+    {
+      "source_id": "WTX330X2101_T_14_1_8_2_2",
+      "study_id": "WTX-330x2101",
+      "fit": "core"
+    },
+    {
+      "source_id": "WTX330X2101_T_14_3_2_12_1",
+      "study_id": "WTX-330x2101",
+      "fit": "core"
+    },
+    {
+      "source_id": "WTX330X2101_T_14_3_2_12_2",
+      "study_id": "WTX-330x2101",
+      "fit": "core"
+    },
+    {
+      "source_id": "WTX330X2101_T_14_3_2_13_1",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "categories as columns"
+    },
+    {
+      "source_id": "WTX330X2101_T_14_3_2_15_1",
+      "study_id": "WTX-330x2101",
+      "fit": "core"
+    },
+    {
+      "source_id": "WTX330X2101_T_14_3_2_1_1",
+      "study_id": "WTX-330x2101",
+      "fit": "core"
+    }
+  ],
+  "evidence_level": "multi_study",
+  "review_status": "approved"
+}

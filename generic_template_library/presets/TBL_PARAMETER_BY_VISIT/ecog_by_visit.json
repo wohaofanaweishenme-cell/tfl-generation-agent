@@ -1,0 +1,40 @@
+{
+  "preset_id": "ecog_by_visit",
+  "template_id": "TBL_PARAMETER_BY_VISIT",
+  "version": "1.0.0",
+  "name": "ECOG performance status by visit",
+  "keywords": [
+    "performance status"
+  ],
+  "aliases": [
+    "ECOG",
+    "performance status"
+  ],
+  "defaults": {
+    "row_blocks": [
+      {
+        "block_id": "ecog",
+        "block_type": "parameter_visit",
+        "label": "ECOG performance status",
+        "cell_type": "categorical",
+        "parameters": [
+          "ECOG performance status"
+        ],
+        "visits_from_settings": true,
+        "categories": [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
+      }
+    ]
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "OMO10301_T_14_3_4_1",
+    "PVCNA003_T_14_3_8"
+  ]
+}

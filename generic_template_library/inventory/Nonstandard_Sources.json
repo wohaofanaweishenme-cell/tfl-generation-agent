@@ -1,0 +1,12 @@
+{
+  "policy": "conventions v1.0 section 2.3: not in main library; Agent must report 'no compatible template'",
+  "sources": [
+    {
+      "source_id": "CPXPOM001_L_16_2_1_1_1_1",
+      "study_id": "CPX-POM-001",
+      "title": "Listing 16.2.1-1.1.1 - Preface to Inclusion and Exclusion Criteria - Dose Escalation Protocol Inclusion/",
+      "signature_key": "listing|REFERENCE_CATALOG|RECORD_FIELDS|RAW_VALUES",
+      "reason": "Protocol eligibility-criteria catalog without subjects; single study; not a subject listing (conventions 2.3)."
+    }
+  ]
+}

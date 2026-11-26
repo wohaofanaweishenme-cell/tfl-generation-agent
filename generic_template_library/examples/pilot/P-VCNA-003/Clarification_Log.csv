@@ -1,0 +1,4 @@
+﻿output_id,question_id,kind,element_path,question
+14.1.3,Q001,missing,row_blocks[terms].dictionary,Please confirm study setting(s): coding.meddra_version (needed for: MedDRA version [meddra version]).
+14.1.3,Q002,missing,footnotes[FN_DICT],Please confirm study setting(s): coding.meddra_version (needed for: Medical history is coded using MedDRA version [meddra version].).
+14.3.4.6,-,no_compatible_template,(whole output),No template of type 'table' matches the title terms; no compatible template in the library.

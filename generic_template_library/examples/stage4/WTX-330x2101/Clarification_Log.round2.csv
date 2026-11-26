@@ -1,0 +1,13 @@
+﻿output_id,output_type,question_id,kind,element_path,question
+14.1.2.1,table,Q001,missing,footnotes[FN_DENOM],Please confirm study setting(s): definitions.percentage_denominator (needed for: Percentages are based on [percentage denominator].).
+14.1.4.1,table,Q002,missing,footnotes[FN_AGE],Please confirm study setting(s): definitions.age_definition (needed for: [age definition]).
+14.1.4.1,table,Q003,missing,footnotes[FN_DENOM],Please confirm study setting(s): definitions.percentage_denominator (needed for: Percentages are based on [percentage denominator].).
+14.2.1.1,table,Q004,missing,footnotes[FN_CRIT],Please confirm study setting(s): definitions.response_criteria (needed for: Response assessed per [response criteria].).
+14.2.1.1,table,Q005,missing,footnotes[FN_DENOM],Please confirm study setting(s): definitions.percentage_denominator (needed for: Percentages are based on [percentage denominator].).
+14.2.1.1,table,Q006,missing,footnotes[FN_CI],Please confirm study setting(s): definitions.ci_method (needed for: Confidence interval: [ci method]).
+14.3.2.1.1,table,Q010,missing,footnotes[FN_DENOM],Please confirm study setting(s): definitions.percentage_denominator (needed for: Percentages are based on [percentage denominator].).
+14.3.7.1.3,table,Q011,missing,footnotes[FN_GRADE],Please confirm study setting(s): coding.ctcae_version (needed for: Graded according to NCI-CTCAE version [ctcae version].).
+14.3.7.1.3,table,Q012,missing,footnotes[FN_DENOM],Please confirm study setting(s): definitions.percentage_denominator (needed for: Percentages are based on [percentage denominator].).
+14.3.7.1.3,table,Q013,missing,footnotes[FN_BASE],Please confirm study setting(s): definitions.baseline_definition (needed for: Baseline: [baseline definition]).
+14.4.1.1,table,Q014,missing,footnotes[FN_BLQ],Please confirm study setting(s): definitions.blq_handling (needed for: Values below the lower limit of quantification: [blq handling]).
+16.2.7.1,listing,Q015,missing,footnotes[FN_STUDYDAY],Please confirm study setting(s): definitions.study_day_definition (needed for: Study day: [study day definition]).

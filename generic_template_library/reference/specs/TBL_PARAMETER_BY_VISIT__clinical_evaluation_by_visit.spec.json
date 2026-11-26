@@ -1,0 +1,182 @@
+{
+  "schema_version": "3.0",
+  "output_id": "x.x.x",
+  "output_type": "table",
+  "template_id": "TBL_PARAMETER_BY_VISIT",
+  "template_version": "1.0.0",
+  "preset_ids": [
+    "clinical_evaluation_by_visit"
+  ],
+  "title": {
+    "value": "Normal / abnormal evaluation by visit",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "population": {
+    "value": "[Analysis population]",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "columns": {
+    "stub_header": {
+      "value": "Parameter\n  Visit\n    Statistic",
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "groups": [
+      {
+        "id": "A",
+        "label": {
+          "value": "[Treatment A]",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "B",
+        "label": {
+          "value": "[Treatment B]",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      }
+    ],
+    "total": {
+      "enabled": {
+        "value": true,
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "label": {
+        "value": "Total",
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "member_group_ids": [
+        "A",
+        "B"
+      ]
+    }
+  },
+  "row_blocks": [
+    {
+      "block_id": "eval",
+      "block_type": "parameter_visit",
+      "label": {
+        "value": "Assessment",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "cell_type": {
+        "value": "categorical",
+        "source": "template_default",
+        "status": "resolved"
+      },
+      "parameters": {
+        "value": [
+          "[Body system / test 1]",
+          "[Body system / test 2]"
+        ],
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "visits": {
+        "value": [
+          "Baseline",
+          "[Visit 1]",
+          "[Visit 2]"
+        ],
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q001",
+        "note": "placeholder until 'visits' is confirmed"
+      },
+      "categories": {
+        "value": [
+          "Normal",
+          "Abnormal, not clinically significant",
+          "Abnormal, clinically significant",
+          "Not done"
+        ],
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    }
+  ],
+  "footnotes": [
+    {
+      "id": "FN_BASE",
+      "marker": null,
+      "text": {
+        "value": "Baseline: [baseline definition]",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q002",
+        "note": "missing study setting: definitions.baseline_definition"
+      }
+    }
+  ],
+  "programming_notes": [
+    {
+      "id": "PN_REPEAT",
+      "marker": null,
+      "text": {
+        "value": "Repeat the block for each parameter and each scheduled visit; unscheduled visits are not displayed unless specified.",
+        "source": "template_default",
+        "status": "resolved"
+      }
+    }
+  ],
+  "figure": null,
+  "listing": null,
+  "config": {
+    "column_layout": "groups",
+    "change_from_baseline": true
+  },
+  "page": {
+    "orientation": "landscape",
+    "paper": "letter",
+    "font": "Courier New",
+    "font_size_pt": 9,
+    "include_programming_notes": true
+  },
+  "issues": [
+    {
+      "question_id": "Q001",
+      "element_path": "row_blocks[eval].visits",
+      "kind": "missing",
+      "question": "Please confirm the visits / timepoints shown (study setting 'visits').",
+      "answer": null
+    },
+    {
+      "question_id": "Q002",
+      "element_path": "footnotes[FN_BASE]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.baseline_definition (needed for: Baseline: [baseline definition]).",
+      "answer": null
+    }
+  ],
+  "provenance": {
+    "content_list_entry": {
+      "entry_id": "REF_TBL_PARAMETER_BY_VISIT__clinical_evaluation_by_visit",
+      "original_tfl_number": "x.x.x",
+      "output_type": "table",
+      "original_title": "Normal / abnormal evaluation by visit",
+      "population": "[Analysis population]"
+    },
+    "template_file_sha256": "a37a7ab018d6f39522af1efa2582e19f2a95e5f036926e9755a98ac382024816",
+    "preset_file_sha256": {
+      "clinical_evaluation_by_visit": "9b0f40460bd8372a6217dfdd4074c08e5b1e20cd890b7f7b9fdd2f0e69ec5a97"
+    },
+    "style_guide_version": "1.1.0",
+    "study_settings_version": "REFERENCE@1.0.0",
+    "match": {
+      "selected": "TBL_PARAMETER_BY_VISIT",
+      "candidates": [],
+      "explanation": "Reference shell: template and preset chosen directly (no matching)."
+    },
+    "generated_by": "tools/build_spec.py (rule-based); config: column_layout=groups (template default); change_from_baseline=True (template default)"
+  }
+}

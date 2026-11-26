@@ -1,0 +1,1384 @@
+{
+  "template_id": "LST_SUBJECT_RECORDS",
+  "version": "1.0.0",
+  "output_type": "listing",
+  "name": "Subject record listing",
+  "structural_signature": {
+    "S1": "listing",
+    "S2": "SUBJECT_RECORDS",
+    "S3": [
+      "RECORD_FIELDS"
+    ],
+    "S4": [
+      "RAW_VALUES"
+    ],
+    "S5": [
+      "LISTING_SUBJECT",
+      "LISTING_SUBJECT_EVENT",
+      "LISTING_SUBJECT_VISIT",
+      "LISTING_SUBJECT_PARAM_VISIT"
+    ]
+  },
+  "intended_use": "Any subject-level data listing: one row per subject, per subject and record, per subject and visit (wide) or per subject, parameter and visit (long), with configurable fields, stacked cells, group headers and column panels.",
+  "not_for": "Summary tables; catalogs that do not list subjects (e.g. protocol eligibility criteria text).",
+  "keywords": [
+    "subject listing"
+  ],
+  "aliases": [
+    "listing",
+    "listing of",
+    "by subject",
+    "records",
+    "data"
+  ],
+  "match_cues": {
+    "title_terms": [
+      "listing"
+    ],
+    "negative_terms": [
+      "number (%)",
+      "plot",
+      "preface"
+    ]
+  },
+  "required_fields": [
+    {
+      "path": "title",
+      "label": "Output title",
+      "allowed_sources": [
+        "content_list"
+      ]
+    },
+    {
+      "path": "population",
+      "label": "Analysis population",
+      "allowed_sources": [
+        "content_list",
+        "study_setting"
+      ]
+    },
+    {
+      "path": "listing.fields",
+      "label": "Fields shown",
+      "allowed_sources": [
+        "content_list",
+        "study_setting"
+      ],
+      "description": "Preset gives candidate fields from source listings; final list must match the CRF/ADaM."
+    },
+    {
+      "path": "listing.sort_keys",
+      "label": "Sort order",
+      "allowed_sources": [
+        "study_setting",
+        "content_list"
+      ]
+    }
+  ],
+  "permitted_defaults": [
+    {
+      "path": "listing.fields",
+      "value": "from preset",
+      "status_when_used": "needs_review",
+      "basis": "Fields present in >= 2 source studies of the topic."
+    },
+    {
+      "path": "listing.record_grain",
+      "value": "from preset",
+      "status_when_used": "needs_review",
+      "basis": "Most frequent grain among the topic's sources."
+    },
+    {
+      "path": "listing.group_by",
+      "value": [
+        "Treatment group"
+      ],
+      "status_when_used": "needs_review",
+      "basis": "Group header or group column in all six studies."
+    },
+    {
+      "path": "listing.repeat_identifiers",
+      "value": [
+        "Subject ID",
+        "Treatment group"
+      ],
+      "status_when_used": "resolved",
+      "basis": "House style: identifiers repeated on every panel."
+    }
+  ],
+  "editable_elements": [
+    "title",
+    "population",
+    "listing.fields",
+    "listing.sort_keys",
+    "listing.group_by",
+    "listing.record_grain",
+    "footnotes",
+    "programming_notes"
+  ],
+  "config_options": {
+    "group_display": {
+      "values": [
+        "header_rows",
+        "column"
+      ],
+      "default": "header_rows",
+      "description": "Treatment group as page/section header rows, or as the first column."
+    }
+  },
+  "presets": [
+    "adverse_event_records",
+    "analysis_set_records",
+    "death_records",
+    "demographic_records",
+    "deviation_records",
+    "disease_history_records",
+    "disposition_records",
+    "ecg_cardiac_records",
+    "efficacy_records",
+    "eligibility_records",
+    "exposure_records",
+    "immunogenicity_records",
+    "laboratory_records",
+    "medical_history_records",
+    "medication_records",
+    "pd_biomarker_records",
+    "performance_status_records",
+    "physical_exam_records",
+    "pk_records",
+    "questionnaire_records",
+    "time_to_event_records",
+    "visit_date_records",
+    "vital_sign_records"
+  ],
+  "skeleton": {
+    "columns": {
+      "stub_header": ""
+    },
+    "footnotes": [
+      {
+        "id": "FN_STUDYDAY",
+        "marker": null,
+        "text": "Study day: {settings:definitions.study_day_definition}"
+      }
+    ],
+    "programming_notes": [
+      {
+        "id": "PN_SORT",
+        "marker": null,
+        "text": "Sort by {sort_keys}."
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "source_id": "ARV471BC201_L_16_2_10",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_L_16_2_11",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_L_16_2_1_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "ARV471BC201_L_16_2_1_2",
+      "study_id": "ARV-471-BC-201",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "ARV471BC201_L_16_2_2",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_L_16_2_4_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "ARV471BC201_L_16_2_4_2",
+      "study_id": "ARV-471-BC-201",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "ARV471BC201_L_16_2_4_3",
+      "study_id": "ARV-471-BC-201",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "ARV471BC201_L_16_2_4_4",
+      "study_id": "ARV-471-BC-201",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "ARV471BC201_L_16_2_4_5",
+      "study_id": "ARV-471-BC-201",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "ARV471BC201_L_16_2_4_6",
+      "study_id": "ARV-471-BC-201",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "ARV471BC201_L_16_2_5_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "ARV471BC201_L_16_2_5_2",
+      "study_id": "ARV-471-BC-201",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "ARV471BC201_L_16_2_5_3",
+      "study_id": "ARV-471-BC-201",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "ARV471BC201_L_16_2_5_4",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_L_16_2_6_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "ARV471BC201_L_16_2_6_2",
+      "study_id": "ARV-471-BC-201",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "ARV471BC201_L_16_2_6_3",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_L_16_2_6_4",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_L_16_2_6_5",
+      "study_id": "ARV-471-BC-201",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "ARV471BC201_L_16_2_6_6",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_L_16_2_6_7",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_L_16_2_6_8",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_L_16_2_7_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "ARV471BC201_L_16_2_7_2",
+      "study_id": "ARV-471-BC-201",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "ARV471BC201_L_16_2_8_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "ARV471BC201_L_16_2_8_3",
+      "study_id": "ARV-471-BC-201",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "ARV471BC201_L_16_2_8_6",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_L_16_2_9",
+      "study_id": "ARV-471-BC-201",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "CPXPOM001_L_16_2_1_1_2_1",
+      "study_id": "CPX-POM-001",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "CPXPOM001_L_16_2_1_2_1",
+      "study_id": "CPX-POM-001",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "CPXPOM001_L_16_2_1_2_2",
+      "study_id": "CPX-POM-001",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "CPXPOM001_L_16_2_2_1",
+      "study_id": "CPX-POM-001",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "CPXPOM001_L_16_2_3_1",
+      "study_id": "CPX-POM-001",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "CPXPOM001_L_16_2_4_1_1",
+      "study_id": "CPX-POM-001",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "CPXPOM001_L_16_2_4_2_1",
+      "study_id": "CPX-POM-001",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "CPXPOM001_L_16_2_4_3_1",
+      "study_id": "CPX-POM-001",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "CPXPOM001_L_16_2_4_4_1",
+      "study_id": "CPX-POM-001",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "CPXPOM001_L_16_2_4_5_1",
+      "study_id": "CPX-POM-001",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "CPXPOM001_L_16_2_4_6_1",
+      "study_id": "CPX-POM-001",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "CPXPOM001_L_16_2_4_7_1",
+      "study_id": "CPX-POM-001",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "CPXPOM001_L_16_2_4_8_1_1",
+      "study_id": "CPX-POM-001",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "CPXPOM001_L_16_2_4_8_2_2",
+      "study_id": "CPX-POM-001",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "CPXPOM001_L_16_2_4_9_1",
+      "study_id": "CPX-POM-001",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "CPXPOM001_L_16_2_5_1_1",
+      "study_id": "CPX-POM-001",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "CPXPOM001_L_16_2_5_2_1",
+      "study_id": "CPX-POM-001",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "CPXPOM001_L_16_2_5_3_1",
+      "study_id": "CPX-POM-001",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "CPXPOM001_L_16_2_6_1_1",
+      "study_id": "CPX-POM-001",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "CPXPOM001_L_16_2_6_2_1",
+      "study_id": "CPX-POM-001",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "CPXPOM001_L_16_2_6_3_1",
+      "study_id": "CPX-POM-001",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "CPXPOM001_L_16_2_6_4_1",
+      "study_id": "CPX-POM-001",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "CPXPOM001_L_16_2_6_5_2",
+      "study_id": "CPX-POM-001",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "CPXPOM001_L_16_2_6_6_2",
+      "study_id": "CPX-POM-001",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "CPXPOM001_L_16_2_6_7_2",
+      "study_id": "CPX-POM-001",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "CPXPOM001_L_16_2_6_8_2",
+      "study_id": "CPX-POM-001",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "CPXPOM001_L_16_2_7_1_1",
+      "study_id": "CPX-POM-001",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "CPXPOM001_L_16_2_8_1_1",
+      "study_id": "CPX-POM-001",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "CPXPOM001_L_16_2_8_5_1",
+      "study_id": "CPX-POM-001",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "CPXPOM001_L_16_2_9_1_1",
+      "study_id": "CPX-POM-001",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "CPXPOM001_L_16_2_9_2_1",
+      "study_id": "CPX-POM-001",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "CPXPOM001_L_16_2_9_3_1",
+      "study_id": "CPX-POM-001",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "OMO10301_L_16_2_10_1",
+      "study_id": "OMO-103-01",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "OMO10301_L_16_2_11_1",
+      "study_id": "OMO-103-01",
+      "fit": "config",
+      "config_used": "group_header"
+    },
+    {
+      "source_id": "OMO10301_L_16_2_12_1",
+      "study_id": "OMO-103-01",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "OMO10301_L_16_2_13_1",
+      "study_id": "OMO-103-01",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "OMO10301_L_16_2_1_1",
+      "study_id": "OMO-103-01",
+      "fit": "config",
+      "config_used": "group_header"
+    },
+    {
+      "source_id": "OMO10301_L_16_2_1_2",
+      "study_id": "OMO-103-01",
+      "fit": "config",
+      "config_used": "multi_panel; group_header; stacked_cells"
+    },
+    {
+      "source_id": "OMO10301_L_16_2_2_1",
+      "study_id": "OMO-103-01",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "OMO10301_L_16_2_3_1",
+      "study_id": "OMO-103-01",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "OMO10301_L_16_2_4_1",
+      "study_id": "OMO-103-01",
+      "fit": "config",
+      "config_used": "group_header"
+    },
+    {
+      "source_id": "OMO10301_L_16_2_4_2",
+      "study_id": "OMO-103-01",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "OMO10301_L_16_2_4_3",
+      "study_id": "OMO-103-01",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "OMO10301_L_16_2_5_1",
+      "study_id": "OMO-103-01",
+      "fit": "config",
+      "config_used": "group_header"
+    },
+    {
+      "source_id": "OMO10301_L_16_2_7_1",
+      "study_id": "OMO-103-01",
+      "fit": "config",
+      "config_used": "group_header"
+    },
+    {
+      "source_id": "OMO10301_L_16_2_7_5",
+      "study_id": "OMO-103-01",
+      "fit": "config",
+      "config_used": "group_header"
+    },
+    {
+      "source_id": "OMO10301_L_16_2_8_1",
+      "study_id": "OMO-103-01",
+      "fit": "config",
+      "config_used": "multi_panel; group_header; stacked_cells"
+    },
+    {
+      "source_id": "OMO10301_L_16_2_9_1",
+      "study_id": "OMO-103-01",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "OMO10301_T_14_3_1_6",
+      "study_id": "OMO-103-01",
+      "fit": "config",
+      "config_used": "multi_panel; stacked_cells"
+    },
+    {
+      "source_id": "OMO10301_T_14_3_2_1",
+      "study_id": "OMO-103-01",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_10",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "group_header"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_11",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_12",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "multi_panel; group_header; stacked_cells"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_13",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_14",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_15",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "group_header"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_16",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "group_header"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_17",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "group_header"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_18",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_19",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "group_header"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_1_1",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "group_header"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_1_2",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "multi_panel; group_header; stacked_cells"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_1_3",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "multi_panel; group_header; stacked_cells"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_1_4",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "multi_panel; group_header; stacked_cells"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_1_5",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_1_6",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "multi_panel; group_header; stacked_cells"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_1_7",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_2_1",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_4_1",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_4_2",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_4_3",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "group_header"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_4_4",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "group_header"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_4_5",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_4_6",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_6_1",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "group_header"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_6_3",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "group_header"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_6_5",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_6_6",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "group_header"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_6_7",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_6_8",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "group_header"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_6_9",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "group_header"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_7_1",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "multi_panel; group_header; stacked_cells"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_8_1",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_8_5",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_8_6",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_8_7",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "PVCNA003_L_16_2_9",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "group_header; stacked_cells"
+    },
+    {
+      "source_id": "PVCNA003_T_14_3_2_1",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "multi_panel; stacked_cells"
+    },
+    {
+      "source_id": "PVCNA003_T_14_3_3",
+      "study_id": "P-VCNA-003",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_L_16_1_7_1",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_L_16_2_1_1",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_L_16_2_1_2",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_L_16_2_1_3_1",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_L_16_2_1_3_2",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_L_16_2_1_4",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_L_16_2_1_5",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_L_16_2_2_1",
+      "study_id": "SP11631",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "SP11631_L_16_2_2_2",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_L_16_2_2_3",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_L_16_2_2_4",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_L_16_2_2_5",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_L_16_2_2_6",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_L_16_2_2_7",
+      "study_id": "SP11631",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "SP11631_L_16_2_2_8",
+      "study_id": "SP11631",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "SP11631_L_16_2_2_9",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_L_16_2_3_1",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_L_16_2_4_1_1",
+      "study_id": "SP11631",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "SP11631_L_16_2_4_1_2",
+      "study_id": "SP11631",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "SP11631_L_16_2_4_1_3",
+      "study_id": "SP11631",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "SP11631_L_16_2_4_1_4",
+      "study_id": "SP11631",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "SP11631_L_16_2_4_1_5",
+      "study_id": "SP11631",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "SP11631_L_16_2_4_2_1",
+      "study_id": "SP11631",
+      "fit": "config",
+      "config_used": "multi_panel; stacked_cells"
+    },
+    {
+      "source_id": "SP11631_L_16_2_4_3_1",
+      "study_id": "SP11631",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "SP11631_L_16_2_4_3_2",
+      "study_id": "SP11631",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "SP11631_L_16_2_4_3_3",
+      "study_id": "SP11631",
+      "fit": "config",
+      "config_used": "multi_panel"
+    },
+    {
+      "source_id": "SP11631_L_16_2_4_3_4",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_L_16_2_4_4_1",
+      "study_id": "SP11631",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "SP11631_L_16_2_4_4_2",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_L_16_2_4_4_3",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_L_16_2_4_5_1",
+      "study_id": "SP11631",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "SP11631_L_16_2_4_5_2",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_2_2_1",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_2_2_2",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_2_2_3",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_2_3",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_2_4_1",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_2_4_2",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_2_5",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_2_6_1",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_2_6_2",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_2_7_1",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_2_7_2",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_2_7_3",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_2_7_4",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_2_7_5",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_2_7_6",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_2_7_7",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_2_8_1",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_2_8_2_1",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_2_8_2_2",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_2_8_3",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_2_8_3_P180",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_2_9",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_4_10_1_1",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_4_10_1_2",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_4_10_2_1",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_4_10_2_1_P192",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_4_10_3",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_4_2_1",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_4_2_2_1",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_4_2_2_2",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_4_3_1",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_4_3_2",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_4_3_3",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_4_4_1",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_4_4_2",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_4_5_1_1",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_4_5_1_2",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_4_5_2_1",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_4_5_2_2",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_4_5_2_3",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_4_6_1_1",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_4_6_1_2",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_4_6_1_3_1",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_4_6_1_3_2",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_4_6_2",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_4_6_4",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_4_7",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_4_8_1",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_4_8_2",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_4_8_4",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_4_8_5",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_4_8_6",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_4_9_1",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_4_9_2",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_4_9_3",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    },
+    {
+      "source_id": "WTX330X2101_L_16_4_9_4",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "stacked_cells"
+    }
+  ],
+  "evidence_level": "multi_study",
+  "review_status": "approved"
+}

@@ -1,0 +1,172 @@
+{
+  "schema_version": "3.0",
+  "output_id": "x.x.x",
+  "output_type": "table",
+  "template_id": "TBL_CONTINUOUS_COMPARISON",
+  "template_version": "1.0.0",
+  "preset_ids": [
+    "nonparametric_estimate"
+  ],
+  "title": {
+    "value": "Duration / nadir with nonparametric estimate",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "population": {
+    "value": "[Analysis population]",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "columns": {
+    "stub_header": {
+      "value": "Statistic",
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "groups": [
+      {
+        "id": "A",
+        "label": {
+          "value": "[Treatment A]",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "B",
+        "label": {
+          "value": "[Treatment B]",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      }
+    ],
+    "total": {
+      "enabled": {
+        "value": false,
+        "source": "template_default",
+        "status": "needs_review",
+        "note": "Total column suppressed: between-group comparison table"
+      }
+    },
+    "comparison_columns": {
+      "value": [
+        "[Estimate (CI)]",
+        "[p-value]"
+      ],
+      "source": "unresolved",
+      "status": "unresolved",
+      "question_id": "Q001",
+      "note": "missing study setting: comparisons.continuous.estimate_label"
+    }
+  },
+  "row_blocks": [
+    {
+      "block_id": "np",
+      "block_type": "endpoint",
+      "label": {
+        "value": "Endpoint",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "items": {
+        "value": [
+          {
+            "label": "n (missing)",
+            "indent": 0,
+            "kind": "n_missing"
+          },
+          {
+            "label": "Mean (SD)",
+            "indent": 0,
+            "kind": "mean_sd"
+          },
+          {
+            "label": "Median",
+            "indent": 0,
+            "kind": "median"
+          },
+          {
+            "label": "Min, Max",
+            "indent": 0,
+            "kind": "min_max"
+          },
+          {
+            "label": "Hodges-Lehmann estimate of the difference (95% CI)",
+            "indent": 0,
+            "kind": "estimate_ci",
+            "where": "comparison"
+          }
+        ],
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    }
+  ],
+  "footnotes": [
+    {
+      "id": "FN_MODEL",
+      "marker": null,
+      "text": {
+        "value": "Estimation method: [method]",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q002",
+        "note": "missing study setting: comparisons.continuous.method"
+      }
+    }
+  ],
+  "programming_notes": [],
+  "figure": null,
+  "listing": null,
+  "config": {
+    "comparison": "columns",
+    "repeat_by_period": false
+  },
+  "page": {
+    "orientation": "landscape",
+    "paper": "letter",
+    "font": "Courier New",
+    "font_size_pt": 9,
+    "include_programming_notes": true
+  },
+  "issues": [
+    {
+      "question_id": "Q001",
+      "element_path": "columns.comparison_columns",
+      "kind": "missing",
+      "question": "Which between-group estimate (with CI level) is shown? (study setting 'comparisons.continuous.estimate_label')",
+      "answer": null
+    },
+    {
+      "question_id": "Q002",
+      "element_path": "footnotes[FN_MODEL]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): comparisons.continuous.method (needed for: Estimation method: [method]).",
+      "answer": null
+    }
+  ],
+  "provenance": {
+    "content_list_entry": {
+      "entry_id": "REF_TBL_CONTINUOUS_COMPARISON__nonparametric_estimate",
+      "original_tfl_number": "x.x.x",
+      "output_type": "table",
+      "original_title": "Duration / nadir with nonparametric estimate",
+      "population": "[Analysis population]"
+    },
+    "template_file_sha256": "b121676be747f28fd64bb7a09f77c7d606bd359e0229379c9ce6eead6a6ec63d",
+    "preset_file_sha256": {
+      "nonparametric_estimate": "89b6cb3cc32e79024a9620a3f06c6f3f36ea5d7fb96bfe154a3ba4e4e8bde650"
+    },
+    "style_guide_version": "1.1.0",
+    "study_settings_version": "REFERENCE@1.0.0",
+    "match": {
+      "selected": "TBL_CONTINUOUS_COMPARISON",
+      "candidates": [],
+      "explanation": "Reference shell: template and preset chosen directly (no matching)."
+    },
+    "generated_by": "tools/build_spec.py (rule-based); config: comparison=columns (template default); repeat_by_period=False (template default)"
+  }
+}

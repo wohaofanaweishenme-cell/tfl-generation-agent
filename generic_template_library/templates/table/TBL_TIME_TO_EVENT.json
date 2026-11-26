@@ -1,0 +1,206 @@
+{
+  "template_id": "TBL_TIME_TO_EVENT",
+  "version": "1.0.0",
+  "output_type": "table",
+  "name": "Time-to-event endpoint summary",
+  "structural_signature": {
+    "S1": "table",
+    "S2": "ENDPOINT_ANALYSIS",
+    "S3": [
+      "GROUPS",
+      "GROUPS_PLUS_COMPARISON"
+    ],
+    "S4": [
+      "TTE_EST"
+    ],
+    "S5": [
+      "NONE"
+    ]
+  },
+  "intended_use": "Number of events and censored subjects, Kaplan-Meier quartiles of the event time with confidence intervals, optional landmark event-free rates, and optionally a hazard ratio and test.",
+  "not_for": "Rates at a fixed time analysed as binary (response/incidence rate template); KM curves (Kaplan-Meier figure).",
+  "keywords": [
+    "survival",
+    "time to event"
+  ],
+  "aliases": [
+    "overall survival",
+    "OS",
+    "progression-free survival",
+    "PFS",
+    "recurrence-free survival",
+    "RFS",
+    "duration of response",
+    "DOR",
+    "time to progression",
+    "TTP"
+  ],
+  "match_cues": {
+    "title_terms": [
+      "survival",
+      "time to",
+      "duration of response",
+      "pfs",
+      "rfs"
+    ],
+    "negative_terms": [
+      "plot",
+      "kaplan-meier plot",
+      "listing",
+      "landmark",
+      "rate"
+    ]
+  },
+  "required_fields": [
+    {
+      "path": "title",
+      "label": "Output title",
+      "allowed_sources": [
+        "content_list"
+      ]
+    },
+    {
+      "path": "population",
+      "label": "Analysis population",
+      "allowed_sources": [
+        "content_list",
+        "study_setting"
+      ]
+    },
+    {
+      "path": "columns.groups",
+      "label": "Treatment groups / cohorts",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    },
+    {
+      "path": "columns.total",
+      "label": "Total column on/off and membership",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    },
+    {
+      "path": "footnotes[FN_CENSOR]",
+      "label": "Censoring rule",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    },
+    {
+      "path": "footnotes[FN_CI]",
+      "label": "CI method for quartiles",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    },
+    {
+      "path": "row_blocks[endpoint].items[time unit]",
+      "label": "Time unit",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    },
+    {
+      "path": "columns.comparison_columns",
+      "label": "Between-group estimate and test labels",
+      "allowed_sources": [
+        "study_setting"
+      ],
+      "description": "From study settings 'comparisons.time_to_event' (estimate label, test label, method); never defaulted."
+    }
+  ],
+  "permitted_defaults": [
+    {
+      "path": "columns.stub_header",
+      "value": "from preset",
+      "status_when_used": "resolved",
+      "basis": "House style stub header."
+    },
+    {
+      "path": "row_blocks[endpoint].items",
+      "value": "from preset",
+      "status_when_used": "needs_review",
+      "basis": "TTE row structure distilled from P-VCNA, CPX, OMO."
+    }
+  ],
+  "editable_elements": [
+    "title",
+    "population",
+    "columns.groups[].label",
+    "columns.total",
+    "columns.comparison_columns",
+    "row_blocks[].items",
+    "footnotes",
+    "programming_notes",
+    "config"
+  ],
+  "config_options": {
+    "comparison": {
+      "values": [
+        "none",
+        "columns",
+        "rows"
+      ],
+      "default": "none",
+      "description": "Between-group comparison shown as extra columns, as extra rows, or not at all. Enabled only when study settings confirm a comparison.",
+      "setting_path": "comparisons.time_to_event"
+    }
+  },
+  "presets": [
+    "event_time_summary"
+  ],
+  "skeleton": {
+    "columns": {
+      "stub_header": "Statistic"
+    },
+    "footnotes": [
+      {
+        "id": "FN_CENSOR",
+        "marker": null,
+        "text": "Censoring: {settings:definitions.censoring_rule}"
+      },
+      {
+        "id": "FN_CI",
+        "marker": null,
+        "text": "Quartiles estimated by the Kaplan-Meier method; CI method: {settings:definitions.ci_method}"
+      },
+      {
+        "id": "FN_COMP",
+        "marker": null,
+        "text": "Comparison: {settings:comparisons.method}",
+        "only_if_config": {
+          "comparison": [
+            "columns",
+            "rows"
+          ]
+        }
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "source_id": "CPXPOM001_T_14_2_3_2",
+      "study_id": "CPX-POM-001",
+      "fit": "core"
+    },
+    {
+      "source_id": "OMO10301_T_14_2_1_1",
+      "study_id": "OMO-103-01",
+      "fit": "core"
+    },
+    {
+      "source_id": "PVCNA003_T_14_2_1_1",
+      "study_id": "P-VCNA-003",
+      "fit": "core"
+    },
+    {
+      "source_id": "PVCNA003_T_14_2_2_21",
+      "study_id": "P-VCNA-003",
+      "fit": "core"
+    }
+  ],
+  "evidence_level": "multi_study",
+  "review_status": "approved"
+}

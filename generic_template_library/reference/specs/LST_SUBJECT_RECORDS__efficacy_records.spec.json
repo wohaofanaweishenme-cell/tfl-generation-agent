@@ -1,0 +1,284 @@
+{
+  "schema_version": "3.0",
+  "output_id": "x.x.x",
+  "output_type": "listing",
+  "template_id": "LST_SUBJECT_RECORDS",
+  "template_version": "1.0.0",
+  "preset_ids": [
+    "efficacy_records"
+  ],
+  "title": {
+    "value": "Efficacy assessment records",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "population": {
+    "value": "[Analysis population]",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "columns": {
+    "stub_header": {
+      "value": "",
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "groups": [
+      {
+        "id": "A",
+        "label": {
+          "value": "[Treatment A]",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "B",
+        "label": {
+          "value": "[Treatment B]",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      }
+    ],
+    "total": {
+      "enabled": {
+        "value": true,
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "label": {
+        "value": "Total",
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "member_group_ids": [
+        "A",
+        "B"
+      ]
+    }
+  },
+  "row_blocks": [],
+  "footnotes": [
+    {
+      "id": "FN_STUDYDAY",
+      "marker": null,
+      "text": {
+        "value": "Study day: [study day definition]",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q001",
+        "note": "missing study setting: definitions.study_day_definition"
+      }
+    }
+  ],
+  "programming_notes": [
+    {
+      "id": "PN_SORT",
+      "marker": null,
+      "text": {
+        "value": "Sort by Treatment group, Subject ID, Visit.",
+        "source": "template_default",
+        "status": "resolved"
+      }
+    }
+  ],
+  "figure": null,
+  "listing": {
+    "record_grain": {
+      "value": "subject_param_visit",
+      "source": "template_default",
+      "status": "needs_review"
+    },
+    "fields": [
+      {
+        "id": "Treatment_group",
+        "label": {
+          "value": "Treatment group",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "group"
+        ]
+      },
+      {
+        "id": "Subject_ID",
+        "label": {
+          "value": "Subject ID",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "subject_id"
+        ]
+      },
+      {
+        "id": "Visit",
+        "label": {
+          "value": "Visit",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "visit"
+        ]
+      },
+      {
+        "id": "Assessment_date",
+        "label": {
+          "value": "Assessment date",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "datetime"
+        ]
+      },
+      {
+        "id": "Lesion_number",
+        "label": {
+          "value": "Lesion number",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "text"
+        ]
+      },
+      {
+        "id": "Response",
+        "label": {
+          "value": "Response",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "category"
+        ]
+      },
+      {
+        "id": "Site___location",
+        "label": {
+          "value": "Site / location",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "text"
+        ]
+      },
+      {
+        "id": "Unit",
+        "label": {
+          "value": "Unit",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "unit"
+        ]
+      },
+      {
+        "id": "Change_from_baseline",
+        "label": {
+          "value": "Change from baseline",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "number"
+        ]
+      },
+      {
+        "id": "Result",
+        "label": {
+          "value": "Result",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "number"
+        ]
+      },
+      {
+        "id": "Method",
+        "label": {
+          "value": "Method",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "category"
+        ]
+      }
+    ],
+    "sort_keys": {
+      "value": [
+        "Treatment group",
+        "Subject ID",
+        "Visit"
+      ],
+      "source": "template_default",
+      "status": "needs_review"
+    },
+    "group_by": {
+      "value": [
+        "Treatment group"
+      ],
+      "source": "template_default",
+      "status": "needs_review"
+    },
+    "repeat_identifiers": {
+      "value": [
+        "Subject ID",
+        "Treatment group"
+      ],
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "max_fields_per_panel": 10
+  },
+  "config": {
+    "group_display": "header_rows"
+  },
+  "page": {
+    "orientation": "landscape",
+    "paper": "letter",
+    "font": "Courier New",
+    "font_size_pt": 9,
+    "include_programming_notes": true
+  },
+  "issues": [
+    {
+      "question_id": "Q001",
+      "element_path": "footnotes[FN_STUDYDAY]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.study_day_definition (needed for: Study day: [study day definition]).",
+      "answer": null
+    }
+  ],
+  "provenance": {
+    "content_list_entry": {
+      "entry_id": "REF_LST_SUBJECT_RECORDS__efficacy_records",
+      "original_tfl_number": "x.x.x",
+      "output_type": "listing",
+      "original_title": "Efficacy assessment records",
+      "population": "[Analysis population]"
+    },
+    "template_file_sha256": "618245f1af230e37da0345d121d27343915af1d1f37b44469ae3095c0ada1059",
+    "preset_file_sha256": {
+      "efficacy_records": "6bee61a95f66eafc6f81aea7a9e15fd3bd1df38514f9dbdd687d24df938cb044"
+    },
+    "style_guide_version": "1.1.0",
+    "study_settings_version": "REFERENCE@1.0.0",
+    "match": {
+      "selected": "LST_SUBJECT_RECORDS",
+      "candidates": [],
+      "explanation": "Reference shell: template and preset chosen directly (no matching)."
+    },
+    "generated_by": "tools/build_spec.py (rule-based); config: group_display=header_rows (template default)"
+  }
+}

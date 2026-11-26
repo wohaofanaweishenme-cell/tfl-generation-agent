@@ -1,0 +1,175 @@
+{
+  "schema_version": "3.0",
+  "output_id": "x.x.x",
+  "output_type": "table",
+  "template_id": "TBL_TIMEPOINT_STATISTICS_COLUMNS",
+  "template_version": "1.0.0",
+  "preset_ids": [
+    "pk_concentration"
+  ],
+  "title": {
+    "value": "Plasma concentration by nominal timepoint",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "population": {
+    "value": "[Analysis population]",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "columns": {
+    "stub_header": {
+      "value": "Group\n  Analyte (unit)\n    Timepoint",
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "groups": [
+      {
+        "id": "A",
+        "label": {
+          "value": "[Treatment A]",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "B",
+        "label": {
+          "value": "[Treatment B]",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      }
+    ],
+    "total": {
+      "enabled": {
+        "value": true,
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "label": {
+        "value": "Total",
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "member_group_ids": [
+        "A",
+        "B"
+      ]
+    },
+    "statistic_columns": {
+      "value": [
+        "n",
+        "mean_sd",
+        "median",
+        "min_max",
+        "geo_mean",
+        "geo_cv"
+      ],
+      "source": "template_default",
+      "status": "resolved"
+    }
+  },
+  "row_blocks": [
+    {
+      "block_id": "conc",
+      "block_type": "timepoint_stats",
+      "label": {
+        "value": "Concentration",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "parameters": {
+        "value": [
+          "[Analyte 1] ([unit])"
+        ],
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "timepoints": {
+        "value": [
+          "[Timepoint 1]",
+          "[Timepoint 2]",
+          "[Timepoint 3]"
+        ],
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q001",
+        "note": "placeholder until 'timepoints' is confirmed"
+      }
+    }
+  ],
+  "footnotes": [
+    {
+      "id": "FN_BLQ",
+      "marker": null,
+      "text": {
+        "value": "Values below the lower limit of quantification: [blq handling]",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q002",
+        "note": "missing study setting: definitions.blq_handling"
+      }
+    }
+  ],
+  "programming_notes": [
+    {
+      "id": "PN_GROUPS",
+      "marker": null,
+      "text": {
+        "value": "Repeat the timepoint rows for each group and each analyte.",
+        "source": "template_default",
+        "status": "resolved"
+      }
+    }
+  ],
+  "figure": null,
+  "listing": null,
+  "config": {},
+  "page": {
+    "orientation": "landscape",
+    "paper": "letter",
+    "font": "Courier New",
+    "font_size_pt": 9,
+    "include_programming_notes": true
+  },
+  "issues": [
+    {
+      "question_id": "Q001",
+      "element_path": "row_blocks[conc].timepoints",
+      "kind": "missing",
+      "question": "Please confirm the nominal timepoints shown (study setting 'timepoints').",
+      "answer": null
+    },
+    {
+      "question_id": "Q002",
+      "element_path": "footnotes[FN_BLQ]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.blq_handling (needed for: Values below the lower limit of quantification: [blq handling]).",
+      "answer": null
+    }
+  ],
+  "provenance": {
+    "content_list_entry": {
+      "entry_id": "REF_TBL_TIMEPOINT_STATISTICS_COLUMNS__pk_concentration",
+      "original_tfl_number": "x.x.x",
+      "output_type": "table",
+      "original_title": "Plasma concentration by nominal timepoint",
+      "population": "[Analysis population]"
+    },
+    "template_file_sha256": "0def5840180743a26acb448e7b96e3accd8f4f5e6b701da7e0a262271c827a5e",
+    "preset_file_sha256": {
+      "pk_concentration": "6df8a936286c6557406ecf9e3553426e294c826fc6b5335da46e22823814f073"
+    },
+    "style_guide_version": "1.1.0",
+    "study_settings_version": "REFERENCE@1.0.0",
+    "match": {
+      "selected": "TBL_TIMEPOINT_STATISTICS_COLUMNS",
+      "candidates": [],
+      "explanation": "Reference shell: template and preset chosen directly (no matching)."
+    },
+    "generated_by": "tools/build_spec.py (rule-based); config: "
+  }
+}

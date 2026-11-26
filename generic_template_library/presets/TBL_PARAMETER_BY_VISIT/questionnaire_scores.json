@@ -1,0 +1,41 @@
+{
+  "preset_id": "questionnaire_scores",
+  "template_id": "TBL_PARAMETER_BY_VISIT",
+  "version": "1.0.0",
+  "name": "Questionnaire scores by visit",
+  "keywords": [
+    "quality of life"
+  ],
+  "aliases": [
+    "QLQ-C30",
+    "questionnaire",
+    "quality of life",
+    "QoL"
+  ],
+  "defaults": {
+    "row_blocks": [
+      {
+        "block_id": "qol",
+        "block_type": "parameter_visit",
+        "label": "Scale",
+        "cell_type": "continuous",
+        "parameters": [
+          "[Scale 1]",
+          "[Scale 2]"
+        ],
+        "visits_from_settings": true,
+        "statistics": [
+          "n",
+          "mean_sd",
+          "median",
+          "min_max"
+        ]
+      }
+    ]
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "OMO10301_T_14_2_6",
+    "PVCNA003_T_14_2_3_1"
+  ]
+}

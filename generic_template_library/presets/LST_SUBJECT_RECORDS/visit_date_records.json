@@ -1,0 +1,84 @@
+{
+  "preset_id": "visit_date_records",
+  "template_id": "LST_SUBJECT_RECORDS",
+  "version": "1.0.0",
+  "name": "Visit date records",
+  "keywords": [
+    "visits"
+  ],
+  "aliases": [
+    "visit dates"
+  ],
+  "defaults": {
+    "listing": {
+      "record_grain": "subject_visit",
+      "fields": [
+        {
+          "id": "Treatment_group",
+          "label": "Treatment group",
+          "kinds": [
+            "group"
+          ]
+        },
+        {
+          "id": "Subject_ID",
+          "label": "Subject ID",
+          "kinds": [
+            "subject_id"
+          ]
+        },
+        {
+          "id": "Visit",
+          "label": "Visit",
+          "kinds": [
+            "visit"
+          ]
+        },
+        {
+          "id": "Assessment_date",
+          "label": "Assessment date",
+          "kinds": [
+            "datetime"
+          ]
+        }
+      ],
+      "sort_keys": [
+        "Treatment group",
+        "Subject ID",
+        "Visit"
+      ],
+      "group_by": [
+        "Treatment group"
+      ]
+    }
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "OMO10301_L_16_2_1_1",
+    "PVCNA003_L_16_2_1_1"
+  ],
+  "source_frequency": {
+    "studies": [
+      "OMO-103-01",
+      "P-VCNA-003"
+    ],
+    "field_studies": {
+      "Treatment group": [],
+      "Subject ID": [
+        "OMO-103-01",
+        "P-VCNA-003"
+      ],
+      "Visit": [
+        "OMO-103-01",
+        "P-VCNA-003"
+      ],
+      "Assessment date": [
+        "OMO-103-01",
+        "P-VCNA-003"
+      ]
+    },
+    "grain_counts": {
+      "subject_visit": 2
+    }
+  }
+}

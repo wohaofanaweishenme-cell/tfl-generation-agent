@@ -1,0 +1,142 @@
+{
+  "template_id": "FIG_TORNADO",
+  "version": "1.0.0",
+  "output_type": "figure",
+  "name": "Tornado (butterfly) plot",
+  "structural_signature": {
+    "S1": "figure",
+    "S2": "PLOT",
+    "S3": [
+      "AXES"
+    ],
+    "S4": [
+      "PLOT"
+    ],
+    "S5": [
+      "NONE",
+      "PANELS"
+    ],
+    "S6": "TORNADO"
+  },
+  "intended_use": "Mirrored horizontal bars of the percentage of subjects with each term for two groups (left and right), terms on the vertical axis.",
+  "not_for": "More than two groups; tables of term frequencies (coded-term template).",
+  "keywords": [
+    "tornado plot"
+  ],
+  "aliases": [
+    "tornado",
+    "butterfly"
+  ],
+  "match_cues": {
+    "title_terms": [
+      "tornado",
+      "butterfly"
+    ],
+    "negative_terms": [
+      "waterfall",
+      "box"
+    ]
+  },
+  "required_fields": [
+    {
+      "path": "title",
+      "label": "Output title",
+      "allowed_sources": [
+        "content_list"
+      ]
+    },
+    {
+      "path": "population",
+      "label": "Analysis population",
+      "allowed_sources": [
+        "content_list",
+        "study_setting"
+      ]
+    },
+    {
+      "path": "figure.legend",
+      "label": "Groups shown",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    },
+    {
+      "path": "figure.legend",
+      "label": "Exactly two groups (left / right)",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    },
+    {
+      "path": "footnotes[FN_TERMS]",
+      "label": "Term selection rule (e.g. PTs in >= x% of subjects)",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    }
+  ],
+  "permitted_defaults": [
+    {
+      "path": "figure.x_axis.label",
+      "value": "Percentage of subjects (%)",
+      "status_when_used": "resolved",
+      "basis": "ARV source."
+    }
+  ],
+  "editable_elements": [
+    "title",
+    "population",
+    "figure.x_axis",
+    "figure.y_axis",
+    "figure.legend",
+    "figure.panels",
+    "figure.reference_lines",
+    "figure.annotations",
+    "footnotes",
+    "programming_notes",
+    "config"
+  ],
+  "config_options": {},
+  "presets": [
+    "ae_pt_tornado"
+  ],
+  "skeleton": {
+    "figure": {
+      "plot_type": "TORNADO",
+      "x_axis": {
+        "label": "Percentage of subjects (%)"
+      },
+      "y_axis": {
+        "label": ""
+      }
+    },
+    "footnotes": [
+      {
+        "id": "FN_TERMS",
+        "marker": null,
+        "text": "Terms shown: {settings:definitions.tornado_term_selection}"
+      }
+    ]
+  },
+  "figure_plot": {
+    "plot_type": "TORNADO",
+    "plotter": "renderer/figure/shells.py:plot_tornado",
+    "data_contract": {
+      "required_columns": {
+        "term": "str",
+        "group": "str",
+        "pct": "float"
+      }
+    },
+    "implementation_status": "shell_only"
+  },
+  "evidence": [
+    {
+      "source_id": "ARV471BC201_F_14_3_2_8",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    }
+  ],
+  "evidence_level": "single_source",
+  "review_status": "approved"
+}

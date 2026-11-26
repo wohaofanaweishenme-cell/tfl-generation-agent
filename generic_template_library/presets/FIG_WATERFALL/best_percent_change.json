@@ -1,0 +1,42 @@
+{
+  "preset_id": "best_percent_change",
+  "template_id": "FIG_WATERFALL",
+  "version": "1.0.0",
+  "name": "Best percent change in tumour size",
+  "keywords": [
+    "waterfall plot"
+  ],
+  "aliases": [
+    "target lesion",
+    "primary tumor",
+    "tumour size",
+    "caliper"
+  ],
+  "defaults": {
+    "figure": {
+      "reference_lines": [
+        "y = 20",
+        "y = -30"
+      ],
+      "annotations": [
+        "CR",
+        "PR",
+        "SD",
+        "PD",
+        "NE"
+      ]
+    },
+    "footnotes": [
+      {
+        "id": "FN_REF",
+        "marker": null,
+        "text": "Reference lines: {settings:definitions.response_thresholds}"
+      }
+    ]
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "ARV471BC201_F_14_2_3_1",
+    "ARV471BC201_F_14_2_3_2_1"
+  ]
+}

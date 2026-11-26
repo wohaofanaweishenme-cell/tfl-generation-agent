@@ -1,0 +1,163 @@
+{
+  "purpose": "Stage 2 candidate Template list (conventions v1.0 section 2). Each template is defined by the structural signatures it accepts. Sources are assigned by tools/stage2_cluster.py; source-specific exceptions live in assignment_overrides with a reason. Draft for user review; nothing here is a built template yet.",
+  "templates": [
+    {
+      "template_id": "TBL_VARIABLE_SUMMARY",
+      "output_type": "table",
+      "name": "Variable distribution summary",
+      "intended_use": "Summarise one or more variables at a single reference point: continuous variables as descriptive-statistic rows, categorical variables as exhaustive category rows with n (%), optional missing row.",
+      "not_for": "Per-visit summaries (TBL_PARAMETER_BY_VISIT); non-exclusive criterion/flag rows (TBL_CRITERION_COUNTS); dictionary-coded terms (TBL_CODED_TERM_HIERARCHY).",
+      "accepts": [{"S1": "table", "S2": "VAR_BLOCKS"}],
+      "candidate_config_options": ["continuous / categorical block per variable", "statistic row set incl. geometric mean / CV%", "Total column", "single all-subjects column", "statistic label column", "groups as row blocks", "repeat block set per period", "group sub-columns"]
+    },
+    {
+      "template_id": "TBL_CRITERION_COUNTS",
+      "output_type": "table",
+      "name": "Subject counts by criterion",
+      "intended_use": "Rows are predefined criteria or status flags (disposition status and reasons, analysis-set membership, deviation categories, deaths and causes, AE overview flags, DLT, ADA status, clinically notable thresholds); each row counts subjects meeting that criterion; rows need not be mutually exclusive and may be nested.",
+      "not_for": "Distribution of a variable over exhaustive categories (TBL_VARIABLE_SUMMARY); coded dictionary terms (TBL_CODED_TERM_HIERARCHY).",
+      "accepts": [{"S1": "table", "S2": "CATEGORY_LIST"}],
+      "candidate_config_options": ["nested reason rows", "single all-subjects column", "Total column", "event count sub-column", "repeat rows per parameter (thresholds)", "parameter-specific denominator column"]
+    },
+    {
+      "template_id": "TBL_CODED_TERM_HIERARCHY",
+      "output_type": "table",
+      "name": "Coded term hierarchy summary",
+      "intended_use": "Subject (and optionally event) counts by dictionary-coded terms: SOC/PT, ATC class/preferred name, AESI category/PT, SMQ/PT or PT only; data-driven rows with an 'any' row and a sort rule.",
+      "not_for": "Predefined categories not coming from a coding dictionary (TBL_CRITERION_COUNTS).",
+      "accepts": [{"S1": "table", "S2": "CODED_HIERARCHY"}],
+      "candidate_config_options": ["hierarchy depth 1 or 2", "category split (grade / severity / relationship) as sub-rows or sub-columns", "event count sub-column", "Total column", "sort rule"]
+    },
+    {
+      "template_id": "TBL_PARAMETER_BY_VISIT",
+      "output_type": "table",
+      "name": "Parameter by visit summary",
+      "intended_use": "For each parameter, repeat a block per visit/timepoint: continuous descriptive statistics (optionally with change from baseline) or categorical n (%) (including threshold categories at baseline / worst post-baseline).",
+      "not_for": "Statistics laid out as columns (TBL_TIMEPOINT_STATISTICS_COLUMNS); baseline x post-baseline cross-classification (TBL_SHIFT_CROSSTAB).",
+      "accepts": [{"S1": "table", "S2": "BY_TIMEPOINT", "S3": ["GROUPS", "CATEGORY_COLS"]}],
+      "candidate_config_options": ["continuous / categorical block per parameter", "change-from-baseline rows", "comparison column (p-value)", "categories as columns", "groups as row blocks"]
+    },
+    {
+      "template_id": "TBL_TIMEPOINT_STATISTICS_COLUMNS",
+      "output_type": "table",
+      "name": "Timepoint summary with statistics in columns",
+      "intended_use": "Rows are timepoints (e.g. PK nominal times, visits) within analyte/parameter blocks; columns are statistics (n, Mean (SD), Median, Min, Max, geometric mean, CV%); groups on row blocks or repeated pages.",
+      "not_for": "Group-column layouts (TBL_PARAMETER_BY_VISIT).",
+      "accepts": [{"S1": "table", "S2": "BY_TIMEPOINT", "S3": "STATS_COLS"}],
+      "candidate_config_options": ["statistic column set incl. geometric statistics", "group placement (row blocks / pages)"]
+    },
+    {
+      "template_id": "TBL_SHIFT_CROSSTAB",
+      "output_type": "table",
+      "name": "Shift / cross-classification table",
+      "intended_use": "Cross-classify subjects by two categorical assessments (baseline vs post-baseline category or grade, central vs local result, or site vs status), per group and optionally per parameter/visit.",
+      "not_for": "Single categorical distributions (TBL_VARIABLE_SUMMARY, TBL_PARAMETER_BY_VISIT).",
+      "accepts": [{"S1": "table", "S2": "CROSSTAB"}],
+      "candidate_config_options": ["matrix layout (row category x column category)", "long layout (category rows by visit plus transition rows)", "groups as row blocks or columns", "missing / total row and column"]
+    },
+    {
+      "template_id": "TBL_RESPONSE_RATE",
+      "output_type": "table",
+      "name": "Response / incidence rate endpoint",
+      "intended_use": "Binary or categorical endpoint: category distribution, rate n (%) with confidence interval, optional between-group difference / odds ratio / test.",
+      "not_for": "Time-to-event endpoints (TBL_TIME_TO_EVENT); continuous endpoints (TBL_CONTINUOUS_COMPARISON).",
+      "accepts": [{"S1": "table", "S2": "ENDPOINT_ANALYSIS", "S4": "RATE_CI"}],
+      "candidate_config_options": ["comparison as columns or rows", "CI type label", "multiple CI levels", "repeat per period", "long format with cohort row blocks"]
+    },
+    {
+      "template_id": "TBL_TIME_TO_EVENT",
+      "output_type": "table",
+      "name": "Time-to-event endpoint summary",
+      "intended_use": "Events / censored counts, Kaplan-Meier quantiles with CI, optional landmark rates, optional hazard ratio and test.",
+      "not_for": "Rates at a fixed time analysed as binary (TBL_RESPONSE_RATE).",
+      "accepts": [{"S1": "table", "S2": "ENDPOINT_ANALYSIS", "S4": "TTE_EST"}],
+      "candidate_config_options": ["comparison columns (HR, p-value)", "quartile rows", "min/max rows"]
+    },
+    {
+      "template_id": "TBL_CONTINUOUS_COMPARISON",
+      "output_type": "table",
+      "name": "Continuous endpoint with between-group estimate",
+      "intended_use": "Descriptive statistics of a continuous endpoint (and its baseline / post-baseline components) followed by model-based or nonparametric estimates (LS mean, difference, Hodges-Lehmann) with CI and optional p-value.",
+      "not_for": "Descriptive-only summaries (TBL_VARIABLE_SUMMARY, TBL_PARAMETER_BY_VISIT).",
+      "accepts": [{"S1": "table", "S2": "ENDPOINT_ANALYSIS", "S4": "MODEL_EST"}],
+      "candidate_config_options": ["difference as column or rows", "multiple CI levels", "log-transformed component rows", "subgroup repeat", "repeat per period"]
+    },
+    {
+      "template_id": "LST_SUBJECT_RECORDS",
+      "output_type": "listing",
+      "name": "Subject record listing",
+      "intended_use": "Any subject-level data listing: one row per subject, per subject-event, per subject-visit (wide) or per subject-parameter-visit (long); configurable fields, stacked cells, group headers and column panels.",
+      "not_for": "Listings that do not list subjects (e.g. protocol criteria catalogs).",
+      "accepts": [{"S1": "listing", "S2": "SUBJECT_RECORDS"}],
+      "candidate_config_options": ["record grain", "field list and order", "stacked fields in one cell", "group header / page by group", "column panels with repeated identifiers", "sort keys"]
+    },
+    {
+      "template_id": "FIG_KAPLAN_MEIER",
+      "output_type": "figure",
+      "name": "Kaplan-Meier plot",
+      "intended_use": "Survival / event-free probability over time by group, censor marks, optional number-at-risk table.",
+      "not_for": "Summary statistics over visits (FIG_SUMMARY_OVER_TIME).",
+      "accepts": [{"S1": "figure", "S6": "KM"}],
+      "candidate_config_options": ["at-risk table", "censor marks", "time unit"]
+    },
+    {
+      "template_id": "FIG_SUMMARY_OVER_TIME",
+      "output_type": "figure",
+      "name": "Group summary over time",
+      "intended_use": "A group-level summary statistic (mean +/- SD/SE, median, percentage) plotted against visit or time, one line per group or category; linear and/or log scale panels.",
+      "not_for": "Individual subject trajectories (FIG_INDIVIDUAL_PROFILE).",
+      "accepts": [{"S1": "figure", "S6": "SUMMARY_OVER_TIME"}],
+      "candidate_config_options": ["statistic and error bar", "linear / semi-log panels", "x axis as visit or continuous time"]
+    },
+    {
+      "template_id": "FIG_INDIVIDUAL_PROFILE",
+      "output_type": "figure",
+      "name": "Individual subject profiles",
+      "intended_use": "One line per subject over visit or time (spider plot, individual concentration-time), panels by group, optional reference lines.",
+      "not_for": "Group summaries (FIG_SUMMARY_OVER_TIME).",
+      "accepts": [{"S1": "figure", "S6": "INDIVIDUAL_PROFILE"}],
+      "candidate_config_options": ["panel by group", "linear / semi-log", "reference lines"]
+    },
+    {
+      "template_id": "FIG_BOX_PLOT",
+      "output_type": "figure",
+      "name": "Box plot by group",
+      "intended_use": "Distribution of a continuous value by group (box, whiskers, optional points and mean marker).",
+      "not_for": "Values over time (FIG_SUMMARY_OVER_TIME).",
+      "accepts": [{"S1": "figure", "S6": "BOX"}],
+      "candidate_config_options": ["overlay points", "mean marker"]
+    },
+    {
+      "template_id": "FIG_WATERFALL",
+      "output_type": "figure",
+      "name": "Waterfall plot",
+      "intended_use": "Per-subject best change from baseline as ordered bars, optional colour by response, reference lines.",
+      "not_for": "",
+      "accepts": [{"S1": "figure", "S6": "WATERFALL"}],
+      "candidate_config_options": ["panel by group", "colour by category", "reference lines"]
+    },
+    {
+      "template_id": "FIG_TORNADO",
+      "output_type": "figure",
+      "name": "Tornado (butterfly) plot",
+      "intended_use": "Mirrored horizontal bars of subject percentages by term for two groups.",
+      "not_for": "",
+      "accepts": [{"S1": "figure", "S6": "TORNADO"}],
+      "candidate_config_options": ["term sort", "percentage or count axis"]
+    }
+  ],
+  "assignment_overrides": {
+    "SP11631_T_14_1_1_2": {"template_id": "TBL_SHIFT_CROSSTAB", "fit": "config_extension", "note": "site x disposition-status counts expressed as a cross-classification (rows = site, columns = status)"},
+    "WTX330X2101_T_14_3_7_2_7": {"template_id": "TBL_CRITERION_COUNTS", "fit": "config_extension", "note": "xULN threshold rows per liver test are non-exclusive criteria, not a variable distribution"},
+    "WTX330X2101_T_14_3_8_3": {"template_id": "TBL_CRITERION_COUNTS", "fit": "config_extension", "note": "notable-change criteria per vital-sign parameter are non-exclusive criteria"},
+    "ARV471BC201_T_14_3_7_2_2": {"template_id": "TBL_CRITERION_COUNTS", "fit": "config_extension", "note": "one worsening criterion row per lab parameter with parameter-specific N'"},
+    "OMO10301_T_14_2_2_1": {"fit": "partial", "note": "several endpoints (DCR, ORR, TTP, TTR, DOR) in one long-format table; rate rows fit, time-to-event rows would need TBL_TIME_TO_EVENT content"},
+    "SP11631_T_14_4_1": {"fit": "partial", "note": "assay x negative/positive result columns with group and visit row blocks; fits only with categories-as-columns plus groups-as-row-blocks"},
+    "OMO10301_T_14_3_3_1": {"review_note": "source shows only visit headers and category rows; cell content partly inferred"},
+    "OMO10301_T_14_3_4_1": {"review_note": "source shows only visit headers and category rows; cell content partly inferred"},
+    "OMO10301_T_14_3_6_1": {"review_note": "source shows only visit headers and category rows; cell content partly inferred"}
+  },
+  "nonstandard": {
+    "CPXPOM001_L_16_2_1_1_1_1": "Protocol eligibility-criteria catalog without subjects; single study; not a subject listing (conventions 2.3)."
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "schema_version": "3.0",
+  "output_id": "x.x.x",
+  "output_type": "table",
+  "template_id": "TBL_SHIFT_CROSSTAB",
+  "template_version": "1.0.0",
+  "preset_ids": [
+    "clinical_evaluation_shift"
+  ],
+  "title": {
+    "value": "Clinical evaluation shift",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "population": {
+    "value": "[Analysis population]",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "columns": {
+    "stub_header": {
+      "value": "Group\n  Parameter\n    Baseline category",
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "groups": [
+      {
+        "id": "A",
+        "label": {
+          "value": "[Treatment A]",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "B",
+        "label": {
+          "value": "[Treatment B]",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      }
+    ],
+    "total": {
+      "enabled": {
+        "value": true,
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "label": {
+        "value": "Total",
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "member_group_ids": [
+        "A",
+        "B"
+      ]
+    },
+    "category_columns": {
+      "value": [
+        "Normal",
+        "Abnormal, NCS",
+        "Abnormal, CS",
+        "Not done",
+        "Total"
+      ],
+      "source": "template_default",
+      "status": "needs_review"
+    }
+  },
+  "row_blocks": [
+    {
+      "block_id": "shift",
+      "block_type": "crosstab",
+      "label": {
+        "value": "Clinical evaluation shift",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "row_variable": {
+        "value": "Baseline",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "column_variable": {
+        "value": "Post-baseline",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "row_categories": {
+        "value": [
+          "Normal",
+          "Abnormal, NCS",
+          "Abnormal, CS",
+          "Not done",
+          "Total"
+        ],
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "parameters": {
+        "value": [
+          "[Assessment]"
+        ],
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    }
+  ],
+  "footnotes": [
+    {
+      "id": "FN_DENOM",
+      "marker": null,
+      "text": {
+        "value": "Percentages are based on [percentage denominator].",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q001",
+        "note": "missing study setting: definitions.percentage_denominator"
+      }
+    },
+    {
+      "id": "FN_BASE",
+      "marker": null,
+      "text": {
+        "value": "Baseline: [baseline definition]",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q002",
+        "note": "missing study setting: definitions.baseline_definition"
+      }
+    }
+  ],
+  "programming_notes": [
+    {
+      "id": "PN_SHIFT",
+      "marker": null,
+      "text": {
+        "value": "Repeat the cross-classification for each group, parameter and post-baseline visit shown; include Missing and Total rows and columns.",
+        "source": "template_default",
+        "status": "resolved"
+      }
+    }
+  ],
+  "figure": null,
+  "listing": null,
+  "config": {
+    "layout": "matrix"
+  },
+  "page": {
+    "orientation": "landscape",
+    "paper": "letter",
+    "font": "Courier New",
+    "font_size_pt": 9,
+    "include_programming_notes": true
+  },
+  "issues": [
+    {
+      "question_id": "Q001",
+      "element_path": "footnotes[FN_DENOM]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.percentage_denominator (needed for: Percentages are based on [percentage denominator].).",
+      "answer": null
+    },
+    {
+      "question_id": "Q002",
+      "element_path": "footnotes[FN_BASE]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.baseline_definition (needed for: Baseline: [baseline definition]).",
+      "answer": null
+    }
+  ],
+  "provenance": {
+    "content_list_entry": {
+      "entry_id": "REF_TBL_SHIFT_CROSSTAB__clinical_evaluation_shift",
+      "original_tfl_number": "x.x.x",
+      "output_type": "table",
+      "original_title": "Clinical evaluation shift",
+      "population": "[Analysis population]"
+    },
+    "template_file_sha256": "0f9d9a67fe483a6c4f61d0d9a880f260606a26552f92da183f1a8df2a8f684f7",
+    "preset_file_sha256": {
+      "clinical_evaluation_shift": "dc859db16a094872f71b6856877630a743152bae307b3a1e87e812f9a535663d"
+    },
+    "style_guide_version": "1.1.0",
+    "study_settings_version": "REFERENCE@1.0.0",
+    "match": {
+      "selected": "TBL_SHIFT_CROSSTAB",
+      "candidates": [],
+      "explanation": "Reference shell: template and preset chosen directly (no matching)."
+    },
+    "generated_by": "tools/build_spec.py (rule-based); config: layout=matrix (template default)"
+  }
+}

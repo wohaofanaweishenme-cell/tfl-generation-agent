@@ -1,0 +1,138 @@
+{
+  "preset_id": "disposition_records",
+  "template_id": "LST_SUBJECT_RECORDS",
+  "version": "1.0.0",
+  "name": "Disposition and enrollment records",
+  "keywords": [
+    "disposition"
+  ],
+  "aliases": [
+    "disposition",
+    "enrollment",
+    "withdrawal",
+    "follow-up",
+    "completion"
+  ],
+  "defaults": {
+    "listing": {
+      "record_grain": "subject",
+      "fields": [
+        {
+          "id": "Treatment_group",
+          "label": "Treatment group",
+          "kinds": [
+            "group"
+          ]
+        },
+        {
+          "id": "Subject_ID",
+          "label": "Subject ID",
+          "kinds": [
+            "subject_id"
+          ]
+        },
+        {
+          "id": "Date_of_completion___discontin",
+          "label": "Date of completion / discontinuation",
+          "kinds": [
+            "datetime"
+          ]
+        },
+        {
+          "id": "Date_of_last_dose",
+          "label": "Date of last dose",
+          "kinds": [
+            "date"
+          ]
+        },
+        {
+          "id": "Reason",
+          "label": "Reason",
+          "kinds": [
+            "text"
+          ]
+        },
+        {
+          "id": "Primary_cause_of_death",
+          "label": "Primary cause of death",
+          "kinds": [
+            "category"
+          ]
+        }
+      ],
+      "sort_keys": [
+        "Treatment group",
+        "Subject ID"
+      ],
+      "group_by": [
+        "Treatment group"
+      ]
+    }
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "ARV471BC201_L_16_2_1_1",
+    "ARV471BC201_L_16_2_1_2",
+    "CPXPOM001_L_16_2_1_2_1",
+    "CPXPOM001_L_16_2_1_2_2",
+    "OMO10301_L_16_2_1_2",
+    "PVCNA003_L_16_2_1_2",
+    "SP11631_L_16_1_7_1",
+    "SP11631_L_16_2_1_1",
+    "SP11631_L_16_2_1_2",
+    "WTX330X2101_L_16_2_2_1",
+    "WTX330X2101_L_16_2_2_2"
+  ],
+  "source_frequency": {
+    "studies": [
+      "ARV-471-BC-201",
+      "CPX-POM-001",
+      "OMO-103-01",
+      "P-VCNA-003",
+      "SP11631",
+      "WTX-330x2101"
+    ],
+    "field_studies": {
+      "Treatment group": [
+        "CPX-POM-001",
+        "SP11631"
+      ],
+      "Subject ID": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "OMO-103-01",
+        "P-VCNA-003",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "Assessment date": [
+        "OMO-103-01",
+        "P-VCNA-003"
+      ],
+      "Analysis set membership": [
+        "ARV-471-BC-201",
+        "P-VCNA-003"
+      ],
+      "Date of last dose": [
+        "CPX-POM-001",
+        "WTX-330x2101"
+      ],
+      "Reason": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "OMO-103-01",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "Primary cause of death": [
+        "ARV-471-BC-201",
+        "CPX-POM-001"
+      ]
+    },
+    "grain_counts": {
+      "subject": 10,
+      "subject_event": 1
+    },
+    "manual_edits": "Removed analysis-set flags (separate preset); renamed generic date to completion/discontinuation date."
+  }
+}

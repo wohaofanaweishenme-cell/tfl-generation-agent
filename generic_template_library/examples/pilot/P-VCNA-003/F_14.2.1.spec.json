@@ -1,0 +1,191 @@
+{
+  "schema_version": "3.0",
+  "output_id": "14.2.1",
+  "output_type": "figure",
+  "template_id": "FIG_KAPLAN_MEIER",
+  "template_version": "0.1.0",
+  "preset_ids": [
+    "overall_survival"
+  ],
+  "title": {
+    "value": "Kaplan-Meier Plot of Overall Survival",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "population": {
+    "value": "Intent-to-Treat Set",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "columns": {
+    "stub_header": {
+      "value": "",
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "groups": [
+      {
+        "id": "ARM1",
+        "label": {
+          "value": "Arm I (Nab-paclitaxel and gemcitabine)",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "ARM2",
+        "label": {
+          "value": "Arm II (VCN-01 with Nab-paclitaxel and gemcitabine)",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      }
+    ],
+    "total": {
+      "enabled": {
+        "value": false,
+        "source": "study_setting",
+        "status": "resolved"
+      }
+    }
+  },
+  "row_blocks": [],
+  "footnotes": [
+    {
+      "id": "FN_CENSOR",
+      "marker": null,
+      "text": {
+        "value": "Censoring: Patients who are lost to follow-up are censored at the time of their last visit or contact.",
+        "source": "study_setting",
+        "status": "resolved"
+      }
+    },
+    {
+      "id": "FN_MARKS",
+      "marker": null,
+      "text": {
+        "value": "Censored observations are marked with '+'.",
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    }
+  ],
+  "programming_notes": [
+    {
+      "id": "PN_CURVES",
+      "marker": null,
+      "text": {
+        "value": "One step curve per group with the line styles listed in the legend; number at risk shown at each x-axis tick.",
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    }
+  ],
+  "figure": {
+    "plot_type": "KM",
+    "x_axis": {
+      "label": {
+        "value": "Time (months)",
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "unit": {
+        "value": "months",
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "range": {
+        "value": "As appropriate",
+        "source": "template_default",
+        "status": "resolved"
+      }
+    },
+    "y_axis": {
+      "label": {
+        "value": "Overall Survival Probability",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "range": {
+        "value": "0 to 1",
+        "source": "template_default",
+        "status": "resolved"
+      }
+    },
+    "legend": {
+      "value": [
+        "Arm I (Nab-paclitaxel and gemcitabine) (N=xx)",
+        "Arm II (VCN-01 with Nab-paclitaxel and gemcitabine) (N=xx)"
+      ],
+      "source": "study_setting",
+      "status": "resolved"
+    },
+    "panels": {
+      "value": [
+        "single panel"
+      ],
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "risk_table": {
+      "value": true,
+      "source": "template_default",
+      "status": "needs_review"
+    },
+    "censor_marks": {
+      "value": true,
+      "source": "template_default",
+      "status": "needs_review"
+    }
+  },
+  "listing": null,
+  "config": {
+    "risk_table": true
+  },
+  "page": {
+    "orientation": "landscape",
+    "paper": "letter",
+    "font": "Courier New",
+    "font_size_pt": 9,
+    "include_programming_notes": true
+  },
+  "issues": [],
+  "provenance": {
+    "content_list_entry": {
+      "entry_id": "CL_078",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.2.1",
+      "output_type": "figure",
+      "original_title": "Kaplan-Meier Plot of Overall Survival",
+      "population": "Intent-to-Treat Set"
+    },
+    "template_file_sha256": "3e3701a946af79ab2968665e0c5277a966942596c1105f439e7b8a7a09931924",
+    "preset_file_sha256": {
+      "overall_survival": "3bd92a675d704bc33ad80ba919c801d6db30ee95dda063f07864b4eedc3d7add"
+    },
+    "style_guide_version": "1.0.0",
+    "study_settings_version": "P-VCNA-003@pilot-0.1",
+    "match": {
+      "selected": "FIG_KAPLAN_MEIER",
+      "candidates": [
+        {
+          "template_id": "FIG_KAPLAN_MEIER",
+          "score": 16,
+          "matched_terms": [
+            "kaplan",
+            "kaplan-meier",
+            "overall survival",
+            "survival"
+          ],
+          "negative_terms": [],
+          "preset_id": "overall_survival",
+          "preset_score": 4
+        }
+      ],
+      "explanation": "Selected FIG_KAPLAN_MEIER (score 16): title terms kaplan, kaplan-meier, overall survival, survival; preset overall_survival."
+    },
+    "generated_by": "tools/build_spec.py (rule-based pilot); config: risk_table=True (template default)"
+  }
+}

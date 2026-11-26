@@ -1,0 +1,7 @@
+﻿output_id,question_id,kind,element_path,question
+14.1.4.1,Q001,missing,footnotes[FN_AGE],Please confirm study setting(s): definitions.age_definition (needed for: [age definition]).
+14.1.4.1,Q002,missing,footnotes[FN_DENOM],Please confirm study setting(s): definitions.percentage_denominator (needed for: Percentages are based on [percentage denominator].).
+14.3.2.1.1,Q001,missing,row_blocks[terms].dictionary,Please confirm study setting(s): coding.meddra_version (needed for: MedDRA version [meddra version]).
+14.3.2.1.1,Q002,missing,footnotes[FN_TEAE],Please confirm study setting(s): definitions.teae_definition (needed for: TEAE: [teae definition]).
+14.3.2.1.1,Q003,missing,footnotes[FN_DICT],Please confirm study setting(s): coding.meddra_version (needed for: Adverse events are coded using MedDRA version [meddra version].).
+14.3.2.1.1,Q004,missing,footnotes[FN_DENOM],Please confirm study setting(s): definitions.percentage_denominator (needed for: Percentages are based on [percentage denominator].).

@@ -1,0 +1,162 @@
+{
+  "preset_id": "demographics",
+  "template_id": "TBL_VARIABLE_SUMMARY",
+  "version": "1.0.0",
+  "name": "Demographic and baseline characteristics",
+  "keywords": [
+    "demographics",
+    "baseline characteristics"
+  ],
+  "aliases": [
+    "demographic",
+    "demographics and baseline characteristics",
+    "demographic characteristics",
+    "baseline information",
+    "subject characteristics"
+  ],
+  "defaults": {
+    "row_blocks": [
+      {
+        "block_id": "age",
+        "block_type": "continuous",
+        "label": "Age",
+        "unit": "years",
+        "statistics": [
+          "n",
+          "mean_sd",
+          "median",
+          "min_max"
+        ],
+        "footnote_refs": [
+          "FN_AGE"
+        ]
+      },
+      {
+        "block_id": "age_group",
+        "block_type": "categorical",
+        "label": "Age group",
+        "unit": "",
+        "categories": [
+          "[Age group 1]",
+          "[Age group 2]"
+        ],
+        "missing_row": false,
+        "note": "Cut-points are study specific (sources use <45/45-<65/>=65, <65/>=65, <60/>=60)."
+      },
+      {
+        "block_id": "sex",
+        "block_type": "categorical",
+        "label": "Sex",
+        "unit": "",
+        "categories": [
+          "Male",
+          "Female"
+        ],
+        "missing_row": false
+      },
+      {
+        "block_id": "race",
+        "block_type": "categorical",
+        "label": "Race",
+        "unit": "",
+        "categories": [
+          "American Indian or Alaska Native",
+          "Asian",
+          "Black or African American",
+          "Native Hawaiian or Other Pacific Islander",
+          "White",
+          "Other"
+        ],
+        "missing_row": false,
+        "multiple_response": false,
+        "note": "ARV and WTX allow multiple races; confirm multiple-response handling."
+      },
+      {
+        "block_id": "ethnicity",
+        "block_type": "categorical",
+        "label": "Ethnicity",
+        "unit": "",
+        "categories": [
+          "Hispanic or Latino",
+          "Not Hispanic or Latino",
+          "Not Reported"
+        ],
+        "missing_row": false
+      },
+      {
+        "block_id": "weight",
+        "block_type": "continuous",
+        "label": "Weight",
+        "unit": "kg",
+        "statistics": [
+          "n",
+          "mean_sd",
+          "median",
+          "min_max"
+        ]
+      },
+      {
+        "block_id": "height",
+        "block_type": "continuous",
+        "label": "Height",
+        "unit": "cm",
+        "statistics": [
+          "n",
+          "mean_sd",
+          "median",
+          "min_max"
+        ]
+      },
+      {
+        "block_id": "bmi",
+        "block_type": "continuous",
+        "label": "Body mass index",
+        "unit": "kg/m^2",
+        "statistics": [
+          "n",
+          "mean_sd",
+          "median",
+          "min_max"
+        ],
+        "footnote_refs": [
+          "FN_BMI"
+        ]
+      },
+      {
+        "block_id": "ecog",
+        "block_type": "categorical",
+        "label": "ECOG performance status",
+        "unit": "",
+        "categories": [
+          "0",
+          "1",
+          "2"
+        ],
+        "missing_row": false,
+        "note": "Levels shown depend on eligibility criteria."
+      }
+    ],
+    "footnotes": [
+      {
+        "id": "FN_AGE",
+        "marker": "a",
+        "text": "{settings:definitions.age_definition}"
+      },
+      {
+        "id": "FN_BMI",
+        "marker": "b",
+        "text": "BMI = weight (kg) / height (m)^2."
+      }
+    ]
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "PVCNA003_T_14_1_2_1",
+    "ARV471BC201_T_14_1_4_1",
+    "CPXPOM001_T_14_1_3_1",
+    "OMO10301_T_14_1_2_1",
+    "WTX330X2101_T_14_1_4_1",
+    "WTX330X2101_T_14_1_4_2",
+    "SP11631_T_14_2_1"
+  ]
+}

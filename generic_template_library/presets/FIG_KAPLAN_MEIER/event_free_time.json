@@ -1,0 +1,32 @@
+{
+  "preset_id": "event_free_time",
+  "template_id": "FIG_KAPLAN_MEIER",
+  "version": "1.0.0",
+  "name": "Event-free time (PFS, RFS, TTP, DOR)",
+  "keywords": [
+    "progression-free survival",
+    "recurrence-free survival",
+    "time to progression"
+  ],
+  "aliases": [
+    "PFS",
+    "RFS",
+    "TTP",
+    "DOR",
+    "duration of response",
+    "event-free",
+    "time to"
+  ],
+  "defaults": {
+    "figure": {
+      "y_axis": {
+        "label": "Probability of Being Event-free"
+      }
+    }
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "CPXPOM001_F_14_2_4_2",
+    "OMO10301_F_14_2_6_1"
+  ]
+}

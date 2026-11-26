@@ -1,0 +1,134 @@
+{
+  "preset_id": "physical_exam_records",
+  "template_id": "LST_SUBJECT_RECORDS",
+  "version": "1.0.0",
+  "name": "Physical / imaging examination records",
+  "keywords": [
+    "physical examination"
+  ],
+  "aliases": [
+    "physical examination",
+    "ophthalmologic",
+    "ultrasound",
+    "chest",
+    "fibroscan"
+  ],
+  "defaults": {
+    "listing": {
+      "record_grain": "subject_visit",
+      "fields": [
+        {
+          "id": "Treatment_group",
+          "label": "Treatment group",
+          "kinds": [
+            "group"
+          ]
+        },
+        {
+          "id": "Subject_ID",
+          "label": "Subject ID",
+          "kinds": [
+            "subject_id"
+          ]
+        },
+        {
+          "id": "Visit",
+          "label": "Visit",
+          "kinds": [
+            "visit"
+          ]
+        },
+        {
+          "id": "Assessment_date",
+          "label": "Assessment date",
+          "kinds": [
+            "datetime"
+          ]
+        },
+        {
+          "id": "Result",
+          "label": "Result",
+          "kinds": [
+            "number"
+          ]
+        },
+        {
+          "id": "Flag___interpretation",
+          "label": "Flag / interpretation",
+          "kinds": [
+            "category"
+          ]
+        }
+      ],
+      "sort_keys": [
+        "Treatment group",
+        "Subject ID",
+        "Visit"
+      ],
+      "group_by": [
+        "Treatment group"
+      ]
+    }
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "CPXPOM001_L_16_2_4_7_1",
+    "OMO10301_L_16_2_11_1",
+    "PVCNA003_L_16_2_10",
+    "PVCNA003_L_16_2_17",
+    "SP11631_L_16_2_2_6",
+    "SP11631_L_16_2_4_4_3",
+    "SP11631_L_16_2_4_5_2",
+    "WTX330X2101_L_16_4_9_4"
+  ],
+  "source_frequency": {
+    "studies": [
+      "CPX-POM-001",
+      "OMO-103-01",
+      "P-VCNA-003",
+      "SP11631",
+      "WTX-330x2101"
+    ],
+    "field_studies": {
+      "Treatment group": [
+        "CPX-POM-001",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "Subject ID": [
+        "CPX-POM-001",
+        "OMO-103-01",
+        "P-VCNA-003",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "Visit": [
+        "CPX-POM-001",
+        "OMO-103-01",
+        "P-VCNA-003",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "Assessment date": [
+        "CPX-POM-001",
+        "OMO-103-01",
+        "P-VCNA-003",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "Result": [
+        "P-VCNA-003",
+        "SP11631"
+      ],
+      "Flag / interpretation": [
+        "CPX-POM-001",
+        "P-VCNA-003"
+      ]
+    },
+    "grain_counts": {
+      "subject": 1,
+      "subject_visit": 6,
+      "subject_param_visit": 1
+    }
+  }
+}

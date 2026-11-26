@@ -1,0 +1,32 @@
+{
+  "preset_id": "ae_pt_tornado",
+  "template_id": "FIG_TORNADO",
+  "version": "1.0.0",
+  "name": "TEAE preferred terms",
+  "keywords": [
+    "adverse events"
+  ],
+  "aliases": [
+    "treatment emergent adverse events",
+    "preferred term",
+    "TEAE"
+  ],
+  "defaults": {
+    "figure": {
+      "y_axis": {
+        "label": "Preferred term"
+      }
+    },
+    "footnotes": [
+      {
+        "id": "FN_DICT",
+        "marker": null,
+        "text": "Adverse events are coded using MedDRA version {settings:coding.meddra_version}."
+      }
+    ]
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "ARV471BC201_F_14_3_2_8"
+  ]
+}

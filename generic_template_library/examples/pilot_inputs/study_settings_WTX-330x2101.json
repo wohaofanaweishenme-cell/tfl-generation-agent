@@ -1,0 +1,36 @@
+{
+  "study_id": "WTX-330x2101",
+  "version": "pilot-0.1",
+  "confirmed_by": "pilot_example: values transcribed from the study's own source shells for testing; not user-confirmed settings",
+  "groups": [
+    {
+      "id": "D1",
+      "label": "WTX-330 0.016 mg/kg"
+    },
+    {
+      "id": "D2",
+      "label": "WTX-330 0.032 mg/kg"
+    },
+    {
+      "id": "D3",
+      "label": "WTX-330 0.056 mg/kg"
+    },
+    {
+      "id": "D4",
+      "label": "WTX-330 0.084 mg/kg"
+    }
+  ],
+  "total_column": {
+    "enabled": true,
+    "label": "Total",
+    "member_group_ids": [
+      "D1",
+      "D2",
+      "D3",
+      "D4"
+    ]
+  },
+  "populations": {
+    "Safety Analysis Set": "[SAF definition from SAP]"
+  }
+}

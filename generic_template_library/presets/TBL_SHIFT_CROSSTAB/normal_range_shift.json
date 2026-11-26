@@ -1,0 +1,53 @@
+{
+  "preset_id": "normal_range_shift",
+  "template_id": "TBL_SHIFT_CROSSTAB",
+  "version": "1.0.0",
+  "name": "Normal-range shift (low / normal / high)",
+  "keywords": [
+    "shift"
+  ],
+  "aliases": [
+    "normal range",
+    "outside of normal range",
+    "lowest/highest",
+    "low",
+    "high"
+  ],
+  "defaults": {
+    "columns": {
+      "category_columns": [
+        "Low",
+        "Normal",
+        "High",
+        "Missing",
+        "Total"
+      ]
+    },
+    "row_blocks": [
+      {
+        "block_id": "shift",
+        "block_type": "crosstab",
+        "label": "Normal-range shift",
+        "row_variable": "Baseline",
+        "column_variable": "Post-baseline",
+        "row_categories": [
+          "Low",
+          "Normal",
+          "High",
+          "Missing",
+          "Total"
+        ],
+        "parameters": [
+          "[Parameter 1]"
+        ]
+      }
+    ]
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "CPXPOM001_T_14_3_2_1_2_1",
+    "PVCNA003_T_14_3_4_6",
+    "PVCNA003_T_14_3_5_2",
+    "WTX330X2101_T_14_3_7_1_5"
+  ]
+}

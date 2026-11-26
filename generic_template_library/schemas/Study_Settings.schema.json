@@ -1,0 +1,224 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:tfl:generic:study-settings:1.0",
+  "title": "Confirmed study settings",
+  "description": "Study-level facts confirmed by the user. Only confirmed values may fill required fields with source=study_setting; anything absent stays unresolved.",
+  "type": "object",
+  "required": [
+    "study_id",
+    "version",
+    "confirmed_by",
+    "groups",
+    "populations"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "study_id": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "confirmed_by": {
+      "type": "string",
+      "description": "Who confirmed these settings and when; 'pilot_example' for pilot fixtures."
+    },
+    "groups": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "label"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_]*$"
+          },
+          "label": {
+            "type": "string"
+          },
+          "show_n": {
+            "type": "boolean",
+            "default": true
+          }
+        }
+      }
+    },
+    "total_column": {
+      "type": "object",
+      "required": [
+        "enabled"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "label": {
+          "type": "string"
+        },
+        "member_group_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "populations": {
+      "type": "object",
+      "description": "Population name -> definition text.",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "visits": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "coding": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "meddra_version": {
+          "type": "string"
+        },
+        "whodrug_version": {
+          "type": "string"
+        },
+        "ctcae_version": {
+          "type": "string"
+        }
+      }
+    },
+    "definitions": {
+      "type": "object",
+      "description": "Confirmed analysis definitions keyed by name, e.g. teae_definition, baseline_definition, age_definition.",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "time_unit": {
+      "type": "string"
+    },
+    "page": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "orientation": {
+          "enum": [
+            "landscape",
+            "portrait"
+          ]
+        },
+        "paper": {
+          "enum": [
+            "letter",
+            "a4"
+          ]
+        }
+      }
+    },
+    "comparisons": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Confirmed between-group comparisons, set separately per endpoint type because estimates differ (e.g. OR for response, HR for survival).",
+      "properties": {
+        "response_rate": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "enabled"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "estimate_label": {
+              "type": "string",
+              "description": "Column/row label of the between-group estimate, e.g. 'Odds Ratio (95% CI)', 'Hazard Ratio (95% CI)', 'Difference in LS Mean (80% CI)'."
+            },
+            "test_label": {
+              "type": "string",
+              "description": "e.g. 'p-value'"
+            },
+            "method": {
+              "type": "string",
+              "description": "Method text for the footnote, from the SAP."
+            },
+            "reference_group_id": {
+              "type": "string"
+            }
+          }
+        },
+        "time_to_event": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "enabled"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "estimate_label": {
+              "type": "string",
+              "description": "Column/row label of the between-group estimate, e.g. 'Odds Ratio (95% CI)', 'Hazard Ratio (95% CI)', 'Difference in LS Mean (80% CI)'."
+            },
+            "test_label": {
+              "type": "string",
+              "description": "e.g. 'p-value'"
+            },
+            "method": {
+              "type": "string",
+              "description": "Method text for the footnote, from the SAP."
+            },
+            "reference_group_id": {
+              "type": "string"
+            }
+          }
+        },
+        "continuous": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "enabled"
+          ],
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "estimate_label": {
+              "type": "string",
+              "description": "Column/row label of the between-group estimate, e.g. 'Odds Ratio (95% CI)', 'Hazard Ratio (95% CI)', 'Difference in LS Mean (80% CI)'."
+            },
+            "test_label": {
+              "type": "string",
+              "description": "e.g. 'p-value'"
+            },
+            "method": {
+              "type": "string",
+              "description": "Method text for the footnote, from the SAP."
+            },
+            "reference_group_id": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "timepoints": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Nominal sampling timepoints (e.g. PK)."
+    }
+  }
+}

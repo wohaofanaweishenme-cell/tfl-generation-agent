@@ -1,0 +1,90 @@
+{
+  "preset_id": "analysis_set_records",
+  "template_id": "LST_SUBJECT_RECORDS",
+  "version": "1.0.0",
+  "name": "Analysis-set membership records",
+  "keywords": [
+    "analysis sets"
+  ],
+  "aliases": [
+    "analysis set",
+    "populations",
+    "excluded from"
+  ],
+  "defaults": {
+    "listing": {
+      "record_grain": "subject",
+      "fields": [
+        {
+          "id": "Treatment_group",
+          "label": "Treatment group",
+          "kinds": [
+            "group"
+          ]
+        },
+        {
+          "id": "Subject_ID",
+          "label": "Subject ID",
+          "kinds": [
+            "subject_id"
+          ]
+        },
+        {
+          "id": "Analysis_set_membership",
+          "label": "Analysis set membership",
+          "kinds": [
+            "flag"
+          ]
+        },
+        {
+          "id": "Reason_excluded",
+          "label": "Reason excluded",
+          "kinds": [
+            "text"
+          ]
+        }
+      ],
+      "sort_keys": [
+        "Treatment group",
+        "Subject ID"
+      ],
+      "group_by": [
+        "Treatment group"
+      ]
+    }
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "CPXPOM001_L_16_2_3_1",
+    "OMO10301_L_16_2_3_1",
+    "SP11631_L_16_2_1_3_1",
+    "SP11631_L_16_2_1_3_2"
+  ],
+  "source_frequency": {
+    "studies": [
+      "CPX-POM-001",
+      "OMO-103-01",
+      "SP11631"
+    ],
+    "field_studies": {
+      "Treatment group": [
+        "CPX-POM-001",
+        "SP11631"
+      ],
+      "Subject ID": [
+        "CPX-POM-001",
+        "OMO-103-01",
+        "SP11631"
+      ],
+      "Analysis set membership": [
+        "CPX-POM-001",
+        "OMO-103-01",
+        "SP11631"
+      ]
+    },
+    "grain_counts": {
+      "subject": 4
+    },
+    "manual_edits": "Added exclusion reason (SP)."
+  }
+}

@@ -1,0 +1,83 @@
+{
+  "preset_id": "binary_rate",
+  "template_id": "TBL_RESPONSE_RATE",
+  "version": "1.0.0",
+  "name": "Binary endpoint rate",
+  "keywords": [
+    "incidence rate"
+  ],
+  "aliases": [
+    "incidence of",
+    "rate",
+    "landmark",
+    "pCR",
+    "BCS",
+    "CCCA",
+    "mPEPI"
+  ],
+  "defaults": {
+    "row_blocks": [
+      {
+        "block_id": "rate",
+        "block_type": "endpoint",
+        "label": "Endpoint",
+        "items": [
+          {
+            "label": "n",
+            "indent": 0,
+            "kind": "n"
+          },
+          {
+            "label": "Yes",
+            "indent": 0,
+            "kind": "n_pct"
+          },
+          {
+            "label": "No",
+            "indent": 0,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Missing",
+            "indent": 0,
+            "kind": "n"
+          },
+          {
+            "label": "Rate",
+            "indent": 0,
+            "kind": "pct"
+          },
+          {
+            "label": "95% CI",
+            "indent": 1,
+            "kind": "ci"
+          },
+          {
+            "label": "{settings:comparisons.estimate_label}",
+            "indent": 0,
+            "kind": "estimate_ci",
+            "where": "comparison"
+          },
+          {
+            "label": "p-value",
+            "indent": 0,
+            "kind": "p_value",
+            "where": "comparison"
+          }
+        ]
+      }
+    ]
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "ARV471BC201_T_14_2_2_1_1",
+    "ARV471BC201_T_14_2_2_1_2",
+    "ARV471BC201_T_14_2_2_2",
+    "ARV471BC201_T_14_2_2_3",
+    "ARV471BC201_T_14_2_2_5_1",
+    "ARV471BC201_T_14_2_2_5_2",
+    "PVCNA003_T_14_2_2_17",
+    "SP11631_T_14_3_2_1",
+    "SP11631_T_14_3_2_3"
+  ]
+}

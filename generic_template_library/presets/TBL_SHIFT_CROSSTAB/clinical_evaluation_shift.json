@@ -1,0 +1,54 @@
+{
+  "preset_id": "clinical_evaluation_shift",
+  "template_id": "TBL_SHIFT_CROSSTAB",
+  "version": "1.0.0",
+  "name": "Clinical evaluation shift",
+  "keywords": [
+    "shift"
+  ],
+  "aliases": [
+    "physical examination",
+    "ECG",
+    "ultrasound",
+    "clinical evaluation",
+    "overall interpretation"
+  ],
+  "defaults": {
+    "columns": {
+      "category_columns": [
+        "Normal",
+        "Abnormal, NCS",
+        "Abnormal, CS",
+        "Not done",
+        "Total"
+      ]
+    },
+    "row_blocks": [
+      {
+        "block_id": "shift",
+        "block_type": "crosstab",
+        "label": "Clinical evaluation shift",
+        "row_variable": "Baseline",
+        "column_variable": "Post-baseline",
+        "row_categories": [
+          "Normal",
+          "Abnormal, NCS",
+          "Abnormal, CS",
+          "Not done",
+          "Total"
+        ],
+        "parameters": [
+          "[Assessment]"
+        ]
+      }
+    ]
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "CPXPOM001_T_14_3_4_3_1",
+    "PVCNA003_T_14_3_6",
+    "SP11631_T_14_5_3_3_2",
+    "SP11631_T_14_5_4_3",
+    "SP11631_T_14_5_5_2"
+  ]
+}

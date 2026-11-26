@@ -1,0 +1,233 @@
+{
+  "schema_version": "3.0",
+  "output_id": "x.x.x",
+  "output_type": "table",
+  "template_id": "TBL_CRITERION_COUNTS",
+  "template_version": "1.0.0",
+  "preset_ids": [
+    "ae_overview"
+  ],
+  "title": {
+    "value": "Adverse event overview",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "population": {
+    "value": "[Analysis population]",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "columns": {
+    "stub_header": {
+      "value": "Category",
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "groups": [
+      {
+        "id": "A",
+        "label": {
+          "value": "[Treatment A]",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "B",
+        "label": {
+          "value": "[Treatment B]",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      }
+    ],
+    "total": {
+      "enabled": {
+        "value": true,
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "label": {
+        "value": "Total",
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "member_group_ids": [
+        "A",
+        "B"
+      ]
+    }
+  },
+  "row_blocks": [
+    {
+      "block_id": "ov",
+      "block_type": "criterion",
+      "label": {
+        "value": "Subjects with any",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "items": {
+        "value": [
+          {
+            "label": "Subjects with any",
+            "indent": 0,
+            "kind": "header"
+          },
+          {
+            "label": "TEAE",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "TEAE related to study drug",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "TEAE with CTCAE grade >= 3",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Related TEAE with CTCAE grade >= 3",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Serious TEAE",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Related serious TEAE",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "TEAE leading to study drug discontinuation",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "TEAE leading to dose modification",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "TEAE leading to death",
+            "indent": 1,
+            "kind": "n_pct"
+          }
+        ],
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    }
+  ],
+  "footnotes": [
+    {
+      "id": "FN_TEAE",
+      "marker": null,
+      "text": {
+        "value": "TEAE: [teae definition]",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q001",
+        "note": "missing study setting: definitions.teae_definition"
+      }
+    },
+    {
+      "id": "FN_GRADE",
+      "marker": null,
+      "text": {
+        "value": "Severity graded according to NCI-CTCAE version [ctcae version].",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q002",
+        "note": "missing study setting: coding.ctcae_version"
+      }
+    },
+    {
+      "id": "FN_DENOM",
+      "marker": null,
+      "text": {
+        "value": "Percentages are based on [percentage denominator].",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q003",
+        "note": "missing study setting: definitions.percentage_denominator"
+      }
+    }
+  ],
+  "programming_notes": [
+    {
+      "id": "PN_ROWS",
+      "marker": null,
+      "text": {
+        "value": "Display all listed categories even when the count is zero; indented rows are sub-categories of the row above.",
+        "source": "template_default",
+        "status": "resolved"
+      }
+    }
+  ],
+  "figure": null,
+  "listing": null,
+  "config": {
+    "column_layout": "groups",
+    "event_counts": false
+  },
+  "page": {
+    "orientation": "landscape",
+    "paper": "letter",
+    "font": "Courier New",
+    "font_size_pt": 9,
+    "include_programming_notes": true
+  },
+  "issues": [
+    {
+      "question_id": "Q001",
+      "element_path": "footnotes[FN_TEAE]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.teae_definition (needed for: TEAE: [teae definition]).",
+      "answer": null
+    },
+    {
+      "question_id": "Q002",
+      "element_path": "footnotes[FN_GRADE]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): coding.ctcae_version (needed for: Severity graded according to NCI-CTCAE version [ctcae version].).",
+      "answer": null
+    },
+    {
+      "question_id": "Q003",
+      "element_path": "footnotes[FN_DENOM]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.percentage_denominator (needed for: Percentages are based on [percentage denominator].).",
+      "answer": null
+    }
+  ],
+  "provenance": {
+    "content_list_entry": {
+      "entry_id": "REF_TBL_CRITERION_COUNTS__ae_overview",
+      "original_tfl_number": "x.x.x",
+      "output_type": "table",
+      "original_title": "Adverse event overview",
+      "population": "[Analysis population]"
+    },
+    "template_file_sha256": "c10c4031b1aa915e97dd2e341392695fd58d875f26560cae351e6c0fe0299b73",
+    "preset_file_sha256": {
+      "ae_overview": "79b74af02c8de6a61ab1288e5e8e510114d60197c1dfa57c7007497e891f5f4b"
+    },
+    "style_guide_version": "1.1.0",
+    "study_settings_version": "REFERENCE@1.0.0",
+    "match": {
+      "selected": "TBL_CRITERION_COUNTS",
+      "candidates": [],
+      "explanation": "Reference shell: template and preset chosen directly (no matching)."
+    },
+    "generated_by": "tools/build_spec.py (rule-based); config: column_layout=groups (template default); event_counts=False (template default)"
+  }
+}

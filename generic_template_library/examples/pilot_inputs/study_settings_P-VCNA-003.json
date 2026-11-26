@@ -1,0 +1,29 @@
+{
+  "study_id": "P-VCNA-003",
+  "version": "pilot-0.1",
+  "confirmed_by": "pilot_example: values transcribed from the study's own source shells for testing; not user-confirmed settings",
+  "groups": [
+    {
+      "id": "ARM1",
+      "label": "Arm I (Nab-paclitaxel and gemcitabine)"
+    },
+    {
+      "id": "ARM2",
+      "label": "Arm II (VCN-01 with Nab-paclitaxel and gemcitabine)"
+    }
+  ],
+  "total_column": {
+    "enabled": false
+  },
+  "populations": {
+    "Intent-to-Treat Set": "[ITT definition from SAP]",
+    "Full Analysis Set": "[FAS definition from SAP]",
+    "Safety Analysis Set": "[SAF definition from SAP]"
+  },
+  "definitions": {
+    "percentage_denominator": "the number of patients within the column (N)",
+    "age_definition": "Age was calculated using year of birth and date of first treatment and presented as age at last birthday.",
+    "censoring_rule": "Patients who are lost to follow-up are censored at the time of their last visit or contact."
+  },
+  "time_unit": "months"
+}

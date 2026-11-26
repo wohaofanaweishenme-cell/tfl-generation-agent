@@ -1,0 +1,15 @@
+{
+  "14.1.11:table|row_blocks[duration].unit": "Q001",
+  "14.1.11:table|row_blocks[cum_dose].unit": "Q002",
+  "14.1.11:table|footnotes[FN_DUR]": "Q003",
+  "14.1.11:table|footnotes[FN_RDI]": "Q004",
+  "14.1.11:table|footnotes[FN_COMPL]": "Q005",
+  "14.1.11:table|footnotes[FN_DENOM]": "Q006",
+  "14.3.2.8:table|footnotes[FN_DENOM]": "Q007",
+  "14.3.2.10:table|footnotes[FN_DENOM]": "Q008",
+  "14.3.7.1:table|footnotes[FN_BASE]": "Q009",
+  "14.2.1.2.1:figure|footnotes[FN_BOX]": "Q010",
+  "14.2.3.1:figure|footnotes[FN_REF]": "Q011",
+  "14.2.3.2.2:figure|figure.x_axis.label": "Q012",
+  "14.3.2.8:figure|footnotes[FN_TERMS]": "Q013"
+}

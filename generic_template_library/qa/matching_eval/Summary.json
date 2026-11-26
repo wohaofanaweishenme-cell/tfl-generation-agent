@@ -1,0 +1,156 @@
+{
+  "entries_total": 775,
+  "with_ground_truth": 431,
+  "correct": 410,
+  "accuracy": 0.951,
+  "outcomes": {
+    "correct": 410,
+    "missed": 2,
+    "ambiguous": 7,
+    "wrong_template": 11,
+    "should_be_no_template": 1
+  },
+  "by_output_type": {
+    "table": {
+      "correct": 188,
+      "missed": 2,
+      "ambiguous": 7,
+      "wrong_template": 11
+    },
+    "figure": {
+      "correct": 20
+    },
+    "listing": {
+      "correct": 202,
+      "should_be_no_template": 1
+    }
+  },
+  "by_study": {
+    "ARV-471-BC-201": {
+      "correct": 104,
+      "missed": 1,
+      "ambiguous": 1
+    },
+    "CPX-POM-001": {
+      "correct": 57,
+      "missed": 1,
+      "ambiguous": 1,
+      "wrong_template": 1,
+      "should_be_no_template": 1
+    },
+    "OMO-103-01": {
+      "correct": 31,
+      "wrong_template": 4,
+      "ambiguous": 2
+    },
+    "P-VCNA-003": {
+      "correct": 60,
+      "ambiguous": 1,
+      "wrong_template": 3
+    },
+    "SP11631": {
+      "correct": 66,
+      "ambiguous": 2,
+      "wrong_template": 2
+    },
+    "WTX-330x2101": {
+      "correct": 92,
+      "wrong_template": 1
+    }
+  },
+  "top_confusions": [
+    {
+      "expected": "TBL_SHIFT_CROSSTAB",
+      "predicted": "AMBIGUOUS",
+      "count": 2
+    },
+    {
+      "expected": "TBL_CRITERION_COUNTS",
+      "predicted": "TBL_CODED_TERM_HIERARCHY",
+      "count": 2
+    },
+    {
+      "expected": "LST_SUBJECT_RECORDS",
+      "predicted": "TBL_PARAMETER_BY_VISIT",
+      "count": 2
+    },
+    {
+      "expected": "TBL_VARIABLE_SUMMARY",
+      "predicted": "NO_TEMPLATE",
+      "count": 1
+    },
+    {
+      "expected": "TBL_CRITERION_COUNTS",
+      "predicted": "AMBIGUOUS",
+      "count": 1
+    },
+    {
+      "expected": "TBL_PARAMETER_BY_VISIT",
+      "predicted": "NO_TEMPLATE",
+      "count": 1
+    },
+    {
+      "expected": "TBL_VARIABLE_SUMMARY",
+      "predicted": "TBL_PARAMETER_BY_VISIT",
+      "count": 1
+    },
+    {
+      "expected": "NONSTANDARD",
+      "predicted": "LST_SUBJECT_RECORDS",
+      "count": 1
+    },
+    {
+      "expected": "TBL_RESPONSE_RATE",
+      "predicted": "TBL_TIME_TO_EVENT",
+      "count": 1
+    },
+    {
+      "expected": "LST_SUBJECT_RECORDS",
+      "predicted": "TBL_CODED_TERM_HIERARCHY",
+      "count": 1
+    },
+    {
+      "expected": "TBL_TIMEPOINT_STATISTICS_COLUMNS",
+      "predicted": "AMBIGUOUS",
+      "count": 1
+    },
+    {
+      "expected": "TBL_PARAMETER_BY_VISIT",
+      "predicted": "AMBIGUOUS",
+      "count": 1
+    },
+    {
+      "expected": "TBL_RESPONSE_RATE",
+      "predicted": "AMBIGUOUS",
+      "count": 1
+    },
+    {
+      "expected": "LST_SUBJECT_RECORDS",
+      "predicted": "TBL_CRITERION_COUNTS",
+      "count": 1
+    },
+    {
+      "expected": "TBL_SHIFT_CROSSTAB",
+      "predicted": "TBL_PARAMETER_BY_VISIT",
+      "count": 1
+    }
+  ],
+  "no_ground_truth_predictions": {
+    "TBL_CRITERION_COUNTS": 5,
+    "TBL_VARIABLE_SUMMARY": 15,
+    "TBL_CODED_TERM_HIERARCHY": 95,
+    "TBL_PARAMETER_BY_VISIT": 40,
+    "TBL_SHIFT_CROSSTAB": 28,
+    "LST_SUBJECT_RECORDS": 52,
+    "NO_TEMPLATE": 9,
+    "TBL_TIME_TO_EVENT": 18,
+    "AMBIGUOUS": 4,
+    "FIG_KAPLAN_MEIER": 13,
+    "TBL_RESPONSE_RATE": 24,
+    "TBL_CONTINUOUS_COMPARISON": 19,
+    "FIG_SUMMARY_OVER_TIME": 18,
+    "TBL_TIMEPOINT_STATISTICS_COLUMNS": 1,
+    "FIG_INDIVIDUAL_PROFILE": 3
+  },
+  "caveat": "In-library evaluation: templates were derived from these same studies."
+}

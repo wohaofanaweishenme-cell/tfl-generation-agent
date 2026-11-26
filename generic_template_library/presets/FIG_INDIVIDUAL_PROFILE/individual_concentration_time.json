@@ -1,0 +1,28 @@
+{
+  "preset_id": "individual_concentration_time",
+  "template_id": "FIG_INDIVIDUAL_PROFILE",
+  "version": "1.0.0",
+  "name": "Individual concentration-time profiles",
+  "keywords": [
+    "pharmacokinetic concentration"
+  ],
+  "aliases": [
+    "individual",
+    "plasma concentration",
+    "semi-logarithmic"
+  ],
+  "defaults": {
+    "figure": {
+      "x_axis": {
+        "label": "Time ({settings:time_unit})"
+      },
+      "y_axis": {
+        "label": "Concentration ([unit])"
+      }
+    }
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "WTX330X2101_F_14_4_1_1_1"
+  ]
+}

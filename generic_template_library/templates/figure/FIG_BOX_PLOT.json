@@ -1,0 +1,174 @@
+{
+  "template_id": "FIG_BOX_PLOT",
+  "version": "1.0.0",
+  "output_type": "figure",
+  "name": "Box plot by group",
+  "structural_signature": {
+    "S1": "figure",
+    "S2": "PLOT",
+    "S3": [
+      "AXES"
+    ],
+    "S4": [
+      "PLOT"
+    ],
+    "S5": [
+      "NONE",
+      "PANELS"
+    ],
+    "S6": "BOX"
+  },
+  "intended_use": "Distribution of a continuous value (typically change or percent change from baseline at one time point) by group: box (quartiles), median line, whiskers, optional mean marker and individual points.",
+  "not_for": "Values over time (summary-over-time figure).",
+  "keywords": [
+    "box plot"
+  ],
+  "aliases": [
+    "box plot",
+    "boxplot",
+    "box and whisker"
+  ],
+  "match_cues": {
+    "title_terms": [
+      "box plot",
+      "boxplot"
+    ],
+    "negative_terms": [
+      "spider",
+      "waterfall",
+      "kaplan"
+    ]
+  },
+  "required_fields": [
+    {
+      "path": "title",
+      "label": "Output title",
+      "allowed_sources": [
+        "content_list"
+      ]
+    },
+    {
+      "path": "population",
+      "label": "Analysis population",
+      "allowed_sources": [
+        "content_list",
+        "study_setting"
+      ]
+    },
+    {
+      "path": "figure.legend",
+      "label": "Groups shown",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    },
+    {
+      "path": "figure.y_axis.label",
+      "label": "Measure, time point and unit",
+      "allowed_sources": [
+        "content_list",
+        "study_setting"
+      ]
+    }
+  ],
+  "permitted_defaults": [
+    {
+      "path": "footnotes[FN_BOX]",
+      "value": "box/whisker definition",
+      "status_when_used": "needs_review",
+      "basis": "Whisker rule must match the programming convention."
+    }
+  ],
+  "editable_elements": [
+    "title",
+    "population",
+    "figure.x_axis",
+    "figure.y_axis",
+    "figure.legend",
+    "figure.panels",
+    "figure.reference_lines",
+    "figure.annotations",
+    "footnotes",
+    "programming_notes",
+    "config"
+  ],
+  "config_options": {
+    "overlay_points": {
+      "values": [
+        true,
+        false
+      ],
+      "default": true,
+      "description": "Overlay individual subject values."
+    }
+  },
+  "presets": [
+    "change_from_baseline_box"
+  ],
+  "skeleton": {
+    "figure": {
+      "plot_type": "BOX",
+      "x_axis": {
+        "label": "Treatment group"
+      },
+      "y_axis": {
+        "label": "[Measure] change from baseline at [time point] (%)"
+      },
+      "reference_lines": [
+        "y = 0"
+      ]
+    },
+    "footnotes": [
+      {
+        "id": "FN_BOX",
+        "marker": null,
+        "text": "Box: 25th to 75th percentile; line: median; marker: mean; whiskers: {settings:definitions.whisker_rule}."
+      }
+    ]
+  },
+  "figure_plot": {
+    "plot_type": "BOX",
+    "plotter": "renderer/figure/shells.py:plot_box",
+    "data_contract": {
+      "required_columns": {
+        "group": "str",
+        "value": "float"
+      }
+    },
+    "implementation_status": "shell_only"
+  },
+  "evidence": [
+    {
+      "source_id": "ARV471BC201_F_14_2_1_2_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_F_14_2_1_2_2",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_F_14_2_4_2_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_F_14_2_4_2_2",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_F_14_2_5_2_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_F_14_2_5_2_2",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    }
+  ],
+  "evidence_level": "single_source",
+  "review_status": "approved"
+}

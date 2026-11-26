@@ -1,0 +1,96 @@
+{
+  "preset_id": "questionnaire_records",
+  "template_id": "LST_SUBJECT_RECORDS",
+  "version": "1.0.0",
+  "name": "Questionnaire records",
+  "keywords": [
+    "quality of life"
+  ],
+  "aliases": [
+    "questionnaire",
+    "QLQ-C30",
+    "QoL"
+  ],
+  "defaults": {
+    "listing": {
+      "record_grain": "subject_param_visit",
+      "fields": [
+        {
+          "id": "Treatment_group",
+          "label": "Treatment group",
+          "kinds": [
+            "group"
+          ]
+        },
+        {
+          "id": "Subject_ID",
+          "label": "Subject ID",
+          "kinds": [
+            "subject_id"
+          ]
+        },
+        {
+          "id": "Visit",
+          "label": "Visit",
+          "kinds": [
+            "visit"
+          ]
+        },
+        {
+          "id": "Scale___item",
+          "label": "Scale / item",
+          "kinds": [
+            "parameter"
+          ]
+        },
+        {
+          "id": "Score",
+          "label": "Score",
+          "kinds": [
+            "number"
+          ]
+        }
+      ],
+      "sort_keys": [
+        "Treatment group",
+        "Subject ID",
+        "Visit"
+      ],
+      "group_by": [
+        "Treatment group"
+      ]
+    }
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "OMO10301_L_16_2_7_5",
+    "PVCNA003_L_16_2_6_6"
+  ],
+  "source_frequency": {
+    "studies": [
+      "OMO-103-01",
+      "P-VCNA-003"
+    ],
+    "field_studies": {
+      "Treatment group": [
+        "OMO-103-01"
+      ],
+      "Subject ID": [
+        "OMO-103-01",
+        "P-VCNA-003"
+      ],
+      "Visit": [
+        "OMO-103-01",
+        "P-VCNA-003"
+      ],
+      "Scale / item": [
+        "OMO-103-01",
+        "P-VCNA-003"
+      ]
+    },
+    "grain_counts": {
+      "subject_param_visit": 2
+    },
+    "manual_edits": "Added score/result column present in both sources under different names."
+  }
+}

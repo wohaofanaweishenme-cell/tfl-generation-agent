@@ -1,0 +1,45 @@
+{
+  "preset_id": "dose_limiting_toxicity",
+  "template_id": "TBL_CRITERION_COUNTS",
+  "version": "1.0.0",
+  "name": "Dose-limiting toxicity",
+  "keywords": [
+    "dose-limiting toxicity"
+  ],
+  "aliases": [
+    "DLT",
+    "dose limiting toxicity"
+  ],
+  "defaults": {
+    "row_blocks": [
+      {
+        "block_id": "dlt",
+        "block_type": "criterion",
+        "label": "DLT",
+        "items": [
+          {
+            "label": "DLT-evaluable subjects",
+            "indent": 0,
+            "kind": "n"
+          },
+          {
+            "label": "Subjects with at least one DLT",
+            "indent": 0,
+            "kind": "n_pct"
+          }
+        ]
+      }
+    ],
+    "footnotes": [
+      {
+        "id": "FN_DLT",
+        "marker": null,
+        "text": "DLT: {settings:definitions.dlt_definition}"
+      }
+    ]
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "CPXPOM001_T_14_3_1_0"
+  ]
+}

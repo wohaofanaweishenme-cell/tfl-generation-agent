@@ -1,0 +1,65 @@
+{
+  "S1_output_type": [
+    "table",
+    "listing",
+    "figure"
+  ],
+  "S2_row_axis": {
+    "VAR_BLOCKS": "Ordered variable blocks; each variable continuous (statistic rows) or categorical (category rows). No timepoint dimension.",
+    "CATEGORY_LIST": "One or a few predefined subject-status/category lists (disposition, analysis sets, deviations, deaths, AE overview flags).",
+    "CODED_HIERARCHY": "Dictionary-coded terms (SOC/PT, ATC/PN, AESI category/PT, PT only), data-driven rows, 1-2 levels.",
+    "BY_TIMEPOINT": "Parameter x visit/timepoint rows; cell content continuous or categorical (S4 decides).",
+    "CROSSTAB": "Category-by-category cross-classification (baseline vs post-baseline shift, concordance of two assessments).",
+    "ENDPOINT_ANALYSIS": "Endpoint summary rows mixed with inferential rows (rates with CI, KM medians, model estimates, tests).",
+    "SUBJECT_RECORDS": "Listing: one row per record; record fields as columns.",
+    "REFERENCE_CATALOG": "Listing without subjects: a catalog of protocol items (e.g. eligibility criteria text).",
+    "PLOT": "Figure."
+  },
+  "S3_col_axis": {
+    "GROUPS": "Repeated treatment/cohort group columns, optional Total.",
+    "GROUPS_PLUS_COMPARISON": "Group columns followed by between-group comparison columns (difference, OR, HR, p-value).",
+    "GROUPS_X_SUBCOL": "Each group split into fixed sub-columns (e.g. n(%) and events, N' and n(%)).",
+    "CATEGORY_COLS": "Columns are categories of an outcome (post-baseline category, grade, disposition status).",
+    "STATS_COLS": "Columns are statistics (n, Mean, SD, ...); groups/timepoints on rows or pages.",
+    "SINGLE": "One summary column (all subjects).",
+    "RECORD_FIELDS": "Listing record fields.",
+    "AXES": "Figure axes."
+  },
+  "S4_cell_semantics": {
+    "SUBJ_N_PCT": "Subject counts with percentages.",
+    "SUBJ_AND_EVENTS": "Subject counts/percentages plus event counts.",
+    "EVENTS": "Event counts (with or without percentage of events).",
+    "DESC": "Descriptive statistics of a continuous variable.",
+    "DESC_MIXED": "Continuous descriptive and categorical n(%) blocks in the same table.",
+    "PK_DESC": "Descriptive statistics including geometric mean / CV%.",
+    "RATE_CI": "Proportions with confidence intervals (optionally with between-group test).",
+    "MODEL_EST": "Model-based or nonparametric estimates (LS means, differences, Hodges-Lehmann) with CI/p.",
+    "TTE_EST": "Time-to-event estimates (events/censored, KM quantiles with CI, HR, log-rank).",
+    "RAW_VALUES": "Listing raw/derived record values.",
+    "PLOT": "Figure."
+  },
+  "S5_nesting": {
+    "NONE": "No additional nesting.",
+    "BY_PARAMETER": "Repeated per parameter/variable.",
+    "BY_VISIT": "Repeated per visit/timepoint.",
+    "BY_PARAM_VISIT": "Parameter blocks, each repeated per visit.",
+    "BY_GROUP_BLOCK": "Treatment groups appear as row blocks instead of columns.",
+    "BY_PERIOD": "Repeated per cycle/phase/period.",
+    "SUBROWS_BY_CATEGORY": "Each term row split into category sub-rows (grade, severity, relationship).",
+    "LISTING_SUBJECT": "Listing grain: one record per subject.",
+    "LISTING_SUBJECT_EVENT": "Listing grain: multiple coded/numbered records per subject (no visit axis).",
+    "LISTING_SUBJECT_VISIT": "Listing grain: subject x visit, measures as columns (wide).",
+    "LISTING_SUBJECT_PARAM_VISIT": "Listing grain: subject x parameter x visit (long).",
+    "LISTING_CATALOG": "Listing grain: protocol items.",
+    "PANELS": "Figure: multiple panels."
+  },
+  "S6_plot_type": {
+    "KM": "Kaplan-Meier survival curves (optional at-risk table).",
+    "SUMMARY_OVER_TIME": "Group summary statistic (mean / percentage) over time.",
+    "INDIVIDUAL_PROFILE": "Individual subject trajectories over time (spider / spaghetti).",
+    "BOX": "Box plot by group.",
+    "WATERFALL": "Ordered per-subject bars of best change.",
+    "TORNADO": "Mirrored horizontal bars by term for two groups.",
+    "": "Not a figure."
+  }
+}

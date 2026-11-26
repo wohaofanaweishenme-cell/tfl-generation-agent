@@ -1,0 +1,94 @@
+{
+  "preset_id": "time_to_event_records",
+  "template_id": "LST_SUBJECT_RECORDS",
+  "version": "1.0.0",
+  "name": "Time-to-event derivation records",
+  "keywords": [
+    "time to event"
+  ],
+  "aliases": [
+    "survival",
+    "PFS",
+    "recurrence",
+    "derived efficacy"
+  ],
+  "defaults": {
+    "listing": {
+      "record_grain": "subject",
+      "fields": [
+        {
+          "id": "Treatment_group",
+          "label": "Treatment group",
+          "kinds": [
+            "group"
+          ]
+        },
+        {
+          "id": "Subject_ID",
+          "label": "Subject ID",
+          "kinds": [
+            "subject_id"
+          ]
+        },
+        {
+          "id": "Time_to_event",
+          "label": "Time to event",
+          "kinds": [
+            "number"
+          ]
+        },
+        {
+          "id": "Event___reference_date",
+          "label": "Event / reference date",
+          "kinds": [
+            "date"
+          ]
+        },
+        {
+          "id": "Event___censored",
+          "label": "Event / censored",
+          "kinds": [
+            "category"
+          ]
+        }
+      ],
+      "sort_keys": [
+        "Treatment group",
+        "Subject ID"
+      ],
+      "group_by": [
+        "Treatment group"
+      ]
+    }
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "CPXPOM001_L_16_2_6_7_2",
+    "CPXPOM001_L_16_2_6_8_2",
+    "OMO10301_L_16_2_7_1"
+  ],
+  "source_frequency": {
+    "studies": [
+      "CPX-POM-001",
+      "OMO-103-01"
+    ],
+    "field_studies": {
+      "Treatment group": [
+        "CPX-POM-001",
+        "OMO-103-01"
+      ],
+      "Subject ID": [
+        "CPX-POM-001",
+        "OMO-103-01"
+      ],
+      "Time to event": [
+        "CPX-POM-001",
+        "OMO-103-01"
+      ]
+    },
+    "grain_counts": {
+      "subject": 3
+    },
+    "manual_edits": "Added event date and event/censoring flag; sources name them per endpoint (RFS/OS/PFS)."
+  }
+}

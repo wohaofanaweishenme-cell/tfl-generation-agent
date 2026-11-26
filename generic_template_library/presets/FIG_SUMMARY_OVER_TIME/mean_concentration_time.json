@@ -1,0 +1,33 @@
+{
+  "preset_id": "mean_concentration_time",
+  "template_id": "FIG_SUMMARY_OVER_TIME",
+  "version": "1.0.0",
+  "name": "Mean concentration-time profile",
+  "keywords": [
+    "pharmacokinetic concentration"
+  ],
+  "aliases": [
+    "mean concentration",
+    "plasma concentration",
+    "semi-logarithmic",
+    "PK"
+  ],
+  "defaults": {
+    "figure": {
+      "x_axis": {
+        "label": "Nominal time ({settings:time_unit})"
+      },
+      "y_axis": {
+        "label": "Mean (SD) concentration ([unit])"
+      },
+      "panels": [
+        "Linear scale",
+        "Semi-logarithmic scale"
+      ]
+    }
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "WTX330X2101_F_14_4_1_2_1"
+  ]
+}

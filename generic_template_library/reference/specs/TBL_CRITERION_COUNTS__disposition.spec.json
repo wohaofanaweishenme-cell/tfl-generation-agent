@@ -1,0 +1,242 @@
+{
+  "schema_version": "3.0",
+  "output_id": "x.x.x",
+  "output_type": "table",
+  "template_id": "TBL_CRITERION_COUNTS",
+  "template_version": "1.0.0",
+  "preset_ids": [
+    "disposition"
+  ],
+  "title": {
+    "value": "Subject disposition",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "population": {
+    "value": "[Analysis population]",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "columns": {
+    "stub_header": {
+      "value": "Category",
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "groups": [
+      {
+        "id": "A",
+        "label": {
+          "value": "[Treatment A]",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "B",
+        "label": {
+          "value": "[Treatment B]",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      }
+    ],
+    "total": {
+      "enabled": {
+        "value": true,
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "label": {
+        "value": "Total",
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "member_group_ids": [
+        "A",
+        "B"
+      ]
+    }
+  },
+  "row_blocks": [
+    {
+      "block_id": "disp",
+      "block_type": "criterion",
+      "label": {
+        "value": "Disposition",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "items": {
+        "value": [
+          {
+            "label": "Screened",
+            "indent": 0,
+            "kind": "n"
+          },
+          {
+            "label": "Screen failure",
+            "indent": 0,
+            "kind": "n"
+          },
+          {
+            "label": "Randomized / enrolled",
+            "indent": 0,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Treated",
+            "indent": 0,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Completed treatment",
+            "indent": 0,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Discontinued treatment",
+            "indent": 0,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Primary reason for treatment discontinuation",
+            "indent": 1,
+            "kind": "header"
+          },
+          {
+            "label": "Adverse event",
+            "indent": 2,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Progressive disease",
+            "indent": 2,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Withdrawal by subject",
+            "indent": 2,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Physician decision",
+            "indent": 2,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Death",
+            "indent": 2,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Lost to follow-up",
+            "indent": 2,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Other",
+            "indent": 2,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Completed study",
+            "indent": 0,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Discontinued study",
+            "indent": 0,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Primary reason for study discontinuation",
+            "indent": 1,
+            "kind": "header"
+          },
+          {
+            "label": "[Reason 1]",
+            "indent": 2,
+            "kind": "n_pct"
+          },
+          {
+            "label": "[Reason 2]",
+            "indent": 2,
+            "kind": "n_pct"
+          }
+        ],
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    }
+  ],
+  "footnotes": [
+    {
+      "id": "FN_DENOM",
+      "marker": null,
+      "text": {
+        "value": "Percentages are based on [percentage denominator].",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q001",
+        "note": "missing study setting: definitions.percentage_denominator"
+      }
+    }
+  ],
+  "programming_notes": [
+    {
+      "id": "PN_ROWS",
+      "marker": null,
+      "text": {
+        "value": "Display all listed categories even when the count is zero; indented rows are sub-categories of the row above.",
+        "source": "template_default",
+        "status": "resolved"
+      }
+    }
+  ],
+  "figure": null,
+  "listing": null,
+  "config": {
+    "column_layout": "groups",
+    "event_counts": false
+  },
+  "page": {
+    "orientation": "landscape",
+    "paper": "letter",
+    "font": "Courier New",
+    "font_size_pt": 9,
+    "include_programming_notes": true
+  },
+  "issues": [
+    {
+      "question_id": "Q001",
+      "element_path": "footnotes[FN_DENOM]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.percentage_denominator (needed for: Percentages are based on [percentage denominator].).",
+      "answer": null
+    }
+  ],
+  "provenance": {
+    "content_list_entry": {
+      "entry_id": "REF_TBL_CRITERION_COUNTS__disposition",
+      "original_tfl_number": "x.x.x",
+      "output_type": "table",
+      "original_title": "Subject disposition",
+      "population": "[Analysis population]"
+    },
+    "template_file_sha256": "c10c4031b1aa915e97dd2e341392695fd58d875f26560cae351e6c0fe0299b73",
+    "preset_file_sha256": {
+      "disposition": "059901f6ec9ae93886c085bb7a42ae8eb6f703fcd024baf3bc3c4b6757ed2b99"
+    },
+    "style_guide_version": "1.1.0",
+    "study_settings_version": "REFERENCE@1.0.0",
+    "match": {
+      "selected": "TBL_CRITERION_COUNTS",
+      "candidates": [],
+      "explanation": "Reference shell: template and preset chosen directly (no matching)."
+    },
+    "generated_by": "tools/build_spec.py (rule-based); config: column_layout=groups (template default); event_counts=False (template default)"
+  }
+}

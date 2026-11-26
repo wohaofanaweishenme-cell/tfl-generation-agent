@@ -1,0 +1,426 @@
+{
+  "template_id": "TBL_CRITERION_COUNTS",
+  "version": "1.0.0",
+  "output_type": "table",
+  "name": "Subject counts by criterion",
+  "structural_signature": {
+    "S1": "table",
+    "S2": "CATEGORY_LIST",
+    "S3": [
+      "GROUPS",
+      "SINGLE",
+      "GROUPS_X_SUBCOL"
+    ],
+    "S4": [
+      "SUBJ_N_PCT",
+      "SUBJ_AND_EVENTS"
+    ],
+    "S5": [
+      "NONE",
+      "BY_PARAMETER"
+    ]
+  },
+  "intended_use": "Number (%) of subjects meeting each of a list of predefined criteria or status flags (disposition status and reasons, analysis-set membership, protocol-deviation categories, deaths and causes, AE overview categories, DLT, anti-drug antibody status, clinically notable thresholds). Rows may be nested and need not be mutually exclusive.",
+  "not_for": "Distribution of one variable over exhaustive categories (variable summary template); dictionary-coded terms (coded-term template); category counts repeated by visit (parameter-by-visit template).",
+  "keywords": [
+    "disposition",
+    "analysis sets",
+    "protocol deviations",
+    "deaths",
+    "adverse event overview",
+    "dose-limiting toxicity",
+    "anti-drug antibodies",
+    "notable abnormalities"
+  ],
+  "aliases": [
+    "subject disposition",
+    "patient disposition",
+    "discontinuation",
+    "analysis populations",
+    "analysis set",
+    "important protocol deviations",
+    "major protocol deviations",
+    "death",
+    "overview of adverse events",
+    "overall summary of treatment-emergent adverse events",
+    "summary of adverse events",
+    "DLT",
+    "ADA",
+    "clinically significant",
+    "notable",
+    "patients who",
+    "participants with",
+    "summary of treatment emergent adverse events overview",
+    "adverse events by causality",
+    "category of adverse event",
+    "radical cystectomy",
+    "tumor biopsy",
+    "post-baseline tumor assessment"
+  ],
+  "match_cues": {
+    "title_terms": [
+      "disposition",
+      "analysis set",
+      "analysis population",
+      "protocol deviation",
+      "deviations from",
+      "death",
+      "overview",
+      "overall summary",
+      "dose-limiting",
+      "dlt",
+      "anti-drug antibod",
+      "clinically significant",
+      "notable",
+      "liver function",
+      "worsening",
+      "patients who",
+      "participants with",
+      "causality",
+      "overview"
+    ],
+    "negative_terms": [
+      "system organ class",
+      "preferred term",
+      "by visit",
+      "shift",
+      "listing",
+      "plot",
+      "kaplan",
+      "by site"
+    ]
+  },
+  "required_fields": [
+    {
+      "path": "title",
+      "label": "Output title",
+      "allowed_sources": [
+        "content_list"
+      ]
+    },
+    {
+      "path": "population",
+      "label": "Analysis population",
+      "allowed_sources": [
+        "content_list",
+        "study_setting"
+      ]
+    },
+    {
+      "path": "columns.groups",
+      "label": "Treatment groups / cohorts",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    },
+    {
+      "path": "columns.total",
+      "label": "Total column on/off and membership",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    },
+    {
+      "path": "row_blocks[criterion].items",
+      "label": "Criteria / categories shown",
+      "allowed_sources": [
+        "content_list",
+        "study_setting"
+      ],
+      "description": "Preset gives candidate rows; final list must match the SAP / CRF."
+    },
+    {
+      "path": "footnotes[FN_DENOM]",
+      "label": "Percentage denominator rule",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    }
+  ],
+  "permitted_defaults": [
+    {
+      "path": "columns.stub_header",
+      "value": "from preset",
+      "status_when_used": "resolved",
+      "basis": "House style stub header."
+    },
+    {
+      "path": "row_blocks[criterion].items",
+      "value": "from preset",
+      "status_when_used": "needs_review",
+      "basis": "Topic preset distilled from multi-study sources."
+    }
+  ],
+  "editable_elements": [
+    "title",
+    "population",
+    "columns.groups[].label",
+    "columns.total",
+    "row_blocks[].items",
+    "footnotes",
+    "programming_notes",
+    "config"
+  ],
+  "config_options": {
+    "column_layout": {
+      "values": [
+        "groups",
+        "single_all_subjects"
+      ],
+      "default": "groups",
+      "description": "Group columns, or one all-subjects column for single-arm summaries."
+    },
+    "event_counts": {
+      "values": [
+        false,
+        true
+      ],
+      "default": false,
+      "description": "Add a number-of-events sub-column next to n (%).",
+      "cues": {
+        "true": [
+          "number of events",
+          "events and subjects"
+        ]
+      }
+    }
+  },
+  "presets": [
+    "disposition",
+    "analysis_sets",
+    "protocol_deviations",
+    "ae_overview",
+    "deaths",
+    "dose_limiting_toxicity",
+    "ada_status",
+    "notable_abnormalities"
+  ],
+  "skeleton": {
+    "columns": {
+      "stub_header": "Category"
+    },
+    "footnotes": [
+      {
+        "id": "FN_DENOM",
+        "marker": null,
+        "text": "Percentages are based on {settings:definitions.percentage_denominator}."
+      }
+    ],
+    "programming_notes": [
+      {
+        "id": "PN_ROWS",
+        "marker": null,
+        "text": "Display all listed categories even when the count is zero; indented rows are sub-categories of the row above."
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "source_id": "ARV471BC201_T_14_1_1_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_1_1_2",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_1_2_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_1_3",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_3_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "config",
+      "config_used": "single all-subjects column"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_3_3_8",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_3_7_2_2",
+      "study_id": "ARV-471-BC-201",
+      "fit": "config_extension",
+      "config_used": "group sub-columns; repeat per parameter",
+      "note": "one worsening criterion row per lab parameter with parameter-specific N'"
+    },
+    {
+      "source_id": "CPXPOM001_T_14_1_1_1",
+      "study_id": "CPX-POM-001",
+      "fit": "core"
+    },
+    {
+      "source_id": "CPXPOM001_T_14_1_1_2",
+      "study_id": "CPX-POM-001",
+      "fit": "core"
+    },
+    {
+      "source_id": "CPXPOM001_T_14_1_2_1",
+      "study_id": "CPX-POM-001",
+      "fit": "core"
+    },
+    {
+      "source_id": "CPXPOM001_T_14_1_2_2",
+      "study_id": "CPX-POM-001",
+      "fit": "core"
+    },
+    {
+      "source_id": "CPXPOM001_T_14_1_4_1",
+      "study_id": "CPX-POM-001",
+      "fit": "core"
+    },
+    {
+      "source_id": "CPXPOM001_T_14_2_1_1",
+      "study_id": "CPX-POM-001",
+      "fit": "core"
+    },
+    {
+      "source_id": "CPXPOM001_T_14_2_5_2",
+      "study_id": "CPX-POM-001",
+      "fit": "core"
+    },
+    {
+      "source_id": "CPXPOM001_T_14_3_1_0",
+      "study_id": "CPX-POM-001",
+      "fit": "core"
+    },
+    {
+      "source_id": "CPXPOM001_T_14_3_1_1_1",
+      "study_id": "CPX-POM-001",
+      "fit": "core"
+    },
+    {
+      "source_id": "OMO10301_T_14_1_1_1",
+      "study_id": "OMO-103-01",
+      "fit": "config",
+      "config_used": "single all-subjects column"
+    },
+    {
+      "source_id": "OMO10301_T_14_3_1_1",
+      "study_id": "OMO-103-01",
+      "fit": "core"
+    },
+    {
+      "source_id": "PVCNA003_T_14_1_1",
+      "study_id": "P-VCNA-003",
+      "fit": "config",
+      "config_used": "single all-subjects column"
+    },
+    {
+      "source_id": "PVCNA003_T_14_3_1_1",
+      "study_id": "P-VCNA-003",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_T_14_1_1_1",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_T_14_1_2",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_T_14_1_3_1",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_T_14_1_3_2",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_T_14_5_1_1",
+      "study_id": "SP11631",
+      "fit": "config",
+      "config_used": "group sub-columns"
+    },
+    {
+      "source_id": "SP11631_T_14_5_1_2",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "WTX330X2101_T_14_1_1_1",
+      "study_id": "WTX-330x2101",
+      "fit": "core"
+    },
+    {
+      "source_id": "WTX330X2101_T_14_1_1_2_1",
+      "study_id": "WTX-330x2101",
+      "fit": "core"
+    },
+    {
+      "source_id": "WTX330X2101_T_14_1_1_2_2",
+      "study_id": "WTX-330x2101",
+      "fit": "core"
+    },
+    {
+      "source_id": "WTX330X2101_T_14_1_2_1",
+      "study_id": "WTX-330x2101",
+      "fit": "core"
+    },
+    {
+      "source_id": "WTX330X2101_T_14_1_2_2",
+      "study_id": "WTX-330x2101",
+      "fit": "core"
+    },
+    {
+      "source_id": "WTX330X2101_T_14_1_3_1",
+      "study_id": "WTX-330x2101",
+      "fit": "core"
+    },
+    {
+      "source_id": "WTX330X2101_T_14_1_3_2",
+      "study_id": "WTX-330x2101",
+      "fit": "core"
+    },
+    {
+      "source_id": "WTX330X2101_T_14_3_1_1_1",
+      "study_id": "WTX-330x2101",
+      "fit": "core"
+    },
+    {
+      "source_id": "WTX330X2101_T_14_3_1_1_2",
+      "study_id": "WTX-330x2101",
+      "fit": "core"
+    },
+    {
+      "source_id": "WTX330X2101_T_14_3_3_8_1",
+      "study_id": "WTX-330x2101",
+      "fit": "core"
+    },
+    {
+      "source_id": "WTX330X2101_T_14_3_7_2_7",
+      "study_id": "WTX-330x2101",
+      "fit": "config_extension",
+      "config_used": "repeat per parameter",
+      "note": "xULN threshold rows per liver test are non-exclusive criteria, not a variable distribution"
+    },
+    {
+      "source_id": "WTX330X2101_T_14_3_8_3",
+      "study_id": "WTX-330x2101",
+      "fit": "config_extension",
+      "config_used": "repeat per parameter",
+      "note": "notable-change criteria per vital-sign parameter are non-exclusive criteria"
+    },
+    {
+      "source_id": "WTX330X2101_T_14_4_3_1",
+      "study_id": "WTX-330x2101",
+      "fit": "core"
+    }
+  ],
+  "evidence_level": "multi_study",
+  "review_status": "approved"
+}

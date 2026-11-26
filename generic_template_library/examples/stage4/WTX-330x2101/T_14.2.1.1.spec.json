@@ -1,0 +1,329 @@
+{
+  "schema_version": "3.0",
+  "output_id": "14.2.1.1",
+  "output_type": "table",
+  "template_id": "TBL_RESPONSE_RATE",
+  "template_version": "1.0.0",
+  "preset_ids": [
+    "best_overall_response"
+  ],
+  "title": {
+    "value": "Summary of Best Overall Response, Objective Response Rate, and Clinical Benefit Rat - Dose Escalation",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "population": {
+    "value": "Efficacy Evaluable Analysis Set",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "columns": {
+    "stub_header": {
+      "value": "Endpoint",
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "groups": [
+      {
+        "id": "D1",
+        "label": {
+          "value": "WTX-330 0.016 mg/kg",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "D2",
+        "label": {
+          "value": "WTX-330 0.032 mg/kg",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "D3",
+        "label": {
+          "value": "WTX-330 0.056 mg/kg",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "D4",
+        "label": {
+          "value": "WTX-330 0.084 mg/kg",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      }
+    ],
+    "total": {
+      "enabled": {
+        "value": true,
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "label": {
+        "value": "Total",
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "member_group_ids": [
+        "D1",
+        "D2",
+        "D3",
+        "D4"
+      ]
+    }
+  },
+  "row_blocks": [
+    {
+      "block_id": "bor",
+      "block_type": "endpoint",
+      "label": {
+        "value": "Best overall response",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "items": {
+        "value": [
+          {
+            "label": "Best overall response",
+            "indent": 0,
+            "kind": "header"
+          },
+          {
+            "label": "Complete response (CR)",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Partial response (PR)",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Stable disease (SD)",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Progressive disease (PD)",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Not evaluable (NE)",
+            "indent": 1,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Objective response rate (CR + PR)",
+            "indent": 0,
+            "kind": "n_pct"
+          },
+          {
+            "label": "95% CI",
+            "indent": 1,
+            "kind": "ci"
+          },
+          {
+            "label": "Disease control rate (CR + PR + SD)",
+            "indent": 0,
+            "kind": "n_pct"
+          },
+          {
+            "label": "95% CI",
+            "indent": 1,
+            "kind": "ci"
+          }
+        ],
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    }
+  ],
+  "footnotes": [
+    {
+      "id": "FN_CRIT",
+      "marker": null,
+      "text": {
+        "value": "Response assessed per [response criteria].",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q004",
+        "note": "missing study setting: definitions.response_criteria"
+      }
+    },
+    {
+      "id": "FN_DENOM",
+      "marker": null,
+      "text": {
+        "value": "Percentages are based on [percentage denominator].",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q005",
+        "note": "missing study setting: definitions.percentage_denominator"
+      }
+    },
+    {
+      "id": "FN_CI",
+      "marker": null,
+      "text": {
+        "value": "Confidence interval: [ci method]",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q006",
+        "note": "missing study setting: definitions.ci_method"
+      }
+    }
+  ],
+  "programming_notes": [],
+  "figure": null,
+  "listing": null,
+  "config": {
+    "column_layout": "groups",
+    "comparison": "none",
+    "repeat_by_period": false
+  },
+  "page": {
+    "orientation": "landscape",
+    "paper": "letter",
+    "font": "Courier New",
+    "font_size_pt": 9,
+    "include_programming_notes": true
+  },
+  "issues": [
+    {
+      "question_id": "Q004",
+      "element_path": "footnotes[FN_CRIT]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.response_criteria (needed for: Response assessed per [response criteria].).",
+      "answer": null
+    },
+    {
+      "question_id": "Q005",
+      "element_path": "footnotes[FN_DENOM]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.percentage_denominator (needed for: Percentages are based on [percentage denominator].).",
+      "answer": null
+    },
+    {
+      "question_id": "Q006",
+      "element_path": "footnotes[FN_CI]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.ci_method (needed for: Confidence interval: [ci method]).",
+      "answer": null
+    }
+  ],
+  "provenance": {
+    "content_list_entry": {
+      "entry_id": "CL016",
+      "document_id": "SAP_001_98",
+      "original_tfl_number": "14.2.1.1",
+      "output_type": "table",
+      "original_title": "Summary of Best Overall Response, Objective Response Rate, and Clinical Benefit Rat - Dose Escalation",
+      "population": "Efficacy Evaluable Analysis Set"
+    },
+    "template_file_sha256": "9187dce4c31f25ed2f205017c6e3f8b384891f1189467098afc72120599b5c98",
+    "preset_file_sha256": {
+      "best_overall_response": "5694883e3b15989d5d2e1016e0e971915bbcbc1d560c395429329e5eedcb203b"
+    },
+    "style_guide_version": "1.1.0",
+    "study_settings_version": "WTX-330x2101@example-0.3+answers(2)",
+    "match": {
+      "selected": "TBL_RESPONSE_RATE",
+      "candidates": [
+        {
+          "template_id": "TBL_RESPONSE_RATE",
+          "score": 23,
+          "matched_terms": [
+            "best overall response",
+            "objective response rate",
+            "rate",
+            "response rate"
+          ],
+          "negative_terms": [],
+          "preset_id": "best_overall_response",
+          "preset_score": 6
+        },
+        {
+          "template_id": "TBL_CODED_TERM_HIERARCHY",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_CRITERION_COUNTS",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_PARAMETER_BY_VISIT",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_SHIFT_CROSSTAB",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_TIMEPOINT_STATISTICS_COLUMNS",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_CONTINUOUS_COMPARISON",
+          "score": -4,
+          "matched_terms": [],
+          "negative_terms": [
+            "rate"
+          ],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_TIME_TO_EVENT",
+          "score": -4,
+          "matched_terms": [],
+          "negative_terms": [
+            "rate"
+          ],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_VARIABLE_SUMMARY",
+          "score": -4,
+          "matched_terms": [],
+          "negative_terms": [
+            "rate"
+          ],
+          "preset_id": null,
+          "preset_score": 0
+        }
+      ],
+      "explanation": "Selected TBL_RESPONSE_RATE (score 23): title terms best overall response, objective response rate, rate, response rate; preset best_overall_response."
+    },
+    "generated_by": "tools/build_spec.py (rule-based); config: column_layout=groups (template default); comparison=none (template default); repeat_by_period=False (template default); comparison=none (study setting comparisons.response_rate.enabled=None); reviewer answers applied: coding.meddra_version, definitions.teae_definition"
+  }
+}

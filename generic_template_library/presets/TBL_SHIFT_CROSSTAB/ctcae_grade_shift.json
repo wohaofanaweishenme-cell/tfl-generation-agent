@@ -1,0 +1,63 @@
+{
+  "preset_id": "ctcae_grade_shift",
+  "template_id": "TBL_SHIFT_CROSSTAB",
+  "version": "1.0.0",
+  "name": "CTCAE grade shift",
+  "keywords": [
+    "shift"
+  ],
+  "aliases": [
+    "CTCAE grade",
+    "worst post-baseline",
+    "baseline to worst post-baseline",
+    "grade shift"
+  ],
+  "defaults": {
+    "columns": {
+      "category_columns": [
+        "Grade 0",
+        "Grade 1",
+        "Grade 2",
+        "Grade 3",
+        "Grade 4",
+        "Missing",
+        "Total"
+      ]
+    },
+    "row_blocks": [
+      {
+        "block_id": "shift",
+        "block_type": "crosstab",
+        "label": "CTCAE grade shift",
+        "row_variable": "Baseline CTCAE grade",
+        "column_variable": "Worst post-baseline CTCAE grade",
+        "row_categories": [
+          "Grade 0",
+          "Grade 1",
+          "Grade 2",
+          "Grade 3",
+          "Grade 4",
+          "Missing",
+          "Total"
+        ],
+        "parameters": [
+          "[Parameter 1]"
+        ]
+      }
+    ],
+    "footnotes": [
+      {
+        "id": "FN_GRADE",
+        "marker": null,
+        "text": "Graded according to NCI-CTCAE version {settings:coding.ctcae_version}."
+      }
+    ]
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "ARV471BC201_T_14_3_7_2_1",
+    "CPXPOM001_T_14_3_2_1_4_1",
+    "WTX330X2101_T_14_3_7_1_3",
+    "WTX330X2101_T_14_3_7_1_5"
+  ]
+}

@@ -1,0 +1,379 @@
+{
+  "template_id": "TBL_VARIABLE_SUMMARY",
+  "version": "1.0.0",
+  "output_type": "table",
+  "name": "Variable distribution summary",
+  "structural_signature": {
+    "S1": "table",
+    "S2": "VAR_BLOCKS",
+    "S3": [
+      "GROUPS",
+      "SINGLE",
+      "GROUPS_X_SUBCOL"
+    ],
+    "S4": [
+      "DESC",
+      "DESC_MIXED",
+      "SUBJ_N_PCT",
+      "PK_DESC"
+    ],
+    "S5": [
+      "NONE",
+      "BY_PARAMETER",
+      "BY_GROUP_BLOCK",
+      "BY_PERIOD"
+    ]
+  },
+  "intended_use": "Summarise variables at a single reference point (e.g. baseline, overall treatment period): continuous variables as descriptive-statistic rows and categorical variables as exhaustive, mutually exclusive category rows with n (%), by treatment group.",
+  "not_for": "Summaries repeated by visit (parameter-by-visit template); rows that are non-exclusive criteria or status flags such as disposition, analysis sets, deviations or AE overview (criterion-count template); dictionary-coded terms such as SOC/PT or ATC (coded-term template); endpoints with confidence intervals or between-group estimates.",
+  "keywords": [
+    "demographics",
+    "baseline characteristics",
+    "disease characteristics",
+    "exposure",
+    "compliance",
+    "descriptive summary"
+  ],
+  "aliases": [
+    "demographic and baseline characteristics",
+    "demographic characteristics",
+    "baseline information",
+    "disease staging",
+    "molecular biology",
+    "extent of exposure",
+    "drug exposure",
+    "dose intensity",
+    "study drug exposure and compliance",
+    "pharmacokinetic parameters",
+    "PK parameters",
+    "prior cancer related surgery",
+    "surgery/biopsy",
+    "disease characteristics"
+  ],
+  "match_cues": {
+    "title_terms": [
+      "demograph",
+      "baseline characteristic",
+      "baseline information",
+      "disease characteristic",
+      "disease staging",
+      "exposure",
+      "compliance",
+      "dose intensity",
+      "pharmacokinetic parameter",
+      "prior cancer",
+      "characteristics"
+    ],
+    "negative_terms": [
+      "by visit",
+      "shift",
+      "system organ class",
+      "preferred term",
+      "change from baseline at",
+      "rate",
+      "survival",
+      "kaplan",
+      "disposition",
+      "analysis set",
+      "deviation",
+      "listing"
+    ]
+  },
+  "required_fields": [
+    {
+      "path": "title",
+      "label": "Output title",
+      "allowed_sources": [
+        "content_list"
+      ]
+    },
+    {
+      "path": "population",
+      "label": "Analysis population",
+      "allowed_sources": [
+        "content_list",
+        "study_setting"
+      ],
+      "description": "Never defaulted (conventions 7)."
+    },
+    {
+      "path": "columns.groups",
+      "label": "Treatment groups / cohorts",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    },
+    {
+      "path": "columns.total",
+      "label": "Total column on/off and membership",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    },
+    {
+      "path": "footnotes[FN_DENOM]",
+      "label": "Percentage denominator rule",
+      "allowed_sources": [
+        "study_setting"
+      ],
+      "description": "Column population, non-missing or subset denominator must be confirmed."
+    }
+  ],
+  "permitted_defaults": [
+    {
+      "path": "row_blocks[continuous].statistics",
+      "value": [
+        "n",
+        "mean_sd",
+        "median",
+        "min_max"
+      ],
+      "status_when_used": "resolved",
+      "basis": "House style statistic set; used in 7 of 7 demographic sources (some split Mean/SD or Min/Max, which is a style choice)."
+    },
+    {
+      "path": "row_blocks[categorical].statistics",
+      "value": [
+        "n_pct"
+      ],
+      "status_when_used": "resolved",
+      "basis": "House style n (%)."
+    },
+    {
+      "path": "row_blocks[categorical].missing_row",
+      "value": false,
+      "status_when_used": "needs_review",
+      "basis": "Missing-category display differs across sources (omit / always / if non-zero)."
+    },
+    {
+      "path": "row_blocks (variable list)",
+      "value": "from preset",
+      "status_when_used": "needs_review",
+      "basis": "Topic preset distilled from multi-study sources; variable list must be confirmed against the study CRF."
+    },
+    {
+      "path": "columns.stub_header",
+      "value": "Characteristic",
+      "status_when_used": "resolved",
+      "basis": "House style stub header."
+    }
+  ],
+  "editable_elements": [
+    "title",
+    "population",
+    "columns.groups[].label",
+    "columns.total",
+    "row_blocks",
+    "row_blocks[].categories",
+    "row_blocks[].statistics",
+    "row_blocks[].unit",
+    "footnotes",
+    "programming_notes",
+    "config"
+  ],
+  "config_options": {
+    "column_layout": {
+      "values": [
+        "groups",
+        "single_all_subjects"
+      ],
+      "default": "groups",
+      "description": "Group columns, or one all-subjects column for single-arm summaries.",
+      "setting_path": "groups"
+    },
+    "statistic_label_column": {
+      "values": [
+        false,
+        true
+      ],
+      "default": false,
+      "description": "Show statistic labels in a separate column instead of indented under the variable."
+    },
+    "missing_display": {
+      "values": [
+        "omit",
+        "count",
+        "count_if_nonzero"
+      ],
+      "default": "omit",
+      "description": "How the missing category is displayed for categorical variables."
+    },
+    "repeat_by_period": {
+      "values": [
+        false,
+        true
+      ],
+      "default": false,
+      "description": "Repeat the block set per cycle/period plus overall.",
+      "cues": {
+        "true": [
+          "by cycle",
+          "per cycle",
+          "by period"
+        ]
+      }
+    }
+  },
+  "presets": [
+    "demographics",
+    "exposure_compliance",
+    "pk_parameters"
+  ],
+  "skeleton": {
+    "columns": {
+      "stub_header": "Characteristic"
+    },
+    "footnotes": [
+      {
+        "id": "FN_DENOM",
+        "marker": null,
+        "text": "Percentages are based on {settings:definitions.percentage_denominator}."
+      }
+    ],
+    "programming_notes": [
+      {
+        "id": "PN_STATS",
+        "marker": null,
+        "text": "Display statistics in the order shown; categorical rows in the order listed."
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "source_id": "ARV471BC201_T_14_1_11",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_1_4_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_1_6_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_1_7_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_1_8",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_2_2_1_3_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_2_2_4",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "CPXPOM001_T_14_1_3_1",
+      "study_id": "CPX-POM-001",
+      "fit": "core"
+    },
+    {
+      "source_id": "CPXPOM001_T_14_1_5_1_1",
+      "study_id": "CPX-POM-001",
+      "fit": "core"
+    },
+    {
+      "source_id": "CPXPOM001_T_14_1_5_1_2",
+      "study_id": "CPX-POM-001",
+      "fit": "core"
+    },
+    {
+      "source_id": "CPXPOM001_T_14_1_7_1",
+      "study_id": "CPX-POM-001",
+      "fit": "core"
+    },
+    {
+      "source_id": "CPXPOM001_T_14_3_2_1_3_1",
+      "study_id": "CPX-POM-001",
+      "fit": "core"
+    },
+    {
+      "source_id": "OMO10301_T_14_1_2_1",
+      "study_id": "OMO-103-01",
+      "fit": "config",
+      "config_used": "single all-subjects column; statistic_label_column"
+    },
+    {
+      "source_id": "OMO10301_T_14_2_5",
+      "study_id": "OMO-103-01",
+      "fit": "config",
+      "config_used": "single all-subjects column; groups as row blocks; statistic_label_column"
+    },
+    {
+      "source_id": "PVCNA003_T_14_1_2_1",
+      "study_id": "P-VCNA-003",
+      "fit": "core"
+    },
+    {
+      "source_id": "PVCNA003_T_14_3_10",
+      "study_id": "P-VCNA-003",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_T_14_2_1",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_T_14_2_10",
+      "study_id": "SP11631",
+      "fit": "config",
+      "config_used": "repeat per period"
+    },
+    {
+      "source_id": "SP11631_T_14_2_3",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "WTX330X2101_T_14_1_4_1",
+      "study_id": "WTX-330x2101",
+      "fit": "core"
+    },
+    {
+      "source_id": "WTX330X2101_T_14_1_4_2",
+      "study_id": "WTX-330x2101",
+      "fit": "core"
+    },
+    {
+      "source_id": "WTX330X2101_T_14_1_5_1_1",
+      "study_id": "WTX-330x2101",
+      "fit": "core"
+    },
+    {
+      "source_id": "WTX330X2101_T_14_1_5_1_2",
+      "study_id": "WTX-330x2101",
+      "fit": "core"
+    },
+    {
+      "source_id": "WTX330X2101_T_14_1_9_1",
+      "study_id": "WTX-330x2101",
+      "fit": "core"
+    },
+    {
+      "source_id": "WTX330X2101_T_14_1_9_2",
+      "study_id": "WTX-330x2101",
+      "fit": "core"
+    },
+    {
+      "source_id": "WTX330X2101_T_14_4_2_1",
+      "study_id": "WTX-330x2101",
+      "fit": "config",
+      "config_used": "geometric statistics"
+    }
+  ],
+  "evidence_level": "multi_study",
+  "review_status": "approved"
+}

@@ -1,0 +1,153 @@
+{
+  "preset_id": "death_records",
+  "template_id": "LST_SUBJECT_RECORDS",
+  "version": "1.0.0",
+  "name": "Death records",
+  "keywords": [
+    "deaths"
+  ],
+  "aliases": [
+    "death"
+  ],
+  "defaults": {
+    "listing": {
+      "record_grain": "subject",
+      "fields": [
+        {
+          "id": "Treatment_group",
+          "label": "Treatment group",
+          "kinds": [
+            "group"
+          ]
+        },
+        {
+          "id": "Subject_ID",
+          "label": "Subject ID",
+          "kinds": [
+            "subject_id"
+          ]
+        },
+        {
+          "id": "Start_date__study_day",
+          "label": "Start date (study day)",
+          "kinds": [
+            "date"
+          ]
+        },
+        {
+          "id": "End_date__study_day____ongoing",
+          "label": "End date (study day) / ongoing",
+          "kinds": [
+            "date"
+          ]
+        },
+        {
+          "id": "Date_of_death__study_day",
+          "label": "Date of death (study day)",
+          "kinds": [
+            "date"
+          ]
+        },
+        {
+          "id": "Serious",
+          "label": "Serious",
+          "kinds": [
+            "flag"
+          ]
+        },
+        {
+          "id": "Severity___CTCAE_grade",
+          "label": "Severity / CTCAE grade",
+          "kinds": [
+            "category"
+          ]
+        },
+        {
+          "id": "Primary_cause_of_death",
+          "label": "Primary cause of death",
+          "kinds": [
+            "category"
+          ]
+        },
+        {
+          "id": "Action_taken_with_study_drug",
+          "label": "Action taken with study drug",
+          "kinds": [
+            "category"
+          ]
+        },
+        {
+          "id": "Outcome",
+          "label": "Outcome",
+          "kinds": [
+            "category"
+          ]
+        }
+      ],
+      "sort_keys": [
+        "Treatment group",
+        "Subject ID",
+        "Start date (study day)"
+      ],
+      "group_by": [
+        "Treatment group"
+      ]
+    }
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "PVCNA003_L_16_2_6_9",
+    "PVCNA003_T_14_3_2_1",
+    "WTX330X2101_L_16_2_2_3",
+    "WTX330X2101_L_16_2_7_7"
+  ],
+  "source_frequency": {
+    "studies": [
+      "P-VCNA-003",
+      "WTX-330x2101"
+    ],
+    "field_studies": {
+      "Treatment group": [],
+      "Subject ID": [
+        "P-VCNA-003",
+        "WTX-330x2101"
+      ],
+      "Start date (study day)": [
+        "P-VCNA-003",
+        "WTX-330x2101"
+      ],
+      "End date (study day) / ongoing": [
+        "P-VCNA-003",
+        "WTX-330x2101"
+      ],
+      "Date of death (study day)": [
+        "P-VCNA-003",
+        "WTX-330x2101"
+      ],
+      "Serious": [
+        "P-VCNA-003",
+        "WTX-330x2101"
+      ],
+      "Severity / CTCAE grade": [
+        "P-VCNA-003",
+        "WTX-330x2101"
+      ],
+      "Primary cause of death": [
+        "P-VCNA-003",
+        "WTX-330x2101"
+      ],
+      "Action taken with study drug": [
+        "P-VCNA-003",
+        "WTX-330x2101"
+      ],
+      "Outcome": [
+        "P-VCNA-003",
+        "WTX-330x2101"
+      ]
+    },
+    "grain_counts": {
+      "subject": 2,
+      "subject_event": 2
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "output_id": "14.3.4.6",
+  "output_type": "table",
+  "status": "no_compatible_template",
+  "title": "Shift Table of Biochemistry Parameters",
+  "explanation": "No template of type 'table' matches the title terms; no compatible template in the library.",
+  "candidates": [
+    {
+      "template_id": "TBL_CODED_TERM_HIERARCHY",
+      "score": -4,
+      "matched_terms": [],
+      "negative_terms": [
+        "shift"
+      ],
+      "preset_id": null,
+      "preset_score": 0
+    },
+    {
+      "template_id": "TBL_VARIABLE_SUMMARY",
+      "score": -4,
+      "matched_terms": [],
+      "negative_terms": [
+        "shift"
+      ],
+      "preset_id": null,
+      "preset_score": 0
+    }
+  ]
+}

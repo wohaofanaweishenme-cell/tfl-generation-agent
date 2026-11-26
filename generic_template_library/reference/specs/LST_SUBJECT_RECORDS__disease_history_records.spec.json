@@ -1,0 +1,229 @@
+{
+  "schema_version": "3.0",
+  "output_id": "x.x.x",
+  "output_type": "listing",
+  "template_id": "LST_SUBJECT_RECORDS",
+  "template_version": "1.0.0",
+  "preset_ids": [
+    "disease_history_records"
+  ],
+  "title": {
+    "value": "Disease history and prior procedure records",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "population": {
+    "value": "[Analysis population]",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "columns": {
+    "stub_header": {
+      "value": "",
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "groups": [
+      {
+        "id": "A",
+        "label": {
+          "value": "[Treatment A]",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "B",
+        "label": {
+          "value": "[Treatment B]",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      }
+    ],
+    "total": {
+      "enabled": {
+        "value": true,
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "label": {
+        "value": "Total",
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "member_group_ids": [
+        "A",
+        "B"
+      ]
+    }
+  },
+  "row_blocks": [],
+  "footnotes": [
+    {
+      "id": "FN_STUDYDAY",
+      "marker": null,
+      "text": {
+        "value": "Study day: [study day definition]",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q001",
+        "note": "missing study setting: definitions.study_day_definition"
+      }
+    }
+  ],
+  "programming_notes": [
+    {
+      "id": "PN_SORT",
+      "marker": null,
+      "text": {
+        "value": "Sort by Treatment group, Subject ID, Start date (study day).",
+        "source": "template_default",
+        "status": "resolved"
+      }
+    }
+  ],
+  "figure": null,
+  "listing": {
+    "record_grain": {
+      "value": "subject_event",
+      "source": "template_default",
+      "status": "needs_review"
+    },
+    "fields": [
+      {
+        "id": "Treatment_group",
+        "label": {
+          "value": "Treatment group",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "group"
+        ]
+      },
+      {
+        "id": "Subject_ID",
+        "label": {
+          "value": "Subject ID",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "subject_id"
+        ]
+      },
+      {
+        "id": "System_organ_class",
+        "label": {
+          "value": "System organ class",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "coded_term"
+        ]
+      },
+      {
+        "id": "Preferred_term",
+        "label": {
+          "value": "Preferred term",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "coded_term"
+        ]
+      },
+      {
+        "id": "Start_date__study_day",
+        "label": {
+          "value": "Start date (study day)",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "date"
+        ]
+      },
+      {
+        "id": "Site___location",
+        "label": {
+          "value": "Site / location",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "text"
+        ]
+      }
+    ],
+    "sort_keys": {
+      "value": [
+        "Treatment group",
+        "Subject ID",
+        "Start date (study day)"
+      ],
+      "source": "template_default",
+      "status": "needs_review"
+    },
+    "group_by": {
+      "value": [
+        "Treatment group"
+      ],
+      "source": "template_default",
+      "status": "needs_review"
+    },
+    "repeat_identifiers": {
+      "value": [
+        "Subject ID",
+        "Treatment group"
+      ],
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "max_fields_per_panel": 10
+  },
+  "config": {
+    "group_display": "header_rows"
+  },
+  "page": {
+    "orientation": "landscape",
+    "paper": "letter",
+    "font": "Courier New",
+    "font_size_pt": 9,
+    "include_programming_notes": true
+  },
+  "issues": [
+    {
+      "question_id": "Q001",
+      "element_path": "footnotes[FN_STUDYDAY]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.study_day_definition (needed for: Study day: [study day definition]).",
+      "answer": null
+    }
+  ],
+  "provenance": {
+    "content_list_entry": {
+      "entry_id": "REF_LST_SUBJECT_RECORDS__disease_history_records",
+      "original_tfl_number": "x.x.x",
+      "output_type": "listing",
+      "original_title": "Disease history and prior procedure records",
+      "population": "[Analysis population]"
+    },
+    "template_file_sha256": "618245f1af230e37da0345d121d27343915af1d1f37b44469ae3095c0ada1059",
+    "preset_file_sha256": {
+      "disease_history_records": "5186f26152ee9fdc728ab6b0b13a6e24bed3375521f2ab29e21ad50340b7f616"
+    },
+    "style_guide_version": "1.1.0",
+    "study_settings_version": "REFERENCE@1.0.0",
+    "match": {
+      "selected": "LST_SUBJECT_RECORDS",
+      "candidates": [],
+      "explanation": "Reference shell: template and preset chosen directly (no matching)."
+    },
+    "generated_by": "tools/build_spec.py (rule-based); config: group_display=header_rows (template default)"
+  }
+}

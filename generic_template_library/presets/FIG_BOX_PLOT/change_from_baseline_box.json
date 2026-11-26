@@ -1,0 +1,31 @@
+{
+  "preset_id": "change_from_baseline_box",
+  "template_id": "FIG_BOX_PLOT",
+  "version": "1.0.0",
+  "name": "Percent change from baseline by group",
+  "keywords": [
+    "box plot"
+  ],
+  "aliases": [
+    "percentage change from baseline",
+    "Ki-67",
+    "AQUA",
+    "H-score"
+  ],
+  "defaults": {
+    "figure": {
+      "y_axis": {
+        "label": "[Measure] percentage change from baseline at [time point] (%)"
+      }
+    }
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "ARV471BC201_F_14_2_1_2_1",
+    "ARV471BC201_F_14_2_1_2_2",
+    "ARV471BC201_F_14_2_4_2_1",
+    "ARV471BC201_F_14_2_4_2_2",
+    "ARV471BC201_F_14_2_5_2_1",
+    "ARV471BC201_F_14_2_5_2_2"
+  ]
+}

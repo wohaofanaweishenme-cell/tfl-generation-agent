@@ -1,0 +1,430 @@
+{
+  "template_id": "TBL_PARAMETER_BY_VISIT",
+  "version": "1.0.0",
+  "output_type": "table",
+  "name": "Parameter by visit summary",
+  "structural_signature": {
+    "S1": "table",
+    "S2": "BY_TIMEPOINT",
+    "S3": [
+      "GROUPS",
+      "CATEGORY_COLS"
+    ],
+    "S4": [
+      "DESC",
+      "SUBJ_N_PCT"
+    ],
+    "S5": [
+      "BY_PARAM_VISIT",
+      "BY_GROUP_BLOCK"
+    ]
+  },
+  "intended_use": "For each parameter, a block per visit/timepoint: continuous descriptive statistics of observed value (and optionally change from baseline), or categorical n (%) of assessment categories (including threshold categories at baseline / worst post-baseline), by group.",
+  "not_for": "Statistics shown as columns (timepoint-statistics template); baseline x post-baseline cross-classification (shift template); single reference-point summaries (variable summary template).",
+  "keywords": [
+    "laboratory",
+    "vital signs",
+    "ecg",
+    "physical examination",
+    "performance status",
+    "quality of life",
+    "by visit"
+  ],
+  "aliases": [
+    "hematology",
+    "biochemistry",
+    "chemistry",
+    "urinalysis",
+    "vital signs",
+    "12-lead ECG",
+    "QTc",
+    "physical examination",
+    "ECOG",
+    "questionnaire",
+    "QLQ-C30",
+    "tumor marker",
+    "pharmacodynamic",
+    "change from baseline",
+    "by visit",
+    "by timepoint"
+  ],
+  "match_cues": {
+    "title_terms": [
+      "by visit",
+      "by time",
+      "hematology",
+      "biochemistry",
+      "laboratory",
+      "vital sign",
+      "ecg",
+      "temperature",
+      "physical exam",
+      "qlq",
+      "questionnaire",
+      "quality of life",
+      "tumor marker",
+      "pharmacodynamic",
+      "ecog",
+      "urinalysis",
+      "ultrasound",
+      "qtc",
+      "change from baseline",
+      "autoimmune",
+      "tumor change",
+      "lesion change"
+    ],
+    "negative_terms": [
+      "shift",
+      "system organ class",
+      "listing",
+      "plot",
+      "concentration",
+      "pharmacokinetic",
+      "at c1d15",
+      "at surgery",
+      "covariate"
+    ]
+  },
+  "required_fields": [
+    {
+      "path": "title",
+      "label": "Output title",
+      "allowed_sources": [
+        "content_list"
+      ]
+    },
+    {
+      "path": "population",
+      "label": "Analysis population",
+      "allowed_sources": [
+        "content_list",
+        "study_setting"
+      ]
+    },
+    {
+      "path": "columns.groups",
+      "label": "Treatment groups / cohorts",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    },
+    {
+      "path": "columns.total",
+      "label": "Total column on/off and membership",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    },
+    {
+      "path": "row_blocks[parameter_visit].visits",
+      "label": "Visits / timepoints shown",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    },
+    {
+      "path": "row_blocks[parameter_visit].parameters",
+      "label": "Parameters and units",
+      "allowed_sources": [
+        "content_list",
+        "study_setting"
+      ]
+    },
+    {
+      "path": "footnotes[FN_BASE]",
+      "label": "Baseline definition",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    }
+  ],
+  "permitted_defaults": [
+    {
+      "path": "columns.stub_header",
+      "value": "from preset",
+      "status_when_used": "resolved",
+      "basis": "House style stub header."
+    },
+    {
+      "path": "row_blocks[parameter_visit].statistics",
+      "value": [
+        "n",
+        "mean_sd",
+        "median",
+        "min_max"
+      ],
+      "status_when_used": "resolved",
+      "basis": "House style statistic set."
+    },
+    {
+      "path": "row_blocks[parameter_visit].categories",
+      "value": "from preset",
+      "status_when_used": "needs_review",
+      "basis": "Assessment categories distilled from sources."
+    }
+  ],
+  "editable_elements": [
+    "title",
+    "population",
+    "columns.groups[].label",
+    "columns.total",
+    "row_blocks[].parameters",
+    "row_blocks[].visits",
+    "row_blocks[].categories",
+    "row_blocks[].change_from_baseline",
+    "footnotes",
+    "programming_notes",
+    "config"
+  ],
+  "config_options": {
+    "column_layout": {
+      "values": [
+        "groups",
+        "single_all_subjects"
+      ],
+      "default": "groups",
+      "description": "Group columns, or one all-subjects column for single-arm summaries."
+    },
+    "change_from_baseline": {
+      "values": [
+        true,
+        false
+      ],
+      "default": true,
+      "description": "Add change-from-baseline statistics under each post-baseline visit (continuous cells only)."
+    }
+  },
+  "presets": [
+    "laboratory_by_visit",
+    "vital_signs_by_visit",
+    "ecg_by_visit",
+    "clinical_evaluation_by_visit",
+    "ecog_by_visit",
+    "qtc_categories",
+    "tumor_size_change",
+    "questionnaire_scores"
+  ],
+  "skeleton": {
+    "columns": {
+      "stub_header": "Parameter\n  Visit\n    Statistic"
+    },
+    "footnotes": [
+      {
+        "id": "FN_BASE",
+        "marker": null,
+        "text": "Baseline: {settings:definitions.baseline_definition}"
+      }
+    ],
+    "programming_notes": [
+      {
+        "id": "PN_REPEAT",
+        "marker": null,
+        "text": "Repeat the block for each parameter and each scheduled visit; unscheduled visits are not displayed unless specified."
+      }
+    ]
+  },
+  "evidence": [
+    {
+      "source_id": "ARV471BC201_T_14_2_3_1_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_2_3_1_2",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_2_3_2_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_2_3_2_2",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_2_3_3_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_2_3_3_2",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_3_7_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_3_8_1",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "ARV471BC201_T_14_3_8_2",
+      "study_id": "ARV-471-BC-201",
+      "fit": "core"
+    },
+    {
+      "source_id": "CPXPOM001_T_14_2_2_1",
+      "study_id": "CPX-POM-001",
+      "fit": "core"
+    },
+    {
+      "source_id": "CPXPOM001_T_14_3_2_1_1_1",
+      "study_id": "CPX-POM-001",
+      "fit": "core"
+    },
+    {
+      "source_id": "CPXPOM001_T_14_3_2_5_1",
+      "study_id": "CPX-POM-001",
+      "fit": "core"
+    },
+    {
+      "source_id": "CPXPOM001_T_14_3_3_2_1",
+      "study_id": "CPX-POM-001",
+      "fit": "core"
+    },
+    {
+      "source_id": "CPXPOM001_T_14_3_4_2_1",
+      "study_id": "CPX-POM-001",
+      "fit": "core"
+    },
+    {
+      "source_id": "OMO10301_T_14_2_6",
+      "study_id": "OMO-103-01",
+      "fit": "core"
+    },
+    {
+      "source_id": "OMO10301_T_14_3_2_5",
+      "study_id": "OMO-103-01",
+      "fit": "core"
+    },
+    {
+      "source_id": "OMO10301_T_14_3_3_1",
+      "study_id": "OMO-103-01",
+      "fit": "core",
+      "note": "source shows only visit headers and category rows; cell content partly inferred"
+    },
+    {
+      "source_id": "OMO10301_T_14_3_4_1",
+      "study_id": "OMO-103-01",
+      "fit": "core",
+      "note": "source shows only visit headers and category rows; cell content partly inferred"
+    },
+    {
+      "source_id": "OMO10301_T_14_3_5_1",
+      "study_id": "OMO-103-01",
+      "fit": "core"
+    },
+    {
+      "source_id": "OMO10301_T_14_3_6_1",
+      "study_id": "OMO-103-01",
+      "fit": "core",
+      "note": "source shows only visit headers and category rows; cell content partly inferred"
+    },
+    {
+      "source_id": "PVCNA003_T_14_2_2_25",
+      "study_id": "P-VCNA-003",
+      "fit": "core"
+    },
+    {
+      "source_id": "PVCNA003_T_14_2_3_1",
+      "study_id": "P-VCNA-003",
+      "fit": "core"
+    },
+    {
+      "source_id": "PVCNA003_T_14_3_4_1",
+      "study_id": "P-VCNA-003",
+      "fit": "core"
+    },
+    {
+      "source_id": "PVCNA003_T_14_3_8",
+      "study_id": "P-VCNA-003",
+      "fit": "core"
+    },
+    {
+      "source_id": "PVCNA003_T_14_5_1",
+      "study_id": "P-VCNA-003",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_T_14_4_1",
+      "study_id": "SP11631",
+      "fit": "partial",
+      "config_used": "categories as columns; groups as row blocks",
+      "note": "assay x negative/positive result columns with group and visit row blocks; fits only with categories-as-columns plus groups-as-row-blocks"
+    },
+    {
+      "source_id": "SP11631_T_14_5_2_1_1",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_T_14_5_2_1_2",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_T_14_5_2_3_3",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_T_14_5_2_3_4",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_T_14_5_3_1",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_T_14_5_3_2",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_T_14_5_3_3_1",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_T_14_5_4_1",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_T_14_5_4_2",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_T_14_5_4_4",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "SP11631_T_14_5_5_1",
+      "study_id": "SP11631",
+      "fit": "core"
+    },
+    {
+      "source_id": "WTX330X2101_T_14_3_7_1_1",
+      "study_id": "WTX-330x2101",
+      "fit": "core"
+    },
+    {
+      "source_id": "WTX330X2101_T_14_3_9_3",
+      "study_id": "WTX-330x2101",
+      "fit": "core"
+    }
+  ],
+  "evidence_level": "multi_study",
+  "review_status": "approved"
+}

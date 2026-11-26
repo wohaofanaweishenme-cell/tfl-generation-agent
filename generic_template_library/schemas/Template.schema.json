@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:tfl:generic:template:1.0",
+  "title": "Generic TFL Template v1.0 (conventions v1.0 section 5)",
+  "type": "object",
+  "required": ["template_id", "version", "output_type", "name", "structural_signature", "intended_use", "not_for", "keywords", "aliases", "match_cues", "required_fields", "permitted_defaults", "editable_elements", "config_options", "presets", "skeleton", "evidence", "evidence_level", "review_status"],
+  "additionalProperties": false,
+  "properties": {
+    "template_id": {"type": "string", "pattern": "^(TBL|LST|FIG)_[A-Z0-9_]+$"},
+    "version": {"type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$"},
+    "output_type": {"enum": ["table", "listing", "figure"]},
+    "name": {"type": "string"},
+    "structural_signature": {
+      "type": "object",
+      "required": ["S1", "S2", "S3", "S4"],
+      "additionalProperties": false,
+      "properties": {
+        "S1": {"type": "string"}, "S2": {"type": "string"},
+        "S3": {"type": "array", "items": {"type": "string"}},
+        "S4": {"type": "array", "items": {"type": "string"}},
+        "S5": {"type": "array", "items": {"type": "string"}},
+        "S6": {"type": "string"}
+      }
+    },
+    "intended_use": {"type": "string", "minLength": 10},
+    "not_for": {"type": "string"},
+    "keywords": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "aliases": {"type": "array", "items": {"type": "string"}},
+    "match_cues": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "title_terms": {"type": "array", "items": {"type": "string"}},
+        "negative_terms": {"type": "array", "items": {"type": "string"}, "description": "Terms that argue against this template (e.g. 'by visit' for a single-timepoint summary)."},
+        "population_hint": {"type": "string"}
+      }
+    },
+    "required_fields": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "label", "allowed_sources"],
+        "additionalProperties": false,
+        "properties": {
+          "path": {"type": "string", "description": "Dotted path into the Shell Spec; [] means every element."},
+          "label": {"type": "string"},
+          "allowed_sources": {"type": "array", "items": {"enum": ["content_list", "study_setting"]}, "minItems": 1},
+          "description": {"type": "string"}
+        }
+      }
+    },
+    "permitted_defaults": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "value", "status_when_used", "basis"],
+        "additionalProperties": false,
+        "properties": {
+          "path": {"type": "string"},
+          "value": {},
+          "status_when_used": {"enum": ["resolved", "needs_review"]},
+          "basis": {"type": "string", "description": "Why this default is allowed (style guide rule or majority source convention)."}
+        }
+      }
+    },
+    "editable_elements": {"type": "array", "items": {"type": "string"}},
+    "config_options": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["values", "default", "description"],
+        "additionalProperties": false,
+        "properties": {
+          "values": {"type": "array", "minItems": 1},
+          "default": {},
+          "description": {"type": "string"},
+          "cues": {"type": "object", "description": "value -> content-list title terms that select it; otherwise default (or study setting) applies.", "additionalProperties": {"type": "array", "items": {"type": "string"}}},
+          "setting_path": {"type": "string", "description": "Study-settings path that decides this option when present."}
+        }
+      }
+    },
+    "presets": {"type": "array", "items": {"type": "string"}},
+    "skeleton": {"type": "object", "description": "Partial Shell Spec with placeholders; completed by the builder."},
+    "figure_plot": {
+      "type": "object",
+      "required": ["plot_type", "plotter", "data_contract", "implementation_status"],
+      "additionalProperties": false,
+      "properties": {
+        "plot_type": {"type": "string"},
+        "plotter": {"type": "string"},
+        "data_contract": {
+          "type": "object",
+          "required": ["required_columns"],
+          "properties": {
+            "required_columns": {"type": "object", "additionalProperties": {"type": "string"}},
+            "optional_columns": {"type": "object", "additionalProperties": {"type": "string"}}
+          }
+        },
+        "implementation_status": {"enum": ["shell_only", "data_ready"]}
+      }
+    },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["source_id", "study_id", "fit"],
+        "additionalProperties": false,
+        "properties": {
+          "source_id": {"type": "string"},
+          "study_id": {"type": "string"},
+          "fit": {"enum": ["core", "config", "config_extension", "partial"]},
+          "config_used": {"type": "string"},
+          "note": {"type": "string"}
+        }
+      }
+    },
+    "evidence_level": {"enum": ["multi_study", "single_source"]},
+    "review_status": {"enum": ["draft", "pilot", "approved"]}
+  },
+  "allOf": [
+    {"if": {"properties": {"output_type": {"const": "figure"}}}, "then": {"required": ["figure_plot"]}}
+  ]
+}

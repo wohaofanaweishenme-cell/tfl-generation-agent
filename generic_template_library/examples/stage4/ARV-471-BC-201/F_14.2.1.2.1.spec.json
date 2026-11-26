@@ -1,0 +1,220 @@
+{
+  "schema_version": "3.0",
+  "output_id": "14.2.1.2.1",
+  "output_type": "figure",
+  "template_id": "FIG_BOX_PLOT",
+  "template_version": "1.0.0",
+  "preset_ids": [
+    "change_from_baseline_box"
+  ],
+  "title": {
+    "value": "Box Plot for Ki-67 Percentage Change from Baseline at Cycle 1 Day 15",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "population": {
+    "value": "Ki-67 Evaluable Set",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "columns": {
+    "stub_header": {
+      "value": "",
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "groups": [
+      {
+        "id": "ARV",
+        "label": {
+          "value": "ARV-471 200 mg",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "ANA",
+        "label": {
+          "value": "Anastrozole 1 mg",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      }
+    ],
+    "total": {
+      "enabled": {
+        "value": true,
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "label": {
+        "value": "Total",
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "member_group_ids": [
+        "ARV",
+        "ANA"
+      ]
+    }
+  },
+  "row_blocks": [],
+  "footnotes": [
+    {
+      "id": "FN_BOX",
+      "marker": null,
+      "text": {
+        "value": "Box: 25th to 75th percentile; line: median; marker: mean; whiskers: [whisker rule].",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q010",
+        "note": "missing study setting: definitions.whisker_rule"
+      }
+    }
+  ],
+  "programming_notes": [],
+  "figure": {
+    "plot_type": "BOX",
+    "x_axis": {
+      "label": {
+        "value": "Treatment group",
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    },
+    "y_axis": {
+      "label": {
+        "value": "[Measure] percentage change from baseline at [time point] (%)",
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    },
+    "legend": {
+      "value": [
+        "ARV-471 200 mg (N=xx)",
+        "Anastrozole 1 mg (N=xx)"
+      ],
+      "source": "study_setting",
+      "status": "resolved"
+    },
+    "panels": {
+      "value": [
+        "single panel"
+      ],
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "reference_lines": {
+      "value": [
+        "y = 0"
+      ],
+      "source": "template_default",
+      "status": "needs_review"
+    }
+  },
+  "listing": null,
+  "config": {
+    "overlay_points": true
+  },
+  "page": {
+    "orientation": "landscape",
+    "paper": "letter",
+    "font": "Courier New",
+    "font_size_pt": 9,
+    "include_programming_notes": true
+  },
+  "issues": [
+    {
+      "question_id": "Q010",
+      "element_path": "footnotes[FN_BOX]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.whisker_rule (needed for: Box: 25th to 75th percentile; line: median; marker: mean; whiskers: [whisker rule].).",
+      "answer": null
+    }
+  ],
+  "provenance": {
+    "content_list_entry": {
+      "entry_id": "CL093",
+      "document_id": "SAP_001_05",
+      "original_tfl_number": "14.2.1.2.1",
+      "output_type": "figure",
+      "original_title": "Box Plot for Ki-67 Percentage Change from Baseline at Cycle 1 Day 15",
+      "population": "Ki-67 Evaluable Set"
+    },
+    "template_file_sha256": "3f8e60d5e8889bfaef93e3d1e93a5aa7feff7626ce9e817fb518b9154f1f933c",
+    "preset_file_sha256": {
+      "change_from_baseline_box": "68651c2b89482e37027bdfa5d801b177514e5374b3fdb06f643931e03b489460"
+    },
+    "style_guide_version": "1.1.0",
+    "study_settings_version": "ARV-471-BC-201@example-0.3",
+    "match": {
+      "selected": "FIG_BOX_PLOT",
+      "candidates": [
+        {
+          "template_id": "FIG_BOX_PLOT",
+          "score": 13,
+          "matched_terms": [
+            "box plot"
+          ],
+          "negative_terms": [],
+          "preset_id": "change_from_baseline_box",
+          "preset_score": 6
+        },
+        {
+          "template_id": "FIG_INDIVIDUAL_PROFILE",
+          "score": -2,
+          "matched_terms": [],
+          "negative_terms": [
+            "box"
+          ],
+          "preset_id": "individual_values_by_visit",
+          "preset_score": 2
+        },
+        {
+          "template_id": "FIG_KAPLAN_MEIER",
+          "score": -4,
+          "matched_terms": [],
+          "negative_terms": [
+            "box"
+          ],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "FIG_SUMMARY_OVER_TIME",
+          "score": -4,
+          "matched_terms": [],
+          "negative_terms": [
+            "box"
+          ],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "FIG_TORNADO",
+          "score": -4,
+          "matched_terms": [],
+          "negative_terms": [
+            "box"
+          ],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "FIG_WATERFALL",
+          "score": -4,
+          "matched_terms": [],
+          "negative_terms": [
+            "box"
+          ],
+          "preset_id": null,
+          "preset_score": 0
+        }
+      ],
+      "explanation": "Selected FIG_BOX_PLOT (score 13): title terms box plot; preset change_from_baseline_box."
+    },
+    "generated_by": "tools/build_spec.py (rule-based); config: overlay_points=True (template default)"
+  }
+}

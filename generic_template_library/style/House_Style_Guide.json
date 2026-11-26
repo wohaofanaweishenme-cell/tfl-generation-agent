@@ -1,0 +1,221 @@
+{
+  "style_guide_id": "HOUSE_STYLE",
+  "version": "1.1.0",
+  "basis": "Conventions v1.0 section 6 and decisions D3-D8, D11 (confirmed 2026-11-24).",
+  "numbering": {
+    "rule": "Keep the content-list output number and order verbatim; never renumber.",
+    "title_line": "{output_type_label} {output_id}"
+  },
+  "placeholders": {
+    "integer": "xx",
+    "one_decimal": "xx.x",
+    "two_decimals": "xx.xx",
+    "count_percent": "xx (xx.x)",
+    "count_only_when_zero": "0",
+    "ci": "(xx.x, xx.x)",
+    "estimate_ci": "xx.x (xx.x, xx.x)",
+    "p_value": "x.xxx",
+    "date": "DDMMMYYYY",
+    "text": "[{description}]",
+    "group_n": "(N=xx)",
+    "unresolved": "<<UNRESOLVED: {summary} | {question_id}>>"
+  },
+  "statistic_formats": {
+    "n": {
+      "label": "n",
+      "placeholder": "xx"
+    },
+    "n_missing": {
+      "label": "n (missing)",
+      "placeholder": "xx (xx)"
+    },
+    "mean_sd": {
+      "label": "Mean (SD)",
+      "placeholder": "xx.x (xx.xx)"
+    },
+    "mean": {
+      "label": "Mean",
+      "placeholder": "xx.x"
+    },
+    "sd": {
+      "label": "SD",
+      "placeholder": "xx.xx"
+    },
+    "se": {
+      "label": "SE",
+      "placeholder": "xx.xx"
+    },
+    "median": {
+      "label": "Median",
+      "placeholder": "xx.x"
+    },
+    "q1_q3": {
+      "label": "Q1, Q3",
+      "placeholder": "xx.x, xx.x"
+    },
+    "min_max": {
+      "label": "Min, Max",
+      "placeholder": "xx, xx"
+    },
+    "geo_mean": {
+      "label": "Geometric Mean",
+      "placeholder": "xx.x"
+    },
+    "geo_cv": {
+      "label": "Geometric CV%",
+      "placeholder": "xx.x"
+    },
+    "n_pct": {
+      "label": "n (%)",
+      "placeholder": "xx (xx.x)"
+    },
+    "header": {
+      "label": "",
+      "placeholder": ""
+    },
+    "pct": {
+      "label": "%",
+      "placeholder": "xx.x"
+    },
+    "ci": {
+      "label": "95% CI",
+      "placeholder": "(xx.x, xx.x)"
+    },
+    "rate_ci": {
+      "label": "Rate (95% CI)",
+      "placeholder": "xx.x (xx.x, xx.x)"
+    },
+    "estimate_ci": {
+      "label": "Estimate (95% CI)",
+      "placeholder": "xx.x (xx.x, xx.x)"
+    },
+    "median_ci": {
+      "label": "Median (95% CI)",
+      "placeholder": "xx.x (xx.x, xx.x)"
+    },
+    "p_value": {
+      "label": "p-value",
+      "placeholder": "x.xxx"
+    },
+    "lsm_se": {
+      "label": "LS Mean (SE)",
+      "placeholder": "xx.x (xx.xx)"
+    },
+    "events": {
+      "label": "Events",
+      "placeholder": "xx"
+    },
+    "n_events": {
+      "label": "n (%) / E",
+      "placeholder": "xx (xx.x) / xx"
+    }
+  },
+  "decimals": {
+    "rule": "Raw-data precision d: mean and median d+1; SD and SE d+2; min and max d; percentages 1 decimal; p-values 3 decimals with '<0.001'.",
+    "placeholder_rendering": "Placeholders show the default widths above; actual d is a study setting per variable."
+  },
+  "percentages": {
+    "format": "n (xx.x)",
+    "zero_count": "show 0 without a percentage"
+  },
+  "ci": {
+    "format": "(xx.x, xx.x)",
+    "level_location": "column header or footnote"
+  },
+  "group_header": {
+    "format": "{label}\n(N=xx)"
+  },
+  "abbreviations": {
+    "rule": "One library-wide list; expand at first use in the footnotes of each output.",
+    "list": {
+      "AE": "adverse event",
+      "CI": "confidence interval",
+      "CTCAE": "Common Terminology Criteria for Adverse Events",
+      "KM": "Kaplan-Meier",
+      "MedDRA": "Medical Dictionary for Regulatory Activities",
+      "N": "number of subjects in the analysis population",
+      "n": "number of subjects with data or in the category",
+      "NE": "not estimable",
+      "PT": "Preferred Term",
+      "SD": "standard deviation",
+      "SE": "standard error",
+      "SOC": "System Organ Class",
+      "TEAE": "treatment-emergent adverse event",
+      "ATC": "Anatomical Therapeutic Chemical",
+      "BMI": "body mass index"
+    }
+  },
+  "footnotes": {
+    "order": [
+      "marker footnotes in order of first appearance (a, b, c ...)",
+      "general notes: population definition, denominator, coding dictionary, abbreviations",
+      "program path and run date line"
+    ],
+    "markers": "lowercase letters in square brackets: [a], [b], [c]",
+    "abbreviation_note_prefix": "Abbreviations: "
+  },
+  "programming_notes": {
+    "prefix": "Programming Note: ",
+    "style": {
+      "italic": true,
+      "color_rgb": "808080"
+    },
+    "placement": "after footnotes",
+    "default_included": true,
+    "content_rule": "Display rules only (repeat, sort, paging, same-layout references); never statistical algorithms."
+  },
+  "unresolved_display": {
+    "format": "<<UNRESOLVED: {summary} | {question_id}>>",
+    "highlight": "yellow"
+  },
+  "page": {
+    "orientation": "landscape",
+    "paper": "letter",
+    "margins_in": {
+      "top": 1.0,
+      "bottom": 1.0,
+      "left": 1.0,
+      "right": 1.0
+    },
+    "font": "Courier New",
+    "font_size_pt": 9,
+    "header_left": "[Sponsor / Study ID]",
+    "header_right": "Page x of y",
+    "footer_left": "Program: [program path]",
+    "footer_right": "Run date: DDMMMYYYY"
+  },
+  "table_layout": {
+    "max_groups_per_panel": 6,
+    "indent_per_level_spaces": 2,
+    "rule_lines": "top and bottom of column header, bottom of table; no vertical lines"
+  },
+  "figure_layout": {
+    "width_in": 9.0,
+    "height_in": 5.2,
+    "frame_note": "Empty labelled plotting frame; no curves, bars or data points in a shell.",
+    "risk_table_label": "Number at risk"
+  },
+  "bookmarks": {
+    "per_output": 1,
+    "name_rule": "OUT_ + output_id with non-alphanumerics replaced by '_' (max 40 chars)"
+  },
+  "listing_layout": {
+    "sample_rows": 3,
+    "placeholders": {
+      "subject_id": "xxxxxx",
+      "group": "[Group]",
+      "text": "[xxxxxxxx]",
+      "coded_term": "[Term]",
+      "date": "DDMMMYYYY",
+      "datetime": "DDMMMYYYY:HH:MM",
+      "number": "xx.x",
+      "category": "[Category]",
+      "flag": "Y/N",
+      "visit": "[Visit]",
+      "parameter": "[Parameter]",
+      "unit": "[unit]"
+    },
+    "max_fields_per_panel": 10,
+    "repeat_identifiers": "subject identifier and group on every panel"
+  }
+}

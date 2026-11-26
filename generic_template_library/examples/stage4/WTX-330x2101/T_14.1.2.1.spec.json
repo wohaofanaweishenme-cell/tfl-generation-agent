@@ -1,0 +1,341 @@
+{
+  "schema_version": "3.0",
+  "output_id": "14.1.2.1",
+  "output_type": "table",
+  "template_id": "TBL_CRITERION_COUNTS",
+  "template_version": "1.0.0",
+  "preset_ids": [
+    "disposition"
+  ],
+  "title": {
+    "value": "Summary of Subject Disposition - Dose Escalation",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "population": {
+    "value": "Safety Analysis Set",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "columns": {
+    "stub_header": {
+      "value": "Category",
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "groups": [
+      {
+        "id": "D1",
+        "label": {
+          "value": "WTX-330 0.016 mg/kg",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "D2",
+        "label": {
+          "value": "WTX-330 0.032 mg/kg",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "D3",
+        "label": {
+          "value": "WTX-330 0.056 mg/kg",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "D4",
+        "label": {
+          "value": "WTX-330 0.084 mg/kg",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      }
+    ],
+    "total": {
+      "enabled": {
+        "value": true,
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "label": {
+        "value": "Total",
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "member_group_ids": [
+        "D1",
+        "D2",
+        "D3",
+        "D4"
+      ]
+    }
+  },
+  "row_blocks": [
+    {
+      "block_id": "disp",
+      "block_type": "criterion",
+      "label": {
+        "value": "Disposition",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "items": {
+        "value": [
+          {
+            "label": "Screened",
+            "indent": 0,
+            "kind": "n"
+          },
+          {
+            "label": "Screen failure",
+            "indent": 0,
+            "kind": "n"
+          },
+          {
+            "label": "Randomized / enrolled",
+            "indent": 0,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Treated",
+            "indent": 0,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Completed treatment",
+            "indent": 0,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Discontinued treatment",
+            "indent": 0,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Primary reason for treatment discontinuation",
+            "indent": 1,
+            "kind": "header"
+          },
+          {
+            "label": "Adverse event",
+            "indent": 2,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Progressive disease",
+            "indent": 2,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Withdrawal by subject",
+            "indent": 2,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Physician decision",
+            "indent": 2,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Death",
+            "indent": 2,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Lost to follow-up",
+            "indent": 2,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Other",
+            "indent": 2,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Completed study",
+            "indent": 0,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Discontinued study",
+            "indent": 0,
+            "kind": "n_pct"
+          },
+          {
+            "label": "Primary reason for study discontinuation",
+            "indent": 1,
+            "kind": "header"
+          },
+          {
+            "label": "[Reason 1]",
+            "indent": 2,
+            "kind": "n_pct"
+          },
+          {
+            "label": "[Reason 2]",
+            "indent": 2,
+            "kind": "n_pct"
+          }
+        ],
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    }
+  ],
+  "footnotes": [
+    {
+      "id": "FN_DENOM",
+      "marker": null,
+      "text": {
+        "value": "Percentages are based on [percentage denominator].",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q001",
+        "note": "missing study setting: definitions.percentage_denominator"
+      }
+    }
+  ],
+  "programming_notes": [
+    {
+      "id": "PN_ROWS",
+      "marker": null,
+      "text": {
+        "value": "Display all listed categories even when the count is zero; indented rows are sub-categories of the row above.",
+        "source": "template_default",
+        "status": "resolved"
+      }
+    }
+  ],
+  "figure": null,
+  "listing": null,
+  "config": {
+    "column_layout": "groups",
+    "event_counts": false
+  },
+  "page": {
+    "orientation": "landscape",
+    "paper": "letter",
+    "font": "Courier New",
+    "font_size_pt": 9,
+    "include_programming_notes": true
+  },
+  "issues": [
+    {
+      "question_id": "Q001",
+      "element_path": "footnotes[FN_DENOM]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.percentage_denominator (needed for: Percentages are based on [percentage denominator].).",
+      "answer": null
+    }
+  ],
+  "provenance": {
+    "content_list_entry": {
+      "entry_id": "CL004",
+      "document_id": "SAP_001_98",
+      "original_tfl_number": "14.1.2.1",
+      "output_type": "table",
+      "original_title": "Summary of Subject Disposition - Dose Escalation",
+      "population": "Safety Analysis Set"
+    },
+    "template_file_sha256": "c10c4031b1aa915e97dd2e341392695fd58d875f26560cae351e6c0fe0299b73",
+    "preset_file_sha256": {
+      "disposition": "059901f6ec9ae93886c085bb7a42ae8eb6f703fcd024baf3bc3c4b6757ed2b99"
+    },
+    "style_guide_version": "1.1.0",
+    "study_settings_version": "WTX-330x2101@example-0.3+answers(2)",
+    "match": {
+      "selected": "TBL_CRITERION_COUNTS",
+      "candidates": [
+        {
+          "template_id": "TBL_CRITERION_COUNTS",
+          "score": 11,
+          "matched_terms": [
+            "disposition",
+            "subject disposition"
+          ],
+          "negative_terms": [],
+          "preset_id": "disposition",
+          "preset_score": 4
+        },
+        {
+          "template_id": "TBL_CODED_TERM_HIERARCHY",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_CONTINUOUS_COMPARISON",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_PARAMETER_BY_VISIT",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_RESPONSE_RATE",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_SHIFT_CROSSTAB",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_TIMEPOINT_STATISTICS_COLUMNS",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_TIME_TO_EVENT",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_VARIABLE_SUMMARY",
+          "score": -4,
+          "matched_terms": [],
+          "negative_terms": [
+            "disposition"
+          ],
+          "preset_id": null,
+          "preset_score": 0
+        }
+      ],
+      "explanation": "Selected TBL_CRITERION_COUNTS (score 11): title terms disposition, subject disposition; preset disposition."
+    },
+    "generated_by": "tools/build_spec.py (rule-based); config: column_layout=groups (template default); event_counts=False (template default); reviewer answers applied: coding.meddra_version, definitions.teae_definition"
+  }
+}

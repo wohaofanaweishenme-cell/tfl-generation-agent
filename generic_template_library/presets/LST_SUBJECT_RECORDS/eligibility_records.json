@@ -1,0 +1,114 @@
+{
+  "preset_id": "eligibility_records",
+  "template_id": "LST_SUBJECT_RECORDS",
+  "version": "1.0.0",
+  "name": "Eligibility failure records",
+  "keywords": [
+    "eligibility"
+  ],
+  "aliases": [
+    "inclusion",
+    "exclusion",
+    "criteria failures"
+  ],
+  "defaults": {
+    "listing": {
+      "record_grain": "subject_event",
+      "fields": [
+        {
+          "id": "Treatment_group",
+          "label": "Treatment group",
+          "kinds": [
+            "group"
+          ]
+        },
+        {
+          "id": "Subject_ID",
+          "label": "Subject ID",
+          "kinds": [
+            "subject_id"
+          ]
+        },
+        {
+          "id": "Visit",
+          "label": "Visit",
+          "kinds": [
+            "visit"
+          ]
+        },
+        {
+          "id": "Inclusion___exclusion",
+          "label": "Inclusion / exclusion",
+          "kinds": [
+            "category"
+          ]
+        },
+        {
+          "id": "Criterion",
+          "label": "Criterion",
+          "kinds": [
+            "text"
+          ]
+        },
+        {
+          "id": "Result",
+          "label": "Result",
+          "kinds": [
+            "number"
+          ]
+        }
+      ],
+      "sort_keys": [
+        "Treatment group",
+        "Subject ID",
+        "Visit"
+      ],
+      "group_by": [
+        "Treatment group"
+      ]
+    }
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "CPXPOM001_L_16_2_1_1_2_1",
+    "OMO10301_L_16_2_4_3",
+    "PVCNA003_L_16_2_4_6"
+  ],
+  "source_frequency": {
+    "studies": [
+      "CPX-POM-001",
+      "OMO-103-01",
+      "P-VCNA-003"
+    ],
+    "field_studies": {
+      "Treatment group": [
+        "CPX-POM-001"
+      ],
+      "Subject ID": [
+        "CPX-POM-001",
+        "OMO-103-01",
+        "P-VCNA-003"
+      ],
+      "Visit": [
+        "OMO-103-01",
+        "P-VCNA-003"
+      ],
+      "Inclusion / exclusion": [
+        "CPX-POM-001",
+        "OMO-103-01",
+        "P-VCNA-003"
+      ],
+      "Criterion": [
+        "OMO-103-01",
+        "P-VCNA-003"
+      ],
+      "Result": [
+        "OMO-103-01",
+        "P-VCNA-003"
+      ]
+    },
+    "grain_counts": {
+      "subject_event": 3
+    }
+  }
+}

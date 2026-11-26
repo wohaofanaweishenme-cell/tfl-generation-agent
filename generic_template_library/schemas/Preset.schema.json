@@ -1,0 +1,105 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:tfl:generic:preset:1.0",
+  "title": "Topic preset for a generic template",
+  "description": "Topic content defaults (rows, footnote wording, axis labels). A preset never changes structure. Every value it supplies enters the Shell Spec with source=template_default and the status given here.",
+  "type": "object",
+  "required": [
+    "preset_id",
+    "template_id",
+    "version",
+    "name",
+    "keywords",
+    "aliases",
+    "defaults",
+    "evidence"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "preset_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9_]*$"
+    },
+    "template_id": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$"
+    },
+    "name": {
+      "type": "string"
+    },
+    "keywords": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "defaults": {
+      "type": "object",
+      "description": "Partial Shell Spec content. Allowed keys: stub_header, columns, row_blocks, footnotes, programming_notes, figure, listing.",
+      "additionalProperties": false,
+      "properties": {
+        "stub_header": {
+          "type": "string"
+        },
+        "row_blocks": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "footnotes": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "programming_notes": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "figure": {
+          "type": "object"
+        },
+        "columns": {
+          "type": "object",
+          "description": "Column defaults: statistic_columns, comparison_columns, category_columns, group_subcolumns."
+        },
+        "listing": {
+          "type": "object",
+          "description": "Listing defaults: record_grain, fields, sort_keys, group_by."
+        }
+      }
+    },
+    "default_status": {
+      "enum": [
+        "resolved",
+        "needs_review"
+      ],
+      "default": "needs_review"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "description": "Library source_ids this preset is distilled from."
+    },
+    "source_frequency": {
+      "type": "object",
+      "description": "Data-driven presets: how often each default appeared across source studies."
+    }
+  }
+}

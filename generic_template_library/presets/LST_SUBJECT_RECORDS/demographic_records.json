@@ -1,0 +1,183 @@
+{
+  "preset_id": "demographic_records",
+  "template_id": "LST_SUBJECT_RECORDS",
+  "version": "1.0.0",
+  "name": "Demographic and baseline records",
+  "keywords": [
+    "demographics"
+  ],
+  "aliases": [
+    "demographic",
+    "baseline characteristics",
+    "substance use",
+    "obstetric",
+    "menopausal"
+  ],
+  "defaults": {
+    "listing": {
+      "record_grain": "subject",
+      "fields": [
+        {
+          "id": "Treatment_group",
+          "label": "Treatment group",
+          "kinds": [
+            "group"
+          ]
+        },
+        {
+          "id": "Subject_ID",
+          "label": "Subject ID",
+          "kinds": [
+            "subject_id"
+          ]
+        },
+        {
+          "id": "Age",
+          "label": "Age",
+          "kinds": [
+            "number"
+          ]
+        },
+        {
+          "id": "Sex",
+          "label": "Sex",
+          "kinds": [
+            "category"
+          ]
+        },
+        {
+          "id": "Ethnicity",
+          "label": "Ethnicity",
+          "kinds": [
+            "category"
+          ]
+        },
+        {
+          "id": "Race",
+          "label": "Race",
+          "kinds": [
+            "category"
+          ]
+        },
+        {
+          "id": "Weight__kg",
+          "label": "Weight (kg)",
+          "kinds": [
+            "number"
+          ]
+        },
+        {
+          "id": "Height__cm",
+          "label": "Height (cm)",
+          "kinds": [
+            "number"
+          ]
+        },
+        {
+          "id": "ECOG_performance_status",
+          "label": "ECOG performance status",
+          "kinds": [
+            "category"
+          ]
+        }
+      ],
+      "sort_keys": [
+        "Treatment group",
+        "Subject ID"
+      ],
+      "group_by": [
+        "Treatment group"
+      ]
+    }
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "ARV471BC201_L_16_2_4_1",
+    "CPXPOM001_L_16_2_4_1_1",
+    "OMO10301_L_16_2_4_1",
+    "PVCNA003_L_16_2_4_1",
+    "PVCNA003_L_16_2_4_3",
+    "PVCNA003_L_16_2_4_4",
+    "PVCNA003_L_16_2_4_5",
+    "SP11631_L_16_2_2_1",
+    "WTX330X2101_L_16_2_4_1",
+    "WTX330X2101_L_16_2_4_2"
+  ],
+  "source_frequency": {
+    "studies": [
+      "ARV-471-BC-201",
+      "CPX-POM-001",
+      "OMO-103-01",
+      "P-VCNA-003",
+      "SP11631",
+      "WTX-330x2101"
+    ],
+    "field_studies": {
+      "Treatment group": [
+        "CPX-POM-001",
+        "SP11631"
+      ],
+      "Subject ID": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "OMO-103-01",
+        "P-VCNA-003",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "Age": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "OMO-103-01",
+        "P-VCNA-003",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "Sex": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "OMO-103-01",
+        "P-VCNA-003",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "Ethnicity": [
+        "ARV-471-BC-201",
+        "P-VCNA-003",
+        "WTX-330x2101"
+      ],
+      "Race": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "OMO-103-01",
+        "P-VCNA-003",
+        "WTX-330x2101"
+      ],
+      "Weight (kg)": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "OMO-103-01",
+        "P-VCNA-003",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "Height (cm)": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "OMO-103-01",
+        "P-VCNA-003",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "ECOG performance status": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "P-VCNA-003",
+        "WTX-330x2101"
+      ]
+    },
+    "grain_counts": {
+      "subject": 10
+    }
+  }
+}

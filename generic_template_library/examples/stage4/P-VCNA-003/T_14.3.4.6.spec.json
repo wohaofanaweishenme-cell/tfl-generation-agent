@@ -1,0 +1,268 @@
+{
+  "schema_version": "3.0",
+  "output_id": "14.3.4.6",
+  "output_type": "table",
+  "template_id": "TBL_SHIFT_CROSSTAB",
+  "template_version": "1.0.0",
+  "preset_ids": [
+    "clinical_evaluation_shift"
+  ],
+  "title": {
+    "value": "Shift Table of Biochemistry Parameters",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "population": {
+    "value": "Safety Analysis Set",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "columns": {
+    "stub_header": {
+      "value": "Group\n  Parameter\n    Baseline category",
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "groups": [
+      {
+        "id": "ARM1",
+        "label": {
+          "value": "Arm I (Nab-paclitaxel and gemcitabine)",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "ARM2",
+        "label": {
+          "value": "Arm II (VCN-01 with Nab-paclitaxel and gemcitabine)",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      }
+    ],
+    "total": {
+      "enabled": {
+        "value": false,
+        "source": "study_setting",
+        "status": "resolved"
+      }
+    },
+    "category_columns": {
+      "value": [
+        "Normal",
+        "Abnormal, NCS",
+        "Abnormal, CS",
+        "Not done",
+        "Total"
+      ],
+      "source": "template_default",
+      "status": "needs_review"
+    }
+  },
+  "row_blocks": [
+    {
+      "block_id": "shift",
+      "block_type": "crosstab",
+      "label": {
+        "value": "Clinical evaluation shift",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "row_variable": {
+        "value": "Baseline",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "column_variable": {
+        "value": "Post-baseline",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "row_categories": {
+        "value": [
+          "Normal",
+          "Abnormal, NCS",
+          "Abnormal, CS",
+          "Not done",
+          "Total"
+        ],
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "parameters": {
+        "value": [
+          "[Assessment]"
+        ],
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    }
+  ],
+  "footnotes": [
+    {
+      "id": "FN_DENOM",
+      "marker": null,
+      "text": {
+        "value": "Percentages are based on the number of patients within the column (N).",
+        "source": "study_setting",
+        "status": "resolved"
+      }
+    },
+    {
+      "id": "FN_BASE",
+      "marker": null,
+      "text": {
+        "value": "Baseline: [baseline definition]",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q007",
+        "note": "missing study setting: definitions.baseline_definition"
+      }
+    }
+  ],
+  "programming_notes": [
+    {
+      "id": "PN_SHIFT",
+      "marker": null,
+      "text": {
+        "value": "Repeat the cross-classification for each group, parameter and post-baseline visit shown; include Missing and Total rows and columns.",
+        "source": "template_default",
+        "status": "resolved"
+      }
+    }
+  ],
+  "figure": null,
+  "listing": null,
+  "config": {
+    "layout": "matrix"
+  },
+  "page": {
+    "orientation": "landscape",
+    "paper": "letter",
+    "font": "Courier New",
+    "font_size_pt": 9,
+    "include_programming_notes": true
+  },
+  "issues": [
+    {
+      "question_id": "Q007",
+      "element_path": "footnotes[FN_BASE]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.baseline_definition (needed for: Baseline: [baseline definition]).",
+      "answer": null
+    }
+  ],
+  "provenance": {
+    "content_list_entry": {
+      "entry_id": "CL_062",
+      "document_id": "SAP_001_11",
+      "original_tfl_number": "14.3.4.6",
+      "output_type": "table",
+      "original_title": "Shift Table of Biochemistry Parameters",
+      "population": "Safety Analysis Set"
+    },
+    "template_file_sha256": "0f9d9a67fe483a6c4f61d0d9a880f260606a26552f92da183f1a8df2a8f684f7",
+    "preset_file_sha256": {
+      "clinical_evaluation_shift": "dc859db16a094872f71b6856877630a743152bae307b3a1e87e812f9a535663d"
+    },
+    "style_guide_version": "1.1.0",
+    "study_settings_version": "P-VCNA-003@example-0.3",
+    "match": {
+      "selected": "TBL_SHIFT_CROSSTAB",
+      "candidates": [
+        {
+          "template_id": "TBL_SHIFT_CROSSTAB",
+          "score": 9,
+          "matched_terms": [
+            "shift",
+            "shift table"
+          ],
+          "negative_terms": [],
+          "preset_id": "clinical_evaluation_shift",
+          "preset_score": 2
+        },
+        {
+          "template_id": "TBL_PARAMETER_BY_VISIT",
+          "score": 3,
+          "matched_terms": [
+            "biochemistry"
+          ],
+          "negative_terms": [
+            "shift"
+          ],
+          "preset_id": "laboratory_by_visit",
+          "preset_score": 2
+        },
+        {
+          "template_id": "TBL_CONTINUOUS_COMPARISON",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_RESPONSE_RATE",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_TIME_TO_EVENT",
+          "score": 0,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_CODED_TERM_HIERARCHY",
+          "score": -4,
+          "matched_terms": [],
+          "negative_terms": [
+            "shift"
+          ],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_CRITERION_COUNTS",
+          "score": -4,
+          "matched_terms": [],
+          "negative_terms": [
+            "shift"
+          ],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_TIMEPOINT_STATISTICS_COLUMNS",
+          "score": -4,
+          "matched_terms": [],
+          "negative_terms": [
+            "parameters"
+          ],
+          "preset_id": null,
+          "preset_score": 0
+        },
+        {
+          "template_id": "TBL_VARIABLE_SUMMARY",
+          "score": -4,
+          "matched_terms": [],
+          "negative_terms": [
+            "shift"
+          ],
+          "preset_id": null,
+          "preset_score": 0
+        }
+      ],
+      "explanation": "Selected TBL_SHIFT_CROSSTAB (score 9): title terms shift, shift table; preset clinical_evaluation_shift."
+    },
+    "generated_by": "tools/build_spec.py (rule-based); config: layout=matrix (template default)"
+  }
+}

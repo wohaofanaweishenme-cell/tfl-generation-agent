@@ -1,0 +1,31 @@
+{
+  "study_id": "SP11631",
+  "version": "example-0.3",
+  "confirmed_by": "pilot_example: values transcribed from the study's own source shells for testing; not user-confirmed settings",
+  "groups": [
+    {
+      "id": "F627",
+      "label": "F-627"
+    },
+    {
+      "id": "GRAN",
+      "label": "GRAN"
+    }
+  ],
+  "total_column": {
+    "enabled": false
+  },
+  "populations": {
+    "FAS": "[FAS definition from SAP]"
+  },
+  "definitions": {
+    "percentage_denominator": "the number of subjects with non-missing values in each treatment group"
+  },
+  "comparisons": {
+    "continuous": {
+      "enabled": true,
+      "estimate_label": "F-627 - GRAN: Hodges-Lehmann estimate (95% CI)",
+      "method": "[Hodges-Lehmann estimate with 95% CI from SAP section x]"
+    }
+  }
+}

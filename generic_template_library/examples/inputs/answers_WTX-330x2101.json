@@ -1,0 +1,20 @@
+{
+  "study_id": "WTX-330x2101",
+  "purpose": "Example reviewer answers to questions raised in the first generation; applied on regeneration as confirmed study settings.",
+  "answers": [
+    {
+      "question_ref": "14.3.2.1.1:table Q001/Q003",
+      "setting_path": "coding.meddra_version",
+      "value": "26.1",
+      "answered_by": "[reviewer]",
+      "date": "2026-11-24"
+    },
+    {
+      "question_ref": "14.3.2.1.1:table Q002",
+      "setting_path": "definitions.teae_definition",
+      "value": "[TEAE definition from SAP section x]",
+      "answered_by": "[reviewer]",
+      "date": "2026-11-24"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "preset_id": "immunogenicity_records",
+  "template_id": "LST_SUBJECT_RECORDS",
+  "version": "1.0.0",
+  "name": "Immunogenicity records",
+  "keywords": [
+    "anti-drug antibodies"
+  ],
+  "aliases": [
+    "anti-drug antibody",
+    "immunogenicity",
+    "ADA"
+  ],
+  "defaults": {
+    "listing": {
+      "record_grain": "subject_visit",
+      "fields": [
+        {
+          "id": "Treatment_group",
+          "label": "Treatment group",
+          "kinds": [
+            "group"
+          ]
+        },
+        {
+          "id": "Subject_ID",
+          "label": "Subject ID",
+          "kinds": [
+            "subject_id"
+          ]
+        },
+        {
+          "id": "Visit",
+          "label": "Visit",
+          "kinds": [
+            "visit"
+          ]
+        },
+        {
+          "id": "Assessment_date",
+          "label": "Assessment date",
+          "kinds": [
+            "datetime"
+          ]
+        },
+        {
+          "id": "Result",
+          "label": "Result",
+          "kinds": [
+            "category"
+          ]
+        },
+        {
+          "id": "Titer",
+          "label": "Titer",
+          "kinds": [
+            "number"
+          ]
+        }
+      ],
+      "sort_keys": [
+        "Treatment group",
+        "Subject ID",
+        "Visit"
+      ],
+      "group_by": [
+        "Treatment group"
+      ]
+    }
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "SP11631_L_16_2_3_1",
+    "WTX330X2101_L_16_4_10_3"
+  ],
+  "source_frequency": {
+    "studies": [
+      "SP11631",
+      "WTX-330x2101"
+    ],
+    "field_studies": {
+      "Treatment group": [
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "Subject ID": [
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "Visit": [
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "Assessment date": [
+        "SP11631",
+        "WTX-330x2101"
+      ]
+    },
+    "grain_counts": {
+      "subject_visit": 2
+    },
+    "manual_edits": "Added assay result and titer; source headers name assays individually."
+  }
+}

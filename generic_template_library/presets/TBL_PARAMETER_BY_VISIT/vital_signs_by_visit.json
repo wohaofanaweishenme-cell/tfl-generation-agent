@@ -1,0 +1,45 @@
+{
+  "preset_id": "vital_signs_by_visit",
+  "template_id": "TBL_PARAMETER_BY_VISIT",
+  "version": "1.0.0",
+  "name": "Vital signs by visit",
+  "keywords": [
+    "vital signs"
+  ],
+  "aliases": [
+    "vital signs",
+    "body temperature",
+    "weight"
+  ],
+  "defaults": {
+    "row_blocks": [
+      {
+        "block_id": "vs",
+        "block_type": "parameter_visit",
+        "label": "Vital sign",
+        "cell_type": "continuous",
+        "parameters": [
+          "Systolic blood pressure (mmHg)",
+          "Diastolic blood pressure (mmHg)",
+          "Pulse rate (beats/min)",
+          "Body temperature (C)",
+          "Weight (kg)"
+        ],
+        "visits_from_settings": true,
+        "statistics": [
+          "n",
+          "mean_sd",
+          "median",
+          "min_max"
+        ]
+      }
+    ]
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "CPXPOM001_T_14_3_3_2_1",
+    "OMO10301_T_14_3_5_1",
+    "SP11631_T_14_5_3_1",
+    "SP11631_T_14_5_3_2"
+  ]
+}

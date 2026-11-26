@@ -1,0 +1,46 @@
+{
+  "study_id": "ARV-471-BC-201",
+  "version": "example-0.3",
+  "confirmed_by": "pilot_example: values transcribed from the study's own source shells for testing; not user-confirmed settings",
+  "groups": [
+    {
+      "id": "ARV",
+      "label": "ARV-471 200 mg"
+    },
+    {
+      "id": "ANA",
+      "label": "Anastrozole 1 mg"
+    }
+  ],
+  "total_column": {
+    "enabled": true,
+    "label": "Total",
+    "member_group_ids": [
+      "ARV",
+      "ANA"
+    ]
+  },
+  "populations": {
+    "Safety Analysis Set": "[SAF definition from SAP]"
+  },
+  "coding": {
+    "meddra_version": "27.0",
+    "ctcae_version": "5.0"
+  },
+  "definitions": {
+    "teae_definition": "An AE that emerges or worsens (increase in CTCAE grade) on or after the first dose of study drug up to 30 days after the last administration."
+  },
+  "visits": [
+    "Baseline",
+    "Cycle 1 Day 15",
+    "Cycle 6 Day 18"
+  ],
+  "comparisons": {
+    "continuous": {
+      "enabled": true,
+      "estimate_label": "Difference (80% CI)",
+      "test_label": "p-value",
+      "method": "[ANCOVA model from SAP section x]"
+    }
+  }
+}

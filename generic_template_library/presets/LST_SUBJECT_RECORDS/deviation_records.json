@@ -1,0 +1,118 @@
+{
+  "preset_id": "deviation_records",
+  "template_id": "LST_SUBJECT_RECORDS",
+  "version": "1.0.0",
+  "name": "Protocol deviation records",
+  "keywords": [
+    "protocol deviations"
+  ],
+  "aliases": [
+    "protocol deviation",
+    "deviations"
+  ],
+  "defaults": {
+    "listing": {
+      "record_grain": "subject_event",
+      "fields": [
+        {
+          "id": "Treatment_group",
+          "label": "Treatment group",
+          "kinds": [
+            "group"
+          ]
+        },
+        {
+          "id": "Subject_ID",
+          "label": "Subject ID",
+          "kinds": [
+            "subject_id"
+          ]
+        },
+        {
+          "id": "Deviation_description",
+          "label": "Deviation description",
+          "kinds": [
+            "text"
+          ]
+        },
+        {
+          "id": "Category",
+          "label": "Category",
+          "kinds": [
+            "category"
+          ]
+        },
+        {
+          "id": "Major___minor",
+          "label": "Major / minor",
+          "kinds": [
+            "category"
+          ]
+        }
+      ],
+      "sort_keys": [
+        "Treatment group",
+        "Subject ID"
+      ],
+      "group_by": [
+        "Treatment group"
+      ]
+    }
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "ARV471BC201_L_16_2_2",
+    "CPXPOM001_L_16_2_2_1",
+    "OMO10301_L_16_2_2_1",
+    "PVCNA003_L_16_2_2_1",
+    "SP11631_L_16_2_1_4",
+    "SP11631_L_16_2_1_5",
+    "WTX330X2101_L_16_2_3"
+  ],
+  "source_frequency": {
+    "studies": [
+      "ARV-471-BC-201",
+      "CPX-POM-001",
+      "OMO-103-01",
+      "P-VCNA-003",
+      "SP11631",
+      "WTX-330x2101"
+    ],
+    "field_studies": {
+      "Treatment group": [
+        "CPX-POM-001",
+        "SP11631"
+      ],
+      "Subject ID": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "OMO-103-01",
+        "P-VCNA-003",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "Deviation description": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "P-VCNA-003",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "Category": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "Severity / CTCAE grade": [
+        "ARV-471-BC-201",
+        "SP11631"
+      ]
+    },
+    "grain_counts": {
+      "subject": 3,
+      "subject_event": 4
+    },
+    "manual_edits": "Renamed: the severity match came from 'Major/Minor' headers."
+  }
+}

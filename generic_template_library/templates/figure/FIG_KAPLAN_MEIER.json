@@ -1,0 +1,228 @@
+{
+  "template_id": "FIG_KAPLAN_MEIER",
+  "version": "1.0.0",
+  "output_type": "figure",
+  "name": "Kaplan-Meier plot",
+  "structural_signature": {
+    "S1": "figure",
+    "S2": "PLOT",
+    "S3": [
+      "AXES"
+    ],
+    "S4": [
+      "PLOT"
+    ],
+    "S5": [
+      "NONE"
+    ],
+    "S6": "KM"
+  },
+  "intended_use": "Kaplan-Meier estimate of the probability of remaining event-free over time, one step curve per group, censor marks and an optional number-at-risk table below the x axis.",
+  "not_for": "Group means or percentages over visits (summary-over-time figure); cumulative incidence with competing risks; tables of KM estimates (time-to-event table).",
+  "keywords": [
+    "kaplan-meier",
+    "survival",
+    "time to event",
+    "km plot"
+  ],
+  "aliases": [
+    "KM",
+    "overall survival",
+    "OS",
+    "progression-free survival",
+    "PFS",
+    "recurrence-free survival",
+    "RFS",
+    "time to progression",
+    "TTP",
+    "duration of response",
+    "DOR",
+    "event-free survival"
+  ],
+  "match_cues": {
+    "title_terms": [
+      "kaplan",
+      "survival",
+      "time to",
+      "duration of response",
+      "time from"
+    ],
+    "negative_terms": [
+      "mean",
+      "box",
+      "waterfall",
+      "spider",
+      "tornado",
+      "table"
+    ]
+  },
+  "required_fields": [
+    {
+      "path": "title",
+      "label": "Output title",
+      "allowed_sources": [
+        "content_list"
+      ]
+    },
+    {
+      "path": "population",
+      "label": "Analysis population",
+      "allowed_sources": [
+        "content_list",
+        "study_setting"
+      ]
+    },
+    {
+      "path": "figure.legend",
+      "label": "Groups shown as curves",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    },
+    {
+      "path": "figure.x_axis.unit",
+      "label": "Time unit",
+      "allowed_sources": [
+        "study_setting"
+      ]
+    },
+    {
+      "path": "footnotes[FN_CENSOR]",
+      "label": "Censoring rule",
+      "allowed_sources": [
+        "study_setting"
+      ],
+      "description": "Censoring definitions come from the SAP; never defaulted."
+    }
+  ],
+  "permitted_defaults": [
+    {
+      "path": "figure.y_axis.label",
+      "value": "from preset",
+      "status_when_used": "needs_review",
+      "basis": "Endpoint-specific probability label."
+    },
+    {
+      "path": "figure.y_axis.range",
+      "value": "0 to 1",
+      "status_when_used": "resolved",
+      "basis": "Probability scale."
+    },
+    {
+      "path": "figure.risk_table",
+      "value": true,
+      "status_when_used": "needs_review",
+      "basis": "Number-at-risk table specified in P-VCNA source; not stated in the other two."
+    },
+    {
+      "path": "figure.censor_marks",
+      "value": true,
+      "status_when_used": "needs_review",
+      "basis": "Censor marks are standard for KM; confirm with SAP."
+    },
+    {
+      "path": "figure.x_axis.range",
+      "value": "As appropriate",
+      "status_when_used": "resolved",
+      "basis": "P-VCNA source wording; tick spacing decided at programming."
+    }
+  ],
+  "editable_elements": [
+    "title",
+    "population",
+    "figure.x_axis",
+    "figure.y_axis",
+    "figure.legend",
+    "figure.risk_table",
+    "figure.censor_marks",
+    "figure.reference_lines",
+    "footnotes",
+    "programming_notes"
+  ],
+  "config_options": {
+    "risk_table": {
+      "values": [
+        true,
+        false
+      ],
+      "default": true,
+      "description": "Number-at-risk table below the x axis."
+    }
+  },
+  "presets": [
+    "overall_survival",
+    "event_free_time"
+  ],
+  "skeleton": {
+    "columns": {
+      "stub_header": ""
+    },
+    "figure": {
+      "plot_type": "KM",
+      "x_axis": {
+        "label": "Time ({settings:time_unit})",
+        "unit": "{settings:time_unit}",
+        "range": "As appropriate"
+      },
+      "y_axis": {
+        "label": "Probability",
+        "range": "0 to 1"
+      },
+      "risk_table": true,
+      "censor_marks": true
+    },
+    "footnotes": [
+      {
+        "id": "FN_CENSOR",
+        "marker": null,
+        "text": "Censoring: {settings:definitions.censoring_rule}"
+      },
+      {
+        "id": "FN_MARKS",
+        "marker": null,
+        "text": "Censored observations are marked with '+'."
+      }
+    ],
+    "programming_notes": [
+      {
+        "id": "PN_CURVES",
+        "marker": null,
+        "text": "One step curve per group with the line styles listed in the legend; number at risk shown at each x-axis tick."
+      }
+    ]
+  },
+  "figure_plot": {
+    "plot_type": "KM",
+    "plotter": "renderer/figure/plot_km.py:plot",
+    "data_contract": {
+      "required_columns": {
+        "time": "float, >= 0, in figure.x_axis.unit",
+        "event": "int, 1 = event, 0 = censored",
+        "group": "str, matches a legend group id"
+      },
+      "optional_columns": {
+        "panel": "str"
+      }
+    },
+    "implementation_status": "shell_only"
+  },
+  "evidence": [
+    {
+      "source_id": "CPXPOM001_F_14_2_4_2",
+      "study_id": "CPX-POM-001",
+      "fit": "core"
+    },
+    {
+      "source_id": "OMO10301_F_14_2_6_1",
+      "study_id": "OMO-103-01",
+      "fit": "core"
+    },
+    {
+      "source_id": "PVCNA003_F_14_2_1",
+      "study_id": "P-VCNA-003",
+      "fit": "core"
+    }
+  ],
+  "evidence_level": "multi_study",
+  "review_status": "approved"
+}

@@ -1,0 +1,325 @@
+{
+  "schema_version": "3.0",
+  "output_id": "16.2.7.1",
+  "output_type": "listing",
+  "template_id": "LST_SUBJECT_RECORDS",
+  "template_version": "1.0.0",
+  "preset_ids": [
+    "adverse_event_records"
+  ],
+  "title": {
+    "value": "Treatment-Emergent Adverse Events",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "population": {
+    "value": "Safety Analysis Set",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "columns": {
+    "stub_header": {
+      "value": "",
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "groups": [
+      {
+        "id": "D1",
+        "label": {
+          "value": "WTX-330 0.016 mg/kg",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "D2",
+        "label": {
+          "value": "WTX-330 0.032 mg/kg",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "D3",
+        "label": {
+          "value": "WTX-330 0.056 mg/kg",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "D4",
+        "label": {
+          "value": "WTX-330 0.084 mg/kg",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      }
+    ],
+    "total": {
+      "enabled": {
+        "value": true,
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "label": {
+        "value": "Total",
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "member_group_ids": [
+        "D1",
+        "D2",
+        "D3",
+        "D4"
+      ]
+    }
+  },
+  "row_blocks": [],
+  "footnotes": [
+    {
+      "id": "FN_STUDYDAY",
+      "marker": null,
+      "text": {
+        "value": "Study day: [study day definition]",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q015",
+        "note": "missing study setting: definitions.study_day_definition"
+      }
+    }
+  ],
+  "programming_notes": [
+    {
+      "id": "PN_SORT",
+      "marker": null,
+      "text": {
+        "value": "Sort by Treatment group, Subject ID, Start date (study day).",
+        "source": "template_default",
+        "status": "resolved"
+      }
+    }
+  ],
+  "figure": null,
+  "listing": {
+    "record_grain": {
+      "value": "subject_event",
+      "source": "template_default",
+      "status": "needs_review"
+    },
+    "fields": [
+      {
+        "id": "Treatment_group",
+        "label": {
+          "value": "Treatment group",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "group"
+        ]
+      },
+      {
+        "id": "Subject_ID",
+        "label": {
+          "value": "Subject ID",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "subject_id"
+        ]
+      },
+      {
+        "id": "System_organ_class",
+        "label": {
+          "value": "System organ class",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "coded_term"
+        ]
+      },
+      {
+        "id": "Preferred_term",
+        "label": {
+          "value": "Preferred term",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "coded_term"
+        ]
+      },
+      {
+        "id": "Reported_term",
+        "label": {
+          "value": "Reported term",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "text"
+        ]
+      },
+      {
+        "id": "Start_date__study_day",
+        "label": {
+          "value": "Start date (study day)",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "date"
+        ]
+      },
+      {
+        "id": "End_date__study_day____ongoing",
+        "label": {
+          "value": "End date (study day) / ongoing",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "date"
+        ]
+      },
+      {
+        "id": "Serious",
+        "label": {
+          "value": "Serious",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "flag"
+        ]
+      },
+      {
+        "id": "Severity___CTCAE_grade",
+        "label": {
+          "value": "Severity / CTCAE grade",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "category"
+        ]
+      },
+      {
+        "id": "Relationship_to_study_drug",
+        "label": {
+          "value": "Relationship to study drug",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "category"
+        ]
+      },
+      {
+        "id": "Action_taken_with_study_drug",
+        "label": {
+          "value": "Action taken with study drug",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "category"
+        ]
+      },
+      {
+        "id": "Outcome",
+        "label": {
+          "value": "Outcome",
+          "source": "template_default",
+          "status": "needs_review"
+        },
+        "kinds": [
+          "category"
+        ]
+      }
+    ],
+    "sort_keys": {
+      "value": [
+        "Treatment group",
+        "Subject ID",
+        "Start date (study day)"
+      ],
+      "source": "template_default",
+      "status": "needs_review"
+    },
+    "group_by": {
+      "value": [
+        "Treatment group"
+      ],
+      "source": "template_default",
+      "status": "needs_review"
+    },
+    "repeat_identifiers": {
+      "value": [
+        "Subject ID",
+        "Treatment group"
+      ],
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "max_fields_per_panel": 10
+  },
+  "config": {
+    "group_display": "header_rows"
+  },
+  "page": {
+    "orientation": "landscape",
+    "paper": "letter",
+    "font": "Courier New",
+    "font_size_pt": 9,
+    "include_programming_notes": true
+  },
+  "issues": [
+    {
+      "question_id": "Q015",
+      "element_path": "footnotes[FN_STUDYDAY]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.study_day_definition (needed for: Study day: [study day definition]).",
+      "answer": null
+    }
+  ],
+  "provenance": {
+    "content_list_entry": {
+      "entry_id": "CL117",
+      "document_id": "SAP_001_98",
+      "original_tfl_number": "16.2.7.1",
+      "output_type": "listing",
+      "original_title": "Treatment-Emergent Adverse Events",
+      "population": "Safety Analysis Set"
+    },
+    "template_file_sha256": "618245f1af230e37da0345d121d27343915af1d1f37b44469ae3095c0ada1059",
+    "preset_file_sha256": {
+      "adverse_event_records": "7caa2b2f66c9b7a7f78c49d61f07358d206f091633ec808bd16807c491a6ac4c"
+    },
+    "style_guide_version": "1.1.0",
+    "study_settings_version": "WTX-330x2101@example-0.3+answers(2)",
+    "match": {
+      "selected": "LST_SUBJECT_RECORDS",
+      "candidates": [
+        {
+          "template_id": "LST_SUBJECT_RECORDS",
+          "score": 3,
+          "matched_terms": [],
+          "negative_terms": [],
+          "preset_id": "adverse_event_records",
+          "preset_score": 2
+        }
+      ],
+      "explanation": "Selected LST_SUBJECT_RECORDS (score 3): title terms -; preset adverse_event_records."
+    },
+    "generated_by": "tools/build_spec.py (rule-based); config: group_display=header_rows (template default); reviewer answers applied: coding.meddra_version, definitions.teae_definition"
+  }
+}

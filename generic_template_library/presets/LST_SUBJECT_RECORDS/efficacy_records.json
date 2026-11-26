@@ -1,0 +1,220 @@
+{
+  "preset_id": "efficacy_records",
+  "template_id": "LST_SUBJECT_RECORDS",
+  "version": "1.0.0",
+  "name": "Efficacy assessment records",
+  "keywords": [
+    "response rate"
+  ],
+  "aliases": [
+    "tumor",
+    "lesion",
+    "response",
+    "RECIST",
+    "efficacy",
+    "biopsy",
+    "tumor marker",
+    "PSA",
+    "cystectomy",
+    "TURBT",
+    "staging"
+  ],
+  "defaults": {
+    "listing": {
+      "record_grain": "subject_param_visit",
+      "fields": [
+        {
+          "id": "Treatment_group",
+          "label": "Treatment group",
+          "kinds": [
+            "group"
+          ]
+        },
+        {
+          "id": "Subject_ID",
+          "label": "Subject ID",
+          "kinds": [
+            "subject_id"
+          ]
+        },
+        {
+          "id": "Visit",
+          "label": "Visit",
+          "kinds": [
+            "visit"
+          ]
+        },
+        {
+          "id": "Assessment_date",
+          "label": "Assessment date",
+          "kinds": [
+            "datetime"
+          ]
+        },
+        {
+          "id": "Lesion_number",
+          "label": "Lesion number",
+          "kinds": [
+            "text"
+          ]
+        },
+        {
+          "id": "Response",
+          "label": "Response",
+          "kinds": [
+            "category"
+          ]
+        },
+        {
+          "id": "Site___location",
+          "label": "Site / location",
+          "kinds": [
+            "text"
+          ]
+        },
+        {
+          "id": "Unit",
+          "label": "Unit",
+          "kinds": [
+            "unit"
+          ]
+        },
+        {
+          "id": "Change_from_baseline",
+          "label": "Change from baseline",
+          "kinds": [
+            "number"
+          ]
+        },
+        {
+          "id": "Result",
+          "label": "Result",
+          "kinds": [
+            "number"
+          ]
+        },
+        {
+          "id": "Method",
+          "label": "Method",
+          "kinds": [
+            "category"
+          ]
+        }
+      ],
+      "sort_keys": [
+        "Treatment group",
+        "Subject ID",
+        "Visit"
+      ],
+      "group_by": [
+        "Treatment group"
+      ]
+    }
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "ARV471BC201_L_16_2_6_1",
+    "ARV471BC201_L_16_2_6_2",
+    "ARV471BC201_L_16_2_6_3",
+    "ARV471BC201_L_16_2_6_4",
+    "ARV471BC201_L_16_2_6_6",
+    "CPXPOM001_L_16_2_6_1_1",
+    "CPXPOM001_L_16_2_6_2_1",
+    "CPXPOM001_L_16_2_6_3_1",
+    "CPXPOM001_L_16_2_6_4_1",
+    "CPXPOM001_L_16_2_6_6_2",
+    "PVCNA003_L_16_2_6_1",
+    "PVCNA003_L_16_2_6_3",
+    "PVCNA003_L_16_2_6_5",
+    "PVCNA003_L_16_2_6_7",
+    "PVCNA003_L_16_2_6_8",
+    "SP11631_L_16_2_2_9",
+    "WTX330X2101_L_16_2_6_1",
+    "WTX330X2101_L_16_2_6_2",
+    "WTX330X2101_L_16_4_6_1_1",
+    "WTX330X2101_L_16_4_6_1_2",
+    "WTX330X2101_L_16_4_6_1_3_1",
+    "WTX330X2101_L_16_4_6_1_3_2",
+    "WTX330X2101_L_16_4_6_2",
+    "WTX330X2101_L_16_4_6_4"
+  ],
+  "source_frequency": {
+    "studies": [
+      "ARV-471-BC-201",
+      "CPX-POM-001",
+      "P-VCNA-003",
+      "SP11631",
+      "WTX-330x2101"
+    ],
+    "field_studies": {
+      "Treatment group": [
+        "CPX-POM-001",
+        "SP11631"
+      ],
+      "Subject ID": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "P-VCNA-003",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "Visit": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "P-VCNA-003",
+        "WTX-330x2101"
+      ],
+      "Assessment date": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "P-VCNA-003",
+        "WTX-330x2101"
+      ],
+      "Lesion number": [
+        "CPX-POM-001",
+        "P-VCNA-003",
+        "WTX-330x2101"
+      ],
+      "Response": [
+        "ARV-471-BC-201",
+        "CPX-POM-001",
+        "P-VCNA-003",
+        "WTX-330x2101"
+      ],
+      "Site / location": [
+        "CPX-POM-001",
+        "P-VCNA-003",
+        "WTX-330x2101"
+      ],
+      "Unit": [
+        "CPX-POM-001",
+        "P-VCNA-003"
+      ],
+      "Change from baseline": [
+        "ARV-471-BC-201",
+        "WTX-330x2101"
+      ],
+      "Result": [
+        "CPX-POM-001",
+        "P-VCNA-003",
+        "SP11631",
+        "WTX-330x2101"
+      ],
+      "Time to event": [
+        "P-VCNA-003",
+        "WTX-330x2101"
+      ],
+      "Method": [
+        "CPX-POM-001",
+        "WTX-330x2101"
+      ]
+    },
+    "grain_counts": {
+      "subject": 6,
+      "subject_event": 3,
+      "subject_visit": 7,
+      "subject_param_visit": 8
+    },
+    "manual_edits": "Removed derived time-to-event field (belongs to time_to_event_records)."
+  }
+}

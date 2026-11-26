@@ -1,0 +1,55 @@
+{
+  "purpose": "Content-list entries used in the stage-3 end-to-end pilot; read from Library/studies/<study>/source_registry/Content_List.json by entry_id.",
+  "entries": [
+    {
+      "study_id": "P-VCNA-003",
+      "entry_id": "CL_002",
+      "expect": "TBL_VARIABLE_SUMMARY/demographics"
+    },
+    {
+      "study_id": "P-VCNA-003",
+      "entry_id": "CL_005",
+      "expect": "TBL_CODED_TERM_HIERARCHY/medical_history_soc_pt"
+    },
+    {
+      "study_id": "P-VCNA-003",
+      "entry_id": "CL_078",
+      "expect": "FIG_KAPLAN_MEIER/overall_survival"
+    },
+    {
+      "study_id": "P-VCNA-003",
+      "entry_id": "CL_062",
+      "expect": "no_compatible_template (shift table; template not in pilot library)"
+    },
+    {
+      "study_id": "WTX-330x2101",
+      "entry_id": "CL008",
+      "expect": "TBL_VARIABLE_SUMMARY/demographics"
+    },
+    {
+      "study_id": "WTX-330x2101",
+      "entry_id": "CL021",
+      "expect": "TBL_CODED_TERM_HIERARCHY/teae_soc_pt"
+    },
+    {
+      "study_id": "ARV-471-BC-201",
+      "entry_id": "CL016",
+      "expect": "TBL_VARIABLE_SUMMARY/exposure_compliance"
+    },
+    {
+      "study_id": "ARV-471-BC-201",
+      "entry_id": "CL069",
+      "expect": "TBL_CODED_TERM_HIERARCHY/teae_soc_pt (PT only)"
+    },
+    {
+      "study_id": "ARV-471-BC-201",
+      "entry_id": "CL071",
+      "expect": "TBL_CODED_TERM_HIERARCHY/teae_soc_pt (grade sub-rows)"
+    },
+    {
+      "study_id": "ARV-471-BC-201",
+      "entry_id": "CL104",
+      "expect": "no_compatible_template (tornado; template not in pilot library)"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "preset_id": "performance_status_records",
+  "template_id": "LST_SUBJECT_RECORDS",
+  "version": "1.0.0",
+  "name": "Performance status records",
+  "keywords": [
+    "performance status"
+  ],
+  "aliases": [
+    "ECOG"
+  ],
+  "defaults": {
+    "listing": {
+      "record_grain": "subject_visit",
+      "fields": [
+        {
+          "id": "Treatment_group",
+          "label": "Treatment group",
+          "kinds": [
+            "group"
+          ]
+        },
+        {
+          "id": "Subject_ID",
+          "label": "Subject ID",
+          "kinds": [
+            "subject_id"
+          ]
+        },
+        {
+          "id": "Visit",
+          "label": "Visit",
+          "kinds": [
+            "visit"
+          ]
+        },
+        {
+          "id": "Assessment_date",
+          "label": "Assessment date",
+          "kinds": [
+            "datetime"
+          ]
+        },
+        {
+          "id": "ECOG_performance_status",
+          "label": "ECOG performance status",
+          "kinds": [
+            "category"
+          ]
+        }
+      ],
+      "sort_keys": [
+        "Treatment group",
+        "Subject ID",
+        "Visit"
+      ],
+      "group_by": [
+        "Treatment group"
+      ]
+    }
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "ARV471BC201_L_16_2_11",
+    "PVCNA003_L_16_2_16",
+    "WTX330X2101_L_16_4_9_3"
+  ],
+  "source_frequency": {
+    "studies": [
+      "ARV-471-BC-201",
+      "P-VCNA-003",
+      "WTX-330x2101"
+    ],
+    "field_studies": {
+      "Treatment group": [
+        "WTX-330x2101"
+      ],
+      "Subject ID": [
+        "ARV-471-BC-201",
+        "P-VCNA-003",
+        "WTX-330x2101"
+      ],
+      "Visit": [
+        "ARV-471-BC-201",
+        "P-VCNA-003",
+        "WTX-330x2101"
+      ],
+      "Assessment date": [
+        "P-VCNA-003",
+        "WTX-330x2101"
+      ]
+    },
+    "grain_counts": {
+      "subject_visit": 3
+    },
+    "manual_edits": "Added the assessed value; each source names it differently (Grade / Result / ECOG Performance Status)."
+  }
+}

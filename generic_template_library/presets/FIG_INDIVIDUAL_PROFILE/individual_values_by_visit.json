@@ -1,0 +1,32 @@
+{
+  "preset_id": "individual_values_by_visit",
+  "template_id": "FIG_INDIVIDUAL_PROFILE",
+  "version": "1.0.0",
+  "name": "Individual values by visit",
+  "keywords": [
+    "individual profiles"
+  ],
+  "aliases": [
+    "individual",
+    "Ki-67",
+    "AQUA",
+    "H-score",
+    "score"
+  ],
+  "defaults": {
+    "figure": {
+      "x_axis": {
+        "label": "Visit"
+      },
+      "y_axis": {
+        "label": "[Measure] ([unit])"
+      }
+    }
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "ARV471BC201_F_14_2_1_1",
+    "ARV471BC201_F_14_2_4_1",
+    "ARV471BC201_F_14_2_5_1"
+  ]
+}

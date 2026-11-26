@@ -1,0 +1,158 @@
+{
+  "schema_version": "3.0",
+  "output_id": "x.x.x",
+  "output_type": "figure",
+  "template_id": "FIG_BOX_PLOT",
+  "template_version": "1.0.0",
+  "preset_ids": [
+    "change_from_baseline_box"
+  ],
+  "title": {
+    "value": "Percent change from baseline by group",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "population": {
+    "value": "[Analysis population]",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "columns": {
+    "stub_header": {
+      "value": "",
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "groups": [
+      {
+        "id": "A",
+        "label": {
+          "value": "[Treatment A]",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "B",
+        "label": {
+          "value": "[Treatment B]",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      }
+    ],
+    "total": {
+      "enabled": {
+        "value": true,
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "label": {
+        "value": "Total",
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "member_group_ids": [
+        "A",
+        "B"
+      ]
+    }
+  },
+  "row_blocks": [],
+  "footnotes": [
+    {
+      "id": "FN_BOX",
+      "marker": null,
+      "text": {
+        "value": "Box: 25th to 75th percentile; line: median; marker: mean; whiskers: [whisker rule].",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q001",
+        "note": "missing study setting: definitions.whisker_rule"
+      }
+    }
+  ],
+  "programming_notes": [],
+  "figure": {
+    "plot_type": "BOX",
+    "x_axis": {
+      "label": {
+        "value": "Treatment group",
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    },
+    "y_axis": {
+      "label": {
+        "value": "[Measure] percentage change from baseline at [time point] (%)",
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    },
+    "legend": {
+      "value": [
+        "[Treatment A] (N=xx)",
+        "[Treatment B] (N=xx)"
+      ],
+      "source": "study_setting",
+      "status": "resolved"
+    },
+    "panels": {
+      "value": [
+        "single panel"
+      ],
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "reference_lines": {
+      "value": [
+        "y = 0"
+      ],
+      "source": "template_default",
+      "status": "needs_review"
+    }
+  },
+  "listing": null,
+  "config": {
+    "overlay_points": true
+  },
+  "page": {
+    "orientation": "landscape",
+    "paper": "letter",
+    "font": "Courier New",
+    "font_size_pt": 9,
+    "include_programming_notes": true
+  },
+  "issues": [
+    {
+      "question_id": "Q001",
+      "element_path": "footnotes[FN_BOX]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.whisker_rule (needed for: Box: 25th to 75th percentile; line: median; marker: mean; whiskers: [whisker rule].).",
+      "answer": null
+    }
+  ],
+  "provenance": {
+    "content_list_entry": {
+      "entry_id": "REF_FIG_BOX_PLOT__change_from_baseline_box",
+      "original_tfl_number": "x.x.x",
+      "output_type": "figure",
+      "original_title": "Percent change from baseline by group",
+      "population": "[Analysis population]"
+    },
+    "template_file_sha256": "3f8e60d5e8889bfaef93e3d1e93a5aa7feff7626ce9e817fb518b9154f1f933c",
+    "preset_file_sha256": {
+      "change_from_baseline_box": "68651c2b89482e37027bdfa5d801b177514e5374b3fdb06f643931e03b489460"
+    },
+    "style_guide_version": "1.1.0",
+    "study_settings_version": "REFERENCE@1.0.0",
+    "match": {
+      "selected": "FIG_BOX_PLOT",
+      "candidates": [],
+      "explanation": "Reference shell: template and preset chosen directly (no matching)."
+    },
+    "generated_by": "tools/build_spec.py (rule-based); config: overlay_points=True (template default)"
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "schema_version": "3.0",
+  "output_id": "x.x.x",
+  "output_type": "table",
+  "template_id": "TBL_SHIFT_CROSSTAB",
+  "template_version": "1.0.0",
+  "preset_ids": [
+    "ctcae_grade_shift"
+  ],
+  "title": {
+    "value": "CTCAE grade shift",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "population": {
+    "value": "[Analysis population]",
+    "source": "content_list",
+    "status": "resolved"
+  },
+  "columns": {
+    "stub_header": {
+      "value": "Group\n  Parameter\n    Baseline category",
+      "source": "template_default",
+      "status": "resolved"
+    },
+    "groups": [
+      {
+        "id": "A",
+        "label": {
+          "value": "[Treatment A]",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      },
+      {
+        "id": "B",
+        "label": {
+          "value": "[Treatment B]",
+          "source": "study_setting",
+          "status": "resolved"
+        },
+        "show_n": true
+      }
+    ],
+    "total": {
+      "enabled": {
+        "value": true,
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "label": {
+        "value": "Total",
+        "source": "study_setting",
+        "status": "resolved"
+      },
+      "member_group_ids": [
+        "A",
+        "B"
+      ]
+    },
+    "category_columns": {
+      "value": [
+        "Grade 0",
+        "Grade 1",
+        "Grade 2",
+        "Grade 3",
+        "Grade 4",
+        "Missing",
+        "Total"
+      ],
+      "source": "template_default",
+      "status": "needs_review"
+    }
+  },
+  "row_blocks": [
+    {
+      "block_id": "shift",
+      "block_type": "crosstab",
+      "label": {
+        "value": "CTCAE grade shift",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "row_variable": {
+        "value": "Baseline CTCAE grade",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "column_variable": {
+        "value": "Worst post-baseline CTCAE grade",
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "row_categories": {
+        "value": [
+          "Grade 0",
+          "Grade 1",
+          "Grade 2",
+          "Grade 3",
+          "Grade 4",
+          "Missing",
+          "Total"
+        ],
+        "source": "template_default",
+        "status": "needs_review"
+      },
+      "parameters": {
+        "value": [
+          "[Parameter 1]"
+        ],
+        "source": "template_default",
+        "status": "needs_review"
+      }
+    }
+  ],
+  "footnotes": [
+    {
+      "id": "FN_GRADE",
+      "marker": null,
+      "text": {
+        "value": "Graded according to NCI-CTCAE version [ctcae version].",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q001",
+        "note": "missing study setting: coding.ctcae_version"
+      }
+    },
+    {
+      "id": "FN_DENOM",
+      "marker": null,
+      "text": {
+        "value": "Percentages are based on [percentage denominator].",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q002",
+        "note": "missing study setting: definitions.percentage_denominator"
+      }
+    },
+    {
+      "id": "FN_BASE",
+      "marker": null,
+      "text": {
+        "value": "Baseline: [baseline definition]",
+        "source": "unresolved",
+        "status": "unresolved",
+        "question_id": "Q003",
+        "note": "missing study setting: definitions.baseline_definition"
+      }
+    }
+  ],
+  "programming_notes": [
+    {
+      "id": "PN_SHIFT",
+      "marker": null,
+      "text": {
+        "value": "Repeat the cross-classification for each group, parameter and post-baseline visit shown; include Missing and Total rows and columns.",
+        "source": "template_default",
+        "status": "resolved"
+      }
+    }
+  ],
+  "figure": null,
+  "listing": null,
+  "config": {
+    "layout": "matrix"
+  },
+  "page": {
+    "orientation": "landscape",
+    "paper": "letter",
+    "font": "Courier New",
+    "font_size_pt": 9,
+    "include_programming_notes": true
+  },
+  "issues": [
+    {
+      "question_id": "Q001",
+      "element_path": "footnotes[FN_GRADE]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): coding.ctcae_version (needed for: Graded according to NCI-CTCAE version [ctcae version].).",
+      "answer": null
+    },
+    {
+      "question_id": "Q002",
+      "element_path": "footnotes[FN_DENOM]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.percentage_denominator (needed for: Percentages are based on [percentage denominator].).",
+      "answer": null
+    },
+    {
+      "question_id": "Q003",
+      "element_path": "footnotes[FN_BASE]",
+      "kind": "missing",
+      "question": "Please confirm study setting(s): definitions.baseline_definition (needed for: Baseline: [baseline definition]).",
+      "answer": null
+    }
+  ],
+  "provenance": {
+    "content_list_entry": {
+      "entry_id": "REF_TBL_SHIFT_CROSSTAB__ctcae_grade_shift",
+      "original_tfl_number": "x.x.x",
+      "output_type": "table",
+      "original_title": "CTCAE grade shift",
+      "population": "[Analysis population]"
+    },
+    "template_file_sha256": "0f9d9a67fe483a6c4f61d0d9a880f260606a26552f92da183f1a8df2a8f684f7",
+    "preset_file_sha256": {
+      "ctcae_grade_shift": "f655cac8895a9efa4d0216b6b76aa8c4aa5160c2d95f7bb7e1ef7e9325a84e89"
+    },
+    "style_guide_version": "1.1.0",
+    "study_settings_version": "REFERENCE@1.0.0",
+    "match": {
+      "selected": "TBL_SHIFT_CROSSTAB",
+      "candidates": [],
+      "explanation": "Reference shell: template and preset chosen directly (no matching)."
+    },
+    "generated_by": "tools/build_spec.py (rule-based); config: layout=matrix (template default)"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "preset_id": "tumor_size_change",
+  "template_id": "TBL_PARAMETER_BY_VISIT",
+  "version": "1.0.0",
+  "name": "Tumor size and percent change by assessment",
+  "keywords": [
+    "by visit"
+  ],
+  "aliases": [
+    "target lesion change",
+    "tumor change",
+    "tumor size",
+    "lesion change",
+    "caliper"
+  ],
+  "defaults": {
+    "row_blocks": [
+      {
+        "block_id": "tum",
+        "block_type": "parameter_visit",
+        "label": "Tumor measurement",
+        "cell_type": "continuous",
+        "parameters": [
+          "Sum of target lesion diameters (mm)",
+          "Percentage change from baseline (%)"
+        ],
+        "visits_from_settings": true,
+        "statistics": [
+          "n",
+          "mean_sd",
+          "median",
+          "min_max"
+        ]
+      }
+    ]
+  },
+  "default_status": "needs_review",
+  "evidence": [
+    "ARV471BC201_T_14_2_3_1_1",
+    "ARV471BC201_T_14_2_3_1_2",
+    "ARV471BC201_T_14_2_3_2_1",
+    "ARV471BC201_T_14_2_3_2_2",
+    "ARV471BC201_T_14_2_3_3_1",
+    "ARV471BC201_T_14_2_3_3_2"
+  ]
+}
