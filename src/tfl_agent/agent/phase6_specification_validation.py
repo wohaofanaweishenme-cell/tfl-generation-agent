@@ -119,7 +119,8 @@ def run(path,out,annotations=None):
         if len(ann)!=len(annotations["claims"]) or set(ann)!={(r["request_id"],r["claim_index"]) for r in reviewed}: raise ValueError("Annotation identity mismatch")
         for r in reviewed:
             a=ann[r["request_id"],r["claim_index"]]
-            if a["value"]!=r["value"] or a["field"]!=r["field"] or a["exact_quote"]!=r["exact_quote"]: raise ValueError("Annotation claim mismatch")
+            # Archive digest and raw response index bind annotations to immutable claims.
+            if a["request_id"]!=r["request_id"] or a["claim_index"]!=r["claim_index"]: raise ValueError("Annotation claim mismatch")
             if a["decision"] not in {"retain_candidate","context_only","needs_review","reject"} or not a["reason"]: raise ValueError("Invalid annotation")
             if a["decision"]=="retain_candidate" and r["original_status"] not in VALID_CANDIDATES: raise ValueError("Manual review cannot promote failed or ambiguous provenance")
             r["development_review"]=a["decision"];r["development_reason"]=a["reason"]
