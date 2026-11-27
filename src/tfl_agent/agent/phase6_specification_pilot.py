@@ -178,14 +178,14 @@ def audit_claims(obj,request):
         elif src=="title" and cid is None and "chunk_id" in c:
             exact=nonempty(q) and q in p["target"]["title"]
             count=p["target"]["title"].count(q) if nonempty(q) else 0
-            if f not in TITLE_FIELDS or app=="explicitly_applicable_study_rule": errors.append("title_scope_not_allowed")
+            if not isinstance(f,str) or f not in TITLE_FIELDS or app=="explicitly_applicable_study_rule": errors.append("title_scope_not_allowed")
         else: exact=False;errors.append("invalid_source")
         if not exact: errors.append("exact_quote_not_found")
         literal=bool(nonempty(v) and nonempty(q) and v in q)
         if not literal: errors.append("value_not_literal")
-        key=(f,v,src,cid,q) if all(x is None or isinstance(x,str) for x in (f,v,src,cid,q)) else None
-        duplicate=key is not None and key in seen
-        if key is not None: seen.add(key)
+        key=(f,v,src,cid,q,app) if all(x is None or isinstance(x,str) for x in (f,v,src,cid,q,app)) else None
+        duplicate=not errors and key is not None and key in seen
+        if not errors and key is not None: seen.add(key)
         status=("rejected" if errors else "duplicate" if duplicate else
                 "not_applicable" if app=="not_applicable" else "needs_review" if app=="uncertain" or count>1 else
                 "title_explicit_candidate" if src=="title" else "evidence_backed_candidate")
@@ -193,6 +193,16 @@ def audit_claims(obj,request):
                      "source":src,"chunk_id":cid,"exact_quote":q,"applicability":app,"reason":reason,
                      "exact_match":bool(exact),"literal_support":literal,"quote_occurrences":count,"source_spans":refs,
                      "status":status,"issues":errors,"semantic_review":"unreviewed","clinical_confirmation":False})
+    # Conflicting model-declared applicability for the same evidence is unresolved.
+    groups={}
+    for r in rows:
+        if r["status"] not in ("rejected","duplicate"):
+            k=tuple(r[x] for x in ("field","value","source","chunk_id","exact_quote"))
+            groups.setdefault(k,[]).append(r)
+    for group in groups.values():
+        if len({r["applicability"] for r in group})>1:
+            for r in group:
+                r["status"]="needs_review";r["issues"].append("conflicting_applicability_declarations")
     return rows
 
 def specification(request,rows,response_status):
