@@ -25,3 +25,6 @@ confidential text; share only if authorized.
 The first run with empty configurations produces the cohort and local preflight
 without API use. Review Page_Review.csv / the original PDFs, then set approved
 configs and rerun batch. No need to rerun earlier experiments.
+
+## Round 2 update
+Candidate ranges are prefilled and hash-bound: ARV 10–30, OMO 8–29, SP11631 5–27. Two explicit confirmation switches are required. The three remaining studies stay unconfigured. All completed cases and type-consistent/type-conflict subsets are reported separately; expected types never alter input types. Fixed Phase 3 input directory to Studies/<study>/Retrieval. Failure logs now include pipeline stage. Completed Phase 3 call counts exclude failed partial requests and underlying retries.

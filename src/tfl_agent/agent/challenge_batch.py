@@ -110,17 +110,43 @@ def preflight(root,cohort,out):
     return configs,mapping_rows
 
 
+# Candidate ranges reviewed from the first preflight's page previews.
+# These are bound to exact PDF hashes, not a blanket approval or full-page review.
+PREFERRED_BODIES = {
+    "ARV-471-BC-201": ("ac6ebc7497c8ea2d5ffd31834e02f95206884f7ac54e69e54a3cf7f9f4cd8caf", 10, 30),
+    "OMO-103-01": ("1aa3f12d5e1f3fba31e789edc9911b3dfb4622e3940c79acfab56a074b04255a", 8, 29),
+    "SP11631": ("513b744f284eca557817ab39dd036972ff6b1e5e12ff924b71a56646168c55f7", 5, 27),
+}
+
+def preferred_configs(preflight_rows, *, body_verified=False, api_authorized=False):
+    configs=[]
+    for study,(digest,first,last) in PREFERRED_BODIES.items():
+        matches=[r for r in preflight_rows if r["study_id"]==study and r["sha256"]==digest]
+        if len(matches)!=1:
+            raise ValueError(f"Expected exactly one matching preflight PDF for {study}")
+        r=matches[0]
+        if last>min(r["max_body_page"],r["pdf_pages"]):
+            raise ValueError(f"Preferred body exceeds registry bounds: {study}")
+        configs.append({"study_id":study,"pdf_path":r["pdf_path"],"sha256":digest,
+                        "body_first":first,"body_last":last,
+                        "body_verified":body_verified,"api_authorized":api_authorized})
+    return configs
+
 def validate_config(root,config,preflight_rows):
     if not config.get("body_verified") or not config.get("api_authorized"):
         raise ValueError("Body range and API authorization not confirmed")
     original=next((r for r in preflight_rows if r["study_id"]==config["study_id"] and r["pdf_path"]==config["pdf_path"]),None)
     if original is None: raise ValueError("PDF not in preflight registry")
+    if config.get("sha256",original["sha256"])!=original["sha256"]: raise ValueError("Configured PDF hash mismatch")
     pdf=(Path(root)/original["pdf_path"]).resolve()
     if not pdf.is_relative_to(Path(root).resolve()/"library/studies"): raise ValueError("Unsafe PDF path")
     if hashlib.sha256(pdf.read_bytes()).hexdigest()!=original["sha256"]: raise ValueError("PDF changed after preflight")
     first,last=config["body_first"],config["body_last"]
     if type(first) is not int or type(last) is not int or not 1<=first<=last<=min(original["max_body_page"],original["pdf_pages"]):
         raise ValueError("Page range reaches Content List/shell or is invalid")
+    preferred=PREFERRED_BODIES.get(config["study_id"])
+    if preferred and original["sha256"]==preferred[0] and not preferred[1]<=first<=last<=preferred[2]:
+        raise ValueError("Range outside reviewed candidate body boundaries")
     return pdf,(first,last)
 
 
@@ -137,11 +163,14 @@ def run_batch(root,cohort,title_rows,preflight_rows,mapping_rows,configs,out,llm
     for r in title_rows: titlemap[key(r)][r["method"]]=r
     mapping={key(r):r for r in mapping_rows}
     status=[]; results=[]; enc=encoder
+    _write_json(out/"Run_Config.json",configs)
+    study_reports=[]
     for study in sorted({c["study_id"] for c in cohort}):
         cases=[c for c in cohort if c["study_id"]==study]
         config=configmap.get(study)
         if config is None or not config.get("body_verified") or not config.get("api_authorized"):
-            status.extend({**c,"status":"skipped_unverified_body_or_permission","detail":""} for c in cases)
+            detail="study_not_selected" if config is None else "body_or_api_confirmation_pending"
+            status.extend({**c,"status":"skipped_unverified_body_or_permission","detail":detail} for c in cases)
             continue
         try: pdf,pages=validate_config(root,config,preflight_rows)
         except ValueError as e:
@@ -155,19 +184,26 @@ def run_batch(root,cohort,title_rows,preflight_rows,mapping_rows,configs,out,llm
             else: eligible.append(c)
         if not eligible: continue
         if llm is None: raise ValueError("An authorized LLM client is required for configured studies")
-        if enc is None: enc=LocalEncoder()
         study_out=out/"Studies"/study
+        stage="encoder_initialization"
         # Use unique registry IDs internally (physical TFL numbers can repeat).
         # Target title/type only; expected labels never enter the prompts.
         targets=[{"tfl_id":c["entry_id"],"title":c["title"],"output_type":c["output_type"]} for c in eligible]
         try:
+            if enc is None: enc=LocalEncoder()
+            stage="sap_retrieval"
+            print(f"{study}: retrieving evidence for {len(targets)} targets",flush=True)
             run_scope_retrieval(pdf,pages,targets,study_out/"Retrieval",encoder=enc,compare_phase2=False)
-            run_specification_extraction(study_out,study_out,llm,encoder=enc)
+            stage="specification_extraction"
+            print(f"{study}: extracting requirements",flush=True)
+            phase3_summary,_,_=run_specification_extraction(study_out/"Retrieval",study_out,llm,encoder=enc)
+            study_reports.append({"study_id":study,"phase3_llm_calls":phase3_summary["llm_calls"],"phase3_completed":True})
+            stage="template_retrieval"
             _,rr,_=run_phase4(study_out,root/"generic_template_library",study_out/"Phase4",encoder=enc)
             byid={r["identity"]["tfl_id"]:r for r in rr}
         except Exception as e:
             # API exception text may contain sensitive payload; only class recorded.
-            status.extend({**c,"status":"attempt_failed","detail":type(e).__name__} for c in eligible)
+            status.extend({**c,"status":"attempt_failed","detail":stage+":"+type(e).__name__} for c in eligible)
             _write_json(out/"Case_Status.json",status)
             continue
         for c in eligible:
@@ -184,12 +220,30 @@ def run_batch(root,cohort,title_rows,preflight_rows,mapping_rows,configs,out,llm
             viable=[x["template_id"] for x in r["candidates"] if not x["structural_conflict"]]
             results.append(row("sap_aware",c,viable,r["template_id"],r["preset_id"]))
         _write_json(out/"Case_Status.json",status)
+        if results: _write_csv(out/"Paired_Results.csv",results,list(results[0]))
     if results: _write_csv(out/"Paired_Results.csv",results,list(results[0]))
     _write_json(out/"Case_Status.json",status)
     attempted=sum(s["status"] in ("completed","attempt_failed") for s in status)
     completed=sum(s["status"]=="completed" for s in status)
     success=sum(r["correct"] for r in results if r["method"]=="sap_aware")
-    report={"planned":len(cohort),"strata":dict(Counter(c["stratum"] for c in cohort)),
+    consistent=[r for r in results if not mapping[key(r)]["type_conflict"]]
+    conflicts=[r for r in results if mapping[key(r)]["type_conflict"]]
+    if consistent: _write_csv(out/"Paired_Type_Consistent.csv",consistent,list(consistent[0]))
+    if conflicts: _write_csv(out/"Paired_Type_Conflict.csv",conflicts,list(conflicts[0]))
+    configured_cases=[c for c in cohort if c["study_id"] in configmap]
+    consistent_status=[r for r in status if not mapping[key(r)]["type_conflict"]]
+    consistent_attempted=sum(r["status"] in ("completed","attempt_failed") for r in consistent_status)
+    consistent_success=sum(r["correct"] for r in consistent if r["method"]=="sap_aware")
+    report={"configured_case_count":len(configured_cases),
+            "configured_type_consistent_count":sum(not mapping[key(c)]["type_conflict"] for c in configured_cases),
+            "configured_type_conflict_count":sum(mapping[key(c)]["type_conflict"] for c in configured_cases),
+            "paired_type_consistent_metrics":aggregate(consistent),
+            "paired_type_conflict_metrics":aggregate(conflicts),
+            "type_consistent_attempted":consistent_attempted,
+            "type_consistent_operational_success":consistent_success/consistent_attempted if consistent_attempted else None,
+            "completed_phase3_llm_calls":sum(r["phase3_llm_calls"] for r in study_reports),
+            "study_reports":study_reports,
+            "planned":len(cohort),"strata":dict(Counter(c["stratum"] for c in cohort)),
             "status_counts":dict(Counter(s["status"] for s in status)),
             "attempted":attempted,"completed":completed,
             "sap_aware_operational_success":success/attempted if attempted else None,
