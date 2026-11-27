@@ -1,0 +1,350 @@
+{
+  "source_archive_sha256": "74d816887d611c7f53a0d4ed7b9d3e1416aa8ea72d84bf746fc64b0340097aaa",
+  "annotation_type": "assistant qualitative development review, not independent gold or runtime rules",
+  "claims": [
+    {
+      "request_id": "ARV-471-BC-201__CL005__specification_v1",
+      "claim_index": 0,
+      "decision": "retain_candidate",
+      "reason": "Title explicitly identifies protocol deviation."
+    },
+    {
+      "request_id": "ARV-471-BC-201__CL005__specification_v1",
+      "claim_index": 1,
+      "decision": "retain_candidate",
+      "reason": "Section 6.3 explicitly specifies summaries by severity and categories."
+    },
+    {
+      "request_id": "ARV-471-BC-201__CL005__specification_v1",
+      "claim_index": 2,
+      "decision": "retain_candidate",
+      "reason": "Section 6.3 explicitly specifies each arm; grouping direction is supported, exact columns are not."
+    },
+    {
+      "request_id": "ARV-471-BC-201__CL005__specification_v1",
+      "claim_index": 3,
+      "decision": "needs_review",
+      "reason": "Summarized is not a statistic. No explicit count or percentage in this quote."
+    },
+    {
+      "request_id": "ARV-471-BC-201__CL039__specification_v1",
+      "claim_index": 0,
+      "decision": "retain_candidate",
+      "reason": "Title explicitly names mRECIST radiographic response."
+    },
+    {
+      "request_id": "ARV-471-BC-201__CL039__specification_v1",
+      "claim_index": 1,
+      "decision": "retain_candidate",
+      "reason": "Title explicitly names Cycle 6."
+    },
+    {
+      "request_id": "ARV-471-BC-201__CL039__specification_v1",
+      "claim_index": 2,
+      "decision": "retain_candidate",
+      "reason": "Section 10.2.6 explicitly defines the five response categories for this endpoint."
+    },
+    {
+      "request_id": "ARV-471-BC-201__CL039__specification_v1",
+      "claim_index": 3,
+      "decision": "retain_candidate",
+      "reason": "Section 10.2.6 explicitly specifies the assessment at Cycle 6 before surgery."
+    },
+    {
+      "request_id": "ARV-471-BC-201__CL039__specification_v1",
+      "claim_index": 4,
+      "decision": "retain_candidate",
+      "reason": "Section 10.2.6 states percentage of subjects for this endpoint."
+    },
+    {
+      "request_id": "ARV-471-BC-201__CL039__specification_v1",
+      "claim_index": 5,
+      "decision": "retain_candidate",
+      "reason": "The introductory FAS rule in 10.3.2 covers the subsequent mRECIST categorical endpoint; not the separate disease-staging rule."
+    },
+    {
+      "request_id": "ARV-471-BC-201__CL039__specification_v1",
+      "claim_index": 6,
+      "decision": "retain_candidate",
+      "reason": "Section 10.3.2 explicitly names this endpoint and includes participants without post-baseline assessment as NE in denominator."
+    },
+    {
+      "request_id": "ARV-471-BC-201__CL039__specification_v1",
+      "claim_index": 7,
+      "decision": "retain_candidate",
+      "reason": "Section 10.3.2 explicitly requires number and percentage for the named Cycle 6 response."
+    },
+    {
+      "request_id": "ARV-471-BC-201__CL039__specification_v1",
+      "claim_index": 8,
+      "decision": "context_only",
+      "reason": "Treatment-arm sentence explicitly names pCR, mPEPI, BCS and CCCA rates, not this response distribution."
+    },
+    {
+      "request_id": "OMO-103-01__CL002__specification_v1",
+      "claim_index": 0,
+      "decision": "retain_candidate",
+      "reason": "Section 11.2.1 explicitly lists descriptive measures for continuous demographic variables."
+    },
+    {
+      "request_id": "OMO-103-01__CL002__specification_v1",
+      "claim_index": 1,
+      "decision": "retain_candidate",
+      "reason": "Section 11.2.1 explicitly specifies frequencies for race and gender."
+    },
+    {
+      "request_id": "OMO-103-01__CL002__specification_v1",
+      "claim_index": 2,
+      "decision": "retain_candidate",
+      "reason": "Both Safety Set and FAS are specified for demographic summaries; this does not resolve which set(s) this particular shell displays."
+    },
+    {
+      "request_id": "OMO-103-01__CL002__specification_v1",
+      "claim_index": 3,
+      "decision": "retain_candidate",
+      "reason": "Both Safety Set and FAS are specified for demographic summaries; do not treat the two named sets as an automatic contradiction."
+    },
+    {
+      "request_id": "OMO-103-01__CL002__specification_v1",
+      "claim_index": 4,
+      "decision": "context_only",
+      "reason": "Screening modifies number of pre-treatments per patient, not all demographics or a table-wide visit requirement."
+    },
+    {
+      "request_id": "OMO-103-01__CL002__specification_v1",
+      "claim_index": 5,
+      "decision": "reject",
+      "reason": "Quote crosses two chunks; original source span is not exact. Preserve rejection; consider verified multi-span evidence later."
+    },
+    {
+      "request_id": "OMO-103-01__CL002__specification_v1",
+      "claim_index": 6,
+      "decision": "reject",
+      "reason": "Literal value is not present verbatim in the exact quote. One decimal place is a formatting convention rather than a statistic; no silent repair."
+    },
+    {
+      "request_id": "SP11631__CL061__specification_v1",
+      "claim_index": 0,
+      "decision": "retain_candidate",
+      "reason": "Safety Analysis Set is named in title; SAP defines Safety set (SS)."
+    },
+    {
+      "request_id": "SP11631__CL061__specification_v1",
+      "claim_index": 1,
+      "decision": "retain_candidate",
+      "reason": "SAP explicitly defines the named safety set; retain definition separately from set name."
+    },
+    {
+      "request_id": "SP11631__CL061__specification_v1",
+      "claim_index": 2,
+      "decision": "retain_candidate",
+      "reason": "All safety analyses are based on SS; applies to an AE safety analysis."
+    },
+    {
+      "request_id": "SP11631__CL061__specification_v1",
+      "claim_index": 3,
+      "decision": "retain_candidate",
+      "reason": "Safety endpoints list AEs/SAEs; title names adverse events."
+    },
+    {
+      "request_id": "SP11631__CL061__specification_v1",
+      "claim_index": 4,
+      "decision": "context_only",
+      "reason": "TEAE definition is relevant context, not evidence that the generic AE target is exclusively a TEAE table."
+    },
+    {
+      "request_id": "SP11631__CL061__specification_v1",
+      "claim_index": 5,
+      "decision": "retain_candidate",
+      "reason": "First of two separate summaries explicitly groups overall AE incidence by treatment arms; generic title leaves exact layout unresolved."
+    },
+    {
+      "request_id": "SP11631__CL061__specification_v1",
+      "claim_index": 6,
+      "decision": "retain_candidate",
+      "reason": "First summary explicitly names incidence rates, cases and events; candidate for overall AE summary, not proof of particular shell layout."
+    },
+    {
+      "request_id": "SP11631__CL061__specification_v1",
+      "claim_index": 7,
+      "decision": "context_only",
+      "reason": "Quote belongs to the second, SOC/PT-specific summary; overall summary has its own distinct statistics."
+    },
+    {
+      "request_id": "SP11631__CL061__specification_v1",
+      "claim_index": 8,
+      "decision": "context_only",
+      "reason": "The second summary is explicitly described by SOC/PT. Generic title alone does not establish that this is the hierarchical output."
+    },
+    {
+      "request_id": "SP11631__CL061__specification_v1",
+      "claim_index": 9,
+      "decision": "context_only",
+      "reason": "Bullet belongs to SOC/PT-specific list and is non-unique; no promotion."
+    },
+    {
+      "request_id": "SP11631__CL061__specification_v1",
+      "claim_index": 10,
+      "decision": "context_only",
+      "reason": "Bullet belongs to SOC/PT-specific list and is non-unique; no promotion."
+    },
+    {
+      "request_id": "SP11631__CL061__specification_v1",
+      "claim_index": 11,
+      "decision": "context_only",
+      "reason": "Quoted bullet belongs to SOC/PT-specific list. Related category also appears in overall summary, but this citation cannot establish this target's row."
+    },
+    {
+      "request_id": "SP11631__CL061__specification_v1",
+      "claim_index": 12,
+      "decision": "context_only",
+      "reason": "Quoted bullet belongs to SOC/PT-specific list; row placement in the generic target remains unresolved."
+    },
+    {
+      "request_id": "SP11631__CL061__specification_v1",
+      "claim_index": 13,
+      "decision": "context_only",
+      "reason": "Quoted bullet belongs to SOC/PT-specific list; row placement in the generic target remains unresolved."
+    },
+    {
+      "request_id": "SP11631__CL061__specification_v1",
+      "claim_index": 14,
+      "decision": "needs_review",
+      "reason": "Phrase occurs in both overall and hierarchical statements; original locator is ambiguous."
+    },
+    {
+      "request_id": "SP11631__CL061__specification_v1",
+      "claim_index": 15,
+      "decision": "retain_candidate",
+      "reason": "SAP says AEs are summarized according to MedDRA 20.1; retain as coding method, not evidence of hierarchical layout."
+    },
+    {
+      "request_id": "SP11631__CL061__specification_v1",
+      "claim_index": 16,
+      "decision": "context_only",
+      "reason": "CTCAE grading is explicit for grade-defined TEAE categories, not a universal target layout or grading requirement."
+    },
+    {
+      "request_id": "SP11631__CL061__specification_v1",
+      "claim_index": 17,
+      "decision": "needs_review",
+      "reason": "General denominator convention is conditional; the AE incidence denominator and handling of missing data for this particular output are not explicitly established."
+    },
+    {
+      "request_id": "SP11631__CL061__specification_v1",
+      "claim_index": 18,
+      "decision": "context_only",
+      "reason": "General CI level only applies if a CI is used; target AE summary does not explicitly require CI display."
+    },
+    {
+      "request_id": "SP11631__CL067__specification_v1",
+      "claim_index": 0,
+      "decision": "retain_candidate",
+      "reason": "Title explicitly names TEAEs."
+    },
+    {
+      "request_id": "SP11631__CL067__specification_v1",
+      "claim_index": 1,
+      "decision": "retain_candidate",
+      "reason": "Title explicitly names SOC and PT grouping."
+    },
+    {
+      "request_id": "SP11631__CL067__specification_v1",
+      "claim_index": 2,
+      "decision": "retain_candidate",
+      "reason": "Title explicitly names CTCAE grade dimension; ordering and exact columns remain unknown."
+    },
+    {
+      "request_id": "SP11631__CL067__specification_v1",
+      "claim_index": 3,
+      "decision": "retain_candidate",
+      "reason": "Title explicitly names Safety Analysis Set."
+    },
+    {
+      "request_id": "SP11631__CL067__specification_v1",
+      "claim_index": 4,
+      "decision": "retain_candidate",
+      "reason": "Second AE statement names incidence rate (number of cases), SOC/PT and TEAE grades among listed outputs."
+    },
+    {
+      "request_id": "SP11631__CL067__specification_v1",
+      "claim_index": 5,
+      "decision": "retain_candidate",
+      "reason": "SOC/PT grouping directly matches title and the second AE statement."
+    },
+    {
+      "request_id": "SP11631__CL067__specification_v1",
+      "claim_index": 6,
+      "decision": "needs_review",
+      "reason": "Quoted wording comes from overall summary. Second statement also says each treatment arm, but the original quoted claim should not be silently re-cited."
+    },
+    {
+      "request_id": "SP11631__CL067__specification_v1",
+      "claim_index": 7,
+      "decision": "needs_review",
+      "reason": "Phrase occurs twice in the chunk and locator is ambiguous; retain for review."
+    },
+    {
+      "request_id": "SP11631__CL067__specification_v1",
+      "claim_index": 8,
+      "decision": "context_only",
+      "reason": "Definition of event frequency does not establish event-count display in this grade-specific SOC/PT table."
+    },
+    {
+      "request_id": "SP11631__CL067__specification_v1",
+      "claim_index": 9,
+      "decision": "context_only",
+      "reason": "Counting by PT is an event-count method, not proof this table reports event counts."
+    },
+    {
+      "request_id": "SP11631__CL067__specification_v1",
+      "claim_index": 10,
+      "decision": "retain_candidate",
+      "reason": "SAP explicitly defines the safety set named by title."
+    },
+    {
+      "request_id": "SP11631__CL067__specification_v1",
+      "claim_index": 11,
+      "decision": "retain_candidate",
+      "reason": "Safety set definition states primary use for safety evaluation, consistent with named analysis set."
+    },
+    {
+      "request_id": "SP11631__CL067__specification_v1",
+      "claim_index": 12,
+      "decision": "context_only",
+      "reason": "Cases and events wording belongs to the first overall-summary statement; the second hierarchical summary explicitly specifies cases only."
+    }
+  ],
+  "gap_notes": [
+    {
+      "entry_id": "CL005",
+      "study_id": "ARV-471-BC-201",
+      "note": "Section 6.3 explicitly lists severity minor/major/critical and categories Informed Consent, IMP/NIMP, Protocol Compliance, Safety and ICH/GCP; model omitted these individual values. Listing in FAS is not evidence for summary population. No explicit summary statistics in cited paragraph."
+    },
+    {
+      "entry_id": "CL039",
+      "study_id": "ARV-471-BC-201",
+      "note": "Response categories and n/% are explicit; CI for other named endpoints cannot establish CI for mRECIST. No claim that CI is forbidden."
+    },
+    {
+      "entry_id": "CL002",
+      "study_id": "OMO-103-01",
+      "note": "Section 11.2.1 explicitly names age, height, weight, number of pre-treatments, race and gender; model omitted these variables. Denominator sentence split across chunk:46c1d2f009c1aa6fbaf8 and chunk:74f553bdb8a6cf99c874; do not join without validating original block continuity. Formatting rule separately appears in latter chunk."
+    },
+    {
+      "entry_id": "CL029",
+      "study_id": "OMO-103-01",
+      "note": "No extracted claims; title explicitly identifies Autoimmune Values and Frequency. Title-only omission can be reviewed without inferring counts/percentages, visits or analysis population. No explicit autoimmune-specific sentence found in supplied context; full SAP recall unverified."
+    },
+    {
+      "entry_id": "CL061",
+      "study_id": "SP11631",
+      "note": "Section 3.3.1 explicitly separates overall incidence (cases/events) from SOC/PT incidence (cases). Generic title is structurally ambiguous; do not treat either exact layout as confirmed. Conditional general CI rule is not display evidence."
+    },
+    {
+      "entry_id": "CL067",
+      "study_id": "SP11631",
+      "note": "SOC/PT and grade are explicit in title, cases in second summary. Event count definition and overall summary are contextual only. Group by arm is explicit in second sentence but original claim cites first; review before repair."
+    }
+  ]
+}
