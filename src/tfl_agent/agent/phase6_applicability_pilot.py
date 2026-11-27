@@ -204,6 +204,52 @@ def run_pilot(plan,cache_dir,key,authorized=False):
         print("Status:",record["status"],flush=True)
 
 
+# Development reference notes authored from the actual Phase632 citation audit,
+# before the new calls. These are targeted qualitative checks, not independent
+# or exhaustive clinical gold; only the C arm is compared to D.
+REFERENCE_NOTES = {
+"ARV-471-BC-201__CL005__C_expanded::TBL_CRITERION_COUNTS::0": (
+    "target_specific","Protocol deviation severity/categories by arm is explicit; count statistics are not explicit in this sentence."),
+"ARV-471-BC-201__CL039__C_expanded::TBL_RESPONSE_RATE::1": (
+    "target_specific","Cycle 6 mRECIST category percentages are explicit; this does not alone establish derived response rates or CI."),
+"ARV-471-BC-201__CL039__C_expanded::TBL_RESPONSE_RATE::2": (
+    "target_specific","Explicit number/percentage for named target; not proof of derived rates or CI."),
+"ARV-471-BC-201__CL039__C_expanded::TBL_VARIABLE_SUMMARY::0": (
+    "other_endpoint_or_output","Wilson CI statement names pCR, mPEPI, BCS and CCCA, not Cycle 6 mRECIST distribution; cannot justify exclusion of variable summary for this target."),
+"ARV-471-BC-201__CL039__C_expanded::TBL_PARAMETER_BY_VISIT::0": (
+    "other_endpoint_or_output","Lesion percentage change by visit is a separate output from categorical Cycle 6 response."),
+"SP11631__CL061__C_expanded::TBL_CODED_TERM_HIERARCHY::0": (
+    "topic_only","SOC/PT summary is planned, but broad title does not uniquely map to this rather than AE overview."),
+"SP11631__CL061__C_expanded::TBL_CRITERION_COUNTS::0": (
+    "topic_only","Overview-style categories are planned, but broad title does not uniquely identify this output."),
+"OMO-103-01__CL002__C_expanded::TBL_VARIABLE_SUMMARY::1": (
+    "target_specific","Demographic/baseline variables and descriptive statistics/frequencies directly corroborate structure."),
+"SP11631__CL067__C_expanded::TBL_CODED_TERM_HIERARCHY::1": (
+    "target_specific","SOC/PT incidence corroborates title; this quote alone does not establish grade split."),
+"SP11631__CL067__C_expanded::TBL_CRITERION_COUNTS::0": (
+    "other_endpoint_or_output","AE overview-style criterion counts do not establish the explicitly SOC/PT target's layout."),
+}
+
+def reference_review(old_citations, new_citations):
+    """Locate exact old reference spans in new citations as review aids, not automatic semantic scoring."""
+    old={r["evidence_id"]:r for r in old_citations}
+    if not set(REFERENCE_NOTES)<=set(old):
+        raise ValueError("Development reference anchor missing")
+    out=[]
+    for key,(app,note) in REFERENCE_NOTES.items():
+        r=old[key]; q=r["exact_quote"]
+        hits=[n for n in new_citations if n["source"]=="sap" and n["study_id"]==r["study_id"]
+              and n["entry_id"]==r["entry_id"] and n["chunk_id"]==r["chunk_id"]
+              and (q in n["exact_quote"] or (len(n["exact_quote"])>=30 and n["exact_quote"] in q))]
+        out.append({"reference_id":key,"study_id":r["study_id"],"entry_id":r["entry_id"],
+                    "title":r["title"],"chunk_id":r["chunk_id"],"reference_quote":q,
+                    "development_applicability_note":app,"reference_scope_note":note,
+                    "old_candidate_reason":r["candidate_reason"],"new_quote_overlap_ids":[n["evidence_id"] for n in hits],
+                    "new_declared_applicability":[n["applicability"] for n in hits],
+                    "new_declared_use":[n["use"] for n in hits],
+                    "review_status":"unreviewed","note":"No overlap does not establish omission; overlap does not establish correct semantic use."})
+    return out
+
 def _rows_csv(path,rows,fields=None):
     fields=fields or list(dict.fromkeys(k for r in rows for k in r))
     with Path(path).open("w",encoding="utf-8-sig",newline="") as f:
@@ -308,4 +354,5 @@ def export(plan,cache_dir,out):
     _rows_csv(out/"Passage_Review.csv",passage_reviews,fields=list(passage_reviews[0]) if passage_reviews else ["request_id","chunk_id","disposition","reason"])
     # Old evidence for direct qualitative comparison; no labels enter requests.
     _rows_csv(out/"Prior_SAP_Citations.csv",[r for r in plan["old_citations"] if r["source"]=="sap"])
+    _rows_csv(out/"Development_Reference_Review.csv",reference_review(plan["old_citations"],review))
     return report,rows
