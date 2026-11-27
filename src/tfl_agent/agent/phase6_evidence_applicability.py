@@ -44,6 +44,7 @@ def tokens(text):
 
 def triage(title, quote, section="", study_scope=None, source="sap"):
     """Hints do not determine applicability or gate decisions."""
+    quote = quote if isinstance(quote,str) else ""
     t, q = tokens(title), tokens(quote)
     common = sorted(t & q)
     flags = []
