@@ -6,3 +6,5 @@ Run Colab 12, 13, 14 in that order. They independently clone the same branch and
 - 6.3: compare all eligible templates/presets using keyword, dense, title joint, and cached accepted-claim joint; fixed provisional weights, forced rank recommendations only. Old five methods retained in paired challenge metrics. 431 title benchmark uses source registry only for evaluation labels/title/type, never as runtime retrieval. No preset ground truth or held-out claim. No new evidence extraction yet.
 - 6.3 D, 6.4, 6.5 deferred pending review and authorization of 18-call pilot. Do not trigger LLM automatically. No generation.
 Tests: python -m pytest -q tests/test_phase6_offline.py
+
+Phase 6.2 also reports a separate `soft_scope_expanded` arm with deterministic title-conditioned facet extensions. Its candidate budget is identical; extension hints are not clinical facts. Both original-query soft-scope and expanded-query evidence are saved for comparison.

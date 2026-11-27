@@ -13,6 +13,24 @@ def topic_for(title):
     if re.search(r"\bprotocol deviations?\b",title,re.I): return "protocol_deviations"
     return target_topic(title)
 
+def expanded_query_plan(target):
+    """Title-conditioned extensions; hints are search terms, never extracted facts."""
+    title=target["title"]
+    plans=query_plan(target)
+    extras=[]
+    rules=[
+        (r"\b(?:deviations?|disposition|analysis sets?|analysis populations?)\b","criteria_status","status criteria reasons severity categories analysis membership summarized"),
+        (r"\b(?:response|recist|mrecist|efficacy|survival|progression)\b","endpoint_definition","endpoint definition response categories assessment timepoint estimation censoring"),
+        (r"\b(?:visit|timepoint|baseline|ecog|laboratory|haematology|hematology|biochemistry|ecg|qtc)\b","longitudinal_display","assessment schedule visit baseline postbaseline change shift grade measurement parameter"),
+        (r"\b(?:exposure|dose|medication|compliance|treatment duration)\b","exposure_definition","exposure duration cumulative dose dose intensity compliance interruptions"),
+        (r"\b(?:immunogenicity|antibodies|ada|neutralizing)\b","assay_definition","anti drug antibodies baseline treatment induced treatment boosted assay status"),
+        (r"\b(?:adverse events?|teaes?|safety)\b","safety_display","overview predefined categories serious severity relationship incidence system organ class preferred term"),
+    ]
+    for pattern,facet,hint in rules:
+        if re.search(pattern,title,re.I):
+            extras.append({"facet":facet,"query":title+" "+hint})
+    return plans+extras
+
 def relation(topic,c):
     if topic and c["topic_scope"]==topic: return "same_topic"
     if topic and c["topic_scope"] and c["topic_scope"]!=topic: return "different_topic"
@@ -55,7 +73,7 @@ def validated_claim_refs(spec,store):
             out.append({"chunk_id":c["chunk_id"],"field":c["field"],"value":c["value"],"exact_quote":c["exact_quote"],"historical_status":c["status"],"scope_flags":"|".join(flags),"scope_only_review":group=="review_claims" and set(flags)=={"target_scope_not_established"}})
     return out
 
-def run_retrieval(root,out,encoder=None,top_k=5,depth=20,budget=15):
+def run_retrieval(root,out,encoder=None,top_k=5,budget=15):
     out=Path(out);out.mkdir(parents=True,exist_ok=False)
     enc=encoder or LocalEncoder()
     manifest=cases(root); allrows=[]; packages=[]; review=[]; diagnostics=[]; seeds=[]; claimrows=[]
@@ -69,9 +87,11 @@ def run_retrieval(root,out,encoder=None,top_k=5,depth=20,budget=15):
             ident=verify_identity(case,part,spec)
             topic=topic_for(ident["title"])
             plans=query_plan(ident)
-            # Full body: all chunks eligible. Retrieve full rankings before soft adjustment.
-            full=index.search(plans,top_k=len(chunks),depth=len(chunks),rrf_k=60)
-            arms={"legacy_scoped":legacy_order(part),"full_hybrid":round_robin([q["methods"]["hybrid"][:top_k] for q in full]),"soft_scope":round_robin([soft_rank(q["methods"]["hybrid"],byid,topic)[:top_k] for q in full])}
+            expanded=expanded_query_plan(ident)
+            # Same query set in the first three arms; isolate expansion in a fourth arm.
+            expanded_full=index.search(expanded,top_k=len(chunks),depth=len(chunks),rrf_k=60)
+            full=expanded_full[:len(plans)]
+            arms={"legacy_scoped":legacy_order(part),"full_hybrid":round_robin([q["methods"]["hybrid"][:top_k] for q in full]),"soft_scope":round_robin([soft_rank(q["methods"]["hybrid"],byid,topic)[:top_k] for q in full]),"soft_scope_expanded":round_robin([soft_rank(q["methods"]["hybrid"],byid,topic)[:top_k] for q in expanded_full])}
             # Fixed target budget; short lists are not padded.
             arms={k:v[:budget] for k,v in arms.items()}
             base={"study_id":study,"entry_id":entry,"title":ident["title"],"output_type":ident["output_type"]}
@@ -94,9 +114,9 @@ def run_retrieval(root,out,encoder=None,top_k=5,depth=20,budget=15):
                 for name,ids in arms.items(): seeds.append({**base,"method":name,"quote":quote,"matching_chunk_ids":"|".join(found),"rank":next((j for j,i in enumerate(ids,1) if i in found),None)})
             # Per-facet ranking audit, including RRF and scope effect.
             q_audit=[]
-            for q in full:
+            for q in expanded_full:
                 q_audit.append({"facet":q["facet"],"query":q["query"],"bm25":q["methods"]["bm25"][:top_k],"dense":q["methods"]["dense"][:top_k],"hybrid":q["methods"]["hybrid"][:top_k],"soft_scope":soft_rank(q["methods"]["hybrid"],byid,topic)[:top_k]})
-            packages.append({"study_id":study,"target":ident,"sap_sha256":summary["sap_sha256"],"topic":topic,"candidate_ids":arms,"query_audit":q_audit,"legacy_initial_evidence":part["target_evidence"],"new_evidence":[byid[i] for i in arms["soft_scope"]],"generation_authorized":False})
+            packages.append({"study_id":study,"target":ident,"sap_sha256":summary["sap_sha256"],"topic":topic,"candidate_ids":arms,"query_audit":q_audit,"legacy_initial_evidence":part["target_evidence"],"new_evidence":[byid[i] for i in arms["soft_scope"]],"expanded_evidence":[byid[i] for i in arms["soft_scope_expanded"]],"generation_authorized":False})
     write_json(out/"Evidence_Packages.json",packages)
     write_csv(out/"Candidate_Rankings.csv",allrows)
     write_csv(out/"Evidence_Review_Blinded.csv",review)
@@ -123,7 +143,7 @@ def evaluate_review(rank_path,review_path,out):
     outrows=[]
     caseset={kk[:2] for kk in labels}
     for study,entry in sorted(caseset):
-        for method in ("legacy_scoped","full_hybrid","soft_scope"):
+        for method in ("legacy_scoped","full_hybrid","soft_scope","soft_scope_expanded"):
             rs=groups[study,entry,method]; relevant=[int(r["rank"]) for r in rs if labels[k(r)]]
             n=total[study,entry]
             outrows.append(dict(study_id=study,entry_id=entry,method=method,retrieved=len(rs),pooled_relevant=n,precision=len(relevant)/len(rs) if rs else None,pooled_recall=len(relevant)/n if n else None,mrr=(1/min(relevant) if relevant else 0) if n else None))

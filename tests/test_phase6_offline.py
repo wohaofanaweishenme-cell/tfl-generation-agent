@@ -19,3 +19,13 @@ def test_protocol_singular():
     assert topic_for("Summary of Protocol Deviation")=="protocol_deviations"
 def test_round_robin():
     assert round_robin([[{"chunk_id":"a"},{"chunk_id":"b"}],[{"chunk_id":"a"},{"chunk_id":"c"}]])==["a","b","c"]
+
+
+def test_query_expansion_keeps_original_facets():
+    from tfl_agent.agent.phase6_retrieval import expanded_query_plan
+    from tfl_agent.tools.sap_hybrid import query_plan
+    target={"title":"Summary of Protocol Deviation","output_type":"table"}
+    base=query_plan(target)
+    full=expanded_query_plan(target)
+    assert full[:len(base)]==base
+    assert any(q["facet"]=="criteria_status" for q in full)
