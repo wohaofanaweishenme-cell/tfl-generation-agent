@@ -248,6 +248,10 @@ def finish_prepared(plan, executor):
         validate_chunk(c)
         if _passage(c) != {k: p[k] for k in _passage(c)}:
             raise ValueError("Source text mismatch")
+    primary_passages = [{k:p[k] for k in ("chunk_id", "section", "pages", "text")}
+                        for p in sp["sap_evidence"] if p["retrieval_role"] == "primary"]
+    if primary_passages != mp["sap_evidence"]:
+        raise ValueError("Matching primary evidence differs from extraction primary evidence")
     mr = executor.get(matching)
     sr = executor.get(extraction)
     mo, ms = parse_record(mr)
@@ -268,7 +272,7 @@ def finish_prepared(plan, executor):
         except (ValueError, TypeError, KeyError, AttributeError):
             ss = "claim_contract_error"
     for r in rows:
-        r["risk_flags"] = risk_flags(r)
+        r["risk_flags"] = ["provenance_or_contract_failure"] if r["status"] == "rejected" else risk_flags(r)
         r["rule_route"] = route(r, r["risk_flags"])
     spec = assemble(spec_request, rows, "rule_route", {"unverified_candidate"})
     retained = [r for r in rows if r["rule_route"] == "unverified_candidate"]
@@ -296,7 +300,8 @@ def finish_prepared(plan, executor):
             "source_chunks": sources, "responses": {"matching": mr, "specification": sr},
             "stage_status": {"matching": ms, "specification": ss,
                              "alignment": alignment["decision"]},
-            "matching": normalized, "claim_audit": rows, "specification": spec,
+            "matching": normalized, "matching_protocol_valid": bool(normalized and normalized["protocol_valid"]),
+            "claim_audit": rows, "specification": spec,
             "alignment": alignment, "recommended_template": rec, "proposed_preset": proposal,
             "required_field_gaps": required, "new_attempts": executor.new_attempts-start_attempts,
             "confirmed_template": None, "confirmed_preset": None,
@@ -439,5 +444,6 @@ def summarize(results):
             "alignment_status": dict(Counter(r["stage_status"]["alignment"] for r in results)),
             "raw_claim_occurrences": sum(len(r["claim_audit"]) for r in results),
             "candidate_claims": sum(c["rule_route"] == "unverified_candidate" for r in results for c in r["claim_audit"]),
+            "matching_protocol_valid": sum(r["matching_protocol_valid"] for r in results),
             "confirmed_templates": 0, "generation_authorized": False,
             "semantic_validation_complete": False}
