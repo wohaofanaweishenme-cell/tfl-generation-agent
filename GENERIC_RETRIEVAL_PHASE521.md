@@ -1,0 +1,3 @@
+# Phase 5.2.1 — offline replay
+
+Open `notebooks/11_Phase521_Offline_Retrieval_Replay.ipynb` in Colab. Run all cells. Reads the original Phase 5.2 ZIP from the Notebook 10 Drive output directory, validates 19 paired cases and 44 historical completed Phase 3 calls, and saves a separate ZIP in `Phase521_Outputs`. No new model calls or embeddings. Three provisional policies and combined ablation are diagnostic only; no gold labels enter scoring. Cached baseline mismatch stops execution. Original library, notebooks and experiment data stay unchanged. This is a development cohort, not a holdout. Actual archive execution has not been verified here.
