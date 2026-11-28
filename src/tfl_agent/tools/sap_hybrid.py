@@ -115,6 +115,101 @@ def make_chunks(blocks, max_words=160, overlap_words=30):
     return chunks
 
 
+
+def split_oversized_chunks(chunks, metadata, segments, count_tokens, token_limit):
+    """Only split over-limit chunks, preserving exact source intervals and scope.
+
+    Recursively bisect, preferring nearby whitespace / span boundaries. The
+    separator newline between source spans is synthetic; it is not a PDF
+    character and need not occur between two separate child chunks. All actual
+    source characters are retained, with no added overlap inside split parents.
+    Retokenize each child (including special tokens); never assume additivity.
+    """
+    if type(token_limit) is not int or token_limit < 2:
+        raise ValueError("Invalid embedding token limit")
+    lookup = {s["block_id"]: s["text"] for s in segments}
+    output, meta, audit = [], {}, []
+
+    def build(parent, spans):
+        text = "\n".join(lookup[s.block_id][s.start:s.end] for s in spans)
+        key = "|".join(f"{s.block_id}:{s.start}:{s.end}" for s in spans)
+        # Parent identity prevents collisions with pre-existing overlapped chunks.
+        cid = "chunk:" + hashlib.sha256(("token-split-v1|" + parent.chunk_id + "|" + key).encode()).hexdigest()[:20]
+        return Chunk(cid, parent.section, tuple(sorted({s.page for s in spans})), text, tuple(spans))
+
+    def divide(parent, node):
+        n = count_tokens(node.text)
+        if n <= token_limit:
+            return [(node, n)]
+        # Locate each real source span in the joined text.
+        offsets, pos = [], 0
+        for s in node.spans:
+            stop = pos + s.end - s.start
+            offsets.append((pos, stop, s))
+            pos = stop + 1
+        size = len(node.text)
+        mid = size // 2
+        # Prefer a reasonably central whitespace boundary, otherwise split a
+        # long unbroken string by character offset.
+        lo, hi = max(1, size // 4), min(size - 1, 3 * size // 4)
+        preferred = [i for i in range(lo, hi + 1)
+                     if node.text[i-1].isspace() or node.text[i].isspace()]
+        choices = sorted(set(preferred + [mid]), key=lambda i: (i == mid and i not in preferred, abs(i-mid), i))
+        # Whitespace-only fragments cannot enter the evidence store. Search
+        # other cuts if the central ones would create such a fragment.
+        used = set(choices)
+        choices += [i for i in range(1, size) if i not in used]
+        for cut in choices:
+            if not 0 < cut < size:
+                continue
+            left, right = [], []
+            for begin, end, s in offsets:
+                k = min(max(cut-begin, 0), end-begin)
+                if k:
+                    left.append(Span(s.block_id, s.page, s.start, s.start+k))
+                if k < end-begin:
+                    right.append(Span(s.block_id, s.page, s.start+k, s.end))
+            if not left or not right:
+                continue
+            a, b = build(parent, left), build(parent, right)
+            if not a.text.strip() or not b.text.strip():
+                continue
+            if max(len(a.text), len(b.text)) >= size:
+                continue
+            return divide(parent, a) + divide(parent, b)
+        raise ValueError(f"Cannot split oversized chunk without losing source content: {parent.chunk_id}")
+
+    def coverage(spans):
+        # Preserve ordered intervals, coalescing only adjacent parts of the
+        # same original span. This catches loss, duplication and reordering.
+        out = []
+        for s in spans:
+            if out and out[-1][:2] == (s.block_id, s.page) and out[-1][3] == s.start:
+                out[-1] = (*out[-1][:3], s.end)
+            else:
+                out.append((s.block_id, s.page, s.start, s.end))
+        return out
+
+    for parent in chunks:
+        before = count_tokens(parent.text)
+        if before <= token_limit:
+            children = [(parent, before)]
+        else:
+            children = divide(parent, parent)
+            if coverage(parent.spans) != coverage(s for c, _ in children for s in c.spans):
+                raise ValueError("Token split source coverage mismatch")
+            audit.append({"parent_chunk_id": parent.chunk_id, "parent_tokens": before,
+                          "children": [{"chunk_id": c.chunk_id, "tokens": n} for c, n in children]})
+        for c, n in children:
+            if n > token_limit or c.chunk_id in meta:
+                raise ValueError("Invalid token split output")
+            output.append(c)
+            meta[c.chunk_id] = dict(metadata[parent.chunk_id])
+    return output, meta, {"policy": "oversized_only_v1", "token_limit": token_limit,
+                          "original_chunks": len(chunks), "final_chunks": len(output),
+                          "split_parents": len(audit), "splits": audit}
+
+
 def query_plan(target):
     """Deterministic title-conditioned queries; no LLM, no inferred requirements."""
     title = target["title"].strip()
@@ -166,9 +261,10 @@ class LocalEncoder:
 
     def truncated_count(self, texts):
         # Explicit diagnostic: count inputs exceeding the model's token limit.
-        tok = self.model.tokenizer
-        return sum(len(tok.encode(t, add_special_tokens=True, truncation=False))
-                   > self.max_seq_length for t in texts)
+        return sum(self.token_count(t) > self.max_seq_length for t in texts)
+
+    def token_count(self, text):
+        return len(self.model.tokenizer.encode(text, add_special_tokens=True, truncation=False))
 
 
 def _rank(scores, depth, positive_only=False):
