@@ -88,6 +88,8 @@ def statistic_kind(text, style):
     }
     if tidy(text) == "%":
         return "pct"
+    if re.fullmatch(r"n\s*\(\s*%\s*\)", tidy(text), re.I):
+        return "n_pct"
     for k,v in style["statistic_formats"].items():
         if key and key == norm(v["label"]):
             return k
@@ -190,8 +192,6 @@ def build_draft_spec(result, library):
     def candidate_label(label, cs, path):
         hit=exact_claim(label,cs)
         return bound(path,tidy(label),hit) if hit else proposal(path,"[REVIEW] "+tidy(label))
-    def proposed_text(label, cs, path):
-        return candidate_label(label,cs,path)["value"]
     def evidence_list(path,cs,hint):
         values=vals(cs)
         if values and len(values)<=20:
