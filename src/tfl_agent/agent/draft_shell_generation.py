@@ -116,6 +116,7 @@ def build_draft_spec(result, library):
     style = copy.deepcopy(library.style)
     # Local draft-only placeholder, not an approved library statistic.
     style["statistic_formats"][UNKNOWN_KIND] = {"label": "[REVIEW: statistic]", "placeholder": "[TBD]"}
+    style["page"]["header_left"] = "DRAFT - NOT CLINICALLY VALIDATED"
 
     def select(field, limit=180):
         return [c for c in claims if c["field"] == field and len(tidy(c["value"])) <= limit]
@@ -187,8 +188,8 @@ def build_draft_spec(result, library):
     row_values=vals(row_claims)
     stat_keys=unique(k for c in stats if (k:=statistic_kind(c["value"],style)) and k!="header")
     def exact_claim(label, cs):
-        key=norm(label)
-        return [c for c in cs if key and norm(c["value"])==key]
+        key=tidy(label).casefold()
+        return [c for c in cs if key and tidy(c["value"]).casefold()==key]
     def candidate_label(label, cs, path):
         hit=exact_claim(label,cs)
         return bound(path,tidy(label),hit) if hit else proposal(path,"[REVIEW] "+tidy(label))
@@ -296,6 +297,7 @@ def build_draft_spec(result, library):
     elif tid=="TBL_PARAMETER_BY_VISIT":
         raw=next(iter(defaults),{})
         params=evidence_list("row_blocks[0].parameters",row_claims,"Parameters to confirm") if row_values else proposed_list("row_blocks[0].parameters",raw.get("parameters") or ["Parameter to confirm"])
+        if params["value"] is None: params["value"]=["[Parameter to confirm]"]
         vs=evidence_list("row_blocks[0].visits",visits,"Visits to confirm")
         if vs["value"] is None: vs["value"]=["[Visit to confirm]"]
         ct=raw.get("cell_type","continuous")
@@ -376,7 +378,7 @@ def build_draft_spec(result, library):
            "source_claims":claims,"bindings":bindings,"issues":issues,
            "notes":["Only retained literal claims are mapped; mapping is not independent semantic validation.",
                     "Template proposals remain visible and do not establish study-specific requirements.",
-                    "The local draft-only statistic placeholder is not a change to the approved style guide.",
+                    "The local draft-only statistic placeholder and draft header do not change the approved style guide.",
                     "Some extracted claims may remain only in this audit rather than in the table.",
                     "Comparison columns/rows are not automatically mapped in this initial adapter."],
            "clinical_confirmation":False,"generation_authorized":False,"new_llm_calls":0}
